@@ -1,0 +1,10 @@
+# Temporary file to store API secret
+api_key.txt
+
+# Project files
+.idea/
+venv/
+gen/
+
+# Python-specific ignores
+__pycache__/

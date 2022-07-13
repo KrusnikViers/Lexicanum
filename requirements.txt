@@ -1,0 +1,3 @@
+PySide2~=5.15   # Linking with Qt for UI
+genanki~=0.13
+requests~=2.27  # Web-requests library
