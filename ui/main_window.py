@@ -6,6 +6,7 @@ from PySide2.QtWidgets import QMainWindow
 
 from core.api_info import API_BASE_URI, API_CLIENT_KEY
 from core.project_info import PROJECT_FULL_NAME
+from core.translations import YandexDictionaryParser
 from ui.gen.main_window_uic import Ui_MainWindow
 
 
@@ -31,11 +32,10 @@ class MainWindow(QMainWindow):
         return json.dumps(json.loads(source), indent=2, sort_keys=True)
 
     def lookup(self):
-        result = '{}\n\n{}'.format(
-            self.pretty_print_json(self.get_translation('de-de')),
-            self.pretty_print_json(self.get_translation('de-en'))
+        cards = YandexDictionaryParser.possible_cards_from_yadict_response(self.get_translation('de-en'))
+        self.ui.test_output_label.setText(
+            '\n\n'.join(['Learn: {}\nAnswer: {}'.format(card.text_to_learn, card.answer) for card in cards])
         )
-        self.ui.test_output_label.setText(result)
 
     def closeEvent(self, _) -> None:
         sys.exit(0)
