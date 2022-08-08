@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
-    <height>500</height>
+    <width>1500</width>
+    <height>1000</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -123,7 +123,7 @@
         <item row="2" column="0" colspan="4">
          <widget class="QGroupBox" name="_layout_4">
           <property name="title">
-           <string>New card variants (based on lookup)</string>
+           <string>New cards</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <property name="leftMargin">
@@ -151,8 +151,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>531</width>
-                <height>372</height>
+                <width>809</width>
+                <height>872</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="prompts_layout">
@@ -213,8 +213,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>432</width>
-             <height>426</height>
+             <width>654</width>
+             <height>926</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="_layout_6">
