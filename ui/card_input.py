@@ -13,7 +13,7 @@ class CardInput(QWidget):
         super(CardInput, self).__init__(parent)
         self.ui = Ui_CardInput()
         self.ui.setupUi(self)
-        self.is_prompt = False
+        self.is_prompt = is_prompt
         if not is_prompt:
             self.ui.drop.setVisible(False)
 
@@ -27,6 +27,11 @@ class CardInput(QWidget):
         self.ui.answer.setText(answer)
         self.ui.note.setText(note)
 
+        # Connect build-ins
+        self.ui.question.returnPressed.connect(self.ui.add.click)
+        self.ui.answer.returnPressed.connect(self.ui.add.click)
+
+        # Connect custom slots
         self.ui.drop.clicked.connect(self._maybe_drop)
         self.ui.add.clicked.connect(self._accept)
 

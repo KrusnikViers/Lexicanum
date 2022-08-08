@@ -234,17 +234,46 @@
              <number>0</number>
             </property>
             <item>
-             <widget class="QTableView" name="deck_table"/>
+             <widget class="QTableWidget" name="deck_table">
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>50</number>
+              </attribute>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Card type</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Question</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Answer</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Note</string>
+               </property>
+              </column>
+             </widget>
             </item>
            </layout>
           </widget>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QPushButton" name="delete_from_deck">
-          <property name="text">
-           <string>Delete selected</string>
-          </property>
          </widget>
         </item>
         <item row="2" column="1">
@@ -267,17 +296,24 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="3">
-         <widget class="QPushButton" name="export_deck">
-          <property name="text">
-           <string>Export...</string>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="0" colspan="4">
          <widget class="QLabel" name="current_deck">
           <property name="text">
            <string>Current deck</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="delete_from_deck">
+          <property name="text">
+           <string>Delete selected</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="export_deck">
+          <property name="text">
+           <string>Export...</string>
           </property>
          </widget>
         </item>
@@ -305,7 +341,6 @@
   <tabstop>language_to_learn</tabstop>
   <tabstop>_scroll_2</tabstop>
   <tabstop>reset_variants</tabstop>
-  <tabstop>deck_table</tabstop>
   <tabstop>_scroll</tabstop>
   <tabstop>delete_from_deck</tabstop>
   <tabstop>import_deck</tabstop>
