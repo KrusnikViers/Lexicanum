@@ -6,9 +6,13 @@ import PySide2
 
 _GEN_FILE_SUFFIX = '_uic.py'
 
-# This script makes multiple assertions regarding your project:
-# - You have top-level "ui" directory
-# - Generated files will be placed in "ui/gen" directory (should exist) with rest of the path untouched.
+# This script relies on a multiple assumptions regarding your project:
+# - This script is placed one level below project root (e.g. in "build_tools" directory).
+# - You have top-level "ui" directory with nested "gen" directory.
+# - Content of "ui/gen" directory is ok to be overwritten.
+# - All files that you want to convert (and none other) have .ui extension and placed within "ui" directory.
+#
+# File /ui/<some_path>/<file_name>.ui will be translated into /ui/gen/<some_path>/<file_name>_uic.py.
 
 # Looking for the UIC tool. Make sure that requirements are installed!
 qt_uic_path = str((Path(PySide2.__file__).parent / 'uic').resolve())
@@ -28,7 +32,7 @@ for existing_file_strpath in glob.glob(ui_files_dir_strpath + '/gen/**/*' + _GEN
     assert existing_file.is_file()
     existing_file.unlink()
 
-# Converting UI files one by one.
+# Converting UI files.
 for input_file_strpath in glob.glob(ui_files_dir_strpath + '**/*.ui', recursive=True):
     input_file = Path(input_file_strpath)
     output_file_strpath = ui_files_dir_strpath + '/gen/' + input_file.stem + _GEN_FILE_SUFFIX
