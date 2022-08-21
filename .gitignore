@@ -1,7 +1,7 @@
 # Project files
 .idea/
 venv/
-gen/
+ui/gen/*_uic.py
 
 # Python-specific ignores
 __pycache__/
