@@ -1,8 +1,8 @@
-# These values could be used in multiple places and have to be consistent.
-# It is also a good place to make your own fork with nothing changed except those values, but who would do that, right?
+# General project name and version constants. Please, refer to these constants whenever possible.
+# It is also a good way to make your own fork with nothing changed except those values, but who would do that, right?
 # Right?
 PUBLISHER_NAME = "KrusnikViers"
-PROJECT_NAME = "DeDecker for Anki"
+PROJECT_NAME = "DeDecker"
 
 PROJECT_MAJOR_VERSION = 0
 PROJECT_MINOR_VERSION = 1

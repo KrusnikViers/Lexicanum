@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1500</width>
-    <height>1000</height>
+    <width>1000</width>
+    <height>512</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -151,8 +151,8 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>809</width>
-                <height>872</height>
+                <width>531</width>
+                <height>384</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="prompts_layout">
@@ -213,8 +213,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>654</width>
-             <height>926</height>
+             <width>432</width>
+             <height>438</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="_layout_6">
@@ -312,6 +312,17 @@
         </item>
         <item row="2" column="3">
          <widget class="QPushButton" name="export_deck">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Important&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This action will export two files:
+&lt;ul&gt;
+  &lt;li&gt;&amp;lt;your_name&amp;gt;.csv, importable by this app&lt;/li&gt;
+  &lt;li&gt;&amp;lt;your_name&amp;gt;.???, importable by Anki&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;Please note, that files will be placed in the same directory. If files with the same names already exist, they will be overwritten.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Export...</string>
           </property>
