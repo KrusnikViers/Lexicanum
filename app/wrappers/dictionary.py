@@ -16,8 +16,11 @@ if actual_key := os.environ.get('YD_API_KEY'):
 # Receives word for translation and its language. Returns raw(!) json from external dictionary service.
 def get_raw_translations_list(word: str, source_language: Language) -> str:
     language_pair = 'en-de' if source_language == Language.EN else 'de-en'
-    return requests.get(url='{}/{}'.format(_API_BASE_URI, 'lookup'), params={
-        'key': _API_CLIENT_KEY,
-        'lang': language_pair,
-        'text': word
-    }).text
+    try:
+        return requests.get(url='{}/{}'.format(_API_BASE_URI, 'lookup'), params={
+            'key': _API_CLIENT_KEY,
+            'lang': language_pair,
+            'text': word
+        }).text
+    except requests.exceptions.ConnectionError:
+        return "{}"

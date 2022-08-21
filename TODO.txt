@@ -1,0 +1,6 @@
+[P1] Add CSV output
+[P1] Add Anki output
+[P2] Allow batch adding words
+[P1] Detect and highlight duplicates in the list
+[P1] Add more prompts handlerss
+[P2] Add card input mask to prevent from entering CSV dividers
