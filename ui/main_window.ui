@@ -37,41 +37,6 @@
       </property>
       <widget class="QWidget" name="_lwidget_2">
        <layout class="QGridLayout" name="_layout">
-        <item row="1" column="2" colspan="2">
-         <spacer name="_spacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>199</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="3">
-         <widget class="QPushButton" name="lookup">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>Lookup...</string>
-          </property>
-          <property name="default">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="language_answer">
           <property name="sizePolicy">
@@ -91,12 +56,18 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="0" colspan="3">
-         <widget class="QLineEdit" name="source_input">
-          <property name="placeholderText">
-           <string>Source for new card options</string>
+        <item row="1" column="2" colspan="3">
+         <spacer name="_spacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
           </property>
-         </widget>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>199</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
         <item row="1" column="1">
          <widget class="QPushButton" name="language_to_learn">
@@ -120,7 +91,26 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="0" colspan="4">
+        <item row="1" column="5">
+         <widget class="QPushButton" name="batch_lookup">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Batch lookup...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="6">
          <widget class="QGroupBox" name="_layout_4">
           <property name="title">
            <string>New cards</string>
@@ -196,6 +186,35 @@
           </layout>
          </widget>
         </item>
+        <item row="0" column="5">
+         <widget class="QPushButton" name="lookup">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Lookup...</string>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="5">
+         <widget class="QLineEdit" name="source_input">
+          <property name="placeholderText">
+           <string>Source for new card options</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="_lwidget_1">
@@ -203,7 +222,7 @@
         <property name="bottomMargin">
          <number>4</number>
         </property>
-        <item row="1" column="0" colspan="4">
+        <item row="1" column="0" colspan="5">
          <widget class="QScrollArea" name="_scroll">
           <property name="widgetResizable">
            <bool>true</bool>
@@ -289,20 +308,6 @@
           </property>
          </spacer>
         </item>
-        <item row="2" column="2">
-         <widget class="QPushButton" name="import_deck">
-          <property name="text">
-           <string>Import...</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0" colspan="4">
-         <widget class="QLabel" name="current_deck">
-          <property name="text">
-           <string>Current deck</string>
-          </property>
-         </widget>
-        </item>
         <item row="2" column="0">
          <widget class="QPushButton" name="delete_from_deck">
           <property name="text">
@@ -310,7 +315,7 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="3">
+        <item row="2" column="4">
          <widget class="QPushButton" name="export_deck">
           <property name="toolTip">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
@@ -325,6 +330,30 @@
           </property>
           <property name="text">
            <string>Export...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="5">
+         <widget class="QLabel" name="current_deck">
+          <property name="text">
+           <string>Current deck</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="import_deck">
+          <property name="text">
+           <string>Import...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="import_on_startup">
+          <property name="text">
+           <string>Import on startup</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -347,7 +376,6 @@
  </widget>
  <tabstops>
   <tabstop>source_input</tabstop>
-  <tabstop>lookup</tabstop>
   <tabstop>language_answer</tabstop>
   <tabstop>language_to_learn</tabstop>
   <tabstop>_scroll_2</tabstop>

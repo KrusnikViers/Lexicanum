@@ -11,8 +11,9 @@ class CSVWrapper:
         self.file_path = Path(file_path)
         self.file_path.resolve()
 
-    @classmethod
-    def register_dialect(cls):
+    # This method should be called only once per program run, before any import or export calls are made.
+    @staticmethod
+    def register_dialect():
         custom_dialect = csv.Dialect
         custom_dialect.quoting = csv.QUOTE_MINIMAL
         custom_dialect.quotechar = '`'

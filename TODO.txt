@@ -2,5 +2,7 @@
 [P1] Add Anki output
 [P2] Allow batch adding words
 [P1] Detect and highlight duplicates in the list
-[P1] Add more prompts handlerss
+[P1] Add more prompts handlers
 [P2] Add card input mask to prevent from entering CSV dividers
+
+[PF] Start working with multiple languages. Store information about language page in the CSV alongside with cards.

@@ -12,8 +12,8 @@ class CardType(Enum):
     Noun = 1
 
     # Complex concepts
-    Phrase = 10
-    Ordering = 11
+    Phrase = 100
+    Ordering = 101
 
 
 class Card:

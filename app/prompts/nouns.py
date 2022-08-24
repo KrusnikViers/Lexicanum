@@ -24,7 +24,8 @@ def _plural_form(word: str, forms_list: str):
 
 
 # For single meaning unit, returns all possible translated prompts.
-def contruct_noun_cards(language: Language, definition: dict) -> List[Card]:
-    word_to_learn = '{} {}, die {}'.format(_gendered_article(definition['gen']), definition['text'],
+def construct_noun_cards(language: Language, definition: dict) -> List[Card]:
+    word_to_learn = '{} {}, die {}'.format(_gendered_article(definition['gen']),
+                                           definition['text'],
                                            _plural_form(definition['text'], definition['fl']))
     return [Card(CardType.Noun, word_to_learn, translation['text'].capitalize()) for translation in definition['tr']]

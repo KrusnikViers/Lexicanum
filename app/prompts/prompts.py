@@ -3,7 +3,7 @@ from typing import List
 
 from app.data.card import Card
 from app.data.language import Language
-from app.prompts.nouns import contruct_noun_cards
+from app.prompts.nouns import construct_noun_cards
 
 
 def construct_cards_from_dictionary_response(language: Language, raw_dictionary_response: str) -> List[Card]:
@@ -14,7 +14,7 @@ def construct_cards_from_dictionary_response(language: Language, raw_dictionary_
     result: List[Card] = []
     for definition in response_json['def']:
         if definition['pos'] == 'noun':
-            result += contruct_noun_cards(language, definition)
+            result += construct_noun_cards(language, definition)
         else:
             print('Could not parse: {}'.format(definition))
 

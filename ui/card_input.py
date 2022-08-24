@@ -32,7 +32,7 @@ class CardInput(QWidget):
         self.ui.answer.returnPressed.connect(self.ui.add.click)
 
         # Connect custom slots
-        self.ui.drop.clicked.connect(self._maybe_drop)
+        self.ui.drop.clicked.connect(self.maybe_drop)
         self.ui.add.clicked.connect(self._accept)
 
     def get_as_card(self) -> Card:
@@ -41,7 +41,7 @@ class CardInput(QWidget):
                     self.ui.note.text().strip())
 
     @Slot()
-    def _maybe_drop(self):
+    def maybe_drop(self):
         if not self.is_prompt:
             return
         self.deleteLater()
@@ -50,7 +50,6 @@ class CardInput(QWidget):
     def _accept(self):
         # TODO: Add validation
         self.accepted.emit()
-        self._maybe_drop()
 
 
 def construct_input_from_card(parent: QWidget, card: Card) -> CardInput:
