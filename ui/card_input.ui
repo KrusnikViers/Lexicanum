@@ -49,13 +49,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="add">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
+      <widget class="QPushButton" name="accept">
        <property name="text">
         <string>Add to deck</string>
        </property>
@@ -67,12 +61,6 @@
     <layout class="QHBoxLayout" name="_layout_3">
      <item>
       <widget class="QComboBox" name="card_type">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
        <property name="minimumSize">
         <size>
          <width>120</width>
@@ -92,7 +80,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="drop">
+      <widget class="QPushButton" name="close">
        <property name="text">
         <string>Cancel</string>
        </property>

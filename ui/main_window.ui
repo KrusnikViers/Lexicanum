@@ -38,7 +38,7 @@
       <widget class="QWidget" name="_lwidget_2">
        <layout class="QGridLayout" name="_layout">
         <item row="1" column="0">
-         <widget class="QPushButton" name="language_answer">
+         <widget class="QPushButton" name="word_language_answer">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -57,7 +57,7 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QPushButton" name="language_to_learn">
+         <widget class="QPushButton" name="word_language_question">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -109,23 +109,13 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>452</width>
+                <width>459</width>
                 <height>384</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="prompts_layout">
                <item>
-                <spacer name="verticalSpacer">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
+                <spacer name="_spacer_4"/>
                </item>
               </layout>
              </widget>
@@ -145,7 +135,7 @@
             </spacer>
            </item>
            <item row="2" column="1">
-            <widget class="QPushButton" name="reset_variants">
+            <widget class="QPushButton" name="prompts_reset">
              <property name="text">
               <string>Reset</string>
              </property>
@@ -155,7 +145,7 @@
          </widget>
         </item>
         <item row="0" column="5">
-         <widget class="QPushButton" name="lookup">
+         <widget class="QPushButton" name="word_lookup">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -177,7 +167,7 @@
          </widget>
         </item>
         <item row="0" column="0" colspan="5">
-         <widget class="QLineEdit" name="source_input">
+         <widget class="QLineEdit" name="word_input">
           <property name="placeholderText">
            <string>Source for new card options</string>
           </property>
@@ -203,7 +193,14 @@
         <property name="bottomMargin">
          <number>4</number>
         </property>
-        <item row="1" column="0" colspan="5">
+        <item row="3" column="3">
+         <widget class="QPushButton" name="deck_import">
+          <property name="text">
+           <string>Import...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="5">
          <widget class="QScrollArea" name="_scroll">
           <property name="widgetResizable">
            <bool>true</bool>
@@ -213,8 +210,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>511</width>
-             <height>438</height>
+             <width>504</width>
+             <height>427</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="_layout_6">
@@ -234,7 +231,7 @@
              <number>0</number>
             </property>
             <item>
-             <widget class="QTableWidget" name="deck_table">
+             <widget class="QTableWidget" name="deck_cards_table">
               <property name="sortingEnabled">
                <bool>true</bool>
               </property>
@@ -279,28 +276,38 @@
           </widget>
          </widget>
         </item>
-        <item row="2" column="1">
+        <item row="3" column="1">
          <spacer name="_spacer_2">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
-            <width>40</width>
+            <width>28</width>
             <height>20</height>
            </size>
           </property>
          </spacer>
         </item>
-        <item row="2" column="0">
-         <widget class="QPushButton" name="delete_from_deck">
+        <item row="3" column="2">
+         <widget class="QCheckBox" name="deck_import_on_startup">
+          <property name="text">
+           <string>Import on startup</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="cards_delete_selected">
           <property name="text">
            <string>Delete selected</string>
           </property>
          </widget>
         </item>
-        <item row="2" column="4">
-         <widget class="QPushButton" name="export_deck">
+        <item row="3" column="4">
+         <widget class="QPushButton" name="deck_export">
           <property name="toolTip">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
 &lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Important&lt;/span&gt;&lt;/p&gt;
@@ -317,29 +324,42 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="0" colspan="5">
-         <widget class="QLabel" name="current_deck">
-          <property name="text">
-           <string>Current deck</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="3">
-         <widget class="QPushButton" name="import_deck">
-          <property name="text">
-           <string>Import...</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="2">
-         <widget class="QCheckBox" name="import_on_startup">
-          <property name="text">
-           <string>Import on startup</string>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
-          </property>
-         </widget>
+        <item row="1" column="0" colspan="5">
+         <layout class="QHBoxLayout" name="_layout_7">
+          <item>
+           <widget class="QLineEdit" name="deck_name">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>New Deck</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="deck_status">
+            <property name="text">
+             <string>-- new deck</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="deck_reset_id">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Reset deck ID</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
@@ -359,15 +379,15 @@
   </action>
  </widget>
  <tabstops>
-  <tabstop>source_input</tabstop>
-  <tabstop>language_answer</tabstop>
-  <tabstop>language_to_learn</tabstop>
+  <tabstop>word_input</tabstop>
+  <tabstop>word_language_answer</tabstop>
+  <tabstop>word_language_question</tabstop>
   <tabstop>_scroll_2</tabstop>
-  <tabstop>reset_variants</tabstop>
+  <tabstop>prompts_reset</tabstop>
   <tabstop>_scroll</tabstop>
-  <tabstop>delete_from_deck</tabstop>
-  <tabstop>import_deck</tabstop>
-  <tabstop>export_deck</tabstop>
+  <tabstop>cards_delete_selected</tabstop>
+  <tabstop>deck_import</tabstop>
+  <tabstop>deck_export</tabstop>
  </tabstops>
  <resources/>
  <connections/>

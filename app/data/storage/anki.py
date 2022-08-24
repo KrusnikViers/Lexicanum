@@ -7,9 +7,9 @@ from app.data.card import Card
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 
 # Update this field each time the model is changed!
-_MODEL_VERSION = 1
+_MODEL_VERSION = 2
 
-# Last 10 digits of hashed (hopefully) unique model id string.
+# Last 10 digits of hashed and (hopefully) unique model id string.
 # App version is not used, because different versions still can use the same model
 _MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)) % 10000000000
 
@@ -18,9 +18,9 @@ _MODEL = genanki.Model(
     "{} model".format(PROJECT_NAME),
     fields=[
         {'name': 'card_id'},
+        {'name': 'type'},
         {'name': 'question'},
         {'name': 'answer'},
-        {'name': 'type'},
         {'name': 'note'}
     ],
     sort_field_index=1,
@@ -43,10 +43,10 @@ class _Note(genanki.Note):
         super(_Note, self).__init__(
             model=_MODEL,
             fields=[
-                str(card.time_id),
+                str(card.card_id),
+                card.card_type.name,
                 html.escape(card.question),
                 html.escape(card.answer),
-                card.card_type.name,
                 html.escape(card.note),
             ]
         )
