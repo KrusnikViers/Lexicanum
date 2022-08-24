@@ -3,5 +3,6 @@
 [P1] Detect and highlight duplicates in the list
 [P2] Add decks merge options
 [P1] Add more prompts handlers
+[P0] Replace CSV with JSON, because CSV is sadly not enough.
 
 [PF] Start working with multiple languages. Store information about language page in the CSV alongside with cards.

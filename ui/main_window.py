@@ -2,6 +2,7 @@ import sys
 
 from PySide2.QtCore import Slot, Qt, QDateTime
 from PySide2.QtWidgets import QFileDialog, QApplication, QMainWindow, QTableWidgetItem
+from pathlib import Path
 
 from app.data.card import Card
 from app.data.language import Language
@@ -12,6 +13,7 @@ from app.prompts import prompts
 from app.wrappers import dictionary
 from ui.card_input import CardInput, construct_input_from_card, construct_default_input
 from ui.gen.main_window_uic import Ui_MainWindow
+from app.data.storage.anki import AnkiWriter
 
 # Fields, stored alongside cards in the table but not displayed to the user.
 _TABLE_TYPE_ROLE = Qt.UserRole + 1
@@ -155,6 +157,9 @@ class MainWindow(QMainWindow):
         # TODO: Add error handling
         csv_wrapper = CSVWrapper(file_search_result[0])
         csv_wrapper.export_deck(deck)
+
+        anki_writer = AnkiWriter(str(Path(file_search_result[0]).with_suffix('.apkg')))
+        anki_writer.export(deck)
 
     @Slot()
     def _import_on_startup_changed(self):
