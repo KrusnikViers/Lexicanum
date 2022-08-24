@@ -48,7 +48,6 @@ class CardInput(QWidget):
 
     @Slot()
     def _accept(self):
-        # TODO: Add validation
         self.accepted.emit()
 
 

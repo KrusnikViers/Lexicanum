@@ -31,12 +31,10 @@ class MainWindow(QMainWindow):
         # Disable "help" button on the top panel - context prompts are not supported.
         QApplication.instance().setAttribute(Qt.AA_DisableWindowContextHelpButton)
 
-        # TODO: Remember splitter position and window geometry and restore them.
         window_width = self.geometry().width()
         self.ui.splitter.setSizes([window_width, window_width])
 
         # Table settings
-        # TODO: Remember column widths and restore them properly.
         table_width = window_width / 2
         self.ui.deck_table.setColumnWidth(0, table_width * 0.15)  # Type
         self.ui.deck_table.setColumnWidth(1, table_width * 0.30)  # Question
@@ -154,7 +152,6 @@ class MainWindow(QMainWindow):
             return
         Settings.set(StoredSettings.LAST_EXPORT_PATH, file_search_result[0])
         deck = [self._card_from_row(row_index) for row_index in range(0, self.ui.deck_table.rowCount())]
-        # TODO: Add error handling
         csv_wrapper = CSVWrapper(file_search_result[0])
         csv_wrapper.export_deck(deck)
 
@@ -167,14 +164,12 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def _import_deck(self):
-        # TODO: Refine error handling here
         file_search_result = QFileDialog.getOpenFileName(self, "Open {} .csv file...".format(PROJECT_NAME),
                                                          dir=Settings.get(StoredSettings.LAST_IMPORT_PATH),
                                                          filter="Text tables (*.csv)")
         if not file_search_result[0]:
             return
         Settings.set(StoredSettings.LAST_IMPORT_PATH, file_search_result[0])
-        # TODO: Add "Merge" option support
         while self.ui.deck_table.rowCount() > 0:
             self.ui.deck_table.removeRow(0)
         self._import_deck_from_file(file_search_result[0])
