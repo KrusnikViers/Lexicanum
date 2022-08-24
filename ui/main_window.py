@@ -1,15 +1,13 @@
 import sys
 
 from PySide2.QtCore import Slot, Qt, QDateTime
-from PySide2.QtWidgets import QFileDialog, QApplication
-from PySide2.QtWidgets import QMainWindow, QTableWidgetItem
+from PySide2.QtWidgets import QFileDialog, QApplication, QMainWindow, QTableWidgetItem
 
 from app.data.card import Card
 from app.data.language import Language
 from app.data.storage.csv import CSVWrapper
 from app.data.storage.settings import Settings, StoredSettings
-from app.info import PROJECT_FULL_NAME
-from app.info import PROJECT_NAME
+from app.info import PROJECT_NAME, PROJECT_FULL_NAME
 from app.prompts import prompts
 from app.wrappers import dictionary
 from ui.card_input import CardInput, construct_input_from_card, construct_default_input
@@ -42,11 +40,13 @@ class MainWindow(QMainWindow):
         self.ui.deck_table.setColumnWidth(1, table_width * 0.30)  # Question
         self.ui.deck_table.setColumnWidth(2, table_width * 0.30)  # Answer
         self._deck_table_changed()
-        self.ui.import_on_startup.setChecked(Settings.get(StoredSettings.IMPORT_ON_STARTUP))
 
         # Card prompts settings
         self.default_prompt = construct_default_input(self)
         self.ui.prompts_layout.insertWidget(0, self.default_prompt)
+
+        # Other elements set up
+        self.ui.import_on_startup.setChecked(Settings.get(StoredSettings.IMPORT_ON_STARTUP))
 
         self._init_connect()
         self._init_startup_deck()
@@ -101,11 +101,11 @@ class MainWindow(QMainWindow):
 
     def _card_from_row(self, row_index: int) -> Card:
         assert row_index < self.ui.deck_table.rowCount()
-        return Card(self.ui.deck_table.item(row_index, 0).data(self._TABLE_TYPE_ROLE),
+        return Card(self.ui.deck_table.item(row_index, 0).data(_TABLE_TYPE_ROLE),
                     self.ui.deck_table.item(row_index, 1).text(),
                     self.ui.deck_table.item(row_index, 2).text(),
                     self.ui.deck_table.item(row_index, 3).text(),
-                    self.ui.deck_table.item(row_index, 0).data(self._TABLE_ID_ROLE))
+                    self.ui.deck_table.item(row_index, 0).data(_TABLE_ID_ROLE))
 
     def _add_card_to_top(self, card: Card):
         self.ui.deck_table.insertRow(0)
@@ -162,6 +162,7 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def _import_deck(self):
+        # TODO: Refine error handling here
         file_search_result = QFileDialog.getOpenFileName(self, "Open {} .csv file...".format(PROJECT_NAME),
                                                          dir=Settings.get(StoredSettings.LAST_IMPORT_PATH),
                                                          filter="Text tables (*.csv)")
@@ -169,12 +170,15 @@ class MainWindow(QMainWindow):
             return
         Settings.set(StoredSettings.LAST_IMPORT_PATH, file_search_result[0])
         # TODO: Add "Merge" option support
-        self.ui.deck_table.clearContents()
+        while self.ui.deck_table.rowCount() > 0:
+            self.ui.deck_table.removeRow(0)
         self._import_deck_from_file(file_search_result[0])
 
     def _import_deck_from_file(self, file_name: str):
         csv_wrapper = CSVWrapper(file_name)
         deck = csv_wrapper.import_deck()
+        if deck is None:
+            return
         for card in deck:
             self._add_card_to_top(card)
         self.ui.current_deck.setText("Loaded from {}".format(file_name))

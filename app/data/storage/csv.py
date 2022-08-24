@@ -1,6 +1,6 @@
 import csv
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 from app.data.card import Card
 from app.info import PROJECT_NAME
@@ -19,12 +19,16 @@ class CSVWrapper:
         custom_dialect.quotechar = '`'
         custom_dialect.delimiter = '|'
         custom_dialect.lineterminator = '\n'
+        custom_dialect.escapechar = '\\'
         csv.register_dialect(PROJECT_NAME, custom_dialect)
 
-    def import_deck(self) -> List[Card]:
-        with open(self.file_path, newline='') as file:
-            input_reader = csv.reader(file, PROJECT_NAME)
-            return [Card.from_str_list(row) for row in input_reader]
+    def import_deck(self) -> Optional[List[Card]]:
+        try:
+            with open(self.file_path, newline='') as file:
+                input_reader = csv.reader(file, PROJECT_NAME)
+                return [Card.from_str_list(row) for row in input_reader]
+        except FileNotFoundError:
+            return None
 
     def export_deck(self, cards: List[Card]):
         with open(self.file_path, 'w', newline='') as file:

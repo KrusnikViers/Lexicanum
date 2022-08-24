@@ -56,19 +56,6 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="2" colspan="3">
-         <spacer name="_spacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>199</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
         <item row="1" column="1">
          <widget class="QPushButton" name="language_to_learn">
           <property name="sizePolicy">
@@ -88,25 +75,6 @@
           </property>
           <property name="flat">
            <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="5">
-         <widget class="QPushButton" name="batch_lookup">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>Batch lookup...</string>
           </property>
          </widget>
         </item>
@@ -141,7 +109,7 @@
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>531</width>
+                <width>452</width>
                 <height>384</height>
                </rect>
               </property>
@@ -179,7 +147,7 @@
            <item row="2" column="1">
             <widget class="QPushButton" name="reset_variants">
              <property name="text">
-              <string>Reset variants</string>
+              <string>Reset</string>
              </property>
             </widget>
            </item>
@@ -215,6 +183,19 @@
           </property>
          </widget>
         </item>
+        <item row="1" column="2" colspan="4">
+         <spacer name="_spacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>199</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="_lwidget_1">
@@ -232,7 +213,7 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>432</width>
+             <width>511</width>
              <height>438</height>
             </rect>
            </property>
@@ -254,6 +235,9 @@
             </property>
             <item>
              <widget class="QTableWidget" name="deck_table">
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
               <attribute name="horizontalHeaderCascadingSectionResizes">
                <bool>true</bool>
               </attribute>
