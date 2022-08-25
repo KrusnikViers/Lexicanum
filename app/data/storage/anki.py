@@ -9,9 +9,6 @@ from app.info import PROJECT_NAME, PUBLISHER_NAME
 
 # Update this field each time the model is changed!
 _MODEL_VERSION = 2
-
-# Last 10 digits of hashed and (hopefully) unique model id string.
-# App version is not used, because different versions still can use the same model
 _MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)) % 10000000000
 
 _MODEL = genanki.Model(

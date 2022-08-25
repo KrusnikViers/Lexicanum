@@ -13,7 +13,6 @@ class StoredSettings(Enum):
     LAST_IMPORT_PATH = _StoredSettingMeta(str, '')
     LAST_EXPORT_PATH = _StoredSettingMeta(str, '')
     IMPORT_ON_STARTUP = _StoredSettingMeta(bool, True)
-    ASK_IF_CHANGED = _StoredSettingMeta(bool, True)
 
 
 class Settings:

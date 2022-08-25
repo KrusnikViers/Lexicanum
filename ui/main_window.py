@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+from typing import Optional
 
 from PySide2.QtCore import Slot, Qt, QDateTime
 from PySide2.QtWidgets import QFileDialog, QApplication, QMainWindow, QTableWidgetItem
@@ -25,9 +26,11 @@ _TABLE_ANSWER_INDEX = 2
 _TABLE_NOTE_INDEX = 3
 
 
+# TODO: Separate sides of the window into widgets
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
+
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.setWindowTitle(PROJECT_FULL_NAME)
@@ -35,9 +38,14 @@ class MainWindow(QMainWindow):
         QApplication.instance().setAttribute(Qt.AA_DisableWindowContextHelpButton)
         self._init_window_geometry()
 
+        self.current_deck_id = None
+        self.current_deck_next_card_id = None
+        self._update_deck_metadata(None)
+
         self._init_word_lookup()
         self._init_prompts()
         self._init_deck()
+
         self.show()
 
     def _init_window_geometry(self):
@@ -59,6 +67,8 @@ class MainWindow(QMainWindow):
     def _init_deck(self):
         self.ui.deck_import_on_startup.setChecked(Settings.get(StoredSettings.IMPORT_ON_STARTUP))
         self.ui.deck_import_on_startup.stateChanged.connect(self._deck_import_on_startup_changed)
+        self.ui.deck_cards_delete_selected.clicked.connect(self._deck_cards_delete_selected)
+        self.ui.deck_reset_id.clicked.connect(self._deck_reset_id)
         if Settings.get(StoredSettings.IMPORT_ON_STARTUP):
             self._deck_import_from_file(Settings.get(StoredSettings.LAST_IMPORT_PATH))
 
@@ -126,7 +136,18 @@ class MainWindow(QMainWindow):
         for child in self.ui.prompts_widget.children():
             if not isinstance(child, CardInput):
                 continue
-            child.maybe_drop()
+            child.maybe_close()
+
+    @Slot()
+    def _deck_cards_delete_selected(self):
+        selected_rows_set = {item.row() for item in self.ui.deck_cards_table.selectedItems()}
+        deletion_order = sorted(list(selected_rows_set), reverse=True)
+        for row in deletion_order:
+            self.ui.deck_cards_table.removeRow(row)
+
+    @Slot()
+    def _deck_reset_id(self):
+        self._update_deck_metadata(None)
 
     @Slot()
     def _word_language_change(self):
@@ -143,7 +164,8 @@ class MainWindow(QMainWindow):
         Settings.set(StoredSettings.LAST_EXPORT_PATH, file_search_result[0])
 
         cards = [self._card_from_row(row_index) for row_index in range(0, self.ui.deck_cards_table.rowCount())]
-        deck = Deck(deck_name=self.ui.deck_name.text().strip(), cards=cards)
+        deck = Deck(deck_name=self.ui.deck_name.text().strip(), cards=cards,
+                    deck_id=self.current_deck_id, next_card_id=self.current_deck_next_card_id)
         deck.normalize_for_output()
 
         output_path = Path(file_search_result[0]).resolve()
@@ -168,13 +190,28 @@ class MainWindow(QMainWindow):
         self._deck_import_from_file(file_search_result[0])
 
     def _deck_import_from_file(self, file_name: str):
-        input_path = Path(file_name)
-        deck = DeckJsonWriter.read_from_file(input_path.resolve().with_suffix('.json'))
+        input_path = Path(file_name).resolve().with_suffix('.json')
+        deck = DeckJsonWriter.read_from_file(input_path)
         if deck is None:
             return
-        self.ui.deck_name.setText(deck.deck_name)
+        self.ui.deck_status.setText(' : deck from {}'.format(str(input_path)))
         for card in deck.cards:
             self._add_card_to_top(card)
+        self._update_deck_metadata(deck)
+
+    def _update_deck_metadata(self, deck: Optional[Deck]):
+        self.ui.deck_reset_id.setVisible(deck is not None)
+        if deck is not None:
+            self.current_deck_id = deck.deck_id
+            self.current_deck_next_card_id = deck.next_card_id
+            self.ui.deck_reset_id.setText('Reset DeckID: {}'.format(self.current_deck_id))
+            self.ui.deck_name.setText(deck.deck_name)
+        else:
+            self.current_deck_id = None
+            self.current_deck_next_card_id = None
+            if not self.ui.deck_name.text():
+                self.ui.deck_name.setText('New Deck')
+            self.ui.deck_status.setText(' : brand new deck')
 
     def closeEvent(self, _) -> None:
         sys.exit(0)

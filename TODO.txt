@@ -1,15 +1,15 @@
-[P0] Replace CSV with JSON, because CSV is sadly not enough.
+[PBg] Add more prompts handlers
 
+[P2] Cache and restore window position, splitter position and table column widths
 [P1] Detect and highlight duplicates in the list
-[P1] Add more prompts handlers
-[P1] Add prompt value validation before accepting
-
+[P1] "Save" option together with "Export as"
+[P1] Proper Anki cards design
 [P2] Allow batch adding words
 [P2] Add decks merge options
-[P2] Find Python version of absl::StatusOr (or write own)
-[P2] Cache and restore window position, splitter position and table column widths
-[P2] Add "Merge" option
+[P2] Ask to export deck if there are unsaved changes
+[P2] Create menu and move some actions there
 
+[P2] Find Python version of absl::StatusOr (or write own)
 [P2 Blocked] Add proper error handling (depends on StatusOr)
 
 [P3] Start working with multiple languages. Store information about language page in the CSV alongside with cards.

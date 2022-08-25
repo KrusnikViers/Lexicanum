@@ -6,15 +6,11 @@ from app.data.card import Card
 from app.data.deck import Deck
 from ui.alert import Alert
 
-# Modify when incompatible changes are made to the underlying model
-_JSON_VERSION = 1
-
 
 class DeckJsonWriter:
     @staticmethod
     def write_to_file(deck: Deck, output: Path):
         result = {
-            'deck_version': _JSON_VERSION,
             'deck_id': deck.deck_id,
             'deck_name': deck.deck_name,
             'next_card_id': deck.next_card_id,
@@ -30,13 +26,6 @@ class DeckJsonWriter:
                 input_json = json.load(input_file)
         except FileNotFoundError:
             Alert.warning('Reading deck from file failed', 'Failed to read file {}'.format(str(input_path)))
-            return None
-
-        if input_json['deck_version'] != _JSON_VERSION:
-            Alert.warning('JSON file has incompatible version',
-                          '{} file has JSON of v.{}, but the app supports v.{} only'.format(str(input_path),
-                                                                                            input_json['deck_version'],
-                                                                                            _JSON_VERSION))
             return None
 
         return Deck(
