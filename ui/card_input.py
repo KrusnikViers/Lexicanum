@@ -9,13 +9,13 @@ class CardInput(QWidget):
     accepted = Signal()
 
     def __init__(self, parent, card_type: CardType, question: str, answer: str,
-                 note: str = '', is_prompt: bool = True):
+                 note: str = '', is_default: bool = False):
         super(CardInput, self).__init__(parent)
         self.ui = Ui_CardInput()
         self.ui.setupUi(self)
-        self.is_prompt = is_prompt
-        if not is_prompt:
-            self.ui.drop.setVisible(False)
+        self.is_default = is_default
+        if is_default:
+            self.ui.close.setVisible(False)
 
         for added_card_type in CardType:
             if added_card_type is CardType.Invalid:
@@ -28,12 +28,16 @@ class CardInput(QWidget):
         self.ui.note.setText(note)
 
         # Connect build-ins
-        self.ui.question.returnPressed.connect(self.ui.add.click)
-        self.ui.answer.returnPressed.connect(self.ui.add.click)
+        self.ui.question.returnPressed.connect(self.ui.accept.click)
+        self.ui.answer.returnPressed.connect(self.ui.accept.click)
 
         # Connect custom slots
-        self.ui.drop.clicked.connect(self.maybe_drop)
-        self.ui.add.clicked.connect(self._accept)
+        self.ui.close.clicked.connect(self.maybe_close)
+        self.ui.accept.clicked.connect(self._accept)
+
+    @classmethod
+    def create_default(cls, parent: QWidget):
+        return cls(parent, CardType.Invalid, question='', answer='', is_default=True)
 
     def get_as_card(self) -> Card:
         return Card(self.ui.card_type.currentData(Qt.UserRole),
@@ -41,19 +45,11 @@ class CardInput(QWidget):
                     self.ui.note.text().strip())
 
     @Slot()
-    def maybe_drop(self):
-        if not self.is_prompt:
+    def maybe_close(self):
+        if self.is_default:
             return
         self.deleteLater()
 
     @Slot()
     def _accept(self):
         self.accepted.emit()
-
-
-def construct_input_from_card(parent: QWidget, card: Card) -> CardInput:
-    return CardInput(parent, card.card_type, card.question, card.answer, card.note, is_prompt=True)
-
-
-def construct_default_input(parent: QWidget) -> CardInput:
-    return CardInput(parent, CardType.Phrase, question='', answer='', note='', is_prompt=False)

@@ -1,9 +1,10 @@
 import html
-from typing import List
+from pathlib import Path
 
 import genanki
 
 from app.data.card import Card
+from app.data.deck import Deck
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 
 # Update this field each time the model is changed!
@@ -57,11 +58,9 @@ class _Note(genanki.Note):
 
 
 class AnkiWriter:
-    def __init__(self, file_path: str):
-        self.file_path: str = file_path
-
-    def export(self, deck: List[Card]):
-        anki_deck = genanki.Deck(112332142314, 'Some Name')
-        for card in deck:
+    @staticmethod
+    def write_to_file(deck: Deck, output: Path):
+        anki_deck = genanki.Deck(deck.deck_id, deck.deck_name)
+        for card in deck.cards:
             anki_deck.add_note(_Note(card))
-        anki_deck.write_to_file(self.file_path)
+        anki_deck.write_to_file(str(output))

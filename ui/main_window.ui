@@ -115,7 +115,17 @@
               </property>
               <layout class="QVBoxLayout" name="prompts_layout">
                <item>
-                <spacer name="_spacer_4"/>
+                <spacer name="_spacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </widget>

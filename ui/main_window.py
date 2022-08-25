@@ -1,93 +1,92 @@
 import sys
+from pathlib import Path
 
 from PySide2.QtCore import Slot, Qt, QDateTime
 from PySide2.QtWidgets import QFileDialog, QApplication, QMainWindow, QTableWidgetItem
-from pathlib import Path
 
 from app.data.card import Card
+from app.data.deck import Deck
 from app.data.language import Language
-from app.data.storage.csv import CSVWrapper
+from app.data.storage.anki import AnkiWriter
+from app.data.storage.deck_json import DeckJsonWriter
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_NAME, PROJECT_FULL_NAME
 from app.prompts import prompts
 from app.wrappers import dictionary
-from ui.card_input import CardInput, construct_input_from_card, construct_default_input
+from ui.card_input import CardInput
 from ui.gen.main_window_uic import Ui_MainWindow
-from app.data.storage.anki import AnkiWriter
 
-# Fields, stored alongside cards in the table but not displayed to the user.
 _TABLE_TYPE_ROLE = Qt.UserRole + 1
 _TABLE_ID_ROLE = Qt.UserRole + 2
+
+_TABLE_TYPE_INDEX = 0
+_TABLE_QUESTION_INDEX = 1
+_TABLE_ANSWER_INDEX = 2
+_TABLE_NOTE_INDEX = 3
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
-
-        # General UI settings
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.setWindowTitle(PROJECT_FULL_NAME)
         # Disable "help" button on the top panel - context prompts are not supported.
         QApplication.instance().setAttribute(Qt.AA_DisableWindowContextHelpButton)
+        self._init_window_geometry()
 
+        self._init_word_lookup()
+        self._init_prompts()
+        self._init_deck()
+        self.show()
+
+    def _init_window_geometry(self):
         window_width = self.geometry().width()
         self.ui.splitter.setSizes([window_width, window_width])
 
-        # Table settings
-        table_width = window_width / 2
-        self.ui.deck_table.setColumnWidth(0, table_width * 0.15)  # Type
-        self.ui.deck_table.setColumnWidth(1, table_width * 0.30)  # Question
-        self.ui.deck_table.setColumnWidth(2, table_width * 0.30)  # Answer
-        self._deck_table_changed()
+    def _init_word_lookup(self):
+        self.ui.word_input.returnPressed.connect(self.ui.word_lookup.click)
+        self.ui.word_language_question.clicked.connect(self._word_language_change)
+        self.ui.word_language_answer.clicked.connect(self._word_language_change)
+        self.ui.word_lookup.clicked.connect(self._word_lookup)
 
-        # Card prompts settings
-        self.default_prompt = construct_default_input(self)
-        self.ui.prompts_layout.insertWidget(0, self.default_prompt)
-
-        # Other elements set up
-        self.ui.import_on_startup.setChecked(Settings.get(StoredSettings.IMPORT_ON_STARTUP))
-
-        self._init_connect()
-        self._init_startup_deck()
-
-        self.show()
-
-    # Separate method to set up slot-signal connections, due to the number of such calls.
-    def _init_connect(self):
-        # Built-in signals
-        self.ui.source_input.returnPressed.connect(self.ui.lookup.click)
-        self.ui.deck_table.itemChanged.connect(self._deck_table_changed)
-
-        # Custom signals
+    def _init_prompts(self):
+        self.default_prompt = CardInput.create_default(self)
         self.default_prompt.accepted.connect(self._prompt_accepted)
-        self.ui.language_to_learn.clicked.connect(self._selected_language_to_learn)
-        self.ui.language_answer.clicked.connect(self._selected_language_answer)
-        self.ui.reset_variants.clicked.connect(self._reset_prompts)
-        self.ui.lookup.clicked.connect(self._lookup)
-        self.ui.export_deck.clicked.connect(self._export_deck)
-        self.ui.import_deck.clicked.connect(self._import_deck)
+        self.ui.prompts_layout.insertWidget(0, self.default_prompt)
+        self.ui.prompts_reset.clicked.connect(self._prompts_reset)
 
-    def _init_startup_deck(self):
+    def _init_deck(self):
+        self.ui.deck_import_on_startup.setChecked(Settings.get(StoredSettings.IMPORT_ON_STARTUP))
+        self.ui.deck_import_on_startup.stateChanged.connect(self._deck_import_on_startup_changed)
         if Settings.get(StoredSettings.IMPORT_ON_STARTUP):
-            self._import_deck_from_file(Settings.get(StoredSettings.LAST_IMPORT_PATH))
+            self._deck_import_from_file(Settings.get(StoredSettings.LAST_IMPORT_PATH))
+
+        self.ui.deck_export.clicked.connect(self._deck_export)
+        self.ui.deck_import.clicked.connect(self._deck_import)
+
+        table_width = self.geometry().width() / 2
+        self.ui.deck_cards_table.setColumnWidth(_TABLE_TYPE_INDEX, table_width * 0.15)
+        self.ui.deck_cards_table.setColumnWidth(_TABLE_QUESTION_INDEX, table_width * 0.30)
+        self.ui.deck_cards_table.setColumnWidth(_TABLE_ANSWER_INDEX, table_width * 0.30)
 
     @Slot()
-    def _lookup(self):
-        if not self.ui.source_input.text():
+    def _word_lookup(self):
+        if not self.ui.word_input.text():
+            self.ui.word_input.setStyleSheet("border: 1px solid red")
             return
+        self.ui.word_input.setStyleSheet('')
 
-        self._reset_prompts()
-        lookup_text = self.ui.source_input.text().strip()
-        language = Language.EN if self.ui.language_answer.isChecked() else Language.DE
+        self._prompts_reset()
+        lookup_text = self.ui.word_input.text().strip()
+        language = Language.EN if self.ui.word_language_answer.isChecked() else Language.DE
 
         dictionary_response = dictionary.get_raw_translations_list(lookup_text, language)
         cards_list = prompts.construct_cards_from_dictionary_response(language, dictionary_response)
-
         # Cards list is reversed, because inserted widgets will be pushing previously inserted down, and first card
         # should end up on top.
         for card in reversed(cards_list):
-            card_widget = construct_input_from_card(self.ui.prompts_widget, card)
+            card_widget = CardInput(self, card.card_type, card.question, card.answer, card.note)
             card_widget.accepted.connect(self._prompt_accepted)
             self.ui.prompts_layout.insertWidget(1, card_widget)
 
@@ -96,19 +95,19 @@ class MainWindow(QMainWindow):
         sender: CardInput = self.sender()
         assert isinstance(sender, CardInput)
         self._add_card_to_top(sender.get_as_card())
-        # Signal to prompt that it could be removed. Decision if it _can_ be destroyed is on the card widget.
-        sender.maybe_drop()
+        # Non-default prompt can be removed after that
+        sender.maybe_close()
 
     def _card_from_row(self, row_index: int) -> Card:
-        assert row_index < self.ui.deck_table.rowCount()
-        return Card(self.ui.deck_table.item(row_index, 0).data(_TABLE_TYPE_ROLE),
-                    self.ui.deck_table.item(row_index, 1).text(),
-                    self.ui.deck_table.item(row_index, 2).text(),
-                    self.ui.deck_table.item(row_index, 3).text(),
-                    self.ui.deck_table.item(row_index, 0).data(_TABLE_ID_ROLE))
+        assert row_index < self.ui.deck_cards_table.rowCount()
+        return Card(card_type=self.ui.deck_cards_table.item(row_index, _TABLE_TYPE_INDEX).data(_TABLE_TYPE_ROLE),
+                    question=self.ui.deck_cards_table.item(row_index, _TABLE_QUESTION_INDEX).text().strip(),
+                    answer=self.ui.deck_cards_table.item(row_index, _TABLE_ANSWER_INDEX).text().strip(),
+                    note=self.ui.deck_cards_table.item(row_index, _TABLE_NOTE_INDEX).text().strip(),
+                    card_id=self.ui.deck_cards_table.item(row_index, _TABLE_TYPE_INDEX).data(_TABLE_ID_ROLE))
 
     def _add_card_to_top(self, card: Card):
-        self.ui.deck_table.insertRow(0)
+        self.ui.deck_cards_table.insertRow(0)
 
         # Type column is rather special: it holds all card metadata (hidden) and can not be edited in place.
         type_item = QTableWidgetItem(card.card_type.name)
@@ -116,72 +115,66 @@ class MainWindow(QMainWindow):
         type_item.setData(_TABLE_ID_ROLE, QDateTime.currentMSecsSinceEpoch())
         type_item.setFlags(Qt.ItemIsSelectable | Qt.ItemIsEnabled)
         type_item.setTextAlignment(Qt.AlignCenter)
-        self.ui.deck_table.setItem(0, 0, type_item)
+        self.ui.deck_cards_table.setItem(0, _TABLE_TYPE_INDEX, type_item)
 
-        self.ui.deck_table.setItem(0, 1, QTableWidgetItem(card.question))
-        self.ui.deck_table.setItem(0, 2, QTableWidgetItem(card.answer))
-        self.ui.deck_table.setItem(0, 3, QTableWidgetItem(card.note))
+        self.ui.deck_cards_table.setItem(0, _TABLE_QUESTION_INDEX, QTableWidgetItem(card.question))
+        self.ui.deck_cards_table.setItem(0, _TABLE_ANSWER_INDEX, QTableWidgetItem(card.answer))
+        self.ui.deck_cards_table.setItem(0, _TABLE_NOTE_INDEX, QTableWidgetItem(card.note))
 
     @Slot()
-    def _reset_prompts(self):
+    def _prompts_reset(self):
         for child in self.ui.prompts_widget.children():
             if not isinstance(child, CardInput):
                 continue
             child.maybe_drop()
 
     @Slot()
-    def _selected_language_to_learn(self):
-        self.ui.language_to_learn.setChecked(True)
-        self.ui.language_answer.setChecked(False)
+    def _word_language_change(self):
+        self.ui.word_language_question.setChecked(self.sender() == self.ui.word_language_question)
+        self.ui.word_language_answer.setChecked(self.sender() == self.ui.word_language_answer)
 
     @Slot()
-    def _selected_language_answer(self):
-        self.ui.language_answer.setChecked(True)
-        self.ui.language_to_learn.setChecked(False)
-
-    @Slot()
-    def _deck_table_changed(self):
-        self.ui.export_deck.setEnabled(self.ui.deck_table.rowCount() > 0)
-
-    @Slot()
-    def _export_deck(self):
+    def _deck_export(self):
         file_search_result = QFileDialog.getSaveFileName(self, "Save {} & Anki files...".format(PROJECT_NAME),
                                                          dir=Settings.get(StoredSettings.LAST_EXPORT_PATH),
-                                                         filter="Text tables (*.csv)")
+                                                         filter="Deck JSON (*.json)")
         if not file_search_result[0]:
             return
         Settings.set(StoredSettings.LAST_EXPORT_PATH, file_search_result[0])
-        deck = [self._card_from_row(row_index) for row_index in range(0, self.ui.deck_table.rowCount())]
-        csv_wrapper = CSVWrapper(file_search_result[0])
-        csv_wrapper.export_deck(deck)
 
-        anki_writer = AnkiWriter(str(Path(file_search_result[0]).with_suffix('.apkg')))
-        anki_writer.export(deck)
+        cards = [self._card_from_row(row_index) for row_index in range(0, self.ui.deck_cards_table.rowCount())]
+        deck = Deck(deck_name=self.ui.deck_name.text().strip(), cards=cards)
+        deck.normalize_for_output()
 
-    @Slot()
-    def _import_on_startup_changed(self):
-        Settings.set(StoredSettings.IMPORT_ON_STARTUP, self.ui.import_on_startup.isChecked())
+        output_path = Path(file_search_result[0]).resolve()
+        DeckJsonWriter.write_to_file(deck, output_path.with_suffix('.json'))
+        AnkiWriter.write_to_file(deck, output_path.with_suffix('.apkg'))
 
     @Slot()
-    def _import_deck(self):
-        file_search_result = QFileDialog.getOpenFileName(self, "Open {} .csv file...".format(PROJECT_NAME),
+    def _deck_import_on_startup_changed(self):
+        Settings.set(StoredSettings.IMPORT_ON_STARTUP, self.ui.deck_import_on_startup.isChecked())
+
+    @Slot()
+    def _deck_import(self):
+        file_search_result = QFileDialog.getOpenFileName(self, "Open {} .json file...".format(PROJECT_NAME),
                                                          dir=Settings.get(StoredSettings.LAST_IMPORT_PATH),
-                                                         filter="Text tables (*.csv)")
+                                                         filter="Deck JSON (*.json)")
         if not file_search_result[0]:
             return
         Settings.set(StoredSettings.LAST_IMPORT_PATH, file_search_result[0])
-        while self.ui.deck_table.rowCount() > 0:
-            self.ui.deck_table.removeRow(0)
-        self._import_deck_from_file(file_search_result[0])
 
-    def _import_deck_from_file(self, file_name: str):
-        csv_wrapper = CSVWrapper(file_name)
-        deck = csv_wrapper.import_deck()
+        while self.ui.deck_cards_table.rowCount() > 0:
+            self.ui.deck_cards_table.removeRow(0)
+        self._deck_import_from_file(file_search_result[0])
+
+    def _deck_import_from_file(self, file_name: str):
+        input_path = Path(file_name)
+        deck = DeckJsonWriter.read_from_file(input_path.resolve().with_suffix('.json'))
         if deck is None:
             return
-        for card in deck:
+        self.ui.deck_name.setText(deck.deck_name)
+        for card in deck.cards:
             self._add_card_to_top(card)
-        self.ui.current_deck.setText("Loaded from {}".format(file_name))
 
     def closeEvent(self, _) -> None:
         sys.exit(0)
