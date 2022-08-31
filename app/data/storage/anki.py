@@ -56,8 +56,9 @@ class _Note(genanki.Note):
 
 class AnkiWriter:
     @staticmethod
-    def write_to_file(deck: Deck, output: Path):
+    def write_to_file(deck: Deck, output: Path) -> bool:
         anki_deck = genanki.Deck(deck.deck_id, deck.deck_name)
         for card in deck.cards:
             anki_deck.add_note(_Note(card))
         anki_deck.write_to_file(str(output))
+        return True

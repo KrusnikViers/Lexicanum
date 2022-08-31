@@ -10,8 +10,8 @@ _StoredSettingMeta = namedtuple('StoredSettingMeta', 'type default_value')
 
 # Add new values to be stored in this enum.
 class StoredSettings(Enum):
-    LAST_IMPORT_PATH = _StoredSettingMeta(str, '')
-    LAST_EXPORT_PATH = _StoredSettingMeta(str, '')
+    LAST_PROJECT_FILE_PATH = _StoredSettingMeta(str, '')
+    LAST_ANKI_FILE_PATH = _StoredSettingMeta(str, '')
     IMPORT_ON_STARTUP = _StoredSettingMeta(bool, True)
 
 

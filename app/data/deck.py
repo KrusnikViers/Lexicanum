@@ -8,11 +8,12 @@ from app.data.card import Card
 
 class Deck:
     def __init__(self, deck_name: str, cards: List[Card],
-                 next_card_id: Optional[int] = None, deck_id: Optional[int] = None):
+                 next_card_id: Optional[int] = None, deck_id: Optional[int] = None, file_path: Optional[str] = None):
         self.deck_id = deck_id
         self.deck_name = deck_name
         self.next_card_id = next_card_id
         self.cards = cards
+        self.file_path = file_path
 
     def normalize_for_output(self):
         if self.next_card_id is None:
