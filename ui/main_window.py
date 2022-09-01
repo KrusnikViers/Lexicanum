@@ -1,21 +1,15 @@
 import sys
 from pathlib import Path
 
-from PySide2.QtCore import Qt, QTimer
+from PySide2.QtCore import Qt, QTimer, Slot
 from PySide2.QtWidgets import QApplication, QMainWindow, QLabel, QFileDialog
 
 from app.data.deck import Deck
-from app.data.storage.deck_json import DeckJsonWriter
+from app.data.storage.anki import AnkiIO
+from app.data.storage.deck_json import DeckJsonIO
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_FULL_NAME, PROJECT_NAME
 from ui.gen.main_window_uic import Ui_MainWindow
-
-
-class _TableIndex:
-    Type = 0
-    Question = 1
-    Answer = 2
-    Note = 3
 
 
 class MainWindow(QMainWindow):
@@ -32,6 +26,7 @@ class MainWindow(QMainWindow):
         QApplication.instance().setAttribute(Qt.AA_DisableWindowContextHelpButton)
         self.status_label = QLabel()
         self.ui.app_status_bar.addWidget(self.status_label, stretch=1)
+        # QStatusBar have an issue with styling temporary messages, so implement temporary messages manually.
         self.status_bar_timer = QTimer(self)
         self.status_bar_timer.setSingleShot(True)
         self.status_bar_timer.setInterval(5000)
@@ -46,12 +41,6 @@ class MainWindow(QMainWindow):
         self.connect_all()
         self.show()
 
-    def restore_window_geometry(self):
-        pass  # TODO
-
-    def store_window_geometry(self):
-        pass  # TODO
-
     def connect_all(self):
         self.ui.deck_open.clicked.connect(self.on_deck_open)
         self.ui.deck_save.clicked.connect(self.on_deck_save)
@@ -60,58 +49,15 @@ class MainWindow(QMainWindow):
         self.status_bar_timer.timeout.connect(self.update_status_bar)
         self.ui.deck_name.textChanged.connect(self.update_state_on_deck_metadata_changed)
 
-    def show_status_message(self, message: str):
-        self.status_label.setText(message)
-        self.status_bar_timer.start()
+    # Window appearance
+    ####################################################################################################################
+    def restore_window_geometry(self):
+        pass  # TODO
 
-    def on_deck_open(self):
-        file_search_result = QFileDialog.getOpenFileName(self, "Open {} deck file...".format(PROJECT_NAME),
-                                                         dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
-                                                         filter="Deck JSON (*.json)")
-        if not file_search_result[0]:
-            return
-        self.open_deck_file(file_search_result[0])
+    def store_window_geometry(self):
+        pass  # TODO
 
-    def on_deck_save(self):
-        if not self.current_deck.file_path:
-            self.on_deck_save_as()
-            return
-
-        self.current_deck.deck_name = self.ui.deck_name.text().strip()
-        if not self.current_deck.deck_name:
-            self.current_deck.deck_name = 'New Deck'
-        self.current_deck.normalize_for_output()
-
-        output_path = Path(self.current_deck.file_path).resolve()
-        DeckJsonWriter.write_to_file(self.current_deck, output_path.with_suffix('.json'))
-        self.was_changed = False
-        self.update_state_on_deck_metadata_changed()
-
-    def on_deck_save_as(self):
-        file_search_result = QFileDialog.getSaveFileName(self, "Save as {} deck file...".format(PROJECT_NAME),
-                                                         dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
-                                                         filter="Deck JSON (*.json)")
-        if not file_search_result[0]:
-            return
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, file_search_result[0])
-        self.current_deck.file_path = file_search_result[0]
-        self.on_deck_save()
-
-    def on_deck_export_anki(self):
-        pass
-
-    def open_deck_file(self, file_path: str):
-        result = DeckJsonWriter.read_from_file(Path(file_path))
-        if not result.is_ok():
-            self.show_status_message(result.status)
-            return
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, file_path)
-        self.current_deck = result.value
-        self.ui.deck_name.setText(self.current_deck.deck_name)
-
-        self.was_changed = False
-        self.update_state_on_deck_metadata_changed()
-
+    @Slot()
     def update_state_on_deck_metadata_changed(self):
         if self.ui.deck_name.text().strip() != self.current_deck.deck_name:
             self.was_changed = True
@@ -119,6 +65,13 @@ class MainWindow(QMainWindow):
         self.ui.deck_save.setEnabled(self.was_changed)
         self.update_status_bar()
 
+    # Status bar functions
+    ####################################################################################################################
+    def show_status_message(self, message: str):
+        self.status_label.setText(message)
+        self.status_bar_timer.start()
+
+    @Slot()
     def update_status_bar(self):
         if self.status_bar_timer.isActive():
             return
@@ -129,3 +82,73 @@ class MainWindow(QMainWindow):
         else:
             message = 'Creating brand new deck'
         self.status_label.setText(message)
+
+    # Deck files operations
+    ####################################################################################################################
+    @Slot()
+    def on_deck_save_as(self):
+        file_search_result = QFileDialog.getSaveFileName(self, "Save as {} deck file...".format(PROJECT_NAME),
+                                                         dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
+                                                         filter="Deck JSON (*.json)")
+        if file_search_result[0]:
+            self.on_deck_save(file_search_result[0])
+
+    @Slot()
+    def on_deck_save(self, file_path=None):
+        self.set_deck_name_as(self.ui.deck_name.text())
+        self.current_deck.normalize_for_output()
+
+        output_path = Path(self.current_deck.file_path if file_path is None else file_path).resolve()
+        status = DeckJsonIO.write_to_file(self.current_deck, output_path.with_suffix('.json'))
+        if not status.is_ok():
+            self.show_status_message(status.status)
+            return
+        self.current_deck.file_path = output_path
+        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, output_path)
+        self.was_changed = False
+        self.update_state_on_deck_metadata_changed()
+
+    @Slot()
+    def on_deck_export_anki(self):
+        file_search_result = QFileDialog.getSaveFileName(self, "Save as Anki project file...",
+                                                         dir=Settings.get(StoredSettings.LAST_ANKI_FILE_PATH),
+                                                         filter="Anki project package (*.apkg)")
+        if not file_search_result[0]:
+            return
+        self.set_deck_name_as(self.ui.deck_name.text())
+        self.current_deck.normalize_for_output()
+
+        output_path = Path(file_search_result[0]).resolve()
+        status = AnkiIO.write_to_file(self.current_deck, output_path.with_suffix('.apkg'))
+        if not status.is_ok():
+            self.show_status_message(status.status)
+            return
+        Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, output_path)
+        self.update_state_on_deck_metadata_changed()
+
+    @Slot()
+    def on_deck_open(self):
+        file_search_result = QFileDialog.getOpenFileName(self, "Open {} deck file...".format(PROJECT_NAME),
+                                                         dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
+                                                         filter="Deck JSON (*.json)")
+        if not file_search_result[0]:
+            return
+        self.open_deck_file(file_search_result[0])
+
+    def open_deck_file(self, file_path: str):
+        result = DeckJsonIO.read_from_file(Path(file_path))
+        if not result.is_ok():
+            self.show_status_message(result.status)
+            return
+        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, file_path)
+        self.current_deck = result.value
+        self.set_deck_name_as(self.current_deck.deck_name)
+        self.was_changed = False
+        self.update_state_on_deck_metadata_changed()
+
+    def set_deck_name_as(self, name: str):
+        new_name = name.strip()
+        if not new_name:
+            new_name = 'New Deck'
+        self.current_deck.deck_name = new_name
+        self.ui.deck_name.setText(new_name)

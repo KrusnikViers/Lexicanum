@@ -8,8 +8,8 @@ from PySide2.QtWidgets import QFileDialog, QApplication, QMainWindow, QTableWidg
 from app.data.card import Card
 from app.data.deck import Deck
 from app.data.language import Language
-from app.data.storage.anki import AnkiWriter
-from app.data.storage.deck_json import DeckJsonWriter
+from app.data.storage.anki import AnkiIO
+from app.data.storage.deck_json import DeckJsonIO
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_NAME, PROJECT_FULL_NAME
 from app.prompts import prompts
@@ -169,8 +169,8 @@ class MainWindow(QMainWindow):
         deck.normalize_for_output()
 
         output_path = Path(file_search_result[0]).resolve()
-        DeckJsonWriter.write_to_file(deck, output_path.with_suffix('.json'))
-        AnkiWriter.write_to_file(deck, output_path.with_suffix('.apkg'))
+        DeckJsonIO.write_to_file(deck, output_path.with_suffix('.json'))
+        AnkiIO.write_to_file(deck, output_path.with_suffix('.apkg'))
 
     @Slot()
     def _deck_import_on_startup_changed(self):
@@ -191,7 +191,7 @@ class MainWindow(QMainWindow):
 
     def _deck_import_from_file(self, file_name: str):
         input_path = Path(file_name).resolve().with_suffix('.json')
-        deck = DeckJsonWriter.read_from_file(input_path)
+        deck = DeckJsonIO.read_from_file(input_path)
         if deck is None:
             return
         self.ui.deck_status.setText(' : deck from {}'.format(str(input_path)))
