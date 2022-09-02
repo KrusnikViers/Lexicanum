@@ -14,7 +14,7 @@ from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_NAME, PROJECT_FULL_NAME
 from app.prompts import prompts
 from app.wrappers import dictionary
-from ui.card_input_old import CardInput
+from ui.deprecated.card_input_old import CardInput
 from ui.gen.main_window_uic import Ui_MainWindow
 
 _TABLE_TYPE_ROLE = Qt.UserRole + 1
