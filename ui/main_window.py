@@ -9,6 +9,7 @@ from app.data.storage.anki import AnkiIO
 from app.data.storage.deck_json import DeckJsonIO
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_FULL_NAME, PROJECT_NAME
+from ui.cards_table_model import CardsTableModel
 from ui.gen.main_window_uic import Ui_MainWindow
 
 
@@ -36,8 +37,9 @@ class MainWindow(QMainWindow):
         self.was_changed = False
         if Settings.get(StoredSettings.IMPORT_ON_STARTUP):
             self.open_deck_file(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
+        self.ui.cards_table_view.setModel(CardsTableModel(self.current_deck))
+            
         self.update_state_on_deck_metadata_changed()
-
         self.connect_all()
         self.show()
 
