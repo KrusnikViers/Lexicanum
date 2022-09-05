@@ -147,7 +147,23 @@ border-color: white white black white ;</string>
      </layout>
     </item>
     <item row="1" column="0">
-     <widget class="QTableView" name="cards_table_view"/>
+     <widget class="QTableView" name="cards_table_view">
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+     </widget>
     </item>
     <item row="1" column="1">
      <layout class="QVBoxLayout" name="_table_right_sidebar_layout">
