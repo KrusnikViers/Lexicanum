@@ -20,24 +20,28 @@ print('Qt converter to use: {}'.format(qt_uic_path))
 
 # Looking for UI files directory.
 ui_files_dir = (Path(__file__).parent.parent / 'ui').resolve()
+gen_files_dir = ui_files_dir / 'gen'
 assert ui_files_dir.is_dir()
-ui_files_dir_strpath = str(ui_files_dir)
-print('Target UI directory: {}'.format(ui_files_dir))
+print('Target UI directory: {}'.format(str(ui_files_dir)))
 print()
 
 # Removing previously generated files.
-print('Cleaning {}'.format(ui_files_dir_strpath + '/gen/...'))
-for existing_file_strpath in glob.glob(ui_files_dir_strpath + '/gen/**/*' + _GEN_FILE_SUFFIX, recursive=True):
+print('Cleaning {}'.format(str(gen_files_dir) + '...'))
+generated_files_pattern = gen_files_dir / '**' / '*{}'.format(_GEN_FILE_SUFFIX)
+for existing_file_strpath in glob.glob(str(generated_files_pattern), recursive=True):
     existing_file = Path(existing_file_strpath)
     assert existing_file.is_file()
     existing_file.unlink()
 
 # Converting UI files.
-for input_file_strpath in glob.glob(ui_files_dir_strpath + '**/*.ui', recursive=True):
+files_to_convert_pattern = ui_files_dir / '**' / '*.ui'
+for input_file_strpath in glob.glob(str(files_to_convert_pattern), recursive=True):
     input_file = Path(input_file_strpath)
-    output_file_strpath = ui_files_dir_strpath + '/gen/' + input_file.stem + _GEN_FILE_SUFFIX
-    print('Converting {} => {}...'.format(input_file_strpath, output_file_strpath))
-    uic_process = run([qt_uic_path, '-g', 'python', '-o', output_file_strpath, input_file_strpath],
+    new_file_name = input_file.name[:-3] + _GEN_FILE_SUFFIX
+    output_file = gen_files_dir / input_file.relative_to(ui_files_dir).with_name(new_file_name)
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    print('Converting {} => {}...'.format(str(input_file), str(output_file)))
+    uic_process = run([qt_uic_path, '-g', 'python', '-o', str(output_file), str(input_file)],
                       timeout=30.0, check=True)
 
 print('---\nAll done!')
