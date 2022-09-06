@@ -9,7 +9,7 @@ from app.data.storage.anki import AnkiIO
 from app.data.storage.deck_json import DeckJsonIO
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_FULL_NAME, PROJECT_NAME
-from ui.cards_table_delegates import CardTypeDelegate, CardPlainStringDelegate
+from ui.cards_table_delegates import CardTypeDelegate, CardPlainStringDelegate, CardStringLookupDelegate
 from ui.cards_table_model import CardsTableModel
 from ui.gen.main_window_uic import Ui_MainWindow
 
@@ -46,6 +46,11 @@ class MainWindow(QMainWindow):
         self.delegate_plain_string = CardPlainStringDelegate()
         self.ui.cards_table_view.setItemDelegateForColumn(
             CardsTableModel.Headers.Note.value, self.delegate_plain_string)
+        self.delegate_string_lookup = CardStringLookupDelegate()
+        self.ui.cards_table_view.setItemDelegateForColumn(
+            CardsTableModel.Headers.Question.value, self.delegate_string_lookup)
+        self.ui.cards_table_view.setItemDelegateForColumn(
+            CardsTableModel.Headers.Answer.value, self.delegate_string_lookup)
 
         self.update_state_on_deck_metadata_changed()
         self.connect_all()
