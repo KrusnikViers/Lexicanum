@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>23</height>
+    <height>24</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,10 @@
    <item>
     <widget class="QPushButton" name="lookup">
      <property name="text">
-      <string>Lookup</string>
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
      </property>
     </widget>
    </item>

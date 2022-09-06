@@ -3,7 +3,6 @@ from PySide2.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
 
 from app.data.card import CardType
 from ui.cards_table_model import CardsTableModel
-from ui.gen.line_edit_with_lookup_uic import Ui_LineEditWithLookup
 
 
 class CardTypeDelegate(QStyledItemDelegate):
@@ -39,22 +38,3 @@ class CardPlainStringDelegate(QStyledItemDelegate):
     def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
         assert isinstance(editor, QLineEdit)
         model.setData(index, editor.text(), Qt.DisplayRole)
-
-
-class CardStringLookupDelegate(QStyledItemDelegate):
-    class Widget(QWidget):
-        def __init__(self, parent: QWidget):
-            super(CardStringLookupDelegate.Widget, self).__init__(parent)
-            self.ui = Ui_LineEditWithLookup()
-            self.ui.setupUi(self)
-
-    def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
-        return self.Widget(parent)
-
-    def setEditorData(self, editor: QWidget, index: QModelIndex) -> None:
-        assert isinstance(editor, self.Widget)
-        editor.ui.line_edit.setText(index.data(Qt.DisplayRole))
-
-    def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
-        assert isinstance(editor, self.Widget)
-        model.setData(index, editor.ui.line_edit.text(), Qt.DisplayRole)

@@ -7,12 +7,18 @@ from app.data.card import Card, CardType
 from app.data.deck import Deck
 
 
+class CardAction(Enum):
+    Delete = 1
+    Add = 2
+
+
 class CardsTableModel(QAbstractTableModel):
     class Headers(Enum):
         Type = 0
         Question = 1
         Answer = 2
         Note = 3
+        Act = 4
 
     HeadersByIndex = {header.value: header for header in Headers}
 
@@ -62,9 +68,11 @@ class CardsTableModel(QAbstractTableModel):
             assert isinstance(value, str)
             card.note = value.strip()
             return True
+        elif self.HeadersByIndex[index.column()] == self.Headers.Act:
+            return True
         assert False
 
-    def data(self, index: QModelIndex, role: int = None) -> Optional[str]:
+    def data(self, index: QModelIndex, role: int = None) -> str | CardAction | None:
         if role != Qt.DisplayRole:
             return None
 
@@ -77,4 +85,6 @@ class CardsTableModel(QAbstractTableModel):
             return card.answer
         elif self.HeadersByIndex[index.column()] == self.Headers.Note:
             return card.note
+        elif self.HeadersByIndex[index.column()] == self.Headers.Act:
+            return None
         assert False
