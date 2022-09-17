@@ -1,8 +1,9 @@
 from PySide2.QtCore import QModelIndex, QAbstractItemModel, Qt
-from PySide2.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox, QLineEdit
+from PySide2.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox, QLineEdit, QPushButton
 
 from app.data.card import CardType
 from ui.cards_table_model import CardsTableModel
+from ui.icons.icons import SharedIcons
 
 
 class CardTypeDelegate(QStyledItemDelegate):
@@ -38,3 +39,11 @@ class CardPlainStringDelegate(QStyledItemDelegate):
     def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
         assert isinstance(editor, QLineEdit)
         model.setData(index, editor.text(), Qt.DisplayRole)
+
+
+class CardActButton(QPushButton):
+    def __init__(self, parent: QWidget, row_number: int):
+        super(CardActButton, self).__init__(parent)
+        self.setStyleSheet('border: 0px;')
+        self.setIcon(SharedIcons.Plus if row_number == 0 else SharedIcons.Trash)
+        self.row_number = row_number

@@ -12,6 +12,7 @@ class CardLineEditWithLookupDelegate(QStyledItemDelegate):
             self.ui = Ui_LineEditWithLookup()
             self.ui.setupUi(self)
             self.ui.lookup.setIcon(SharedIcons.Search)
+            self.setFocusProxy(self.ui.line_edit)
 
     def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
         return self.Widget(parent)

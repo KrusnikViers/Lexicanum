@@ -30,6 +30,18 @@ class CardsTableModel(QAbstractTableModel):
     def card_by_row(self, row: int) -> Card:
         return self.deck.cards[row - 1] if row > 0 else self.stub_card
 
+    def act_on_row(self, row: int) -> None:
+        QModelIndex()
+        if row == 0:
+            new_card = self.stub_card
+            self.beginInsertRows(QModelIndex(), 1, 1)
+            self.deck.cards.insert(0, new_card)
+            self.endInsertRows()
+        else:
+            self.beginRemoveRows(QModelIndex(), row, row)
+            del self.deck.cards[row - 1]
+            self.endRemoveRows()
+
     def flags(self, index: QModelIndex) -> Qt.ItemFlags:
         return Qt.ItemIsEnabled | Qt.ItemIsEditable
 
@@ -46,45 +58,43 @@ class CardsTableModel(QAbstractTableModel):
         if orientation == Qt.Horizontal:
             return self.HeadersByIndex[section].name
         if orientation == Qt.Vertical:
-            return '+' if section == 0 else str(section)
+            return 'New' if section == 0 else str(section)
 
     def setData(self, index: QModelIndex, value: Any, role: int = None) -> bool:
         if role != Qt.DisplayRole:
             return False
         card = self.card_by_row(index.row())
-        if self.HeadersByIndex[index.column()] == self.Headers.Type:
-            assert isinstance(value, CardType)
-            card.card_type = value
-            return True
-        elif self.HeadersByIndex[index.column()] == self.Headers.Question:
-            assert isinstance(value, str)
-            card.question = value.strip()
-            return True
-        elif self.HeadersByIndex[index.column()] == self.Headers.Answer:
-            assert isinstance(value, str)
-            card.answer = value.strip()
-            return True
-        elif self.HeadersByIndex[index.column()] == self.Headers.Note:
-            assert isinstance(value, str)
-            card.note = value.strip()
-            return True
-        elif self.HeadersByIndex[index.column()] == self.Headers.Act:
-            return True
-        assert False
+        match self.HeadersByIndex[index.column()]:
+            case self.Headers.Type:
+                assert isinstance(value, CardType)
+                card.card_type = value
+            case self.Headers.Question:
+                assert isinstance(value, str)
+                card.question = value.strip()
+            case self.Headers.Answer:
+                assert isinstance(value, str)
+                card.answer = value.strip()
+            case self.Headers.Note:
+                assert isinstance(value, str)
+                card.note = value.strip()
+            case self.Headers.Act:
+                pass
+        return True
 
     def data(self, index: QModelIndex, role: int = None) -> str | CardAction | None:
         if role != Qt.DisplayRole:
             return None
 
         card = self.card_by_row(index.row())
-        if self.HeadersByIndex[index.column()] == self.Headers.Type:
-            return card.card_type.name
-        elif self.HeadersByIndex[index.column()] == self.Headers.Question:
-            return card.question
-        elif self.HeadersByIndex[index.column()] == self.Headers.Answer:
-            return card.answer
-        elif self.HeadersByIndex[index.column()] == self.Headers.Note:
-            return card.note
-        elif self.HeadersByIndex[index.column()] == self.Headers.Act:
-            return None
+        match self.HeadersByIndex[index.column()]:
+            case self.Headers.Type:
+                return card.card_type.name
+            case self.Headers.Question:
+                return card.question
+            case self.Headers.Answer:
+                return card.answer
+            case self.Headers.Note:
+                return card.note
+            case self.Headers.Act:
+                return None
         assert False
