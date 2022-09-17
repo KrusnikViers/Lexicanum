@@ -7,20 +7,16 @@ from app.data.card import Card, CardType
 from app.data.deck import Deck
 
 
-class CardAction(Enum):
-    Delete = 1
-    Add = 2
+class CardsModelHeaders(Enum):
+    Type = 0
+    Question = 1
+    Answer = 2
+    Note = 3
+    Act = 4
 
 
 class CardsTableModel(QAbstractTableModel):
-    class Headers(Enum):
-        Type = 0
-        Question = 1
-        Answer = 2
-        Note = 3
-        Act = 4
-
-    HeadersByIndex = {header.value: header for header in Headers}
+    HeadersByIndex = {header.value: header for header in CardsModelHeaders}
 
     def __init__(self, displayed_deck: Deck):
         super(CardsTableModel, self).__init__()
@@ -50,7 +46,7 @@ class CardsTableModel(QAbstractTableModel):
         return len(self.deck.cards) + 1
 
     def columnCount(self, parent: QModelIndex = QModelIndex()) -> int:
-        return len(self.Headers)
+        return len(CardsModelHeaders)
 
     def headerData(self, section: int, orientation: Qt.Orientation, role: int = None) -> Optional[str]:
         if role != Qt.DisplayRole:
@@ -65,36 +61,36 @@ class CardsTableModel(QAbstractTableModel):
             return False
         card = self.card_by_row(index.row())
         match self.HeadersByIndex[index.column()]:
-            case self.Headers.Type:
+            case CardsModelHeaders.Type:
                 assert isinstance(value, CardType)
                 card.card_type = value
-            case self.Headers.Question:
+            case CardsModelHeaders.Question:
                 assert isinstance(value, str)
                 card.question = value.strip()
-            case self.Headers.Answer:
+            case CardsModelHeaders.Answer:
                 assert isinstance(value, str)
                 card.answer = value.strip()
-            case self.Headers.Note:
+            case CardsModelHeaders.Note:
                 assert isinstance(value, str)
                 card.note = value.strip()
-            case self.Headers.Act:
+            case CardsModelHeaders.Act:
                 pass
         return True
 
-    def data(self, index: QModelIndex, role: int = None) -> str | CardAction | None:
+    def data(self, index: QModelIndex, role: int = None) -> str | None:
         if role != Qt.DisplayRole:
             return None
 
         card = self.card_by_row(index.row())
         match self.HeadersByIndex[index.column()]:
-            case self.Headers.Type:
+            case CardsModelHeaders.Type:
                 return card.card_type.name
-            case self.Headers.Question:
+            case CardsModelHeaders.Question:
                 return card.question
-            case self.Headers.Answer:
+            case CardsModelHeaders.Answer:
                 return card.answer
-            case self.Headers.Note:
+            case CardsModelHeaders.Note:
                 return card.note
-            case self.Headers.Act:
+            case CardsModelHeaders.Act:
                 return None
         assert False

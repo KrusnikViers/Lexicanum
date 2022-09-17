@@ -1,7 +1,7 @@
 from PySide2.QtCore import Slot, QModelIndex
-from PySide2.QtWidgets import QTableView, QWidget
+from PySide2.QtWidgets import QTableView, QWidget, QHeaderView
 
-from ui.cards_table_model import CardsTableModel
+from ui.cards_table_model import CardsTableModel, CardsModelHeaders
 from ui.cards_table_subwidgets import CardTypeDelegate, CardPlainStringDelegate, CardActButton
 from ui.line_edit_with_lookup import CardLineEditWithLookupDelegate
 
@@ -14,21 +14,33 @@ class CardsTableView(QTableView):
         self.setModel(model)
         self.delegate_card_type = CardTypeDelegate()
         self.setItemDelegateForColumn(
-            CardsTableModel.Headers.Type.value, self.delegate_card_type)
+            CardsModelHeaders.Type.value, self.delegate_card_type)
         self.delegate_plain_string = CardPlainStringDelegate()
         self.setItemDelegateForColumn(
-            CardsTableModel.Headers.Note.value, self.delegate_plain_string)
+            CardsModelHeaders.Note.value, self.delegate_plain_string)
         self.delegate_string_lookup = CardLineEditWithLookupDelegate()
         self.setItemDelegateForColumn(
-            CardsTableModel.Headers.Question.value, self.delegate_string_lookup)
+            CardsModelHeaders.Question.value, self.delegate_string_lookup)
         self.setItemDelegateForColumn(
-            CardsTableModel.Headers.Answer.value, self.delegate_string_lookup)
+            CardsModelHeaders.Answer.value, self.delegate_string_lookup)
+
+        self.verticalHeader().setSectionResizeMode(QHeaderView.Fixed)
+        self.verticalHeader().setDefaultSectionSize(16)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeaders.Type.value, QHeaderView.Fixed)
+        self.horizontalHeader().resizeSection(CardsModelHeaders.Type.value, 120)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeaders.Question.value, QHeaderView.Interactive)
+        self.horizontalHeader().resizeSection(CardsModelHeaders.Question.value, 200)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeaders.Answer.value, QHeaderView.Interactive)
+        self.horizontalHeader().resizeSection(CardsModelHeaders.Answer.value, 200)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeaders.Note.value, QHeaderView.Stretch)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeaders.Act.value, QHeaderView.Fixed)
+        self.horizontalHeader().resizeSection(CardsModelHeaders.Act.value, 16)
 
         for row in range(0, self.model().rowCount()):
             self._update_act(row)
 
     def _update_act(self, row: int):
-        index = self.model().index(row, CardsTableModel.Headers.Act.value)
+        index = self.model().index(row, CardsModelHeaders.Act.value)
         if not isinstance(self.indexWidget(index), CardActButton):
             new_widget = CardActButton(self, row)
             new_widget.clicked.connect(self._act_button_pressed)
