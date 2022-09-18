@@ -2,7 +2,7 @@ import glob
 from pathlib import Path
 from subprocess import run
 
-import PySide2
+import PySide6
 
 _GEN_FILE_SUFFIX = '_uic.py'
 
@@ -15,7 +15,7 @@ _GEN_FILE_SUFFIX = '_uic.py'
 # File /ui/<some_path>/<file_name>.ui will be translated into /ui/gen/<some_path>/<file_name>_uic.py.
 
 # Looking for the UIC tool. Make sure that requirements are installed!
-qt_uic_path = str((Path(PySide2.__file__).parent / 'uic').resolve())
+qt_uic_path = str((Path(PySide6.__file__).parent / 'uic').resolve())
 print('Qt converter to use: {}'.format(qt_uic_path))
 
 # Looking for UI files directory.

@@ -1,5 +1,5 @@
-from PySide2.QtCore import QModelIndex, QAbstractItemModel, Qt
-from PySide2.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox, QLineEdit, QPushButton
+from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
+from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox, QLineEdit, QPushButton
 
 from app.data.card import CardType
 from ui.cards_table_model import CardsTableModel

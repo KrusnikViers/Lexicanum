@@ -1,7 +1,7 @@
 from typing import List
 from typing import Optional
 
-from PySide2.QtCore import QDateTime
+from PySide6.QtCore import QDateTime
 
 from app.data.card import Card
 

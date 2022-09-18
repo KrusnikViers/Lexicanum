@@ -1,5 +1,5 @@
-from PySide2.QtCore import Slot, QModelIndex
-from PySide2.QtWidgets import QTableView, QWidget, QHeaderView
+from PySide6.QtCore import Slot, QModelIndex
+from PySide6.QtWidgets import QTableView, QWidget, QHeaderView
 
 from ui.cards_table_model import CardsTableModel, CardsModelHeaders
 from ui.cards_table_subwidgets import CardTypeDelegate, CardPlainStringDelegate, CardActButton

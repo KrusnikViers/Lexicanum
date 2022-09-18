@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Optional
 
-from PySide2.QtCore import QDateTime
+from PySide6.QtCore import QDateTime
 
 
 class CardType(Enum):

@@ -1,7 +1,7 @@
 from collections import namedtuple
 from enum import Enum
 
-from PySide2.QtCore import QSettings
+from PySide6.QtCore import QSettings
 
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 

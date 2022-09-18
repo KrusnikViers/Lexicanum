@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Optional, Any
 
-from PySide2.QtCore import Qt, QAbstractTableModel, QModelIndex
+from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex
 
 from app.data.card import Card, CardType
 from app.data.deck import Deck

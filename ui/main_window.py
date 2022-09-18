@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
 
-from PySide2.QtCore import Qt, Slot
-from PySide2.QtWidgets import QApplication, QMainWindow, QFileDialog
+from PySide6.QtCore import Qt, Slot
+from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
 
 from app.data.deck import Deck
 from app.data.storage.anki import AnkiIO
@@ -26,7 +26,6 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.setWindowTitle(PROJECT_FULL_NAME)
         # Disable "help" button on the top panel - context prompts are not supported.
-        QApplication.instance().setAttribute(Qt.AA_DisableWindowContextHelpButton)
         self.restore_window_geometry()
 
         self.status_bar = AppStatusBar(self)

@@ -1,5 +1,5 @@
-from PySide2.QtCore import QTimer, Slot
-from PySide2.QtWidgets import QStatusBar, QWidget, QLabel
+from PySide6.QtCore import QTimer, Slot
+from PySide6.QtWidgets import QStatusBar, QWidget, QLabel
 
 
 class AppStatusBar(QStatusBar):

@@ -1,5 +1,5 @@
-from PySide2.QtCore import QModelIndex, QAbstractItemModel, Qt
-from PySide2.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
+from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
+from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
 
 from ui.gen.line_edit_with_lookup_uic import Ui_LineEditWithLookup
 from ui.icons.icons import SharedIcons
