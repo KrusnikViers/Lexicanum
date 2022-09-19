@@ -1,4 +1,4 @@
-from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
+from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt, Signal
 from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox, QLineEdit, QPushButton
 
 from app.data.card import CardType
@@ -42,6 +42,8 @@ class CardPlainStringDelegate(QStyledItemDelegate):
 
 
 class CardActButton(QPushButton):
+    clicked = Signal()
+
     def __init__(self, parent: QWidget, row_number: int):
         super(CardActButton, self).__init__(parent)
         self.setStyleSheet('border: 0px;')

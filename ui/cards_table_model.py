@@ -1,3 +1,4 @@
+from copy import deepcopy
 from enum import Enum
 from typing import Optional, Any
 
@@ -24,19 +25,25 @@ class CardsTableModel(QAbstractTableModel):
         self.stub_card = Card(CardType.Phrase, '', '', '')
 
     def card_by_row(self, row: int) -> Card:
-        return self.deck.cards[row - 1] if row > 0 else self.stub_card
+        if row > 0:
+            return self.deck.cards[row - 1]
+        return self.stub_card
 
-    def act_on_row(self, row: int) -> None:
-        QModelIndex()
-        if row == 0:
-            new_card = self.stub_card
-            self.beginInsertRows(QModelIndex(), 1, 1)
-            self.deck.cards.insert(0, new_card)
-            self.endInsertRows()
-        else:
-            self.beginRemoveRows(QModelIndex(), row, row)
-            del self.deck.cards[row - 1]
-            self.endRemoveRows()
+    def remove_row(self, row: int) -> None:
+        assert 0 < row <= len(self.deck.cards)
+        self.beginRemoveRows(QModelIndex(), row, row)
+        del self.deck.cards[row - 1]
+        self.endRemoveRows()
+
+    def clean_stub_data(self) -> None:
+        self.setData(self.index(0, CardsModelHeaders.Question.value), '', Qt.DisplayRole)
+        self.setData(self.index(0, CardsModelHeaders.Answer.value), '', Qt.DisplayRole)
+        self.setData(self.index(0, CardsModelHeaders.Note.value), '', Qt.DisplayRole)
+
+    def new_row_from_stub(self):
+        self.beginInsertRows(QModelIndex(), 1, 1)
+        self.deck.cards.insert(0, deepcopy(self.stub_card))
+        self.endInsertRows()
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlags:
         return Qt.ItemIsEnabled | Qt.ItemIsEditable

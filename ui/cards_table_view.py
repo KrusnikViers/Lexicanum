@@ -1,4 +1,5 @@
-from PySide6.QtCore import Slot, QModelIndex
+from PySide6.QtCore import Slot, QModelIndex, Qt
+from PySide6.QtGui import QShortcut, QKeySequence
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView
 
 from ui.cards_table_model import CardsTableModel, CardsModelHeaders
@@ -46,11 +47,49 @@ class CardsTableView(QTableView):
             new_widget.clicked.connect(self._act_button_pressed)
             self.setIndexWidget(index, new_widget)
 
+    def _selected_row(self) -> int | None:
+        if not self.selectionModel().hasSelection():
+            return None
+        return self.selectionModel().selectedRows()[0]
+
+    @Slot()
+    def _on_shortcut_clean(self) -> bool:
+        row = self._selected_row()
+        if row is None:
+            return False
+        model: CardsTableModel = self.model()
+        if row == 0:
+            model.clean_stub_data()
+        else:
+            model.remove_row(row)
+        return True
+
+    @Slot()
+    def _on_shortcut_add(self) -> bool:
+        row = self._selected_row()
+        if row != 0:
+            return False
+        model: CardsTableModel = self.model()
+        model.new_row_from_stub()
+        return True
+
+    @Slot()
+    def _on_shortcut_add_clean(self) -> bool:
+        if self._on_shortcut_add:
+            model: CardsTableModel = self.model()
+            model.clean_stub_data()
+            return True
+        return False
+
     @Slot()
     def _act_button_pressed(self):
         sender: CardActButton = self.sender()
+        row = sender.row_number
         model: CardsTableModel = self.model()
-        model.act_on_row(sender.row_number)
+        if row == 0:
+            model.new_row_from_stub()
+        else:
+            model.remove_row(row)
 
     @Slot()
     def rowsInserted(self, parent: QModelIndex, start: int, end: int) -> None:

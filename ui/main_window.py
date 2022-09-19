@@ -1,8 +1,8 @@
 import sys
 from pathlib import Path
 
-from PySide6.QtCore import Qt, Slot
-from PySide6.QtWidgets import QApplication, QMainWindow, QFileDialog
+from PySide6.QtCore import Slot
+from PySide6.QtWidgets import QMainWindow, QFileDialog
 
 from app.data.deck import Deck
 from app.data.storage.anki import AnkiIO
@@ -13,6 +13,7 @@ from ui.app_status_bar import AppStatusBar
 from ui.cards_table_model import CardsTableModel
 from ui.cards_table_view import CardsTableView
 from ui.gen.main_window_uic import Ui_MainWindow
+from ui.shortcuts import Shortcuts, ShortcutCommand
 
 
 class MainWindow(QMainWindow):
@@ -27,6 +28,9 @@ class MainWindow(QMainWindow):
         self.setWindowTitle(PROJECT_FULL_NAME)
         # Disable "help" button on the top panel - context prompts are not supported.
         self.restore_window_geometry()
+
+        self.shortcuts = Shortcuts(self)
+        self.shortcuts.activated.connect(self.on_shortcut_activated)
 
         self.status_bar = AppStatusBar(self)
         self.setStatusBar(self.status_bar)
@@ -73,6 +77,10 @@ class MainWindow(QMainWindow):
         else:
             message = 'Creating brand new deck'
         self.status_bar.show_message(message)
+
+    @Slot(ShortcutCommand)
+    def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
+        print(shortcut_command)
 
     # Deck files operations
     ####################################################################################################################
