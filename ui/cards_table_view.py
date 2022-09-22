@@ -1,10 +1,10 @@
-from PySide6.QtCore import Slot, QModelIndex, Qt
-from PySide6.QtGui import QShortcut, QKeySequence
-from PySide6.QtWidgets import QTableView, QWidget, QHeaderView
+from PySide6.QtCore import Slot, QModelIndex
+from PySide6.QtWidgets import QTableView, QWidget, QHeaderView, QAbstractItemView, QAbstractItemDelegate
 
 from ui.cards_table_model import CardsTableModel, CardsModelHeaders
 from ui.cards_table_subwidgets import CardTypeDelegate, CardPlainStringDelegate, CardActButton
 from ui.line_edit_with_lookup import CardLineEditWithLookupDelegate
+from ui.shortcuts import ShortcutCommand
 
 
 class CardsTableView(QTableView):
@@ -24,6 +24,8 @@ class CardsTableView(QTableView):
             CardsModelHeaders.Question.value, self.delegate_string_lookup)
         self.setItemDelegateForColumn(
             CardsModelHeaders.Answer.value, self.delegate_string_lookup)
+
+        self.current_editor: QAbstractItemDelegate | None = None
 
         self.verticalHeader().setSectionResizeMode(QHeaderView.Fixed)
         self.verticalHeader().setDefaultSectionSize(16)
@@ -48,38 +50,29 @@ class CardsTableView(QTableView):
             self.setIndexWidget(index, new_widget)
 
     def _selected_row(self) -> int | None:
-        if not self.selectionModel().hasSelection():
-            return None
-        return self.selectionModel().selectedRows()[0]
+        current_index = self.currentIndex()
+        if current_index.row() != -1 and \
+                self.state() == QAbstractItemView.EditingState and \
+                self.indexWidget(current_index).hasFocus():
+            return self.currentIndex().row()
+        return None
 
-    @Slot()
-    def _on_shortcut_clean(self) -> bool:
+    def _apply_open_editor_changes(self):
+        if self.state() == QAbstractItemView.EditingState:
+            self.commitData(self.indexWidget(self.currentIndex()))
+
+    def shortcut_action(self, shortcut_command: ShortcutCommand):
         row = self._selected_row()
+        model: CardsTableModel = self.model()
         if row is None:
-            return False
-        model: CardsTableModel = self.model()
-        if row == 0:
+            return
+        self._apply_open_editor_changes()
+        if row == 0 and shortcut_command in (ShortcutCommand.ENTER, ShortcutCommand.ENTER_AND_CONTINUE):
+            model.new_row_from_stub()
+        if row == 0 and shortcut_command in (ShortcutCommand.ENTER, ShortcutCommand.CLEAR):
             model.clean_stub_data()
-        else:
+        if row != 0 and shortcut_command == ShortcutCommand.CLEAR:
             model.remove_row(row)
-        return True
-
-    @Slot()
-    def _on_shortcut_add(self) -> bool:
-        row = self._selected_row()
-        if row != 0:
-            return False
-        model: CardsTableModel = self.model()
-        model.new_row_from_stub()
-        return True
-
-    @Slot()
-    def _on_shortcut_add_clean(self) -> bool:
-        if self._on_shortcut_add:
-            model: CardsTableModel = self.model()
-            model.clean_stub_data()
-            return True
-        return False
 
     @Slot()
     def _act_button_pressed(self):
@@ -87,6 +80,7 @@ class CardsTableView(QTableView):
         row = sender.row_number
         model: CardsTableModel = self.model()
         if row == 0:
+            self._apply_open_editor_changes()
             model.new_row_from_stub()
         else:
             model.remove_row(row)

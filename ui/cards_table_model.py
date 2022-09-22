@@ -24,6 +24,15 @@ class CardsTableModel(QAbstractTableModel):
         self.deck = displayed_deck
         self.stub_card = Card(CardType.Phrase, '', '', '')
 
+    def update_views(self, row_from: int, row_to: int | None = None):
+        if row_to is None:
+            row_to = row_from
+        self.dataChanged.emit(
+            self.index(row_to, CardsModelHeaders.Type.value, QModelIndex()),
+            self.index(row_to, CardsModelHeaders.Act.value, QModelIndex()),
+            Qt.DisplayRole
+        )
+
     def card_by_row(self, row: int) -> Card:
         if row > 0:
             return self.deck.cards[row - 1]
@@ -36,14 +45,17 @@ class CardsTableModel(QAbstractTableModel):
         self.endRemoveRows()
 
     def clean_stub_data(self) -> None:
-        self.setData(self.index(0, CardsModelHeaders.Question.value), '', Qt.DisplayRole)
-        self.setData(self.index(0, CardsModelHeaders.Answer.value), '', Qt.DisplayRole)
-        self.setData(self.index(0, CardsModelHeaders.Note.value), '', Qt.DisplayRole)
+        self.stub_card.answer = ''
+        self.stub_card.question = ''
+        self.stub_card.note = ''
+        self.update_views(0)
 
     def new_row_from_stub(self):
-        self.beginInsertRows(QModelIndex(), 1, 1)
+        _ROW_INDEX = 1
+        self.beginInsertRows(QModelIndex(), _ROW_INDEX, _ROW_INDEX)
         self.deck.cards.insert(0, deepcopy(self.stub_card))
         self.endInsertRows()
+        self.update_views(_ROW_INDEX)
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlags:
         return Qt.ItemIsEnabled | Qt.ItemIsEditable
@@ -80,8 +92,7 @@ class CardsTableModel(QAbstractTableModel):
             case CardsModelHeaders.Note:
                 assert isinstance(value, str)
                 card.note = value.strip()
-            case CardsModelHeaders.Act:
-                pass
+        self.update_views(index.row())
         return True
 
     def data(self, index: QModelIndex, role: int = None) -> str | None:

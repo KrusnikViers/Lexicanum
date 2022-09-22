@@ -80,7 +80,8 @@ class MainWindow(QMainWindow):
 
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
-        print(shortcut_command)
+        if shortcut_command != ShortcutCommand.SUGGEST:
+            self.table_view.shortcut_action(shortcut_command)
 
     # Deck files operations
     ####################################################################################################################
