@@ -4,11 +4,12 @@ from typing import Optional
 from PySide6.QtCore import QDateTime
 
 from app.data.card import Card
+from app.data.storage.path import Path
 
 
 class Deck:
     def __init__(self, deck_name: str, cards: List[Card],
-                 next_card_id: Optional[int] = None, deck_id: Optional[int] = None, file_path: Optional[str] = None):
+                 next_card_id: Optional[int] = None, deck_id: Optional[int] = None, file_path: Optional[Path] = None):
         self.deck_id = deck_id
         self.deck_name = deck_name
         self.next_card_id = next_card_id

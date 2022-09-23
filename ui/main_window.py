@@ -1,5 +1,4 @@
 import sys
-from pathlib import Path
 
 from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QMainWindow, QFileDialog
@@ -7,6 +6,7 @@ from PySide6.QtWidgets import QMainWindow, QFileDialog
 from app.data.deck import Deck
 from app.data.storage.anki import AnkiIO
 from app.data.storage.deck_json import DeckJsonIO
+from app.data.storage.path import Path
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_FULL_NAME, PROJECT_NAME
 from ui.app_status_bar import AppStatusBar
@@ -69,11 +69,11 @@ class MainWindow(QMainWindow):
         if self.ui.deck_name.text().strip() != self.current_deck.deck_name:
             self.was_changed = True
         self.ui.deck_save.setVisible(self.current_deck.file_path is not None)
-        self.ui.deck_save.setEnabled(self.was_changed)
         if self.current_deck.file_path is not None:
             saved_status = 'Unsaved changes in ' if self.was_changed else ''
             message = '{}{} (id{}), {}'.format(
-                saved_status, self.current_deck.deck_name, self.current_deck.deck_id, self.current_deck.file_path)
+                saved_status, self.current_deck.deck_name,
+                self.current_deck.deck_id, self.current_deck.file_path.as_str())
         else:
             message = 'Creating brand new deck'
         self.status_bar.show_message(message)
@@ -91,20 +91,20 @@ class MainWindow(QMainWindow):
                                                          dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
                                                          filter="Deck JSON (*.json)")
         if file_search_result[0]:
-            self.on_deck_save(file_search_result[0])
+            raw_output_path = Path(file_search_result[0])
+            self.on_deck_save(raw_output_path)
 
     @Slot()
-    def on_deck_save(self, file_path=None):
+    def on_deck_save(self, raw_output_path: Path | None = None):
         self.set_deck_name_as(self.ui.deck_name.text())
         self.current_deck.normalize_for_output()
 
-        output_path = Path(self.current_deck.file_path if file_path is None else file_path).resolve()
-        status = DeckJsonIO.write_to_file(self.current_deck, output_path.with_suffix('.json'))
+        output_path = raw_output_path if raw_output_path else self.current_deck.file_path
+        status = DeckJsonIO.write_to_file(self.current_deck, output_path)
         if not status.is_ok():
             self.status_bar.show_timed_message(status.status)
             return
-        self.current_deck.file_path = output_path
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, output_path)
+        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, output_path.as_str())
         self.was_changed = False
         self.update_state_on_deck_metadata_changed()
 
@@ -118,12 +118,12 @@ class MainWindow(QMainWindow):
         self.set_deck_name_as(self.ui.deck_name.text())
         self.current_deck.normalize_for_output()
 
-        output_path = Path(file_search_result[0]).resolve()
-        status = AnkiIO.write_to_file(self.current_deck, output_path.with_suffix('.apkg'))
+        output_path = Path(file_search_result[0])
+        status = AnkiIO.write_to_file(self.current_deck, output_path)
         if not status.is_ok():
             self.status_bar.show_timed_message(status.status)
             return
-        Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, output_path)
+        Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, output_path.as_str())
         self.update_state_on_deck_metadata_changed()
 
     @Slot()
@@ -135,12 +135,16 @@ class MainWindow(QMainWindow):
             return
         self.open_deck_file(file_search_result[0])
 
-    def open_deck_file(self, file_path: str):
-        result = DeckJsonIO.read_from_file(Path(file_path))
+    def open_deck_file(self, raw_file_path: str):
+        input_path = Path(raw_file_path)
+        if not input_path.exists():
+            self.status_bar.show_timed_message('{} not read: does not exist'.format(input_path.as_str()))
+            return
+        result = DeckJsonIO.read_from_file(input_path)
         if not result.is_ok():
             self.status_bar.show_timed_message(result.status)
             return
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, file_path)
+        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, input_path.as_str())
         self.current_deck = result.value
         self.set_deck_name_as(self.current_deck.deck_name)
         self.was_changed = False

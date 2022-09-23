@@ -1,11 +1,11 @@
 import html
-from pathlib import Path
 
 import genanki
 
 from app.data.card import Card
 from app.data.deck import Deck
 from app.data.status_or import Status
+from app.data.storage.path import Path
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 
 # Update this field each time the model is changed!
@@ -57,12 +57,13 @@ class _Note(genanki.Note):
 
 class AnkiIO:
     @staticmethod
-    def write_to_file(deck: Deck, output_path: Path) -> Status:
+    def write_to_file(deck: Deck, generic_path: Path) -> Status:
         anki_deck = genanki.Deck(deck.deck_id, deck.deck_name)
         for card in deck.cards:
             anki_deck.add_note(_Note(card))
+        output_path = generic_path.with_suffix('.apkg')
         try:
-            anki_deck.write_to_file(str(output_path))
+            anki_deck.write_to_file(output_path)
         except PermissionError as e:
-            return Status.from_status('Writing to {} failed: {}'.format(str(output_path), str(e)))
+            return Status.from_status('Writing to {} failed: {}'.format(output_path, str(e)))
         return Status.no_error()
