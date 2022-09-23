@@ -13,7 +13,6 @@ class CardsModelHeaders(Enum):
     Question = 1
     Answer = 2
     Note = 3
-    Act = 4
 
 
 class CardsTableModel(QAbstractTableModel):
@@ -29,7 +28,7 @@ class CardsTableModel(QAbstractTableModel):
             row_to = row_from
         self.dataChanged.emit(
             self.index(row_to, CardsModelHeaders.Type.value, QModelIndex()),
-            self.index(row_to, CardsModelHeaders.Act.value, QModelIndex()),
+            self.index(row_to, CardsModelHeaders.Note.value, QModelIndex()),
             Qt.DisplayRole
         )
 
@@ -109,6 +108,4 @@ class CardsTableModel(QAbstractTableModel):
                 return card.answer
             case CardsModelHeaders.Note:
                 return card.note
-            case CardsModelHeaders.Act:
-                return None
         assert False

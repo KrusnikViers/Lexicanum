@@ -152,6 +152,19 @@ border-color: white white black white ;</string>
     <item row="1" column="1">
      <layout class="QVBoxLayout" name="_table_right_sidebar_layout">
       <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>**Shift + Enter**: Add card  
+**Ctrl + Enter**: Add and clear  
+**Ctrl + Del**: Delete card  
+**Ctrl + Space**: Translation</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::MarkdownText</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="deck_export_anki">
         <property name="text">
          <string>Export to Anki...</string>

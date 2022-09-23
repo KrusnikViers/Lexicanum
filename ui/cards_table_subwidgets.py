@@ -39,13 +39,3 @@ class CardPlainStringDelegate(QStyledItemDelegate):
     def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
         assert isinstance(editor, QLineEdit)
         model.setData(index, editor.text(), Qt.DisplayRole)
-
-
-class CardActButton(QPushButton):
-    clicked = Signal()
-
-    def __init__(self, parent: QWidget, row_number: int):
-        super(CardActButton, self).__init__(parent)
-        self.setStyleSheet('border: 0px;')
-        self.setIcon(SharedIcons.Plus if row_number == 0 else SharedIcons.Trash)
-        self.row_number = row_number
