@@ -7,6 +7,7 @@ from app.data.card import Card
 from app.data.storage.path import Path
 
 
+# TODO: Move to_dict here
 class Deck:
     def __init__(self, deck_name: str, cards: List[Card],
                  next_card_id: Optional[int] = None, deck_id: Optional[int] = None, file_path: Optional[Path] = None):

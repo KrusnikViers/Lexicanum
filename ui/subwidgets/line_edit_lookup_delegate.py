@@ -1,15 +1,15 @@
 from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
 from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
 
-from ui.gen.line_edit_with_lookup_uic import Ui_LineEditWithLookup
+from ui.gen.subwidgets.line_edit_lookup_delegate_uic import Ui_LineEditLookupDelegate
 from ui.icons.icons import SharedIcons
 
 
-class CardLineEditWithLookupDelegate(QStyledItemDelegate):
+class LineEditLookupDelegate(QStyledItemDelegate):
     class Widget(QWidget):
         def __init__(self, parent: QWidget):
-            super(CardLineEditWithLookupDelegate.Widget, self).__init__(parent)
-            self.ui = Ui_LineEditWithLookup()
+            super(LineEditLookupDelegate.Widget, self).__init__(parent)
+            self.ui = Ui_LineEditLookupDelegate()
             self.ui.setupUi(self)
             self.ui.lookup.setIcon(SharedIcons.Search)
             self.setFocusProxy(self.ui.line_edit)

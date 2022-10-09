@@ -1,0 +1,3 @@
+from ui.subwidgets.card_type_delegate import CardTypeDelegate
+from ui.subwidgets.line_edit_lookup_delegate import LineEditLookupDelegate
+from ui.subwidgets.line_edit_simple_delegate import LineEditSimpleDelegate

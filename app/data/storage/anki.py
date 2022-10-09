@@ -12,6 +12,8 @@ from app.info import PROJECT_NAME, PUBLISHER_NAME
 _MODEL_VERSION = 2
 _MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)) % 10000000000
 
+# TODO: Fix ANKI cards type
+
 _MODEL = genanki.Model(
     _MODEL_ID,
     "{} model".format(PROJECT_NAME),
@@ -58,12 +60,12 @@ class _Note(genanki.Note):
 class AnkiIO:
     @staticmethod
     def write_to_file(deck: Deck, generic_path: Path) -> Status:
-        anki_deck = genanki.Deck(deck.deck_id, deck.deck_name)
+        output_deck = genanki.Deck(deck.deck_id, deck.deck_name)
         for card in deck.cards:
-            anki_deck.add_note(_Note(card))
+            output_deck.add_note(_Note(card))
         output_path = generic_path.with_suffix('.apkg')
         try:
-            anki_deck.write_to_file(output_path)
+            output_deck.write_to_file(output_path)
         except PermissionError as e:
             return Status.from_status('Writing to {} failed: {}'.format(output_path, str(e)))
         return Status.no_error()

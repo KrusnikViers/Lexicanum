@@ -1,7 +1,7 @@
 import sys
 
 from PySide6.QtCore import Slot
-from PySide6.QtWidgets import QMainWindow, QFileDialog
+from PySide6.QtWidgets import QDialog, QMainWindow
 
 from app.data.deck import Deck
 from app.data.storage.anki import AnkiIO
@@ -10,37 +10,19 @@ from app.data.storage.path import Path
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_FULL_NAME, PROJECT_NAME
 from ui.app_status_bar import AppStatusBar
-from ui.cards_model.summary import SummaryCardsModel
+from ui.cards_model.lookup import LookupCardsModel
 from ui.cards_table_view import CardsTableView
-from ui.gen.main_window_uic import Ui_MainWindow
+from ui.gen.lookup_dialog_uic import Ui_LookupDialog
 from ui.shortcuts import Shortcuts, ShortcutCommand
 
+class LookupDialog(QDialog):
+    def __init__(self, parent: QMainWindow, lookup_model: LookupCardsModel):
+        super(LookupDialog, self).__init__(parent)
 
-class MainWindow(QMainWindow):
-    def closeEvent(self, _) -> None:
-        sys.exit(0)
-
-    def __init__(self):
-        super(MainWindow, self).__init__()
-
-        self.ui = Ui_MainWindow()
+        self.ui = Ui_LookupDialog()
         self.ui.setupUi(self)
-        self.setWindowTitle(PROJECT_FULL_NAME)
-        # Disable "help" button on the top panel - context prompts are not supported.
-        self.restore_window_geometry()
 
-        self.shortcuts = Shortcuts(self)
-        self.shortcuts.activated.connect(self.on_shortcut_activated)
-
-        self.status_bar = AppStatusBar(self)
-        self.setStatusBar(self.status_bar)
-
-        self.current_deck = Deck('New Deck', [])
-        self.was_changed = False
-        if Settings.get(StoredSettings.IMPORT_ON_STARTUP):
-            self.open_deck_file(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
-
-        self.table_model = SummaryCardsModel(self.current_deck)
+        self.table_model = lookup_model
         self.table_view = CardsTableView(self, self.table_model)
         self.ui.cards_table_view_placeholder.deleteLater()
         self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.table_view)

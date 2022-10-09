@@ -1,9 +1,8 @@
-from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt, Signal
-from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox, QLineEdit, QPushButton
+from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
+from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox
 
 from app.data.card import CardType
-from ui.cards_table_model import CardsTableModel
-from ui.icons.icons import SharedIcons
+from ui.cards_model.generic import GenericCardsModel
 
 
 class CardTypeDelegate(QStyledItemDelegate):
@@ -16,7 +15,7 @@ class CardTypeDelegate(QStyledItemDelegate):
 
     def setEditorData(self, editor: QWidget, index: QModelIndex) -> None:
         assert isinstance(editor, QComboBox)
-        assert isinstance(index.model(), CardsTableModel)
+        assert isinstance(index.model(), GenericCardsModel)
         type_to_choose = index.model().card_by_row(index.row()).card_type
         for selection_index in range(0, editor.count()):
             if editor.itemData(selection_index, role=Qt.UserRole) == type_to_choose:
@@ -26,16 +25,3 @@ class CardTypeDelegate(QStyledItemDelegate):
     def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
         assert isinstance(editor, QComboBox)
         model.setData(index, editor.currentData(Qt.UserRole), Qt.DisplayRole)
-
-
-class CardPlainStringDelegate(QStyledItemDelegate):
-    def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
-        return QLineEdit(parent)
-
-    def setEditorData(self, editor: QWidget, index: QModelIndex) -> None:
-        assert isinstance(editor, QLineEdit)
-        editor.setText(index.data(Qt.DisplayRole))
-
-    def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
-        assert isinstance(editor, QLineEdit)
-        model.setData(index, editor.text(), Qt.DisplayRole)
