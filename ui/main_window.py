@@ -1,6 +1,6 @@
 import sys
 
-from PySide6.QtCore import Slot
+from PySide6.QtCore import Slot, QSize, QPoint, QRect
 from PySide6.QtWidgets import QMainWindow, QFileDialog
 
 from app.data.deck import Deck
@@ -21,6 +21,7 @@ from ui.shared.shortcuts import Shortcuts, ShortcutCommand
 
 class MainWindow(QMainWindow):
     def closeEvent(self, _) -> None:
+        self.store_window_geometry()
         sys.exit(0)
 
     def __init__(self):
@@ -29,8 +30,6 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.setWindowTitle(PROJECT_FULL_NAME)
-        # Disable "help" button on the top panel - context prompts are not supported.
-        self.restore_window_geometry()
 
         self.shortcuts = Shortcuts(self)
         self.shortcuts.activated.connect(self.on_shortcut_activated)
@@ -55,6 +54,8 @@ class MainWindow(QMainWindow):
         self.connect_all()
         self.show()
 
+        self.restore_window_geometry()
+
     def connect_all(self):
         self.ui.deck_open.clicked.connect(self.on_deck_open)
         self.ui.deck_save.clicked.connect(self.on_deck_save)
@@ -62,13 +63,21 @@ class MainWindow(QMainWindow):
         self.ui.deck_export_anki.clicked.connect(self.on_deck_export_anki)
         self.ui.deck_name.textChanged.connect(self.update_state_on_deck_metadata_changed)
 
-    # Window appearance
-    ####################################################################################################################
     def restore_window_geometry(self):
-        pass  # TODO
+        min_size: QSize = self.minimumSize()
+        geometry: QRect = Settings.get(StoredSettings.MAIN_WINDOW_GEOMETRY)
+        screen = self.screen().availableGeometry()
+
+        min_size_enough = geometry.width() >= min_size.width() and geometry.height() >= min_size.height()
+        if not screen.contains(geometry) or not min_size_enough:
+            half_min_size: QPoint = QPoint(min_size.width() / 2, min_size.height() / 2)
+            geometry = QRect(screen.center() - half_min_size, min_size)
+        self.setGeometry(geometry)
+        self.table_view.restore_geometry()
 
     def store_window_geometry(self):
-        pass  # TODO
+        self.table_view.store_geometry()
+        Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
 
     @Slot()
     def update_state_on_deck_metadata_changed(self):

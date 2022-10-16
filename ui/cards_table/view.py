@@ -2,6 +2,7 @@ from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView, QAbstractItemDelegate
 
 from app.data.language import Language
+from app.data.storage.settings import Settings, StoredSettings
 from app.translation_lookup.lookup import LookupData
 from ui.cards_table.delegate import CardTypeDelegate, LineEditSimpleDelegate, LineEditLookupDelegate
 from ui.cards_table.model.abstract import CardsModelHeader, AbstractCardsModel
@@ -28,15 +29,11 @@ class CardsTableView(QTableView):
 
         self.current_editor: QAbstractItemDelegate | None = None
 
-        # TODO: Make proper resizing behaviour
         self.verticalHeader().setSectionResizeMode(QHeaderView.Fixed)
         self.verticalHeader().setDefaultSectionSize(16)
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Type.value, QHeaderView.Fixed)
-        self.horizontalHeader().resizeSection(CardsModelHeader.Type.value, 120)
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Question.value, QHeaderView.Interactive)
-        self.horizontalHeader().resizeSection(CardsModelHeader.Question.value, 250)
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Answer.value, QHeaderView.Interactive)
-        self.horizontalHeader().resizeSection(CardsModelHeader.Answer.value, 250)
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Note.value, QHeaderView.Stretch)
 
     def _selected_valid_index(self) -> QModelIndex | None:
@@ -63,6 +60,18 @@ class CardsTableView(QTableView):
     def _apply_open_editor_changes(self):
         if index := self._selected_valid_index():
             self.commitData(self.indexWidget(index))
+
+    def restore_geometry(self):
+        sizes = [int(size) for size in Settings.get(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED).split(' ')]
+        if len(sizes) != len(CardsModelHeader):
+            sizes = [120, 250, 250, 0]
+            assert len(sizes) == len(CardsModelHeader)
+        for index, restored_size in enumerate(sizes):
+            self.horizontalHeader().resizeSection(index, restored_size)
+
+    def store_geometry(self):
+        sizes = ' '.join([str(self.horizontalHeader().sectionSize(header.value)) for header in CardsModelHeader])
+        Settings.set(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED, sizes)
 
     def shortcut_action(self, shortcut_command: ShortcutCommand):
         row = self._selected_row()

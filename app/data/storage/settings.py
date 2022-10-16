@@ -1,7 +1,7 @@
 from collections import namedtuple
 from enum import Enum
 
-from PySide6.QtCore import QSettings
+from PySide6.QtCore import QSettings, QRect
 
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 
@@ -13,6 +13,8 @@ class StoredSettings(Enum):
     LAST_PROJECT_FILE_PATH = _StoredSettingMeta('last_json_path', str, '')
     LAST_ANKI_FILE_PATH = _StoredSettingMeta('last_apkg_path', str, '')
     IMPORT_ON_STARTUP = _StoredSettingMeta('startup_autoimport', bool, True)
+    MAIN_WINDOW_GEOMETRY = _StoredSettingMeta('main_window_geometry', QRect, QRect())
+    SUMMARY_TABLE_COLUMNS_WIDTH_SPACED = _StoredSettingMeta('summary_table_columns_width', str, '')
 
 
 class Settings:
@@ -22,6 +24,7 @@ class Settings:
 
     @classmethod
     def set(cls, key: StoredSettings, value):
+        assert (isinstance(value, key.value.type))
         cls._qt_adapter().setValue(key.value.stored_name, value)
 
     @classmethod
