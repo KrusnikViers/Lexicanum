@@ -5,7 +5,7 @@ from typing import Optional, Any
 from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex, QObject
 
 from app.data.card import Card, CardType
-from ui.shortcuts import ShortcutCommand
+from ui.shared.shortcuts import ShortcutCommand
 
 
 class CardsModelHeader(Enum):
@@ -28,11 +28,11 @@ class CardsModelHeader(Enum):
         assert False
 
 
-class GenericCardsModel(QAbstractTableModel):
+class AbstractCardsModel(QAbstractTableModel):
     __metaclass__ = ABCMeta
 
     def __init__(self, parent: QObject | None = None):
-        super(GenericCardsModel, self).__init__(parent)
+        super(AbstractCardsModel, self).__init__(parent)
 
     def update_view(self, row_from: int, row_to: int | None = None):
         if row_to is None:

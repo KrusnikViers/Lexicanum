@@ -1,8 +1,8 @@
 from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
 from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
 
-from ui.gen.subwidgets.line_edit_lookup_delegate_uic import Ui_LineEditLookupDelegate
-from ui.icons.icons import SharedIcons
+from ui.gen.cards_table.delegate.line_edit_lookup_uic import Ui_LineEditLookupDelegate
+from ui.shared.icons.icons import SharedIcons
 
 
 class LineEditLookupDelegate(QStyledItemDelegate):

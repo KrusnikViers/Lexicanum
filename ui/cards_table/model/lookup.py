@@ -3,12 +3,12 @@ from typing import List
 from PySide6.QtCore import QModelIndex
 
 from app.data.card import Card
-from ui.cards_model.generic import GenericCardsModel
-from ui.cards_model.summary import SummaryCardsModel
-from ui.shortcuts import ShortcutCommand
+from ui.cards_table.model.abstract import AbstractCardsModel
+from ui.cards_table.model.summary import SummaryCardsModel
+from ui.shared.shortcuts import ShortcutCommand
 
 
-class LookupCardsModel(GenericCardsModel):
+class LookupCardsModel(AbstractCardsModel):
     def __init__(self, suggestions: List[Card], summary_model: SummaryCardsModel):
         super(LookupCardsModel, self).__init__()
         self.suggestions = suggestions

@@ -4,11 +4,11 @@ from PySide6.QtCore import QModelIndex
 
 from app.data.card import Card, CardType
 from app.data.deck import Deck
-from ui.cards_model.generic import GenericCardsModel
-from ui.shortcuts import ShortcutCommand
+from ui.cards_table.model.abstract import AbstractCardsModel
+from ui.shared.shortcuts import ShortcutCommand
 
 
-class SummaryCardsModel(GenericCardsModel):
+class SummaryCardsModel(AbstractCardsModel):
     def __init__(self, displayed_deck: Deck):
         super(SummaryCardsModel, self).__init__()
         self.deck = displayed_deck

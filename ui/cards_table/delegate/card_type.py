@@ -2,7 +2,7 @@ from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt
 from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem, QComboBox
 
 from app.data.card import CardType
-from ui.cards_model.generic import GenericCardsModel
+from ui.cards_table.model.abstract import AbstractCardsModel
 
 
 class CardTypeDelegate(QStyledItemDelegate):
@@ -15,7 +15,7 @@ class CardTypeDelegate(QStyledItemDelegate):
 
     def setEditorData(self, editor: QWidget, index: QModelIndex) -> None:
         assert isinstance(editor, QComboBox)
-        assert isinstance(index.model(), GenericCardsModel)
+        assert isinstance(index.model(), AbstractCardsModel)
         type_to_choose = index.model().card_by_row(index.row()).card_type
         for selection_index in range(0, editor.count()):
             if editor.itemData(selection_index, role=Qt.UserRole) == type_to_choose:

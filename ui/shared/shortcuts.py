@@ -2,8 +2,8 @@ from enum import Enum
 from typing import Dict
 
 from PySide6.QtCore import QObject, Slot, Signal, Qt
-from PySide6.QtWidgets import QMainWindow
 from PySide6.QtGui import QShortcut, QKeySequence
+from PySide6.QtWidgets import QMainWindow
 
 
 class ShortcutCommand(Enum):

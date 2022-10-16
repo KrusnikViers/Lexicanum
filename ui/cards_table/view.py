@@ -1,13 +1,15 @@
-from PySide6.QtCore import QModelIndex
+from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView, QAbstractItemDelegate
 
-from ui.cards_model.generic import CardsModelHeader, GenericCardsModel
-from ui.shortcuts import ShortcutCommand
-from ui.subwidgets import CardTypeDelegate, LineEditSimpleDelegate, LineEditLookupDelegate
+from app.data.language import Language
+from app.translation_lookup.lookup import LookupData
+from ui.cards_table.delegate import CardTypeDelegate, LineEditSimpleDelegate, LineEditLookupDelegate
+from ui.cards_table.model.abstract import CardsModelHeader, AbstractCardsModel
+from ui.shared.shortcuts import ShortcutCommand
 
 
 class CardsTableView(QTableView):
-    def __init__(self, parent: QWidget, model: GenericCardsModel):
+    def __init__(self, parent: QWidget, model: AbstractCardsModel):
         super(CardsTableView, self).__init__(parent)
 
         self.setEditTriggers(self.AllEditTriggers)
@@ -48,6 +50,16 @@ class CardsTableView(QTableView):
             return index.row()
         return None
 
+    def active_lookup_data(self) -> LookupData | None:
+        if index := self._selected_valid_index():
+            if CardsModelHeader.of(index.column()) in (CardsModelHeader.Answer, CardsModelHeader.Question):
+                # TODO: Move elsewhere
+                language = Language.EN if CardsModelHeader.of(
+                    index.column()) == CardsModelHeader.Answer else Language.DE
+                self._apply_open_editor_changes()
+                return LookupData(self.model().data(index, Qt.DisplayRole), language)
+        return None
+
     def _apply_open_editor_changes(self):
         if index := self._selected_valid_index():
             self.commitData(self.indexWidget(index))
@@ -57,5 +69,5 @@ class CardsTableView(QTableView):
         if row is None:
             return
         self._apply_open_editor_changes()
-        model: GenericCardsModel = self.model()
+        model: AbstractCardsModel = self.model()
         model.shortcut_action(row, shortcut_command)

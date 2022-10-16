@@ -9,11 +9,14 @@ from app.data.storage.deck_json import DeckJsonIO
 from app.data.storage.path import Path
 from app.data.storage.settings import Settings, StoredSettings
 from app.info import PROJECT_FULL_NAME, PROJECT_NAME
+from app.translation_lookup.lookup import Lookup
 from ui.app_status_bar import AppStatusBar
-from ui.cards_model.summary import SummaryCardsModel
-from ui.cards_table_view import CardsTableView
+from ui.cards_table.model.lookup import LookupCardsModel
+from ui.cards_table.model.summary import SummaryCardsModel
+from ui.cards_table.view import CardsTableView
 from ui.gen.main_window_uic import Ui_MainWindow
-from ui.shortcuts import Shortcuts, ShortcutCommand
+from ui.lookup_dialog import LookupDialog
+from ui.shared.shortcuts import Shortcuts, ShortcutCommand
 
 
 class MainWindow(QMainWindow):
@@ -42,8 +45,11 @@ class MainWindow(QMainWindow):
 
         self.table_model = SummaryCardsModel(self.current_deck)
         self.table_view = CardsTableView(self, self.table_model)
-        self.ui.cards_table_view_placeholder.deleteLater()
         self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.table_view)
+        self.ui.cards_table_view_placeholder.setParent(None)
+        self.ui.cards_table_view_placeholder.deleteLater()
+
+        self.lookup_dialog: LookupDialog | None = None
 
         self.update_state_on_deck_metadata_changed()
         self.connect_all()
@@ -80,6 +86,18 @@ class MainWindow(QMainWindow):
 
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
+        if shortcut_command == ShortcutCommand.SUGGEST and self.lookup_dialog is None:
+            lookup_data = self.table_view.active_lookup_data()
+            if lookup_data is None:
+                return
+            suggestions = Lookup.suggestions(lookup_data)
+            if len(suggestions) == 0:
+                return
+            lookup_model = LookupCardsModel(suggestions, self.table_model)
+            self.lookup_dialog = LookupDialog(self, lookup_model)
+            self.lookup_dialog.exec()
+            self.lookup_dialog = None
+
         if shortcut_command != ShortcutCommand.SUGGEST:
             self.table_view.shortcut_action(shortcut_command)
 
