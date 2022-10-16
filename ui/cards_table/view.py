@@ -1,4 +1,6 @@
-from PySide6.QtCore import QModelIndex, Qt
+from typing import List
+
+from PySide6.QtCore import QModelIndex, Qt, QRect
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView, QAbstractItemDelegate
 
 from app.data.language import Language
@@ -57,21 +59,35 @@ class CardsTableView(QTableView):
                 return LookupData(self.model().data(index, Qt.DisplayRole), language)
         return None
 
+    def active_row_rect(self) -> QRect:
+        if index := self._selected_valid_index():
+            view_geometry = self.geometry()
+            return QRect(view_geometry.left(),
+                         self.rowViewportPosition(index.row()) + view_geometry.top() + self.viewport().geometry().top(),
+                         view_geometry.width(), self.rowHeight(index.row()))
+
     def _apply_open_editor_changes(self):
         if index := self._selected_valid_index():
             self.commitData(self.indexWidget(index))
 
+    def get_header_sizes(self) -> List[int]:
+        return [self.horizontalHeader().sectionSize(header.value) for header in CardsModelHeader]
+
+    def set_header_sizes(self, sizes: List[int]):
+        for index, size in enumerate(sizes):
+            self.horizontalHeader().resizeSection(index, size)
+
     def restore_geometry(self):
         sizes = [int(size) for size in Settings.get(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED).split(' ')]
         if len(sizes) != len(CardsModelHeader):
+            print('Table geometry invalid: {}, restoring default'.format(sizes))
             sizes = [120, 250, 250, 0]
             assert len(sizes) == len(CardsModelHeader)
-        for index, restored_size in enumerate(sizes):
-            self.horizontalHeader().resizeSection(index, restored_size)
+        self.set_header_sizes(sizes)
 
     def store_geometry(self):
-        sizes = ' '.join([str(self.horizontalHeader().sectionSize(header.value)) for header in CardsModelHeader])
-        Settings.set(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED, sizes)
+        sizes_serialized = ' '.join(map(str, self.get_header_sizes()))
+        Settings.set(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED, sizes_serialized)
 
     def shortcut_action(self, shortcut_command: ShortcutCommand):
         row = self._selected_row()

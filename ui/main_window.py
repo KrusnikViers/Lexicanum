@@ -70,6 +70,8 @@ class MainWindow(QMainWindow):
 
         min_size_enough = geometry.width() >= min_size.width() and geometry.height() >= min_size.height()
         if not screen.contains(geometry) or not min_size_enough:
+            print('Screen geometry is wrong ({} is outside the screen {} or less than {}), restoring default'.format(
+                geometry, screen, min_size))
             half_min_size: QPoint = QPoint(min_size.width() / 2, min_size.height() / 2)
             geometry = QRect(screen.center() - half_min_size, min_size)
         self.setGeometry(geometry)
@@ -96,19 +98,21 @@ class MainWindow(QMainWindow):
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
         if shortcut_command == ShortcutCommand.SUGGEST and self.lookup_dialog is None:
-            lookup_data = self.table_view.active_lookup_data()
-            if lookup_data is None:
-                return
-            suggestions = Lookup.suggestions(lookup_data)
-            if len(suggestions) == 0:
-                return
-            lookup_model = LookupCardsModel(suggestions, self.table_model)
-            self.lookup_dialog = LookupDialog(self, lookup_model)
-            self.lookup_dialog.exec()
-            self.lookup_dialog = None
+            self.lookup_and_suggest()
 
         if shortcut_command != ShortcutCommand.SUGGEST:
             self.table_view.shortcut_action(shortcut_command)
+
+    def lookup_and_suggest(self):
+        lookup_data = self.table_view.active_lookup_data()
+        if lookup_data is None:
+            return
+        suggestions = Lookup.suggestions(lookup_data)
+        lookup_model = LookupCardsModel(suggestions, self.table_model)
+        self.lookup_dialog = LookupDialog(self, lookup_model)
+        self.lookup_dialog.adjust_to_row(self.table_view.active_row_rect(), self.table_view.get_header_sizes())
+        self.lookup_dialog.exec()
+        self.lookup_dialog = None
 
     # Deck files operations
     ####################################################################################################################
