@@ -3,6 +3,7 @@ from typing import List
 from PySide6.QtCore import QModelIndex, Qt, QRect
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView, QAbstractItemDelegate
 
+from app.data.card import Card
 from app.data.language import Language
 from app.data.storage.settings import Settings, StoredSettings
 from app.translation_lookup.lookup import LookupData
@@ -38,19 +39,20 @@ class CardsTableView(QTableView):
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Answer.value, QHeaderView.Interactive)
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Note.value, QHeaderView.Stretch)
 
-    def _selected_valid_index(self) -> QModelIndex | None:
+    def _focused_index(self) -> QModelIndex | None:
         current_index = self.currentIndex()
         if current_index.isValid() and self.indexWidget(current_index).hasFocus():
             return current_index
         return None
 
-    def _selected_row(self) -> int | None:
-        if index := self._selected_valid_index():
-            return index.row()
+    def _selected_index(self) -> QModelIndex | None:
+        current_index = self.currentIndex()
+        if current_index.isValid():
+            return current_index
         return None
 
-    def active_lookup_data(self) -> LookupData | None:
-        if index := self._selected_valid_index():
+    def lookup_data_in_focus(self) -> LookupData | None:
+        if index := self._focused_index():
             if CardsModelHeader.of(index.column()) in (CardsModelHeader.Answer, CardsModelHeader.Question):
                 # TODO: Move elsewhere
                 language = Language.EN if CardsModelHeader.of(
@@ -59,15 +61,21 @@ class CardsTableView(QTableView):
                 return LookupData(self.model().data(index, Qt.DisplayRole), language)
         return None
 
-    def active_row_rect(self) -> QRect:
-        if index := self._selected_valid_index():
+    def selected_card(self) -> Card:
+        index = self._selected_index()
+        assert index is not None
+        model: AbstractCardsModel = self.model()
+        return model.card_by_row(index.row())
+
+    def selected_card_rect(self) -> QRect:
+        if index := self._selected_index():
             view_geometry = self.geometry()
             return QRect(view_geometry.left(),
                          self.rowViewportPosition(index.row()) + view_geometry.top() + self.viewport().geometry().top(),
                          view_geometry.width(), self.rowHeight(index.row()))
 
     def _apply_open_editor_changes(self):
-        if index := self._selected_valid_index():
+        if index := self._focused_index():
             self.commitData(self.indexWidget(index))
 
     def get_header_sizes(self) -> List[int]:
@@ -90,9 +98,9 @@ class CardsTableView(QTableView):
         Settings.set(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED, sizes_serialized)
 
     def shortcut_action(self, shortcut_command: ShortcutCommand):
-        row = self._selected_row()
-        if row is None:
+        index = self._selected_index()
+        if index is None:
             return
         self._apply_open_editor_changes()
         model: AbstractCardsModel = self.model()
-        model.shortcut_action(row, shortcut_command)
+        model.shortcut_action(index.row(), shortcut_command)

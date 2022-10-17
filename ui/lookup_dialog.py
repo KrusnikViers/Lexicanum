@@ -15,6 +15,8 @@ class LookupDialog(QDialog):
         self.ui = Ui_LookupDialog()
         self.ui.setupUi(self)
         self.setWindowFlags(Qt.Window | Qt.FramelessWindowHint)
+        self.setModal(True)
+        self.ui.cancel.clicked.connect(self.reject)
 
         self.table_model = lookup_model
         self.table_view = CardsTableView(self, self.table_model)
@@ -36,11 +38,8 @@ class LookupDialog(QDialog):
         desired_table_view_height = \
             self.table_model.rowCount(QModelIndex()) * row_rect.height() + 4
         desired_dialog_height = desired_table_view_height + dialog_geometry.height() - view_geometry.height()
-        print(desired_table_view_height)
-        print(desired_dialog_height)
         dialog_height = min(desired_dialog_height, window_geometry.height() - row_rect.bottom())
         dialog_left = window_geometry.left() + row_rect.left() - view_geometry.left()
         dialog_width = row_rect.width() + dialog_geometry.width() - view_geometry.width()
-        print(QRect(dialog_left, dialog_top, dialog_width, dialog_height))
         self.setGeometry(QRect(dialog_left, dialog_top, dialog_width, dialog_height))
         self.table_view.set_header_sizes(column_sizes)

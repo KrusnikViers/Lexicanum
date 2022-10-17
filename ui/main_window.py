@@ -104,13 +104,14 @@ class MainWindow(QMainWindow):
             self.table_view.shortcut_action(shortcut_command)
 
     def lookup_and_suggest(self):
-        lookup_data = self.table_view.active_lookup_data()
+        lookup_data = self.table_view.lookup_data_in_focus()
         if lookup_data is None:
             return
         suggestions = Lookup.suggestions(lookup_data)
+        suggestions.append(self.table_view.selected_card())
         lookup_model = LookupCardsModel(suggestions, self.table_model)
         self.lookup_dialog = LookupDialog(self, lookup_model)
-        self.lookup_dialog.adjust_to_row(self.table_view.active_row_rect(), self.table_view.get_header_sizes())
+        self.lookup_dialog.adjust_to_row(self.table_view.selected_card_rect(), self.table_view.get_header_sizes())
         self.lookup_dialog.exec()
         self.lookup_dialog = None
 
