@@ -99,9 +99,7 @@ class MainWindow(QMainWindow):
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
         if shortcut_command == ShortcutCommand.SUGGEST and self.lookup_dialog is None:
             self.lookup_and_suggest()
-
-        if shortcut_command != ShortcutCommand.SUGGEST:
-            self.table_view.shortcut_action(shortcut_command)
+        self.table_view.shortcut_action(shortcut_command)
 
     def lookup_and_suggest(self):
         lookup_data = self.table_view.lookup_data_in_focus()

@@ -3,7 +3,7 @@ from typing import Dict
 
 from PySide6.QtCore import QObject, Slot, Signal, Qt
 from PySide6.QtGui import QShortcut, QKeySequence
-from PySide6.QtWidgets import QMainWindow
+from PySide6.QtWidgets import QWidget
 
 
 class ShortcutCommand(Enum):
@@ -16,7 +16,7 @@ class ShortcutCommand(Enum):
 class Shortcuts(QObject):
     activated = Signal(ShortcutCommand)
 
-    def __init__(self, parent: QMainWindow):
+    def __init__(self, parent: QWidget):
         super(Shortcuts, self).__init__(parent)
 
         self.shortcuts: Dict[ShortcutCommand, QShortcut] = {

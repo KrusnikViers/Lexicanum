@@ -9,10 +9,8 @@ from app.data.storage.path import Path
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 
 # Update this field each time the model is changed!
-_MODEL_VERSION = 2
+_MODEL_VERSION = 3
 _MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)) % 10000000000
-
-# TODO: Fix ANKI cards type
 
 _MODEL = genanki.Model(
     _MODEL_ID,
@@ -28,15 +26,25 @@ _MODEL = genanki.Model(
     templates=[
         {
             'name': 'Direct question',
-            'qfmt': '{{type}}<hr/>{{question}}<hr/>{{note}}',
-            'afmt': '{{type}}<hr/>{{answer}}<hr/>{{note}}',
+            'qfmt': '{{type}}<br/><hr/>{{question}}<br/><hr/>{{note}}',
+            'afmt': '{{type}}<br/><hr/>{{answer}}<br/><hr/>{{note}}',
         },
         {
             'name': 'Reverse question',
-            'qfmt': '{{type}}<hr/>{{answer}}<hr/>{{note}}',
-            'afmt': '{{type}}<hr/>{{question}}<hr/>{{note}}',
+            'qfmt': '{{type}}<br/><hr/>{{answer}}<br/><hr/>{{note}}',
+            'afmt': '{{type}}<br/><hr/>{{question}}<br/><hr/>{{note}}',
         },
-    ])
+    ],
+    css='''
+        .card {
+            font-family: arial;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+    '''
+)
 
 
 class _Note(genanki.Note):
