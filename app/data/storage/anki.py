@@ -1,7 +1,7 @@
 import html
 
 import genanki
-
+from app.data.language import Language
 from app.data.card import Card
 from app.data.deck import Deck
 from app.data.status_or import Status
@@ -9,8 +9,22 @@ from app.data.storage.path import Path
 from app.info import PROJECT_NAME, PUBLISHER_NAME
 
 # Update this field each time the model is changed!
-_MODEL_VERSION = 3
+_MODEL_VERSION = 4
 _MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)) % 10000000000
+
+
+def _build_card_html(is_for_question: bool) -> str:
+    return '''
+        {type} in {language}
+        <br/><hr/>
+        {statement}
+        <br/><hr/>
+        {note}
+    '''.format(type='{{type}}',
+               language='{{question_language}}' if is_for_question else '{{answer_language}}',
+               statement='{{question}}' if is_for_question else '{{answer}}',
+               note='{{note}}')
+
 
 _MODEL = genanki.Model(
     _MODEL_ID,
@@ -19,20 +33,22 @@ _MODEL = genanki.Model(
         {'name': 'card_id'},
         {'name': 'type'},
         {'name': 'question'},
+        {'name': 'question_language'},
         {'name': 'answer'},
+        {'name': 'answer_language'},
         {'name': 'note'}
     ],
     sort_field_index=1,
     templates=[
         {
             'name': 'Direct question',
-            'qfmt': '{{type}}<br/><hr/>{{question}}<br/><hr/>{{note}}',
-            'afmt': '{{type}}<br/><hr/>{{answer}}<br/><hr/>{{note}}',
+            'qfmt': _build_card_html(is_for_question=True),
+            'afmt': _build_card_html(is_for_question=False),
         },
         {
             'name': 'Reverse question',
-            'qfmt': '{{type}}<br/><hr/>{{answer}}<br/><hr/>{{note}}',
-            'afmt': '{{type}}<br/><hr/>{{question}}<br/><hr/>{{note}}',
+            'qfmt': _build_card_html(is_for_question=False),
+            'afmt': _build_card_html(is_for_question=True),
         },
     ],
     css='''
@@ -55,7 +71,9 @@ class _Note(genanki.Note):
                 str(card.card_id),
                 card.card_type.name,
                 html.escape(card.question),
+                Language.DE.value,
                 html.escape(card.answer),
+                Language.EN.value,
                 html.escape(card.note),
             ]
         )
