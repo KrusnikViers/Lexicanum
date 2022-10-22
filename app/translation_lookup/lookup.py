@@ -3,7 +3,7 @@ from collections import namedtuple
 from typing import List
 
 from app.data.card import Card
-from app.translation_lookup.dictionary.api import get_raw_translations_list
+from app.translation_lookup.api import get_raw_translations_list
 from app.translation_lookup.prompts.nouns import construct_noun_cards
 
 LookupData = namedtuple('LookupData', 'word language')

@@ -88,9 +88,9 @@ class MainWindow(QMainWindow):
         self.ui.deck_save.setVisible(self.current_deck.file_path is not None)
         if self.current_deck.file_path is not None:
             saved_status = 'Unsaved changes in ' if self.was_changed else ''
-            message = '{}{} (id{}), {}'.format(
+            message = '{}{} (id{}, {} cards), {}'.format(
                 saved_status, self.current_deck.deck_name,
-                self.current_deck.deck_id, self.current_deck.file_path.as_str())
+                self.current_deck.deck_id, len(self.current_deck.cards), self.current_deck.file_path.as_str())
         else:
             message = 'Creating brand new deck'
         self.status_bar.show_message(message)

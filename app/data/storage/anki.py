@@ -15,11 +15,15 @@ _MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)
 
 def _build_card_html(is_for_question: bool) -> str:
     return '''
+        <div class="top_desc">
         {type} in {language}
-        <br/><hr/>
+        </div><hr/>
+        <div class="statement">
         {statement}
-        <br/><hr/>
+        </div><hr/>
+        <div class="bottom_desc">
         {note}
+        </div>
     '''.format(type='{{type}}',
                language='{{question_language}}' if is_for_question else '{{answer_language}}',
                statement='{{question}}' if is_for_question else '{{answer}}',
@@ -54,10 +58,15 @@ _MODEL = genanki.Model(
     css='''
         .card {
             font-family: arial;
-            font-size: 20px;
+            font-size: 25pt;
             text-align: center;
             color: black;
             background-color: white;
+        }
+        .top_desc,
+        .bottom_desc {
+            font-size: 12pt;
+            color: #777
         }
     '''
 )
