@@ -1,16 +1,21 @@
+import hashlib
 import html
 
 import genanki
-from app.data.language import Language
+
 from app.data.card import Card
 from app.data.deck import Deck
+from app.data.language import Language
 from app.data.status_or import Status
 from app.data.storage.path import Path
-from app.info import PROJECT_NAME, PUBLISHER_NAME
+from app.info import PROJECT_NAME
 
-# Update this field each time the model is changed!
+# Update this field each time the model fields are changed
 _MODEL_VERSION = 4
-_MODEL_ID = hash("{}|{}|{}".format(PUBLISHER_NAME, PROJECT_NAME, _MODEL_VERSION)) % 10000000000
+# Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
+_MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
+
+_MODEL_ID = int(hashlib.md5(_MODEL_SALTED_VERSION).hexdigest()[:7], 16)
 
 
 def _build_card_html(is_for_question: bool) -> str:
@@ -32,7 +37,7 @@ def _build_card_html(is_for_question: bool) -> str:
 
 _MODEL = genanki.Model(
     _MODEL_ID,
-    "{} model".format(PROJECT_NAME),
+    "{} Model".format(PROJECT_NAME),
     fields=[
         {'name': 'card_id'},
         {'name': 'type'},
