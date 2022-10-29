@@ -10,6 +10,10 @@ class CardType(Enum):
 
     # Parts of speech
     Noun = 1
+    Adjective = 2
+    Verb = 3
+    Adverb = 10
+    Particle = 11
 
     # Complex concepts
     Phrase = 100
