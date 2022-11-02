@@ -138,6 +138,13 @@ border-color: white white black white ;</string>
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="deck_export_anki">
+        <property name="text">
+         <string>Export to Anki...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <spacer name="_spacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -171,9 +178,16 @@ border-color: white white black white ;</string>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="deck_export_anki">
+       <widget class="QPushButton" name="mode_toggle">
         <property name="text">
-         <string>Export to Anki...</string>
+         <string>Mode: Insert</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mode_search_duplicates">
+        <property name="text">
+         <string>Search for duplicates</string>
         </property>
        </widget>
       </item>

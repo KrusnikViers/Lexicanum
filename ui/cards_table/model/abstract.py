@@ -3,6 +3,7 @@ from enum import Enum
 from typing import Optional, Any
 
 from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex, QObject
+from PySide6.QtGui import QColor
 
 from app.data.card import Card, CardType
 from ui.shared.shortcuts import ShortcutCommand
@@ -51,6 +52,10 @@ class AbstractCardsModel(QAbstractTableModel):
     def shortcut_action(self, row: int, command: ShortcutCommand):
         pass
 
+    @abstractmethod
+    def highlight_color(self, index: QModelIndex) -> QColor | None:
+        return None
+
     def flags(self, index: QModelIndex) -> Qt.ItemFlags:
         return Qt.ItemIsEnabled | Qt.ItemIsEditable
 
@@ -84,6 +89,8 @@ class AbstractCardsModel(QAbstractTableModel):
         return True
 
     def data(self, index: QModelIndex, role: int = None) -> str | None:
+        if role == Qt.BackgroundRole:
+            return self.highlight_color(index)
         if role != Qt.DisplayRole:
             return None
 
