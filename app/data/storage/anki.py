@@ -11,29 +11,38 @@ from app.data.storage.path import Path
 from app.info import PROJECT_NAME
 
 # Update this field each time the model fields are changed
-_MODEL_VERSION = 4
+_MODEL_VERSION = 5
 # Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
 _MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
 
 _MODEL_ID = int(hashlib.md5(_MODEL_SALTED_VERSION).hexdigest()[:7], 16)
 
+_QUESTION_CARD = '''
+<div class="top_desc">
+  {{question_language}} {{type}}
+</div><hr/>
+<div class="content">
+  {{question}}<br/>
+  <div class="additional">
+    {{question_additional}}
+  </div>
+</div><hr/>
+<div class="bottom_desc">
+  {{note}}
+</div>
+'''
 
-def _build_card_html(is_for_question: bool) -> str:
-    return '''
-        <div class="top_desc">
-        {type} in {language}
-        </div><hr/>
-        <div class="statement">
-        {statement}
-        </div><hr/>
-        <div class="bottom_desc">
-        {note}
-        </div>
-    '''.format(type='{{type}}',
-               language='{{question_language}}' if is_for_question else '{{answer_language}}',
-               statement='{{question}}' if is_for_question else '{{answer}}',
-               note='{{note}}')
-
+_ANSWER_CARD = '''
+<div class="top_desc">
+  {{answer_language}} {{type}}
+</div><hr/>
+<div class="content">
+  {{answer}}
+</div><hr/>
+<div class="bottom_desc">
+  {{note}}
+</div>
+'''
 
 _MODEL = genanki.Model(
     _MODEL_ID,
@@ -42,6 +51,7 @@ _MODEL = genanki.Model(
         {'name': 'card_id'},
         {'name': 'type'},
         {'name': 'question'},
+        {'name': 'question_additional'},
         {'name': 'question_language'},
         {'name': 'answer'},
         {'name': 'answer_language'},
@@ -51,40 +61,46 @@ _MODEL = genanki.Model(
     templates=[
         {
             'name': 'Direct question',
-            'qfmt': _build_card_html(is_for_question=True),
-            'afmt': _build_card_html(is_for_question=False),
+            'qfmt': _QUESTION_CARD,
+            'afmt': _ANSWER_CARD
         },
         {
             'name': 'Reverse question',
-            'qfmt': _build_card_html(is_for_question=False),
-            'afmt': _build_card_html(is_for_question=True),
+            'qfmt': _ANSWER_CARD,
+            'afmt': _QUESTION_CARD
         },
     ],
     css='''
-        .card {
-            font-family: arial;
-            font-size: 25pt;
-            text-align: center;
-            color: black;
-            background-color: white;
-        }
-        .top_desc,
-        .bottom_desc {
-            font-size: 12pt;
-            color: #777
-        }
+      .card {
+        font-family: arial;
+        font-size: 25pt;
+        text-align: center;
+        color: black;
+        background-color: white;
+      }
+      .content > .additional {
+        margin-top: 8px;
+        font-size: 18pt;
+      }
+      .top_desc,
+      .bottom_desc {
+        font-size: 16pt;
+        color: #888
+      }
     '''
 )
 
 
 class _Note(genanki.Note):
     def __init__(self, card: Card):
+        question_split = [html.escape(part.strip()) for part in card.question.split('/')]
         super(_Note, self).__init__(
             model=_MODEL,
             fields=[
                 str(card.card_id),
                 card.card_type.name,
-                html.escape(card.question),
+                question_split[0],
+                '<br/>'.join(question_split[1:]),
                 Language.DE.value,
                 html.escape(card.answer),
                 Language.EN.value,
