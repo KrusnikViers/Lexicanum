@@ -20,10 +20,10 @@ class Shortcuts(QObject):
         super(Shortcuts, self).__init__(parent)
 
         self.shortcuts: Dict[ShortcutCommand, QShortcut] = {
-            ShortcutCommand.ENTER_AND_CONTINUE: QShortcut(QKeySequence(Qt.SHIFT + Qt.Key_Return), parent),
-            ShortcutCommand.ENTER: QShortcut(QKeySequence(Qt.CTRL + Qt.Key_Return), parent),
-            ShortcutCommand.CLEAR: QShortcut(QKeySequence(Qt.CTRL + Qt.Key_Delete), parent),
-            ShortcutCommand.SUGGEST: QShortcut(QKeySequence(Qt.CTRL + Qt.Key_Space), parent),
+            ShortcutCommand.ENTER_AND_CONTINUE: QShortcut(QKeySequence(Qt.SHIFT | Qt.Key_Return), parent),
+            ShortcutCommand.ENTER: QShortcut(QKeySequence(Qt.CTRL | Qt.Key_Return), parent),
+            ShortcutCommand.CLEAR: QShortcut(QKeySequence(Qt.CTRL | Qt.Key_Delete), parent),
+            ShortcutCommand.SUGGEST: QShortcut(QKeySequence(Qt.CTRL | Qt.Key_Space), parent),
         }
         for shortcut in self.shortcuts.values():
             shortcut.setContext(Qt.WindowShortcut)

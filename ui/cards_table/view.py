@@ -16,7 +16,7 @@ class CardsTableView(QTableView):
     def __init__(self, parent: QWidget, model: AbstractCardsModel):
         super(CardsTableView, self).__init__(parent)
 
-        self.setEditTriggers(self.AllEditTriggers)
+        self.setEditTriggers(self.EditTrigger.AllEditTriggers)
         self.setModel(model)
         self.card_type_delegate = CardTypeDelegate()
         self.setItemDelegateForColumn(
@@ -32,12 +32,13 @@ class CardsTableView(QTableView):
 
         self.current_editor: QAbstractItemDelegate | None = None
 
-        self.verticalHeader().setSectionResizeMode(QHeaderView.Fixed)
+        self.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
         self.verticalHeader().setDefaultSectionSize(16)
-        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Type.value, QHeaderView.Fixed)
-        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Question.value, QHeaderView.Interactive)
-        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Answer.value, QHeaderView.Interactive)
-        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Note.value, QHeaderView.Stretch)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Type.value, QHeaderView.ResizeMode.Fixed)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Question.value,
+                                                     QHeaderView.ResizeMode.Interactive)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Answer.value, QHeaderView.ResizeMode.Interactive)
+        self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Note.value, QHeaderView.ResizeMode.Stretch)
 
     def _focused_index(self) -> QModelIndex | None:
         current_index = self.currentIndex()
@@ -86,7 +87,8 @@ class CardsTableView(QTableView):
             self.horizontalHeader().resizeSection(index, size)
 
     def restore_geometry(self):
-        sizes = [int(size) for size in Settings.get(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED).split(' ')]
+        sizes_packed = Settings.get(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED)
+        sizes = [] if len(sizes_packed) == 0 else [int(size) for size in sizes_packed.split(' ')]
         if len(sizes) != len(CardsModelHeader):
             print('Table geometry invalid: {}, restoring default'.format(sizes))
             sizes = [120, 250, 250, 0]
