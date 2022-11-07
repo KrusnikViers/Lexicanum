@@ -39,10 +39,8 @@ class LookupDialog(QDialog):
 
         dialog_top = row_rect.bottom() + window_geometry.top()
         # No need to adjust for viewport, as headers are hidden. Last 4px are for rounding headroom on HiDPI displays.
-        desired_table_view_height = \
-            self.table_model.rowCount(QModelIndex()) * row_rect.height() + 4
-        desired_dialog_height = desired_table_view_height + dialog_geometry.height() - view_geometry.height()
-        dialog_height = min(desired_dialog_height, window_geometry.height() - row_rect.bottom())
+        desired_table_view_height = self.table_model.rowCount(QModelIndex()) * row_rect.height() + 2
+        dialog_height = desired_table_view_height + dialog_geometry.height() - view_geometry.height()
         dialog_left = window_geometry.left() + row_rect.left() - view_geometry.left()
         dialog_width = row_rect.width() + dialog_geometry.width() - view_geometry.width()
         self.setGeometry(QRect(dialog_left, dialog_top, dialog_width, dialog_height))

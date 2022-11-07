@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>409</width>
-    <height>202</height>
+    <width>419</width>
+    <height>96</height>
    </rect>
   </property>
   <layout class="QHBoxLayout" name="main_layout">
@@ -27,7 +27,30 @@
     <number>3</number>
    </property>
    <item>
-    <widget class="QTableView" name="table_view_placeholder"/>
+    <layout class="QVBoxLayout" name="_layout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTableView" name="table_view_placeholder"/>
+     </item>
+     <item>
+      <spacer name="_spacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
    </item>
    <item>
     <layout class="QVBoxLayout" name="_layout">

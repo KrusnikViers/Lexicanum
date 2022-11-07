@@ -32,6 +32,7 @@ class CardsTableView(QTableView):
 
         self.current_editor: QAbstractItemDelegate | None = None
 
+        self.verticalHeader().setVisible(False)
         self.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
         self.verticalHeader().setDefaultSectionSize(16)
         self.horizontalHeader().setSectionResizeMode(CardsModelHeader.Type.value, QHeaderView.ResizeMode.Fixed)
