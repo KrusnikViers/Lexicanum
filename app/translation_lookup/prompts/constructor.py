@@ -15,6 +15,8 @@ class PromptConstructor:
         'verb': CardType.Verb,
         'adverb': CardType.Adverb,
         'particle': CardType.Particle,
+        'conjunction': CardType.Conjunction,
+        'pronoun': CardType.Pronoun,
     }
 
     _SPECIAL_HANDLERS = {
