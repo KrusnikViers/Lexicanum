@@ -14,10 +14,14 @@ class CardType(Enum):
     Verb = 3
     Adverb = 10
     Particle = 11
+    Conjunction = 12
+    Pronoun = 13
+    Interjection = 14
 
     # Complex concepts
     Phrase = 100
     Ordering = 101
+    Form = 102
 
 
 class Card:
