@@ -17,6 +17,7 @@ class PromptConstructor:
         'particle': CardType.Particle,
         'conjunction': CardType.Conjunction,
         'pronoun': CardType.Pronoun,
+        'interjection': CardType.Interjection
     }
 
     _SPECIAL_HANDLERS = {

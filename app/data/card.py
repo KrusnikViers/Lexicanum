@@ -16,6 +16,7 @@ class CardType(Enum):
     Particle = 11
     Conjunction = 12
     Pronoun = 13
+    Interjection = 14
 
     # Complex concepts
     Phrase = 100
