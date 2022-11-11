@@ -1,18 +1,18 @@
 from enum import Enum
 from typing import Optional
 
-from PySide6.QtCore import QDateTime
-
 
 class CardType(Enum):
     # Internal value
     Invalid = 0
 
-    # Parts of speech
+    # Major parts of speech
     Noun = 1
     Adjective = 2
     Verb = 3
-    Adverb = 10
+    Adverb = 4
+
+    # Minor parts of speech
     Particle = 11
     Conjunction = 12
     Pronoun = 13
@@ -26,30 +26,29 @@ class CardType(Enum):
 
 class Card:
     def __init__(self, card_type: CardType,
-                 question: str, answer: str,
-                 note: Optional[str] = None, card_id: Optional[int] = None, created_at_sec: Optional[int] = None):
+                 question: str, answer: str, note: str,
+                 card_id: Optional[int] = None):
         assert card_type is not CardType.Invalid
-        self.card_type = card_type
-        self.question = question
-        self.answer = answer
-        self.note = note
-        self.card_id = card_id
-        self.created_at_sec = created_at_sec if created_at_sec is not None else QDateTime.currentSecsSinceEpoch()
+        self.card_type: CardType = card_type
+        self.question: str = question
+        self.answer: str = answer
+        self.note: str = note
+        self.card_id: int | None = card_id
 
     @classmethod
-    def from_dict(cls, card_dict: dict):
+    def from_dict(cls, card_dict: dict) -> 'Card':
         return cls(CardType(card_dict['card_type']),
                    card_dict['question'],
                    card_dict['answer'],
                    card_dict['note'],
-                   card_dict['card_id'],
-                   card_dict['created_at_sec'])
+                   card_dict['card_id'])
 
     def to_dict(self) -> dict:
+        # Should be assigned by deck beforehand.
+        assert self.card_id is not None
         return {'card_type': self.card_type.value,
                 'question': self.question,
                 'answer': self.answer,
                 'note': self.note,
                 'card_id': self.card_id,
-                'created_at_sec': self.created_at_sec,
                 }

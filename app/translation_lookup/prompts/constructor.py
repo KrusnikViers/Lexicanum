@@ -1,8 +1,7 @@
 from pprint import pformat
 from typing import List
 
-from app.data.card import Card, CardType
-from app.data.language import Language
+from app.data import Card, CardType, Language
 from app.translation_lookup.prompts import german
 
 
@@ -37,6 +36,7 @@ class PromptConstructor:
 
         # Trivial prompt construction
         return [Card(card_type,
-                     definition['text'].capitalize(),
-                     translation['text'].capitalize())
+                     question=definition['text'].capitalize(),
+                     answer=translation['text'].capitalize(),
+                     note='')
                 for translation in definition['tr']]

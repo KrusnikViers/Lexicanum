@@ -2,13 +2,14 @@ import os
 
 import requests
 
-from app.data.language import Language
+from app.data import Language
 
 _API_BASE_URI = 'https://dictionary.yandex.net/api/v1/dicservice.json'
 _API_CLIENT_KEY = 'Yandex.Dictionary API key'
 
 # This section is to prevent storing confidential API key in the repo. To make application use the actual key, set it
 # to `YD_API_KEY` environment variable before running the program.
+# TODO: Store key in settings.
 if actual_key := os.environ.get('YD_API_KEY'):
     _API_CLIENT_KEY = actual_key
 

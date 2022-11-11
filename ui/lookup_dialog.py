@@ -17,7 +17,6 @@ class LookupDialog(QDialog):
         self.ui.setupUi(self)
         self.setWindowFlags(Qt.Window | Qt.FramelessWindowHint)
         self.setModal(True)
-        self.ui.cancel.clicked.connect(self.reject)
 
         self.shortcuts = Shortcuts(self)
         self.shortcuts.activated.connect(self.on_shortcut_activated)
@@ -48,6 +47,6 @@ class LookupDialog(QDialog):
 
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
-        self.table_view.shortcut_action(shortcut_command)
+        self.table_view.execute_shortcut_action(shortcut_command)
         if shortcut_command == ShortcutCommand.ENTER:
             self.accept()

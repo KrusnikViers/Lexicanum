@@ -3,11 +3,11 @@ import html
 
 import genanki
 
-from app.data.card import Card
-from app.data.deck import Deck
-from app.data.language import Language
-from app.data.status_or import Status
-from app.data.storage.path import Path
+from app.data.base.card import Card
+from app.data.base.deck import Deck
+from app.data.base.language import Language
+from app.data.base.status_or import Status
+from app.data.filesystem.path import Path
 from app.info import PROJECT_NAME
 
 # Update this field each time the model fields are changed
@@ -116,6 +116,7 @@ class _Note(genanki.Note):
 class AnkiIO:
     @staticmethod
     def write_to_file(deck: Deck, generic_path: Path) -> Status:
+        deck.normalize_for_output()
         output_deck = genanki.Deck(deck.deck_id, deck.deck_name)
         for card in deck.cards:
             output_deck.add_note(_Note(card))

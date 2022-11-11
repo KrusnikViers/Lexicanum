@@ -1,20 +1,15 @@
 import json
 
-from app.data.card import Card
-from app.data.deck import Deck
-from app.data.status_or import Status, StatusOr
-from app.data.storage.path import Path
+from app.data.base.deck import Deck
+from app.data.base.status_or import Status, StatusOr
+from app.data.filesystem.path import Path
 
 
 class DeckJsonIO:
     @staticmethod
     def write_to_file(deck: Deck, generic_path: Path) -> Status:
-        result = {
-            'deck_id': deck.deck_id,
-            'deck_name': deck.deck_name,
-            'next_card_id': deck.next_card_id,
-            'cards': [card.to_dict() for card in deck.cards]
-        }
+        deck.normalize_for_output()
+        result = deck.to_dict()
         output_path = generic_path.with_suffix('.json')
         try:
             with open(output_path, 'w') as output_file:
@@ -29,13 +24,6 @@ class DeckJsonIO:
         try:
             with open(str_input_path) as input_file:
                 input_json = json.load(input_file)
+                return StatusOr.from_value(Deck.from_dict(input_json, input_path))
         except (FileNotFoundError, PermissionError) as e:
             return StatusOr.from_status('Reading from {} failed: {}'.format(str_input_path, str(e)))
-
-        return StatusOr.from_value(Deck(
-            deck_id=input_json['deck_id'],
-            deck_name=input_json['deck_name'],
-            next_card_id=input_json['next_card_id'],
-            cards=[Card.from_dict(card_object) for card_object in input_json['cards']],
-            file_path=input_path
-        ))

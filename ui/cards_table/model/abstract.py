@@ -1,11 +1,10 @@
-from abc import abstractmethod, ABCMeta
 from enum import Enum
 from typing import Optional, Any
 
 from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex, QObject
 from PySide6.QtGui import QColor
 
-from app.data.card import Card, CardType
+from app.data import Card, CardType
 from ui.shared.shortcuts import ShortcutCommand
 
 
@@ -30,31 +29,31 @@ class CardsModelHeader(Enum):
 
 
 class AbstractCardsModel(QAbstractTableModel):
-    __metaclass__ = ABCMeta
-
     def __init__(self, parent: QObject | None = None):
         super(AbstractCardsModel, self).__init__(parent)
 
-    def update_view(self, row_from: int, row_to: int | None = None):
+    # These methods are to be reimplemented in the child classes.
+    def card_by_row(self, row: int) -> Card:
+        raise NotImplementedError
+
+    def execute_shortcut_action(self, row: int, command: ShortcutCommand):
+        raise NotImplementedError
+
+    def highlight_color(self, index: QModelIndex) -> QColor | None:
+        raise NotImplementedError
+
+    def supports_invalid_card_type(self) -> bool:
+        raise NotImplementedError
+
+    # Common logic for all models.
+    def refresh_visible_contents(self, row_from: int, row_to: int | None = None):
         if row_to is None:
             row_to = row_from
         self.dataChanged.emit(
-            self.index(row_to, CardsModelHeader.Type.value, QModelIndex()),
+            self.index(row_from, CardsModelHeader.Type.value, QModelIndex()),
             self.index(row_to, CardsModelHeader.Note.value, QModelIndex()),
             Qt.DisplayRole
         )
-
-    @abstractmethod
-    def card_by_row(self, row: int) -> Card:
-        pass
-
-    @abstractmethod
-    def shortcut_action(self, row: int, command: ShortcutCommand):
-        pass
-
-    @abstractmethod
-    def highlight_color(self, index: QModelIndex) -> QColor | None:
-        return None
 
     def flags(self, index: QModelIndex) -> Qt.ItemFlags:
         return Qt.ItemIsEnabled | Qt.ItemIsEditable
@@ -85,7 +84,7 @@ class AbstractCardsModel(QAbstractTableModel):
             case CardsModelHeader.Note:
                 assert isinstance(value, str)
                 card.note = value.strip()
-        self.update_view(index.row())
+        self.refresh_visible_contents(index.row())
         return True
 
     def data(self, index: QModelIndex, role: int = None) -> str | None:
@@ -97,7 +96,7 @@ class AbstractCardsModel(QAbstractTableModel):
         card = self.card_by_row(index.row())
         match CardsModelHeader.of(index.column()):
             case CardsModelHeader.Type:
-                return card.card_type.name
+                return card.card_type.name if card.card_type is not CardType.Invalid else ''
             case CardsModelHeader.Question:
                 return card.question
             case CardsModelHeader.Answer:

@@ -1,7 +1,6 @@
 from typing import List
 
-from app.data.card import CardType, Card
-from app.data.language import Language
+from app.data import CardType, Card
 
 
 def _gendered_article(gender: str):
@@ -29,5 +28,5 @@ def construct_noun_prompts(definition: dict) -> List[Card]:
     word_to_learn = '{} {}, die {}'.format(_gendered_article(definition['gen']),
                                            definition['text'],
                                            _plural_form(definition['text'], definition['fl']))
-    return [Card(CardType.Noun, word_to_learn, translation['text'].capitalize())
+    return [Card(CardType.Noun, question=word_to_learn, answer=translation['text'].capitalize(), note='')
             for translation in definition['tr']]

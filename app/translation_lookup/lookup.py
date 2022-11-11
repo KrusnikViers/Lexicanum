@@ -3,7 +3,7 @@ import json
 from collections import namedtuple
 from typing import List
 
-from app.data.card import Card
+from app.data import Card
 from app.translation_lookup.api import get_raw_translations_list
 from app.translation_lookup.prompts.constructor import PromptConstructor
 

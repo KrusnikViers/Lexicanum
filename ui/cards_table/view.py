@@ -3,9 +3,7 @@ from typing import List
 from PySide6.QtCore import QModelIndex, Qt, QRect
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView, QAbstractItemDelegate
 
-from app.data.card import Card
-from app.data.language import Language
-from app.data.storage.settings import Settings, StoredSettings
+from app.data import Card, Language, Settings, StoredSettings
 from app.translation_lookup.lookup import LookupData
 from ui.cards_table.delegate import CardTypeDelegate, LineEditSimpleDelegate, LineEditLookupDelegate
 from ui.cards_table.model.abstract import CardsModelHeader, AbstractCardsModel
@@ -100,10 +98,10 @@ class CardsTableView(QTableView):
         sizes_serialized = ' '.join(map(str, self.get_header_sizes()))
         Settings.set(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED, sizes_serialized)
 
-    def shortcut_action(self, shortcut_command: ShortcutCommand):
+    def execute_shortcut_action(self, shortcut_command: ShortcutCommand):
         index = self._selected_index()
         if index is None:
             return
         self._apply_open_editor_changes()
         model: AbstractCardsModel = self.model()
-        model.shortcut_action(index.row(), shortcut_command)
+        model.execute_shortcut_action(index.row(), shortcut_command)
