@@ -6,6 +6,8 @@ from ui.shared.icons.icons import SharedIcons
 
 
 class LineEditLookupDelegate(QStyledItemDelegate):
+    instance = None
+
     class Widget(QWidget):
         def __init__(self, parent: QWidget):
             super(LineEditLookupDelegate.Widget, self).__init__(parent)
@@ -24,3 +26,7 @@ class LineEditLookupDelegate(QStyledItemDelegate):
     def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
         assert isinstance(editor, self.Widget)
         model.setData(index, editor.ui.line_edit.text(), Qt.DisplayRole)
+
+
+LineEditLookupDelegate.instance = \
+    LineEditLookupDelegate() if LineEditLookupDelegate.instance is None else LineEditLookupDelegate.instance

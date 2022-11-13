@@ -1,12 +1,16 @@
 import sys
 
 from PySide6.QtCore import Slot, QSize, QPoint, QRect
-from PySide6.QtWidgets import QMainWindow, QFileDialog, QApplication
+from PySide6.QtWidgets import QMainWindow, QApplication
 
-from app.data import Deck, AnkiIO, DeckJsonIO, Path, Settings, StoredSettings
-from app.info import PROJECT_FULL_NAME, PROJECT_NAME
+from app.data import Deck, Settings, StoredSettings, Path
+from app.info import PROJECT_FULL_NAME
 from ui.app_status_bar import AppStatusBar
+from ui.cards_table import InputCardsTableView, InputCardsModel
+from ui.cards_table import SummaryCardsModel, ListingCardsTableView
+from ui.files_operations_helper import FileOperationsHelper
 from ui.gen.main_window_uic import Ui_MainWindow
+from ui.shared.icons.icons import SharedIcons
 from ui.shared.shortcuts import Shortcuts, ShortcutCommand
 
 
@@ -22,26 +26,47 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.setWindowTitle(PROJECT_FULL_NAME)
 
-        self.shortcuts = Shortcuts(self)
+        self.shortcuts: Shortcuts = Shortcuts(self)
         self.shortcuts.activated.connect(self.on_shortcut_activated)
 
-        self.status_bar = AppStatusBar(self)
+        self.status_bar: AppStatusBar = AppStatusBar(self)
         self.setStatusBar(self.status_bar)
 
         self.current_deck = Deck('New Deck', [])
         if Settings.get(StoredSettings.IMPORT_ON_STARTUP):
-            self.open_deck_file(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
+            import_file_path = Path(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
+            import_status = FileOperationsHelper.open_deck(import_file_path)
+            if import_status.is_ok():
+                self.current_deck = import_status.value
+            else:
+                self.status_bar.show_timed_message(import_status.status)
 
-        # TODO
-        # self.table_model = SummaryCardsModel(self.current_deck)
-        # self.table_view = CardsTableView(self, self.table_model)
-        # self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.table_view)
-        # self.ui.cards_table_view_placeholder.setParent(None)
-        # self.ui.cards_table_view_placeholder.deleteLater()
+        self.summary_model = SummaryCardsModel(self.current_deck)
+        self.summary_view = ListingCardsTableView(self, self.summary_model)
+        self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.summary_view)
+        self.ui.cards_table_view_placeholder.setParent(None)
+        self.ui.cards_table_view_placeholder.deleteLater()
+
+        self.input_model = InputCardsModel(self.summary_model)
+        self.input_view = InputCardsTableView(self, self.input_model)
+        self.ui.main_layout.replaceWidget(self.ui.input_table_view_placeholder, self.input_view)
+        self.ui.input_table_view_placeholder.setParent(None)
+        self.ui.input_table_view_placeholder.deleteLater()
+        self.input_view.horizontalHeader().sectionResized.connect(self.update_tables_geometry)
+
+        self.ui.menu_toggle_sidebar.setIcon(SharedIcons.Sidebar)
+        self.ui.tbutton_toggle_sidebar.setDefaultAction(self.ui.menu_toggle_sidebar)
+        self.ui.menu_toggle_sidebar.triggered.connect(self.action_toggle_sidebar)
+
+        self.ui.menu_new.triggered.connect(self.action_new_deck)
+        self.ui.menu_open.triggered.connect(self.action_open_project)
+        self.ui.menu_save.triggered.connect(self.action_save_project)
+        self.ui.menu_save_as.triggered.connect(self.action_save_project_as)
+        self.ui.menu_export.triggered.connect(self.action_export_deck)
 
         self.show()
-
         self.restore_window_geometry()
+        self.update_deck_metadata()
 
     def restore_window_geometry(self):
         min_size: QSize = self.minimumSize()
@@ -60,17 +85,73 @@ class MainWindow(QMainWindow):
             geometry = QRect(current_screen.center() - half_min_size, min_size)
             self.setGeometry(QRect(current_screen.center() - half_min_size, min_size))
 
-        # self.table_view.restore_geometry()
+        is_sidebar_visible = Settings.get(StoredSettings.SIDEBAR_VISIBLE)
+        self.ui.right_sidebar.setVisible(is_sidebar_visible)
+        self.ui.menu_toggle_sidebar.setChecked(is_sidebar_visible)
+
+        self.input_view.restore_geometry()
+        self.update_tables_geometry()
 
     def store_window_geometry(self):
-        # self.table_view.store_geometry()
+        self.input_view.store_geometry()
         Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
+        Settings.set(StoredSettings.SIDEBAR_VISIBLE, self.ui.right_sidebar.isVisible())
+
+    @Slot()
+    def update_tables_geometry(self) -> None:
+        new_header_sizes = self.input_view.header_sizes()
+        self.summary_view.set_header_sizes(new_header_sizes)
 
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
         if shortcut_command == ShortcutCommand.SUGGEST:
             self.lookup_and_suggest()
         # self.table_view.execute_shortcut_action(shortcut_command)
+
+    @Slot()
+    def action_toggle_sidebar(self):
+        self.ui.right_sidebar.setVisible(not self.ui.right_sidebar.isVisible())
+        self.ui.menu_toggle_sidebar.setChecked(self.ui.right_sidebar.isVisible())
+
+    @Slot()
+    def action_new_deck(self):
+        # TODO: Save prompt
+        self.current_deck = Deck('New Deck', [])
+        self.update_deck_metadata()
+
+    @Slot()
+    def action_open_project(self):
+        status_or = FileOperationsHelper.open_deck_select(self)
+        if status_or.is_ok():
+            self.current_deck = status_or.value
+            self.update_deck_metadata()
+        else:
+            self.status_bar.show_timed_message(status_or.status)
+
+    @Slot()
+    def action_save_project(self):
+        status = FileOperationsHelper.save_deck(self, self.current_deck)
+        if not status.is_ok():
+            self.status_bar.show_timed_message(status.status)
+
+    @Slot()
+    def action_save_project_as(self):
+        status = FileOperationsHelper.save_deck_select(self, self.current_deck)
+        if not status.is_ok():
+            self.status_bar.show_timed_message(status.status)
+
+    @Slot()
+    def action_export_deck(self):
+        status = FileOperationsHelper.export_deck_select(self, self.current_deck)
+        if not status.is_ok():
+            self.status_bar.show_timed_message(status.status)
+
+    @Slot()
+    def update_deck_metadata(self):
+        self.ui.deck_info.setText('{} cards, {}'.format(
+            len(self.current_deck.cards),
+            self.current_deck.file_path.as_str() if self.current_deck.file_path is not None else 'brand new deck'
+        ))
 
     def lookup_and_suggest(self):
         pass
@@ -84,74 +165,3 @@ class MainWindow(QMainWindow):
         # self.lookup_dialog.adjust_to_row(self.table_view.selected_card_rect(), self.table_view.get_header_sizes())
         # self.lookup_dialog.exec() # Replace with open/finished
         # self.lookup_dialog = None
-
-    # Deck files operations
-    ####################################################################################################################
-    @Slot()
-    def on_deck_save_as(self):
-        file_search_result = QFileDialog.getSaveFileName(self, "Save as {} deck file...".format(PROJECT_NAME),
-                                                         dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
-                                                         filter="Deck JSON (*.json)")
-        if file_search_result[0]:
-            raw_output_path = Path(file_search_result[0])
-            self.on_deck_save(raw_output_path)
-
-    @Slot()
-    def on_deck_save(self, raw_output_path: Path | None = None):
-        self.set_deck_name_as(self.ui.deck_name.text())
-        self.current_deck.normalize_for_output()
-
-        output_path = raw_output_path if raw_output_path else self.current_deck.file_path
-        status = DeckJsonIO.write_to_file(self.current_deck, output_path)
-        if not status.is_ok():
-            self.status_bar.show_timed_message(status.status)
-            return
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, output_path.as_str())
-        self.was_changed = False
-
-    @Slot()
-    def on_deck_export_anki(self):
-        file_search_result = QFileDialog.getSaveFileName(self, "Save as Anki project file...",
-                                                         dir=Settings.get(StoredSettings.LAST_ANKI_FILE_PATH),
-                                                         filter="Anki project package (*.apkg)")
-        if not file_search_result[0]:
-            return
-        self.set_deck_name_as(self.ui.deck_name.text())
-        self.current_deck.normalize_for_output()
-
-        output_path = Path(file_search_result[0])
-        status = AnkiIO.write_to_file(self.current_deck, output_path)
-        if not status.is_ok():
-            self.status_bar.show_timed_message(status.status)
-            return
-        Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, output_path.as_str())
-
-    @Slot()
-    def on_deck_open(self):
-        file_search_result = QFileDialog.getOpenFileName(self, "Open {} deck file...".format(PROJECT_NAME),
-                                                         dir=Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH),
-                                                         filter="Deck JSON (*.json)")
-        if not file_search_result[0]:
-            return
-        self.open_deck_file(file_search_result[0])
-
-    def open_deck_file(self, raw_file_path: str):
-        input_path = Path(raw_file_path)
-        if not input_path.exists():
-            self.status_bar.show_timed_message('{} not read: does not exist'.format(input_path.as_str()))
-            return
-        result = DeckJsonIO.read_from_file(input_path)
-        if not result.is_ok():
-            self.status_bar.show_timed_message(result.status)
-            return
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, input_path.as_str())
-        self.current_deck = result.value
-        self.set_deck_name_as(self.current_deck.deck_name)
-        self.was_changed = False
-
-    def set_deck_name_as(self, name: str):
-        new_name = name.strip()
-        if not new_name:
-            new_name = 'New Deck'
-        self.current_deck.deck_name = new_name
-        self.ui.deck_name.setText(new_name)

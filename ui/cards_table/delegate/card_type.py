@@ -6,6 +6,8 @@ from ui.cards_table.model.abstract import AbstractCardsModel
 
 
 class CardTypeDelegate(QStyledItemDelegate):
+    instance = None
+
     def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
         editor = QComboBox(parent)
         assert isinstance(index.model(), AbstractCardsModel)
@@ -35,3 +37,7 @@ class CardTypeDelegate(QStyledItemDelegate):
     def setModelData(self, editor: QWidget, model: QAbstractItemModel, index: QModelIndex) -> None:
         assert isinstance(editor, QComboBox)
         model.setData(index, editor.currentData(Qt.UserRole), Qt.DisplayRole)
+
+
+CardTypeDelegate.instance = \
+    CardTypeDelegate() if CardTypeDelegate.instance is None else CardTypeDelegate.instance

@@ -45,6 +45,9 @@ class AbstractCardsModel(QAbstractTableModel):
     def supports_invalid_card_type(self) -> bool:
         raise NotImplementedError
 
+    def row_count(self) -> int:
+        raise NotImplementedError
+
     # Common logic for all models.
     def refresh_visible_contents(self, row_from: int, row_to: int | None = None):
         if row_to is None:
@@ -60,6 +63,9 @@ class AbstractCardsModel(QAbstractTableModel):
 
     def columnCount(self, parent: QModelIndex = QModelIndex()) -> int:
         return len(CardsModelHeader)
+
+    def rowCount(self, parent: QModelIndex = QModelIndex()) -> int:
+        return self.row_count()
 
     def headerData(self, section: int, orientation: Qt.Orientation, role: int = None) -> Optional[str]:
         if role != Qt.DisplayRole:

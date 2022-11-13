@@ -1,6 +1,7 @@
 from typing import List
 
 from PySide6.QtCore import QModelIndex
+from PySide6.QtGui import QColor
 
 from app.data import Card
 from ui.cards_table.model.abstract import AbstractCardsModel
@@ -14,20 +15,18 @@ class LookupCardsModel(AbstractCardsModel):
         self.suggestions: List[Card] = suggestions
         self.summary_model:SummaryCardsModel = summary_model
 
-    def supports_invalid_card_type(self) -> bool:
-        return False
 
     def card_by_row(self, row: int) -> Card:
         return self.suggestions[row]
 
-    def execute_shortcut_action(self, row: int, command: ShortcutCommand):
-        if command in (ShortcutCommand.ENTER, ShortcutCommand.ENTER_AND_CONTINUE):
-            self.summary_model.new_row(self.suggestions[row])
-        if command == ShortcutCommand.CLEAR:
-            self.beginRemoveRows(QModelIndex(), row, row)
-            del self.suggestions[row]
-            self.endInsertRows()
-            self.refresh_visible_contents(row)
+    def highlight_color(self, index: QModelIndex) -> QColor | None:
+        return None
 
-    def rowCount(self, parent: QModelIndex = QModelIndex()) -> int:
+    def row_count(self) -> int:
         return len(self.suggestions)
+
+    def supports_invalid_card_type(self) -> bool:
+        return False
+
+    def execute_shortcut_action(self, row: int, command: ShortcutCommand):
+        pass

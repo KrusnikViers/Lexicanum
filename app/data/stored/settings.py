@@ -15,6 +15,7 @@ class StoredSettings(Enum):
     IMPORT_ON_STARTUP = _StoredSettingMeta('startup_autoimport', bool, True)
     MAIN_WINDOW_GEOMETRY = _StoredSettingMeta('main_window_geometry', QRect, QRect())
     SUMMARY_TABLE_COLUMNS_WIDTH_SPACED = _StoredSettingMeta('summary_table_columns_width', str, '')
+    SIDEBAR_VISIBLE = _StoredSettingMeta('sidebar_visible', bool, True)
 
 
 class Settings:

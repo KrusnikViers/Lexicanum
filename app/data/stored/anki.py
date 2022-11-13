@@ -7,7 +7,7 @@ from app.data.base.card import Card
 from app.data.base.deck import Deck
 from app.data.base.language import Language
 from app.data.base.status_or import Status
-from app.data.filesystem.path import Path
+from app.data.stored.path import Path
 from app.info import PROJECT_NAME
 
 # Update this field each time the model fields are changed

@@ -2,7 +2,7 @@ import json
 
 from app.data.base.deck import Deck
 from app.data.base.status_or import Status, StatusOr
-from app.data.filesystem.path import Path
+from app.data.stored.path import Path
 
 
 class DeckJsonIO:

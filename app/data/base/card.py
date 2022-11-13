@@ -28,7 +28,6 @@ class Card:
     def __init__(self, card_type: CardType,
                  question: str, answer: str, note: str,
                  card_id: Optional[int] = None):
-        assert card_type is not CardType.Invalid
         self.card_type: CardType = card_type
         self.question: str = question
         self.answer: str = answer
@@ -46,6 +45,7 @@ class Card:
     def to_dict(self) -> dict:
         # Should be assigned by deck beforehand.
         assert self.card_id is not None
+        assert self.card_type is not CardType.Invalid
         return {'card_type': self.card_type.value,
                 'question': self.question,
                 'answer': self.answer,

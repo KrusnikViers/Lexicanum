@@ -19,6 +19,15 @@
   <property name="palette">
    <palette>
     <active>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
@@ -39,6 +48,15 @@
      </colorrole>
     </active>
     <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
@@ -51,14 +69,23 @@
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
         <red>255</red>
         <green>255</green>
         <blue>255</blue>
        </color>
       </brush>
      </colorrole>
-    </inactive>
-    <disabled>
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
@@ -82,62 +109,14 @@
   </property>
   <widget class="QWidget" name="main_widget">
    <layout class="QGridLayout" name="main_layout">
-    <item row="1" column="0">
-     <layout class="QVBoxLayout" name="_table_view_layout">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QTableView" name="input_table_view_placeholder">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>32</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTableView" name="cards_table_view_placeholder"/>
-      </item>
-     </layout>
-    </item>
-    <item row="1" column="1">
-     <layout class="QVBoxLayout" name="_table_right_sidebar_layout">
-      <item>
-       <widget class="QLabel" name="_help_label">
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Main window&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shift + Enter&lt;/span&gt;: Add card, keep input&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Enter&lt;/span&gt;: Add card, clear input&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Del&lt;/span&gt;: Delete card | Clear input&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Space&lt;/span&gt;: Word translation&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Lookup dialog&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shift + Enter&lt;/span&gt;: Add card, keep dialog&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Enter&lt;/span&gt;: Add card, close dialog&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Del&lt;/span&gt;: Decline suggestion&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Esc&lt;/span&gt;: Close dialog&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::AutoText</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="_spacer_2">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="toggle_sidebar">
-        <property name="text">
-         <string>Toggle Help sidebar</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item row="0" column="0" colspan="2">
+    <property name="horizontalSpacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" colspan="3">
      <layout class="QHBoxLayout" name="_project_layout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
       <item>
        <widget class="QLineEdit" name="deck_name">
         <property name="sizePolicy">
@@ -178,6 +157,9 @@ border-color: white white black white ;</string>
         <property name="text">
          <string>deck metainformation</string>
         </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+        </property>
        </widget>
       </item>
       <item>
@@ -193,7 +175,75 @@ border-color: white white black white ;</string>
         </property>
        </spacer>
       </item>
+      <item>
+       <widget class="QToolButton" name="tbutton_toggle_sidebar">
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
      </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="_table_view_layout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTableView" name="input_table_view_placeholder">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="cards_table_view_placeholder"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <widget class="QWidget" name="right_sidebar" native="true">
+      <layout class="QGridLayout" name="_layout">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="1" column="0">
+        <spacer name="_spacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="_help_label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shortcuts:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shift + Enter&lt;br/&gt;&lt;/span&gt;Add card, keep input/dialog&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Enter&lt;br/&gt;&lt;/span&gt;Add card, clear input/dialog&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Del&lt;br/&gt;&lt;/span&gt;Clear input/delete card&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Space&lt;br/&gt;&lt;/span&gt;Translation lookup&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -217,14 +267,14 @@ border-color: white white black white ;</string>
     <addaction name="menu_save_as"/>
     <addaction name="menu_export"/>
    </widget>
-   <widget class="QMenu" name="_menu_help">
+   <widget class="QMenu" name="_menu_tools">
     <property name="title">
-     <string>Help</string>
+     <string>Tools</string>
     </property>
     <addaction name="menu_toggle_sidebar"/>
    </widget>
    <addaction name="_menu_deck"/>
-   <addaction name="_menu_help"/>
+   <addaction name="_menu_tools"/>
   </widget>
   <action name="menu_save">
    <property name="text">
@@ -267,11 +317,17 @@ border-color: white white black white ;</string>
    </property>
   </action>
   <action name="menu_toggle_sidebar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
    <property name="text">
-    <string>Toggle help sidebar</string>
+    <string>Toggle Tools sidebar</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+H</string>
+    <string>Ctrl+T</string>
    </property>
   </action>
  </widget>

@@ -4,7 +4,7 @@ from typing import Optional
 from PySide6.QtCore import QDateTime
 
 from app.data.base.card import Card
-from app.data.filesystem.path import Path
+from app.data.stored.path import Path
 
 
 class Deck:

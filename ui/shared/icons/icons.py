@@ -14,3 +14,4 @@ class SharedIcons:
     Plus: QIcon = _load_icon('plus.svg')
     Trash: QIcon = _load_icon('trash.svg')
     Check: QIcon = _load_icon('check.svg')
+    Sidebar: QIcon = _load_icon('sidebar.svg')
