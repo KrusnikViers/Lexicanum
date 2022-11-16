@@ -43,3 +43,6 @@ class Deck:
             if card.card_id is None:
                 card.card_id = self.next_card_id
                 self.next_card_id += 1
+            card.answer = card.answer.strip()
+            card.question = card.question.strip()
+            card.note = card.note.strip()

@@ -1,30 +1,34 @@
-from PySide6.QtCore import QModelIndex
-from PySide6.QtGui import QColor
-
-from app.data import Card, CardType
-from ui.cards_table.model.abstract import AbstractCardsModel
-from ui.cards_table.model.summary import SummaryCardsModel
-from ui.shared.shortcuts import ShortcutCommand
+from app.data import Card, CardType, Status
+from ui.cards_table.model.base import BaseCardsModel
 
 
-class InputCardsModel(AbstractCardsModel):
-    def __init__(self, summary_model: SummaryCardsModel):
+class InputCardsModel(BaseCardsModel):
+    def add_card(self, card: Card) -> Status:
+        raise NotImplementedError
+
+    def remove_card(self, row: int):
+        raise NotImplementedError
+
+    def __init__(self):
         super(InputCardsModel, self).__init__()
-        self.summary_model = summary_model
         self.input_card: Card = Card(CardType.Invalid, '', '', '')
 
-    def card_by_row(self, row: int) -> Card:
+    def get_card(self, row: int) -> Card:
         assert row == 0
         return self.input_card
 
-    def execute_shortcut_action(self, row: int, command: ShortcutCommand):
-        pass
+    def get_input_card(self) -> Card:
+        return self.input_card
 
-    def highlight_color(self, index: QModelIndex) -> QColor | None:
-        return None
+    def cards_count(self) -> int:
+        return 1
 
     def supports_invalid_card_type(self) -> bool:
         return True
 
-    def row_count(self) -> int:
-        return 1
+    def reset_data(self):
+        self.input_card.card_type = CardType.Invalid
+        self.input_card.question = ''
+        self.input_card.answer = ''
+        self.input_card.note = ''
+        self.refresh_visible_contents(0)

@@ -3,13 +3,14 @@ from typing import List
 from PySide6.QtCore import QModelIndex
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView
 
-from ui.cards_table.model.abstract import CardsModelHeader, AbstractCardsModel
+from app.data import Status
+from ui.cards_table.model.base import CardsModelHeader, BaseCardsModel
 from ui.shared.shortcuts import ShortcutCommand
 
 
-class AbstractCardsTableView(QTableView):
-    def __init__(self, parent: QWidget, model: AbstractCardsModel):
-        super(AbstractCardsTableView, self).__init__(parent)
+class BaseCardsTableView(QTableView):
+    def __init__(self, parent: QWidget, model: BaseCardsModel):
+        super(BaseCardsTableView, self).__init__(parent)
 
         self.setEditTriggers(self.EditTrigger.AllEditTriggers)
         self.setModel(model)
@@ -41,10 +42,5 @@ class AbstractCardsTableView(QTableView):
         for index, size in enumerate(sizes):
             self.horizontalHeader().resizeSection(index, size)
 
-    def execute_shortcut_action(self, shortcut_command: ShortcutCommand):
-        index = self.focused_index()
-        if index is None:
-            return
-        self.commit_open_editor_changes()
-        assert isinstance(self.model(), AbstractCardsModel)
-        self.model().execute_shortcut_action(index.row(), shortcut_command)
+    def maybe_execute_shortcut(self, shortcut_command: ShortcutCommand) -> Status:
+        raise NotImplementedError

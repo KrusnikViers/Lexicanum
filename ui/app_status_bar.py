@@ -20,6 +20,7 @@ class AppStatusBar(QStatusBar):
 
         self.show_message(self.main_message)
 
+    @Slot(str)
     def show_timed_message(self, message: str):
         self.timer.stop()
         self.timer.start()

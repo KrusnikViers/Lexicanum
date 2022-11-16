@@ -47,6 +47,5 @@ class LookupDialog(QDialog):
 
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
-        self.table_view.execute_shortcut_action(shortcut_command)
-        if shortcut_command == ShortcutCommand.ENTER:
-            self.accept()
+        self.table_view.maybe_execute_shortcut(shortcut_command)
+

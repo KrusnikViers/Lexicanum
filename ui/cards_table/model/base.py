@@ -4,8 +4,7 @@ from typing import Optional, Any
 from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex, QObject
 from PySide6.QtGui import QColor
 
-from app.data import Card, CardType
-from ui.shared.shortcuts import ShortcutCommand
+from app.data import Card, CardType, Status
 
 
 class CardsModelHeader(Enum):
@@ -28,27 +27,32 @@ class CardsModelHeader(Enum):
         assert False
 
 
-class AbstractCardsModel(QAbstractTableModel):
+class BaseCardsModel(QAbstractTableModel):
     def __init__(self, parent: QObject | None = None):
-        super(AbstractCardsModel, self).__init__(parent)
+        super(BaseCardsModel, self).__init__(parent)
 
     # These methods are to be reimplemented in the child classes.
-    def card_by_row(self, row: int) -> Card:
+    #############################################################
+    def get_card(self, row: int) -> Card:
         raise NotImplementedError
 
-    def execute_shortcut_action(self, row: int, command: ShortcutCommand):
+    def add_card(self, card: Card) -> Status:
+        raise NotImplementedError
+
+    def remove_card(self, row: int):
+        raise NotImplementedError
+
+    def cards_count(self) -> int:
         raise NotImplementedError
 
     def highlight_color(self, index: QModelIndex) -> QColor | None:
-        raise NotImplementedError
+        return None
 
     def supports_invalid_card_type(self) -> bool:
-        raise NotImplementedError
-
-    def row_count(self) -> int:
-        raise NotImplementedError
+        return False
 
     # Common logic for all models.
+    ##############################
     def refresh_visible_contents(self, row_from: int, row_to: int | None = None):
         if row_to is None:
             row_to = row_from
@@ -65,7 +69,7 @@ class AbstractCardsModel(QAbstractTableModel):
         return len(CardsModelHeader)
 
     def rowCount(self, parent: QModelIndex = QModelIndex()) -> int:
-        return self.row_count()
+        return self.cards_count()
 
     def headerData(self, section: int, orientation: Qt.Orientation, role: int = None) -> Optional[str]:
         if role != Qt.DisplayRole:
@@ -76,20 +80,20 @@ class AbstractCardsModel(QAbstractTableModel):
     def setData(self, index: QModelIndex, value: Any, role: int = None) -> bool:
         if role != Qt.DisplayRole:
             return False
-        card = self.card_by_row(index.row())
+        card = self.get_card(index.row())
         match CardsModelHeader.of(index.column()):
             case CardsModelHeader.Type:
                 assert isinstance(value, CardType)
                 card.card_type = value
             case CardsModelHeader.Question:
                 assert isinstance(value, str)
-                card.question = value.strip()
+                card.question = value
             case CardsModelHeader.Answer:
                 assert isinstance(value, str)
-                card.answer = value.strip()
+                card.answer = value
             case CardsModelHeader.Note:
                 assert isinstance(value, str)
-                card.note = value.strip()
+                card.note = value
         self.refresh_visible_contents(index.row())
         return True
 
@@ -99,7 +103,7 @@ class AbstractCardsModel(QAbstractTableModel):
         if role != Qt.DisplayRole:
             return None
 
-        card = self.card_by_row(index.row())
+        card = self.get_card(index.row())
         match CardsModelHeader.of(index.column()):
             case CardsModelHeader.Type:
                 return card.card_type.name if card.card_type is not CardType.Invalid else ''

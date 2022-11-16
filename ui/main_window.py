@@ -6,8 +6,7 @@ from PySide6.QtWidgets import QMainWindow, QApplication
 from app.data import Deck, Settings, StoredSettings, Path
 from app.info import PROJECT_FULL_NAME
 from ui.app_status_bar import AppStatusBar
-from ui.cards_table import InputCardsTableView, InputCardsModel
-from ui.cards_table import SummaryCardsModel, ListingCardsTableView
+from ui.cards_table import InputCardsTableView, InputCardsModel, MainCardsModel, MainCardsTableView
 from ui.files_operations_helper import FileOperationsHelper
 from ui.gen.main_window_uic import Ui_MainWindow
 from ui.shared.icons.icons import SharedIcons
@@ -32,27 +31,29 @@ class MainWindow(QMainWindow):
         self.status_bar: AppStatusBar = AppStatusBar(self)
         self.setStatusBar(self.status_bar)
 
-        self.current_deck = Deck('New Deck', [])
+        current_deck = Deck('New Deck', [])
         if Settings.get(StoredSettings.IMPORT_ON_STARTUP):
             import_file_path = Path(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
             import_status = FileOperationsHelper.open_deck(import_file_path)
             if import_status.is_ok():
-                self.current_deck = import_status.value
+                current_deck = import_status.value
             else:
                 self.status_bar.show_timed_message(import_status.status)
 
-        self.summary_model = SummaryCardsModel(self.current_deck)
-        self.summary_view = ListingCardsTableView(self, self.summary_model)
-        self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.summary_view)
-        self.ui.cards_table_view_placeholder.setParent(None)
-        self.ui.cards_table_view_placeholder.deleteLater()
+        self.input_model = InputCardsModel()
+        self.main_model = MainCardsModel(current_deck)
 
-        self.input_model = InputCardsModel(self.summary_model)
-        self.input_view = InputCardsTableView(self, self.input_model)
-        self.ui.main_layout.replaceWidget(self.ui.input_table_view_placeholder, self.input_view)
+        self.input_table_view = InputCardsTableView(self, self.input_model, self.main_model)
+        self.ui.main_layout.replaceWidget(self.ui.input_table_view_placeholder, self.input_table_view)
         self.ui.input_table_view_placeholder.setParent(None)
         self.ui.input_table_view_placeholder.deleteLater()
-        self.input_view.horizontalHeader().sectionResized.connect(self.update_tables_geometry)
+        self.input_table_view.horizontalHeader().sectionResized.connect(self.update_tables_geometry)
+        self.input_model.dataChanged.connect(self.update_main_table_filter)
+
+        self.main_table_view = MainCardsTableView(self, self.main_model)
+        self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.main_table_view)
+        self.ui.cards_table_view_placeholder.setParent(None)
+        self.ui.cards_table_view_placeholder.deleteLater()
 
         self.ui.menu_toggle_sidebar.setIcon(SharedIcons.Sidebar)
         self.ui.tbutton_toggle_sidebar.setDefaultAction(self.ui.menu_toggle_sidebar)
@@ -89,24 +90,32 @@ class MainWindow(QMainWindow):
         self.ui.right_sidebar.setVisible(is_sidebar_visible)
         self.ui.menu_toggle_sidebar.setChecked(is_sidebar_visible)
 
-        self.input_view.restore_geometry()
+        self.input_table_view.restore_geometry()
         self.update_tables_geometry()
 
     def store_window_geometry(self):
-        self.input_view.store_geometry()
+        self.input_table_view.store_geometry()
         Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
         Settings.set(StoredSettings.SIDEBAR_VISIBLE, self.ui.right_sidebar.isVisible())
 
     @Slot()
-    def update_tables_geometry(self) -> None:
-        new_header_sizes = self.input_view.header_sizes()
-        self.summary_view.set_header_sizes(new_header_sizes)
+    def update_tables_geometry(self):
+        new_header_sizes = self.input_table_view.header_sizes()
+        self.main_table_view.set_header_sizes(new_header_sizes)
+        # TODO: Sync horizontal scrolling as well.
+
+    @Slot()
+    def update_main_table_filter(self):
+        self.main_model.refresh_displayed_rows(self.input_model.get_input_card())
 
     @Slot(ShortcutCommand)
     def on_shortcut_activated(self, shortcut_command: ShortcutCommand):
-        if shortcut_command == ShortcutCommand.SUGGEST:
-            self.lookup_and_suggest()
-        # self.table_view.execute_shortcut_action(shortcut_command)
+        worst_status = next(status for status in (
+            self.input_table_view.maybe_execute_shortcut(shortcut_command),
+            self.main_table_view.maybe_execute_shortcut(shortcut_command)
+        ) if not status.is_ok())
+        if worst_status is not None:
+            self.status_bar.show_timed_message(worst_status.status)
 
     @Slot()
     def action_toggle_sidebar(self):
@@ -116,41 +125,42 @@ class MainWindow(QMainWindow):
     @Slot()
     def action_new_deck(self):
         # TODO: Save prompt
-        self.current_deck = Deck('New Deck', [])
+        self.main_model.reset_deck(Deck('New Deck', []))
         self.update_deck_metadata()
 
     @Slot()
     def action_open_project(self):
+        # TODO: Save prompt
         status_or = FileOperationsHelper.open_deck_select(self)
         if status_or.is_ok():
-            self.current_deck = status_or.value
+            self.main_model.reset_deck(status_or.value)
             self.update_deck_metadata()
         else:
             self.status_bar.show_timed_message(status_or.status)
 
     @Slot()
     def action_save_project(self):
-        status = FileOperationsHelper.save_deck(self, self.current_deck)
+        status = FileOperationsHelper.save_deck(self, self.main_model.deck)
         if not status.is_ok():
             self.status_bar.show_timed_message(status.status)
 
     @Slot()
     def action_save_project_as(self):
-        status = FileOperationsHelper.save_deck_select(self, self.current_deck)
+        status = FileOperationsHelper.save_deck_select(self, self.main_model.deck)
         if not status.is_ok():
             self.status_bar.show_timed_message(status.status)
 
     @Slot()
     def action_export_deck(self):
-        status = FileOperationsHelper.export_deck_select(self, self.current_deck)
+        status = FileOperationsHelper.export_deck_select(self, self.main_model.deck)
         if not status.is_ok():
             self.status_bar.show_timed_message(status.status)
 
     @Slot()
     def update_deck_metadata(self):
         self.ui.deck_info.setText('{} cards, {}'.format(
-            len(self.current_deck.cards),
-            self.current_deck.file_path.as_str() if self.current_deck.file_path is not None else 'brand new deck'
+            len(self.main_model.deck.cards),
+            self.main_model.deck.file_path.as_str() if self.main_model.deck.file_path is not None else 'brand new deck'
         ))
 
     def lookup_and_suggest(self):
