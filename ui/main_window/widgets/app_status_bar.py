@@ -4,7 +4,7 @@ from PySide6.QtWidgets import QStatusBar, QWidget, QLabel
 
 class AppStatusBar(QStatusBar):
     def __init__(self, parent: QWidget):
-        super(AppStatusBar, self).__init__(parent)
+        super().__init__(parent)
 
         self.setSizeGripEnabled(False)
         self.setStyleSheet('color: #666; background-color: #fff; margin-left: 9px;')

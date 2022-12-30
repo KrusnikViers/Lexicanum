@@ -8,7 +8,7 @@ from ui.common.cards_table import CardsTableModel
 
 class InputCardsTableModel(CardsTableModel):
     def __init__(self):
-        super(InputCardsTableModel, self).__init__()
+        super().__init__()
         self.input_card: Card = Card(CardType.Invalid, '', '', '')
 
     def highlight_color(self, index: QModelIndex) -> QColor | None:

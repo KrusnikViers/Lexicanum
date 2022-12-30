@@ -6,7 +6,7 @@ class UniversalPath:
     def __init__(self, str_path: str):
         self._path = pathlib.Path(str_path).resolve()
 
-    def as_str(self) -> str:
+    def __str__(self):
         return self._path.as_posix()
 
     def with_extension(self, new_extension: str):

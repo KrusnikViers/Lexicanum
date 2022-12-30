@@ -10,7 +10,7 @@ from ui.main_window.overview_table.model import OverviewCardsTableModel
 
 class OverviewCardsTableView(CardsTableView):
     def __init__(self, parent: QWidget, overview_model: OverviewCardsTableModel):
-        super(OverviewCardsTableView, self).__init__(parent, overview_model)
+        super().__init__(parent, overview_model)
         self.overview_model = overview_model
 
         self.setItemDelegateForColumn(CardsTableHeader.Type.value, ComboBoxCardTypeDelegate.instance)

@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         sys.exit(0)
 
     def __init__(self):
-        super(MainWindow, self).__init__()
+        super().__init__()
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
@@ -67,7 +67,7 @@ class MainWindow(QMainWindow):
             import_file_path = UniversalPath(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
             import_status = deck_io.read_deck_file(import_file_path)
             if import_status.is_ok():
-                self.deck = import_status.value
+                return import_status.value
             else:
                 self.status_bar.show_timed_message(import_status.status)
         return Deck('New Deck', [])

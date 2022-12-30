@@ -92,7 +92,7 @@ _MODEL = genanki.Model(
 class _Note(genanki.Note):
     def __init__(self, card: Card):
         question_split = [html.escape(part.strip()) for part in card.question.split('/')]
-        super(_Note, self).__init__(
+        super().__init__(
             model=_MODEL,
             fields=[
                 str(card.card_id),
@@ -116,9 +116,8 @@ def write_file(deck: Deck, output_path: UniversalPath) -> Status:
     output_deck = genanki.Deck(deck.deck_id, deck.deck_name)
     for card in deck.cards:
         output_deck.add_note(_Note(card))
-    output_path_str = output_path.with_suffix('.apkg')
     try:
-        output_deck.write_to_file(output_path_str)
+        output_deck.write_to_file(str(output_path))
     except PermissionError as e:
-        return Status('Writing to {} failed: {}'.format(output_path_str, str(e)))
+        return Status('Writing to {} failed: {}'.format(output_path, str(e)))
     return Status()

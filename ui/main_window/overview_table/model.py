@@ -11,7 +11,7 @@ from ui.common.cards_table import CardsTableModel
 class OverviewCardsTableModel(CardsTableModel):
 
     def __init__(self, displayed_deck: Deck):
-        super(OverviewCardsTableModel, self).__init__()
+        super().__init__()
         self.deck: Deck = displayed_deck
         self.displayed_rows: List[Card] = []
         self.reset_deck(displayed_deck)
@@ -23,18 +23,21 @@ class OverviewCardsTableModel(CardsTableModel):
         return False
 
     @staticmethod
-    def _passes_input_filter(card: Card, input_filter: Card):
-        return (input_filter.card_type == CardType.Invalid or input_filter.card_type == card.card_type) and \
-               (not input_filter.question or input_filter.question in card.question.lower()) and \
-               (not input_filter.answer or input_filter.answer in card.answer.lower())
+    def _passes_display_filter(card: Card, type_filter, question_filter, answer_filter):
+        return (type_filter == CardType.Invalid or type_filter == card.card_type) and \
+               (not question_filter or question_filter in card.question.lower()) and \
+               (not answer_filter or answer_filter in card.answer.lower())
 
-    def refresh_displayed_rows(self, input_filter: Card | None = None):
+    def refresh_displayed_rows(self, card_in_input: Card | None = None):
         self.beginResetModel()
-        if input_filter is not None:
-            input_filter.question = input_filter.question.strip().lower()
-            input_filter.answer = input_filter.question.strip().lower()
-        self.displayed_rows = [card for card in self.deck.cards if
-                               input_filter is None or self._passes_input_filter(card, input_filter)]
+        if card_in_input is None:
+            self.displayed_rows = self.deck.cards
+        else:
+            type_filter = card_in_input.card_type
+            question_filter = card_in_input.question.strip().lower()
+            answer_filter = card_in_input.answer.strip().lower()
+            self.displayed_rows = [card for card in self.deck.cards if
+                                   self._passes_display_filter(card, type_filter, question_filter, answer_filter)]
         self.endResetModel()
 
     def get_card(self, row: int) -> Card:

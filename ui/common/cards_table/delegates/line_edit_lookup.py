@@ -1,4 +1,4 @@
-from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt, Slot, Signal
+from PySide6.QtCore import QModelIndex, QAbstractItemModel, Qt, Signal
 from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
 
 from ui.common.icons.list import IconsList
@@ -9,7 +9,7 @@ class _LineEditLookupDelegateWidget(QWidget):
     data_changed = Signal()
 
     def __init__(self, parent: QWidget):
-        super(_LineEditLookupDelegateWidget, self).__init__(parent)
+        super().__init__(parent)
         self.ui = Ui_LineEditLookupDelegate()
         self.ui.setupUi(self)
         self.ui.lookup.setIcon(IconsList.Search)
@@ -23,7 +23,7 @@ class LineEditLookupDelegate(QStyledItemDelegate):
 
     def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
         editor = _LineEditLookupDelegateWidget(parent)
-        editor.data_changed.connect(self.on_data_changed)
+        editor.data_changed.connect(lambda created_editor=editor: self.commitData.emit(created_editor))
         return editor
 
     def setEditorData(self, editor: _LineEditLookupDelegateWidget, index: QModelIndex) -> None:
@@ -32,10 +32,6 @@ class LineEditLookupDelegate(QStyledItemDelegate):
     def setModelData(self, editor: _LineEditLookupDelegateWidget,
                      model: QAbstractItemModel, index: QModelIndex) -> None:
         model.setData(index, editor.ui.line_edit.text(), Qt.DisplayRole)
-
-    @Slot()
-    def on_data_changed(self):
-        self.commitData.emit(self.sender())
 
 
 LineEditLookupDelegate.instance = \

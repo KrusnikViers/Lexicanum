@@ -14,7 +14,7 @@ class SuggestionCardsTableView(CardsTableView):
     done = Signal()
 
     def __init__(self, parent: QWidget, suggestions_model: SuggestionCardsTableModel):
-        super(SuggestionCardsTableView, self).__init__(parent, suggestions_model)
+        super().__init__(parent, suggestions_model)
         self.suggestions_model = suggestions_model
 
         # Delegates

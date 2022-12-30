@@ -12,7 +12,7 @@ class LookupDialog(QDialog):
     new_card = Signal(Card)
 
     def __init__(self, parent: QMainWindow, lookup_data: LookupResponse):
-        super(LookupDialog, self).__init__(parent)
+        super().__init__(parent)
 
         self.ui = Ui_LookupDialog()
         self.ui.setupUi(self)

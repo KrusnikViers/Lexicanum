@@ -10,7 +10,7 @@ from ui.common.cards_table.header import CardsTableHeader
 
 class CardsTableModel(QAbstractTableModel):
     def __init__(self, parent: QObject | None = None):
-        super(CardsTableModel, self).__init__(parent)
+        super().__init__(parent)
 
     # Virtual methods
     def get_card(self, row: int) -> Card:

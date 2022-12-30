@@ -11,7 +11,7 @@ from ui.common.shortcuts import ShortcutCommand
 
 class CardsTableView(QTableView):
     def __init__(self, parent: QWidget, model: CardsTableModel):
-        super(CardsTableView, self).__init__(parent)
+        super().__init__(parent)
 
         self.setEditTriggers(self.EditTrigger.AllEditTriggers)
         self.setModel(model)

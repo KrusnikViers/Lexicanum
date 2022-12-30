@@ -26,6 +26,10 @@ class Deck:
             'cards': [card.to_dict() for card in self.cards]
         }
 
+    def __str__(self):
+        return 'Deck id{}: {} from {}, cards:\n{}'.format(self.deck_id, self.deck_name, self.file_path,
+                                                          '\n'.join(map(str, self.cards)))
+
     @classmethod
     def from_dict(cls, input_dict: dict, file_path: UniversalPath | None) -> 'Deck':
         return cls(deck_id=input_dict['deck_id'],

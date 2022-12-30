@@ -6,7 +6,9 @@ class LineEditSimpleDelegate(QStyledItemDelegate):
     instance = None
 
     def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
-        return QLineEdit(parent)
+        editor = QLineEdit(parent)
+        editor.textChanged.connect(lambda _, created_editor=editor: self.commitData.emit(created_editor))
+        return editor
 
     def setEditorData(self, editor: QLineEdit, index: QModelIndex) -> None:
         editor.setText(index.data(Qt.DisplayRole))

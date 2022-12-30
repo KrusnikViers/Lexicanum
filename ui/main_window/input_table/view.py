@@ -14,7 +14,7 @@ class InputCardsTableView(CardsTableView):
     new_card = Signal(Card)
 
     def __init__(self, parent: QWidget, input_model: InputCardsTableModel):
-        super(InputCardsTableView, self).__init__(parent, input_model)
+        super().__init__(parent, input_model)
         self.input_model = input_model
 
         self.setItemDelegateForColumn(CardsTableHeader.Type.value, ComboBoxCardTypeDelegate.instance)
@@ -59,7 +59,6 @@ class InputCardsTableView(CardsTableView):
         sizes_packed = Settings.get(StoredSettings.SUMMARY_TABLE_COLUMNS_WIDTH_SPACED)
         sizes = [] if len(sizes_packed) == 0 else [int(size) for size in sizes_packed.split(' ')]
         if len(sizes) != len(CardsTableHeader):
-            print('Table geometry invalid: {}, restoring default'.format(sizes))
             sizes = [0, 250, 250, 0]
             assert len(sizes) == len(CardsTableHeader)
 

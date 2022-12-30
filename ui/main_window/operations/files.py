@@ -12,7 +12,7 @@ def _write_deck_file(deck: Deck, output_path: UniversalPath):
     deck.normalize_for_output()
     status = deck_io.write_file(deck, output_path)
     if status.is_ok():
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, output_path.as_str())
+        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(output_path))
     return status
 
 
@@ -52,16 +52,16 @@ def write_apkg_with_dialog(dialog_parent: QMainWindow, deck: Deck) -> Status:
     deck.normalize_for_output()
     status = anki_io.write_file(deck, output_path)
     if status.is_ok():
-        Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, output_path.as_str())
-    return status
+        return status
+    Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, str(output_path))
 
 
 def read_deck_file(input_path: UniversalPath) -> StatusOr[Deck]:
     if not input_path.exists():
-        return StatusOr(status='File {} does not exist'.format(input_path.as_str()))
+        return StatusOr(status='File {} does not exist'.format(input_path))
     status = deck_io.read_file(input_path)
     if status.is_ok():
-        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, input_path.as_str())
+        Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(input_path))
     return status
 
 

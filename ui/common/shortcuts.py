@@ -17,7 +17,7 @@ class Shortcuts(QObject):
     activated = Signal(ShortcutCommand)
 
     def __init__(self, parent: QWidget):
-        super(Shortcuts, self).__init__(parent)
+        super().__init__(parent)
 
         self.shortcuts: Dict[ShortcutCommand, QShortcut] = {
             ShortcutCommand.ENTER_AND_CONTINUE: QShortcut(QKeySequence(Qt.SHIFT | Qt.Key_Return), parent),

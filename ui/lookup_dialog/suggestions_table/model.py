@@ -10,7 +10,7 @@ from ui.common.cards_table.model import CardsTableModel
 
 class SuggestionCardsTableModel(CardsTableModel):
     def __init__(self, suggestion_cards: List[Card]):
-        super(SuggestionCardsTableModel, self).__init__()
+        super().__init__()
         self.cards: List[Card] = suggestion_cards
 
     def highlight_color(self, index: QModelIndex) -> QColor | None:
