@@ -3,10 +3,10 @@ import sys
 from PySide6.QtCore import Slot, QSize, QPoint, QRect
 from PySide6.QtWidgets import QMainWindow, QApplication
 
-from core.helpers import Status, UniversalPath
 from core.info import PROJECT_FULL_NAME
 from core.settings import Settings, StoredSettings
 from core.types import Deck
+from core.util import Status, UniversalPath
 from ui.common import IconsList
 from ui.common import Shortcuts, ShortcutCommand
 from ui.gen.main_window.main_window_uic import Ui_MainWindow

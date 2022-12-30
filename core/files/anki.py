@@ -3,9 +3,9 @@ import html
 
 import genanki
 
-from core.helpers import UniversalPath, Status
 from core.info import PROJECT_NAME
 from core.types import Card, Deck, Language
+from core.util import UniversalPath, Status
 
 # Update this field each time the model fields are changed. This will require manual conversion of already existing
 # cards in Anki manually.

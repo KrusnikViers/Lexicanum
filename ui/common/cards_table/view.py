@@ -3,7 +3,7 @@ from typing import List
 from PySide6.QtCore import QModelIndex
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView
 
-from core.helpers import Status
+from core.util import Status
 from ui.common.cards_table.header import CardsTableHeader
 from ui.common.cards_table.model import CardsTableModel
 from ui.common.shortcuts import ShortcutCommand

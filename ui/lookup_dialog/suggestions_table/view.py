@@ -1,8 +1,8 @@
 from PySide6.QtCore import QModelIndex, Signal
 from PySide6.QtWidgets import QWidget, QHeaderView
 
-from core.helpers import Status
 from core.types import Card
+from core.util import Status
 from ui.common import ShortcutCommand
 from ui.common.cards_table import ComboBoxCardTypeDelegate, LineEditSimpleDelegate, CardsTableView, CardsTableHeader
 from ui.lookup_dialog.suggestions_table.model import SuggestionCardsTableModel

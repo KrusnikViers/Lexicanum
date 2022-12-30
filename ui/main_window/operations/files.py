@@ -2,10 +2,10 @@ from PySide6.QtWidgets import QMainWindow, QFileDialog
 
 from core.files import anki as anki_io
 from core.files import deck_json as deck_io
-from core.helpers import UniversalPath, Status, StatusOr
 from core.info import PROJECT_NAME
 from core.settings import Settings, StoredSettings
 from core.types import Deck
+from core.util import UniversalPath, Status, StatusOr
 
 
 def _write_deck_file(deck: Deck, output_path: UniversalPath):

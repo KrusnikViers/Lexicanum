@@ -1,9 +1,9 @@
 from PySide6.QtCore import QModelIndex, Qt, Signal
 from PySide6.QtWidgets import QWidget, QHeaderView, QSizePolicy, QComboBox
 
-from core.helpers import Status
 from core.settings import Settings, StoredSettings
 from core.types import Card
+from core.util import Status
 from ui.common import ShortcutCommand
 from ui.common.cards_table import CardsTableView, CardsTableHeader
 from ui.common.cards_table.delegates import ComboBoxCardTypeDelegate, LineEditLookupDelegate, LineEditSimpleDelegate

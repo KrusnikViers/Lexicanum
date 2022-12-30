@@ -1,6 +1,4 @@
-from typing import List
-
-from PySide6.QtCore import Qt, QRect, Slot, Signal
+from PySide6.QtCore import Qt, Slot, Signal
 from PySide6.QtWidgets import QDialog, QMainWindow
 
 from core.types import Card

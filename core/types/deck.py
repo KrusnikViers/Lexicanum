@@ -1,8 +1,8 @@
 import time
 from typing import List
 
-from core.helpers import if_none, UniversalPath
 from core.types.card import Card
+from core.util import if_none, UniversalPath
 
 
 class Deck:

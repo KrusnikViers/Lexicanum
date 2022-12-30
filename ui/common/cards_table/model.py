@@ -3,8 +3,8 @@ from typing import Optional, Any
 from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex, QObject
 from PySide6.QtGui import QColor
 
-from core.helpers import Status, if_none
 from core.types import Card, CardType
+from core.util import Status, if_none
 from ui.common.cards_table.header import CardsTableHeader
 
 

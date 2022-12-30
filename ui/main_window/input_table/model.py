@@ -1,8 +1,8 @@
 from PySide6.QtCore import QModelIndex
 from PySide6.QtGui import QColor
 
-from core.helpers import Status
 from core.types import Card, CardType
+from core.util import Status
 from ui.common.cards_table import CardsTableModel
 
 
