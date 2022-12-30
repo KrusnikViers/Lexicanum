@@ -1,3 +1,0 @@
-from ui.cards_table.delegate.card_type import CardTypeDelegate
-from ui.cards_table.delegate.line_edit_lookup import LineEditLookupDelegate
-from ui.cards_table.delegate.line_edit_simple import LineEditSimpleDelegate

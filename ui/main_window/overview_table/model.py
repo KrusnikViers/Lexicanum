@@ -1,0 +1,63 @@
+from copy import deepcopy
+from typing import List
+
+from PySide6.QtCore import QModelIndex
+from PySide6.QtGui import QColor
+
+from core.types import Deck, Card, CardType
+from ui.common.cards_table import CardsTableModel
+
+
+class OverviewCardsTableModel(CardsTableModel):
+
+    def __init__(self, displayed_deck: Deck):
+        super(OverviewCardsTableModel, self).__init__()
+        self.deck: Deck = displayed_deck
+        self.displayed_rows: List[Card] = []
+        self.reset_deck(displayed_deck)
+
+    def highlight_color(self, index: QModelIndex) -> QColor | None:
+        return None
+
+    def supports_invalid_card_type(self) -> bool:
+        return False
+
+    @staticmethod
+    def _passes_input_filter(card: Card, input_filter: Card):
+        return (input_filter.card_type == CardType.Invalid or input_filter.card_type == card.card_type) and \
+               (not input_filter.question or input_filter.question in card.question.lower()) and \
+               (not input_filter.answer or input_filter.answer in card.answer.lower())
+
+    def refresh_displayed_rows(self, input_filter: Card | None = None):
+        self.beginResetModel()
+        if input_filter is not None:
+            input_filter.question = input_filter.question.strip().lower()
+            input_filter.answer = input_filter.question.strip().lower()
+        self.displayed_rows = [card for card in self.deck.cards if
+                               input_filter is None or self._passes_input_filter(card, input_filter)]
+        self.endResetModel()
+
+    def get_card(self, row: int) -> Card:
+        return self.displayed_rows[row]
+
+    def add_card(self, card: Card):
+        assert card.is_valid()
+        self.beginInsertRows(QModelIndex(), 0, 0)
+        self.deck.cards.insert(0, deepcopy(card))
+        self.displayed_rows.insert(0, self.deck.cards[0])
+        self.endInsertRows()
+
+    def remove_card(self, index: QModelIndex):
+        row = index.row()
+        self.beginRemoveRows(QModelIndex(), row, row)
+        assert 0 <= row <= len(self.displayed_rows)
+        self.deck.cards.remove(self.displayed_rows[row])
+        del self.displayed_rows[row]
+        self.endRemoveRows()
+
+    def cards_count(self) -> int:
+        return len(self.displayed_rows)
+
+    def reset_deck(self, new_deck: Deck):
+        self.deck = new_deck
+        self.refresh_displayed_rows()
