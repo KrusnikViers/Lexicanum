@@ -12,6 +12,7 @@ class Deck:
         self.deck_name: str = deck_name
         self.cards: List[Card] = cards
         self.file_path: UniversalPath | None = file_path
+        self.was_updated = file_path is None
         # Next card id is strictly incremental, because this is the only way Anki tells cards apart. If id will
         # be reassigned after card was deleted from the project, Anki will attach previous history for this id to
         # the new card.
@@ -40,6 +41,7 @@ class Deck:
 
     def normalize_for_output(self):
         self.deck_id = if_none(self.deck_id, hash(time.time_ns()) % 10000000000)
+        self.deck_name = self.deck_name.strip()
         for card in self.cards:
             if card.card_id is None:
                 card.card_id = self.next_card_id

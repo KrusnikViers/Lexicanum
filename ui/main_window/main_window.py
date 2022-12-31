@@ -1,6 +1,7 @@
 import sys
 
-from PySide6.QtCore import Slot, QSize, QPoint, QRect
+from PySide6.QtCore import Qt, Slot, QSize, QPoint, QRect
+from PySide6.QtGui import QFontMetrics
 from PySide6.QtWidgets import QMainWindow, QApplication
 
 from core.info import PROJECT_FULL_NAME
@@ -16,7 +17,6 @@ from ui.main_window.overview_table import OverviewCardsTableView, OverviewCardsT
 from ui.main_window.widgets import AppStatusBar
 
 
-# TODO: Implement Deck metadata updates
 class MainWindow(QMainWindow):
     def closeEvent(self, _) -> None:
         self.store_window_geometry()
@@ -36,6 +36,7 @@ class MainWindow(QMainWindow):
         self.setStatusBar(self.status_bar)
 
         self.overview_model = OverviewCardsTableModel(self.get_default_deck(on_startup=True))
+        self.overview_model.deck_updated.connect(self.on_deck_info_updated)
         self.overview_table_view = OverviewCardsTableView(self, self.overview_model)
         self.ui.main_layout.replaceWidget(self.ui.cards_table_view_placeholder, self.overview_table_view)
         self.ui.cards_table_view_placeholder.setParent(None)
@@ -48,6 +49,10 @@ class MainWindow(QMainWindow):
         self.ui.input_table_view_placeholder.setParent(None)
         self.ui.input_table_view_placeholder.deleteLater()
         self.input_table_view.horizontalHeader().sectionResized.connect(self.sync_tables_geometry)
+
+        self.ui.deck_name.setText(self.overview_model.deck.deck_name)
+        self.ui.deck_name.textChanged.connect(self.on_deck_name_changed)
+        self.on_deck_info_updated()
 
         self.ui.menu_toggle_sidebar.setIcon(IconsList.Sidebar)
         self.ui.tbutton_toggle_sidebar.setDefaultAction(self.ui.menu_toggle_sidebar)
@@ -100,6 +105,35 @@ class MainWindow(QMainWindow):
         Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
         Settings.set(StoredSettings.SIDEBAR_VISIBLE, self.ui.right_sidebar.isVisible())
 
+    @Slot(str)
+    def on_deck_name_changed(self, new_name: str):
+        self.overview_model.deck.deck_name = new_name
+        self.overview_model.deck.was_updated = True
+        self.on_deck_info_updated()
+
+    @Slot()
+    def on_deck_reset(self):
+        deck = self.overview_model.deck
+        self.ui.deck_name.setText(deck.deck_name)
+        self.on_deck_info_updated()
+
+    @Slot()
+    def on_deck_info_updated(self):
+        deck = self.overview_model.deck
+
+        # Adjust deck name edit width
+        font_metrics = QFontMetrics(self.ui.deck_name.font())
+        pixels_width = font_metrics.size(Qt.TextFlag.TextSingleLine, deck.deck_name, tabstops=0).width() + 20
+        max_size = self.width() // 3
+        pixels_width = max(200, min(max_size, pixels_width))
+        self.ui.deck_name.setFixedWidth(pixels_width)
+
+        # Update status message
+        cards_count = '{} cards'.format(len(deck.cards))
+        save_status = 'not yet saved anywhere' if deck.file_path is None else \
+            'changed from {}'.format(deck.file_path) if deck.was_updated else 'saved in {}'.format(deck.file_path)
+        self.ui.deck_info.setText('{}, {}'.format(cards_count, save_status))
+
     @Slot()
     def sync_tables_geometry(self):
         new_header_sizes = self.input_table_view.header_sizes()
@@ -135,26 +169,28 @@ class MainWindow(QMainWindow):
         status_or = deck_io.read_deck_file_with_dialog(self)
         if status_or.is_ok():
             self.overview_model.reset_deck(status_or.value)
+            self.on_deck_reset()
         else:
             self.status_bar.show_timed_message(status_or.status)
 
+    def on_deck_write(self, status: Status):
+        if status.is_ok():
+            self.overview_model.deck.was_updated = False
+            self.on_deck_reset()
+        else:
+            self.status_bar.show_timed_message(status.status)
+
     @Slot()
     def action_save_project(self):
-        status = deck_io.write_deck_file(self, self.overview_model.deck)
-        if not status.is_ok():
-            self.status_bar.show_timed_message(status.status)
+        self.on_deck_write(deck_io.write_deck_file(self, self.overview_model.deck))
 
     @Slot()
     def action_save_project_as(self):
-        status = deck_io.write_deck_file_with_dialog(self, self.overview_model.deck)
-        if not status.is_ok():
-            self.status_bar.show_timed_message(status.status)
+        self.on_deck_write(deck_io.write_deck_file_with_dialog(self, self.overview_model.deck))
 
     @Slot()
     def action_export_deck(self):
-        status = deck_io.write_apkg_with_dialog(self, self.overview_model.deck)
-        if not status.is_ok():
-            self.status_bar.show_timed_message(status.status)
+        self.on_deck_write(deck_io.write_apkg_with_dialog(self, self.overview_model.deck))
 
     # @Slot(CardsModelHeader, str)
     # def lookup_and_suggest(self, column: CardsModelHeader, request: str):

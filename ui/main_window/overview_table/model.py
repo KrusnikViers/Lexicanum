@@ -1,7 +1,7 @@
 from copy import deepcopy
-from typing import List
+from typing import List, Any
 
-from PySide6.QtCore import QModelIndex
+from PySide6.QtCore import QModelIndex, Signal, Qt
 from PySide6.QtGui import QColor
 
 from core.types import Deck, Card, CardType
@@ -9,6 +9,7 @@ from ui.common.cards_table import CardsTableModel
 
 
 class OverviewCardsTableModel(CardsTableModel):
+    deck_updated = Signal()
 
     def __init__(self, displayed_deck: Deck):
         super().__init__()
@@ -40,6 +41,17 @@ class OverviewCardsTableModel(CardsTableModel):
                                    self._passes_display_filter(card, type_filter, question_filter, answer_filter)]
         self.endResetModel()
 
+    def _on_deck_updated(self):
+        if not self.deck.was_updated:
+            self.deck.was_updated = True
+            self.deck_updated.emit()
+
+    def setData(self, index: QModelIndex, value: Any, role: int = None) -> bool:
+        result = super().setData(index, value, role)
+        if role == Qt.DisplayRole:
+            self._on_deck_updated()
+        return result
+
     def get_card(self, row: int) -> Card:
         return self.displayed_rows[row]
 
@@ -49,6 +61,7 @@ class OverviewCardsTableModel(CardsTableModel):
         self.deck.cards.insert(0, deepcopy(card))
         self.displayed_rows.insert(0, self.deck.cards[0])
         self.endInsertRows()
+        self._on_deck_updated()
 
     def remove_card(self, index: QModelIndex):
         row = index.row()
@@ -57,6 +70,7 @@ class OverviewCardsTableModel(CardsTableModel):
         self.deck.cards.remove(self.displayed_rows[row])
         del self.displayed_rows[row]
         self.endRemoveRows()
+        self._on_deck_updated()
 
     def cards_count(self) -> int:
         return len(self.displayed_rows)
