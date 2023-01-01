@@ -162,6 +162,7 @@ class MainWindow(QMainWindow):
     def action_new_deck(self):
         # TODO: Save prompt
         self.overview_model.reset_deck(self.get_default_deck(on_startup=False))
+        self.on_deck_reset()
 
     @Slot()
     def action_open_project(self):
