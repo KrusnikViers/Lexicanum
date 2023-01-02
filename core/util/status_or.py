@@ -7,6 +7,9 @@ class Status:
     def __init__(self, status: str | None = None):
         self.status: str | None = status
 
+    def __str__(self):
+        return 'Status:OK' if self.is_ok() else 'Status:Err:{}'.format(self.status)
+
     def is_ok(self) -> bool:
         return self.status is None
 
@@ -16,6 +19,9 @@ class StatusOr(Generic[_T]):
         assert (value is None) != (status is None)
         self.value: _T | None = value
         self.status: str | None = status
+
+    def __str__(self):
+        return 'StatusOr:OK:{}'.format(self.value) if self.is_ok() else 'StatusOr:Err:{}'.format(self.status)
 
     def is_ok(self) -> bool:
         return self.value is not None

@@ -1,17 +1,18 @@
 from typing import List
 
 from core.util import StatusOr
-from lookup.wiktionary.language_support.abstract import WiktionaryLocaleParser
-from lookup.wiktionary.web_requests import request_articles
+from lookup.wiktionary import web_api
+from lookup.wiktionary.language_support.abstract import WiktionaryLocaleParser, WiktionaryArticle
+from lookup.wiktionary.web_api import RequestedArticle
 
 
 class EnglishLocaleParser(WiktionaryLocaleParser):
+
     @classmethod
-    def get_articles_list(cls, text: str) -> StatusOr[List[str]]:
-        articles_status = request_articles(text, 'en')
-        print('EN|Get Articles List')
-        if articles_status.is_ok():
-            print(articles_status.value)
-        else:
-            print(articles_status.status)
-        return StatusOr(status='Not Implemented')
+    def parse_raw_article(cls, web_article: web_api.RequestedArticle) -> List[WiktionaryArticle]:
+        print('Parse called for {}'.format(web_article))
+        return []
+
+    @classmethod
+    def get_articles_for(cls, search_text: str) -> StatusOr[List[RequestedArticle]]:
+        return web_api.request_article(search_text, locale='en')
