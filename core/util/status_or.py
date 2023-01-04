@@ -33,3 +33,8 @@ class StatusOr(Generic[_T]):
     def to_other(self) -> 'StatusOr':
         assert not self.is_ok()
         return StatusOr(status=self.status)
+
+    @classmethod
+    def from_pure(cls, status: Status) -> 'StatusOr':
+        assert not status.is_ok()
+        return cls(status=status.status)

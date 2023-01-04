@@ -1,3 +1,5 @@
 PySide6~=6.3 # Linking with Qt for UI
 genanki~=0.13
 requests~=2.27  # Web-requests library
+mwparserfromhell~=0.6
+wikitextparser~=0.51

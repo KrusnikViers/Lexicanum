@@ -7,7 +7,6 @@ from lookup.wiktionary.web_api import RequestedArticle
 class WiktionaryArticle:
     def __init__(self, title: str, see_also: List[str]):
         self.title = title
-        self.see_also = see_also
 
 
 class WiktionaryLocaleParser:
