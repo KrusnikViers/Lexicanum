@@ -11,8 +11,10 @@ _COMMON_PARAMS = {
     'formatversion': 2  # https://www.mediawiki.org/wiki/API:JSON_version_2
 }
 
+_RELEVANT_ARTICLE_TITLES_FETCH_COUNT = 2
 
-class RequestedArticle:
+
+class RawWiktionaryArticle:
     def __init__(self, title: str, page_id: int, content: str):
         self.title = title
         self.page_id = page_id
@@ -26,7 +28,7 @@ def _localized_endpoint(locale: str):
     return 'https://{}.wiktionary.org/w/api.php'.format(locale)
 
 
-def _status_code_error(text: str, locale: str, response: requests.Response) -> Status | None:
+def _error_by_request_status_code(text: str, locale: str, response: requests.Response) -> Status | None:
     if response.status_code == 404:
         return Status('Nothing found for \'{}\'({})'.format(text, locale))
     if response.status_code != 200:
@@ -37,43 +39,40 @@ def _status_code_error(text: str, locale: str, response: requests.Response) -> S
     return None
 
 
-def _search_by_title(search_text: str, locale: str) -> StatusOr[List[str]]:
+def _fetch_relevant_article_titles(search_text: str, locale: str) -> StatusOr[List[str]]:
     params = _COMMON_PARAMS | {
         'search': search_text.lower(),
         'action': 'opensearch',
         'profile': 'fuzzy',
         'redirects': 'resolve',
-        'limit': 2
+        'limit': _RELEVANT_ARTICLE_TITLES_FETCH_COUNT
     }
     result = requests.get(_localized_endpoint(locale), params=params)
-    if errcode := _status_code_error(search_text, locale, result):
+    if errcode := _error_by_request_status_code(search_text, locale, result):
         return StatusOr.from_pure(errcode)
 
     parsed_response = json.loads(result.text)
     return StatusOr(value=parsed_response[1])
 
 
-def search_articles(search_text: str, locale: str) -> StatusOr[List[RequestedArticle]]:
-    keywords_status = _search_by_title(search_text, locale)
-    if not keywords_status.is_ok():
-        return keywords_status.to_other()
-    print(keywords_status)
+def fetch_matching_articles(search_text: str, locale: str) -> StatusOr[List[RawWiktionaryArticle]]:
+    relevant_article_titles = _fetch_relevant_article_titles(search_text, locale)
+    if not relevant_article_titles.is_ok():
+        return relevant_article_titles.to_other()
 
-    results = []
-    for keyword in keywords_status.value:
-        params = _COMMON_PARAMS | {
-            'action': 'query',
-            'prop': 'revisions',
-            'rvslots': '*',
-            'rvprop': 'content',
-            'redirects': '1',
-            'titles': keyword,
-        }
-        result = requests.get(url=_localized_endpoint(locale), params=params)
-        if errcode := _status_code_error(search_text, locale, result):
-            return StatusOr.from_pure(errcode)
-        parsed_response = json.loads(result.text)
-        for page in parsed_response['query']['pages']:
-            results.append(RequestedArticle(page['title'], page['pageid'],
-                                            content=page['revisions'][0]['slots']['main']['content']))
-    return StatusOr(value=results)
+    params = _COMMON_PARAMS | {
+        'action': 'query',
+        'prop': 'revisions',
+        'rvslots': '*',
+        'rvprop': 'content',
+        'redirects': '1',
+        'titles': '|'.join(relevant_article_titles.value),
+    }
+    result = requests.get(url=_localized_endpoint(locale), params=params)
+    if errcode := _error_by_request_status_code(search_text, locale, result):
+        return StatusOr.from_pure(errcode)
+    parsed_response = json.loads(result.text)
+    return StatusOr(value=[RawWiktionaryArticle(page['title'],
+                                                page['pageid'],
+                                                content=page['revisions'][0]['slots']['main']['content'])
+                           for page in parsed_response['query']['pages']])

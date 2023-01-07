@@ -1,7 +1,7 @@
 from core.types import Language
 from core.util import StatusOr
 from lookup.interface import LookupEngine, LookupRequest, LookupResponse
-from lookup.wiktionary.language_support import *
+from lookup.wiktionary.languages import *
 
 _SUPPORTED_LOCALES = {
     Language.EN: EnglishLocaleParser,
@@ -15,7 +15,8 @@ class WiktionaryLookupEngine(LookupEngine):
         source_parser = _SUPPORTED_LOCALES[request.source_language]
         target_parser = _SUPPORTED_LOCALES[request.target_language]
 
-        source_articles_status = source_parser.get_articles_for(request.text)
+        source_articles_status = source_parser.fetch_and_parse_word_definitions(
+            request.text, target_parser.translation_language_codes())
         if not source_articles_status.is_ok():
             return source_articles_status.to_other()
         print('\n'.join(map(str, source_articles_status.value)))
