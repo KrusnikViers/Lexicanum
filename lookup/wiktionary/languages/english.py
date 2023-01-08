@@ -3,17 +3,13 @@ from typing import List
 
 from core.types import CardType
 from core.util import StatusOr
-from lookup.wiktionary.internal import WikitextTreeNode, fetch_structured_articles
+from lookup.wiktionary.internal import WikitextContentNode, fetch_structured_articles
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
 
-def _normalize_title(title: str):
-    return title
-
-
-def _maybe_get_translations(section: WikitextTreeNode, target_translation_language_codes: List[str]) -> []:
+def _maybe_get_translations(section: WikitextContentNode, target_translation_language_codes: List[str]) -> []:
     results = []
-    for node in section.nodes:
+    for node in section.children:
         if node.name == 'trans-top':
             new_node = WiktionaryTranslations()
             if node.plain_args:
@@ -35,8 +31,8 @@ def _maybe_get_translations(section: WikitextTreeNode, target_translation_langua
     return meaningful_results
 
 
-def _maybe_get_section_type(section: WikitextTreeNode) -> CardType | None:
-    for node in section.nodes:
+def _maybe_get_section_type(section: WikitextContentNode) -> CardType | None:
+    for node in section.children:
         match node.name:
             case 'en-noun':
                 return CardType.Noun
@@ -45,7 +41,7 @@ def _maybe_get_section_type(section: WikitextTreeNode) -> CardType | None:
     return None
 
 
-def _maybe_extract_definitions(wiki_tree_node: WikitextTreeNode, wiki_title: str,
+def _maybe_extract_definitions(wiki_tree_node: WikitextContentNode, wiki_title: str,
                                target_translation_language_codes: List[str]) -> List[WiktionaryWordDefinition]:
     type_found = _maybe_get_section_type(wiki_tree_node)
     if type_found is None:
@@ -72,8 +68,8 @@ class EnglishLocaleParser(WiktionaryLocalizedParser):
             return structured_articles_status.to_other()
 
         definitions_per_article = [
-            _maybe_extract_definitions(article, article.title, target_translation_language_codes) for
-            article in structured_articles_status.value
+            _maybe_extract_definitions(article, article.name, target_translation_language_codes)
+            for article in structured_articles_status.value
         ]
         results = itertools.chain(*definitions_per_article)
         for result in results:

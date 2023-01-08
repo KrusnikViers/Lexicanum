@@ -3,54 +3,54 @@ from typing import List, Dict
 import mwparserfromhell as mwph
 
 
-class WikitextDataNode:
-    def __init__(self, name: str):
+class WikitextContentNode:
+    def __init__(self, name: str, level: int, parent=None):
         self.name = name
+        self.level = level
         self.plain_args: List[str] = []
         self.keyed_args: Dict[str, str] = {}
 
-    def __str__(self, indent=0):
-        return ' ' * indent + '{}: {} | {}'.format(self.name,
-                                                   '|'.join(self.plain_args),
-                                                   '|'.join(['{}={}'.format(x, y) for x, y in self.keyed_args.items()]))
+        self.children: List[WikitextContentNode] = []
+        self.parent: WikitextContentNode | None = parent
 
-
-class WikitextTreeNode:
-    def __init__(self, title: str, level: int):
-        self.title = title
-        self.level = level
-        self.nodes: List[WikitextDataNode] = []
-        self.children: List[WikitextTreeNode] = []
-
-    def __str__(self):
-        indent = (self.level + 1) * 2
-        result = ' ' * indent + '-{} [{}]'.format(self.title, self.level)
-        for node in self.nodes:
-            result += '\n' + node.__str__(indent + 1)
+    def __str__(self) -> str:
+        indent = 2 * (self.level + 1)
+        result = ' ' * indent + '{}::{}'.format(self.name[:20], self.level)
+        for arg in self.plain_args:
+            result += '\n' + ' ' * indent + '- {}'.format(arg[:20])
+        for arg_key, arg_value in self.keyed_args.items():
+            result += '\n' + ' ' * indent + '- {}={}'.format(arg_key[:20], arg_key[:20])
         for child in self.children:
             result += '\n' + str(child)
         return result
 
 
-# Returns root section with empty title and -1 level.
-def build_tree_from_markup(raw_wikitext: str, wiki_title: str) -> WikitextTreeNode:
-    article = mwph.parse(raw_wikitext)
-    structure_stack = [WikitextTreeNode(title=wiki_title, level=-1)]
-    for parsed_node in article.nodes:
+def _build_tree_from_wikicode(wikicode: mwph.wikicode.Wikicode, root: WikitextContentNode):
+    current_root = root
+    for parsed_node in wikicode.nodes:
         if isinstance(parsed_node, mwph.nodes.Heading):
-            while structure_stack[-1].level >= parsed_node.level:
-                structure_stack.pop()
-            new_section = WikitextTreeNode(title=parsed_node.title, level=parsed_node.level)
-            structure_stack[-1].children.append(new_section)
-            structure_stack.append(new_section)
+            while current_root.level >= parsed_node.level:
+                current_root = current_root.parent
+            new_node = WikitextContentNode(str(parsed_node.title), parsed_node.level, parent=current_root)
+            current_root.children.append(new_node)
+            current_root = new_node
+            _build_tree_from_wikicode(parsed_node.title, current_root)
             continue
         if isinstance(parsed_node, mwph.nodes.Template):
-            new_node = WikitextDataNode(parsed_node.name)
+            new_node = WikitextContentNode(str(parsed_node.name), current_root.level + 1, parent=current_root)
+            current_root.children.append(new_node)
             for param in parsed_node.params:
                 if param.showkey:
                     new_node.keyed_args[str(param.name)] = str(param.value)
+                    _build_tree_from_wikicode(param.name, new_node)
+                    _build_tree_from_wikicode(param.value, new_node)
                 else:
                     new_node.plain_args.append(str(param.value))
-            structure_stack[-1].nodes.append(new_node)
+                    _build_tree_from_wikicode(param.value, new_node)
 
-    return structure_stack[0]
+
+def build_tree_from_wiki_page_content(raw_wiki_text: str, wiki_page_title: str) -> WikitextContentNode:
+    parsed_tree = mwph.parse(raw_wiki_text)
+    root = WikitextContentNode(wiki_page_title, -1)
+    _build_tree_from_wikicode(parsed_tree, root)
+    return root
