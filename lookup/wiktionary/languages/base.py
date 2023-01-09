@@ -1,14 +1,13 @@
 from typing import List, Dict
 
 from core.types import CardType
-from core.util import StatusOr
+from lookup.wiktionary.internal.markup import WikitextContentNode
 
 
 class WiktionaryTranslations:
     def __init__(self):
         self.meaning_note: str | None = None
-        # Key: Language code
-        # Value: List of translations
+        # Mapping {Language code: List of translations}
         self.translations: Dict[str, List[str]] = {}
 
     def __str__(self):
@@ -35,19 +34,19 @@ class WiktionaryWordDefinition:
 
 class WiktionaryLocalizedParser:
     @classmethod
-    # Used to get translations from the corresponding wiki page section. For our purposes, multiple language codes can
-    # be suitable (e.g, 'high' and 'simple' version of the same language).
+    # Language code to access Wiktionary localized endpoint.
+    def endpoint_language_code(cls) -> str:
+        raise NotImplementedError
+
+    @classmethod
+    # Used for extracting translations from the wiki page. Multiple language codes can be suitable (e.g, 'high' and
+    # 'simple' version of the same language).
     def translation_language_codes(cls) -> List[str]:
         raise NotImplementedError
 
     @classmethod
-    # Get articles relevant to the |search_text|. Target translation codes are provided by the target parser, and only
-    # relevant translations are kept.
-    def search_for_definitions(cls, search_text: str, target_translation_language_codes: List[str]) \
-            -> StatusOr[List[WiktionaryWordDefinition]]:
-        raise NotImplementedError
-
-    @classmethod
-    # TODO: Comment
-    def fetch_definitions(cls, titles: List[str]) -> StatusOr[List[WiktionaryWordDefinition]]:
+    # Returns list of different word definitions from the page. There could be multiple if word means multiple parts of
+    # speech or have multiple meanings. Translations only filled for target translation language codes.
+    def extract_word_definitions(cls, wiki_tree_node: WikitextContentNode, wiki_title: str,
+                                 target_translation_language_codes: List[str]) -> List[WiktionaryWordDefinition]:
         raise NotImplementedError

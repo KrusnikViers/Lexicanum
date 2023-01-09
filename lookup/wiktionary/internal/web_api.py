@@ -24,7 +24,7 @@ class RawWiktionaryArticle:
         return '{}:{}\n{}'.format(self.page_id, self.title, self.content[:100] + '...')
 
 
-def _localized_endpoint(locale: str):
+def _endpoint_url(locale: str):
     return 'https://{}.wiktionary.org/w/api.php'.format(locale)
 
 
@@ -39,7 +39,7 @@ def _error_by_request_status_code(text: str, locale: str, response: requests.Res
     return None
 
 
-def fetch_matching_articles(search_text: str, locale: str) -> StatusOr[List[RawWiktionaryArticle]]:
+def search_for_articles(search_text: str, endpoint_language_code: str) -> StatusOr[List[RawWiktionaryArticle]]:
     params = _COMMON_PARAMS | {
         'search': search_text.lower(),
         'action': 'opensearch',
@@ -47,15 +47,15 @@ def fetch_matching_articles(search_text: str, locale: str) -> StatusOr[List[RawW
         'redirects': 'resolve',
         'limit': _RELEVANT_ARTICLE_TITLES_FETCH_COUNT
     }
-    result = requests.get(_localized_endpoint(locale), params=params)
-    if errcode := _error_by_request_status_code(search_text, locale, result):
+    result = requests.get(_endpoint_url(endpoint_language_code), params=params)
+    if errcode := _error_by_request_status_code(search_text, endpoint_language_code, result):
         return StatusOr.from_pure(errcode)
 
     parsed_response = json.loads(result.text)
-    return fetch_articles(parsed_response[1], locale)
+    return retrieve_articles(parsed_response[1], endpoint_language_code)
 
 
-def fetch_articles(titles: List[str], locale: str) -> StatusOr[List[RawWiktionaryArticle]]:
+def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusOr[List[RawWiktionaryArticle]]:
     params = _COMMON_PARAMS | {
         'action': 'query',
         'prop': 'revisions',
@@ -64,8 +64,8 @@ def fetch_articles(titles: List[str], locale: str) -> StatusOr[List[RawWiktionar
         'redirects': '1',
         'titles': '|'.join(titles),
     }
-    result = requests.get(url=_localized_endpoint(locale), params=params)
-    if errcode := _error_by_request_status_code(', '.join(titles), locale, result):
+    result = requests.get(url=_endpoint_url(endpoint_language_code), params=params)
+    if errcode := _error_by_request_status_code(', '.join(titles), endpoint_language_code, result):
         return StatusOr.from_pure(errcode)
     parsed_response = json.loads(result.text)
     return StatusOr(value=[RawWiktionaryArticle(page['title'],
