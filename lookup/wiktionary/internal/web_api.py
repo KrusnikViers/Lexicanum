@@ -39,7 +39,7 @@ def _error_by_request_status_code(text: str, locale: str, response: requests.Res
     return None
 
 
-def _fetch_relevant_article_titles(search_text: str, locale: str) -> StatusOr[List[str]]:
+def fetch_matching_articles(search_text: str, locale: str) -> StatusOr[List[RawWiktionaryArticle]]:
     params = _COMMON_PARAMS | {
         'search': search_text.lower(),
         'action': 'opensearch',
@@ -52,24 +52,20 @@ def _fetch_relevant_article_titles(search_text: str, locale: str) -> StatusOr[Li
         return StatusOr.from_pure(errcode)
 
     parsed_response = json.loads(result.text)
-    return StatusOr(value=parsed_response[1])
+    return fetch_articles(parsed_response[1], locale)
 
 
-def fetch_matching_articles(search_text: str, locale: str) -> StatusOr[List[RawWiktionaryArticle]]:
-    relevant_article_titles = _fetch_relevant_article_titles(search_text, locale)
-    if not relevant_article_titles.is_ok():
-        return relevant_article_titles.to_other()
-
+def fetch_articles(titles: List[str], locale: str) -> StatusOr[List[RawWiktionaryArticle]]:
     params = _COMMON_PARAMS | {
         'action': 'query',
         'prop': 'revisions',
         'rvslots': '*',
         'rvprop': 'content',
         'redirects': '1',
-        'titles': '|'.join(relevant_article_titles.value),
+        'titles': '|'.join(titles),
     }
     result = requests.get(url=_localized_endpoint(locale), params=params)
-    if errcode := _error_by_request_status_code(search_text, locale, result):
+    if errcode := _error_by_request_status_code(', '.join(titles), locale, result):
         return StatusOr.from_pure(errcode)
     parsed_response = json.loads(result.text)
     return StatusOr(value=[RawWiktionaryArticle(page['title'],

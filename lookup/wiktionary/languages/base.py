@@ -43,6 +43,11 @@ class WiktionaryLocalizedParser:
     @classmethod
     # Get articles relevant to the |search_text|. Target translation codes are provided by the target parser, and only
     # relevant translations are kept.
-    def fetch_and_parse_word_definitions(cls, search_text: str, target_translation_language_codes: List[str]) \
+    def search_for_definitions(cls, search_text: str, target_translation_language_codes: List[str]) \
             -> StatusOr[List[WiktionaryWordDefinition]]:
+        raise NotImplementedError
+
+    @classmethod
+    # TODO: Comment
+    def fetch_definitions(cls, titles: List[str]) -> StatusOr[List[WiktionaryWordDefinition]]:
         raise NotImplementedError

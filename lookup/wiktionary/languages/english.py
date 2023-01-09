@@ -3,7 +3,7 @@ from typing import List
 
 from core.types import CardType
 from core.util import StatusOr
-from lookup.wiktionary.internal import WikitextContentNode, fetch_structured_articles
+from lookup.wiktionary.internal import WikitextContentNode, fetch_and_parse_matching_articles, fetch_and_parse_articles
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
 
@@ -61,9 +61,9 @@ class EnglishLocaleParser(WiktionaryLocalizedParser):
         return ['en']
 
     @classmethod
-    def fetch_and_parse_word_definitions(cls, search_text: str, target_translation_language_codes: List[str]) \
+    def search_for_definitions(cls, search_text: str, target_translation_language_codes: List[str]) \
             -> StatusOr[List[WiktionaryWordDefinition]]:
-        structured_articles_status = fetch_structured_articles(search_text, locale='en')
+        structured_articles_status = fetch_and_parse_matching_articles(search_text, locale='en')
         if not structured_articles_status.is_ok():
             return structured_articles_status.to_other()
 
@@ -72,6 +72,19 @@ class EnglishLocaleParser(WiktionaryLocalizedParser):
             for article in structured_articles_status.value
         ]
         results = itertools.chain(*definitions_per_article)
-        for result in results:
-            print(result)
-        return StatusOr(status='Not implemented')
+        return StatusOr(value=list(results))
+
+    @classmethod
+    # TODO: Comment
+    # TODO: Deduplicate
+    def fetch_definitions(cls, titles: List[str]) -> StatusOr[List[WiktionaryWordDefinition]]:
+        structured_articles_status = fetch_and_parse_articles(titles, locale='en')
+        if not structured_articles_status.is_ok():
+            return structured_articles_status.to_other()
+
+        definitions_per_article = [
+            _maybe_extract_definitions(article, article.name, target_translation_language_codes=[])
+            for article in structured_articles_status.value
+        ]
+        results = itertools.chain(*definitions_per_article)
+        return StatusOr(value=list(results))
