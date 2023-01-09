@@ -16,6 +16,10 @@ class LookupRequest:
         assert source_type != LookupRequest.Type.UNKNOWN
         self.source_type = source_type
 
+    def __str__(self):
+        return 'LookupRequest from {} \'{}\' ({}=>{})'.format(self.source_type.name, self.text,
+                                                              self.source_language.name, self.target_language.name)
+
     @classmethod
     def from_answer(cls, text: str):
         return cls(text,

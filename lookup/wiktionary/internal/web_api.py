@@ -68,7 +68,8 @@ def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusO
     if errcode := _error_by_request_status_code(', '.join(titles), endpoint_language_code, result):
         return StatusOr.from_pure(errcode)
     parsed_response = json.loads(result.text)
+    meaningful_pages = [page for page in parsed_response['query']['pages'] if 'missing' not in page]
     return StatusOr(value=[RawWiktionaryArticle(page['title'],
                                                 page['pageid'],
                                                 content=page['revisions'][0]['slots']['main']['content'])
-                           for page in parsed_response['query']['pages']])
+                           for page in meaningful_pages])

@@ -17,12 +17,14 @@ class WiktionaryTranslations:
 
 class WiktionaryWordDefinition:
     def __init__(self, title: str, card_type: CardType):
-        # Raw title of source wiktionary article
+        # Raw title of source wiktionary article.
         self.wiki_title = title
-        # Short human-readable title, that could be used in answers
+        # Short human-readable title, that could be used in answers.
         self.short_title = title
         # Full human-readable title with grammar information, that could be used in questions.
         self.grammar_string = title
+        # Meaning note from the original article.
+        self.meaning_note = ""
 
         self.card_type = card_type
         self.translations: List[WiktionaryTranslations] = []
