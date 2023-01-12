@@ -5,6 +5,7 @@ from typing import List, Type, Dict
 from core.types import Language, Card
 from core.util import StatusOr, if_none
 from lookup.interface import LookupEngine, LookupRequest, LookupResponse
+from lookup.wiktionary.debug import *
 from lookup.wiktionary.internal import web_api
 from lookup.wiktionary.internal.markup import build_wiki_content_tree
 from lookup.wiktionary.languages import *
@@ -54,13 +55,16 @@ def _create_translations_dict(definitions: List[WiktionaryWordDefinition]) -> Di
             unique_words = set(itertools.chain(*meaning.translations.values()))
             for word in unique_words:
                 translation = _Translation(word, definition.card_type)
-                if word in result and result[translation].meaning_note:
+                if translation in result and result[translation].meaning_note:
                     continue
                 result[translation] = _TranslationMeta(meaning.meaning_note, definition)
     return result
 
 
 def _lookup_from_answer(request: LookupRequest) -> StatusOr[LookupResponse]:
+    if PRINT_LOOKUP_INPUTS:
+        print('=====Looking up {} ...'.format(request))
+
     answer_parser = _SUPPORTED_LOCALES[request.source_language]
     question_parser = _SUPPORTED_LOCALES[request.target_language]
 
@@ -70,14 +74,24 @@ def _lookup_from_answer(request: LookupRequest) -> StatusOr[LookupResponse]:
         return source_articles_status.to_other()
 
     source_translations_dict = _create_translations_dict(source_articles_status.value)
-    retrieved_translations = _retrieve_definitions(
+    retrieved_translations_status = _retrieve_definitions(
         [translation.word for translation in source_translations_dict.keys()],
         question_parser, target_translation_codes=[])
-    if not retrieved_translations.is_ok():
-        return retrieved_translations.to_other()
+    if not retrieved_translations_status.is_ok():
+        return retrieved_translations_status.to_other()
+
+    if PRINT_WIKICONTENTS:
+        print('=======Extracted wiki content for {}:{} lookup >>'.format(request.source_language.name, request.text))
+        print('Articles fetched:')
+        for article in source_articles_status.value:
+            print(article)
+        print('Translations fetched:')
+        for article in retrieved_translations_status.value:
+            print(article)
+        print('=======Extracted wiki content for {}:{} lookup <<'.format(request.source_language.name, request.text))
 
     result: List[Card] = []
-    for retrieved_translation in retrieved_translations.value:
+    for retrieved_translation in retrieved_translations_status.value:
         translation_key = _Translation(retrieved_translation.wiki_title, retrieved_translation.card_type)
         if translation_key not in source_translations_dict:
             continue
@@ -87,10 +101,19 @@ def _lookup_from_answer(request: LookupRequest) -> StatusOr[LookupResponse]:
                            answer=source_meta.original_definition.short_title,
                            note=if_none(source_meta.meaning_note, '')))
 
+    if PRINT_CARDS:
+        print('========Extracted cards for {}:{} lookup >>'.format(request.source_language.name, request.text))
+        for card in result:
+            print(card)
+        print('========Extracted cards for {}:{} lookup <<'.format(request.source_language.name, request.text))
+
     return StatusOr(LookupResponse(result, request))
 
 
 def _lookup_from_question(request: LookupRequest) -> StatusOr[LookupResponse]:
+    if PRINT_LOOKUP_INPUTS:
+        print('=====Looking up {} ...'.format(request))
+
     question_parser = _SUPPORTED_LOCALES[request.source_language]
     answer_parser = _SUPPORTED_LOCALES[request.target_language]
 
@@ -100,14 +123,24 @@ def _lookup_from_question(request: LookupRequest) -> StatusOr[LookupResponse]:
         return source_articles_status.to_other()
 
     source_translations_dict = _create_translations_dict(source_articles_status.value)
-    retrieved_translations = _retrieve_definitions(
+    retrieved_translations_status = _retrieve_definitions(
         [translation.word for translation in source_translations_dict.keys()],
         answer_parser, target_translation_codes=[])
-    if not retrieved_translations.is_ok():
-        return retrieved_translations.to_other()
+    if not retrieved_translations_status.is_ok():
+        return retrieved_translations_status.to_other()
+
+    if PRINT_WIKICONTENTS:
+        print('=======Extracted wiki content for {}:{} lookup >>'.format(request.source_language.name, request.text))
+        print('Articles fetched:')
+        for article in source_articles_status.value:
+            print(article)
+        print('Translations fetched:')
+        for article in retrieved_translations_status.value:
+            print(article)
+        print('=======Extracted wiki content for {}:{} lookup <<'.format(request.source_language.name, request.text))
 
     result: List[Card] = []
-    for retrieved_translation in retrieved_translations.value:
+    for retrieved_translation in retrieved_translations_status.value:
         translation_key = _Translation(retrieved_translation.wiki_title, retrieved_translation.card_type)
         if translation_key not in source_translations_dict:
             continue
@@ -117,13 +150,21 @@ def _lookup_from_question(request: LookupRequest) -> StatusOr[LookupResponse]:
                            answer=retrieved_translation.grammar_string,
                            note=if_none(source_meta.meaning_note, '')))
 
+    if PRINT_CARDS:
+        print('========Extracted cards for {}:{} lookup >>'.format(request.source_language.name, request.text))
+        for card in result:
+            print(card)
+        print('========Extracted cards for {}:{} lookup <<'.format(request.source_language.name, request.text))
+
     return StatusOr(LookupResponse(result, request))
 
 
 class WiktionaryLookupEngine(LookupEngine):
     def lookup(self, request: LookupRequest) -> StatusOr[LookupResponse]:
         if request.source_type == LookupRequest.Type.ANSWER:
-            return _lookup_from_answer(request)
-        if request.source_type == LookupRequest.Type.QUESTION:
-            return _lookup_from_question(request)
-        raise ValueError
+            result_status = _lookup_from_answer(request)
+        elif request.source_type == LookupRequest.Type.QUESTION:
+            result_status = _lookup_from_question(request)
+        else:
+            raise ValueError
+        return result_status

@@ -1,6 +1,7 @@
 from typing import List
 
 from core.types import CardType
+from lookup.wiktionary.debug import *
 from lookup.wiktionary.internal.markup import WikitextContentNode
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
@@ -24,16 +25,17 @@ def _maybe_get_translations(section: WikitextContentNode, target_translation_lan
     return meaningful_results
 
 
-def _maybe_get_section_type(section: WikitextContentNode) -> CardType | None:
+def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
     type_nodes = list(filter(lambda x: x.name == 'Wortart', section.children))
     if not type_nodes:
         return None
-    assert len(type_nodes) == 1
-
-    match type_nodes[0].plain_args[0]:
-        case 'Substantiv':
-            return CardType.Noun
-    return None
+    _MAPPING = {
+        'Substantiv': CardType.Noun,
+        'Verb': CardType.Verb,
+        'Adjektiv': CardType.Adjective,
+        'Adverb': CardType.Adverb,
+    }
+    return [_MAPPING[node.plain_args[0]] for node in type_nodes if node.plain_args[0] in _MAPPING]
 
 
 class GermanLocaleParser(WiktionaryLocalizedParser):
@@ -48,14 +50,22 @@ class GermanLocaleParser(WiktionaryLocalizedParser):
     @classmethod
     def extract_word_definitions(cls, wiki_tree_node: WikitextContentNode, wiki_title: str,
                                  target_translation_language_codes: List[str]) -> List[WiktionaryWordDefinition]:
-        type_found = _maybe_get_section_type(wiki_tree_node)
-        if type_found is None:
+        if wiki_tree_node.level == -1 and PRINT_WIKITREE_DE:
+            print('======Extracting DE definition {} >>'.format(wiki_title))
+            print(wiki_tree_node)
+            print('======Extracting DE definition {} <<'.format(wiki_title))
+
+        types_found = _maybe_get_section_types(wiki_tree_node)
+        if not types_found:
             nested_results = []
             for child_node in wiki_tree_node.children:
                 nested_results += cls.extract_word_definitions(child_node, wiki_title,
                                                                target_translation_language_codes)
             return nested_results
 
-        result_definition = WiktionaryWordDefinition(wiki_title, type_found)
-        result_definition.translations = _maybe_get_translations(wiki_tree_node, target_translation_language_codes)
-        return [result_definition]
+        result = []
+        for type_found in types_found:
+            new_definition = WiktionaryWordDefinition(wiki_title, type_found)
+            new_definition.translations = _maybe_get_translations(wiki_tree_node, target_translation_language_codes)
+            result.append(new_definition)
+        return result

@@ -10,4 +10,5 @@ class LookupResponse:
         self.request = request
 
     def __str__(self):
-        return 'LookupResponse for {}:\n{}'.format(str(self.request), '\n'.join(map(str, self.cards)))
+        return 'LookupResponse for {}:{}'.format(str(self.request),
+                                                   ''.join(['\n  - ' + str(card) for card in self.cards]))

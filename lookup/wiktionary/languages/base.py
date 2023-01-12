@@ -11,8 +11,10 @@ class WiktionaryTranslations:
         self.translations: Dict[str, List[str]] = {}
 
     def __str__(self):
-        translations_str = '\n'.join(['{} = {}'.format(x, ', '.join(y)) for x, y in self.translations.items()])
-        return '---\n{}:\n{}'.format(self.meaning_note, translations_str)
+        if not self.translations:
+            return ''
+        translations_str = '\n'.join(['  - {} = {}'.format(x, ', '.join(y)) for x, y in self.translations.items()])
+        return '\n  note: {}:\n{}'.format(self.meaning_note, translations_str)
 
 
 class WiktionaryWordDefinition:
@@ -30,8 +32,8 @@ class WiktionaryWordDefinition:
         self.translations: List[WiktionaryTranslations] = []
 
     def __str__(self):
-        return '{}:{}\n{}'.format(self.wiki_title, self.card_type.display_name(),
-                                  '\n'.join(map(str, self.translations)))
+        return '{}:{}{}'.format(self.wiki_title, self.card_type.display_name(),
+                                ''.join(map(str, self.translations)))
 
 
 class WiktionaryLocalizedParser:

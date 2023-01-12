@@ -31,21 +31,21 @@ def _expand_content_tree_from_wikicode(wikicode: mwph.wikicode.Wikicode, root: W
         if isinstance(parsed_node, mwph.nodes.Heading):
             while current_root.level >= parsed_node.level:
                 current_root = current_root.parent
-            new_node = WikitextContentNode(str(parsed_node.title), parsed_node.level, parent=current_root)
+            new_node = WikitextContentNode(str(parsed_node.title).strip(), parsed_node.level, parent=current_root)
             current_root.children.append(new_node)
             current_root = new_node
             _expand_content_tree_from_wikicode(parsed_node.title, current_root)
             continue
         if isinstance(parsed_node, mwph.nodes.Template):
-            new_node = WikitextContentNode(str(parsed_node.name), current_root.level + 1, parent=current_root)
+            new_node = WikitextContentNode(str(parsed_node.name).strip(), current_root.level + 1, parent=current_root)
             current_root.children.append(new_node)
             for param in parsed_node.params:
                 if param.showkey:
-                    new_node.keyed_args[str(param.name)] = str(param.value)
+                    new_node.keyed_args[str(param.name).strip()] = str(param.value).strip()
                     _expand_content_tree_from_wikicode(param.name, new_node)
                     _expand_content_tree_from_wikicode(param.value, new_node)
                 else:
-                    new_node.plain_args.append(str(param.value))
+                    new_node.plain_args.append(str(param.value).strip())
                     _expand_content_tree_from_wikicode(param.value, new_node)
 
 
