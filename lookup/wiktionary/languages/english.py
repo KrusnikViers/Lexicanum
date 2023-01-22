@@ -29,6 +29,13 @@ def _fill_translations(section: WikitextContentNode, target_translation_language
         _fill_translations(child_node, target_translation_language_codes, definition)
 
 
+def _fill_word_forms(section: WikitextContentNode,  definition: WiktionaryWordDefinition):
+    if definition.card_type== CardType.Verb:
+        definition.short_title = 'To {}'.format(definition.wiki_title)
+    else:
+        definition.short_title = definition.wiki_title.capitalize()
+    definition.grammar_string = definition.short_title
+
 def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
     _MAPPING = {
         'en-noun': CardType.Noun,
@@ -38,13 +45,6 @@ def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
     }
     return [_MAPPING[node.name] for node in section.children if node.name in _MAPPING]
 
-
-def _fill_word_forms(section: WikitextContentNode, word_type: CardType, definition: WiktionaryWordDefinition):
-    if word_type == CardType.Verb:
-        definition.short_title = 'To {}'.format(definition.wiki_title)
-    else:
-        definition.short_title = definition.wiki_title.capitalize()
-    definition.grammar_string = definition.short_title
 
 
 class EnglishLocaleParser(WiktionaryLocalizedParser):
@@ -75,7 +75,7 @@ class EnglishLocaleParser(WiktionaryLocalizedParser):
         result = []
         for type_found in types_found:
             new_definition = WiktionaryWordDefinition(wiki_title, type_found)
-            _fill_word_forms(wiki_tree_node, type_found, new_definition)
+            _fill_word_forms(wiki_tree_node, new_definition)
             _fill_translations(wiki_tree_node, target_translation_language_codes, new_definition)
             result.append(new_definition)
         return result

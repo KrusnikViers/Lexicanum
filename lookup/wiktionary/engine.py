@@ -146,8 +146,8 @@ def _lookup_from_question(request: LookupRequest) -> StatusOr[LookupResponse]:
             continue
         source_meta = source_translations_dict[translation_key]
         result.append(Card(retrieved_translation.card_type,
-                           question=source_meta.original_definition.short_title,
-                           answer=retrieved_translation.grammar_string,
+                           question=source_meta.original_definition.grammar_string,
+                           answer=retrieved_translation.short_title,
                            note=if_none(source_meta.meaning_note, '')))
 
     if PRINT_CARDS:

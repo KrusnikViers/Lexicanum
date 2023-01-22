@@ -56,6 +56,9 @@ def search_for_articles(search_text: str, endpoint_language_code: str) -> Status
 
 
 def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusOr[List[RawWiktionaryArticle]]:
+    if not titles:
+        return StatusOr(value=[])
+
     params = _COMMON_PARAMS | {
         'action': 'query',
         'prop': 'revisions',
@@ -68,7 +71,9 @@ def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusO
     if errcode := _error_by_request_status_code(', '.join(titles), endpoint_language_code, result):
         return StatusOr.from_pure(errcode)
     parsed_response = json.loads(result.text)
-    meaningful_pages = [page for page in parsed_response['query']['pages'] if 'missing' not in page]
+    meaningful_pages = [page for page in parsed_response['query']['pages'] if
+                        'missing' not in page and
+                        'title' in page and 'pageid' in page and 'revisions' in page]
     return StatusOr(value=[RawWiktionaryArticle(page['title'],
                                                 page['pageid'],
                                                 content=page['revisions'][0]['slots']['main']['content'])

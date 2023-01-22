@@ -6,7 +6,8 @@ from lookup.wiktionary.internal.markup import WikitextContentNode
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
 
-def _maybe_get_translations(section: WikitextContentNode, target_translation_language_codes: List[str]) -> []:
+def _fill_translations(section: WikitextContentNode, target_translation_language_codes: List[str],
+                       definition: WiktionaryWordDefinition):
     results = []
     for node in section.children:
         if node.name in ('Ü', 'Üxx4', 'Üt') and node.plain_args[0] in target_translation_language_codes:
@@ -18,11 +19,47 @@ def _maybe_get_translations(section: WikitextContentNode, target_translation_lan
                 translations[language_code] = [node.plain_args[1]]
             else:
                 translations[language_code].append(node.plain_args[1])
-    meaningful_results = [translation for translation in results if len(translation.translations)]
 
+    meaningful_results = [translation for translation in results if len(translation.translations)]
+    definition.translations += meaningful_results
     for child_node in section.children:
-        meaningful_results += _maybe_get_translations(child_node, target_translation_language_codes)
-    return meaningful_results
+        _fill_translations(child_node, target_translation_language_codes, definition)
+
+
+def _fill_noun_word_forms(section: WikitextContentNode, definition: WiktionaryWordDefinition):
+    _ARTICLES = {'n': 'Das', 'm': 'Der', 'f': 'Die'}
+    article = None
+    singular_form = None
+    plural_form = None
+
+    sections_to_check = [section] + section.children
+    for section in sections_to_check:
+        for key, value in section.keyed_args.items():
+            if key == 'Genus' and value in _ARTICLES and not article:
+                article = _ARTICLES[value]
+            elif key.startswith('Nominativ Singular') and not singular_form and value != '—':
+                singular_form = value
+            elif key.startswith('Nominativ Plural') and not plural_form and value != '—':
+                plural_form = value
+
+    singular_form = '{} {}'.format(article, singular_form) if article and singular_form else None
+    plural_form = 'Die {}'.format(plural_form) if plural_form else None
+    if singular_form and plural_form:
+        definition.short_title = singular_form
+        definition.grammar_string = '{} / {}'.format(singular_form, plural_form)
+    elif singular_form:
+        definition.short_title = singular_form
+        definition.grammar_string = '{} / nur Sing.'.format(singular_form)
+    elif plural_form:
+        definition.short_title = plural_form
+        definition.grammar_string = '{} / nur Plur.'.format(plural_form)
+
+
+def _fill_word_forms(section: WikitextContentNode, definition: WiktionaryWordDefinition):
+    definition.short_title = definition.wiki_title.capitalize()
+    definition.grammar_string = definition.short_title
+    if definition.card_type == CardType.Noun:
+        _fill_noun_word_forms(section, definition)
 
 
 def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
@@ -66,6 +103,7 @@ class GermanLocaleParser(WiktionaryLocalizedParser):
         result = []
         for type_found in types_found:
             new_definition = WiktionaryWordDefinition(wiki_title, type_found)
-            new_definition.translations = _maybe_get_translations(wiki_tree_node, target_translation_language_codes)
+            _fill_translations(wiki_tree_node, target_translation_language_codes, new_definition)
+            _fill_word_forms(wiki_tree_node, new_definition)
             result.append(new_definition)
         return result

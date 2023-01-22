@@ -19,7 +19,7 @@ class WikitextContentNode:
         for arg in self.plain_args:
             result += '\n' + ' ' * indent + '- {}'.format(arg[:20])
         for arg_key, arg_value in self.keyed_args.items():
-            result += '\n' + ' ' * indent + '- {}={}'.format(arg_key[:20], arg_key[:20])
+            result += '\n' + ' ' * indent + '- {}={}'.format(arg_key[:20], arg_value[:20])
         for child in self.children:
             result += '\n' + str(child)
         return result
