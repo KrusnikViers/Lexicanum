@@ -14,7 +14,7 @@ _COMMON_PARAMS = {
 _RELEVANT_ARTICLE_TITLES_FETCH_COUNT = 2
 
 
-class RawWiktionaryArticle:
+class WebArticle:
     def __init__(self, title: str, page_id: int, content: str):
         self.title = title
         self.page_id = page_id
@@ -39,7 +39,7 @@ def _error_by_request_status_code(text: str, locale: str, response: requests.Res
     return None
 
 
-def search_for_articles(search_text: str, endpoint_language_code: str) -> StatusOr[List[RawWiktionaryArticle]]:
+def search_articles(search_text: str, endpoint_language_code: str) -> StatusOr[List[WebArticle]]:
     params = _COMMON_PARAMS | {
         'search': search_text.lower(),
         'action': 'opensearch',
@@ -55,7 +55,7 @@ def search_for_articles(search_text: str, endpoint_language_code: str) -> Status
     return retrieve_articles(parsed_response[1], endpoint_language_code)
 
 
-def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusOr[List[RawWiktionaryArticle]]:
+def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusOr[List[WebArticle]]:
     if not titles:
         return StatusOr(value=[])
 
@@ -74,7 +74,7 @@ def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusO
     meaningful_pages = [page for page in parsed_response['query']['pages'] if
                         'missing' not in page and
                         'title' in page and 'pageid' in page and 'revisions' in page]
-    return StatusOr(value=[RawWiktionaryArticle(page['title'],
-                                                page['pageid'],
-                                                content=page['revisions'][0]['slots']['main']['content'])
+    return StatusOr(value=[WebArticle(page['title'],
+                                      page['pageid'],
+                                      content=page['revisions'][0]['slots']['main']['content'])
                            for page in meaningful_pages])

@@ -2,11 +2,11 @@ from typing import List
 
 from core.types import CardType
 from lookup.wiktionary.debug import *
-from lookup.wiktionary.internal.markup import WikitextContentNode
+from lookup.wiktionary.internal.markup import MarkupTreeNode
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
 
-def _fill_translations(section: WikitextContentNode, target_translation_language_codes: List[str],
+def _fill_translations(section: MarkupTreeNode, target_translation_language_codes: List[str],
                        definition: WiktionaryWordDefinition):
     raw_results = []
     for node in section.children:
@@ -29,14 +29,15 @@ def _fill_translations(section: WikitextContentNode, target_translation_language
         _fill_translations(child_node, target_translation_language_codes, definition)
 
 
-def _fill_word_forms(section: WikitextContentNode,  definition: WiktionaryWordDefinition):
-    if definition.card_type== CardType.Verb:
-        definition.short_title = 'To {}'.format(definition.wiki_title)
+def _fill_word_forms(section: MarkupTreeNode, definition: WiktionaryWordDefinition):
+    if definition.card_type == CardType.Verb:
+        definition.short_text = 'To {}'.format(definition.wiki_title)
     else:
-        definition.short_title = definition.wiki_title.capitalize()
-    definition.grammar_string = definition.short_title
+        definition.short_text = definition.wiki_title.capitalize()
+    definition.grammar_text = definition.short_text
 
-def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
+
+def _maybe_get_section_types(section: MarkupTreeNode) -> [CardType]:
     _MAPPING = {
         'en-noun': CardType.Noun,
         'en-verb': CardType.Verb,
@@ -44,7 +45,6 @@ def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
         'en-adv': CardType.Adverb,
     }
     return [_MAPPING[node.name] for node in section.children if node.name in _MAPPING]
-
 
 
 class EnglishLocaleParser(WiktionaryLocalizedParser):
@@ -57,25 +57,25 @@ class EnglishLocaleParser(WiktionaryLocalizedParser):
         return ['en']
 
     @classmethod
-    def extract_word_definitions(cls, wiki_tree_node: WikitextContentNode, wiki_title: str,
-                                 target_translation_language_codes: List[str]) -> List[WiktionaryWordDefinition]:
-        if wiki_tree_node.level == -1 and PRINT_WIKITREE_EN:
+    def extract_word_definitions(
+            cls, markup_tree: MarkupTreeNode, wiki_title: str, target_parser) -> List[WiktionaryWordDefinition]:
+        if markup_tree.level == -1 and PRINT_WIKITREE_EN:
             print('======Extracting DE definition {} >>'.format(wiki_title))
-            print(wiki_tree_node)
+            print(markup_tree)
             print('======Extracting DE definition {} <<'.format(wiki_title))
 
-        types_found = _maybe_get_section_types(wiki_tree_node)
+        types_found = _maybe_get_section_types(markup_tree)
         if not types_found:
             nested_results = []
-            for child_node in wiki_tree_node.children:
-                nested_results += cls.extract_word_definitions(child_node, wiki_title,
-                                                               target_translation_language_codes)
+            for child_node in markup_tree.children:
+                nested_results += cls.extract_word_definitions(child_node, wiki_title, target_parser)
             return nested_results
 
         result = []
         for type_found in types_found:
             new_definition = WiktionaryWordDefinition(wiki_title, type_found)
-            _fill_word_forms(wiki_tree_node, new_definition)
-            _fill_translations(wiki_tree_node, target_translation_language_codes, new_definition)
+            _fill_word_forms(markup_tree, new_definition)
+            if target_parser:
+                _fill_translations(markup_tree, target_parser.translation_language_codes(), new_definition)
             result.append(new_definition)
         return result

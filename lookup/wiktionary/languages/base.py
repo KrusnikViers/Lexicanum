@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 from core.types import CardType
-from lookup.wiktionary.internal.markup import WikitextContentNode
+from lookup.wiktionary.internal.markup import MarkupTreeNode
 
 
 class WiktionaryTranslations:
@@ -22,9 +22,9 @@ class WiktionaryWordDefinition:
         # Raw title of source wiktionary article.
         self.wiki_title = title
         # Short human-readable title, that could be used in answers.
-        self.short_title = title
+        self.short_text = title
         # Full human-readable title with grammar information, that could be used in questions.
-        self.grammar_string = title
+        self.grammar_text = title
         # Meaning note from the original article.
         self.meaning_note = ""
 
@@ -51,6 +51,6 @@ class WiktionaryLocalizedParser:
     @classmethod
     # Returns list of different word definitions from the page. There could be multiple if word means multiple parts of
     # speech or have multiple meanings. Translations only filled for target translation language codes.
-    def extract_word_definitions(cls, wiki_tree_node: WikitextContentNode, wiki_title: str,
-                                 target_translation_language_codes: List[str]) -> List[WiktionaryWordDefinition]:
+    def extract_word_definitions(
+            cls, markup_tree: MarkupTreeNode, wiki_title: str, target_parser) -> List[WiktionaryWordDefinition]:
         raise NotImplementedError

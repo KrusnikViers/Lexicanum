@@ -2,11 +2,11 @@ from typing import List
 
 from core.types import CardType
 from lookup.wiktionary.debug import *
-from lookup.wiktionary.internal.markup import WikitextContentNode
+from lookup.wiktionary.internal.markup import MarkupTreeNode
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
 
-def _fill_translations(section: WikitextContentNode, target_translation_language_codes: List[str],
+def _fill_translations(section: MarkupTreeNode, target_translation_language_codes: List[str],
                        definition: WiktionaryWordDefinition):
     results = []
     for node in section.children:
@@ -26,7 +26,7 @@ def _fill_translations(section: WikitextContentNode, target_translation_language
         _fill_translations(child_node, target_translation_language_codes, definition)
 
 
-def _fill_noun_word_forms(section: WikitextContentNode, definition: WiktionaryWordDefinition):
+def _fill_noun_word_forms(section: MarkupTreeNode, definition: WiktionaryWordDefinition):
     _ARTICLES = {'n': 'Das', 'm': 'Der', 'f': 'Die'}
     article = None
     singular_form = None
@@ -45,24 +45,24 @@ def _fill_noun_word_forms(section: WikitextContentNode, definition: WiktionaryWo
     singular_form = '{} {}'.format(article, singular_form) if article and singular_form else None
     plural_form = 'Die {}'.format(plural_form) if plural_form else None
     if singular_form and plural_form:
-        definition.short_title = singular_form
-        definition.grammar_string = '{} / {}'.format(singular_form, plural_form)
+        definition.short_text = singular_form
+        definition.grammar_text = '{} / {}'.format(singular_form, plural_form)
     elif singular_form:
-        definition.short_title = singular_form
-        definition.grammar_string = '{} / nur Sing.'.format(singular_form)
+        definition.short_text = singular_form
+        definition.grammar_text = '{} / nur Sing.'.format(singular_form)
     elif plural_form:
-        definition.short_title = plural_form
-        definition.grammar_string = '{} / nur Plur.'.format(plural_form)
+        definition.short_text = plural_form
+        definition.grammar_text = '{} / nur Plur.'.format(plural_form)
 
 
-def _fill_word_forms(section: WikitextContentNode, definition: WiktionaryWordDefinition):
-    definition.short_title = definition.wiki_title.capitalize()
-    definition.grammar_string = definition.short_title
+def _fill_word_forms(section: MarkupTreeNode, definition: WiktionaryWordDefinition):
+    definition.short_text = definition.wiki_title.capitalize()
+    definition.grammar_text = definition.short_text
     if definition.card_type == CardType.Noun:
         _fill_noun_word_forms(section, definition)
 
 
-def _maybe_get_section_types(section: WikitextContentNode) -> [CardType]:
+def _maybe_get_section_types(section: MarkupTreeNode) -> [CardType]:
     type_nodes = list(filter(lambda x: x.name == 'Wortart', section.children))
     if not type_nodes:
         return None
@@ -85,25 +85,25 @@ class GermanLocaleParser(WiktionaryLocalizedParser):
         return ['de']
 
     @classmethod
-    def extract_word_definitions(cls, wiki_tree_node: WikitextContentNode, wiki_title: str,
-                                 target_translation_language_codes: List[str]) -> List[WiktionaryWordDefinition]:
-        if wiki_tree_node.level == -1 and PRINT_WIKITREE_DE:
+    def extract_word_definitions(
+            cls, markup_tree: MarkupTreeNode, wiki_title: str, target_parser) -> List[WiktionaryWordDefinition]:
+        if markup_tree.level == -1 and PRINT_WIKITREE_DE:
             print('======Extracting DE definition {} >>'.format(wiki_title))
-            print(wiki_tree_node)
+            print(markup_tree)
             print('======Extracting DE definition {} <<'.format(wiki_title))
 
-        types_found = _maybe_get_section_types(wiki_tree_node)
+        types_found = _maybe_get_section_types(markup_tree)
         if not types_found:
             nested_results = []
-            for child_node in wiki_tree_node.children:
-                nested_results += cls.extract_word_definitions(child_node, wiki_title,
-                                                               target_translation_language_codes)
+            for child_node in markup_tree.children:
+                nested_results += cls.extract_word_definitions(child_node, wiki_title, target_parser)
             return nested_results
 
         result = []
         for type_found in types_found:
             new_definition = WiktionaryWordDefinition(wiki_title, type_found)
-            _fill_translations(wiki_tree_node, target_translation_language_codes, new_definition)
-            _fill_word_forms(wiki_tree_node, new_definition)
+            _fill_word_forms(markup_tree, new_definition)
+            if target_parser:
+                _fill_translations(markup_tree, target_parser.translation_language_codes(), new_definition)
             result.append(new_definition)
         return result
