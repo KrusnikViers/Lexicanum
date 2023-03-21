@@ -5,11 +5,11 @@ block_cipher = None
 
 
 a = Analysis(
-    ['../main.py'],
+    ['../../main.py'],
     pathex=[],
     binaries=[],
     datas=[
-        ('../ui/common/icons/*.svg', './ui/common/icons'),
+        ('../../ui/common/icons/*.svg', './ui/common/icons'),
     ],
     hiddenimports=[],
     hookspath=[],
