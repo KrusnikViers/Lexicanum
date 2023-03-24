@@ -15,7 +15,7 @@ class Deck:
         self.was_updated = file_path is None
         # Next card id is strictly incremental, because this is the only way Anki tells cards apart. If id will
         # be reassigned after card was deleted from the project, Anki will attach previous history for this id to
-        # the new card.
+        # the new card. Thus, next_id should be saved as well.
         self.next_card_id: int = if_none(next_card_id, 0)
 
     def to_dict(self) -> dict:

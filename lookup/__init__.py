@@ -1,1 +1,1 @@
-from lookup.interface import *
+from lookup.interface import LookupInterface

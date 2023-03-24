@@ -2,7 +2,7 @@ from typing import List
 
 from core.types import CardType
 from lookup.wiktionary.debug import *
-from lookup.wiktionary.internal.markup import MarkupTreeNode
+from lookup.wiktionary.internal.markup_tree import MarkupTreeNode
 from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
 
 

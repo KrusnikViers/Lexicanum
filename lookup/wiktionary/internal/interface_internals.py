@@ -1,20 +1,50 @@
-import itertools
-from collections import namedtuple
-from typing import List, Type, Dict
+from typing import List, Dict, NamedTuple
 
-from core.types import Language, Card
-from core.util import StatusOr, if_none
-from lookup.interface import LookupEngine, LookupRequest, LookupResponse
-from lookup.wiktionary.debug import *
-from lookup.wiktionary.internal import web_api
-from lookup.wiktionary.internal.markup import build_wiki_content_tree
-from lookup.wiktionary.languages import *
+from core.types import CardType as PartOfSpeech, Card
+from core.util import StatusOr
+from lookup.wiktionary.languages.base import WordDefinition
 
-_SUPPORTED_LOCALES = {
-    Language.EN: EnglishLocaleParser,
-    Language.DE: GermanLocaleParser,
-}
 
+def get_source_definitions(text: str, source_language_code: str,
+                           translation_language_codes: List[str]) -> StatusOr[List[WordDefinition]]:
+    pass
+
+
+class WordDefinitionKey(NamedTuple):
+    wiki_title: str
+    part_of_speech: PartOfSpeech
+
+
+class SourceLookupData(NamedTuple):
+    # Translated title + Source part of speech => Source word definition
+    translated_words_to_sources: Dict[WordDefinitionKey, List[WordDefinition]]
+    # List of unique wiki titles to look up based on |translated_words_to_sources|
+    unique_words_to_translate: List[str]
+
+
+def build_source_lookup_data(definitions: List[WordDefinition]) -> SourceLookupData:
+    pass
+
+
+class FullLookupData(SourceLookupData):
+    # Translated title + Source part of speech => Translated definition
+    translated_words_to_definitions = Dict[WordDefinitionKey, List[WordDefinition]]
+
+
+def get_translations_and_build_full_lookup_data(
+        source_lookup_data: SourceLookupData, translations_language_code) -> StatusOr[FullLookupData]:
+    pass
+
+
+def build_cards_from_answer_data(full_lookup_data: FullLookupData) -> List[Card]:
+    pass
+
+
+def build_cards_from_question_data(full_lookup_data: FullLookupData) -> List[Card]:
+    pass
+
+
+########################################################################################################################
 _WordWithType = namedtuple("_WordWithType", "word part_of_speech")
 _TranslationMeta = namedtuple("_TranslationMeta", "meaning_note original_definition")
 _SearchableTranslation = namedtuple("_SearchableTranslation", "word_with_type translation_meta")
@@ -159,14 +189,3 @@ def _lookup_from_question(request: LookupRequest) -> StatusOr[LookupResponse]:
         print('========Extracted cards for {}:{} lookup <<'.format(request.source_language.name, request.text))
 
     return StatusOr(LookupResponse(result, request))
-
-
-class WiktionaryLookupEngine(LookupEngine):
-    def lookup(self, request: LookupRequest) -> StatusOr[LookupResponse]:
-        if request.source_type == LookupRequest.Type.ANSWER:
-            result_status = _lookup_from_answer(request)
-        elif request.source_type == LookupRequest.Type.QUESTION:
-            result_status = _lookup_from_question(request)
-        else:
-            raise ValueError
-        return result_status
