@@ -13,6 +13,9 @@ class Status:
     def is_ok(self) -> bool:
         return self.status is None
 
+    def is_error(self) -> bool:
+        return self.status is not None
+
 
 class StatusOr(Generic[_T]):
     def __init__(self, value: _T | None = None, status: str | None = None):
@@ -25,6 +28,9 @@ class StatusOr(Generic[_T]):
 
     def is_ok(self) -> bool:
         return self.value is not None
+
+    def is_error(self) -> bool:
+        return self.status is not None
 
     def to_pure(self) -> Status:
         assert not self.is_ok()

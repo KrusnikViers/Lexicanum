@@ -1,13 +1,29 @@
-from typing import List, Dict, NamedTuple
+import itertools
+from typing import List, Dict, Type, NamedTuple, Generator, Tuple
 
-from core.types import CardType as PartOfSpeech, Card
+from core.types import Card
 from core.util import StatusOr
-from lookup.wiktionary.languages.base import WordDefinition
+from lookup.wiktionary.internal.markup_tree import build_wiki_content_tree
+from lookup.wiktionary.internal.web_api import WebArticle, search_articles, retrieve_articles
+from lookup.wiktionary.languages.base import LocalizedParser, WordDefinition, PartOfSpeech
 
 
-def get_source_definitions(text: str, source_language_code: str,
+def _extract_definitions_from_web_result(web_articles: List[WebArticle], parser: Type[LocalizedParser],
+                                         translation_language_codes: List[str]) -> List[WordDefinition]:
+    result_definitions = []
+    for web_article in web_articles:
+        markup_tree = build_wiki_content_tree(web_article.content, web_article.title)
+        result_definitions.extend(
+            parser.extract_word_definitions(markup_tree, web_article.title, translation_language_codes))
+    return result_definitions
+
+
+def get_source_definitions(text: str, parser: Type[LocalizedParser],
                            translation_language_codes: List[str]) -> StatusOr[List[WordDefinition]]:
-    pass
+    web_articles_status = search_articles(text, parser.api_language_code())
+    if web_articles_status.is_error():
+        return web_articles_status.to_other()
+    return StatusOr(_extract_definitions_from_web_result(web_articles_status.value, parser, translation_language_codes))
 
 
 class WordDefinitionKey(NamedTuple):
@@ -19,173 +35,87 @@ class SourceLookupData(NamedTuple):
     # Translated title + Source part of speech => Source word definition
     translated_words_to_sources: Dict[WordDefinitionKey, List[WordDefinition]]
     # List of unique wiki titles to look up based on |translated_words_to_sources|
-    unique_words_to_translate: List[str]
+    unique_translation_titles: List[str]
 
 
 def build_source_lookup_data(definitions: List[WordDefinition]) -> SourceLookupData:
-    pass
+    _TRANSLATIONS_PER_DEFINITION_LIMIT = 6
+    _DEFINITIONS_LIMIT = 5
+
+    translated_words_to_sources: Dict[WordDefinitionKey, List[WordDefinition]] = dict()
+    for definition in definitions[:_DEFINITIONS_LIMIT]:
+        for translation_word in definition.translation_wiki_titles[:_TRANSLATIONS_PER_DEFINITION_LIMIT]:
+            translated_word_key: WordDefinitionKey = WordDefinitionKey(translation_word, definition.part_of_speech)
+            translated_words_to_sources.setdefault(translated_word_key, []).append(definition)
+
+    all_translation_titles = [word_key.wiki_title for word_key in translated_words_to_sources.keys()]
+    unique_translation_titles = list(set(all_translation_titles))
+
+    return SourceLookupData(translated_words_to_sources, unique_translation_titles)
 
 
-class FullLookupData(SourceLookupData):
+class FullLookupData(NamedTuple):
+    # Preserved from |SourceLookupData|
+    translated_words_to_sources: Dict[WordDefinitionKey, List[WordDefinition]]
     # Translated title + Source part of speech => Translated definition
-    translated_words_to_definitions = Dict[WordDefinitionKey, List[WordDefinition]]
+    translated_words_to_translations: Dict[WordDefinitionKey, List[WordDefinition]]
 
 
 def get_translations_and_build_full_lookup_data(
-        source_lookup_data: SourceLookupData, translations_language_code) -> StatusOr[FullLookupData]:
-    pass
+        source_lookup_data: SourceLookupData, parser: Type[LocalizedParser]) -> StatusOr[FullLookupData]:
+    translation_web_articles_status = retrieve_articles(
+        source_lookup_data.unique_translation_titles, parser.api_language_code())
+    if translation_web_articles_status.is_error():
+        return translation_web_articles_status.to_other()
+
+    # We do not use translations section in translated articles to back-reference original definition, as they are
+    # often disagree for various reasons.
+    translated_definitions = _extract_definitions_from_web_result(translation_web_articles_status.value, parser, [])
+
+    translated_words_to_translations: Dict[WordDefinitionKey, List[WordDefinition]] = dict()
+    for translated_definition in translated_definitions:
+        translation_key = WordDefinitionKey(translated_definition.wiki_title, translated_definition.part_of_speech)
+        translated_words_to_translations.setdefault(translation_key, []).append(translated_definition)
+
+    return StatusOr(FullLookupData(source_lookup_data.translated_words_to_sources, translated_words_to_translations))
+
+
+# Generator, that takes dicts {translation_key => source_definitions} and {translation_key=>translated_definitions},
+# matches them by key, and yields all possible pairs of source definition and translation definition.
+def _join_sources_to_translations(
+        full_lookup_data: FullLookupData) -> Generator[Tuple[WordDefinition, WordDefinition], None, None]:
+    for translation_word_key in full_lookup_data.translated_words_to_sources.keys():
+        if translation_word_key not in full_lookup_data.translated_words_to_translations:
+            continue
+        source_definitions = full_lookup_data.translated_words_to_sources[translation_word_key]
+        translated_definitions = full_lookup_data.translated_words_to_translations[translation_word_key]
+
+        for source, translation in itertools.product(source_definitions, translated_definitions):
+            assert source.part_of_speech == translation.part_of_speech
+            yield source, translation
 
 
 def build_cards_from_answer_data(full_lookup_data: FullLookupData) -> List[Card]:
-    pass
+    cards: List[Card] = []
+    # Based on knowledge that source definitions should be used in meaning_note and answer fields.
+    for source_definition, translation_definition in _join_sources_to_translations(full_lookup_data):
+        cards.append(Card(
+            card_type=source_definition.part_of_speech,
+            question=translation_definition.word_as_question,
+            answer=source_definition.word_as_answer,
+            note=source_definition.meaning_note
+        ))
+    return cards
 
 
 def build_cards_from_question_data(full_lookup_data: FullLookupData) -> List[Card]:
-    pass
-
-
-########################################################################################################################
-_WordWithType = namedtuple("_WordWithType", "word part_of_speech")
-_TranslationMeta = namedtuple("_TranslationMeta", "meaning_note original_definition")
-_SearchableTranslation = namedtuple("_SearchableTranslation", "word_with_type translation_meta")
-
-
-def _definitions_from_web_articles(
-        web_articles: List[web_api.WebArticle],
-        source_parser: Type[WiktionaryLocalizedParser],
-        target_parser: Type[WiktionaryLocalizedParser] | None = None) -> List[WiktionaryWordDefinition]:
-    definitions = []
-    for web_article in web_articles:
-        markup_tree = build_wiki_content_tree(web_article.content, web_article.title)
-        definitions += source_parser.extract_word_definitions(markup_tree, web_article.title, target_parser)
-    return definitions
-
-
-def _create_unique_translations_dict(
-        definitions: List[WiktionaryWordDefinition]) -> Dict[_WordWithType, _TranslationMeta]:
-    result: Dict[_WordWithType, _TranslationMeta] = {}
-    all_searchable_translations: List[_SearchableTranslation] = []
-    for definition in definitions:
-        for definition_translations_set in definition.translations:
-            all_searchable_words = itertools.chain(*definition_translations_set.translations.values())
-            for word in all_searchable_words:
-                all_searchable_translations.append(_SearchableTranslation(
-                    _WordWithType(word, definition.card_type),
-                    _TranslationMeta(definition_translations_set.meaning_note, definition)))
-    for searchable_definition in all_searchable_translations:
-        if searchable_definition.word_with_type in result and result[searchable_definition.word_with_type].meaning_note:
-            continue
-        result[searchable_definition.word_with_type] = searchable_definition.translation_meta
-    return result
-
-
-def _search_definitions(
-        search_word: str,
-        source_parser: Type[WiktionaryLocalizedParser],
-        target_parser: Type[WiktionaryLocalizedParser] | None) -> StatusOr[List[WiktionaryWordDefinition]]:
-    _web_articles_status = web_api.search_articles(search_word, source_parser.endpoint_language_code())
-    if not _web_articles_status.is_ok():
-        return _web_articles_status.to_other()
-    return StatusOr(_definitions_from_web_articles(_web_articles_status.value, source_parser, target_parser))
-
-
-def _retrieve_definitions_for_translations_dict(
-        translations_dict: Dict[_WordWithType, _TranslationMeta],
-        translations_parser: Type[WiktionaryLocalizedParser]) -> StatusOr[List[WiktionaryWordDefinition]]:
-    unique_titles_list = list(set([word_with_type.word for word_with_type in translations_dict.keys()]))
-    _web_articles_status = web_api.retrieve_articles(unique_titles_list, translations_parser.endpoint_language_code())
-    if not _web_articles_status.is_ok():
-        return _web_articles_status.to_other()
-    return StatusOr(_definitions_from_web_articles(_web_articles_status.value, source_parser=translations_parser))
-
-
-def _print_wiki_contents(request, source_articles_status, retrieved_translations_status):
-    print('=======Extracted wiki content for {}:{} lookup >>'.format(request.source_language.name, request.text))
-    print('Articles fetched:')
-    for article in source_articles_status.value:
-        print(article)
-    print('Translations fetched:')
-    for article in retrieved_translations_status.value:
-        print(article)
-    print('=======Extracted wiki content for {}:{} lookup <<\n'.format(request.source_language.name, request.text))
-
-
-def _lookup_from_answer(request: LookupRequest) -> StatusOr[LookupResponse]:
-    if PRINT_LOOKUP_INPUTS:
-        print('=====Looking up {} ...'.format(request))
-
-    answer_parser = _SUPPORTED_LOCALES[request.source_language]
-    question_parser = _SUPPORTED_LOCALES[request.target_language]
-
-    source_articles_status = _search_definitions(
-        request.text, source_parser=answer_parser, target_parser=question_parser)
-    if not source_articles_status.is_ok():
-        return source_articles_status.to_other()
-
-    source_translations_dict = _create_unique_translations_dict(source_articles_status.value)
-    retrieved_translations_status = _retrieve_definitions_for_translations_dict(
-        source_translations_dict, question_parser)
-    if not retrieved_translations_status.is_ok():
-        return retrieved_translations_status.to_other()
-
-    if PRINT_WIKICONTENTS:
-        _print_wiki_contents(request, source_articles_status, retrieved_translations_status)
-
-    result: List[Card] = []
-    for retrieved_translation in retrieved_translations_status.value:
-        translation_key = _WordWithType(retrieved_translation.wiki_title, retrieved_translation.card_type)
-        if translation_key not in source_translations_dict:
-            continue
-        source_meta = source_translations_dict[translation_key]
-        result.append(Card(retrieved_translation.card_type,
-                           question=retrieved_translation.grammar_text,
-                           answer=source_meta.original_definition.short_text,
-                           note=if_none(source_meta.meaning_note, '')))
-
-    if PRINT_CARDS:
-        print('========Extracted cards for {}:{} lookup >>'.format(request.source_language.name, request.text))
-        for card in result:
-            print(card)
-        print('========Extracted cards for {}:{} lookup <<'.format(request.source_language.name, request.text))
-
-    return StatusOr(LookupResponse(result, request))
-
-
-def _lookup_from_question(request: LookupRequest) -> StatusOr[LookupResponse]:
-    if PRINT_LOOKUP_INPUTS:
-        print('=====Looking up {} ...'.format(request))
-
-    question_parser = _SUPPORTED_LOCALES[request.source_language]
-    answer_parser = _SUPPORTED_LOCALES[request.target_language]
-
-    source_articles_status = _search_definitions(
-        request.text, source_parser=question_parser, target_parser=answer_parser)
-    if not source_articles_status.is_ok():
-        return source_articles_status.to_other()
-
-    source_translations_dict = _create_unique_translations_dict(source_articles_status.value)
-    retrieved_translations_status = _retrieve_definitions_for_translations_dict(source_translations_dict, answer_parser)
-    if not retrieved_translations_status.is_ok():
-        return retrieved_translations_status.to_other()
-
-    if PRINT_WIKICONTENTS:
-        _print_wiki_contents(request, source_articles_status, retrieved_translations_status)
-
-    result: List[Card] = []
-    for retrieved_translation in retrieved_translations_status.value:
-        translation_key = _WordWithType(retrieved_translation.wiki_title, retrieved_translation.card_type)
-        if translation_key not in source_translations_dict:
-            continue
-        source_meta = source_translations_dict[translation_key]
-        result.append(Card(retrieved_translation.card_type,
-                           question=source_meta.original_definition.grammar_text,
-                           answer=retrieved_translation.short_text,
-                           note=if_none(source_meta.meaning_note, '')))
-
-    if PRINT_CARDS:
-        print('========Extracted cards for {}:{} lookup >>'.format(request.source_language.name, request.text))
-        for card in result:
-            print(card)
-        print('========Extracted cards for {}:{} lookup <<'.format(request.source_language.name, request.text))
-
-    return StatusOr(LookupResponse(result, request))
+    cards: List[Card] = []
+    # Based on knowledge that translated definitions should be used in meaning_note and answer fields.
+    for source_definition, translation_definition in _join_sources_to_translations(full_lookup_data):
+        cards.append(Card(
+            card_type=source_definition.part_of_speech,
+            question=source_definition.word_as_question,
+            answer=translation_definition.word_as_answer,
+            note=translation_definition.meaning_note
+        ))
+    return cards

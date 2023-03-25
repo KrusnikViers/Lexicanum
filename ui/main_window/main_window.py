@@ -149,8 +149,8 @@ class MainWindow(QMainWindow):
         worst_status = next((status for status in (
             self.input_table_view.maybe_execute_shortcut(shortcut_command),
             self.overview_table_view.maybe_execute_shortcut(shortcut_command)
-        ) if not status.is_ok()), Status())
-        if not worst_status.is_ok():
+        ) if status.is_error()), Status())
+        if worst_status.is_error():
             self.status_bar.show_timed_message(worst_status.status)
 
     @Slot()
