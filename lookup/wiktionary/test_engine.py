@@ -1,7 +1,13 @@
-from lookup.interface import LookupRequest
-from lookup.wiktionary.engine import WiktionaryLookupEngine
+from lookup.wiktionary.languages.english import EnglishLocaleParser
+from lookup.wiktionary.internal import interface_internals
 
-engine = WiktionaryLookupEngine()
+definitions_status = interface_internals.get_source_definitions('Parrot', EnglishLocaleParser, ['de'])
+
+
+
+
+
+
 
 # print(engine.lookup(LookupRequest.from_answer('Parrot')))
 # print(engine.lookup(LookupRequest.from_answer('goul')))
@@ -9,7 +15,7 @@ engine = WiktionaryLookupEngine()
 # print(engine.lookup(LookupRequest.from_answer('leave')))
 # print(engine.lookup(LookupRequest.from_answer('fast')))
 
-print(engine.lookup(LookupRequest.from_answer('Parent')))
+# print(engine.lookup(LookupRequest.from_answer('Parent')))
 # print(engine.lookup(LookupRequest.from_question('Buch')))
 # print(engine.lookup(LookupRequest.from_question('Milch')))
 # print(engine.lookup(LookupRequest.from_question('Papagei')))

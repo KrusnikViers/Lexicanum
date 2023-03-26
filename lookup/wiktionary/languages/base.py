@@ -34,7 +34,6 @@ class LocalizedParser:
         raise NotImplementedError
 
     @classmethod
-    # TODO: Smart building of translations list
     # Returns list of different word definitions from the page. There could be multiple if word means multiple parts of
     # speech or have multiple meanings. Translations only filled for target translation language codes.
     def extract_word_definitions(cls, markup_tree: MarkupTreeNode, source_wiki_title: str,
