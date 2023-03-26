@@ -18,6 +18,11 @@ def merge_translation_dict(translations: Dict[str, List[str]],
     translations_lists = [translations[code] for code in language_codes if code in translations and translations[code]]
     if not translations_lists:
         return
+    outputted = set()
     max_len = max(map(len, translations_lists))
     for i in range(0, max_len):
-        yield [translations_list[i] for translations_list in translations_lists if i < len(translations_list)]
+        output = [translations_list[i] for translations_list in translations_lists
+                  if i < len(translations_list) and translations_list[i] not in outputted]
+        for word in output:
+            outputted.add(word)
+        yield output

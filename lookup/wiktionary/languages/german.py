@@ -1,38 +1,18 @@
-from typing import List
+import itertools
+from typing import List, Dict
 
-from core.types import CardType
-from lookup.wiktionary.debug import *
 from lookup.wiktionary.internal.markup_tree import MarkupTreeNode
-from lookup.wiktionary.languages.base import WiktionaryWordDefinition, WiktionaryTranslations, WiktionaryLocalizedParser
+from lookup.wiktionary.languages.base import WordDefinition, LocalizedParser, PartOfSpeech
+from lookup.wiktionary.languages.utils import merge_translation_dict, all_children_recursive
 
 
-def _fill_translations(section: MarkupTreeNode, target_translation_language_codes: List[str],
-                       definition: WiktionaryWordDefinition):
-    results = []
-    for node in section.children:
-        if node.name in ('Ü', 'Üxx4', 'Üt') and node.plain_args[0] in target_translation_language_codes:
-            if not len(results):
-                results.append(WiktionaryTranslations())
-            language_code = node.plain_args[0]
-            translations = results[-1].translations
-            if language_code not in translations:
-                translations[language_code] = [node.plain_args[1]]
-            else:
-                translations[language_code].append(node.plain_args[1])
-
-    meaningful_results = [translation for translation in results if len(translation.translations)]
-    definition.translations += meaningful_results
-    for child_node in section.children:
-        _fill_translations(child_node, target_translation_language_codes, definition)
-
-
-def _fill_noun_word_forms(section: MarkupTreeNode, definition: WiktionaryWordDefinition):
+def _get_noun_word_forms(markup_node: MarkupTreeNode) -> (str, str):
     _ARTICLES = {'n': 'Das', 'm': 'Der', 'f': 'Die'}
     article = None
     singular_form = None
     plural_form = None
 
-    sections_to_check = [section] + section.children
+    sections_to_check = [markup_node] + markup_node.children
     for section in sections_to_check:
         for key, value in section.keyed_args.items():
             if key == 'Genus' and value in _ARTICLES and not article:
@@ -45,65 +25,82 @@ def _fill_noun_word_forms(section: MarkupTreeNode, definition: WiktionaryWordDef
     singular_form = '{} {}'.format(article, singular_form) if article and singular_form else None
     plural_form = 'Die {}'.format(plural_form) if plural_form else None
     if singular_form and plural_form:
-        definition.short_text = singular_form
-        definition.grammar_text = '{} / {}'.format(singular_form, plural_form)
+        return singular_form, '{} / {}'.format(singular_form, plural_form)
     elif singular_form:
-        definition.short_text = singular_form
-        definition.grammar_text = '{} / nur Sing.'.format(singular_form)
+        return singular_form, '{} / nur Sing.'.format(singular_form)
     elif plural_form:
-        definition.short_text = plural_form
-        definition.grammar_text = '{} / nur Plur.'.format(plural_form)
+        return plural_form, '{} / nur Plur.'.format(plural_form)
 
 
-def _fill_word_forms(section: MarkupTreeNode, definition: WiktionaryWordDefinition):
-    definition.short_text = definition.wiki_title.capitalize()
-    definition.grammar_text = definition.short_text
-    if definition.card_type == CardType.Noun:
-        _fill_noun_word_forms(section, definition)
+def _get_word_forms(markup_node: MarkupTreeNode, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
+    match node_type:
+        case PartOfSpeech.Noun:
+            return _get_noun_word_forms(markup_node)
+        case _:
+            return wiki_title.capitalize(), wiki_title.capitalize()
 
 
-def _maybe_get_section_types(section: MarkupTreeNode) -> [CardType]:
-    type_nodes = list(filter(lambda x: x.name == 'Wortart', section.children))
-    if not type_nodes:
-        return None
-    _MAPPING = {
-        'Substantiv': CardType.Noun,
-        'Verb': CardType.Verb,
-        'Adjektiv': CardType.Adjective,
-        'Adverb': CardType.Adverb,
-    }
-    return [_MAPPING[node.plain_args[0]] for node in type_nodes if node.plain_args[0] in _MAPPING]
+def _get_meaning_note(markup_node: MarkupTreeNode) -> str:
+    # TODO
+    return ''
 
 
-class GermanLocaleParser(WiktionaryLocalizedParser):
+def _get_translations(markup_node: MarkupTreeNode, translation_codes: List[str]) -> List[str]:
+    # language_code => translations list
+    raw_results: Dict[str, List[str]] = dict()
+    for child_node in all_children_recursive(markup_node):
+        if child_node.name in ('Ü', 'Üxx4', 'Üt'):
+            if len(child_node.plain_args) < 2:
+                continue
+            language = child_node.plain_args[0]
+            translated_word = child_node.plain_args[1]
+            if language in translation_codes and translated_word:
+                raw_results.setdefault(language, []).append(translated_word)
+    return list(itertools.chain(*merge_translation_dict(raw_results, translation_codes)))
+
+
+_PART_OF_SPEECH_MAPPING = {
+    'Substantiv': PartOfSpeech.Noun,
+    'Verb': PartOfSpeech.Verb,
+    'Adjektiv': PartOfSpeech.Adjective,
+    'Adverb': PartOfSpeech.Adverb,
+}
+
+
+def _extract_word_definitions_recursive(markup_node: MarkupTreeNode,
+                                        wiki_title: str, translation_codes: List[str]) -> List[WordDefinition]:
+    node_types = [_PART_OF_SPEECH_MAPPING[node.plain_args[0]]
+                  for node in markup_node.children
+                  if node.name == 'Wortart' and node.plain_args[0] in _PART_OF_SPEECH_MAPPING]
+
+    if not node_types:
+        nested_results = [_extract_word_definitions_recursive(child_node, wiki_title, translation_codes)
+                          for child_node in markup_node.children]
+        return list(itertools.chain(*nested_results))
+
+    results = []
+    for node_type in node_types:
+        word_as_answer, word_as_question = _get_word_forms(markup_node, wiki_title, node_type)
+        meaning_note = _get_meaning_note(markup_node)
+        translations = _get_translations(markup_node, translation_codes)
+        results.append(WordDefinition(part_of_speech=node_type, wiki_title=wiki_title,
+                                      word_as_answer=word_as_answer, word_as_question=word_as_question,
+                                      meaning_note=meaning_note,
+                                      translation_wiki_titles=translations))
+    return results
+
+
+class GermanLocaleParser(LocalizedParser):
     @classmethod
-    def endpoint_language_code(cls) -> str:
+    def api_language_code(cls) -> str:
         return 'de'
 
     @classmethod
-    def translation_language_codes(cls) -> List[str]:
+    def language_codes_for_translations(cls) -> List[str]:
         return ['de']
 
     @classmethod
-    def extract_word_definitions(
-            cls, markup_tree: MarkupTreeNode, wiki_title: str, target_parser) -> List[WiktionaryWordDefinition]:
-        if markup_tree.level == -1 and PRINT_WIKITREE_DE:
-            print('======Extracting DE definition {} >>'.format(wiki_title))
-            print(markup_tree)
-            print('======Extracting DE definition {} <<'.format(wiki_title))
-
-        types_found = _maybe_get_section_types(markup_tree)
-        if not types_found:
-            nested_results = []
-            for child_node in markup_tree.children:
-                nested_results += cls.extract_word_definitions(child_node, wiki_title, target_parser)
-            return nested_results
-
-        result = []
-        for type_found in types_found:
-            new_definition = WiktionaryWordDefinition(wiki_title, type_found)
-            _fill_word_forms(markup_tree, new_definition)
-            if target_parser:
-                _fill_translations(markup_tree, target_parser.translation_language_codes(), new_definition)
-            result.append(new_definition)
-        return result
+    def extract_word_definitions(cls, markup_tree: MarkupTreeNode, wiki_title: str,
+                                 language_codes_for_translations: List[str]) -> List[WordDefinition]:
+        # debug.maybe_print_de_wikitree(markup_tree)
+        return _extract_word_definitions_recursive(markup_tree, wiki_title, language_codes_for_translations)

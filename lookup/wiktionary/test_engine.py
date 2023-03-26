@@ -1,13 +1,8 @@
-from lookup.wiktionary.languages.english import EnglishLocaleParser
-from lookup.wiktionary.internal import interface_internals
+from lookup.wiktionary.interface import WiktionaryInterface
 
-definitions_status = interface_internals.get_source_definitions('Parrot', EnglishLocaleParser, ['de'])
-
-
-
-
-
-
+lookup_interface = WiktionaryInterface(None, None)
+parrots = lookup_interface.lookup_by_answer('Parrot')
+papageien = lookup_interface.lookup_by_answer('Papagei')
 
 # print(engine.lookup(LookupRequest.from_answer('Parrot')))
 # print(engine.lookup(LookupRequest.from_answer('goul')))

@@ -25,7 +25,6 @@ def _get_translations(markup_node: MarkupTreeNode, translation_codes: List[str])
     for child_node in all_children_recursive(markup_node):
         if child_node.name in ('t', 't+'):
             if len(child_node.plain_args) < 2:
-                print('WTF')
                 continue
             language = child_node.plain_args[0]
             translated_word = child_node.plain_args[1]
