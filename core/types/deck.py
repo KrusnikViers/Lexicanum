@@ -28,8 +28,8 @@ class Deck:
         }
 
     def __str__(self):
-        return 'Deck id{}: {} from {}, cards:\n{}'.format(self.deck_id, self.deck_name, self.file_path,
-                                                          '\n'.join(map(str, self.cards)))
+        return 'DECK #{}: {} at {}:{}'.format(self.deck_id, self.deck_name, self.file_path,
+                                              ''.join(map(lambda x: '\n -{}'.format(x), self.cards)))
 
     @classmethod
     def from_dict(cls, input_dict: dict, file_path: UniversalPath | None) -> 'Deck':

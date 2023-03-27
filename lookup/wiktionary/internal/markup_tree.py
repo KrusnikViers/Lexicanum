@@ -15,11 +15,11 @@ class MarkupTreeNode:
 
     def __str__(self) -> str:
         indent = 2 * (self.level + 1)
-        result = ' ' * indent + '#{} :: {}'.format(self.level, self.name[:25])
+        result = ' ' * indent + '{}: {}'.format(self.level, self.name[:30])
         for arg in self.plain_args:
-            result += '\n' + ' ' * indent + '- {}'.format(arg[:20])
+            result += '\n' + ' ' * indent + ' -{}'.format(arg[:30])
         for arg_key, arg_value in self.keyed_args.items():
-            result += '\n' + ' ' * indent + '- {}={}'.format(arg_key[:20], arg_value[:20])
+            result += '\n' + ' ' * indent + ' -{} = {}'.format(arg_key[:30], arg_value[:30])
         for child in self.children:
             result += '\n' + str(child)
         return result

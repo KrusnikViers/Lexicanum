@@ -30,6 +30,9 @@ class WordDefinitionKey(NamedTuple):
     wiki_title: str
     part_of_speech: PartOfSpeech
 
+    def __str__(self):
+        return 'WDKey {}-{}'.format(self.part_of_speech.name, self.wiki_title)
+
 
 class SourceLookupData(NamedTuple):
     # Translated title + Source part of speech => Source word definition
@@ -50,7 +53,6 @@ def build_source_lookup_data(definitions: List[WordDefinition]) -> SourceLookupD
 
     all_translation_titles = [word_key.wiki_title for word_key in translated_words_to_sources.keys()]
     unique_translation_titles = list(set(all_translation_titles))
-
     return SourceLookupData(translated_words_to_sources, unique_translation_titles)
 
 

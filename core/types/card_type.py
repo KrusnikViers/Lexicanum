@@ -6,16 +6,19 @@ class CardType(Enum):
     Invalid = 0
 
     # Main parts of speech
-    Noun = 1
+    Noun = 1  # Incl. Proper Nouns
     Adjective = 2
     Verb = 3
     Adverb = 4
 
     # Other parts of speech
-    Particle = 11
-    Conjunction = 12
-    Pronoun = 13
+    Pronoun = 11
+    Preposition = 12  # Incl. Postposition
+    Conjunction = 13
     Interjection = 14
+    Article = 15
+    Particle = 16
+    Numeral = 17
 
     # Complex translatable concepts
     Phrase = 100

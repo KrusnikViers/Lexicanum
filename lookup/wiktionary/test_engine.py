@@ -1,9 +1,8 @@
 from lookup.wiktionary.interface import WiktionaryInterface
 
-lookup_interface = WiktionaryInterface(None, None)
+lookup_interface = WiktionaryInterface()
 parrots = lookup_interface.lookup_by_answer('Parrot')
-papageien = lookup_interface.lookup_by_answer('Papagei')
-
+papageien = lookup_interface.lookup_by_question('Papagei')
 # print(engine.lookup(LookupRequest.from_answer('Parrot')))
 # print(engine.lookup(LookupRequest.from_answer('goul')))
 # print(engine.lookup(LookupRequest.from_answer('god')))

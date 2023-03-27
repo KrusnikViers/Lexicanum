@@ -19,8 +19,8 @@ class Card:
         return True
 
     def __str__(self):
-        return 'Card id{}: {}, {} => {}, note: {}'.format(self.card_id, self.card_type.name,
-                                                          self.question, self.answer, self.note)
+        return 'CARD #{} |{} => {}| ({}, {})'.format(
+            self.card_id, self.answer, self.question, self.card_type.name, self.note)
 
     @classmethod
     def from_dict(cls, card_dict: dict) -> 'Card':

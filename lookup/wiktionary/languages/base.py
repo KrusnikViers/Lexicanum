@@ -20,6 +20,11 @@ class WordDefinition(NamedTuple):
     meaning_note: str
     translation_wiki_titles: List[str]
 
+    def __str__(self):
+        return '{}:{} (A:{}, Q:{}, N:{}, TList: {})'.format(self.wiki_title, self.part_of_speech.name,
+                                                            self.word_as_answer, self.word_as_question,
+                                                            self.meaning_note, ';'.join(self.translation_wiki_titles))
+
 
 class LocalizedParser:
     @classmethod
