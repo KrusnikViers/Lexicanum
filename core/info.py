@@ -1,9 +1,11 @@
-# General project name and version constants. Please, refer to these constants whenever possible.
-# It is also a good way to make your own fork with nothing changed except those values, but who would do that, right?
-# Right?
+# General project name and version constants. Refer to these constants whenever possible.
+# Important! These values can be used in different parts of the project (e.g. model naming or settings storage), and
+# should not be changed without a good reason.
 PUBLISHER_NAME = "KrusnikViers"
 PROJECT_NAME = "Lexicanum"
 
-PROJECT_MAJOR_VERSION = 0
-PROJECT_MINOR_VERSION = 5
-PROJECT_FULL_NAME = '{} v{}.{}'.format(PROJECT_NAME, PROJECT_MAJOR_VERSION, PROJECT_MINOR_VERSION)
+PROJECT_COMPATIBILITY_VERSION = 0
+PROJECT_FEATURE_PACK_VERSION = 0
+PROJECT_RELEASE_VERSION = 1
+PROJECT_FULL_NAME = '{} v{}.{}.{}'.format(
+    PROJECT_NAME, PROJECT_COMPATIBILITY_VERSION, PROJECT_FEATURE_PACK_VERSION, PROJECT_RELEASE_VERSION)

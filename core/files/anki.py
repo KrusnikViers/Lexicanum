@@ -7,8 +7,7 @@ from core.info import PROJECT_NAME
 from core.types import Card, Deck, Language
 from core.util import UniversalPath, Status
 
-# Update this field each time the model fields are changed. This will require manual conversion of already existing
-# cards in Anki manually.
+# Update this field each time the model fields are changed.
 _MODEL_VERSION = 5
 # Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
 _MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
