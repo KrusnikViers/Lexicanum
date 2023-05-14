@@ -13,6 +13,7 @@ class ShortcutCommand(Enum):
     SUGGEST = 4
 
 
+# TODO: Rewrite
 class Shortcuts(QObject):
     activated = Signal(ShortcutCommand)
 

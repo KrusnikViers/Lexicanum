@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1215</width>
-    <height>909</height>
+    <width>1243</width>
+    <height>812</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -88,13 +88,44 @@
     <property name="horizontalSpacing">
      <number>0</number>
     </property>
-    <item row="0" column="0" colspan="3">
-     <layout class="QHBoxLayout" name="_project_layout">
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="_cards_table_view_layout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTableView" name="input_table_placeholder">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">padding-top: 10px;
+padding-bottom: 3px;</string>
+        </property>
+        <property name="text">
+         <string>Cards already in deck (showing 13/24):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="deck_preview_table_placeholder"/>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="_deck_info_layout">
       <property name="spacing">
        <number>15</number>
       </property>
       <item>
-       <widget class="QLineEdit" name="deck_name">
+       <widget class="QLineEdit" name="deck_info_title_input">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -126,12 +157,22 @@ border-color: white white black white ;</string>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="deck_info">
+       <widget class="QToolButton" name="deck_info_save_button">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="deck_info_path_label">
         <property name="styleSheet">
          <string notr="true">color: #666</string>
         </property>
         <property name="text">
-         <string>deck metainformation</string>
+         <string>path/to/the/deck.json</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -151,75 +192,7 @@ border-color: white white black white ;</string>
         </property>
        </spacer>
       </item>
-      <item>
-       <widget class="QToolButton" name="tbutton_toggle_sidebar">
-        <property name="autoRaise">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
      </layout>
-    </item>
-    <item row="1" column="0">
-     <layout class="QVBoxLayout" name="_table_view_layout">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QTableView" name="input_table_view_placeholder">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>32</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTableView" name="cards_table_view_placeholder"/>
-      </item>
-     </layout>
-    </item>
-    <item row="1" column="1">
-     <widget class="QWidget" name="right_sidebar" native="true">
-      <layout class="QGridLayout" name="_layout">
-       <property name="leftMargin">
-        <number>6</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-       <item row="1" column="0">
-        <spacer name="_spacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="_help_label">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shortcuts:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Shift + Enter&lt;br/&gt;&lt;/span&gt;Add card, keep input/dialog&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Enter&lt;br/&gt;&lt;/span&gt;Add card, clear input/dialog&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Del&lt;br/&gt;&lt;/span&gt;Clear input/delete card&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Ctrl + Space&lt;br/&gt;&lt;/span&gt;Translation lookup for input&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::AutoText</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
     </item>
    </layout>
   </widget>
@@ -229,30 +202,31 @@ border-color: white white black white ;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1215</width>
+     <width>1243</width>
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="_menu_deck">
+   <widget class="QMenu" name="_top_menu_file">
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="menu_new"/>
-    <addaction name="menu_open"/>
-    <addaction name="menu_save"/>
-    <addaction name="menu_save_as"/>
-    <addaction name="menu_export"/>
+    <addaction name="top_menu_file_new"/>
+    <addaction name="top_menu_file_open"/>
+    <addaction name="separator"/>
+    <addaction name="top_menu_file_save"/>
+    <addaction name="top_menu_file_save_as"/>
+    <addaction name="top_menu_file_export"/>
    </widget>
-   <widget class="QMenu" name="_menu_tools">
+   <widget class="QMenu" name="_top_menu_tools">
     <property name="title">
      <string>Tools</string>
     </property>
-    <addaction name="menu_toggle_sidebar"/>
+    <addaction name="top_menu_tools_settings"/>
    </widget>
-   <addaction name="_menu_deck"/>
-   <addaction name="_menu_tools"/>
+   <addaction name="_top_menu_file"/>
+   <addaction name="_top_menu_tools"/>
   </widget>
-  <action name="menu_save">
+  <action name="top_menu_file_save">
    <property name="text">
     <string>Save</string>
    </property>
@@ -260,7 +234,7 @@ border-color: white white black white ;</string>
     <string>Ctrl+S</string>
    </property>
   </action>
-  <action name="menu_save_as">
+  <action name="top_menu_file_save_as">
    <property name="text">
     <string>Save as...</string>
    </property>
@@ -268,7 +242,7 @@ border-color: white white black white ;</string>
     <string>Ctrl+Shift+S</string>
    </property>
   </action>
-  <action name="menu_open">
+  <action name="top_menu_file_open">
    <property name="text">
     <string>Open...</string>
    </property>
@@ -276,7 +250,7 @@ border-color: white white black white ;</string>
     <string>Ctrl+O</string>
    </property>
   </action>
-  <action name="menu_export">
+  <action name="top_menu_file_export">
    <property name="text">
     <string>Export to Anki...</string>
    </property>
@@ -284,9 +258,9 @@ border-color: white white black white ;</string>
     <string>Ctrl+E</string>
    </property>
   </action>
-  <action name="menu_new">
+  <action name="top_menu_file_new">
    <property name="text">
-    <string>New deck</string>
+    <string>New deck...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
@@ -304,6 +278,19 @@ border-color: white white black white ;</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="top_menu_tools_show_shortcuts">
+   <property name="text">
+    <string>Show shortcuts</string>
+   </property>
+  </action>
+  <action name="top_menu_tools_settings">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Settings...</string>
    </property>
   </action>
  </widget>
