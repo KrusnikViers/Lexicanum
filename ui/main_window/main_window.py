@@ -16,7 +16,7 @@ from ui.main_window.status_bar import StatusBar
 
 class MainWindow(QMainWindow):
     def closeEvent(self, _) -> None:
-        self.store_window_geometry()
+        # self.store_window_geometry()
         sys.exit(0)
 
     def __init__(self):

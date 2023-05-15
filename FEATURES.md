@@ -8,7 +8,6 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Alpha-release blockers
 
-* Update model with `word forms` field
 * Inputs table
     * Multiline table, filled by lookup. Always has at least one row for users input.
     * Row can be submitted with input row removed
@@ -54,6 +53,7 @@ All tasks under milestone name should be completed prior to this release.
 * 90% tests coverage
 * Download instructions in [README](README.md)
 * Proper description in [README](README.md)
+* Check .json version on read
 
 ### Future features
 
@@ -61,4 +61,4 @@ All tasks under milestone name should be completed prior to this release.
 * Support for Russian language words lookup
 * Pronunciation
 * Way to customize shortcuts
-  * Do not allow duplicate shortcuts
+    * Do not allow duplicate shortcuts

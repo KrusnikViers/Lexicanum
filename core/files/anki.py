@@ -90,14 +90,14 @@ _MODEL = genanki.Model(
 
 class _Note(genanki.Note):
     def __init__(self, card: Card):
-        question_split = [html.escape(part.strip()) for part in card.question.split('/')]
+        grammar_form_lines = [html.escape(part.strip()) for part in card.question.split(';')]
         super().__init__(
             model=_MODEL,
             fields=[
                 str(card.card_id),
                 card.card_type.name,
-                question_split[0],
-                '<br/>'.join(question_split[1:]),
+                html.escape(card.question),
+                '<br/>'.join(grammar_form_lines),
                 Language.DE.value,
                 html.escape(card.answer),
                 Language.EN.value,
