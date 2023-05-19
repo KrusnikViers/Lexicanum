@@ -1,11 +1,10 @@
 from typing import Optional, Any
 
 from PySide6.QtCore import Qt, QAbstractTableModel, QModelIndex, QObject
-from PySide6.QtGui import QColor
 
 from core.types import Card, CardType
-from core.util import Status, if_none
-from ui.common.cards_table.header import CardsTableHeader
+from core.util import if_none
+from ui.main_window.card_tables.base.header import CardsTableHeader
 
 
 class CardsTableModel(QAbstractTableModel):
@@ -16,22 +15,13 @@ class CardsTableModel(QAbstractTableModel):
     def get_card(self, row: int) -> Card:
         raise NotImplementedError
 
-    def add_card(self, card: Card) -> Status:
-        raise NotImplementedError
-
-    def remove_card(self, row: int):
-        raise NotImplementedError
-
     def cards_count(self) -> int:
-        raise NotImplementedError
-
-    def highlight_color(self, index: QModelIndex) -> QColor | None:
         raise NotImplementedError
 
     def supports_invalid_card_type(self) -> bool:
         raise NotImplementedError
 
-    # Common methods
+    # Common methods, shared by all derived classes
     def refresh_visible_contents(self, row_from: int, row_to: int | None = None):
         row_to = if_none(row_to, row_from)
         self.dataChanged.emit(
@@ -66,6 +56,9 @@ class CardsTableModel(QAbstractTableModel):
             case CardsTableHeader.Question:
                 assert isinstance(value, str)
                 card.question = value
+            case CardsTableHeader.Grammar:
+                assert isinstance(value, str)
+                card.question_grammar_forms = value
             case CardsTableHeader.Answer:
                 assert isinstance(value, str)
                 card.answer = value
@@ -76,8 +69,6 @@ class CardsTableModel(QAbstractTableModel):
         return True
 
     def data(self, index: QModelIndex, role: int = None) -> str | None:
-        if role == Qt.BackgroundRole:
-            return self.highlight_color(index)
         if role != Qt.DisplayRole:
             return None
 
@@ -87,6 +78,8 @@ class CardsTableModel(QAbstractTableModel):
                 return card.card_type.display_name()
             case CardsTableHeader.Question:
                 return card.question
+            case CardsTableHeader.Grammar:
+                return card.question_grammar_forms
             case CardsTableHeader.Answer:
                 return card.answer
             case CardsTableHeader.Note:

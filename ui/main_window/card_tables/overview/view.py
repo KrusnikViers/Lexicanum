@@ -1,11 +1,8 @@
-from PySide6.QtCore import QModelIndex
-from PySide6.QtWidgets import QWidget, QHeaderView
+from PySide6.QtWidgets import QWidget, QHeaderView, QSizePolicy
 
-from core.util import Status
-from ui.common import ShortcutCommand
-from ui.common.cards_table import CardsTableView, CardsTableHeader
-from ui.common.cards_table.delegates import ComboBoxCardTypeDelegate, LineEditSimpleDelegate
-from ui.main_window.overview_table.model import OverviewCardsTableModel
+from ui.main_window.card_tables.base import CardsTableView, CardsTableHeader
+from ui.main_window.card_tables.delegates import ComboBoxCardTypeDelegate, LineEditSimpleDelegate
+from ui.main_window.card_tables.overview.model import OverviewCardsTableModel
 
 
 class OverviewCardsTableView(CardsTableView):
@@ -14,9 +11,10 @@ class OverviewCardsTableView(CardsTableView):
         self.overview_model = overview_model
 
         self.setItemDelegateForColumn(CardsTableHeader.Type.value, ComboBoxCardTypeDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Note.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Question.value, LineEditSimpleDelegate.instance)
+        self.setItemDelegateForColumn(CardsTableHeader.Grammar.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Answer.value, LineEditSimpleDelegate.instance)
+        self.setItemDelegateForColumn(CardsTableHeader.Note.value, LineEditSimpleDelegate.instance)
 
         self.horizontalHeader().setVisible(False)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Type.value, QHeaderView.ResizeMode.Fixed)
@@ -24,10 +22,6 @@ class OverviewCardsTableView(CardsTableView):
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Answer.value, QHeaderView.ResizeMode.Fixed)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Note.value, QHeaderView.ResizeMode.Stretch)
 
-    def maybe_execute_shortcut(self, shortcut_command: ShortcutCommand) -> Status:
-        index: QModelIndex | None = self.focused_index()
-        if index is None:
-            return Status()
-        if shortcut_command == ShortcutCommand.CLEAR:
-            return self.overview_model.remove_card(index)
-        return Status()
+        # Always display at least 10 rows of overview table
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.MinimumExpanding)
+        self.setMinimumHeight(self.verticalHeader().defaultSectionSize() * 10)

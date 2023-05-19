@@ -21,18 +21,23 @@ All tasks under milestone name should be completed prior to this release.
     * Rows can be altered in place
     * Rows can be moved to the input, to create altered version or to look them up. Focus is also moving to the input
       table.
+* Sync tables headers and horizontal scroll status
 * Show errors and current deck id/path in status bar
 * Proper lookup from answer
 * Proper lookup from question
+* Show shortcuts help
 
 ### Beta-release blockers
 
+* Immediate search + on/off button
+* Write log file
 * Highlight current input row and filter overview by it
 * Add option to show active shortcuts
 * Show prompt when app is being closed with unsaved changes
 * Show indicator that deck has unsaved changes
 * Show prompt when deck is being unloaded with unsaved changes
 * Settings page
+* Allow setting log verbosity in settings
 * Words lookup by button
 * Overview table sorting per column
 * Automated tests for `master`
@@ -40,6 +45,7 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Stable release blockers
 
+* Create separate release with optimization flags
 * Highlight current row with different color if input is not valid
 * Highlight full duplicates in overview table
 * Update icons and stuff
@@ -54,6 +60,7 @@ All tasks under milestone name should be completed prior to this release.
 * Download instructions in [README](README.md)
 * Proper description in [README](README.md)
 * Check .json version on read
+* Undo/Redo for card operations
 
 ### Future features
 

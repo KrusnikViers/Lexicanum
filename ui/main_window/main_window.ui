@@ -85,41 +85,7 @@
   </property>
   <widget class="QWidget" name="main_widget">
    <layout class="QGridLayout" name="main_layout">
-    <property name="horizontalSpacing">
-     <number>0</number>
-    </property>
-    <item row="1" column="0">
-     <layout class="QVBoxLayout" name="_cards_table_view_layout">
-      <property name="spacing">
-       <number>0</number>
-      </property>
-      <item>
-       <widget class="QTableView" name="input_table_placeholder">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>32</height>
-         </size>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label">
-        <property name="styleSheet">
-         <string notr="true">padding-top: 10px;
-padding-bottom: 3px;</string>
-        </property>
-        <property name="text">
-         <string>Cards already in deck (showing 13/24):</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTableView" name="deck_preview_table_placeholder"/>
-      </item>
-     </layout>
-    </item>
-    <item row="0" column="0" colspan="2">
+    <item row="0" column="0">
      <layout class="QHBoxLayout" name="_deck_info_layout">
       <property name="spacing">
        <number>15</number>
@@ -192,6 +158,80 @@ border-color: white white black white ;</string>
         </property>
        </spacer>
       </item>
+      <item>
+       <widget class="QToolButton" name="deck_info_show_shortcuts_button">
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <layout class="QVBoxLayout" name="sidebar_layout">
+      <item>
+       <widget class="QLabel" name="sidebar_shortcuts_label">
+        <property name="text">
+         <string>### Shortcuts</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::MarkdownText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="cards_table_view_layout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTableView" name="cards_table_input_placeholder">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="cards_table_deck_stats">
+        <property name="styleSheet">
+         <string notr="true">padding-top: 10px;
+padding-bottom: 3px;</string>
+        </property>
+        <property name="text">
+         <string>Cards already in deck (showing 13/24):</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="cards_table_overview_placeholder">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -222,6 +262,7 @@ border-color: white white black white ;</string>
      <string>Tools</string>
     </property>
     <addaction name="top_menu_tools_settings"/>
+    <addaction name="actionShow_deck_shortcuts"/>
    </widget>
    <addaction name="_top_menu_file"/>
    <addaction name="_top_menu_tools"/>
@@ -291,6 +332,11 @@ border-color: white white black white ;</string>
    </property>
    <property name="text">
     <string>Settings...</string>
+   </property>
+  </action>
+  <action name="actionShow_deck_shortcuts">
+   <property name="text">
+    <string>Show deck shortcuts</string>
    </property>
   </action>
  </widget>

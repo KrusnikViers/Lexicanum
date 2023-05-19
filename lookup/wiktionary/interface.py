@@ -11,7 +11,7 @@ from lookup.wiktionary.languages import *
 class WiktionaryInterface(LookupInterface):
     def __init__(self):
         # TODO: Change to multi-language support
-        super(WiktionaryInterface, self).__init__(Language.EN, Language.DE)
+        super().__init__(Language.EN, Language.DE)
         self.answer_parser = EnglishLocaleParser
         self.question_parser = GermanLocaleParser
 

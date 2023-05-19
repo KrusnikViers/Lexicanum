@@ -5,6 +5,7 @@ from PySide6.QtWidgets import QStyledItemDelegate, QWidget, QStyleOptionViewItem
 class LineEditSimpleDelegate(QStyledItemDelegate):
     instance = None
 
+    # Qt methods overload
     def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
         editor = QLineEdit(parent)
         editor.textChanged.connect(lambda _, created_editor=editor: self.commitData.emit(created_editor))

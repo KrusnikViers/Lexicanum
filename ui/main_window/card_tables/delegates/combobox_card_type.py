@@ -2,15 +2,27 @@ from PySide6.QtCore import QModelIndex, Qt
 from PySide6.QtWidgets import QWidget, QStyleOptionViewItem, QStyledItemDelegate, QComboBox
 
 from core.types import CardType
-from ui.common.cards_table.model import CardsTableModel
+from ui.main_window.card_tables.base import CardsTableModel
 
 
 class ComboBoxCardTypeDelegate(QStyledItemDelegate):
     instance = None
 
+    @classmethod
+    def min_editor_width(cls):
+        empty_model = CardsTableModel()
+        example_card_type_editor: QComboBox = ComboBoxCardTypeDelegate.instance.createEditor(
+            None, None, empty_model.index(0, 0, QModelIndex()))
+        min_width = example_card_type_editor.minimumSizeHint().width()
+        empty_model.deleteLater()
+        example_card_type_editor.deleteLater()
+        return min_width
+
+    # Qt methods overload
     def createEditor(self, parent: QWidget, option: QStyleOptionViewItem, index: QModelIndex) -> QWidget:
         editor = QComboBox(parent)
         model: CardsTableModel = index.model()
+        assert isinstance(model, CardsTableModel)
 
         for card_type in CardType:
             if card_type == CardType.Invalid:
@@ -25,12 +37,8 @@ class ComboBoxCardTypeDelegate(QStyledItemDelegate):
 
     def setEditorData(self, editor: QComboBox, index: QModelIndex) -> None:
         model: CardsTableModel = index.model()
-
-        type_to_choose = model.get_card(index.row()).card_type
-        for selection_index in range(0, editor.count()):
-            if editor.itemData(selection_index, role=Qt.UserRole) == type_to_choose:
-                editor.setCurrentIndex(selection_index)
-                break
+        card_type = model.get_card(index.row()).card_type
+        editor.setCurrentIndex(editor.findData(card_type))
 
     def setModelData(self, editor: QComboBox, model: CardsTableModel, index: QModelIndex) -> None:
         model.setData(index, editor.currentData(Qt.UserRole), Qt.DisplayRole)
