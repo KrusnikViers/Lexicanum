@@ -21,6 +21,12 @@ All tasks under milestone name should be completed prior to this release.
     * Rows can be altered in place
     * Rows can be moved to the input, to create altered version or to look them up. Focus is also moving to the input
       table.
+* File operations
+  * New
+  * Open
+  * Save
+  * Save as
+  * Export
 * Sync tables headers and horizontal scroll status
 * Show errors and current deck id/path in status bar
 * Proper lookup from answer

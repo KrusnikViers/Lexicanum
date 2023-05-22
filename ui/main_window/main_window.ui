@@ -172,7 +172,8 @@ border-color: white white black white ;</string>
       <item>
        <widget class="QLabel" name="sidebar_shortcuts_label">
         <property name="text">
-         <string>### Shortcuts</string>
+         <string>### Shortcuts
+Shortcuts</string>
         </property>
         <property name="textFormat">
          <enum>Qt::MarkdownText</enum>
@@ -212,7 +213,7 @@ border-color: white white black white ;</string>
 padding-bottom: 3px;</string>
         </property>
         <property name="text">
-         <string>Cards already in deck (showing 13/24):</string>
+         <string>Cards already in deck (showing num/total):</string>
         </property>
        </widget>
       </item>
