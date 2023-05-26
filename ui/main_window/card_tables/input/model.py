@@ -23,10 +23,13 @@ class InputCardsTableModel(CardsTableModel):
 
     def remove_card(self, index: QModelIndex):
         row = index.row()
-        self.beginRemoveRows(QModelIndex(), row, row)
         assert 0 <= row <= len(self.input_cards)
-        del self.input_cards[row]
-        self.endRemoveRows()
+        if len(self.input_cards) == 1:
+            self.reset_content()
+        else:
+            self.beginRemoveRows(QModelIndex(), row, row)
+            del self.input_cards[row]
+            self.endRemoveRows()
 
     def cards_count(self) -> int:
         return len(self.input_cards)

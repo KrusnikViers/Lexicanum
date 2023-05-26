@@ -53,11 +53,7 @@ class MainWindow(QMainWindow):
         # self.ui.deck_name.textChanged.connect(self.on_deck_name_changed)
         # self.on_deck_info_updated()
 
-        # self.ui.menu_new.triggered.connect(self.action_new_deck)
-        # self.ui.menu_open.triggered.connect(self.action_open_project)
-        # self.ui.menu_save.triggered.connect(self.action_save_project)
-        # self.ui.menu_save_as.triggered.connect(self.action_save_project_as)
-        # self.ui.menu_export.triggered.connect(self.action_export_deck)
+
 
         self.show()
         self.restore_geometry()

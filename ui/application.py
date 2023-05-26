@@ -5,6 +5,7 @@ from PySide6.QtWidgets import QApplication
 
 from core.types.deck import Deck
 from ui.main_window.controllers.deck_controller import DeckController
+from ui.main_window.controllers.file_controller import FileController
 from ui.main_window.controllers.shortcuts_controller import ShortcutsController
 from ui.main_window.main_window import MainWindow
 
@@ -19,6 +20,7 @@ class Application(QApplication):
 
         self.deck_controller = DeckController(self, self.main_window)
         self.shortcuts_controller = ShortcutsController(self, self.main_window, self.deck_controller)
+        self.file_controller = FileController(self, self.main_window, self.deck_controller)
 
     @staticmethod
     def get_startup_deck():
