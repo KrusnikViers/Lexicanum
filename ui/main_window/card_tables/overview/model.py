@@ -22,16 +22,8 @@ class OverviewCardsTableModel(CardsTableModel):
     def get_card(self, row: int) -> Card:
         return self.deck.cards[row]
 
-    def cards_count(self) -> int:
-        return len(self.deck.cards)
-
-    # Own methods
-    def setData(self, index: QModelIndex, value: Any, role: int = None) -> bool:
-        result = super().setData(index, value, role)
-        return result
-
-    def add_card(self, card: Card):
-        assert card.is_valid()
+    def insert_card(self, card: Card):
+        assert card.validity_status()
         self.beginInsertRows(QModelIndex(), 0, 0)
         self.deck.cards.insert(0, deepcopy(card))
         self.endInsertRows()
@@ -42,6 +34,14 @@ class OverviewCardsTableModel(CardsTableModel):
         assert 0 <= row <= len(self.deck.cards)
         del self.deck.cards[row]
         self.endRemoveRows()
+
+    def cards_count(self) -> int:
+        return len(self.deck.cards)
+
+    # Own methods
+    def setData(self, index: QModelIndex, value: Any, role: int = None) -> bool:
+        result = super().setData(index, value, role)
+        return result
 
     def reset_deck(self, new_deck: Deck):
         self.beginResetModel()

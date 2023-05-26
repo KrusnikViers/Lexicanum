@@ -10,6 +10,9 @@ class Status:
     def __str__(self):
         return 'Status:OK' if self.is_ok() else 'Status:Err:{}'.format(self.status)
 
+    def __bool__(self):
+        return self.is_ok()
+
     def is_ok(self) -> bool:
         return self.status is None
 
@@ -25,6 +28,9 @@ class StatusOr(Generic[_T]):
 
     def __str__(self):
         return 'StatusOr:OK:{}'.format(self.value) if self.is_ok() else 'StatusOr:Err:{}'.format(self.status)
+
+    def __bool__(self):
+        return self.is_ok()
 
     def is_ok(self) -> bool:
         return self.value is not None

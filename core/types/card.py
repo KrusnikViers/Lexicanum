@@ -1,5 +1,7 @@
 from core.types.card_type import CardType
 
+from core.util import Status
+
 
 class Card:
     def __init__(self, card_type: CardType,
@@ -12,12 +14,14 @@ class Card:
         self.note: str = note
         self.card_id: int | None = card_id
 
-    def is_valid(self) -> bool:
-        if not self.question.strip() or not self.answer.strip():
-            return False
-        if self.card_type == CardType.Invalid:
-            return False
-        return True
+    def validity_status(self) -> Status:
+        if not self.question.strip():
+            return Status("Question field can not be empty")
+        elif not self.answer.strip():
+            return Status("Answer field can not be empty")
+        elif self.card_type == CardType.Invalid:
+            return Status("Choose card type")
+        return Status()
 
     def __str__(self):
         return 'CARD #{} |{} => {}/{}| ({}, {})'.format(

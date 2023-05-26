@@ -15,6 +15,12 @@ class CardsTableModel(QAbstractTableModel):
     def get_card(self, row: int) -> Card:
         raise NotImplementedError
 
+    def insert_card(self, card: Card):
+        raise NotImplementedError
+
+    def remove_card(self, index: QModelIndex):
+        raise NotImplementedError
+
     def cards_count(self) -> int:
         raise NotImplementedError
 
