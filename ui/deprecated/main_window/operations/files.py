@@ -11,7 +11,7 @@ from core.util import UniversalPath, Status, StatusOr
 def _write_deck_file(deck: Deck, output_path: UniversalPath):
     deck.normalize_for_output()
     status = deck_io.write_file(deck, output_path)
-    if status.is_ok():
+    if status:
         Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(output_path))
     return status
 
@@ -29,7 +29,7 @@ def _ask_user_for_deck_file_path(dialog_parent: QMainWindow) -> UniversalPath | 
 def write_deck_file_with_dialog(dialog_parent: QMainWindow, deck: Deck) -> Status:
     if output_path := _ask_user_for_deck_file_path(dialog_parent):
         status = _write_deck_file(deck, output_path)
-        if status.is_ok():
+        if status:
             deck.file_path = output_path
         return status
     return Status('No output path for deck file')
@@ -51,7 +51,7 @@ def write_apkg_with_dialog(dialog_parent: QMainWindow, deck: Deck) -> Status:
 
     deck.normalize_for_output()
     status = anki_io.write_file(deck, output_path)
-    if status.is_ok():
+    if status:
         return status
     Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, str(output_path))
 
@@ -60,7 +60,7 @@ def read_deck_file(input_path: UniversalPath) -> StatusOr[Deck]:
     if not input_path.exists():
         return StatusOr(status='File {} does not exist'.format(input_path))
     status = deck_io.read_file(input_path)
-    if status.is_ok():
+    if status:
         Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(input_path))
     return status
 
