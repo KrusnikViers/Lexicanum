@@ -10,20 +10,22 @@ PartOfSpeech = CardType
 
 class WordDefinition(NamedTuple):
     part_of_speech: PartOfSpeech
+
     # Raw title of source wiktionary article.
     wiki_title: str
-    # Short human-readable string
-    word_as_answer: str
-    # Full human-readable form with grammar information (e.g. additional forms)
-    word_as_question: str
+    # Short human-readable string, well describing main form of the word
+    word_readable: str
+    # Additional grammar information (most likely, unusual word forms)
+    grammar_forms: str
     # Short note to identify meaning when only question is visible.
+
     meaning_note: str
     translation_wiki_titles: List[str]
 
     def __str__(self):
-        return '{}:{} (A:{}, Q:{}, N:{}, TList: {})'.format(self.wiki_title, self.part_of_speech.name,
-                                                            self.word_as_answer, self.word_as_question,
-                                                            self.meaning_note, ';'.join(self.translation_wiki_titles))
+        return '{}:{} / {} / {} / Note:{} / Trl: {})'.format(self.wiki_title, self.part_of_speech.name,
+                                                             self.word_readable, self.grammar_forms,
+                                                             self.meaning_note, ';'.join(self.translation_wiki_titles))
 
 
 class LocalizedParser:

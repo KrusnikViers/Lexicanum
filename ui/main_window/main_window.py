@@ -53,8 +53,6 @@ class MainWindow(QMainWindow):
         # self.ui.deck_name.textChanged.connect(self.on_deck_name_changed)
         # self.on_deck_info_updated()
 
-
-
         self.show()
         self.restore_geometry()
 

@@ -21,9 +21,6 @@ class CardsTableView(QTableView):
         self.verticalHeader().setDefaultSectionSize(16)
 
     # Common methods
-    def is_in_focus(self) -> bool:
-        return self.hasFocus()
-
     def selected_index(self) -> QModelIndex | None:
         current_index = self.currentIndex()
         if current_index.isValid():
@@ -31,8 +28,6 @@ class CardsTableView(QTableView):
         return None
 
     def focused_index(self) -> QModelIndex | None:
-        if not self.is_in_focus():
-            return None
         selected_index = self.selected_index()
         if selected_index and self.indexWidget(selected_index).hasFocus():
             return selected_index

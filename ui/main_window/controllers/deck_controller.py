@@ -3,15 +3,18 @@ from typing import Type
 
 from PySide6.QtCore import QObject
 
-from ui.main_window.card_tables.base import CardsTableView, CardsTableModel
+from core.types import Deck
+from lookup.interface import LookupInterface
+from ui.main_window.card_tables.base import CardsTableView, CardsTableHeader, CardsTableModel
 from ui.main_window.card_tables.input import InputCardsTableView
 from ui.main_window.main_window import MainWindow
 
 
 class DeckController(QObject):
-    def __init__(self, parent: QObject, main_window: MainWindow):
+    def __init__(self, parent: QObject, main_window: MainWindow, lookup_interface: LookupInterface):
         super().__init__(parent)
         self.main_window = main_window
+        self.lookup_interface = lookup_interface
 
     def table_in_focus(self, expected_type: Type[CardsTableView] | None = None) -> CardsTableView | None:
         focused_widget = self.main_window.focusWidget()
@@ -24,6 +27,10 @@ class DeckController(QObject):
 
     def current_deck(self):
         return self.main_window.overview_model.deck
+
+    @staticmethod
+    def default_deck():
+        return Deck('New Deck', [])
 
     # Submits current row, if valid, from input table to the overview. If card is not valid, shows error message in
     # status bar. Input table must be in focus.
@@ -63,5 +70,29 @@ class DeckController(QObject):
     # Looks up word from question or answer from either input or overview table. Results of the lookup replace
     # existing content of the input. One of the tables should be in focus.
     def lookup_online(self):
-        assert self.table_in_focus()
-        pass
+        table_in_focus = self.table_in_focus()
+        assert table_in_focus
+
+        lookup_index = table_in_focus.focused_index()
+        if not lookup_index:
+            self.main_window.status_bar.show_timed_message('No cell selected with word to search')
+            return
+        if lookup_index.column() not in [CardsTableHeader.Answer.value, CardsTableHeader.Question.value]:
+            self.main_window.status_bar.show_timed_message('Selection is not in Question or Answer column')
+            return
+
+        table_in_focus.commit_open_editor_changes()
+        original_card = table_in_focus.model().get_card(lookup_index.row())
+        is_lookup_from_answer = lookup_index.column() == CardsTableHeader.Answer.value
+        search_string = original_card.answer.strip() if is_lookup_from_answer else original_card.question.strip()
+        if search_string == '':
+            self.main_window.status_bar.show_timed_message('Selected cell is empty')
+            return
+
+        lookup_status = self.lookup_interface.lookup_by_answer(search_string) if is_lookup_from_answer \
+            else self.lookup_interface.lookup_by_question(search_string)
+        if not lookup_status.is_ok():
+            self.main_window.status_bar.show_timed_message(lookup_status.status)
+            return
+
+        self.main_window.input_model.reset_content(lookup_status.value)

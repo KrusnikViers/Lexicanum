@@ -23,12 +23,17 @@ class FileController(QObject):
         main_window.ui.top_menu_file_save_as.triggered.connect(self.on_action_save_project_as)
         main_window.ui.top_menu_file_export.triggered.connect(self.on_action_export_deck)
 
-    @staticmethod
-    def _write_deck_file(deck: Deck, output_path: UniversalPath) -> Status:
+    def _write_deck_file(self, deck: Deck, output_path: UniversalPath) -> Status:
+        if not deck.deck_name.strip():
+            default_name = self.deck_controller.default_deck().deck_name
+            self.main_window.ui.deck_info_title_input.setText(default_name)
+            deck.deck_name = default_name
         deck.normalize_for_output()
         status = deck_io.write_file(deck, output_path)
         if status:
             Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(output_path))
+            deck.file_path = output_path
+            self.main_window.ui.deck_info_path_label.setText(str(output_path))
         return status
 
     def try_open_deck_file(self, input_path: UniversalPath) -> bool:

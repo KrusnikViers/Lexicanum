@@ -1,12 +1,12 @@
 import itertools
-from typing import List, Dict
+from typing import List, Dict, Tuple
 
 from lookup.wiktionary.internal.markup_tree import MarkupTreeNode
 from lookup.wiktionary.languages.base import WordDefinition, LocalizedParser, PartOfSpeech
 from lookup.wiktionary.languages.utils import merge_translation_dict, all_children_recursive
 
 
-def _get_noun_word_forms(markup_node: MarkupTreeNode) -> (str, str):
+def _try_get_noun_word_forms(markup_node: MarkupTreeNode) -> Tuple[str, str] | None:
     _ARTICLES = {'n': 'Das', 'm': 'Der', 'f': 'Die'}
     article = None
     singular_form = None
@@ -25,19 +25,23 @@ def _get_noun_word_forms(markup_node: MarkupTreeNode) -> (str, str):
     singular_form = '{} {}'.format(article, singular_form) if article and singular_form else None
     plural_form = 'Die {}'.format(plural_form) if plural_form else None
     if singular_form and plural_form:
-        return singular_form, '{} / {}'.format(singular_form, plural_form)
+        return singular_form, plural_form
     elif singular_form:
-        return singular_form, '{} / nur Sing.'.format(singular_form)
+        return singular_form, 'nur Singular.'
     elif plural_form:
-        return plural_form, '{} / nur Plur.'.format(plural_form)
+        return plural_form, 'nur Plural'
+    else:
+        return None
 
 
-def _get_word_forms(markup_node: MarkupTreeNode, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
+def _try_get_word_forms(markup_node: MarkupTreeNode,
+                        wiki_title: str,
+                        node_type: PartOfSpeech) -> Tuple[str, str] | None:
     match node_type:
         case PartOfSpeech.Noun:
-            return _get_noun_word_forms(markup_node)
+            return _try_get_noun_word_forms(markup_node)
         case _:
-            return wiki_title.capitalize(), wiki_title.capitalize()
+            return wiki_title.capitalize(), ''
 
 
 def _get_meaning_note(markup_node: MarkupTreeNode) -> str:
@@ -56,7 +60,7 @@ def _get_translations(markup_node: MarkupTreeNode, translation_codes: List[str])
             translated_word = child_node.plain_args[1]
             if language in translation_codes and translated_word:
                 raw_results.setdefault(language, []).append(translated_word)
-    return list(itertools.chain(*merge_translation_dict(raw_results, translation_codes)))
+    return merge_translation_dict(raw_results, translation_codes)
 
 
 _PART_OF_SPEECH_MAPPING = {
@@ -80,11 +84,14 @@ def _extract_word_definitions_recursive(markup_node: MarkupTreeNode,
 
     results = []
     for node_type in node_types:
-        word_as_answer, word_as_question = _get_word_forms(markup_node, wiki_title, node_type)
+        forms = _try_get_word_forms(markup_node, wiki_title, node_type)
+        if forms is None:
+            continue
+        word_readable, grammar_forms = forms
         meaning_note = _get_meaning_note(markup_node)
         translations = _get_translations(markup_node, translation_codes)
         results.append(WordDefinition(part_of_speech=node_type, wiki_title=wiki_title,
-                                      word_as_answer=word_as_answer, word_as_question=word_as_question,
+                                      word_readable=word_readable, grammar_forms=grammar_forms,
                                       meaning_note=meaning_note,
                                       translation_wiki_titles=translations))
     return results
