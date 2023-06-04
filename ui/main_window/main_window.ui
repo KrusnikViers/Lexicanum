@@ -159,27 +159,9 @@ border-color: white white black white ;</string>
        </spacer>
       </item>
       <item>
-       <widget class="QToolButton" name="deck_info_show_shortcuts_button">
+       <widget class="QToolButton" name="deck_info_toggle_sidebar_button">
         <property name="autoRaise">
          <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item row="0" column="1" rowspan="2">
-     <layout class="QVBoxLayout" name="sidebar_layout">
-      <item>
-       <widget class="QLabel" name="sidebar_shortcuts_label">
-        <property name="text">
-         <string>### Shortcuts
-Shortcuts</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::MarkdownText</enum>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
         </property>
        </widget>
       </item>
@@ -235,6 +217,62 @@ padding-bottom: 3px;</string>
       </item>
      </layout>
     </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QWidget" name="sidebar_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="_sidebar_layout">
+       <item>
+        <widget class="QLabel" name="sidebar_shortcuts_label">
+         <property name="text">
+          <string>### Shortcuts List
+---
+
+**Ctrl + Enter**  
+Add selected input card to deck, clear input  
+Replace input with selected deck card
+
+
+**Shift + Enter**  
+Add selected input card to final deck  
+Add selected deck card to input
+
+
+**Ctrl + Delete**  
+Clear input and set as active cell
+
+
+**Shift + Delete**  
+Remove selected card from input or deck
+
+
+**Ctrl + Space**  
+Look up selected word in online dictionary and replace input with card suggestions</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::MarkdownText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QStatusBar" name="app_status_bar_placeholder"/>
@@ -263,7 +301,7 @@ padding-bottom: 3px;</string>
      <string>Tools</string>
     </property>
     <addaction name="top_menu_tools_settings"/>
-    <addaction name="actionShow_deck_shortcuts"/>
+    <addaction name="top_menu_tools_toggle_sidebar"/>
    </widget>
    <addaction name="_top_menu_file"/>
    <addaction name="_top_menu_tools"/>
@@ -335,9 +373,18 @@ padding-bottom: 3px;</string>
     <string>Settings...</string>
    </property>
   </action>
-  <action name="actionShow_deck_shortcuts">
+  <action name="top_menu_tools_toggle_sidebar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
    <property name="text">
-    <string>Show deck shortcuts</string>
+    <string>Show sidebar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
    </property>
   </action>
  </widget>

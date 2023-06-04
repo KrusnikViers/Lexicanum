@@ -1,4 +1,4 @@
-from PySide6.QtCore import Signal, QSize, QPoint, QRect
+from PySide6.QtCore import Signal, Slot, QSize, QPoint, QRect
 from PySide6.QtGui import QCloseEvent
 from PySide6.QtWidgets import QMainWindow, QApplication
 
@@ -6,6 +6,7 @@ from core.info import PROJECT_FULL_NAME
 from core.settings import Settings, StoredSettings
 from core.types import Deck
 from ui.gen.main_window.main_window_uic import Ui_MainWindow
+from ui.icons.list import IconsList
 from ui.main_window.card_tables.input import InputCardsTableModel, InputCardsTableView
 from ui.main_window.card_tables.overview import OverviewCardsTableModel, OverviewCardsTableView
 from ui.main_window.status_bar import StatusBar
@@ -24,6 +25,10 @@ class MainWindow(QMainWindow):
             super().closeEvent(event)
         self.application_exit_requested.emit()
 
+    # Please note:
+    # Non-top menu shortcuts are handled in shortcuts_controller.py
+    # All file-related UI operations are handled in file_controller.py
+    # All deck-related UI operations are handled in deck_controller.py
     def __init__(self, displayed_deck: Deck):
         super().__init__()
 
@@ -49,25 +54,14 @@ class MainWindow(QMainWindow):
         self.ui.cards_table_input_placeholder.setParent(None)
         self.ui.cards_table_input_placeholder.deleteLater()
 
-        # self.ui.deck_name.setText(self.overview_model.deck.deck_name)
-        # self.ui.deck_name.textChanged.connect(self.on_deck_name_changed)
-        # self.on_deck_info_updated()
+        self.ui.deck_info_toggle_sidebar_button.setDefaultAction(self.ui.top_menu_tools_toggle_sidebar)
+        self.ui.top_menu_tools_toggle_sidebar.setIcon(IconsList.Sidebar)
+        self.ui.top_menu_tools_toggle_sidebar.setChecked(Settings.get(StoredSettings.MAIN_WINDOW_SIDEBAR_VISIBLE))
+        self.on_sidebar_toggled(self.ui.menu_toggle_sidebar.isChecked())
+        self.ui.top_menu_tools_toggle_sidebar.toggled.connect(self.on_sidebar_toggled)
 
         self.show()
         self.restore_geometry()
-
-    def get_displayed_deck(self):
-        return self.overview_model.deck
-
-    def get_default_deck(self, on_startup: bool) -> Deck:
-        # if on_startup and Settings.get(StoredSettings.IMPORT_ON_STARTUP):
-        #     import_file_path = UniversalPath(Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH))
-        #     import_status = deck_io.read_deck_file(import_file_path)
-        #     if import_status.is_ok():
-        #         return import_status.value
-        #     else:
-        #         self.status_bar.show_timed_message(import_status.status)
-        return Deck('New Deck', [])
 
     def restore_geometry(self):
         window_geometry: QRect = Settings.get(StoredSettings.MAIN_WINDOW_GEOMETRY)
@@ -91,6 +85,11 @@ class MainWindow(QMainWindow):
     def store_geometry(self):
         # self.input_table_view.store_geometry()
         Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
+
+    @Slot(bool)
+    def on_sidebar_toggled(self, new_state: bool):
+        self.ui.sidebar_widget.setVisible(new_state)
+        Settings.set(StoredSettings.MAIN_WINDOW_SIDEBAR_VISIBLE, new_state)
 
     # @Slot(str)
     # def on_deck_name_changed(self, new_name: str):

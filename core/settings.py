@@ -20,6 +20,7 @@ class StoredSettings(Enum):
 
     # GUI state
     MAIN_WINDOW_GEOMETRY = _StoredSettingMeta('main_window_geometry', QRect, QRect())
+    MAIN_WINDOW_SIDEBAR_VISIBLE = _StoredSettingMeta('main_window_sidebar_visible', bool, True)
     CARDS_TABLE_COLUMNS_WIDTH_SPACED = _StoredSettingMeta('cards_table_columns_width', str, '')
 
 

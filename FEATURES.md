@@ -8,30 +8,21 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Alpha-release blockers
 
-* Inputs table
-    * Multiline table, filled by lookup. Always has at least one row for users input.
-    * Row can be submitted with input row removed
-    * Row can be submitted without input row removed
-    * Can be cleaned completely
-    * Question or answer word can be looked up
-    * If answer is being looked up, it should be cut to the nearest line break.
-* Overview table
-    * Multiline table, contains current deck data. First row of an input can be used as a filter.
-    * Rows can be removed
-    * Rows can be altered in place
-    * Rows can be moved to the input, to create altered version or to look them up. Focus is also moving to the input
-      table.
-* File operations
+* Add icons for file operations:
   * New
   * Open
-  * Save
-  * Save as
+  * Save / Save as
   * Export
+* Connect UI deck name field
+* Connect UI save ToolButton
+* Connect UI deck path label
 * Sync tables headers and horizontal scroll status
-* Show errors and current deck id/path in status bar
-* Proper lookup from answer
-* Proper lookup from question
-* Show shortcuts help
+* Shortcuts
+  * Ctrl + Enter from overview
+  * Shit + Enter from overview
+  * Ctrl + Delete
+  * Shit + Delete
+* Proper lookups (both tables)
 
 ### Beta-release blockers
 

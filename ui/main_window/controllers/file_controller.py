@@ -24,10 +24,6 @@ class FileController(QObject):
         main_window.ui.top_menu_file_export.triggered.connect(self.on_action_export_deck)
 
     def _write_deck_file(self, deck: Deck, output_path: UniversalPath) -> Status:
-        if not deck.deck_name.strip():
-            default_name = self.deck_controller.default_deck().deck_name
-            self.main_window.ui.deck_info_title_input.setText(default_name)
-            deck.deck_name = default_name
         deck.normalize_for_output()
         status = deck_io.write_file(deck, output_path)
         if status:
