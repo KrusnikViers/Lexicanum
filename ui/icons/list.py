@@ -10,8 +10,8 @@ def _load_icon(name: str):
 
 
 class IconsList:
-    Search: QIcon = _load_icon('search.svg')
-    Plus: QIcon = _load_icon('plus.svg')
-    Trash: QIcon = _load_icon('trash.svg')
-    Check: QIcon = _load_icon('check.svg')
-    Sidebar: QIcon = _load_icon('sidebar.svg')
+    New: QIcon = _load_icon('document.svg')
+    Open: QIcon = _load_icon('folder-outline.svg')
+    Save: QIcon = _load_icon('save-disk.svg')
+    Export: QIcon = _load_icon('download.svg')
+    Sidebar: QIcon = _load_icon('show-sidebar.svg')

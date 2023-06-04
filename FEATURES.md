@@ -8,11 +8,6 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Alpha-release blockers
 
-* Add icons for file operations:
-  * New
-  * Open
-  * Save / Save as
-  * Export
 * Connect UI deck name field
 * Connect UI save ToolButton
 * Connect UI deck path label
@@ -28,6 +23,7 @@ All tasks under milestone name should be completed prior to this release.
 
 * Immediate search + on/off button
 * Write log file
+* Find proper icons set
 * Highlight current input row and filter overview by it
 * Add option to show active shortcuts
 * Show prompt when app is being closed with unsaved changes

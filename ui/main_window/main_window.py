@@ -54,10 +54,15 @@ class MainWindow(QMainWindow):
         self.ui.cards_table_input_placeholder.setParent(None)
         self.ui.cards_table_input_placeholder.deleteLater()
 
+        self.ui.top_menu_file_new.setIcon(IconsList.New)
+        self.ui.top_menu_file_save.setIcon(IconsList.Save)
+        self.ui.top_menu_file_open.setIcon(IconsList.Open)
+        self.ui.top_menu_file_export.setIcon(IconsList.Export)
+
         self.ui.deck_info_toggle_sidebar_button.setDefaultAction(self.ui.top_menu_tools_toggle_sidebar)
         self.ui.top_menu_tools_toggle_sidebar.setIcon(IconsList.Sidebar)
         self.ui.top_menu_tools_toggle_sidebar.setChecked(Settings.get(StoredSettings.MAIN_WINDOW_SIDEBAR_VISIBLE))
-        self.on_sidebar_toggled(self.ui.menu_toggle_sidebar.isChecked())
+        self.on_sidebar_toggled(self.ui.top_menu_tools_toggle_sidebar.isChecked())
         self.ui.top_menu_tools_toggle_sidebar.toggled.connect(self.on_sidebar_toggled)
 
         self.show()
