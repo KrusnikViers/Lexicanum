@@ -26,10 +26,10 @@ class FileController(QObject):
     def _write_deck_file(self, deck: Deck, output_path: UniversalPath) -> Status:
         deck.normalize_for_output()
         status = deck_io.write_file(deck, output_path)
-        if status:
+        if status.is_ok():
             Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(output_path))
             deck.file_path = output_path
-            self.main_window.ui.deck_info_path_label.setText(str(output_path))
+            self.deck_controller.update_deck_meta()
         return status
 
     def try_open_deck_file(self, input_path: UniversalPath) -> bool:
@@ -41,7 +41,13 @@ class FileController(QObject):
             self._show_status(reading_status.status)
             return False
         Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(input_path))
+        self.deck_controller.reset_deck(reading_status.value)
         return True
+
+    @staticmethod
+    def startup_deck() -> Deck:
+        # TODO: Add startup deck reading
+        return DeckController.default_deck()
 
     @staticmethod
     def _ask_user_for_deck_file_path(dialog_parent: QMainWindow) -> UniversalPath | None:
@@ -57,13 +63,13 @@ class FileController(QObject):
         self.main_window.status_bar.show_timed_message(new_status)
 
     def _deck(self):
-        return self.deck_controller.current_deck()
+        return self.deck_controller.deck
 
     @Slot()
     def on_action_new_deck(self):
         self.main_window.overview_table_view.commit_open_editor_changes()
         # TODO: Check if current deck needs to be saved
-        pass
+        self.deck_controller.reset_deck(self.deck_controller.default_deck())
 
     @Slot()
     def on_action_open_project(self):
@@ -113,6 +119,7 @@ class FileController(QObject):
         output_path = UniversalPath(raw_dialog_result[0]).with_extension('.apkg')
 
         self._deck().normalize_for_output()
+        self.deck_controller.update_deck_meta()
         writing_status = anki_io.write_file(self._deck(), output_path)
         if writing_status.is_ok():
             Settings.set(StoredSettings.LAST_ANKI_FILE_PATH, str(output_path))

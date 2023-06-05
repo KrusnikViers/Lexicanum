@@ -29,7 +29,7 @@ class MainWindow(QMainWindow):
     # Non-top menu shortcuts are handled in shortcuts_controller.py
     # All file-related UI operations are handled in file_controller.py
     # All deck-related UI operations are handled in deck_controller.py
-    def __init__(self, displayed_deck: Deck):
+    def __init__(self, startup_deck: Deck):
         super().__init__()
 
         # Can be set by Application to indicate that all checks before closing were done.
@@ -42,7 +42,7 @@ class MainWindow(QMainWindow):
         self.status_bar: StatusBar = StatusBar(self)
         self.setStatusBar(self.status_bar)
 
-        self.overview_model = OverviewCardsTableModel(displayed_deck)
+        self.overview_model = OverviewCardsTableModel(startup_deck)
         self.overview_table_view = OverviewCardsTableView(self, self.overview_model)
         self.ui.main_layout.replaceWidget(self.ui.cards_table_overview_placeholder, self.overview_table_view)
         self.ui.cards_table_overview_placeholder.setParent(None)
@@ -58,6 +58,7 @@ class MainWindow(QMainWindow):
         self.ui.top_menu_file_save.setIcon(IconsList.Save)
         self.ui.top_menu_file_open.setIcon(IconsList.Open)
         self.ui.top_menu_file_export.setIcon(IconsList.Export)
+        self.ui.deck_info_save_button.setDefaultAction(self.ui.top_menu_file_save)
 
         self.ui.deck_info_toggle_sidebar_button.setDefaultAction(self.ui.top_menu_tools_toggle_sidebar)
         self.ui.top_menu_tools_toggle_sidebar.setIcon(IconsList.Sidebar)

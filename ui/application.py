@@ -16,17 +16,15 @@ class Application(QApplication):
         super().__init__(sys.argv)
         self.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.Floor)
 
-        self.main_window = MainWindow(self.get_startup_deck())
+        startup_deck = FileController.startup_deck()
+
+        self.main_window = MainWindow(startup_deck)
         self.main_window.application_exit_requested.connect(self.on_exit_requested)
 
         self.lookup_interface = WiktionaryInterface()
-        self.deck_controller = DeckController(self, self.main_window, self.lookup_interface)
+        self.deck_controller = DeckController(self, self.main_window, self.lookup_interface, startup_deck)
         self.shortcuts_controller = ShortcutsController(self, self.main_window, self.deck_controller)
         self.file_controller = FileController(self, self.main_window, self.deck_controller)
-
-    @staticmethod
-    def get_startup_deck():
-        return Deck('New Deck', [])
 
     @Slot()
     def on_exit_requested(self):

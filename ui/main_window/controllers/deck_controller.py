@@ -1,7 +1,7 @@
 from copy import deepcopy
 from typing import Type
 
-from PySide6.QtCore import QObject
+from PySide6.QtCore import QObject, Slot
 
 from core.types import Deck
 from lookup.interface import LookupInterface
@@ -11,10 +11,17 @@ from ui.main_window.main_window import MainWindow
 
 
 class DeckController(QObject):
-    def __init__(self, parent: QObject, main_window: MainWindow, lookup_interface: LookupInterface):
+    def __init__(self, parent: QObject, main_window: MainWindow, lookup_interface: LookupInterface,
+                 starting_deck: Deck):
         super().__init__(parent)
         self.main_window = main_window
         self.lookup_interface = lookup_interface
+
+        self.deck = starting_deck
+        self.reset_deck(starting_deck)
+        assert self.deck is self.main_window.overview_model.deck
+
+        self.main_window.ui.deck_info_title_input.textEdited.connect(self.on_deck_name_changed)
 
     def table_in_focus(self, expected_type: Type[CardsTableView] | None = None) -> CardsTableView | None:
         focused_widget = self.main_window.focusWidget()
@@ -25,12 +32,23 @@ class DeckController(QObject):
             return focused_widget
         return None
 
-    def current_deck(self):
-        return self.main_window.overview_model.deck
-
     @staticmethod
     def default_deck():
         return Deck('New Deck', [])
+
+    @Slot(str)
+    def on_deck_name_changed(self, new_name: str):
+        self.deck.deck_name = new_name
+
+    def update_deck_meta(self):
+        self.main_window.ui.deck_info_title_input.setText(self.deck.deck_name)
+        path_label_text = str(self.deck.file_path) if self.deck.file_path else 'Not saved anywhere'
+        self.main_window.ui.deck_info_path_label.setText(path_label_text)
+
+    def reset_deck(self, new_deck: Deck):
+        self.deck = deepcopy(new_deck)
+        self.main_window.overview_model.reset_deck(self.deck)
+        self.update_deck_meta()
 
     # Submits current row, if valid, from input table to the overview. If card is not valid, shows error message in
     # status bar. Input table must be in focus.
