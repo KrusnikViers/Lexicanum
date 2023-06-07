@@ -9,11 +9,7 @@ All tasks under milestone name should be completed prior to this release.
 ### Alpha-release blockers
 
 * Sync tables headers and horizontal scroll status
-* Shortcuts
-  * Ctrl + Enter from overview
-  * Shit + Enter from overview
-  * Ctrl + Delete
-  * Shit + Delete
+* Resize input table based on the number of rows
 * Proper lookups (both tables)
 
 ### Beta-release blockers

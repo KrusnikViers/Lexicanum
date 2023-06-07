@@ -7,6 +7,7 @@ from core.types import Deck
 from lookup.interface import LookupInterface
 from ui.main_window.card_tables.base import CardsTableView, CardsTableHeader, CardsTableModel
 from ui.main_window.card_tables.input import InputCardsTableView
+from ui.main_window.card_tables.overview import OverviewCardsTableView
 from ui.main_window.main_window import MainWindow
 
 
@@ -52,7 +53,7 @@ class DeckController(QObject):
 
     # Submits current row, if valid, from input table to the overview. If card is not valid, shows error message in
     # status bar. Input table must be in focus.
-    def submit_from_input(self):
+    def add_line_to_overview(self):
         assert self.table_in_focus(InputCardsTableView)
         selection = self.main_window.input_table_view.selected_index()
         if not selection:
@@ -63,6 +64,15 @@ class DeckController(QObject):
             self.main_window.status_bar.show_timed_message(validity.status)
             return
         self.main_window.overview_model.insert_card(deepcopy(selected_card))
+
+    # Submits current row, if valid, from overview table to the input. Overview table must be in focus.
+    def add_line_to_input(self):
+        assert self.table_in_focus(OverviewCardsTableView)
+        selection = self.main_window.overview_table_view.selected_index()
+        if not selection:
+            return
+        selected_card = self.main_window.overview_model.get_card(selection.row())
+        self.main_window.input_model.reset_content([deepcopy(selected_card)])
 
     # Removes current line from either input or overview table. If it is the last line in input, just clears its
     # content. One of the tables should be in focus.

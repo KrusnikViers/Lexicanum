@@ -239,25 +239,21 @@ padding-bottom: 3px;</string>
 ---
 
 **Ctrl + Enter**  
-Add selected input card to deck, clear input  
-Replace input with selected deck card
-
+Move an input card to deck, or  
+Replace the input with the moved deck card
 
 **Shift + Enter**  
-Add selected input card to final deck  
-Add selected deck card to input
+Copy an input card to the deck, or  
+Replace the input with a copy of a deck card
 
+**Ctrl + Delete**   
+Remove the card from either input or deck
 
-**Ctrl + Delete**  
-Clear input and set as active cell
-
-
-**Shift + Delete**  
-Remove selected card from input or deck
-
+**Ctrl + Backspace**  
+Clear the input and focus it
 
 **Ctrl + Space**  
-Look up selected word in online dictionary and replace input with card suggestions</string>
+Replace input with card suggestions based on the selected word</string>
          </property>
          <property name="textFormat">
           <enum>Qt::MarkdownText</enum>

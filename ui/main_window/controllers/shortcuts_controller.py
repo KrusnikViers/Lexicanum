@@ -6,6 +6,7 @@ from PySide6.QtGui import QShortcut, QKeySequence
 from PySide6.QtWidgets import QWidget
 
 from ui.main_window.card_tables.input import InputCardsTableView
+from ui.main_window.card_tables.overview import OverviewCardsTableView
 from ui.main_window.controllers.deck_controller import DeckController
 from ui.main_window.main_window import MainWindow
 
@@ -45,18 +46,31 @@ class ShortcutsController(QObject):
 
     @Slot(ShortcutCommand)
     def _on_shortcut_activated(self, shortcut_command: ShortcutCommand):
-        if shortcut_command == ShortcutCommand.SUBMIT_AND_RESET and \
-                self.deck_controller.table_in_focus(InputCardsTableView):
-            self.deck_controller.submit_from_input()
-            self.deck_controller.reset_input()
-            self.deck_controller.focus_input()
-        elif shortcut_command == ShortcutCommand.SUBMIT_AND_CONTINUE and \
-                self.deck_controller.table_in_focus(InputCardsTableView):
-            self.deck_controller.submit_from_input()
-        elif shortcut_command == ShortcutCommand.REMOVE_LINE and self.deck_controller.table_in_focus():
-            self.deck_controller.remove_line()
-        elif shortcut_command == ShortcutCommand.RESET_INPUT:
-            self.deck_controller.reset_input()
-            self.deck_controller.focus_input()
-        elif shortcut_command == ShortcutCommand.ONLINE_LOOKUP and self.deck_controller.table_in_focus():
-            self.deck_controller.lookup_online()
+        if self.deck_controller.table_in_focus(InputCardsTableView):
+            match shortcut_command:
+                case ShortcutCommand.SUBMIT_AND_RESET:
+                    self.deck_controller.add_line_to_overview()
+                    self.deck_controller.remove_line()
+                case ShortcutCommand.SUBMIT_AND_CONTINUE:
+                    self.deck_controller.add_line_to_overview()
+        elif self.deck_controller.table_in_focus(OverviewCardsTableView):
+            match shortcut_command:
+                case ShortcutCommand.SUBMIT_AND_RESET:
+                    self.deck_controller.reset_input()
+                    self.deck_controller.add_line_to_input()
+                    self.deck_controller.remove_line()
+                    self.deck_controller.focus_input()
+                case ShortcutCommand.SUBMIT_AND_CONTINUE:
+                    self.deck_controller.reset_input()
+                    self.deck_controller.add_line_to_input()
+                    self.deck_controller.focus_input()
+
+        if self.deck_controller.table_in_focus():
+            match shortcut_command:
+                case ShortcutCommand.REMOVE_LINE:
+                    self.deck_controller.remove_line()
+                case ShortcutCommand.RESET_INPUT:
+                    self.deck_controller.reset_input()
+                    self.deck_controller.focus_input()
+                case ShortcutCommand.ONLINE_LOOKUP:
+                    self.deck_controller.lookup_online()
