@@ -1,5 +1,5 @@
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtWidgets import QWidget, QHeaderView, QSizePolicy
+from PySide6.QtCore import Qt, Signal, Slot
+from PySide6.QtWidgets import QWidget, QHeaderView, QSizePolicy, QAbstractScrollArea
 
 from core.types import Card
 from ui.main_window.card_tables.base import CardsTableView, CardsTableHeader
@@ -29,3 +29,25 @@ class InputCardsTableView(CardsTableView):
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Maximum)
         self.setMaximumHeight(self.horizontalHeader().height() + self.verticalHeader().defaultSectionSize())
         self.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+
+        self.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
+
+        self.input_model.row_count_changed.connect(self.on_row_count_changed)
+        self.on_row_count_changed()
+
+    @Slot()
+    def on_row_count_changed(self):
+        # New widget height can not be more than half of parent widget.
+        max_height = self.parent().height() // 2
+
+        # First row always present and must always be visible.
+        min_height = self.horizontalHeader().height() + self.rowHeight(0) + 2  # Smh +2 saves the day
+        if self.horizontalScrollBar().isVisible():
+            min_height += self.horizontalScrollBar().height()
+        self.setMinimumHeight(min_height)
+
+        # Try to show all the rows, but do now take more space than that.
+        extra_rows_height = 0
+        for row in range(1, self.verticalHeader().count()):
+            extra_rows_height += self.rowHeight(row)
+        self.setMaximumHeight(min(max_height, min_height + extra_rows_height))

@@ -44,12 +44,14 @@ class MainWindow(QMainWindow):
 
         self.overview_model = OverviewCardsTableModel(startup_deck)
         self.overview_table_view = OverviewCardsTableView(self, self.overview_model)
+        self.overview_table_view.setSizePolicy(self.ui.cards_table_overview_placeholder.sizePolicy())
         self.ui.main_layout.replaceWidget(self.ui.cards_table_overview_placeholder, self.overview_table_view)
         self.ui.cards_table_overview_placeholder.setParent(None)
         self.ui.cards_table_overview_placeholder.deleteLater()
 
         self.input_model = InputCardsTableModel()
         self.input_table_view = InputCardsTableView(self, self.input_model)
+        self.input_table_view.setSizePolicy(self.ui.cards_table_input_placeholder.sizePolicy())
         self.ui.main_layout.replaceWidget(self.ui.cards_table_input_placeholder, self.input_table_view)
         self.ui.cards_table_input_placeholder.setParent(None)
         self.ui.cards_table_input_placeholder.deleteLater()

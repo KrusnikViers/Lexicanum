@@ -42,8 +42,9 @@ class Deck:
     def normalize_for_output(self):
         self.deck_id = if_none(self.deck_id, hash(time.time_ns()) % 10000000000)
         self.deck_name = self.deck_name.strip()
+        existing_card_ids = set()
         for card in self.cards:
-            if card.card_id is None:
+            while card.card_id is None or card.card_id in existing_card_ids:
                 card.card_id = self.next_card_id
                 self.next_card_id += 1
             card.answer = card.answer.strip()

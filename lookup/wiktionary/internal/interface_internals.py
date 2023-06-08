@@ -103,8 +103,9 @@ def build_cards_from_answer_data(full_lookup_data: FullLookupData) -> List[Card]
     for source_definition, translation_definition in _join_sources_to_translations(full_lookup_data):
         cards.append(Card(
             card_type=source_definition.part_of_speech,
-            question=translation_definition.word_as_question,
-            answer=source_definition.word_as_answer,
+            question=translation_definition.word_readable,
+            question_grammar_forms=translation_definition.grammar_forms,
+            answer=source_definition.word_readable,
             note=source_definition.meaning_note
         ))
     return cards
@@ -116,8 +117,9 @@ def build_cards_from_question_data(full_lookup_data: FullLookupData) -> List[Car
     for source_definition, translation_definition in _join_sources_to_translations(full_lookup_data):
         cards.append(Card(
             card_type=source_definition.part_of_speech,
-            question=source_definition.word_as_question,
-            answer=translation_definition.word_as_answer,
+            question=source_definition.word_readable,
+            question_grammar_forms=source_definition.grammar_forms,
+            answer=translation_definition.word_readable,
             note=translation_definition.meaning_note
         ))
     return cards

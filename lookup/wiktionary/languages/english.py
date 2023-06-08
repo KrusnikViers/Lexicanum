@@ -57,7 +57,7 @@ def _extract_word_definitions_recursive(markup_node: MarkupTreeNode,
         meaning_note = _get_meaning_note(markup_node)
         translations = _get_translations(markup_node, translation_codes)
         results.append(WordDefinition(part_of_speech=node_type, wiki_title=wiki_title,
-                                      word_as_answer=word_as_answer, word_as_question=word_as_question,
+                                      word_readable=word_as_answer, grammar_forms=word_as_question,
                                       meaning_note=meaning_note,
                                       translation_wiki_titles=translations))
     return results
