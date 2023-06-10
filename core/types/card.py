@@ -4,6 +4,8 @@ from core.util import Status
 
 
 class Card:
+    LINE_DELIMITER = ';'
+
     def __init__(self, card_type: CardType,
                  question: str, grammar_note: str, answer: str, meaning_note: str,
                  card_id: int | None = None):
@@ -32,6 +34,15 @@ class Card:
     def __str__(self):
         return 'CARD #{} |{} => {}/{}| ({}, {})'.format(
             self.card_id, self.answer, self.question, self.grammar_note, self.card_type.name, self.meaning_note)
+
+    def normalize_for_output(self):
+        self.question = self.question.strip()
+        self.answer = self.answer.strip()
+        self.meaning_note = self.meaning_note.strip()
+
+        grammar_note_lines = self.grammar_note.split(self.LINE_DELIMITER)
+        normalized_delimiter = '{} '.format(self.LINE_DELIMITER)
+        self.grammar_note = normalized_delimiter.join(line.strip() for line in grammar_note_lines)
 
     @classmethod
     def from_dict(cls, card_dict: dict) -> 'Card':

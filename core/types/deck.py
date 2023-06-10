@@ -52,6 +52,4 @@ class Deck:
             while card.card_id is None or card.card_id in existing_card_ids:
                 card.card_id = self.next_card_id
                 self.next_card_id += 1
-            card.answer = card.answer.strip()
-            card.question = card.question.strip()
-            card.note = card.note.strip()
+            card.normalize_for_output()

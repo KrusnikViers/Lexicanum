@@ -90,7 +90,7 @@ _MODEL = genanki.Model(
 
 class _Note(genanki.Note):
     def __init__(self, card: Card):
-        grammar_info_lines = [html.escape(part.strip()) for part in card.question.split(';')]
+        grammar_info_lines = [html.escape(part.strip()) for part in card.question.split(Card.LINE_DELIMITER)]
         super().__init__(
             model=_MODEL,
             fields=[
