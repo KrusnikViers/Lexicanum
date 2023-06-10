@@ -104,9 +104,9 @@ def build_cards_from_answer_data(full_lookup_data: FullLookupData) -> List[Card]
         cards.append(Card(
             card_type=source_definition.part_of_speech,
             question=translation_definition.word_readable,
-            question_grammar_forms=translation_definition.grammar_forms,
+            grammar_note=translation_definition.grammar_note,
             answer=source_definition.word_readable,
-            note=source_definition.meaning_note
+            meaning_note=source_definition.meaning_note
         ))
     return cards
 
@@ -118,8 +118,8 @@ def build_cards_from_question_data(full_lookup_data: FullLookupData) -> List[Car
         cards.append(Card(
             card_type=source_definition.part_of_speech,
             question=source_definition.word_readable,
-            question_grammar_forms=source_definition.grammar_forms,
+            grammar_note=source_definition.grammar_note,
             answer=translation_definition.word_readable,
-            note=translation_definition.meaning_note
+            meaning_note=translation_definition.meaning_note
         ))
     return cards

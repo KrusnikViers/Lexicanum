@@ -5,13 +5,19 @@ from core.util import Status
 
 class Card:
     def __init__(self, card_type: CardType,
-                 question: str, question_grammar_forms: str, answer: str, note: str,
+                 question: str, grammar_note: str, answer: str, meaning_note: str,
                  card_id: int | None = None):
+        # Type of card. Can be part of speech or complex concept (e.g. whole phrase or grammar rule)
         self.card_type: CardType = card_type
+        # Readable and the most common form of a word or a phrase in the language that is being learned.
         self.question: str = question
-        self.question_grammar_forms: str = question_grammar_forms
+        # Additional grammar info (e.g. plural form, or additional word forms that do not follow usual rules).
+        self.grammar_note: str = grammar_note
+        # Readable and the most common form of a word or a phrase in the language already known.
         self.answer: str = answer
-        self.note: str = note
+        # Additional information about the meaning in the language already known. Helps to disambiguate full homonyms.
+        self.meaning_note: str = meaning_note
+        # Internal Anki identifier. Helps to keep track of the card history even if the contents change.
         self.card_id: int | None = card_id
 
     def validity_status(self) -> Status:
@@ -25,15 +31,15 @@ class Card:
 
     def __str__(self):
         return 'CARD #{} |{} => {}/{}| ({}, {})'.format(
-            self.card_id, self.answer, self.question, self.question_grammar_forms, self.card_type.name, self.note)
+            self.card_id, self.answer, self.question, self.grammar_note, self.card_type.name, self.meaning_note)
 
     @classmethod
     def from_dict(cls, card_dict: dict) -> 'Card':
         return cls(CardType(card_dict['card_type']),
                    card_dict['question'],
-                   card_dict['question_grammar_forms'],
+                   card_dict['grammar_note'],
                    card_dict['answer'],
-                   card_dict['note'],
+                   card_dict['meaning_note'],
                    card_dict['card_id'])
 
     def to_dict(self) -> dict:
@@ -41,8 +47,8 @@ class Card:
         assert self.card_type is not CardType.Invalid
         return {'card_type': self.card_type.value,
                 'question': self.question,
-                'question_grammar_forms': self.question_grammar_forms,
+                'grammar_note': self.grammar_note,
                 'answer': self.answer,
-                'note': self.note,
+                'meaning_note': self.meaning_note,
                 'card_id': self.card_id,
                 }

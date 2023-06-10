@@ -64,13 +64,13 @@ class CardsTableModel(QAbstractTableModel):
                 card.question = value
             case CardsTableHeader.Grammar:
                 assert isinstance(value, str)
-                card.question_grammar_forms = value
+                card.grammar_note = value
             case CardsTableHeader.Answer:
                 assert isinstance(value, str)
                 card.answer = value
             case CardsTableHeader.Note:
                 assert isinstance(value, str)
-                card.note = value
+                card.meaning_note = value
         self.refresh_visible_contents(index.row())
         return True
 
@@ -85,9 +85,9 @@ class CardsTableModel(QAbstractTableModel):
             case CardsTableHeader.Question:
                 return card.question
             case CardsTableHeader.Grammar:
-                return card.question_grammar_forms
+                return card.grammar_note
             case CardsTableHeader.Answer:
                 return card.answer
             case CardsTableHeader.Note:
-                return card.note
+                return card.meaning_note
         assert False

@@ -4,7 +4,7 @@ import html
 import genanki
 
 from core.info import PROJECT_NAME
-from core.types import Card, Deck, Language
+from core.types import Card, Deck, Language, CardType
 from core.util import UniversalPath, Status
 
 # Update this field each time the model fields are changed.
@@ -20,12 +20,12 @@ _QUESTION_CARD = '''
 </div><hr/>
 <div class="content">
   {{question}}<br/>
-  <div class="additional">
-    {{question_additional}}
+  <div class="grammar_notes">
+    {{grammar_info}}
   </div>
 </div><hr/>
 <div class="bottom_desc">
-  {{note}}
+  {{meaning_note}}
 </div>
 '''
 
@@ -37,7 +37,7 @@ _ANSWER_CARD = '''
   {{answer}}
 </div><hr/>
 <div class="bottom_desc">
-  {{note}}
+  {{meaning_note}}
 </div>
 '''
 
@@ -48,11 +48,11 @@ _MODEL = genanki.Model(
         {'name': 'card_id'},
         {'name': 'type'},
         {'name': 'question'},
-        {'name': 'question_additional'},
+        {'name': 'grammar_info'},
         {'name': 'question_language'},
         {'name': 'answer'},
         {'name': 'answer_language'},
-        {'name': 'note'}
+        {'name': 'meaning_note'}
     ],
     sort_field_index=1,
     templates=[
@@ -75,7 +75,7 @@ _MODEL = genanki.Model(
         color: black;
         background-color: white;
       }
-      .content > .additional {
+      .content > .grammar_notes {
         margin-top: 8px;
         font-size: 18pt;
       }
@@ -90,18 +90,18 @@ _MODEL = genanki.Model(
 
 class _Note(genanki.Note):
     def __init__(self, card: Card):
-        grammar_form_lines = [html.escape(part.strip()) for part in card.question.split(';')]
+        grammar_info_lines = [html.escape(part.strip()) for part in card.question.split(';')]
         super().__init__(
             model=_MODEL,
             fields=[
                 str(card.card_id),
-                card.card_type.name,
+                CardType.display_name(card.card_type),
                 html.escape(card.question),
-                '<br/>'.join(grammar_form_lines),
+                '<br/>'.join(grammar_info_lines),
                 Language.DE.value,
                 html.escape(card.answer),
                 Language.EN.value,
-                html.escape(card.note),
+                html.escape(card.meaning_note),
             ]
         )
 

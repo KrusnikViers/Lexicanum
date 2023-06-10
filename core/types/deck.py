@@ -8,10 +8,15 @@ from core.util import if_none, UniversalPath
 class Deck:
     def __init__(self, deck_name: str, cards: List[Card],
                  next_card_id: int | None = None, deck_id: int | None = None, file_path: UniversalPath | None = None):
+        # Internal Anki id to keep track of the decks, even if the name changes.
         self.deck_id: int | None = deck_id
+        # Deck name, visible in Anki when imported.
         self.deck_name: str = deck_name
+        # List of cards in the deck. Refer to |Card| class for meanings of its fields.
         self.cards: List[Card] = cards
+        # Path to the deck file, internal for this app. Does not get imported in Anki.
         self.file_path: UniversalPath | None = file_path
+        # Dirty bit.
         self.was_updated = file_path is None
         # Next card id is strictly incremental, because this is the only way Anki tells cards apart. If id will
         # be reassigned after card was deleted from the project, Anki will attach previous history for this id to

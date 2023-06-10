@@ -16,16 +16,17 @@ class WordDefinition(NamedTuple):
     # Short human-readable string, well describing main form of the word
     word_readable: str
     # Additional grammar information (most likely, unusual word forms)
-    grammar_forms: str
+    grammar_note: str
     # Short note to identify meaning when only question is visible.
 
     meaning_note: str
     translation_wiki_titles: List[str]
 
     def __str__(self):
-        return '{}:{} / {} / {} / Note:{} / Trl: {})'.format(self.wiki_title, self.part_of_speech.name,
-                                                             self.word_readable, self.grammar_forms,
-                                                             self.meaning_note, ';'.join(self.translation_wiki_titles))
+        return '{}, {}: {} ({}), meaning: {}, translations: {})'.format(self.wiki_title, self.part_of_speech.name,
+                                                                        self.word_readable, self.grammar_note,
+                                                                        self.meaning_note,
+                                                                        ';'.join(self.translation_wiki_titles))
 
 
 class LocalizedParser:
