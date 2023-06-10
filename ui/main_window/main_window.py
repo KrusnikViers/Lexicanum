@@ -21,8 +21,9 @@ class MainWindow(QMainWindow):
         # Signal Application class that exit was requested. If successful, it will set |application_closing| flag and
         # initiate window closing again.
         if self.application_closing:
-            self.store_geometry()
             super().closeEvent(event)
+            return
+        self._store_geometry()
         self.application_exit_requested.emit()
 
     # Please note:
@@ -69,9 +70,9 @@ class MainWindow(QMainWindow):
         self.ui.top_menu_tools_toggle_sidebar.toggled.connect(self.on_sidebar_toggled)
 
         self.show()
-        self.restore_geometry()
+        self._restore_geometry()
 
-    def restore_geometry(self):
+    def _restore_geometry(self):
         window_geometry: QRect = Settings.get(StoredSettings.MAIN_WINDOW_GEOMETRY)
 
         # At least 100px x 100px top-left part of the window is visible on one of the screens.
@@ -90,7 +91,7 @@ class MainWindow(QMainWindow):
         # self.input_table_view.restore_geometry()
         # self.sync_tables_geometry()
 
-    def store_geometry(self):
+    def _store_geometry(self):
         # self.input_table_view.store_geometry()
         Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
 

@@ -46,7 +46,11 @@ class FileController(QObject):
 
     @staticmethod
     def startup_deck() -> Deck:
-        # TODO: Add startup deck reading
+        startup_deck_path = Settings.get(StoredSettings.LAST_PROJECT_FILE_PATH)
+        if startup_deck_path:
+            startup_deck_status = deck_io.read_file(UniversalPath(startup_deck_path))
+            if startup_deck_status.is_ok():
+                return startup_deck_status.value
         return DeckController.default_deck()
 
     @staticmethod
