@@ -9,12 +9,10 @@ class ComboBoxCardTypeDelegate(QStyledItemDelegate):
     instance = None
 
     @classmethod
-    def min_editor_width(cls):
-        empty_model = CardsTableModel()
+    def min_editor_width(cls, input_model: CardsTableModel):
         example_card_type_editor: QComboBox = ComboBoxCardTypeDelegate.instance.createEditor(
-            None, None, empty_model.index(0, 0, QModelIndex()))
+            None, None, input_model.index(0, 0, QModelIndex()))
         min_width = example_card_type_editor.minimumSizeHint().width()
-        empty_model.deleteLater()
         example_card_type_editor.deleteLater()
         return min_width
 

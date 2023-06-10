@@ -1,4 +1,4 @@
-from PySide6.QtCore import Signal, Slot, QSize, QPoint, QRect
+from PySide6.QtCore import Signal, Slot, QSize, QPoint, QRect, Qt
 from PySide6.QtGui import QCloseEvent
 from PySide6.QtWidgets import QMainWindow, QApplication
 
@@ -49,6 +49,7 @@ class MainWindow(QMainWindow):
         self.ui.main_layout.replaceWidget(self.ui.cards_table_overview_placeholder, self.overview_table_view)
         self.ui.cards_table_overview_placeholder.setParent(None)
         self.ui.cards_table_overview_placeholder.deleteLater()
+        self.overview_table_view.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
 
         self.input_model = InputCardsTableModel()
         self.input_table_view = InputCardsTableView(self, self.input_model)
@@ -56,6 +57,11 @@ class MainWindow(QMainWindow):
         self.ui.main_layout.replaceWidget(self.ui.cards_table_input_placeholder, self.input_table_view)
         self.ui.cards_table_input_placeholder.setParent(None)
         self.ui.cards_table_input_placeholder.deleteLater()
+        self.input_table_view.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+
+        self.input_table_view.horizontalHeader().sectionResized.connect(self.sync_input_geometry_to_overview)
+        self.input_table_view.horizontalScrollBar().valueChanged.connect(self.sync_input_geometry_to_overview)
+        self.overview_table_view.horizontalScrollBar().valueChanged.connect(self.sync_overview_geometry_to_input)
 
         self.ui.top_menu_file_new.setIcon(IconsList.New)
         self.ui.top_menu_file_save.setIcon(IconsList.Save)
@@ -88,11 +94,10 @@ class MainWindow(QMainWindow):
             half_min_size: QPoint = QPoint(min_size.width() / 2, min_size.height() / 2)
             self.setGeometry(QRect(current_screen.center() - half_min_size, min_size))
 
-        # self.input_table_view.restore_geometry()
-        # self.sync_tables_geometry()
+        self.input_table_view.restore_headers_geometry()
 
     def _store_geometry(self):
-        # self.input_table_view.store_geometry()
+        self.input_table_view.store_headers_geometry()
         Settings.set(StoredSettings.MAIN_WINDOW_GEOMETRY, self.geometry())
 
     @Slot(bool)
@@ -100,86 +105,12 @@ class MainWindow(QMainWindow):
         self.ui.sidebar_widget.setVisible(new_state)
         Settings.set(StoredSettings.MAIN_WINDOW_SIDEBAR_VISIBLE, new_state)
 
-    # @Slot(str)
-    # def on_deck_name_changed(self, new_name: str):
-    #     self.overview_model.deck.deck_name = new_name
-    #     self.overview_model.deck.was_updated = True
-    #     self.on_deck_info_updated()
+    @Slot()
+    def sync_input_geometry_to_overview(self):
+        self.overview_table_view.set_header_sizes(self.input_table_view.get_header_sizes())
+        self.overview_table_view.horizontalScrollBar().setValue(self.input_table_view.horizontalScrollBar().value())
 
-    # @Slot()
-    # def on_deck_reset(self):
-    #     deck = self.overview_model.deck
-    #     self.ui.deck_name.setText(deck.deck_name)
-    #     self.on_deck_info_updated()
-
-    # @Slot()
-    # def on_deck_info_updated(self):
-    #     deck = self.overview_model.deck
-    #
-    #     # Adjust deck name edit width
-    #     font_metrics = QFontMetrics(self.ui.deck_name.font())
-    #     pixels_width = font_metrics.size(Qt.TextFlag.TextSingleLine, deck.deck_name, tabstops=0).width() + 20
-    #     max_size = self.width() // 3
-    #     pixels_width = max(200, min(max_size, pixels_width))
-    #     self.ui.deck_name.setFixedWidth(pixels_width)
-    #
-    #     # Update status message
-    #     cards_count = '{} cards'.format(len(deck.cards))
-    #     save_status = 'not yet saved anywhere' if deck.file_path is None else \
-    #         'changed from {}'.format(deck.file_path) if deck.was_updated else 'saved in {}'.format(deck.file_path)
-    #     self.ui.deck_info.setText('{}, {}'.format(cards_count, save_status))
-
-    # @Slot()
-    # def sync_tables_geometry(self):
-    #     new_header_sizes = self.input_table_view.header_sizes()
-    #     self.overview_table_view.set_header_sizes(new_header_sizes)
-    #     # TODO: Sync horizontal scrolling as well.
-
-    # @Slot()
-    # def reset_overview_filter(self):
-    #     self.overview_model.refresh_displayed_rows(self.input_model.get_input_card())
-
-    # @Slot()
-    # def action_new_deck(self):
-    #     # TODO: Save prompt
-    #     self.overview_model.reset_deck(self.get_default_deck(on_startup=False))
-    #     self.on_deck_reset()
-
-    # @Slot()
-    # def action_open_project(self):
-    #     # TODO: Save prompt
-    #     status_or = deck_io.read_deck_file_with_dialog(self)
-    #     if status_or.is_ok():
-    #         self.overview_model.reset_deck(status_or.value)
-    #         self.on_deck_reset()
-    #     else:
-    #         self.status_bar.show_timed_message(status_or.status)
-    #
-    # def on_deck_write(self, status: Status):
-    #     if status.is_ok():
-    #         self.overview_model.deck.was_updated = False
-    #         self.on_deck_reset()
-    #     else:
-    #         self.status_bar.show_timed_message(status.status)
-    #
-    # @Slot()
-    # def action_save_project(self):
-    #     self.on_deck_write(deck_io.write_deck_file(self, self.overview_model.deck))
-    #
-    # @Slot()
-    # def action_save_project_as(self):
-    #     self.on_deck_write(deck_io.write_deck_file_with_dialog(self, self.overview_model.deck))
-    #
-    # @Slot()
-    # def action_export_deck(self):
-    #     self.on_deck_write(deck_io.write_apkg_with_dialog(self, self.overview_model.deck))
-
-    # @Slot(CardsModelHeader, str)
-    # def lookup_and_suggest(self, column: CardsModelHeader, request: str):
-    #     pass  # TODO
-    # lookup_data = LookupData(request, Language.DE if column == CardsModelHeader.Question else Language.EN)
-    # suggestions = Lookup.suggestions(lookup_data)
-    # suggestions.append(self.input_model.get_input_card())
-    # lookup_model = LookupCardsModel(suggestions)
-    # lookup_dialog = LookupDialog(self, self.status_bar, lookup_model, self.overview_model)
-    # lookup_dialog.exec()
+    @Slot()
+    def sync_overview_geometry_to_input(self):
+        self.overview_table_view.set_header_sizes(self.input_table_view.get_header_sizes())
+        self.input_table_view.horizontalScrollBar().setValue(self.overview_table_view.horizontalScrollBar().value())

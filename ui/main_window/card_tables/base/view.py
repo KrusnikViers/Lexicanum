@@ -3,10 +3,8 @@ from typing import List
 from PySide6.QtCore import QModelIndex
 from PySide6.QtWidgets import QTableView, QWidget, QHeaderView
 
-from core.settings import Settings, StoredSettings
 from ui.main_window.card_tables.base.header import CardsTableHeader
 from ui.main_window.card_tables.base.model import CardsTableModel
-from ui.main_window.card_tables.delegates import ComboBoxCardTypeDelegate
 
 
 class CardsTableView(QTableView):
@@ -15,6 +13,8 @@ class CardsTableView(QTableView):
 
         self.setEditTriggers(self.EditTrigger.AllEditTriggers)
         self.setModel(model)
+
+        self.horizontalHeader().setMinimumSectionSize(200)
 
         self.verticalHeader().setVisible(False)
         self.verticalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Fixed)
@@ -29,7 +29,7 @@ class CardsTableView(QTableView):
 
     def focused_index(self) -> QModelIndex | None:
         selected_index = self.selected_index()
-        if selected_index and self.indexWidget(selected_index).hasFocus():
+        if selected_index and self.indexWidget(selected_index) and self.indexWidget(selected_index).hasFocus():
             return selected_index
         return None
 
@@ -42,18 +42,4 @@ class CardsTableView(QTableView):
 
     def set_header_sizes(self, sizes: List[int]):
         for index, size in enumerate(sizes):
-            self.horizontalHeader().resizeSection(index, size)
-
-    def store_headers_geometry(self):
-        sizes_serialized = ' '.join(map(str, self.get_header_sizes()))
-        Settings.set(StoredSettings.CARDS_TABLE_COLUMNS_WIDTH_SPACED, sizes_serialized)
-
-    def restore_headers_geometry(self):
-        cached_header_geometry = Settings.get(StoredSettings.CARDS_TABLE_COLUMNS_WIDTH_SPACED).split(' ')
-        if len(cached_header_geometry) != len(CardsTableHeader):
-            cached_header_geometry = [0, 200, 200, 200, 0]
-            assert len(cached_header_geometry) == len(CardsTableHeader)
-
-        # Always recalculate first column width.
-        cached_header_geometry[CardsTableHeader.Type.value] = ComboBoxCardTypeDelegate.min_editor_width() + 20
-        self.set_header_sizes(cached_header_geometry)
+            self.horizontalHeader().resizeSection(index, int(size))

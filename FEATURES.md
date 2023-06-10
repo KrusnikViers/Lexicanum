@@ -8,7 +8,6 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Alpha-release blockers
 
-* Sync tables headers and horizontal scroll status
 * Proper lookups (both tables)
 
 ### Beta-release blockers
