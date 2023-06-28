@@ -1,12 +1,11 @@
 import itertools
-from typing import List, Dict
+from typing import List
 
-from lookup.wiktionary.internal.markup_tree import MarkupTreeNode
-from lookup.wiktionary.languages.base import WordDefinition, LocalizedParser, PartOfSpeech
-from lookup.wiktionary.languages.utils import merge_translation_dict, all_children_recursive
+from lookup.wiktionary.languages.base import LocalizedParser
+from lookup.wiktionary.types import PartOfSpeech, MarkupTree, Definition
 
 
-def _get_word_forms(markup_node: MarkupTreeNode, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
+def _get_word_forms(markup_node: MarkupTree, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
     as_answer = wiki_title.capitalize()
     if node_type == PartOfSpeech.Verb:
         as_answer = 'To {}'.format(wiki_title)
@@ -14,23 +13,23 @@ def _get_word_forms(markup_node: MarkupTreeNode, wiki_title: str, node_type: Par
     return as_answer, as_question
 
 
-def _get_meaning_note(markup_node: MarkupTreeNode) -> str:
+def _get_meaning_note(markup_node: MarkupTree) -> str:
     # TODO
     return ''
 
 
-def _get_translations(markup_node: MarkupTreeNode, translation_codes: List[str]) -> List[str]:
+def _get_translations(markup_node: MarkupTree, translation_codes: List[str]) -> List[str]:
     # language_code => translations list
-    raw_results: Dict[str, List[str]] = dict()
-    for child_node in all_children_recursive(markup_node):
+    results = []
+    for child_node in markup_node.children_recursive():
         if child_node.name in ('t', 't+'):
             if len(child_node.plain_args) < 2:
                 continue
             language = child_node.plain_args[0]
             translated_word = child_node.plain_args[1]
             if language in translation_codes and translated_word:
-                raw_results.setdefault(language, []).append(translated_word)
-    return list(itertools.chain(*merge_translation_dict(raw_results, translation_codes)))
+                results.append(translated_word)
+    return results
 
 
 _PART_OF_SPEECH_MAPPING = {
@@ -41,8 +40,8 @@ _PART_OF_SPEECH_MAPPING = {
 }
 
 
-def _extract_word_definitions_recursive(markup_node: MarkupTreeNode,
-                                        wiki_title: str, translation_codes: List[str]) -> List[WordDefinition]:
+def _extract_word_definitions_recursive(markup_node: MarkupTree,
+                                        wiki_title: str, translation_codes: List[str]) -> List[Definition]:
     node_types = [_PART_OF_SPEECH_MAPPING[node.name]
                   for node in markup_node.children if node.name in _PART_OF_SPEECH_MAPPING]
 
@@ -56,10 +55,10 @@ def _extract_word_definitions_recursive(markup_node: MarkupTreeNode,
         word_as_answer, word_as_question = _get_word_forms(markup_node, wiki_title, node_type)
         meaning_note = _get_meaning_note(markup_node)
         translations = _get_translations(markup_node, translation_codes)
-        results.append(WordDefinition(part_of_speech=node_type, wiki_title=wiki_title,
-                                      word_readable=word_as_answer, grammar_note=word_as_question,
-                                      meaning_note=meaning_note,
-                                      translation_wiki_titles=translations))
+        results.append(Definition(part_of_speech=node_type, raw_article_title=wiki_title,
+                                  readable_name=word_as_answer, grammar_note=word_as_question,
+                                  meaning_note=meaning_note,
+                                  translation_articles=translations))
     return results
 
 
@@ -73,7 +72,7 @@ class EnglishLocaleParser(LocalizedParser):
         return ['en']
 
     @classmethod
-    def extract_word_definitions(cls, markup_tree: MarkupTreeNode, wiki_title: str,
-                                 language_codes_for_translations: List[str]) -> List[WordDefinition]:
+    def extract_word_definitions(cls, markup_tree: MarkupTree, wiki_title: str,
+                                 language_codes_for_translations: List[str]) -> List[Definition]:
         # debug.maybe_print_en_wikitree(markup_tree)
         return _extract_word_definitions_recursive(markup_tree, wiki_title, language_codes_for_translations)

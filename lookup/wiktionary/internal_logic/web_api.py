@@ -11,7 +11,7 @@ _COMMON_PARAMS = {
     'formatversion': 2  # https://www.mediawiki.org/wiki/API:JSON_version_2
 }
 
-_RELEVANT_ARTICLE_TITLES_FETCH_COUNT = 2
+_RELEVANT_ARTICLE_TITLES_FETCH_COUNT = 3
 
 
 class WebArticle:

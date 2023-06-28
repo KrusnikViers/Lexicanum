@@ -9,7 +9,7 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ('../../ui/common/icons/*.svg', './ui/common/icons'),
+        ('../../ui/icons/*.svg', './ui/icons'),
     ],
     hiddenimports=[],
     hookspath=[],

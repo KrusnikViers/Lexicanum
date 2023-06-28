@@ -14,7 +14,7 @@ class Deck:
         self.deck_name: str = deck_name
         # List of cards in the deck. Refer to |Card| class for meanings of its fields.
         self.cards: List[Card] = cards
-        # Path to the deck file, internal for this app. Does not get imported in Anki.
+        # Path to the deck file, internal_logic for this app. Does not get imported in Anki.
         self.file_path: UniversalPath | None = file_path
         # Dirty bit.
         self.was_updated = file_path is None

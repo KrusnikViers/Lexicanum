@@ -1,32 +1,7 @@
-from typing import List, NamedTuple
+from typing import List
 
-from core.types import CardType
-from lookup.wiktionary.internal.markup_tree import MarkupTreeNode
-
-# CardTypes should cover all the parts of speech we're going to extract, so we will be using this enumeration to prevent
-# possible divergence.
-PartOfSpeech = CardType
-
-
-class WordDefinition(NamedTuple):
-    part_of_speech: PartOfSpeech
-
-    # Raw title of source wiktionary article.
-    wiki_title: str
-    # Short human-readable string, well describing main form of the word
-    word_readable: str
-    # Additional grammar information (most likely, unusual word forms)
-    grammar_note: str
-    # Short note to identify meaning when only question is visible.
-
-    meaning_note: str
-    translation_wiki_titles: List[str]
-
-    def __str__(self):
-        return '{}, {}: {} ({}), meaning: {}, translations: {})'.format(self.wiki_title, self.part_of_speech.name,
-                                                                        self.word_readable, self.grammar_note,
-                                                                        self.meaning_note,
-                                                                        ';'.join(self.translation_wiki_titles))
+from lookup.wiktionary.types.definition import Definition
+from lookup.wiktionary.types.markup_tree import MarkupTree
 
 
 class LocalizedParser:
@@ -44,6 +19,6 @@ class LocalizedParser:
     @classmethod
     # Returns list of different word definitions from the page. There could be multiple if word means multiple parts of
     # speech or have multiple meanings. Translations only filled for target translation language codes.
-    def extract_word_definitions(cls, markup_tree: MarkupTreeNode, source_wiki_title: str,
-                                 language_codes_for_translations: List[str]) -> List[WordDefinition]:
+    def extract_word_definitions(cls, markup_tree: MarkupTree, source_wiki_title: str,
+                                 language_codes_for_translations: List[str]) -> List[Definition]:
         raise NotImplementedError
