@@ -1,6 +1,6 @@
 # Lexicanum
 
-GUI-based utility to create Anki decks for language learning purposes.
+GUI utility to build and edit Anki decks for foreign words
 
 ## Development flow
 
