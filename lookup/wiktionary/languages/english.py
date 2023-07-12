@@ -3,6 +3,7 @@ from typing import List
 
 from lookup.wiktionary.languages.base import LocalizedParser
 from lookup.wiktionary.types import PartOfSpeech, MarkupTree, Definition
+from lookup.wiktionary.internal_logic.translations_list_builder import TranslationsListBuilder
 
 
 def _get_word_forms(markup_node: MarkupTree, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
@@ -19,8 +20,7 @@ def _get_meaning_note(markup_node: MarkupTree) -> str:
 
 
 def _get_translations(markup_node: MarkupTree, translation_codes: List[str]) -> List[str]:
-    # language_code => translations list
-    results = []
+    list_builder = TranslationsListBuilder(translation_codes)
     for child_node in markup_node.children_recursive():
         if child_node.name in ('t', 't+'):
             if len(child_node.plain_args) < 2:
@@ -28,8 +28,8 @@ def _get_translations(markup_node: MarkupTree, translation_codes: List[str]) -> 
             language = child_node.plain_args[0]
             translated_word = child_node.plain_args[1]
             if language in translation_codes and translated_word:
-                results.append(translated_word)
-    return results
+                list_builder.add(translated_word, language)
+    return list_builder.result()
 
 
 _PART_OF_SPEECH_MAPPING = {
@@ -74,5 +74,4 @@ class EnglishLocaleParser(LocalizedParser):
     @classmethod
     def extract_word_definitions(cls, markup_tree: MarkupTree, wiki_title: str,
                                  language_codes_for_translations: List[str]) -> List[Definition]:
-        # debug.maybe_print_en_wikitree(markup_tree)
         return _extract_word_definitions_recursive(markup_tree, wiki_title, language_codes_for_translations)

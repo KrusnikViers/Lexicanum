@@ -6,17 +6,15 @@ Once these list will become less numerous, it should be migrated to github issue
 
 All tasks under milestone name should be completed prior to this release.
 
-### Alpha-release blockers
-
-* Proper lookups (both tables)
-
 ### Beta-release blockers
 
+* Extract IPO from wiktionary page
+* Minimal lookup for all parts of speech in German/English
+* Progress bar for lookup in statusbar
 * Immediate search + on/off button
 * Write log file
 * Find proper icons set
 * Highlight current input row and filter overview by it
-* Add option to show active shortcuts
 * Show prompt when app is being closed with unsaved changes
 * Show indicator that deck has unsaved changes
 * Show prompt when deck is being unloaded with unsaved changes
@@ -35,8 +33,8 @@ All tasks under milestone name should be completed prior to this release.
 * Update icons and stuff
 * Allow switching search mode from immediate to shortcut
 * Refine UI
-* Support for German language words lookup
-* Support for English language words lookup
+* Full support for German language words lookup
+* Full support for English language words lookup
 * `stable` branch
 * Automated release version update? Or at least checklist for the new release.
 * Automated tests and releases for `stable`

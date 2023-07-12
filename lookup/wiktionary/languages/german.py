@@ -3,6 +3,7 @@ from typing import List, Tuple
 
 from lookup.wiktionary.languages import LocalizedParser
 from lookup.wiktionary.types import MarkupTree, Definition, PartOfSpeech
+from lookup.wiktionary.internal_logic.translations_list_builder import TranslationsListBuilder
 
 
 def _try_get_noun_word_forms(markup_node: MarkupTree) -> Tuple[str, str] | None:
@@ -49,8 +50,7 @@ def _get_meaning_note(markup_node: MarkupTree) -> str:
 
 
 def _get_translations(markup_node: MarkupTree, translation_codes: List[str]) -> List[str]:
-    # language_code => translations list
-    raw_results = []
+    list_builder = TranslationsListBuilder(translation_codes)
     for child_node in markup_node.children_recursive():
         if child_node.name in ('Ü', 'Üxx4', 'Üt'):
             if len(child_node.plain_args) < 2:
@@ -58,8 +58,8 @@ def _get_translations(markup_node: MarkupTree, translation_codes: List[str]) -> 
             language = child_node.plain_args[0]
             translated_word = child_node.plain_args[1]
             if language in translation_codes and translated_word:
-                raw_results.append(translated_word)
-    return raw_results
+                list_builder.add(translated_word, language)
+    return list_builder.result()
 
 
 _PART_OF_SPEECH_MAPPING = {

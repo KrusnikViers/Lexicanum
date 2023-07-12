@@ -32,8 +32,8 @@ class Card:
         return Status()
 
     def __str__(self):
-        return 'CARD #{} |{} => {}/{}| ({}, {})'.format(
-            self.card_id, self.answer, self.question, self.grammar_note, self.card_type.name, self.meaning_note)
+        return 'Card: {}=>{} {} (gram {}/mean {}/id {})'.format(self.question, self.answer, self.card_type.name,
+                                                                self.grammar_note, self.meaning_note, self.card_id)
 
     def normalize_for_output(self):
         self.question = self.question.strip()

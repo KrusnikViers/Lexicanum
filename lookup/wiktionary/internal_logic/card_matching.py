@@ -1,6 +1,7 @@
 from typing import List, Generator, Tuple
 
 from core.types import Card
+from lookup.wiktionary.internal_logic.debug import debug_print_matching
 from lookup.wiktionary.types import Definition, DefinitionSet, DefinitionSetKey
 
 
@@ -68,6 +69,10 @@ def match_definition_sets(answer_definition_set: DefinitionSet, question_definit
         unmatched_from_answer, question_definition_set, source_is_answers=True)
     additional_from_question = _extract_one_side_matches(
         unmatched_from_question, answer_definition_set, source_is_answers=False)
+
+    debug_print_matching(answer_definition_set, question_definition_set,
+                         matched_from_question, matched_from_question,
+                         additional_from_answer, additional_from_question)
 
     if order_by_question:
         return matched_from_question + additional_from_question + additional_from_answer

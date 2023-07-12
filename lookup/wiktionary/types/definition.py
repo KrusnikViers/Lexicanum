@@ -22,7 +22,7 @@ class Definition(NamedTuple):
     translation_articles: List[str]
 
     def __str__(self):
-        return '{} : {} {}, gram: {}, mean: {}, trl: {}'.format(self.readable_name,
-                                                                self.raw_article_title, self.part_of_speech.name,
-                                                                self.grammar_note, self.meaning_note,
-                                                                ', '.join(self.translation_articles))
+        return '{} {} (raw {}/gram {}/mean {}/tr {})'.format(self.readable_name, self.part_of_speech.name,
+                                                             self.raw_article_title,
+                                                             self.grammar_note, self.meaning_note,
+                                                             ','.join(self.translation_articles))
