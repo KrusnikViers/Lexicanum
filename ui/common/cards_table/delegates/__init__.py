@@ -1,3 +1,0 @@
-from ui.common.cards_table.delegates.combobox_card_type import ComboBoxCardTypeDelegate
-from ui.common.cards_table.delegates.line_edit_lookup import LineEditLookupDelegate
-from ui.common.cards_table.delegates.line_edit_simple import LineEditSimpleDelegate
