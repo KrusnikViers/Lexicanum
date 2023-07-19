@@ -4,6 +4,7 @@ from lookup.wiktionary.types.definition import Definition
 from lookup.wiktionary.types.markup_tree import MarkupTree
 
 
+# Every language parsing package should implement this class as an outside interface.
 class LocalizedParser:
     @classmethod
     # Language code to access Wiktionary localized endpoint.

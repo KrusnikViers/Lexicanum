@@ -1,9 +1,8 @@
 import itertools
 from typing import List, Tuple
 
-from lookup.wiktionary.languages import LocalizedParser
+from lookup.wiktionary.languages.base import LocalizedParser, TranslationsListBuilder
 from lookup.wiktionary.types import MarkupTree, Definition, PartOfSpeech
-from lookup.wiktionary.internal_logic.translations_list_builder import TranslationsListBuilder
 
 
 def _try_get_noun_word_forms(markup_node: MarkupTree) -> Tuple[str, str] | None:

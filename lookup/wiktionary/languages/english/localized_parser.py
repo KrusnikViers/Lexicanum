@@ -1,9 +1,8 @@
 import itertools
 from typing import List
 
-from lookup.wiktionary.languages.base import LocalizedParser
+from lookup.wiktionary.languages.base import LocalizedParser, TranslationsListBuilder
 from lookup.wiktionary.types import PartOfSpeech, MarkupTree, Definition
-from lookup.wiktionary.internal_logic.translations_list_builder import TranslationsListBuilder
 
 
 def _get_word_forms(markup_node: MarkupTree, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
