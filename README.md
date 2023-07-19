@@ -1,10 +1,31 @@
 # Lexicanum
 
-GUI utility to build and edit Anki decks for foreign words
+A GUI utility to build and edit Anki decks for foreign words
 
 ## Development flow
 
-General conventions regarding release process and versioning is described in [VERSIONS](VERSIONS.md) file.
+General conventions regarding the release process and versioning is described in the [VERSIONS](VERSIONS.md) file.
 
-Features list is split between github issues and the [FEATURES](FEATURES.md) file. Expectation is that
-eventually [FEATURES](FEATURES.md) file will be completely removed.
+The features list is split between github issues and the [FEATURES](FEATURES.md) file. Expectation is that eventually
+the [FEATURES](FEATURES.md) file will be completely removed.
+
+## Working with project
+
+In the text below, `ROOT_DIR` should be replaced with the path to the directory containing this README file.
+
+### Generate UI files
+
+The project uses Qt framework, so to build it from sources you will need to generate python files for UI files before
+referring to them from code. To do so, run `ROOT_DIR/build_tools/convert_ui_files.py`. Important: this code will use a
+generator tool from PySide package available, and will look for the Qt-specific files in the `../../ui` directory
+recursively, regardless of the working directory.
+
+### Run project without .exe
+
+Run `ROOT_DIR/main.py` with `ROOT_DIR` as a working directory. You will need to generate UI files first.
+
+### Building .exe
+
+In order to build an .exe file that would work under Windows OS, run `ROOT_DIR/build_tools/create_binary_win.bat`
+with `ROOT_DIR` as a working directory. It creates a standalone portable executable file, that could be run without
+installing Python or dependency packages on the target machine.
