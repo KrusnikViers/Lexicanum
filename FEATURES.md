@@ -8,20 +8,47 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
-* Extract IPO from wiktionary page
-* Minimal lookup for all parts of speech in German/English
+* Extract meaning notes from wiktionary pages
+* Extract IPO from wiktionary pages
+* PoS to cover in German:
+  * Noun
+  * Adjective
+  * Verb
+  * Adverb
+  * Pronoun
+  * Preposition / postposition
+  * Conjunction
+  * Interjection
+  * Article
+  * Particle
+  * Numeral
+  * Phrase
+* PoS to cover in English:
+  * Noun
+  * Adjective
+  * Verb
+  * Adverb
+  * Pronoun
+  * Preposition / postposition
+  * Conjunction
+  * Interjection
+  * Article
+  * Particle
+  * Numeral
+  * Phrase
+* Show indicator that deck has unsaved changes
+* Track unsaved changes
+* Show prompt when app is being closed with unsaved changes
+* Show prompt when deck is being unloaded with unsaved changes
 * Progress bar for lookup in statusbar
 * Immediate search + on/off button
-* Write log file
-* Find proper icons set
 * Highlight current input row and filter overview by it
-* Show prompt when app is being closed with unsaved changes
-* Show indicator that deck has unsaved changes
-* Show prompt when deck is being unloaded with unsaved changes
+* Words lookup by button
 * Settings page
 * Allow setting log verbosity in settings
-* Words lookup by button
+* Write log file
 * Overview table sorting per column
+* Find proper icons set
 * Automated tests for `master`
 * 75% tests coverage
 
