@@ -18,6 +18,8 @@ class Definition(NamedTuple):
     grammar_note: str
     # Short note to identify meaning when only question is visible.
     meaning_note: str
+    # Pronunciation info in International Phonetic Alphabet.
+    ipa_note: str
     # Titles of articles with translations.
     translation_articles: List[str]
 

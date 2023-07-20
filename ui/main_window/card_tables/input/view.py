@@ -19,6 +19,7 @@ class InputCardsTableView(CardsTableView):
         self.setItemDelegateForColumn(CardsTableHeader.Question.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Grammar.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Answer.value, LineEditSimpleDelegate.instance)
+        self.setItemDelegateForColumn(CardsTableHeader.IPA.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Note.value, LineEditSimpleDelegate.instance)
 
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Type.value, QHeaderView.ResizeMode.Fixed)
@@ -26,6 +27,7 @@ class InputCardsTableView(CardsTableView):
                                                      QHeaderView.ResizeMode.Interactive)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Grammar.value, QHeaderView.ResizeMode.Interactive)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Answer.value, QHeaderView.ResizeMode.Interactive)
+        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.IPA.value, QHeaderView.ResizeMode.Interactive)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Note.value, QHeaderView.ResizeMode.Stretch)
 
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Maximum)
@@ -61,7 +63,7 @@ class InputCardsTableView(CardsTableView):
     def restore_headers_geometry(self):
         cached_header_geometry = Settings.get(StoredSettings.CARDS_TABLE_COLUMNS_WIDTH_SPACED).split(' ')
         if len(cached_header_geometry) != len(CardsTableHeader):
-            cached_header_geometry = [0, 200, 200, 200, 0]
+            cached_header_geometry = [0, 200, 200, 200, 150, 0]
             assert len(cached_header_geometry) == len(CardsTableHeader)
 
         # Always recalculate first column width.

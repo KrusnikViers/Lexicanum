@@ -8,34 +8,32 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
-* Extract meaning notes from wiktionary pages
-* Extract IPO from wiktionary pages
 * PoS to cover in German:
-  * Noun
-  * Adjective
-  * Verb
-  * Adverb
-  * Pronoun
-  * Preposition / postposition
-  * Conjunction
-  * Interjection
-  * Article
-  * Particle
-  * Numeral
-  * Phrase
+    * Noun
+    * Adjective
+    * Verb
+    * Adverb
+    * Pronoun
+    * Preposition / postposition
+    * Conjunction
+    * Interjection
+    * Article
+    * Particle
+    * Numeral
+    * Phrase
 * PoS to cover in English:
-  * Noun
-  * Adjective
-  * Verb
-  * Adverb
-  * Pronoun
-  * Preposition / postposition
-  * Conjunction
-  * Interjection
-  * Article
-  * Particle
-  * Numeral
-  * Phrase
+    * Noun
+    * Adjective
+    * Verb
+    * Adverb
+    * Pronoun
+    * Preposition / postposition
+    * Conjunction
+    * Interjection
+    * Article
+    * Particle
+    * Numeral
+    * Phrase
 * Show indicator that deck has unsaved changes
 * Track unsaved changes
 * Show prompt when app is being closed with unsaved changes
@@ -51,6 +49,7 @@ All tasks under milestone name should be completed prior to this release.
 * Find proper icons set
 * Automated tests for `master`
 * 75% tests coverage
+* Protect `master` branch from merging without tests run
 
 ### Stable release blockers
 
