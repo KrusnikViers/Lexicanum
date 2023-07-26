@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import NamedTuple
 
-_TEST_CONTENT_DIR_NAME = 'test_wiktionary_content'
+_TEST_CONTENT_DIR_NAME = 'wiktionary_content_for_tests'
 
 
 class TestContent(NamedTuple):

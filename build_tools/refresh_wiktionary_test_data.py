@@ -40,7 +40,7 @@ def refresh_wiktionary_test_data(dry_run: bool) -> bool:
                     print('Original article URL: https://{}.wiktionary.org/wiki/{}'.format(language_code, title),
                           file=file_to_write)
                     print(new_content.content, file=file_to_write)
-            print('{}:{} ({}) refreshed'.format(title, language_code, existing_file_strpath))
+            print('{}:{} ({}) updated'.format(title, language_code, existing_file_strpath))
         else:
             files_without_updates += 1
     print('All done! Files without updates: {}'.format(files_without_updates))
