@@ -16,12 +16,13 @@ class Definition(NamedTuple):
     readable_name: str
     # Additional grammar information (most often, non-standard word forms). Used to complement the question.
     grammar_note: str
-    # Short note to identify meaning when only question is visible.
-    meaning_note: str
-    # Pronunciation info in International Phonetic Alphabet.
-    ipa_note: str
     # Titles of articles with translations.
     translation_articles: List[str]
+
+    # Short note to identify meaning when only question is visible.
+    meaning_note: str = ''
+    # Pronunciation info in International Phonetic Alphabet.
+    ipa_note: str = ''
 
     def __str__(self):
         return '{} {} (raw {}/gram {}/mean {}/tr {})'.format(self.readable_name, self.part_of_speech.name,

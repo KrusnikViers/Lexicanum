@@ -8,6 +8,11 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
+* Initial extractions:
+  * PoS
+  * Word as answer
+  * Word with grammar data
+  * Translation articles
 * PoS to cover in German:
     * Noun
     * Adjective
@@ -60,7 +65,11 @@ All tasks under milestone name should be completed prior to this release.
 * Allow switching search mode from immediate to shortcut
 * Refine UI
 * Full support for German language words lookup
+  * IPA
+  * Meaning notes
 * Full support for English language words lookup
+  * IPA
+  * Meaning notes
 * `stable` branch
 * Automated release version update? Or at least checklist for the new release.
 * Automated tests and releases for `stable`

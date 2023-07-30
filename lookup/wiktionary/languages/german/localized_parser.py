@@ -90,7 +90,6 @@ def _extract_word_definitions_recursive(markup_node: MarkupTree,
         translations = _get_translations(markup_node, translation_codes)
         results.append(Definition(part_of_speech=node_type, raw_article_title=wiki_title,
                                   readable_name=word_readable, grammar_note=grammar_forms,
-                                  meaning_note=meaning_note,
                                   translation_articles=translations))
     return results
 
