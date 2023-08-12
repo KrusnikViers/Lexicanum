@@ -1,35 +1,8 @@
-import itertools
-from typing import List
+from enum import Enum
+from typing import List, NamedTuple, Any
 
-from lookup.wiktionary.languages.base import LocalizedParser, TranslationsListBuilder
+from lookup.wiktionary.languages.base import *
 from lookup.wiktionary.types import PartOfSpeech, MarkupTree, Definition
-
-
-def _get_word_forms(markup_node: MarkupTree, wiki_title: str, node_type: PartOfSpeech) -> (str, str):
-    as_answer = wiki_title.capitalize()
-    if node_type == PartOfSpeech.Verb:
-        as_answer = 'To {}'.format(wiki_title)
-    as_question = as_answer
-    return as_answer, as_question
-
-
-def _get_meaning_note(markup_node: MarkupTree) -> str:
-    # TODO
-    return ''
-
-
-def _get_translations(markup_node: MarkupTree, translation_codes: List[str]) -> List[str]:
-    list_builder = TranslationsListBuilder(translation_codes)
-    for child_node in markup_node.children_recursive():
-        if child_node.name in ('t', 't+'):
-            if len(child_node.plain_args) < 2:
-                continue
-            language = child_node.plain_args[0]
-            translated_word = child_node.plain_args[1]
-            if language in translation_codes and translated_word:
-                list_builder.add(translated_word, language)
-    return list_builder.result()
-
 
 _PART_OF_SPEECH_MAPPING = {
     'en-noun': PartOfSpeech.Noun,
@@ -39,25 +12,49 @@ _PART_OF_SPEECH_MAPPING = {
 }
 
 
-def _extract_word_definitions_recursive(markup_node: MarkupTree,
-                                        wiki_title: str, translation_codes: List[str]) -> List[Definition]:
-    node_types = [_PART_OF_SPEECH_MAPPING[node.name]
-                  for node in markup_node.children if node.name in _PART_OF_SPEECH_MAPPING]
+class _DefinitionPart(NamedTuple):
+    class Type(Enum):
+        PartOfSpeech = 1
+        ReadableForm = 2
+        Translation = 3
 
-    if not node_types:
-        nested_results = [_extract_word_definitions_recursive(child_node, wiki_title, translation_codes)
-                          for child_node in markup_node.children]
-        return list(itertools.chain(*nested_results))
+    part_type: Type
+    level: int
+    value: Any
 
-    results = []
-    for node_type in node_types:
-        word_as_answer, word_as_question = _get_word_forms(markup_node, wiki_title, node_type)
-        meaning_note = _get_meaning_note(markup_node)
-        translations = _get_translations(markup_node, translation_codes)
-        results.append(Definition(part_of_speech=node_type, raw_article_title=wiki_title,
-                                  readable_name=word_as_answer, grammar_note=word_as_question,
-                                  translation_articles=translations))
-    return results
+    def __str__(self):
+        return '|' * self.level + '- {} : {}'.format(self.part_type.name, str(self.value))
+
+
+def _node_children_to_parts(parent_node: MarkupTree, translation_languages: List[str]) -> List[_DefinitionPart]:
+    result = []
+    for node in parent_node.children:
+        if node.name in _PART_OF_SPEECH_MAPPING:
+            result.append(
+                _DefinitionPart(_DefinitionPart.Type.PartOfSpeech, node.level, _PART_OF_SPEECH_MAPPING[node.name]))
+        elif node.name in ('t', 't+'):
+            if len(node.plain_args) > 1 and node.plain_args[0] in translation_languages:
+                result.append(_DefinitionPart(
+                    _DefinitionPart.Type.Translation, node.level, (node.plain_args[0], node.plain_args[1])))
+        result += _node_children_to_parts(node, translation_languages)
+    return result
+
+
+def _part_of_speech_components(node: MarkupTree, wiki_title: str) -> List[DefinitionComponent]:
+    pos_dc = PartOfSpeechDC(_PART_OF_SPEECH_MAPPING[node.name], node.level)
+    if pos_dc.part_of_speech == PartOfSpeech.Verb:
+        rdf_dc = ReadableFormDC('to {}'.format(wiki_title), node.level)
+    elif pos_dc.part_of_speech in (PartOfSpeech.Noun,):
+        rdf_dc = ReadableFormDC(wiki_title.capitalize(), node.level)
+    else:
+        rdf_dc = ReadableFormDC(wiki_title, node.level)
+    return [pos_dc, rdf_dc]
+
+
+def _translation_components(node: MarkupTree, language_codes_for_translations: List[str]) -> List[DefinitionComponent]:
+    if len(node.plain_args) > 1 and node.plain_args[0] in language_codes_for_translations:
+        return [TranslationDC(node.plain_args[0], node.plain_args[1], node.level)]
+    return []
 
 
 class EnglishLocaleParser(LocalizedParser):
@@ -70,6 +67,25 @@ class EnglishLocaleParser(LocalizedParser):
         return ['en']
 
     @classmethod
+    def extract_definition_components_from_markup(
+            cls, markup_tree: MarkupTree, wiki_title: str,
+            language_codes_for_translations: List[str]) -> List[DefinitionComponent]:
+        result = []
+        for node in markup_tree.children:
+            if node.name in _PART_OF_SPEECH_MAPPING:
+                result += _part_of_speech_components(node, wiki_title)
+            elif node.name in ('t', 't+'):
+                result += _translation_components(node, language_codes_for_translations)
+
+            result += cls.extract_definition_components_from_markup(node, wiki_title, language_codes_for_translations)
+
+        return result
+
+    @classmethod
     def extract_word_definitions(cls, markup_tree: MarkupTree, wiki_title: str,
                                  language_codes_for_translations: List[str]) -> List[Definition]:
-        return _extract_word_definitions_recursive(markup_tree, wiki_title, language_codes_for_translations)
+        parts = _node_children_to_parts(markup_tree, language_codes_for_translations)
+        print('--- ' + wiki_title + ' ---')
+        for part in parts:
+            print(part)
+        return []

@@ -1,0 +1,451 @@
+France
+en
+Original article URL: https://en.wiktionary.org/wiki/France
+{{also|france|Francë}}
+
+==English==
+{{wikipedia|France (disambiguation)|France|lang=en}}
+{{swp|lang=en}}
+{{Wikivoyage}}
+[[File:LocationFrance.svg|thumb|Map showing the location of France (in red).]]
+
+===Alternative forms===
+* {{sense|country}} {{l|en|Fraunce}} {{qualifier|obsolete}}
+
+===Etymology===
+From {{inh|en|enm|France}}, from {{der|en|fro|France}}, from {{der|en|la|Francia}}, from {{m|la|Francī}}, the name of a Germanic tribe, of unclear (but {{der|en|gem-pro|-}}) origin.<ref>A. C. Murray, ''From Roman to Merovingian Gaul: A Reader''. Broadview Press Ltd, 2000. p. 1.</ref> Believed to be most likely from {{der|en|frk|*Frankō||a Frank}}, from {{der|en|gem-pro|*frankô||javelin}}, ultimately from {{der|en|ine-pro|*preng-||pole, stalk}}. Compare {{m|en|Frank}}.  Displaced native {{ncog|ang|Francland}}.
+
+===Pronunciation===
+* {{a|UK}} {{IPA|en|/fɹɑːns/|/fɹæns/}}
+* {{a|US}} {{IPA|en|/fɹæns/}}
+* {{audio|en|en-us-France.ogg|Audio (US)}}
+* {{rhymes|en|ɑːns|æns|s=1}}
+
+===Proper noun===
+{{en-proper noun|-|Frances}}
+
+# {{senseid|en|Q142}}{{place|en|country|in western|cont/Europe|{{,}} Member state of the [[European Union]] (since 1993), having <<capital/Paris>> as its capital city, bounded by Belgium, Luxembourg, Germany, Switzerland, Italy, Monaco, Andorra and Spain|official=French Republic}}
+#* {{quote-book|en|year=1837| year_published= 1977 |page=237|title= {{w|Mauprat}} |author= {{w|George Sand}}|tlr=Stanley Young|publisher=Cassandra Editions|url= https://books.google.co.nz/books?id=NTTeAwAAQBAJ |isbn= 9780897338677 |passage= For a long time the dormouse and polecat had seemed to him overfeeble enemies for his restless valour, even as the granary floor seemed to afford too narrow a field. Every day he read the papers of the previous day in the servants' hall of the houses he visited, and it appeared to him that this war in America, which was hailed as the awakening of the spirit of liberty and justice in the New World, ought to produce a revolution in '''France'''.}}
+#* {{quote-book|en|year=1998|author=Shanny Peer|title=France on Display: Peasants, Provincials, and Folklore|isbn=0791437108|page=2|passage=Although scholars have offered different chronologies and causalities for the move toward modernity, most have resolved the paradox of the two '''Frances''' by placing them in sequence: "diverse '''France''' gave way over time as modern centralized '''France''' gathered force."}}
+#* {{quote-journal
+|en
+|date=April 23, 2012
+|author=Angelique Chrisafis
+|title=François Hollande on top but far right scores record result in French election
+|work=the Guardian
+|url=http://www.guardian.co.uk/world/2012/apr/23/francois-hollande-french-election
+|page=
+|passage=Hollande told cheering supporters in his rural fiefdom of Corrèze in south-west '''France''' that he was best-placed to lead '''France''' towards change, saying the vote marked a "rejection" of Sarkozy and a "sanction" against his five years in office.}}
+# {{surname|en|from=French}}, {{n-g|famously held by—}}
+## {{w|Anatole France}}, a French poet, journalist, and novelist.
+# {{alternative form of|en|Frances}}; {{given name|en|female}}; {{feminine of|en|Francis}}.
+
+====Holonyms====
+* {{sense|country}} {{l|en|European Union}}, {{l|en|Europe}}
+
+====Derived terms====
+{{der3|en|
+|Free France
+|Petty France
+|Vichy France
+}}
+
+====Related terms====
+{{rel4|en|
+|Francization
+|Franco-
+|Franco
+|Francophile
+|Francophobe
+|Francophone
+|Francophonie
+|Frankland
+|Franc
+|franc
+|lingua franca
+|French
+|[[Frenchie]], [[Frenchy]]
+|Frenchify
+|Frenchification
+|Frenchman
+|Frenchwoman
+|New France
+|Tour de France
+|Frances
+|Francis
+|Frank
+}}
+
+====Descendants====
+{{top2}}
+* {{desc|bor=1|as|ফ্ৰান্স}}
+* {{desc|bor=1|zh|法蘭西}}
+* {{desc|bor=1|haw|Palani}}
+* {{desc|bor=1|kln|Frans}}
+* {{desc|bor=1|ki|Frans}}
+* {{desc|bor=1|luy|Frans}}
+* {{desc|bor=1|mer|Frans}}
+* {{desc|bor=1|st|France}}
+* {{desc|bor=1|sw|Ufaransa}}
+{{bottom}}
+
+====Translations====
+{{trans-top|id=Q142|country}}{{multitrans|data=
+* Abkhaz: {{tt|ab|Францызтәыла}}
+* Acehnese: {{tt|ace|Peurancih}}
+* Adyghe: {{tt|ady|Францие}}
+* Afrikaans: {{tt+|af|Frankryk}}
+* Akan: {{tt|ak|Frɛnkye}}
+* Albanian: {{tt|sq|Francë|f}} {{qualifier|indefinite}} {{tt+|sq|Franca|f}} {{qualifier|definite}}, {{tt|sq|Frëngjia|f}}, {{tt|sq|Frângjia|f}}
+* American Sign Language: {{tt|ase|F@NearForehead-HandPalmDown F@NearForehead-HandPalmUp HorizSmallTwist}}
+* Amharic: {{tt|am|ፈረንሣይ}}
+* Antillean Creole: {{tt|gcf|Frans|f}}
+*: Martinican Creole: {{tt|gcf|Fwans|f}}
+* Arabic: {{tt+|ar|فَرَنْسَا|f}}, {{tt|ar|فَرَنْسَة|f}}, {{tt|ar|الْإِفْرَنْج|f}} {{qualifier|archaic}}, {{tt|ar|الْفِرِنْجَة|f}} {{qualifier|archaic}}
+*: Moroccan Arabic: {{tt|ary|فرانسا|f}}
+* Aragonese: {{tt|an|Franzia|f}}
+* Armenian: {{tt+|hy|Ֆրանսիա}}
+* Aromanian: {{tt|rup|Frãntsii|f}} {{qualifier|indefinite}}, {{tt|rup|Frãntsia}} {{qualifier|definite}}, {{tt|rup|Gallia|f}}
+* Assamese: {{tt|as|ফ্ৰান্স}}
+* Assyrian Neo-Aramaic: {{tt|aii|ܦܪܢܓܝܐ|tr=prāngya}}
+* Asturian: {{tt+|ast|Francia|f}}
+* Azerbaijani: {{tt+|az|Fransa}}
+* Bashkir: {{tt|ba|Франция}}
+* Basque: {{tt+|eu|Frantzia}}
+* Belarusian: {{tt|be|Фра́нцыя|f}}
+* Bengali: {{tt+|bn|ফ্রান্স}}
+* Breton: {{tt+|br|Frañs|f}} {{qualifier|state}}, {{tt+|br|Bro-C'hall|f}} {{qualifier|country}}
+* Bulgarian: {{tt+|bg|Фра́нция|f}}
+* Burmese: {{tt|my|ပြင်သစ်}}
+* Catalan: {{tt+|ca|França|f}}
+* Cebuano: {{tt|ceb|Pransiya}}
+* Chechen: {{tt|ce|Франци}}
+* Cherokee: {{tt|chr|ᎦᎸᏥᏱ}}
+* Chinese:
+*: Cantonese: {{tt|yue|法國}}
+*: Dungan: {{tt|dng|Фагуй}}, {{tt|dng|Фагуә}}
+*: Mandarin: {{tt+|cmn|法國}}, {{tt+|cmn|法蘭西}} {{q|dated}}
+*: Min Nan: {{tt+|nan|法國|tr=Hoat-kok}}
+*:: Teochew: {{tt|zhx-teo|法國|tr=huag8 gog4}}
+* Cornish: {{tt+|kw|Pow Frynk}}
+* Corsican: {{tt|co|Francia|f}}
+* Crimean Tatar: {{tt|crh|Frenkistan}}
+* Czech: {{tt+|cs|Francie|f}}
+* Danish: {{tt+|da|Frankrig|n}}
+* Dhivehi: {{tt|dv|ފަރަންސޭސިވިލާތް}}
+* Dutch: {{tt+|nl|Frankrijk|n}}
+* Dzongkha: {{tt|dz|ཕརཱནསི་}}
+* East Futuna: {{tt|fud|Falani}}
+* Esperanto: {{tt+|eo|Francio}}, {{tt+|eo|Francujo}}
+* Estonian: {{tt+|et|Prantsusmaa}}
+* Extremaduran: {{tt|ext|Francia|f}}
+* Farefare: {{tt|gur|Fãreŋo}}
+* Faroese: {{tt|fo|Frakland}}
+* Finnish: {{tt+|fi|Ranska}}
+* French: {{tt+|fr|France|f}}
+* Gagauz: {{t|gag|Franţa}}, {{t|gag|Franţiya}}
+* Galician: {{tt+|gl|Francia|f}}
+* Georgian: {{tt+|ka|საფრანგეთი}}
+* German: {{tt+|de|Frankreich|n}}
+*: Alemannic German: {{tt|gsw|Frankriich}}, {{tt|gsw|Frankrych}}
+*: Central Franconian: {{tt|gmw-cfr|Frankrich}} {{q|Ripuarian}}, {{tt|gmw-cfr|Frankreich}} {{q|Ripuarian}}
+* Greek: {{tt+|el|Γαλλία|f}}
+* Gujarati: {{tt|gu|ફ્રાન્સ}}
+* Haitian Creole: {{tt|ht|Frans}}
+* Hausa: {{tt|ha|Faransa|f|alt=Fàr̃ansà}}
+* Hawaiian: {{tt|haw|Palani}}
+* Hebrew: {{tt+|he|צָרְפַת|f|tr=tsarfát}}
+* Hindi: {{tt|hi|फ़्रांस|m}}, {{tt|hi|फ़्राँस|m}}, {{tt+|hi|फ़्रान्स|m}}, {{tt+|hi|फ्रांस|m}}
+* Hungarian: {{tt+|hu|Franciaország}}
+* Hunsrik: {{tt|hrx|Frankreich|n}}
+* Icelandic: {{tt+|is|Frakkland|n}}
+* Ido: {{tt+|io|Francia}}
+* Ilocano: {{tt|ilo|Pransia}}
+* Indonesian: {{tt+|id|Prancis}}
+* Ingrian: {{t|izh|Frantsia}}
+* Interlingua: {{tt+|ia|Francia}}
+* Irish: {{tt+|ga|Frainc|alt=an Fhrainc|f}}
+* Italian: {{tt+|it|Francia|f}}
+* Japanese: {{tt+|ja|フランス|tr=Furansu}}, {{tt+|ja|仏蘭西|tr=Furansu}} {{qualifier|obsolete}}
+* Jarai: {{tt|jra|čar Prăng}}
+* Javanese: {{tt|jv|Prancis}}
+* Jingpho: {{tt|kac|pyin tit}}
+* Kalenjin: {{tt|kln|Frans}}
+* Kamba: {{tt|kam|Frans}}
+* Kannada: {{tt+|kn|ಪ್ರಾಂಸ್}}
+* Kashmiri: {{tt|ks|फ्रांस}}
+* Kashubian: {{tt|csb|Francjô|f}}
+* Kazakh: {{tt+|kk|Франция}}
+* Khmer: {{tt+|km|បារាំង}}
+* Kikuyu: {{tt|ki|Frans}}
+* Korean: {{tt+|ko|^프랑스}}, {{qualifier|rare}} {{tt+|ko|^불란서(佛蘭西)}}
+* Kurdish:
+*: Central Kurdish: {{tt|ckb|فەرەنسا}}
+*: Northern Kurdish: {{tt+|kmr|Fransa}}, {{tt+|kmr|Ferensa}}
+* Kyrgyz: {{tt+|ky|Франция}}
+* Lao: {{tt+|lo|ຝະລັ່ງ}}, {{tt|lo|ຝະຣັ່ງ}}
+* Latin: {{tt+|la|Gallia|f}}, {{tt+|la|Francia|f}}, {{tt|la|Francogallia|f}}
+* Latvian: {{tt|lv|Francija|f}}
+* Limburgish: {{tt+|li|Frankriek}}
+* Lithuanian: {{tt+|lt|Prancūzija|f}}
+* Livonian: {{tt|liv|Prantsūzmō}}
+* Low German: {{tt+|nds|Frankriek}}, {{tt|nds|Frankrich}}
+* Lü: {{tt|khb|ᦝᦱᧉᦜᧂᧈ}}
+* Luhya: {{tt|luy|Frans}}
+* Luo: {{tt|luo|Frans}}
+* Luxembourgish: {{tt+|lb|Frankräich|n}}
+* Macedonian: {{tt+|mk|Франција|f}}
+* Malagasy: {{tt+|mg|Frantsa}}
+* Malay: {{tt+|ms|Perancis}}
+* Malayalam: {{tt|ml|ഫ്രാൻസ്}}
+* Maltese: {{tt+|mt|Franza|f}}
+* Manchu: {{tt|mnc|ᡶᠠ ᡤᡠᡵᡠᠨ}}, {{tt|mnc|ᡶᠠ ᠯᠠᠨ ᠰᡳ}}
+* Maori: {{tt|mi|Parani}}, {{tt+|mi|Wīwī}}
+* Marathi: {{tt|mr|फ्रांस}}
+* Meru: {{tt|mer|Frans}}
+* Mongolian:
+*: Cyrillic: {{tt+|mn|Франц}}, {{tt|mn|[[Франц]] [[улс]]}}
+* Moore: {{tt|mos|Fãrens tẽngẽ}}
+* Nauruan: {{tt|na|France}}
+* Navajo: {{tt|nv|Dáághahii Dineʼé Bikéyah}}
+* Neapolitan: {{tt|nap|Franza|f}}
+* Nepali: {{tt|ne|फ्रान्स}}
+* Norman: {{tt|nrf|France|f}} {{qualifier|Jersey}}
+* North Frisian: {{tt|frr|Frånkrik}}
+* Northern Sami: {{tt|se|Frankriika}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|Frankrike|n}}
+*: Nynorsk: {{tt+|nn|Frankrike|n}}
+* Occitan: {{tt+|oc|França|f}}
+* Okinawan: {{tt|ryu|フランシ|tr=Furanshi}}
+* Old Church Slavonic:
+*: Cyrillic: {{tt|cu|Франкїꙗ|f}}
+* Old English: {{tt|ang|Francland|n}}
+* Old Galician-Portuguese: {{t|roa-opt|França}}
+* Oriya: {{tt|or|ଫ୍ରାନ୍ସ୍}}
+* Ossetian: {{tt|os|Франц}}
+* Pashto: {{tt+|ps|فرانسه|f|tr=frānsa, farānsa}}, {{tt|ps|فرانس|m|tr=frāns, farāns}}
+* Persian: {{tt+|fa|فَرانسه|tr=farânse}}
+* Plains Cree: {{tt|crk|wêmistikôsînâhk}}, {{tt|crk|wêmistikôsîwaskiy}}, {{tt|crk|mistikôsînâhk}}
+* Polish: {{tt+|pl|Francja|f}}
+* Portuguese: {{tt+|pt|França|f}}
+* Punjabi: {{tt|pa|ਫ਼੍ਰਾਂਸ}}
+* Rade: {{tt|rad|Prăng}}
+* Rarotongan: {{tt|rar|Varāni}}
+* Romanian: {{tt+|ro|Franța|f}}
+* Romansch: {{tt|rm|Frantscha}}
+* Russian: {{tt+|ru|Фра́нция|f}}
+* Rusyn: {{tt|rue|Фра́нція|f}}
+* Sanskrit: {{tt|sa|फ्रांस}}
+* Sardinian: {{tt|sc|Frantza}}
+* Saterland Frisian: {{tt|stq|Frankriek}}
+* Scots: {{tt|sco|Franse}}, {{tt|sco|Fraunce}}
+* Scottish Gaelic: {{tt|gd|Fraing|alt=An Fhraing|f}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|Фра̀нцӯска̄|f}}
+*: Roman: {{tt+|sh|Fràncūskā|f}}
+* Sicilian: {{tt|scn|Francia|f}}, {{tt|scn|Franza|f}} {{qual|Old Sicilian}}
+* Sikkimese: {{t-needed|sip}}
+* Silesian: {{tt|szl|Francyjo|f}}
+* Sinhalese: {{tt|si|ප්‍රංශය}}
+* Slovak: {{tt+|sk|Francúzsko|n}}
+* Slovene: {{tt+|sl|Fráncija|f}}
+* Somali: {{tt|so|Faransa}}
+* Sorbian:
+*: Lower Sorbian: {{tt|dsb|Francojska|f}}
+*: Upper Sorbian: {{tt+|hsb|Francoska|f}}
+* Sotho: {{tt|st|France}}
+* Spanish: {{tt+|es|Francia|f}}
+* Swahili: {{tt+|sw|Ufaransa}}
+* Swedish: {{tt+|sv|Frankrike|n}}
+* Tagalog: {{tt|tl|Pransya}}
+* Tajik: {{tt+|tg|Фаронса}}
+* Tamil: {{tt|ta|பிரான்ஸ்}}
+* Tatar: {{tt+|tt|Франция}}
+* Telugu: {{tt+|te|ఫ్రాన్స్}}
+* Thai: {{tt+|th|ฝรั่งเศส}}
+* Tibetan: {{tt|bo|ཧྥ་རན་སི}}
+* Tigrinya: {{tt|ti|ፈረንሳይ}}
+* Tok Pisin: {{tt|tpi|Pranis}}
+* Turkish: {{tt+|tr|Fransa}}
+* Turkmen: {{tt|tk|Fransiýa}}
+* Ubykh: {{tt|uby|Франгьшәабла}}
+* Ukrainian: {{tt+|uk|Фра́нція|f}}
+* Urdu: {{tt|ur|فْرانْس|m|tr=frāns}}
+* Uyghur: {{tt|ug|فرانسىيە}}
+* Uzbek: {{tt+|uz|Fransiya}}
+* Vietnamese: {{tt+|vi|Pháp}}, {{tt|vi|[[nước]] [[Pháp]]}}
+* Volapük: {{tt+|vo|Fransän}}, {{qualifier|obsolete}} {{tt|vo|Flent}}, {{qualifier|obsolete}} {{tt|vo|Flentän}}
+* Võro: {{tt|vro|Prantsusmaa}}
+* Wallisian: {{tt|wls|Falani}}
+* Walloon: {{tt+|wa|France|f}}
+* Welsh: {{tt+|cy|Ffrainc|f}}
+* West Flemish: {{tt|vls|Vrankryk}}
+* West Frisian: {{tt+|fy|Frankryk}}
+* White Hmong: {{t|mww|Fav Teb}}, {{t|mww|Fab Kis}} {{qualifier|outdated}} {{qualifier|informal}} 
+* Yiddish: {{tt|yi|פֿראַנקרײַך|n}}
+* Yoruba: {{tt|yo|Ilẹ̀}} {{tt|yo|Faransé}}
+* Zhuang: {{tt|za|Fazgoz}}
+{{trans-bottom}}
+
+{{trans-top|a French surname}}
+* Chinese:
+*: Cantonese: {{tt|yue|法郎士|tr=faat3 long4 si6}}
+*: Mandarin: {{tt|cmn|法郎士|tr=Fǎlángshì}}
+* French: {{tt+|fr|France|m|f}}
+* Marathi: {{t|mr|फ्रांस}}
+* Russian: {{tt+|ru|Франс|m|f}}
+}}
+{{trans-bottom}}
+
+===See also===
+* {{list:countries of Europe/en}}{{topics|en|Countries in Europe}}
+
+===References===
+<references/>
+
+[[Category:en:France]]
+[[Category:en:Individuals]]
+
+==Franco-Provençal==
+{{wp|lang=frp}}
+
+===Proper noun===
+{{head|frp|proper noun}}
+
+# {{place|frp|country|cont/Europe|t=France}}
+
+==French==
+{{wikipedia|lang=fr}}
+===Etymology===
+{{inh+|fr|frm|France}}, from {{inh|fr|fro|France}}, from {{inh|fr|ML.|-}} or {{inh|fr|LL.|Francia}}, from {{m|la|Francī}}, the name of a {{der|fr|gem}} tribe.
+
+===Pronunciation===
+* {{a|France}} {{fr-IPA}}
+* {{a|Quebec}} {{IPA|fr|/fʁãs/}}
+* {{audio|fr|Fr-France.ogg|audio (France)}}
+* {{audio|fr|Fr-France-fr-CA-Québec-(Lac-Saint-Jean).oga|audio (Quebec)}}
+
+===Proper noun===
+{{fr-proper noun|f}}
+
+# {{place|fr|country|r/Western Europe|t=France}}
+# {{given name|fr|female}}
+# {{surname|fr|French}}
+
+====Derived terms====
+* {{l|fr|faire une carte de France}}
+* {{l|fr|françafricain}}
+* {{l|fr|Françafrique}}
+* {{l|fr|français}}, {{l|fr|Français}}
+* {{l|fr|Marie-France}} (given name)
+* {{l|fr|melon de France}}
+* {{l|fr|vieille France}}
+
+====Related terms====
+* {{l|fr|François}}, {{l|fr|Françoise}} (given names)
+
+====Descendants====
+{{top2}}
+* {{desc|ht|Frans}}
+* {{desc|gcf|Fwans}} {{q|via {{l|fr|[[la]] [[France]]}}}}
+* {{desc|mfe|Lafrans}} {{q|via {{l|fr|[[la]] [[France]]}}}}
+* {{desc|bor=1|br|Frañs}}
+* {{desc|bor=1|zh|-}}
+*: {{desc|cmn|法蘭西|tr=Fǎlánxī}}
+*: {{desc|yue|法蘭西|tr=faat3 laan4 sai1, faat3 laan4-1 sai1}}
+*: {{desc|cdo|tr=Huák-làng-să̤|法蘭西}}
+*: {{desc|nan|tr=Hoat-lân-se|法蘭西}}
+** {{desc|bor=1|mnc|ᡶᠠ ᠯᠠᠨ ᠰᡳ}}
+* {{desc|fi|Frans|bor=1}}
+* {{desc|bor=1|ja|フランス|tr=Furansu}}
+* {{desc|bor=1|km|បារាំង}}
+* {{desc|bor=1|ko|^프랑스}}
+* {{desc|bor=1|rad|Prăng}}
+* {{desc|bor=1|ro|Franța}}
+{{bottom}}
+
+====See also====
+* {{list:countries of Europe/fr}}
+
+===Anagrams===
+* {{anagrams|fr|Céfran}}
+
+==Friulian==
+
+===Proper noun===
+{{head|fur|proper noun|g=f}}
+
+# {{place|fur|country|cont/Europe|t=France}}
+
+====Related terms====
+* {{l|fur|francês}}
+
+==Middle French==
+
+===Etymology===
+From {{inh|frm|fro|France}}.
+
+===Pronunciation===
+* {{IPA|frm|/ˈfrãsə/}}
+
+===Proper noun===
+{{head|frm|proper noun|g=f}}
+
+# {{place|frm|country|cont/Europe|t1=France}}
+
+====Descendants====
+* {{desc|fr|France}} {{see desc}}
+* {{desc|bor=1|enm|Fraunce|France}}
+** {{desc|en|France}} {{see desc}}
+** {{desc|sco|Fraunce}}
+* {{desc|bor=1|br|Frañs}}
+
+==Norman==
+{{wp|lang=nrf}}
+
+===Alternative forms===
+* {{alter|nrf|Fraunce||continental Normandy}}
+
+===Etymology===
+From {{inh|nrf|fro|France}}, from {{inh|nrf|ML.|-}} or {{inh|nrf|LL.|Francia}}, from {{m|la|Francī}}, the name of a {{der|nrf|gem}} tribe.
+
+===Pronunciation===
+* {{audio|nrf|Jer-France.ogg|Audio (Jersey)}}
+
+===Proper noun===
+{{nrf-proper noun|f}}
+
+# {{lb|nrf|Jersey}} {{l|en|France}}
+
+{{c|nrf|Countries in Europe|France}}
+
+==Old French==
+[[File:Excerpt from Chanson de Roland ms. Oxford p. 7.png|thumb|right|Excerpt from the Oxford manuscript of {{w|The Song of Roland}} showing 'francs' and 'france' without capital letters.]]
+
+===Alternative forms===
+* {{alter|fro|france||manuscript form}}
+
+===Etymology===
+From {{inh|fro|ML.|-}} or {{inh|fro|LL.|Francia}}, from {{m|la|Francī}}, the name of a {{der|fro|gem}} tribe.
+
+===Pronunciation===
+* {{a|classical}} {{IPA|fro|/ˈfɾant͡sə/}}
+* {{a|late}} {{IPA|fro|/ˈfɾansə/}}
+
+===Proper noun===
+{{fro-proper noun|f}}
+
+# {{l|en|France}} {{gloss|country}}
+
+====Related terms====
+* {{l|fro|françois}}
+
+====Descendants====
+* {{desctree|frm|France}}
+* {{desc|nrf|France|alts=1}}
+* {{desc|pcd|France}}
+* {{desc|wa|France}}
+
+[[Category:fro:Countries]]
+[[Category:fro:France]]

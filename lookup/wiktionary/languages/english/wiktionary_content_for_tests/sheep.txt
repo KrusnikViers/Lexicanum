@@ -1,0 +1,418 @@
+sheep
+en
+Original article URL: https://en.wiktionary.org/wiki/sheep
+==English==
+[[Image:Ovis orientalis aries 'Skudde' (aka).jpg|thumb|A domestic sheep]]
+
+===Pronunciation===
+* {{a|RP}} {{enPR|shēp}}, {{IPA|en|/ʃiːp/}}
+* {{audio|en|En-uk-a sheep.ogg|Audio (RP)}}
+* {{a|GA}} {{IPA|en|/ʃip/}}
+* {{audio|en|En-us-sheep.ogg|Audio (GA)}}
+* {{rhymes|en|iːp|s=1}}
+
+===Etymology 1===
+From {{inh|en|enm|schep}}, {{m|enm|schepe}}, from Anglian {{inh|en|ang|sċēp}}, a variant of {{m|ang|sċēap}}, from {{inh|en|gmw-pro|*skāp}}, from {{inh|en|gem-pro|*skēpą}} (compare {{cog|fy|skiep}}, {{cog|frr|schäip}}, {{cog|nl|schaap}}, {{cog|de|Schaf}}), beside {{m|gem-pro|*keppô}} (compare {{cog|non|kjappi|t=buck}}, dialectal {{cog|de|Kippe|t=newborn calf}}), of unknown origin. Perhaps from the same {{der|en|xsc|-}} word (compare {{cog|os|цӕу|t=goat}}, {{cog|fa|چپش|t=yearling goat|tr=čapiš}})<ref>Vladimir Orel, ''A Handbook of Germanic Etymology'', s.vv. "*keppōn", "*skēpan" (Leiden: Brill, 2003), 213, 340</ref> which was borrowed into {{cog|sq|-}} as {{m|sq|cjap}}, {{m|sq|sqap|t=buck}} and into Slavic (compare {{cog|pl|cap}}). After Kroonen, ''*skēpą'' is instead from the root of {{cog|gem-pro|*skabaną|t=to scratch}} via {{w|Kluge's law}}.<ref>Guus Kroonen (2011), ''The Proto-Germanic ''n-''stems: a study in diachronic morphophonology'' [http://books.google.de/books?id=9stMq8rRnCMC], Rodopi, {{ISBN|9042032936}}.</ref>
+
+====Alternative forms====
+* {{alter|en|shoop||slang|chiefly humorous}}
+* {{alter|en|sheepe||obsolete}}
+
+====Noun====
+{{en-noun|~|sheep|sheeps|pl3qual=nonstandard, mostly humorous}}
+
+# {{lb|en|countable}} A [[woolly]] [[ruminant]] of the genus ''[[Ovis]]''.
+# {{lb|en|countable|narrowly|}} A member of the [[domestic]] species ''[[Ovis aries]]'', the most well-known species of ''[[Ovis]]''.
+# {{lb|en|countable}} A timid, shy person who is easily led by others.
+#: {{synonyms|en|lamb|ovine|Thesaurus:shy person}}
+# {{lb|en|countable|chiefly|Christianity|chiefly plural}} A [[religious]] [[adherent]], a member of a [[congregation]] or religious [[community]] (compare {{m|en|flock}}).
+#* '''1990''', Dave Mustaine, "Holy Wars... The Punishment Due", Megadeth, ''Rust in Peace''.
+#*: {{quote|en|And fools like me, who cross the sea and come to foreign lands / Ask the '''sheep''', for their beliefs do you kill on God's command?}}
+# {{lb|en|uncountable}} [[sheepskin|Sheepskin]] [[leather]].
+# {{lb|en|countable|speech recognition}} A person who is easily understood by a [[speech recognition]] system; contrasted with {{m|en|goat}}.
+
+=====Synonyms=====
+* See also [[Thesaurus:sheep]]
+
+=====Derived terms=====
+{{col3|en|black sheep|sheepdog|sheepfold|sheepish|sheeple|sheepskin|sheep station|[[shoop]] {{q|chiefly-humorous back-formation}}|wolf in sheep's clothing|Barbary sheep}}
+
+=====Descendants=====
+* {{desctree|tpi|sipsip|pos=''reduplication''}}
+* {{desc|bor=1|abe|azib}} {{q|from "a sheep"}}
+* {{desc|bor=1|chk|siip}}
+* {{desc|bor=1|crd|sip}}
+* {{desc|bor=1|qyp|sheeps}}
+
+=====Translations=====
+{{trans-top|animal}}{{multitrans|data=
+* Abenaki: {{tt|abe|azib}}
+* Acehnese: {{tt|ace|bubiri}}
+* Afar: {{t|aa|idá}}, {{t|aa|marúw}}
+* Afrikaans: {{tt+|af|skaap}}
+* Ainu: {{tt|ain|ヒチュチ|tr=hicuci}}
+* Akkadian: {{tt|akk|𒇻|tr=immeru}}
+* Albanian: {{tt+|sq|delme|f}}, {{tt+|sq|dele|f}}
+* Amharic: {{tt|am|በግ}}
+* Arabic: {{tt|ar|خَرُوف|m}} {{qualifier|both ram and sheep}}
+*: Egyptian Arabic: {{tt|arz|خروف|m|tr=ḵarūf}}
+*: Hijazi Arabic: {{tt|acw|خاروف|m|tr=ḵārūf}}, {{tt|acw|غنمة|f|tr=ḡanama}} (''[[singulative]]''),{{tt|acw|غنم|m|tr=ḡanam}} {{qualifier|collective}}
+*: Iraqi Arabic: {{tt|arz|غنم|m|tr=ḡanam}}
+*: Moroccan Arabic: {{tt|ary|غنم|m|tr=ḡnam}} {{qualifier|collective}}, {{tt|ary|خروف|m|tr=ḵrūf}}, {{tt|ary|خروفة|f|tr=ḵrūfa}}, {{tt|ary|نعجة|f|tr=naʿja}}, {{tt|ary|حولي|m|tr=ḥawli}}
+*: South Levantine Arabic: {{tt|ajp|خروف|m|tr=ḵarūf}}, {{tt|ajp|غنم|m|tr=ḡanam}} {{qualifier|collective}}
+* Armenian: {{tt+|hy|ոչխար}}
+* Aromanian: {{tt+|rup|oai|f}}, {{tt|rup|oae|f}}
+* Assamese: {{tt|as|ভেৰা}}, {{tt|as|ভেড়া}}, {{tt|as|ভেৰা ছাগলী}}, {{tt|as|ভেড়া ছাগলী}}
+* Asturian: {{tt+|ast|oveya|f}}
+* Aymara: {{tt+|ay|iwija}}
+* Azerbaijani: {{tt+|az|qoyun}}
+* Bactrian: {{tt|xbc|ποσο}}
+* Bakhtiari: {{tt|bqi|میش|tr=mēš}}
+* Balinese: {{tt|ban|biri-biri}}
+* Baluchi: {{tt|bal|میش|tr=mēš}}, {{tt|bal|پس|tr=pas}}
+* Bashkir: {{tt|ba|һарыҡ}}
+* Basque: {{tt|eu|ardi}}
+* Bau Bidayuh: {{tt|sne|koming}}
+* Belarusian: {{tt|be|аве́чка|f}}, {{tt|be|аўца́|f}}
+* Bengali: {{tt+|bn|ভেড়া}}, {{tt|bn|মেষ}}
+* Brahui: {{tt|brh|melle}}
+* Breton: {{tt+|br|dañvad|m}}, {{tt+|br|maout|m}}, {{tt+|br|dañvadez}}
+* Bulgarian: {{tt+|bg|овца́|f}}
+* Burmese: {{tt+|my|သိုး}}, {{tt+|my|ဆိတ်ကုလား}}
+* Buryat: {{tt|bua|хонин}}
+* Catalan: {{tt+|ca|ovella|f}}
+* Central Melanau: {{tt|mel|biri-biri}}
+* Chechen: {{tt|ce|уьстагӏ}}
+* Cherokee: {{tt|chr|ᎠᏫ ᎤᏃᏕᎾ}}
+* Chichewa: {{tt|ny|nkhosa}}
+* Chickasaw: {{tt|cic|chokfi}}, {{tt|cic|chokfi ishto'}}
+* Chinese:
+*: Cantonese: {{tt|yue|綿羊|tr=min4 joeng4-2}}, {{tt|yue|羊|tr=joeng4}}, {{tt|yue|羊咩|tr=joeng4 me1}}
+*: Dungan: {{tt|dng|мянён}}, {{tt|dng|ён}}
+*: Mandarin: {{tt+|cmn|綿羊|tr=miányáng}}, {{tt+|cmn|羊|tr=yáng}}
+*: Min Nan: {{tt+|nan|綿羊|tr=mî-iûⁿ}}, {{tt+|nan|羊|tr=iûⁿ}}, {{tt+|nan|羊仔|tr=iûⁿ-á}}
+* Chiricahua: {{tt|apm|dibéhé}}
+* Chuukese: {{tt|chk|siip}}
+* Chuvash: {{tt|cv|сурӑх}}
+* Classical Nahuatl: {{tt|nci|ichcatl}}
+* Cornish: {{tt|kw|davas|f}}
+* Crimean Tatar: {{tt|crh|qoy}}
+* Czech: {{tt+|cs|ovce|f}}
+* Dairi Batak: {{tt|btd|biri-biri}}
+* Danish: {{tt+|da|får|n}}
+* Daur: {{tt|dta|xonii}}
+* Dhivehi: {{t-needed|dv}}
+* Dongxiang: {{tt|sce|ghoni}}
+* Dutch: {{tt+|nl|schaap|n}}
+* Dzongkha: {{tt|dz|ལུག}}
+* Edo: {{tt|bin|óhuán}}
+* Esperanto: {{tt+|eo|ŝafo}}
+* Estonian: {{tt+|et|lammas}}
+* Evenki: {{tt|evn|беру}}
+* Ewe: {{tt|ee|alẽ}}
+* Faroese: {{tt+|fo|seyður|m}}
+* Finnish: {{tt+|fi|lammas}}
+* French: {{tt+|fr|mouton|m}}
+* Friulian: {{tt|fur|piore|f}}, {{tt|fur|fede|f}}
+* Galician: {{tt+|gl|ovella|f}}, {{tt|gl|motóa|f}}, {{tt|gl|almella|f}}, {{tt|gl|andosca|f}}
+* Gamilaraay: {{tt|kld|thimba}}
+* Gaulish: {{tt|cel-gau|*multon-}}
+* Ge'ez: {{tt|gez|በግዕ|tr=baggə'}}
+* Georgian: {{tt|ka|ცხვარი}}
+* German: {{tt+|de|Schaf|n}}
+* Gondi: {{tt|gon|గొర్రె|tr=gorre}}
+* Gothic: {{tt|got|𐌻𐌰𐌼𐌱|n}}
+* Greek: {{tt+|el|πρόβατο|n}}
+*: Ancient: {{tt|grc|ὄϊς|m|f}}, {{tt|grc|πρόβατον|n}}
+* Greenlandic: {{tt+|kl|sava}}
+* Guaraní: {{tt|gn|ovecha}}
+* Gujarati: {{tt+|gu|ઘેટું}}
+* Haitian Creole: {{tt|ht|mouton}}
+* Hausa: {{tt|ha|tunkìyā|f}}
+* Hawaiian: {{tt|haw|hipa}}
+* Hebrew: {{tt+|he|כֶּבֶשׂ|m|tr=kéves}}
+* Hindi: {{tt+|hi|भेड़|f}}, {{tt+|hi|मेष|m}} {{qualifier|both ram and sheep}}
+* Hungarian: {{tt+|hu|juh}}, {{tt+|hu|birka}}
+* Icelandic: {{tt+|is|sauður|m}}, {{tt+|is|sauðkind|f}}, {{tt+|is|kind|f}}, {{tt+|is|fé|n}} (collective), {{tt+|is|sauðfé|n}} (collective), {{tt+|is|ær|f}} (ewe), {{tt+|is|rolla|f}}
+* Ido: {{tt+|io|mutono}}
+* Ifè: {{tt|ife|aguɖã|alt=àgùɖã̀}}
+* Igala: {{tt|igl|álá}}, {{tt|igl|àgwùtọ̀}} {{qualifier|obsolete}}
+* Igbo: {{tt|ig|atụlū}}
+* Inari Sami: {{tt|smn|savzâ}}
+* Indonesian: {{tt+|id|domba}}, {{tt+|id|biri-biri}}
+* Ingrian: {{tt|izh|lammas}}
+* Ingush: {{tt|inh|устагӏ}}
+* Interlingua: {{tt|ia|ove}}
+* Irish: {{tt+|ga|caora|f}}
+* Italian: {{tt+|it|pecora|f}}
+* Itsekiri: {{tt|its|agutan|alt=àgútàn}}
+* Izon: {{tt|ijc|ọnịna|alt=ọnị́na}}
+* Japanese: {{tt+|ja|羊|tr=ひつじ, hitsují}}, {{tt+|ja|ヒツジ|tr=hitsuji}}, {{tt|ja|綿羊|tr=めんよう, men'yō}}
+* Jeju: {{tt|jje|양}}
+* Jicarilla: {{tt|apj|dibé}}
+* Jurchen: {{tt|juc|honi}}
+* Kabyle: {{tt|kab|ikerri|m}}
+* Kalmyk: {{tt|xal|хөн}}
+* Kannada: {{tt+|kn|ಕುರಿ}}
+* Karelian: {{tt|krl|lammas}}
+* Karo Batak: {{tt|btx|biri-biri}}
+* Kashmiri: {{tt|ks|کَٹھ|m}}, {{tt|ks|گٔب|f}}
+* Kashubian: {{tt|csb|òwca}}
+* Kazakh: {{tt|kk|қой}}
+* Khmer: {{tt+|km|ចៀម}}
+* Komi-Permyak: {{t|koi|ыж}}
+* Korean: {{tt+|ko|양}}, {{tt+|ko|면양}}
+* Kurdish:
+*: Central Kurdish: {{tt|ckb|مەڕ}}
+*: Northern Kurdish: {{tt+|kmr|mî}} {{qualifier|ewe}}, {{tt+|kmr|mih}} {{qualifier|ewe}}, {{tt+|kmr|beran}} {{qualifier|ram}}, {{tt+|kmr|pez}} {{qualifier|both}}, {{tt+|kmr|berx}} {{qualifier|little}}, {{tt+|kmr|berindir}} {{qualifier|young}}, {{tt+|kmr|beyindir}} {{qualifier|young}}
+* Kyrgyz: {{tt+|ky|кой}}
+* Ladin: {{tt|lld|biescia}}
+* Lao: {{tt+|lo|ແກະ}}
+* Latgalian: {{tt|ltg|vuška|f}}
+* Latin: {{tt+|la|ovis|f}}
+* Latvian: {{tt|lv|aita|f}}, {{tt+|lv|avs|f}}
+* Laz: {{tt|lzz|ჩხური}}
+* Ligurian: {{tt|lij|pêgoa|f}}
+* Limburgish: {{tt+|li|sjaop|n}}
+* Lithuanian: {{tt+|lt|avis|f}}
+* Livonian: {{tt|liv|lāmbaz}}
+* Louisiana Creole French: {{tt|lou|mouton}}
+* Low German: {{tt|nds|Schaap|n}}
+* Lü: {{tt|khb|ᦵᦈᧃ}}
+* Luganda: {{tt|lg|endiga}}
+* Luhya: {{tt|luy|likhese}}, {{tt|luy|likhese}}
+* Lusitanian: {{tt|xls|oilam|f}}
+* Luxembourgish: {{tt|lb|Schof|n}}
+* Macedonian: {{tt|mk|овца|f}}
+* Maguindanao: {{tt|mdh|bili-bili}}
+* Makasar: {{tt|mak|biri-biri}}
+* Malagasy: {{tt+|mg|besavily}}, {{tt+|mg|ondry}}
+* Malay: {{tt|ms|biri-biri}}, {{tt|ms|bebiri}}, {{tt|ms|kambing biri-biri}}, {{tt|ms|kambing bebiri}}, {{tt|ms|domba}} {{qualifier|archaic}}
+* Malayalam: {{tt|ml|ചെമ്മരിയാട്}}
+* Maltese: {{tt|mt|nagħġa|f}}, {{tt|mt|nagħaġ|p}}
+* Manchu: {{tt|mnc|ᡥᠣᠨᡳᠨ}}
+* Manx: {{tt|gv|keyrrey|f}}
+* Maore Comorian: {{tt|swb|ɓariɓari|c5|c6}}
+* Maori: {{tt|mi|hipi}}
+* Maranao: {{tt|mrw|bili-bili}}
+* Marathi: {{t-check|mr|मेंढी}}
+* Mari:
+*: Eastern Mari: {{tt|mhr|шорык}}
+*: Western Mari: {{tt|mrj|шарык}}
+* Mariupol Greek: {{t|grk-mar|про́вату|n}}
+* Mazanderani: {{tt|mzn|گاسفند|tr=gâsfand}}, {{tt|mzn|گسن|tr=gəsan}}
+* Mbyá Guaraní: {{tt|gun|ovexa}}
+* Mi'kmaq: {{tt|mic|jijgluewj|an}}
+* Middle English: {{tt|enm|schep}}
+* Middle Korean: {{tt|okm|야ᇰ}}
+* Mingrelian: {{tt|xmf|შხური}}
+* Mirandese: {{tt|mwl|canhona|f}}, {{tt|mwl|oubeilha|f}}
+* Mon: {{tt+|mnw|သဵု|tr=sɒ}}
+* Mongolian: {{tt+|mn|хонь}}
+* Nahuatl: {{tt+|nah|ichcatl}}
+* Nanai: {{tt|gld|хонин}}
+* Navajo: {{tt|nv|dibé}}
+* Nepali: {{tt|ne|भेंडा}}
+* Nias: {{tt|nia|biri-biri}}
+* Nigerian Pidgin: {{tt|pcm|sheep}}
+* Norman: {{tt|nrf|mouton|m}}
+* North Frisian:
+*: Föhr: {{tt|frr|schep|n}}
+*: Goesharde, Mooring: {{tt|frr|schäip|n}}
+* Northern Sami: {{tt|se|sávza}}
+* Norwegian: {{tt+|no|sau|m}}, {{tt+|no|får|n}}
+* Nupe: {{tt|nup|kingbàgbà}}
+* Occitan: {{tt+|oc|feda|f}}, {{tt+|oc|oelha|f}}
+* Ojibwe: {{tt|oj|maanishtaanish}}
+* Okinawan: {{t-needed|ryu}}
+* Old Church Slavonic:
+*: Cyrillic: {{tt|cu|овьца|f}}
+*: Glagolitic: {{tt|cu|ⱁⰲⱐⱌⰰ|f}}
+* Old East Slavic: {{tt|orv|овьца|f}}
+* Old English: {{tt|ang|scēap|n}}
+* Old Irish: {{tt|sga|cáera|f}}
+* Olukumi: {{tt|ulb|aguntan|alt=àgùntàn}}
+* Oriya: {{tt+|or|ମେଣ୍ଢା}}
+* Oromo: {{tt|om|hoolaa}}
+* Ossetian: {{tt|os|фыс}}
+* Ottoman Turkish: {{tt|ota|قویون|tr=koyun}}
+* Pashto: {{tt|ps|مړېيه|m|tr=lṛeyǝ́}}, {{tt|ps|مېږ|m|tr=meẓ}}, {{tt|ps|مږه|f|tr=mᶕɀa}}, {{tt+|ps|پسه|f|tr=pәsᶕ, psᶕ}}, {{tt|ps|ګډه|f|tr=gǝ́ḍa}}
+* Persian: {{tt+|fa|گوسفند|tr=gusfand}}, {{tt+|fa|میش|tr=miš}}, {{tt+|fa|قوچ|tr=quč}}
+* Plautdietsch: {{tt+|pdt|Schop|n}}
+* Polabian: {{tt|pox|vicĕ|n}}
+* Polish: {{tt+|pl|owca|f}}
+* Portuguese: {{tt+|pt|ovelha|f}}
+* Punic: {{tt|xpu|𐤔|tr=s}}
+* Punjabi: {{tt|pa|ਭੇਡ}}
+* Quechua: {{tt|qu|uwija}}
+* Rohingya: {{tt|rhg|sóol}}
+* Romagnol: {{t|rgn|pégra|f}}, {{t|rgn|pégura|f}}
+* Romani: {{tt|rom|bakro|m}}, {{tt|rom|bakri|f}}
+* Romanian: {{tt+|ro|oaie}}
+* Romansch: {{tt|rm|nursa}}, {{tt|rm|nuorsa|f}}, {{tt|rm|besch|m}}
+* Russian: {{tt+|ru|овца́|f}}, {{tt+|ru|ове́чка|f}}
+* S'gaw Karen: {{tt|ksw|သိ}}
+* Samoan: {{tt|sm|mamoe}}
+* Sango: {{tt+|sg|walitaba}}
+* Sanskrit: {{tt+|sa|अवि|m|f}}, {{tt+|sa|अविक|m}}
+* Santali: {{tt|sat|ᱵᱷᱤᱰᱤ}}
+* Sardinian: {{tt|sc|brebei}}, {{tt|sc|berbeghe}}, {{tt|sc|barveghe}}, {{tt|sc|chessi}}, {{tt|sc|tzicca}}, {{tt|sc|erveche}}, {{tt|sc|odda (old sheep)}}, {{tt|sc|argasa (sheep that lost her lamb)}}
+* Saterland Frisian: {{tt|stq|Skäip|f}}
+* Scots: {{tt|sco|sheep}}
+* Scottish Gaelic: {{tt|gd|caora|f}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|овца|f}}, {{tt|sh|ован|m}}, {{tt|sh|јагње|n}} {{gloss|lamb}}, {{tt|sh|јање|n}} {{qualifier|Croatian}}
+*: Roman: {{tt+|sh|ovca|f}}, {{tt+|sh|ovan|m}}, {{tt+|sh|jagnje|n}} {{gloss|lamb}}, {{tt+|sh|janje|n}} {{qualifier|Croatian}}
+* Seychellois Creole: {{tt|crs|mouton}}
+* Shan: {{tt+|shn|သူဝ်း}}
+* Sidamo: {{tt|sid|gerechcho}}
+* Simeulue: {{tt|smr|biri-biri}}
+* Sindhi: {{tt|sd|رڍ}}
+* Sinhalese: {{tt|si|බැටළුවා}}
+* Slovak: {{tt+|sk|ovca|f}}
+* Slovene: {{tt+|sl|ôvca|f}}, {{tt+|sl|ôven|m}}
+* Somali: {{tt|so|ido}}
+* Sorbian:
+*: Lower Sorbian: {{tt|dsb|wójca|f}}
+*: Upper Sorbian: {{tt|hsb|wowca|f}}
+* Spanish: {{tt+|es|carnero|m}}, {{tt+|es|oveja|f}}
+* Sumerian: {{tt|sux|𒇻|tr=UDU}}
+* Swahili: {{tt+|sw|kondoo}}
+* Swedish: {{tt+|sv|får|n}}
+* Tagalog: {{tt+|tl|tupa}}, {{tt|tl|obeha}}
+* Tajik: {{tt+|tg|гӯсфанд}}
+* Talysh: {{t-check|tly|پس|tr=pas}} {{qualifier|Asalem dialect}}
+* Tamil: {{tt+|ta|செம்மறியாடு}}
+* Taos: {{tt|twf|k’úona}}
+* Tatar: {{tt+|tt|сарык}}
+* Telugu: {{tt+|te|గొర్రె}}
+* Tetum: {{t|tet|bibi}} {{t|tet|malae}}
+* Thai: {{tt+|th|แกะ}}
+* Tibetan: {{tt|bo|ལུག}}
+* Tigrinya: {{tt|ti|በጊዕ}}
+* Tocharian B: {{tt|txb|śaiyye}}
+* Tok Pisin: {{tt|tpi|sipsip}}
+* Tongan: {{t|to|sipi}}
+* Tsakonian: {{tt|tsd|βάννε}}
+* Tsonga: {{tt|ts|nyimpfu}}
+* Tswana: {{tt|tn|nku}} (9/10)
+* Turkish: {{tt+|tr|koyun}}
+* Turkmen: {{tt|tk|goýun}}
+* Tuvan: {{tt|tyv|хой}}
+* Ukrainian: {{tt+|uk|вівця́|f}}
+* Urdu: {{tt+|ur|بھیڑ|f|tr=bheṛ}}, {{tt|ur|گوسفند|f|tr=gosfand}}, {{tt|ur|میش|m|tr=meṣ}} {{qualifier|both ram and sheep}}
+* Uyghur: {{tt+|ug|قوي}}
+* Uzbek: {{tt+|uz|qoʻy}}, {{tt+|uz|goʻsfand}}
+* Venetian: {{tt+|vec|piègora|f}}, {{tt|vec|pégora}}, {{tt|vec|pigora}}, {{tt|vec|piovra}}, {{tt+|vec|feda|f}}, {{tt|vec|féda|f}}
+* Veps: {{tt|vep|lambaz}}
+* Vietnamese: {{tt+|vi|cừu}}
+* Vilamovian: {{tt|wym|siöf|n}}
+* Volapük: {{tt+|vo|jip}}
+* Voro: {{tt|vor|lammas}}
+* Votic: {{tt|vot|lammõz}}
+* Walloon: {{tt+|wa|bedot|m}}, {{tt+|wa|moton|m}}
+* Welsh: {{tt+|cy|dafad|f}}, {{tt+|cy|defaid|p}}
+* West Frisian: {{tt|fy|skiep|n}}
+* Western Apache: {{tt|apw|dibéé}}, {{tt|apw|dobéé}}, {{tt|apw|dibéłįį}}, {{tt|apw|bee’é}}, {{tt|apw|mee’é}}, {{tt|apw|mę’é}}
+* Western Panjabi: {{tt|pnb|بھیڈ}}
+* Wolof: {{tt+|wo|xar|alt=xar mi}}
+* Yakut: {{tt|sah|хой}}
+* Yiddish: {{tt|yi|שעפּס|m}}, {{tt|yi|שאָף|m|f}}
+* Yoruba: {{tt|yo|àgùtàn}}
+* Zazaki: {{tt|zza|mi}}, {{tt+|zza|kavır}}
+* Zhuang: {{tt|za|yiengz}}
+* Zulu: {{tt+|zu|imvu|c9|c10}}
+{{trans-bottom}}
+
+{{trans-top|one who behaves shyly}}
+* Czech: {{tt+|cs|ovčan|m}}
+* Esperanto: {{tt|eo|timidulo}}
+* Finnish: {{tt|fi|hiirulainen}}
+* Greek: {{tt+|el|πρόβατο|n}}
+* Hebrew: {{tt+|he|שֶׂה|m|tr=se}}
+* Hindi: {{tt|hi|शर्मीला मनुष्य}}
+* Hungarian: {{tt+|hu|birka}}
+* Indonesian: {{tt+|id|pemalu}}
+* Interlingua: {{t-check|ia|[[persona]] [[docile]]}} <!-- was "[[persona]] [[docile]]" - assumed sum-of-parts; if an idiom, remove the wikilinks to the individual words. see [[User:Kephir/gadgets/xte#Translation_fixing]] -->, {{t-check|ia|submisse|alt=persona submisse}} <!-- was "persona [[submisse]]" - assumed inflected form or vocalised spelling; please verify if linking is acceptable. see [[User:Kephir/gadgets/xte#Translation_fixing]] -->
+* Italian: {{tt+|it|pecora|f}}
+* Lithuanian: {{tt+|lt|avelė|m|f}}, {{tt|lt|vatnikas|m}}
+* Persian: {{tt+|fa|بزدل|tr=bozdel}}
+* Polish: {{tt+|pl|trusia|f}}
+* Portuguese: {{tt+|pt|pusilânime|m|f}}, {{tt+|pt|ovelha|f}}
+* Russian: {{tt+|ru|ове́чка|f}}, {{tt+|ru|ягнёнок|m}}, {{tt+|ru|а́гнец|m}}
+* Scottish Gaelic: {{tt|gd|caora}}
+* Spanish: {{tt+|es|pusilánime|m|f}}, {{tt+|es|papanatas|m|f}}
+* Telugu: {{tt+|te|గొర్రె}}
+}}
+{{trans-bottom}}
+
+====See also====
+{{top2}}
+* [[Appendix:Animals]]
+* {{l|en|Aries}}
+* {{l|en|ewe}}
+* {{l|en|hogg}}
+* {{l|en|lamb}}
+* {{l|en|mutton}}
+* {{l|en|ovine}}
+* {{l|en|ram}}
+* {{l|en|teg}}
+* {{l|en|tup}}
+* {{l|en|wether}}
+{{bottom}}
+
+====Further reading====
+* {{pedia|sheep (disambiguation)|sheep}}
+* {{pedia}}
+* {{specieslite|Ovis}}
+
+===Etymology 2===
+
+====Noun====
+{{head|en|noun form}}
+
+# {{lb|en|chiefly|humorous}} {{inflection of|en|shoop||p}}
+
+===References===
+<references/>
+
+===Anagrams===
+* {{anagrams|en|a=eehps|Ephes.|HEPES|heeps|shepe}}
+
+[[Category:en:Sheep]]
+
+==Middle English==
+
+===Noun===
+{{head|enm|noun}}
+
+# {{alt form|enm|schep}}
+
+==Scots==
+
+===Etymology===
+From {{inh|sco|enm|schep}}, from {{inh|sco|ang|scēap}}, from {{inh|sco|gem-pro|*skēpą}}.
+
+===Pronunciation===
+* {{IPA|sco|[ʃip]}}
+
+===Noun===
+{{sco-noun|sheep}}
+
+# [[#English|sheep]] {{gloss|woolly ruminant of the genus ''Ovis''}}
+
+====Alternative forms====
+* {{l|sco|schepe}}, {{l|sco|scheep}}, {{l|sco|scheip}}, {{l|sco|schip}}, {{l|sco|schap}}
+
+{{topics|sco|Sheep}}
+
+==Yola==
+
+===Noun===
+{{head|yol|noun}}
+
+# {{alt form|yol|zheep}}
+#* {{quote-book|yol|year=1867|chapter=A YOLA ZONG|number=9|title=SONGS, ETC. IN THE DIALECT OF FORTH AND BARGY|passage=Wourlok'd an anooree, lick lhuskès o' '''sheep'''.|translation=Tumbled on one-another, like flocks of '''sheep'''.}}
+
+===References===
+* {{R:Poole 1867|page=88}}

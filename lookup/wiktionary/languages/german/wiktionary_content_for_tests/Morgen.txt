@@ -1,0 +1,334 @@
+Morgen
+de
+Original article URL: https://de.wiktionary.org/wiki/Morgen
+{{Siehe auch|[[morgen]]}}
+== Morgen ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{m}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=m
+|Nominativ Singular=Morgen
+|Nominativ Plural=Morgen
+|Genitiv Singular=Morgens
+|Genitiv Plural=Morgen
+|Dativ Singular=Morgen
+|Dativ Plural=Morgen
+|Akkusativ Singular=Morgen
+|Akkusativ Plural=Morgen
+}}
+
+{{Worttrennung}}
+:Mor·gen, {{Pl.}} ''selten:'' Mor·gen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈmɔʁɡn̩}}, {{Lautschrift|ˈmɔʁɡŋ̍}}
+:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}
+:{{Reime}} {{Reim|ɔʁɡn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[Tageszeit]] zwischen [[Nacht]] und [[Vormittag]]
+:[2] [[veraltend]] für den [[Osten]], da die [[Sonne]] bei [[Sonnenaufgang]] im Osten steht
+:[3] [[historisch]]es [[Flächenmaß]], variierte je nach Zeitabschnitt und Landstrich in seiner Größe
+:[4] {{K|umgangssprachlich|ft=kurz für}} die [[morgendlich]]e [[Begrüßung]] „[[guten Morgen|Guten Morgen]]!“
+
+{{Abkürzungen}}
+:[3] [[Mrg.]] entspricht heute 1/4 ha = 2500 qm
+:[3] [[A]] für das englische „[[Acre]]“ ([[Flächeneinheit]] in den [[USA]] und [[Großbritannien]])
+
+{{Herkunft}}
+:Das Wort ''Morgen'' ist [[wahrscheinlich]] auf die [[indogermanisch]]e Verbalwurzel ''*…'' von „[[flimmern]], [[schimmern]], [[dämmern]]“ zurückzuführen und zeigt eine enge [[Verwandtschaft]] zu den indogermanischen Wörtern ''*…, *…'' für „[[Lichtstrahl]], [[Luftspiegelung]]“ oder zu dem russischen Wort für „[[Finsternis]] ''([[мрак]]),'' [[Nebel]] ''([[мгла]])''“. {{QS Herkunft|unbelegt}}
+:Mit [3] wurde die Fläche bezeichnet, die an einem Morgen mit einem (Ochsen-)[[Gespann]] bepflügt werden konnte. {{QS Herkunft|unbelegt}}
+
+{{Synonyme}}
+:[1] erste [[Tageshälfte]], früher [[Vormittag]], [[Morgenstunde]], [[Morgenzeit]], [[Tagesanbruch]], [[Tagesbeginn]], der [[junge]] Tag (''gehoben''), [[Frühe]], [[in aller Herrgottsfrühe]], zu früher [[Stunde]]
+:[2] [[Osten]], [[Ost]]
+:[4] „[[guten Morgen]]!“, „[[moin]]!“, „[[moin, moin]]!“, ''siehe auch:'' [[Verzeichnis:Deutsch/Grüßen/Begrüßungsformeln|Begrüßungsformeln]]
+
+{{Sinnverwandte Wörter}}
+:[3] [[Acre]], [[Joch]], [[Jucharte]], [[Mannsmade]], [[Mannwerk]], [[Tagwan]], [[Tagwerk]]/[[Tagewerk]]
+
+{{Gegenwörter}}
+:[1] [[Abend]], [[Mittag]], [[Mitternacht]], [[Nacht]], [[Nachmittag]], [[Vormittag]]
+:[2] [[Abend]], [[Westen]], [[West]]
+:[4] [['n Abend]]!
+
+{{Oberbegriffe}}
+:[1] [[Tageszeit]]
+:[2] [[Himmelsrichtung]]
+:[3] [[Maßeinheit]], [[Flächenmaß]], [[Feldmaß]]
+:[4] [[Begrüßung]], [[Gruß]], [[Grußformel]]
+
+{{Unterbegriffe}}
+:[1] ''nach Zeit (Wochentage):''
+:[[Dienstagmorgen]], [[Donnerstagmorgen]], [[Freitagmorgen]], [[Mittwochmorgen]], [[Montagmorgen]], [[Samstagmorgen]], [[Sonnabendmorgen]], [[Sonntagmorgen]]
+:[1] ''nach Zeit (Monate):''
+:[[Januarmorgen]]/[[Jännermorgen]], [[Februarmorgen]]/[[Febermorgen]], [[Märzmorgen]], [[Aprilmorgen]], [[Maimorgen]], [[Julimorgen]], [[Augustmorgen]], [[Septembermorgen]], [[Oktobermorgen]], [[Novembermorgen]], [[Dezembermorgen]]
+:[1] ''nach Zeit (Jahreszeiten):''
+:[[Frühjahrsmorgen]], [[Frühlingsmorgen]], [[Herbstmorgen]], [[Sommermorgen]], [[Wintermorgen]]
+:[1] ''nach Zeit (Feiertage):''
+:[[Neujahrsmorgen]], [[Silvestermorgen]], [[Ostermorgen]], [[Weihnachtsmorgen]]
+
+{{Beispiele}}
+:[1] „Das sind doch Brötchen vom gestrigen ''Morgen!''“, beschwerte er sich.
+:[1] Da ward aus Abend und ''Morgen'' der erste Tag.<ref>Die Bibel nach der Übersetzung M. [[w:Luther|Luthers]], Genesis 1, Vers 5</ref>
+:[1] Der ''Morgen'' ist die schönste Zeit auf dem Land. In der Stadt gibt es keinen ''Morgen''.<ref>D. [[w:Darrieux|Darrieux]]</ref>
+:[1] „Am ''Morgen'' vor unserer Abreise trug ich noch einmal den Handkoffer auf das mexikanische Konsulat.“<ref>{{Literatur | Autor=Anna Seghers  |Titel= Transit| TitelErg= Roman|Verlag= Süddeutsche Zeitung| Ort=München | Jahr=2007 | Seiten=31.| ISBN=978-3-86615-524-4}} Zuerst 1951.</ref>
+:[2] Sie wandten sich gen ''Morgen.''
+:[2] „Bis Ende des Jahres präsentiert die Pariser Galerie Louis Vuitton in der Ausstellung »Métamorphoses« neun Künstler aus dem Land des stillen ''Morgens''.“<ref>[http://www.arte.tv/de/suedkoreanische-kunst/2336484,CmC=2343270.html ARTE: Südkoreanische Kunst]</ref>
+:[2] „Der Hof steht am östlichen Ausläufer einer schmalen Geländerippe, die sich in der Ausdehnung einer halben Wegstunde von Abend nach ''Morgen'' erstreckt in leichtem Bogen, […]“<ref>{{Literatur | Autor=Wilhelm Dieß | Titel=Blitz | Auflage= | Verlag=Deutscher Taschenbuch Verlag | Ort=München | Jahr=1979 | ISBN=3-466-10055-0 | Seiten=5 }}</ref>
+:[3] „Für das Ackergrundstück von drei ''Morgen'' ist eine jährliche Pacht von 12 Thaler Courant zu entrichten“, sagte er und zog von dannen.
+:[4] „Morgen!“, sagte sie gedankenverloren, während sie in ihr Büro ging.
+
+{{Redewendungen}}
+:[[der Morgen danach|der ''Morgen'' danach]]
+:[[zum Morgen essen|zum ''Morgen'' essen]]
+:[[schön wie der junge Morgen|schön wie der junge ''Morgen'']], [[frisch wie der junge Morgen|frisch wie der junge ''Morgen'']]
+:[[Abend rot, Morgen grau gibt das schönste Tagesblau.|Abend rot, ''Morgen'' grau gibt das schönste Tagesblau.]]
+:[[Spinne am Morgen bringt Kummer und Sorgen|Spinne am ''Morgen'' bringt Kummer und Sorgen]], [[Spinnen am Morgen bringt Kummer und Sorgen|Spinnen am ''Morgen'' bringt Kummer und Sorgen]]
+:[[der Morgen ist weiser als der Abend|Der ''Morgen'' ist weiser als der Abend.]] (Russisches Sprichwort)
+:[[der Morgen grau, der Abend rot, ist ein gut Wetterbot|Der ''Morgen'' grau, der Abend rot, ist ein gut Wetterbot.]] ([[Bauernregel]])
+:[[grauer Morgen, schöner Tag.|Grauer ''Morgen'', schöner Tag.]] (Bauernregel)
+:[[ist Sankt Anna erst einmal vorbei, kommt der Morgen kühl herbei|Ist Sankt Anna erst einmal vorbei, kommt der ''Morgen'' kühl herbei.]] (Bauernregel)
+
+{{Sprichwörter}}
+:[[am Abend gekammert, am Morgen gejammert|am Abend gekammert, am ''Morgen'' gejammert]]
+:[[am Abend ist der Tanz lieb, am Morgen der Schlaf süß|am Abend ist der Tanz lieb, am ''Morgen'' der Schlaf süß]]
+
+{{Charakteristische Wortkombinationen}}
+:[2] [[gen]] ''Morgen''
+
+{{Wortbildungen}}
+:[[Morgenandacht]], [[Morgenappell]], [[Morgenarbeit]], [[Morgenausgabe]], [[Morgenbillet]], [[Morgenblatt]], [[Morgenbrise]], [[Morgendämmer]], [[Morgendämmern]], [[Morgendämmerung]], [[Morgenduft]], [[Morgendunst]], [[Morgenessen]], [[Morgenfeier]], [[Morgenfrische]], [[Morgenfrost]], [[Morgenfrühe]], [[Morgengabe]], [[Morgengast]], [[Morgengebet]], [[Morgenglanz]], [[Morgenglocke]], [[Morgengrau]], [[Morgengrauen]], [[Morgengruß]], [[Morgengymnastik]], [[Morgenhaube]], [[Morgenhelle]], [[Morgenhimmel]], [[Morgenjacke]], [[Morgenkaffee]], [[Morgenkleid]], [[Morgenkonferenz]], [[Morgenkühle]], [[Morgenland]], [[Morgenlatte]], [[Morgenlicht]], [[Morgenlied]], [[Morgenluft]], [[Morgenmagazin]], [[Morgenmantel]], [[Morgenmensch]], [[Morgenmesse]], [[Morgenmilch]], [[Morgenmuffel]], [[Morgenmusik]], [[Morgennebel]], [[Morgenpost]], [[Morgenpresse]], [[Morgenprogramm]], [[Morgenreif]], [[Morgenritt]], [[Morgenrock]], [[Morgenrot]], [[Morgenröte]], [[Morgenrunde]], [[Morgenschein]], [[Morgenschicht]], [[Morgenschimmer]], [[Morgenschlaf]], [[Morgensegen]], [[Morgenseite]], [[Morgenshow]], [[Morgensonne]], [[Morgensonnenschein]], [[Morgenspaziergang]], [[Morgenstern]], [[Morgenstille]], [[Morgenstrahl]], [[Morgenstreich]], [[Morgenstunde]], [[Morgensuppe]], [[Morgentau]], [[Morgentoilette]], [[Morgenurin]], [[Morgenvisite]], [[Morgenwind]], [[Morgenzeitung]], [[Morgenzug]]
+:''Name:'' [[Morgenthau]]
+:[[morgen]], [[morgens]]
+:[[morgend]], [[morgendlich]], [[morgenfrisch]], [[morgenschön]], [[morgenstill]], 
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Tageszeit zwischen Nacht und Vormittag|Ü-Liste=
+*{{sq}}: {{Ü|sq|mëngjes}} {{m}}
+*{{ar}}: {{Üt|ar|صَبَاح|ṣabāḥ}}
+*{{bs}}: {{Ü|bs|jutro}}
+*{{bg}}: {{Üt|bg|сутрин|sutrin}}, {{Üt|bg|утрин|}} {{f}}
+*{{zh}}: {{Üt|zh|早晨|zǎochén}}, {{Üt|zh|上午|shàngwǔ}}
+*{{da}}: {{Ü|da|morgen}} {{u}}
+*{{en}}: {{Ü|en|morning}}
+*{{eo}}: {{Ü|eo|mateno}}
+*{{et}}: {{Ü|et|hommik}}
+*{{fo}}: {{Ü|fo|morgun}} {{m}}
+*{{fi}}: {{Ü|fi|aamu}}
+*{{fr}}: {{Ü|fr|matin}} {{m}}
+*{{gl}}: {{Ü|gl|mañá}} {{f}}
+*{{ka}}: {{Üt|ka|დილა|dila}}, {{Üt|ka|განთიადი|gantiadi}}
+*{{el}}: {{Üt|el|πρωί|proí}} {{n}}
+*{{kl}}: {{Ü|kl|ullaaq}}
+*{{io}}: {{Ü|io|matino}}
+*{{ia}}: {{Ü|ia|matino}}
+*{{is}}: {{Ü|is|morgunn}} {{m}}
+*{{it}}: {{Ü|it|mattina}} {{f}}, {{Ü|it|mattino}} {{m}}
+*{{ja}}: {{Üt|ja|朝|あさ, asa}}, {{Üt|ja|午前|ごぜん, gozen}}
+*{{ca}}: {{Ü|ca|matí}} {{m}}, {{Ü|ca|matinada}} {{f}} (Verlauf)
+*{{tlh}}: {{Ü|tlh|po}}
+*{{ko}}: {{Üt|ko|아침|a-tschim}}
+*{{hr}}: {{Ü|hr|jutro}} {{n}}
+*{{la}}: {{Ü|la|mane}} {{n}}
+*{{lv}}: {{Ü|lv|rīts}} {{m}}
+*{{lt}}: {{Ü|lt|rytas}} {{m}}
+*{{mk}}: {{Üt|mk|утро|utro}} {{n}}
+*{{nl}}: {{Ü|nl|morgen}} {{m}}, {{Ü|nl|ochtend}} {{m}}
+*{{se}}: {{Ü|se|iđit}}
+*{{no}}: {{Ü|no|morgen}} {{m}}
+*{{oc}}: {{Ü|oc|matinada}} ''(Verlauf)''
+*{{pl}}: {{Ü|pl|rano}}, {{Ü|pl|poranek}}
+*{{pt}}: {{Ü|pt|manhã}}
+*{{rm}}: {{Ü|rm|damaun}}
+*{{ro}}: {{Ü|ro|dimineață}} {{f}}
+*{{ru}}: {{Üt|ru|утро}} {{n}}
+*{{sv}}: {{Ü|sv|morgon}} {{u}}
+*{{sr}}: {{Üt|sr|јутро|jutro}} {{n}}
+*{{sk}}: {{Ü|sk|ráno}} {{n}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|zajtšo}}, {{Ü|dsb|rano}}
+**{{hsb}}: {{Ü|hsb|ranje}}, ''reg.'' {{Ü|hsb|ranjo}}
+*{{es}}: {{Ü|es|mañana}} {{f}}, {{Ü|es|madrugada}} {{f}}
+*{{th}}: {{Üt|th|เช้า|cháao}}
+*{{cs}}: {{Ü|cs|jitro}} {{n}}, {{Ü|cs|ráno}} {{n}}
+*{{tr}}: {{Ü|tr|sabah}}
+*{{uk}}: {{Üt|uk|ранок|}}, {{Üt|uk|доброго ранку|}}
+*{{hu}}: {{Ü|hu|reggel}}
+*{{vi}}: {{Ü|vi|sáng}}
+|Dialekttabelle=
+*Bairisch: Morgen, Muagn, Muang
+*Elsässisch: [[müggen]]
+*Hessisch: [?] [[Mojje]]
+*Platt: [[Morgen]]
+*Schwäbisch: kommt auf die Gegend an: [[Guada Morga]], [[Gudda Morga]], [[Moriga]]
+}}
+
+{{Ü-Tabelle|2|G=veraltend für den Osten, da die Sonne bei Sonnenaufgang im Osten steht|Ü-Liste=
+*{{fr}}: {{Ü|fr|levant}} {{m}}
+*{{it}}: {{Ü|it|levante}} {{m}}
+*{{rm}}: {{Ü|rm|damaun}}
+*{{ro}}: {{Ü|ro|răsărit}} {{n}}
+*{{sv}}: {{Ü|sv|morgon}} {{u}}
+*{{wen}}:
+**{{dsb}}: 
+**{{hsb}}: {{Ü|hsb|wuchod}}
+|Dialekttabelle=
+*Bairisch: Morgen, Muagn, Muang
+*Elsässisch: [[müggen]]
+*Hessisch: [?] [[Mojje]]
+*Platt: [[Morgen]]
+*Schwäbisch: kommt auf die Gegend an: [[Guada Morga]], [[Gudda Morga]], [[Moriga]]
+}}
+
+{{Ü-Tabelle|3|G=historisches Flächenmaß, variierte je nach Zeitabschnitt und Landstrich in seiner Größe|Ü-Liste=
+*{{fr}}: {{Ü|fr|arpent}} {{m}}
+*{{is}}: {{Ü|is|ekra}} {{f}}
+*{{it}}: {{Ü|it|iugero}} {{m}}
+*{{mk}}: {{Üt|mk|утро|utro}} {{n}}
+*{{nl}}: {{Ü|nl|morgen}} {{m}} {{f}}
+*{{sv}}: {{Ü|sv|plogland}}
+*{{sr}}: {{Üt|sr|јутро|jutro}} {{n}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|morgen}}
+**{{hsb}}: {{Ü|hsb|jutro}}
+*{{cs}}: {{Ü|cs|jitro}} {{n}}
+*{{hu}}: {{Ü?|hu|hold}}
+|Dialekttabelle=
+*Bairisch: Morgen, Muagn, Muang
+*Elsässisch: [[müggen]]
+*Hessisch: [?] [[Mojje]]
+*Platt: [[Morgen]]
+*Schwäbisch: kommt auf die Gegend an: [[Guada Morga]], [[Gudda Morga]], [[Moriga]]
+}}
+
+{{Ü-Tabelle|4|G=umgangssprachlich, kurz für: die morgendliche Begrüßung „Guten Morgen!“|Ü-Liste=
+*{{en}}: {{Ü|en|good morning}}
+*{{fi}}: {{Ü|fi|huomenta}}
+*{{fr}}: {{Ü|fr|bonjour}}
+*{{el}}: {{Üt|el|καλημέρα|kaliméra}} {{f}}
+*{{it}}: {{Ü|it|buona mattina}} {{f}}, {{Ü|it|buon giorno}} {{m}}, (fam) {{Ü|it|buondì}} {{m}}
+*{{ja}}: {{Üt|ja|お早う|ohayō}}, {{Üt|ja|おはよーん|ohayōn}}
+*{{ru}}: {{Üt|ru|доброе утро}}
+*{{sv}}: {{Ü|sv|god morgon}}
+*{{cs}}: {{Ü|cs|brý ráno}} {{n}}, {{Ü|cs|bré ráno}} {{n}}
+|Dialekttabelle=
+*Bairisch: Morgen, Muagn, Muang
+*Elsässisch: [[müggen]]
+*Hessisch: [?] [[Mojje]]
+*Platt: [[Morgen]]
+*Schwäbisch: kommt auf die Gegend an: [[Guada Morga]], [[Gudda Morga]], [[Moriga]]
+}}
+
+{{Referenzen}}
+:[1–3] {{Wikipedia|Morgen}}
+:[1] {{Wikipedia|Morgen (Tageszeit)}}
+:[1] {{Wikiquote|Morgen}}
+:[3] {{Wikipedia|Morgen (Einheit)}}
+:[1] {{Ref-Grimm|Morgen}}
+:[1] {{Ref-DWDS|Morgen}}
+:[1] {{Ref-UniLeipzig|Morgen}}
+
+{{Quellen}}
+
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Morgen
+|Nominativ Plural=—
+|Genitiv Singular=Morgen
+|Genitiv Plural=—
+|Dativ Singular=Morgen
+|Dativ Plural=—
+|Akkusativ Singular=Morgen
+|Akkusativ Plural=—
+}}
+
+{{Worttrennung}}
+:Mor·gen, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈmɔʁɡŋ̍}}, {{Lautschrift|ˈmɔʁɡn̩}}
+:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}
+:{{Reime}} {{Reim|ɔʁɡn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] das [[Zukünftige]], [[Morgige]]
+
+{{Herkunft}}
+:[[Substantivierung]] des Adverbs [[morgen]]
+
+{{Synonyme}}
+:[1] [[Zukunft]]
+
+{{Gegenwörter}}
+:[1] [[Vergangenheit]], das [[Gestrige]]
+
+{{Oberbegriffe}}
+:[1] [[Zeit]]
+
+{{Beispiele}}
+:[1] Das ''Morgen'' wird über das Heute richten. Das Morgen gehört uns ganz allein.
+:[1] Oft verpassen wir die Blüte, die auf den Nachmittag wartet, im atemlosen Kampf um das Morgen.<ref>[[w:Anne Morrow Lindbergh|A. M. Lindbergh]], „Muscheln in meiner Hand“</ref>
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=das Zukünftige, Morgige|Ü-Liste=
+*{{bg}}: {{Üt|bg|утре|utre}}
+*{{en}}: the {{Ü|en|morrow}}, {{Ü|en|tomorrow}} ''ohne Artikel''
+*{{fr}}: {{Ü|fr|demain}} {{m}}
+*{{it}}: {{Ü|it|domani}}
+*{{ja}}: {{Üt|ja|明日|あした, ashita}}
+*{{ca}}: {{Ü|ca|demà}} {{m}}
+*{{ko}}: {{Üt|ko|내일|nä-il}}
+*{{ro}}: {{Ü|ro|mâine}}
+*{{ru}}: {{Üt|ru|завтра}}
+*{{sv}}: {{Ü|sv|morgondag}}
+*{{es}}: el (!) {{Ü|es|mañana}} {{m}} (im Gegensatz zu ''la mañana'' mit der Bedeutung der Morgen, vgl. den Zusammenhang von ''der / das Morgen'' in der dt. Sprache)
+*{{cs}}: {{Ü|cs|zítřek}} {{m}}
+*{{tr}}: {{Ü|tr|sabah}}
+|Dialekttabelle=
+*Elsässisch:
+*Kölsch: [1] [[Morjen]]
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Morgen}}
+:[1] {{Wikiquote|Morgen}}
+
+{{Quellen}}
+
+=== {{Wortart|Substantiv|Deutsch}}, {{n}}, {{Wortart|Toponym|Deutsch}} ===
+
+{{Deutsch Toponym Übersicht
+}}
+
+{{Worttrennung}}
+:Mor·gen, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈmɔʁɡŋ̍}}, {{Lautschrift|ˈmɔʁɡn̩}}
+:{{Hörbeispiele}} {{Audio|}}
+:{{Reime}} {{Reim|ɔʁɡn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[deutsch]]er Name des [[polnisch]]en [[Ort]]es [[Kumielsk]] in den [[Masuren]]
+
+{{Oberbegriffe}}
+:[1] [[Siedlung]]
+
+{{Beispiele}}
+:[1] Das ''Morgen'' der Vorkriegszeit.
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=deutscher Name des polnischen Ortes Kumielsk in den Masuren|Ü-Liste=
+*{{fr}}: {{Ü|fr|}}
+*{{pl}}: {{Ü|pl|Kumielsk}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Kumielsk}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[borgen]], [[Moren]], [[morgens]], [[Morgens]], [[morsen]], [[sorgen]], [[Sorgen]]}}

@@ -41,7 +41,7 @@ def _error_by_request_status_code(text: str, locale: str, response: requests.Res
 
 def search_articles(search_text: str, endpoint_language_code: str) -> StatusOr[List[WebArticle]]:
     params = _COMMON_PARAMS | {
-        'search': search_text.lower(),
+        'search': search_text,
         'action': 'opensearch',
         'profile': 'fuzzy',
         'redirects': 'resolve',

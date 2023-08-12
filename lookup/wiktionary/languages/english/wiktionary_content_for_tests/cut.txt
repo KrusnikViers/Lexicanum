@@ -1,0 +1,1120 @@
+cut
+en
+Original article URL: https://en.wiktionary.org/wiki/cut
+{{also|CUT|cút|cứt|čut|cụt}}
+==English==
+
+===Etymology===
+From {{inh|en|enm|cutten}}, {{m|enm|kitten}}, {{m|enm|kytten}}, {{m|enm|ketten|t=to cut}} (compare {{cog|sco|kut}}, {{m|sco|kit|t=to cut}}), of {{der|en|gmq}} origin, from {{der|en|non|kytja}}, {{m|non|kutta}}, from {{der|en|gem-pro|*kutjaną}}, {{m|gem-pro|*kuttaną|t=to cut}}, of uncertain origin, perhaps related to {{der|en|gem-pro|*kwetwą|t=meat, flesh}} (compare {{cog|non|kvett|t=meat}}). Akin to Middle {{cog|sv|kotta|t=to cut or carve with a knife}} (compare dialectal {{cog|sv|kåta}}, {{m|sv|kuta|t=to cut or chip with a knife}}, {{cog|sv|kuta}}, {{m|sv|kytti|t=a knife}}), {{cog|nb|kutte|t=to cut}}, {{cog|nn|kutte|t=to cut}}, {{cog|is|kuta|t=to cut with a knife}}, {{cog|non|kuti|t=small knife}}, {{cog|no|kyttel}}, {{m|no|kytel}}, {{m|no|kjutul|t=pointed slip of wood used to strip bark}}.
+
+Displaced native {{noncog|enm|snithen}} (from {{noncog|ang|snīþan}}; compare {{noncog|de|schneiden}}), which still survives in some dialects as {{m|en|snithe}} or {{m|en|snead}}. See {{m|en|snide}}.
+
+Adjective sense of "drunk" (now rare and now usually used in the originally jocular derivative form of ''[[half cut|half-cut]]'') dates from the 17th century, from ''cut in the leg'', ''to have cut your leg'', euphemism for being very drunk.
+
+===Pronunciation===
+* {{IPA|en|/kʌt/}}
+* {{audio|en|en-us-cut.ogg|Audio (US)}}
+* {{audio|en|EN-AU ck1 cut.ogg|Audio (AU)}}
+* {{audio|en|En-au-cut.ogg|Audio (AUS)}}
+* {{rhymes|en|ʌt|s=1}}
+
+===Verb===
+{{en-verb|cuts|cutting|cut}}
+
+# {{lb|en|transitive}} To [[incise]], to cut into the surface of something.
+## To [[perform]] an [[incision]] on, for example with a [[knife]].
+##* {{RQ:Shakespeare Merchant of Venice|act=IV|scene=i|passage=You must '''cut''' this flesh from off his breast.}}
+## To [[divide]] with a [[knife]], [[scissors]], or another [[sharp]] [[instrument]].
+##: {{uxi|en|Would you please '''cut''' the cake?}}
+##* {{RQ:Homer Pope et al Odyssey|book=III|passage=Before the whistling winds the vessels fly, / With rapid swiftness '''cut''' the liquid way.}}
+##* {{quote-book|en|date=8 May 2012|page=79|title=Ottolenghi: The Cookbook| author= {{w|Yotam Ottolenghi}}| author2=Sami Tamimi| publisher={{w|Random House}}| url= https://books.google.co.nz/books?id=WFzJR9ZZ7aEC| isbn=9781446407097| passage=First, marinate the tofu. In a bowl, whisk the kecap manis, chilli sauce, and sesame oil together. '''Cut''' the tofu into strips about 1cm thick, mix gently (so it doesn't break) with the marinade and leave in the fridge for half an hour.}}
+## To [[form]] or [[shape]] by cutting.
+##: {{uxi|en|I have three diamonds to '''cut''' today.}}
+##* {{RQ:Shakespeare Merchant of Venice|act=I|scene=i|passage=Why should a man, whose blood is warm within, / Sit like his grandsire '''cut''' in alabaster}}
+##* {{RQ:Milton Paradise Lost|book=8|passage=loopholes '''cut''' through thickest shade}}
+## {{lb|en|slang}} To [[wound]] with a knife.
+##* {{quote-text|en|year=1990|author={{w|Stephen Dobyns}}|title=The house on Alexandrine
+|passage=We don't want your money no more. We just going to '''cut''' you.}}
+## {{lb|en|intransitive}} To engage in [[self-harm]] by making cuts in one's own skin.
+##: {{uxi|en|The patient said she had been '''cutting''' since the age of thirteen.}}
+## To deliver a [[stroke]] with a [[whip]] or like instrument to.
+##* {{RQ:Ferguson Zollenstein|IV
+|passage=“My Continental prominence is improving,” I commented dryly. ¶ Von Lindowe '''cut''' at a furze bush with his silver-mounted rattan. ¶ “Quite so,” he said as dryly, his hand at his mustache. “I may say if your intentions were known your life would not be worth a curse.”}}
+## To wound or hurt deeply the sensibilities of; to pierce.
+##: {{ux|en|Sarcasm '''cuts''' to the quick.}}
+##* {{quote-text|en|year=1829|author=Elijah Hoole|title=Personal Narrative of a Mission to the South of India, from 1820 to 1828
+|passage=she feared she should laugh to hear an European preach in Tamul , but on the contrary , was '''cut''' to the heart by what she heard}}
+## To [[castrate]] or [[geld]].
+##: {{ux|en|to '''cut''' a horse}}
+## To [[interfere]], as a horse; to strike one foot against the opposite foot or ankle in using the legs.
+# {{lb|en|intransitive}} To admit of incision or severance; to yield to a cutting instrument.
+#* {{quote-text|en|year=1858|author={{w|Oliver Wendell Holmes, Sr.}}|title={{w|The Autocrat of the Breakfast-Table}}'', ''The Deacon's Masterpiece|chapter=XI
+|passage=The panels of white-wood that '''cuts''' like cheese, / But lasts like iron for things like these;}}
+# {{lb|en|transitive|social}} ''To [[separate]], [[remove]], [[reject]] or [[reduce]].''
+## To [[separate]] or [[omit]], in a situation where one was [[previous]]ly [[associated]].
+##: {{ux|en|Travis was '''cut''' from the team.}}
+## To [[abridge]] or [[shorten]] a work; to remove a portion of a [[recording]] during [[editing]].
+## To [[reduce]], especially intentionally.
+##: {{ux|en|They're going to '''cut''' salaries by fifteen percent.}}
+##* {{quote-journal|en|date=2013-05-17|author={{w|George Monbiot}}| volume=188| issue=23| page=19| magazine={{w|The Guardian Weekly}}| title=[http://www.guardian.co.uk/commentisfree/2013/may/06/politics-envy-keenest-rich Money just makes the rich suffer]| passage=In order to grant the rich these pleasures, the social contract is reconfigured. The welfare state is dismantled. Essential public services are '''cut''' so that the rich may pay less tax.}}
+##* {{quote-journal|en|date=2022 January 12|author=Nigel Harris|title=Comment: Unhappy start to 2022|journal=RAIL|issue=948|page=3|text=The principle of prioritising longer-distance trains by '''cutting''' services to wayside stations (often leading directly to their closure) is not new.}}
+## To absent oneself from (a class, an appointment, etc.).
+##: {{ux|en|I '''cut''' fifth period to hang out with Angela.}}
+##* {{quote-text|en|year=1833|author={{w|Thomas Hamilton (writer)|Thomas Hamilton}}|title=Men and Manners in America
+|passage=An English tradesman is always solicitous to '''cut''' the shop whenever he can do so with impunity.}}
+# {{lb|en|transitive|social}} To [[ignore]] as a social [[rebuff]] or [[snub]].
+#: {{syn|en|spear}}
+#: {{ux|en|After the incident at the dinner party, people started to '''cut''' him on the street.}}
+#* {{Q|en|Samuel Barber|The Way of All Flesh|chapter 73|year=1903|quote=At first it had been very painful to him to meet any of his old friends, [...] but this soon passed; either they '''cut''' him, or he '''cut''' them; it was not nice being '''cut''' for the first time or two, but after that, it became rather pleasant than not [...] The ordeal is a painful one, but if a man's moral and intellectual constitution are naturally sound, there is nothing which will give him so much strength of character as having been well '''cut'''.}}
+#* {{Q|en|Gore Vidal|Burr|year=1973|quote=The ordinary people greet him ''(Aaron Burr)'' warmly while the respectable folk tend '''to cut''' him dead.}}
+#* {{Q|en|Kane, Kathryn|The Regency Redingote Blog|The Cut: The Ultimate & Final Social Weapon|year=27 September 2013|quote=The Monthly Magazine, Or, British Register for 1798 included an explanation by a reader of how the cut was carried out in his college days in a lengthy letter to the editor, signed by the pseudonym "Ansonius." In his rambling letter, Ansonius noted that when he was at college, ''" … if a man passed an old acquaintance wittingly, without recognizing him, he was said— ‘'''To cut''' him.’"'' Ansonius then went on to explain the performance of the cut and noted that for a time the term "to spear" was used instead of to cut. However, that term did not remain long in use, and this act was generally known as "the cut" ever after.}}
+# {{lb|en|intransitive|cinema}} To make an abrupt transition from one [[scene]] or image to another.
+#: ''The camera then '''cut''' to the woman on the front row who was clearly overcome and crying tears of joy.''
+# {{lb|en|transitive|film}} To [[edit]] a film by selecting [[takes]] from original [[footage]].
+# {{lb|en|transitive|computing}} To [[remove]] (text, a picture, etc.) and place in [[memory]] in order to [[paste]] at a later time.
+#: {{ux|en|Select the text, '''cut''' it, and then paste it in the other application.}}
+# {{lb|en|intransitive}} To [[enter]] a [[queue]] in the wrong place.
+#: {{ux|en|One student kept trying to '''cut''' in front of the line.}}
+# {{lb|en|intransitive}} To [[intersect]] or [[cross]] in such a way as to [[divide]] in [[half]] or nearly so.
+#: {{ux|en|This road '''cuts''' right through downtown.}}
+#* {{quote-journal|en|date=January 18, 2011|author=Daniel Taylor| work=Guardian Online| title=[http://www.guardian.co.uk/football/2011/jan/18/manchester-city-leicester-city-fa-cup Manchester City 4 Leicester City 2]| passage=Neither Joleon Lescott nor Vieira appeared to make any contact with Dyer as he '''cut''' between them.}}
+#* {{quote-journal|en|date=2013-08-16|author=[http://www.theguardian.com/profile/johnvidal John Vidal]| volume=189| issue=10| page=8| magazine={{w|The Guardian Weekly}}| title=[http://www.theguardian.com/global-development/2013/aug/10/china-india-water-grab-dams-himalayas-danger Dams endanger ecology of Himalayas]| passage=Most of the Himalayan rivers have been relatively untouched by dams near their sources. Now the two great Asian powers, India and China, are rushing to harness them as they '''cut''' through some of the world's deepest valleys.}}
+# {{lb|en|transitive|cricket}} To make the ball spin sideways by running one's [[finger]]s down the side of the ball while bowling it. {{rfex|en}}
+# {{lb|en|transitive|cricket}} To [[deflect]] (a bowled ball) to the [[off]], with a chopping movement of the [[bat]].
+# {{lb|en|intransitive}} To change [[direction]] suddenly.
+#: {{ux|en|The football player '''cut''' to his left to evade a tackle.}}
+# {{lb|en|transitive|intransitive}} To [[divide]] a [[pack]] of [[playing card]]s into two.
+#: {{ux|en|If you '''cut''' then I'll deal.}}
+# {{senseid|en|to conclude}} {{lb|en|transitive|slang}} To [[make]], to [[negotiate]], to [[conclude]].
+#: {{ux|en|I'll '''cut''' a check for you.}}
+#: {{ux|en|I didn't deserve it, but he '''cut''' me a deal.}}
+#: {{coi|en|to '''cut''' a deal, to '''cut''' deals}}
+#: {{coi|en|to '''cut''' a fantastic deal, to '''cut''' a raw deal}}
+# {{lb|en|transitive|slang}} To [[dilute]] or [[adulterate]] something, especially a recreational drug.
+#: {{ux|en|The best malt whiskies are improved if they are '''cut''' with a dash of water.}}
+#: {{ux|en|The bartender '''cuts''' his beer to save money and now it's all watery.}}
+#: {{ux|en|Drug dealers sometimes '''cut''' cocaine with lidocaine.}}
+# {{lb|en|transitive}} To exhibit (a quality). <!--needs improving: you don't cut a quality, but a figure-->
+#* {{quote-journal|en|date=January 25, 2011|author=Paul Fletcher|work=BBC| title=[http://news.bbc.co.uk/sport2/hi/football/league_cup/9371217.stm Arsenal 3-0 Ipswich (agg. 3-1)]| passage=Arsenal were starting to work up a head of steam and Tractor Boys boss Paul Jewell '''cut''' an increasingly frustrated figure on the touchline.}}
+# {{lb|en|transitive}} To [[stop]], [[disengage]], or [[cease]].
+#:{{syn|en|cut out}}
+#: {{ux|en|The schoolchildren were told to '''cut''' the noise.}}
+#: {{ux|en|'''Cut''' the engines when the plane comes to a halt!}}
+# {{lb|en|sports}} To drive (a [[ball]]) to one side, as by (in billiards or croquet) hitting it [[fine]] with another ball, or (in tennis) striking it with the racket inclined.
+# {{senseid|en|losemass}} {{lb|en|bodybuilding}} To [[lose]] [[body mass]], aiming to keep [[muscle]] but lose [[body fat]].
+#: {{cot|en|bulk|id1=gainmass}}
+# To perform (a dancing movement etc.).
+#: ''to [[cut a caper]]''
+#* {{quote-book|en|year=1863|author=Sheridan Le Fanu|title={{w|The House by the Churchyard}}| passage='Choke, chicken, there's more a-hatching,' said Miss Mag, in a sort of aside, and '''cutting''' a flic-flac with a merry devilish laugh, and a wink to Puddock.}}
+
+====Synonyms====
+* See [[Thesaurus:cut]]
+
+====Troponyms====
+* [[chop]], [[hack]], [[slice]], [[trim]]
+
+====Derived terms====
+{{der4|en|title=single words
+|becut
+|buzzcut
+|crosscut
+|cutaway
+|cut-away
+|cutthroat
+|forcut
+|forecut
+|incut
+|offcut
+|outcut
+|overcut
+|undercut
+|uncut
+}}
+
+{{der4|en|title=multiword phrases
+|cut stick|cut bait|cut and come again|cut-and-shut||cut for sign|cut logs|cut and choose|cut and sew|diamond cut diamond|caper cutting|caper-cutting|cutting block|cutting contest|cutting edge|cutting fluid|cutting garden|cutting horse|cutting room
+|[[cut and cover]], [[cut-and-cover]]
+|cutting edge
+|cut a caper
+|cut a figure
+|cut a rug
+|cut the rug
+|cut a swathe
+|cut a wide swathe
+|cut and paste
+|cut and run
+|cut both ways
+|cut capers
+|cut corners
+|cut down
+|cut down to size
+|cut from the same cloth
+|cut in
+|cut in line
+|cut it
+|cut it close
+|cut it fine
+|cut it out
+|cut like a knife
+|cut loose
+|cut off
+|cut one loose
+|cut one's coat according to one's cloth
+|cut one's losses
+|cut one's teeth
+|cut oneself
+|cut out
+|cut red tape
+|cut short
+|cut someone some slack
+|cut the cheese
+|cut the mustard
+|cut the muster
+|cut the rug
+|cut the umbilical cord
+|cut to black
+|cut to the chase
+|cut to the quick
+|cut up
+|cut wind
+|fish or cut bait
+|fussy cut
+|have one's work cut out for one
+|measure twice and cut once
+|trust everybody, but cut the cards|cut the baby in half|cut the cord|cut the crap|cut the Gordian knot|cut the ground from under someone's feet|cut the knot|cut the pigeon wing|you could cut the atmosphere with a knife|cut a dash|cut a feather|cut a swath|cut a wide swath|words cut deep|cut ice|[[cut some shapes]]|[[cut someone cold]]|[[cut someone dead]]|[[cut someone loose]]|[[cut someone slack]]|[[cut someone's comb]]|[[cut someone's throat]]|[[cut one's cloth to suit one's purse]]|[[cut one's eyeteeth]]|[[cut one's lucky]]|[[cut one's own throat]]|[[cut one's stick]]|cut one|cut and carve|cut down to size|cut for sign|cut about|cut across|cut along|cut back|cut swathes|leaf-cutting|nut cutting|cutting board
+}}
+
+====Translations====
+{{trans-top|to perform an incision}}{{multitrans|data=
+* Afrikaans: {{tt|af|sny}}
+* Amharic: {{tt|am|መቁረጥ|tr=mäquräṭ}}
+* Arabic: {{tt+|ar|جَرَحَ}}
+*: Hijazi Arabic: {{tt|acw|جرح|tr=jaraḥ}}, {{tt|acw|قطع|tr=gaṭaʿ}}
+* Armenian: {{tt+|hy|կտրել}}
+* Aromanian: {{tt|rup|talju}}, {{tt|rup|talj}}
+* Ashkun: {{tt|ask|ćina}}
+* Assamese:
+*: Eastern: {{tt|as|কটা}}
+*: Central: {{tt|as|কাটা}}
+* Azerbaijani: {{tt+|az|kəsmək}}, {{tt|az|çapmaq}}
+* Bashkir: {{tt|ba|киҫеү}}, {{tt|ba|ҡырҡыу}}, {{tt|ba|киртеү}}
+* Belarusian: {{tt|be|рэ́заць|impf}}, {{tt|be|секчы́|impf}}, {{tt|be|рубі́ць|impf}} {{qualifier|axe}}
+* Bengali: {{tt+|bn|কাটা}}
+* Bulgarian: {{tt+|bg|ре́жа}}
+* Burmese: {{tt+|my|ကိုက်}}, {{tt+|my|ဆုန်း}}, {{tt+|my|တစ်}}
+* Catalan: {{tt+|ca|tallar}}
+* Chinese:
+*: Cantonese: {{tt|yue|切|tr=cit3}}
+*: Mandarin: {{tt+|cmn|切|tr=qiē}}
+* Czech: {{tt+|cs|řezat|impf}}, {{tt|cs|tít|impf}}
+* Dalmatian: {{tt|dlm|taljur}}
+* Danish: {{tt+|da|skære}}, {{tt|da|snitte}}
+* Dolgan: {{tt|dlg|быс|tr=bïs}}
+* Dutch: {{tt+|nl|snijden}}
+* Egyptian: {{t-egy|nšm|h=n:S-m-T30}}
+* Esperanto: {{tt|eo|tranĉi}}
+* Evenki: {{tt|evn|минэми}}, {{tt|evn|хусчами}}
+* Finnish: {{tt+|fi|leikata}}
+* French: {{tt+|fr|couper}}, {{tt+|fr|inciser}}
+*: Old French: {{tt|fro|trenchier}}, {{tt|fro|colper}}
+* Friulian: {{tt|fur|taiâ}}
+* Galician: {{tt+|gl|cortar}}, {{tt|gl|sarxar}}, {{t+|gl|tallar}}
+* Georgian: {{tt|ka|გაჭრა}}, {{tt|ka|გაკვეთა}}
+* German: {{tt+|de|einschneiden}}
+* Greek:
+*: Ancient: {{tt|grc|τέμνω}}
+* Hebrew: {{tt+|he|חתך|tr=khatákh}}
+* Hindi: {{tt+|hi|काटना}}
+* Hungarian: {{tt+|hu|vág}}, {{tt+|hu|megvág}}
+* Icelandic: {{tt+|is|skera}}
+* Indonesian: {{tt+|id|potong}}, {{tt+|id|memotong}}
+* Ingrian: {{t|izh|leikata}}, {{t|izh|leikkoja}}
+* Irish: {{tt|ga|gearr}}
+* Istriot: {{tt|ist|talgià}}
+* Italian: {{tt+|it|tagliare}}, {{tt+|it|incidere}}
+* Japanese: {{tt+|ja|切る|tr=きる, kiru}}
+* Kamkata-viri: {{tt|bsh|ćia}}
+* Karachay-Balkar: {{tt|krc|кесерге}}
+* Kashmiri: {{tt|ks|ژَٹُن}}
+* Kazakh: {{tt+|kk|кесу}}
+* Khakas: {{tt|kjh|кизерге}}
+* Khmer: {{tt+|km|កាត់|tr=kat}}
+* Kikai: {{tt|kzg|切ゆい|tr=ちゆい, chiyui}}
+* Korean: {{tt+|ko|끊다}}
+* Kumyk: {{tt|kum|гесмек}}, {{tt|kum|туврамакъ}}, {{tt|kum|тилмек}}
+* Kunigami: {{tt|xug|切ん|tr=ちん, chin}}
+* Kyrgyz: {{tt+|ky|кесүү}}
+* Lao: {{tt|lo|ຕັດ}}
+* Latin: {{tt|la|inseco}}, {{tt|la|incido}}
+* Latvian: {{tt|lv|griezt}}
+* Lithuanian: {{tt|lt|kirpti}}
+* Lombard: {{tt|lmo|taià}}
+* Macedonian: {{tt|mk|сече|impf}}, {{tt|mk|реже|impf}}
+* Manchu: {{tt|mnc|ᡤᡳᡵᡳᠮᠪᡳ}}, {{tt|mnc|ᠮᡝᡳᡨᡝᠮᠪᡳ}}, {{tt|mnc|ᡶᡠᡵᡠᠮᠪᡳ}}
+* Miyako: {{tt|mvi|切|tr=きぃー, ksïï}}
+* Mongolian: {{tt+|mn|хяргах}}
+* Nahuatl: {{tt|nci|tequi}}, {{tt|nci|cotōna}}
+* Nanai: {{tt|gld|муи-}}
+* Neapolitan: {{tt|nap|taglià}}
+* Nogai: {{tt|nog|кесуьв}}
+* Norman: {{tt|nrf|coper}}
+* Northern Amami-Oshima: {{tt|ryn|切るり|tr=きるり, kiruri}}
+* Occitan: {{tt+|oc|talhar}}
+* Oki-No-Erabu: {{tt|okn|切ゅん|tr=きゅん, kyun}}
+* Okinawan: {{tt|ryu|切ーん|tr=ちーん, chīn}}
+* Oromo: {{tt|om|muruu}}
+* Persian: {{tt+|fa|بریدن|tr=boridan}}
+* Piedmontese: {{t|pms|tajé}}
+* Polish: {{tt+|pl|ciąć|impf}}
+* Portuguese: {{tt+|pt|cortar}}, {{tt|pt|incisar}}
+* Quechua: {{tt|qu|khuchuy}}
+* Rapa Nui: {{tt|rap|tarai}}
+* Romanian: {{tt+|ro|tăia|alt=a tăia}}
+* Romansch: {{tt|rm|tagliar}}, {{tt|rm|taglier}}, {{tt|rm|tagler}}
+* Russian: {{tt+|ru|ре́зать|impf}}, {{tt+|ru|поре́зать|pf}}, {{qualifier|axe}} {{tt+|ru|руби́ть|impf}}, {{tt+|ru|поруби́ть|pf}}
+* Sanskrit: {{tt+|sa|छिनत्ति|tr=chinátti}}, {{tt+|sa|कृन्तति|tr=kṛntáti}}
+* Sardinian: {{tt|sc|secare}}
+* Scottish Gaelic: {{tt|gd|geàrr}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|резати|impf}}, {{tt|sh|сећи|impf}}, {{tt|sh|сјећи|impf}}
+*: Roman: {{tt+|sh|rezati|impf}}, {{tt|sh|seći|impf}}, {{tt|sh|sjeći|impf}}
+* Shor: {{tt|cjs|кес-|tr=kes-}}
+* Sicilian: {{tt+|scn|tagghiari}}
+* Sidamo: {{tt|sid|mur-}}
+* Slovak: {{tt|sk|rezať|impf}}, {{tt|sk|ťať}}
+* Slovene: {{tt+|sl|rezati|impf}}
+* Somali: {{tt|so|jarid}}, {{tt|so|sarid}}
+* Sorbian:
+*: Lower Sorbian: {{tt|dsb|rězaś}}
+*: Upper Sorbian: {{tt|hsb|rězać}}
+* Southern Altai: {{tt|alt|кес}} , {{tt|alt|кезер}}
+* Southern Amami-Oshima: {{tt|ams|切りゅむっ|tr=きりゅむっ, kiryum}}
+* Spanish: {{tt+|es|cortar}}, {{tt+|es|incidir}}
+* Sundanese: {{tt+|su|teukteuk}}
+* Swahili: {{tt|sw|kukata}}
+* Swedish: {{tt+|sv|skära}}
+* Sylheti: {{tt|syl|ꠇꠣꠐꠣ}}
+* Tagalog: {{tt|tl|hiwa}}
+* Tamil: {{tt+|ta|வெட்டு}}, {{tt+|ta|நறுக்கு}}, {{tt+|ta|அரி}}
+* Tarantino: {{t|roa-tar|tagghià}}
+* Tatar: {{tt|tt|кисү}}
+* Tetum: {{tt|tet|tesi}}
+* Thai: {{tt+|th|ตัด}}
+* Tigrinya: {{tt|ti|ቁረጽ}}
+* Tofa: {{tt|kim|кеъсер|tr=ke"ser}}
+* Toku-No-Shima: {{tt|tkn|切りぃ|tr=きりぃ, kirï}}
+* Turkish: {{tt+|tr|kesmek}}, {{tt+|tr|biçmek}}
+* Turkmen: {{tt|tk|kesmek}}
+* Tuvan: {{tt|tyv|кезер}} ,{{tt|tyv|быжыр}}
+* Ukrainian: {{tt|uk|рі́зати|impf}}, {{tt|uk|руба́ти|impf}} {{qualifier|axe}}
+* Urdu: {{tt|ur|کاٹنا|tr=kāṭnā}}
+* Urum: {{tt|uum|кес-|tr=kes-}}
+* Uyghur: {{tt|ug|késmek}}
+* Uzbek: {{tt+|uz|kesmoq}}
+* Venetian: {{tt+|vec|tajar}}
+* Vietnamese: {{tt+|vi|cắt}}
+* Waigali: {{tt|wbk|ćina}}
+* Welsh: {{tt+|cy|torri}}
+* Yaeyama: {{tt|rys|切すん|tr=きぃすん, kïsun}}
+* Yakut: {{tt|sah|быс}}
+* Yámana: {{tt|yag|tačikama}}
+* Yiddish: {{tt|yi|האַקן}}, {{tt|yi|שנײַדן}}
+* Yonaguni: {{tt|yoi|切ん|tr=つん, tsun}}
+* Yoron: {{tt|yox|切ゅん|tr=きゅん, kyun}}
+* Zazaki: {{tt|zza|bırnayen}}, {{tt|zza|birnayîş}}
+* Zealandic: {{tt|zea|snieë}}
+* ǃXóõ: {{tt|nmn|gǂháá}}
+{{trans-bottom}}
+
+{{trans-top|to divide with a sharp instrument}}
+* Afrikaans: {{tt|af|sny}}
+* Aklanon: {{tt|akl|utod}}
+* Arabic: {{tt+|ar|قَطَعَ}}
+*: Hijazi Arabic: {{tt|acw|قطع|tr=gaṭaʿ}}, {{tt|acw|قص|tr=gaṣṣ}}, {{tt|acw|قَطَّع|tr=gaṭṭaʿ}}
+* Armenian: {{tt+|hy|կտրատել}}
+* Azerbaijani: {{tt+|az|kəsmək}}, {{tt|az|çapmaq}}
+* Bashkir: {{tt|ba|ҡырҡыу}}, {{tt|ba|киҫеү}}
+* Bengali: {{tt+|bn|কাটা}}
+* Bulgarian: {{tt+|bg|режа}}, {{tt+|bg|сека}}, {{tt+|bg|разсичам}}
+* Burmese: {{tt+|my|ညှပ်}}
+* Catalan: {{tt+|ca|tallar}}
+* Chinese:
+*: Cantonese: {{tt|yue|切|tr=cit3}}
+*: Mandarin: {{tt+|cmn|切|tr=qiē}}
+*: Min Nan: {{tt|nan|kā}}
+* Czech: {{tt|cs|přeříznout|pf}}
+* Dalmatian: {{tt|dlm|taljur}}
+* Danish: {{tt|da|udskære}}
+* Daur: {{tt|dta|хad-}}
+* Dutch: {{tt+|nl|snijden}}, {{t+|nl|knippen}} {{qualifier|with scissors}}
+* Esperanto: {{tt|eo|tranĉi}}
+* Finnish: {{tt+|fi|leikata}}
+* French: {{tt+|fr|couper}}
+*: Old French: {{tt|fro|colper}}, {{tt|fro|couper}}, {{tt|fro|coper}}
+* Friulian: {{tt|fur|taiâ}}
+* Galician: {{tt+|gl|cortar}}, {{tt+|gl|tallar}}
+* German: {{tt+|de|schneiden}}
+* Greek: {{tt+|el|κόβω}}
+*: Ancient: {{tt|grc|κόπτω}}
+* Hebrew: {{tt+|he|חתך|tr=khatákh}}
+* Hungarian: {{tt+|hu|elvág}}
+* Icelandic: {{qualifier|with a knife}} {{tt+|is|skera}}, {{qualifier|with scissors}} {{tt|is|klippa}}
+* Irish: {{tt|ga|bain}} {{qualifier|grass, hay, etc.}}
+* Istriot: {{tt|ist|talgià}}
+* Italian: {{tt+|it|tagliare}}
+* Japanese: {{tt+|ja|切る|tr=きる, kiru}}
+* Javanese: {{tt|jv|kethok}}, {{tt+|jv|ngethok}}
+* Latin: {{tt+|la|seco}}, {{tt|la|interseco}}, {{tt|la|curto}}
+* Latvian: {{tt|lv|griezt}}
+* Low German:
+*: German Low German: {{tt|nds-de|snieden}}
+* Malay: {{tt+|ms|potong}}, {{tt|ms|memotong}}
+* Mansaka: {{tt|msk|otod}}, {{tt|msk|garab}}, {{tt|msk|gonting}}, {{tt|msk|lapa}}
+* Maori: {{tt|mi|whakaiho}} {{qualifier|of hair}}, {{tt|mi|tarotaro}} {{qualifier|of hair}}
+* Ngazidja Comorian: {{tt|zdj|pua|alt=upua}}
+* Norman: {{tt|nrf|coper}}
+* Occitan: {{tt+|oc|talhar}}
+* Old Javanese: {{tt|kaw|kĕṭok}}
+* Polish: {{tt+|pl|kroić|impf}}
+* Portuguese: {{tt+|pt|cortar}}
+* Quechua: {{tt|qu|kuchuy}}, {{tt|qu|p'itiy}}
+* Romanian: {{tt+|ro|tăia}}
+* Romansch: {{tt|rm|tagliar}}
+* Russian: {{tt+|ru|разреза́ть|impf}}, {{tt+|ru|разре́зать|pf}}
+* Scottish Gaelic: {{tt|gd|geàrr}}
+* Serbo-Croatian: {{tt+|sh|rezati|impf}}
+* Sicilian: {{tt+|scn|tagghiari}}
+* Sorbian:
+*: Lower Sorbian: {{tt|dsb|rězaś|impf}}, {{tt|dsb|kšajaś|impf}} {{qualifier|food like bread and cheese}}
+* Spanish: {{tt+|es|cortar}}
+* Swedish: {{tt+|sv|skära}} {{qualifier|with knife}}, {{tt+|sv|klippa}} {{qualifier|with scissors}}, {{tt+|sv|kapa}}
+* Thai: {{tt+|th|ตัด}}, {{tt+|th|หั่น}}
+* Tigrinya: {{tt|ti|ቁረጽ}}
+* Welsh: {{tt+|cy|torri}}
+* Western Bukidnon Manobo: {{tt|mbb|garab}}, {{tt|mbb|getas}}, {{tt|mbb|lapa'}}
+* Yiddish: {{tt|yi|שנײַדן}}, {{tt|yi|שערן}}
+{{trans-bottom}}
+
+{{trans-top|to cut out fabric to specific lengths and shapes to make clothes}}
+* French: {{tt+|fr|couper}}
+* German: {{tt+|de|schneiden}}
+* Hungarian: {{tt+|hu|szab}}
+* Nanai: {{tt|gld|гири-}}
+* Russian: {{tt+|ru|кроить}}
+* Slovene: {{tt|sl|krojiti}}, {{tt|sl|prirezovati}}
+* Spanish: {{tt+|es|cortar}}
+* Swedish: {{tt|sv|tillskära}}, {{tt+|sv|skära}}, {{tt+|sv|klippa}}
+{{trans-bottom}}
+
+{{trans-top|to separate from prior association}}
+* Afrikaans: {{tt|af|sny}}
+* Armenian: {{tt+|hy|կտրել}}
+* Czech: {{tt+|cs|oddělit}}, {{tt+|cs|rozdělit}}
+* Danish: {{tt|da|udelukke}}
+* Dutch: {{tt+|nl|scheiden}}
+* Finnish: {{tt+|fi|leikata}}
+* German: {{tt+|de|trennen}}
+* Greek: {{tt+|el|βγάζω}}
+* Portuguese: {{tt+|pt|remover}}, {{tt+|pt|retirar}}
+* Scottish Gaelic: {{tt|gd|geàrr}}
+* Spanish: {{tt+|es|retirar}}
+* Swedish: {{tt+|sv|utesluta}} {{q|from a team}}, {{tt|sv|klippa bort}} {{q|remove a portion during editing of a tape}}, {{tt+|sv|kapa}}
+{{trans-bottom}}
+
+{{trans-top|computing: to remove and place in memory}}
+* Arabic: {{tt|ar|قَصَّ}}
+* Catalan: {{tt+|ca|retallar}}
+* Dutch: {{tt+|nl|knippen}}
+* Esperanto: {{t|eo|enpoŝigi}}, {{t|eo|movi en la poŝon}}
+* Finnish: {{tt+|fi|leikata}}
+* French: {{tt+|fr|couper}}
+* Galician: {{tt+|gl|cortar}}
+* German: {{tt+|de|ausschneiden}}
+* Greek: {{tt+|el|αποκοπή|f}}
+* Gujarati: {{tt|gu|કાપવું}}
+* Italian: {{tt+|it|tagliare}}
+* Maori: {{tt|mi|tapahi}}
+* Portuguese: {{tt+|pt|recortar}}
+* Scottish Gaelic: {{tt|gd|geàrr}}
+* Spanish: {{tt+|es|cortar}}
+* Swedish: {{tt+|sv|klippa}}
+{{trans-bottom}}
+
+{{trans-top|to enter a queue in a wrong place}}
+* Armenian: {{tt+|hy|կտրել}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|插隊|tr=chāduì}}, {{tt+|cmn|加塞兒|tr=jiāsāir}}
+* Danish: {{tt+|da|snyde}}
+* Dutch: {{tt+|nl|voorsteken}}
+* Finnish: {{tt+|fi|etuilla}}, {{tt+|fi|kiilata}}
+* Greek: {{tt+|el|πηδάω}}
+* Icelandic: {{tt+|is|troða|alt=troðast}}, {{tt+|is|troða|alt=troða sér}}
+* Japanese: {{tt|ja|横切る|tr=よこぎる, yokogiru}}
+* Portuguese: {{tt+|pt|furar}}
+* Spanish: {{tt+|es|colar}}
+* Swedish: {{tt+|sv|tränga}} sig
+{{trans-bottom}}
+
+{{trans-top|to cease recording}}
+* Dutch: {{tt+|nl|knippen}}, {{tt+|nl|stoppen}}
+* Finnish: {{tt+|fi|katkaista}}, {{tt|fi|[[poikki]]!}} {{qualifier|interjection}}
+* French: {{tt+|fr|couper}}
+* German: {{tt+|de|klappe}}
+* Portuguese: {{tt+|pt|cortar}}
+* Spanish: {{tt+|es|cortar}}
+* Swedish: {{tt+|sv|klippa}}
+* Zazaki: {{tt|zza|qırpnayen}}
+{{trans-bottom}}
+
+{{trans-top|to reduce}}
+* Armenian: {{tt+|hy|կտրել}}
+* Bengali: {{tt+|bn|কাটা}}
+* Bulgarian: {{tt+|bg|орязвам}}
+* Danish: {{tt+|da|skære}}, {{tt|da|beskære}}, {{tt|da|nedsætte}}
+* Dutch: {{tt+|nl|snijden}} in, {{tt+|nl|verminderen}}
+* Finnish: {{tt+|fi|leikata}}
+* French: {{tt+|fr|réduire}}
+* German: {{tt+|de|beschneiden}}
+* Greek: {{tt+|el|κόβω}}, {{tt+|el|μειώνω}}
+* Hungarian: {{tt+|hu|csökkent}}
+* Icelandic: {{tt|is|skera niður}}
+* Japanese: {{tt+|ja|減らす|tr=へらす, herasu}}, {{tt+|ja|削減|alt=削減する|tr=さくげんする, sakugen suru}}
+* Portuguese: {{tt+|pt|diminuir}}, {{tt+|pt|reduzir}}
+* Romanian: {{tt+|ro|diminua}}, {{tt+|ro|reduce}}
+* Russian: {{tt+|ru|уреза́ть|impf}}, {{tt+|ru|уре́зать|pf}}
+* Scottish Gaelic: {{tt|gd|geàrr}}
+* Spanish: {{tt+|es|recortar}}
+* Swedish: {{tt+|sv|skära}}
+* Thai: {{tt+|th|ตัด}}, {{tt+|th|ทอน}}, {{tt+|th|ลด}}
+{{trans-bottom}}
+
+{{trans-top|to form or shape by cutting}}
+* Danish: {{tt|da|slibe}} {{qualifier|gems}}, {{tt|da|tilskære}}, {{tt|da|tilhugge}}
+* Dutch: {{tt+|nl|slijpen}}
+* Finnish: {{tt+|fi|leikata}}, {{tt+|fi|hioa}}
+* Portuguese: {{tt+|pt|talhar|m}}
+* Russian: {{tt+|ru|выреза́ть|impf}}, {{tt+|ru|выре́зать|pf}}
+* Scottish Gaelic: {{tt|gd|geàrr}}
+* Spanish: {{tt+|es|tallar}}
+* Swedish: {{tt+|sv|skära}}, {{tt|sv|skära ut}}, {{tt+|sv|klippa ut}}
+* Thai: {{tt+|th|ตัด}}
+{{trans-bottom}}
+
+{{trans-top|to intersect dividing into half}}
+* Armenian: {{tt+|hy|կտրել}}
+* Danish: {{tt+|da|skære}}, {{tt|da|krydse}}
+* Dutch: {{tt+|nl|verdelen}}
+* Finnish: {{tt|fi|[[jakaa]] ([[kahtia]])}}
+* German: {{tt+|de|schneiden}}, {{tt+|de|trennen}}
+* Polish: {{tt+|pl|rozciąć}}
+* Portuguese: {{tt+|pt|atravessar}}
+* Spanish: {{tt+|es|atravesar}}
+{{trans-bottom}}
+
+{{trans-top|in cricket, to make the ball spin sideways}}
+* Danish: {{tt|da|snitte}}
+{{trans-bottom}}
+
+{{trans-top|colloquial, not to attend a class}}
+<!-- Only colloquial expressions here, please! -->
+* Chinese:
+*: Mandarin: {{tt+|cmn|逃}}
+* Danish: {{tt|da|pjække}} fra
+* Dutch: {{tt+|nl|spijbelen}}
+* Finnish: {{tt+|fi|lintsata}}
+* French: {{tt+|fr|sécher}}
+* German: {{tt+|de|schwänzen}}
+* Greek: {{tt|el|[[κάνω]] [[κοπάνα]]|f}}
+* Hebrew: {{tt+|he|הבריז|tr=hivríz}}
+* Hungarian: {{tt+|hu|lóg}}, {{tt+|hu|ellóg}}, {{tt+|hu|elbliccel}}
+* Icelandic: {{tt|is|skrópa}}
+* Italian: {{tt+|it|saltare}}
+* Japanese: {{tt+|ja|休む|tr=やすむ, yasumu}}, {{tt+|ja|欠席|alt=欠席する|tr=けっせきする, kesseki suru}}, {{tt+|ja|サボる|tr=saboru}}
+* Portuguese: {{tt+|pt|matar}}, {{tt+|pt|faltar}}, {{tt|pt|gazetear}}
+* Spanish: {{tt+|es|faltar}}
+{{trans-bottom}}
+
+{{trans-top|to change direction suddenly}}
+* Dutch: {{tt+|nl|kappen}}
+* Finnish: {{tt+|fi|mutkitella}}, {{tt+|fi|koukata}}
+* Hebrew: {{tt+|he|חתך|tr=khatákh}}
+{{trans-bottom}}
+
+{{trans-top|to divide a pack of playing cards}}
+* Chinese:
+*: Mandarin: {{tt|cmn|切牌|tr=qiēpái}}
+* Dutch: {{tt+|nl|schudden}}
+* Finnish: {{tt+|fi|nostaa}}
+* French: {{tt+|fr|couper}}
+* German: {{tt+|de|schneiden}}, {{tt+|de|abheben}} {{qualifier|intransitive use}}
+* Greek: {{tt+|el|κόβω}}
+* Icelandic: {{tt+|is|skipta}}, {{tt+|is|skera}}, {{tt+|is|draga}}
+* Italian: {{tt+|it|alzare}}
+* Maori: {{tt|mi|katikati}}, {{tt|mi|wāwāhi}}, {{tt|mi|wāhi}}
+* Polish: {{tt+|pl|przekładać|impf}}, {{tt+|pl|przełożyć|pf}}
+* Portuguese: {{tt+|pt|cortar}}
+* Spanish: {{tt+|es|cortar}}
+* Swedish: {{tt+|sv|kupera}}
+}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Albanian: {{t-check|sq|pret}}
+* Dyirbal: {{t-check|dbl|nudin}}, {{t-check|dbl|gunban}}, {{t-check|dbl|banyin}} ([[Guwal]]), {{t-check|dbl|jalnggan}}, {{t-check|dbl|bubaman}} ([[Jalnguy]])
+* Esperanto: {{t-check|eo|tranĉi}}, {{t-check|eo|fasoni}}
+* Indonesian: {{t+check|id|potong}}, {{t+check|id|kerat}}, {{t+check|id|iris}}, {{t+check|id|memotong}}
+* Romanian: {{t+check|ro|croi}}
+* Serbo-Croatian:
+*: Roman: {{t+check|sh|rezati}}, {{t-check|sh|iseći}}, {{t+check|sh|rez}}, {{t+check|sh|spustiti}}, {{t+check|sh|sniziti}}, {{t-check|sh|pobeći}}
+* Telugu: {{t+check|te|కోయు}} (1,2), {{t+check|te|తెంచు}} (3), {{t-check|te|కోత వేయు}} (6), {{t-check|te|ఖండించుకొను}} (8)
+{{trans-bottom}}
+
+====See also====
+* {{l|en|copy}}
+* {{l|en|paste}}
+
+===Adjective===
+{{en-adj}}
+
+# {{lb|en|participial adjective}} Having been [[#Verb|cut]].
+# [[reduce|Reduced]].
+#: {{ux|en|The [[pitcher]] threw a '''cut''' [[fastball]] that was slower than his usual [[pitch]].}}
+#: {{ux|en|'''Cut''' brandy is a liquor made of brandy and hard grain liquor.}}
+# {{lb|en|of a gem}} [[carve|Carve]]d into a [[shape]]; not [[raw]].
+# {{rfc-sense|en}} {{lb|en|cricket|of a shot}} Played with a [[horizontal]] [[bat]] to hit the ball backward of [[point]].
+# {{lb|en|bodybuilding}} Having muscular [[definition]] in which individual groups of [[muscle]] fibers stand out among larger muscles.
+#* {{quote-journal|en|year=1988|author=Steve Holman|title=Christian Conquers Columbus|journal=[[w:Iron Man (magazine)|Ironman]]|section='''47 (6):''' 28-34
+|passage=Or how 'bout Shane DiMora? Could he possibly get rip-roaring '''cut''' this time around?}}
+#* {{quote-text|en|year=2010|author=Bill Geiger|chapter=6-pack Abs in 9 Weeks|title=Reps!|section='''17''':106
+|passage=That's the premise of the overload principle, and it must be applied, even to ab training, if you're going to develop a '''cut''', ripped midsection.}}
+# {{lb|en|informal}} [[circumcised|Circumcised]] or having been the subject of [[female genital mutilation]].
+# {{lb|en|Australia|NZ|slang}} Emotionally [[hurt]].
+# {{senseid|en|drunk}} {{lb|en|slang|NZ|formerly|_|UK}} [[intoxicated|Intoxicated]] as a result of [[drug]]s or [[alcohol]].<ref>{{R:Dictionary of Modern Slang|edition=5th|page=137}}</ref>
+#: {{syn|en|Thesaurus:drunk}}
+#* {{RQ:Thackeray Pendennis||passage=I was dev’lish '''cut'''—uncommon—been dining with some chaps at Greenwich.|51}}
+
+====Derived terms====
+{{der2|en
+|cut cake
+|cut fastball
+|clear-cut
+|half cut
+|Cut Bank
+|cutbank
+|offcut
+|pointcut|title=Terms related to ''cut'' (adjective)|cut and dried|mad as a cut snake|cut of the same cloth|cut out of the same cloth|baby-cut|boy-cut|clean-cut|clear cut|closed-cut valley|cut autograph|cut splice|English-cut|steak-cut|straight-cut|tavern-cut|V-cut|rose-cut|cut-price|cut-rate|cut glass|cut lunch|cut nail|cut sig|cut signature}}
+
+====Translations====
+{{trans-top|having been cut}}{{multitrans|data=
+* Afrikaans: {{tt|af|gesnyde}}
+* Assamese: {{tt|as|কাট}}
+* Danish: {{tt+|da|skære|alt=skåret}}
+* Dutch: {{tt+|nl|snijden|alt=gesneden}}
+* Finnish: {{tt+|fi|leikattu}}
+* French: {{tt+|fr|coupé}}, {{tt+|fr|coupée}}, {{tt+|fr|coupés}}, {{tt+|fr|coupées}}
+* German: {{tt+|de|geschnitten}}
+* Greek: {{tt+|el|κομμένος}}
+* Hebrew: {{tt|he|חתוך|tr=khatúkh}}
+* Italian: {{tt+|it|tagliato|m}}, {{tt+|it|ritagliato|m}}, {{tt+|it|accorciato|m}}, {{tt+|it|ridotto|m}}
+* Kashmiri: {{tt|ks|ژۆٹمُت}}
+* Malay: {{tt+|ms|putus}}, {{tt|ms|terpotong}}
+* Old English: {{tt+|ang|gesniden}}
+* Old Saxon: {{tt|osx|gisnidan}}
+* Portuguese: {{tt+|pt|cortado}}
+* Romanian: {{tt+|ro|tăiat}}
+* Russian: {{tt+|ru|ре́заный}}, {{tt|ru|наре́заный}}, {{tt|ru|поре́заный}}, {{tt|ru|разре́заный}}
+* Spanish: {{tt+|es|cortado}}
+* Swedish: {{tt+|sv|klippt}}, {{tt+|sv|skuren}}
+* Turkish: {{tt+|tr|kesik}}
+* Vietnamese: {{tt+|vi|cắt}}
+{{trans-bottom}}
+
+{{trans-top|reduced}}
+* Assamese:
+*: Central: {{tt|as|কাটা}}
+*: Eastern: {{tt|as|কটা}}
+* Bengali: {{tt+|bn|কাটা}}
+* Finnish: {{tt+|fi|leikattu}}, {{tt+|fi|vähennetty}}, {{tt|fi|kevennetty}}, {{tt|fi|heikennetty}}
+* German: {{tt+|de|geschnitten}}
+* Greek: {{tt+|el|κομμένος}}
+* Italian: {{tt+|it|ridotto}}, {{tt+|it|tagliato}}, {{tt+|it|accorciato}}, {{tt+|it|ritagliato|m}}, {{tt+|it|potato|m}}
+* Portuguese: {{tt+|pt|reduzido}}
+* Russian: {{tt|ru|уре́заный}}
+* Zazaki: {{tt|zza|qesn}}
+{{trans-bottom}}
+
+{{trans-top|of a gem, carved into a shape}}
+* Danish: {{tt|da|slebet}}
+* Dutch: {{tt+|nl|geslepen}}
+* Finnish: {{tt+|fi|hioa|alt=hiottu}}
+* French: {{tt+|fr|taillé}}
+* German: {{tt+|de|geschnitten}}, {{tt+|de|geschliffen}}
+* Italian: {{tt+|it|tagliato}}
+* Portuguese: {{tt+|pt|lapidado}}
+* Romanian: {{tt+|ro|tăiat}}
+* Russian: {{tt+|ru|огранённый}}
+* Spanish: {{tt+|es|tallado}}
+{{trans-bottom}}
+
+{{trans-top|cricket: played with a horizontal bat}}
+* Zazaki: {{tt|zza|bırnayen}}
+{{trans-bottom}}
+
+{{trans-top|bodybuilding: having individual groups of muscle fibers stand out}}
+* German: {{tt+|de|geschnitten}}
+* Italian: {{tt+|it|scolpito|m}}, {{tt+|it|cesellato|m}}
+{{trans-bottom}}
+
+{{trans-top|colloquial: circumcised (see also [[circumcised]])}}<!-- Only colloquial expressions here! Add normal language terms to "circumcised" -->
+* Finnish: {{tt|fi|silvottu}}
+* Greek: {{tt+|el|περιτετμημένος}}
+* Italian: {{tt+|it|circonciso|m}}
+* Portuguese: {{tt+|pt|circuncidado}}
+* Russian: {{tt|ru|обре́заный}}
+* Spanish: {{tt+|es|circuncidado}}
+{{trans-bottom}}
+
+{{trans-top|slang: emotionally hurt}}
+* Finnish: {{tt+|fi|loukkaantunut}}
+{{trans-bottom}}
+
+{{trans-top|intoxicated as a result of drugs or alcohol}}
+* Finnish: {{tt+|fi|päihtynyt}}
+}}
+{{trans-bottom}}
+
+===Noun===
+{{en-noun|~}}
+[[File:Max-cut.svg|thumb|A '''cut''' (graph theory sense) in a graph with five vertices, which partitioned it into two subgroups (one with white vertices and another with black vertices).]]
+
+# The act of [[#Verb|cut]]ting.
+#: {{ux|en|He made a fine '''cut''' with his sword.}}
+# The [[result]] of [[#Verb|cut]]ting.
+#: {{ux|en|a smooth or clear '''cut'''}}
+# {{senseid|en|opening resulting from cutting}} An opening resulting from cutting; an [[incision]] or [[wound]].
+#: {{ux|en|Look at this '''cut''' on my finger!}}
+# A notch, passage, or channel made by cutting or digging; a furrow; a groove.
+#: {{ux|en|a '''cut''' for a railroad}}
+#* {{RQ:Knolles Turkes
+|passage=which great '''cut''' or ditch Sesostris {{...}} purposed to have made a great deale wider and deeper.}}
+## An artificial [[navigation]] [[channel]] as distinguished from a [[navigable]] [[river]].
+# A [[share]] or [[portion]] of [[profit]]s.
+#: {{ux|en|The bank robbers disbanded after everyone got their '''cut''' of the money.}}
+#* {{quote-journal|en|journal=Time|title=Inside Epic's Unreal Engine 5|author=Andrew R. Chow|date=April 6 2022
+|passage=Starting today, UE5 is free to download and use, with Epic taking a 5% '''cut''' on products created with it only after they earn over $1 million in gross revenue.
+|url=https://time.com/6164332/epic-unreal-engine-5-launch/}}
+# A [[decrease]].
+#: {{ant|en|hike}} {{q|used in same contexts}}; [[increase]]
+#: {{ux|en|The boss took a 5% pay '''cut'''.}}
+# {{lb|en|cricket}} A [[batsman]]'s shot played with a [[swing]]ing motion of the bat, to hit the ball [[backward]] of [[point]].
+# {{lb|en|cricket}} [[sideways|Sideways]] [[movement]] of the ball through the [[air]] caused by a [[fast bowler]] [[impart]]ing [[spin]] to the ball.
+# {{lb|en|sports}} In [[lawn tennis]], etc., a slanting stroke causing the ball to spin and bound irregularly; also, the spin thus given to the ball.
+# {{lb|en|golf}} In a strokeplay competition, the early elimination of those players who have not then attained a preannounced score, so that the rest of the competition is less pressed for time and more entertaining for spectators.
+# {{lb|en|especially|theatre|cinema}} A passage omitted or to be omitted from a play, movie script, speech, etc.
+#: {{ux|en|The [[director]] asked the [[cast]] to note down the following '''cuts'''.}}
+# {{lb|en|cinema}} A particular version or [[edit]] of a film.
+#: ''the director's '''cut'''''
+# {{lb|en|card games}} The act or right of dividing a deck of playing cards.
+#: {{ux|en|The player next to the dealer makes a '''cut''' by placing the bottom half on top.}}
+# {{lb|en|card games}} The card obtained by dividing the pack.
+# The [[manner]] or [[style]] in which a [[garment]] or an [[article]] of [[clothing]] is [[fashioned]].
+#: {{ux|en|I like the '''cut''' of that suit.}}
+#* {{RQ:Shakespeare As You Like It|act=II|scene=vii|passage=with eyes severe and beard of formal '''cut'''}}
+# A [[slab]] or [[slice]], especially of meat.
+#: {{ux|en|That’s our finest '''cut''' of meat.}}
+#* {{RQ:Fuller Bertram Cope|page=110|passage=Cope pushed away his coffee-cup and asked the young Greek for a '''cut''' of pie.}}
+# {{lb|en|fencing}} An attack made with a chopping motion of the blade, landing with its edge or point.
+# A deliberate [[snub]], typically a refusal to return a [[bow]] or other acknowledgement of acquaintance.
+#* {{quote-text|en|year=1819|author={{w|Washington Irving}}|title={{s|Rip Van Winkle}}
+|passage=Rip called him by name, but the cur snarled, showed his teeth, and passed on. This was an unkind '''cut''' indeed.}}
+#* {{RQ:Melville Omoo
+|passage=After several experiences like this, I began to entertain a sort of respect for Kooloo, as quite a man of the world. In good sooth, he turned out to be one; in one week's time giving me the '''cut''' direct, and lounging by without even nodding. He must have taken me for part of the landscape.}}
+# An [[unkind]] act; a [[cruelty]].
+# {{lb|en|slang}} An [[insult]]
+#* '''1966-1969''', [[w:Lou Sullivan|Lou Sullivan]], personal diary, quoted in '''2019''', Ellis Martin, Zach Ozma (editors), ''We Both Laughed In Pleasure''
+#*: We got out & there was a group of boppers, bout 25 of 'm in a group. They started yellin '''cuts''', "queer" seemed to be the favorite they all began chanting it. "Hey, yer not gonna serve those queers, are ya Howie?"
+# A definable part, such as an individual [[song]], of a [[recording]], particularly of [[commercial]] records, [[audio]] [[tape]]s, [[CD]]s, etc.
+#: {{ux|en|The drummer on the last '''cut''' of their CD is not identified.}}
+#* {{quote-journal|en|year=1975|journal=Billboard|volume=87|issue=24|page=50
+|passage=Best '''cuts''': "The Evil Dude," "Kung Fu, Too!" "Mama Love," "New Orleans" (with a punchy vocal by Teresa Brewer).}}
+# {{lb|en|archaeology}} A [[truncation]], a context that represents a moment in time when other archaeological [[deposit]]s were removed for the creation of some feature such as a [[ditch]] or [[pit]].
+# A [[haircut]].
+# {{lb|en|graph theory}} The [[partition]] of a [[graph]]’s [[vertex|vertices]] into two subgroups.
+# {{lb|en|rail}} A string of railway cars coupled together, shorter than a train.
+#* {{quote-journal|en|year=1960|month=June|title=Talking of Trains: The new Margam yard|journal=Trains Illustrated|page=323|text=The shunter has a lightweight portable radio transmitter by which, as he uncouples an incoming train into '''cuts''' for marshalling, he informs the Traffic Office of the number of wagons in each '''cut''' and its siding; [...].}}
+# An engraved block or plate; the impression from such an engraving.
+#: {{ux|en|a book illustrated with fine '''cuts'''}}
+# {{lb|en|obsolete}} A common [[workhorse]]; a [[gelding]].
+#* {{RQ:Beaumont Fletcher Comedies and Tragedies|The Two Noble Kinsmen|3|4|folio=2nd|part=2|436|column=2|He's buy me a whit '''Cut''', forth for to ride}}
+# {{lb|en|slang|dated}} The failure of a [[college]] [[officer]] or [[student]] to be present at any appointed exercise.
+# A [[skein]] of [[yarn]].
+#* {{quote-text|en|year=1632|title=North Riding Record|passage=Two women for stealing 30 '''cuttes''' of linen yarn.}}
+# {{lb|en|slang|uncountable}} That which is used to [[dilute]] or [[adulterate]] a recreational drug.
+#: {{syn|en|[[mix#Noun|mix]]}}
+#: {{ux|en|Don't buy his coke: it's full of '''cut'''.}}
+# {{lb|en|fashion}} A notch shaved into an eyebrow.
+# {{lb|en|bodybuilding}} A [[time period]] when one [[attempt]]s to lose [[fat]] while [[retain]]ing [[muscle]] [[mass]].
+# {{senseid|en|place}} {{lb|en|slang}} A hidden, secluded{{,}} or secure place.
+#* {{quote-song|en |date=September 22, 1992 |title=Guerillas in tha Mist |author={{w|Da Lench Mob}} |album={{w|Guerillas in tha Mist}} |track=6 |url=https://genius.com/Da-lench-mob-guerillas-in-tha-mist-lyrics |text=I'm laying in a '''cut''' 'bout to shoot me a mutt}}
+#* {{quote-av|en|date=March 9, 2008|title={{w|The Wire}}|episode=[[w:-30-_(The_Wire)|-30-]]|season=5|number=10|time=|actor=Anwan Glover|role=Slim Charles|text=You don't mind me askin', why you want to sell? I mean, even from inside here, you can take a slice for just layin' in the '''cut'''.|writer={{w|David Simon}}|medium=television production|network=HBO}}
+#* {{quote-song|en|date=April 14, 2010|author={{w|Wiz Khalifa}}|authorlabel=no|title=In the '''Cut'''|url=https://genius.com/41741|album=Kush & Orange Juice|text=In the '''cut''', in the '''cut''', rolling doobies up}}
+#* {{quote-text|en|year=2012|author=Honey Cocaine|title=In The Cut
+|passage=Bitch I'm out, catch me chillin' '''in the cut'''. Me and my homies swag it out '''in the cut'''. It's a party going down '''in the cut'''.}}
+#* {{quote-song|en|year=2016|author=Drake|title=Summer Sixteen"|passage=Famous as fuck, but I’m still '''in the cut''' when they round up the troops.}}
+#* '''2021''', Redferrin, "Stuck":
+#*: She got me stuck. Like a truck, deep mud, deep ruts, way out in the '''cut'''. She got me stuck. Even four-wheel drive won't work this time, yeah.
+#* '''2023''' January 9th, Santana Hannah, in JOLLY, "[https://www.youtube.com/watch?v=20SZKcXJQUA Brits try REAL Southern Fried Chicken for the first time!]", YouTube, 11:27:
+#*: We're off the beaten path from River Street downtown. So, it's, we're back here in the '''cut'''.
+# {{lb|en|chemical engineering|petrochemistry}} The range of [[temperature]]s used to [[distill]] a particular [[mixture]] of [[hydrocarbon]]s from [[crude oil]].
+
+====Derived terms====
+{{der3|en|title=Terms derived from ''cut'' (noun)|cut above|a cut below|boot cut|bowl cut|brush cut|budget cut|butch cut|crew cut|cut of one's jib|cutline|cut-set|die-cut|direct cut|director's cut|final cut|fine cut|French cut|jump cut|linecut|linocut|make the cut|maximum cut|minimum cut|narrow-cut|pay cut|power cut|price cut|prime cut|princess cut|rose cut|rose-cut|shaggy cut|shortcut|s-t cut|tax cut|wide-cut|woodcut|α-cut|cold cuts|death by a thousand cuts|draw cuts|branch cut|buzzcut|Chinese cut|cold cuts|curb cut|cut buddy|cut sheet|haircut|flash cut|hime cut|L cut|lion cut|low-cut|match cut|mushroom cut|near cut|paper cut|pixie cut|shift the cut|sideline cut|smash cut|sound cut|trench cut|uppercut|V-cut|wolf cut|cut below|Dedekind cut|Heisenberg cut|rough cut|plug cut|cut card|deep cut|[[cut scene]]|[[no-cut]]|[[non-cut]]|cut and thrust|covid cut}}
+
+====Translations====
+{{trans-top|act of cutting}}{{multitrans|data=
+* Bulgarian: {{tt+|bg|рязане|n}}
+* Catalan: {{tt+|ca|tall|m}}
+* Czech: {{tt+|cs|řez}}, {{tt|cs|říznutí}}
+* Danish: {{tt|da|hug|n}}
+* Finnish: {{tt+|fi|leikkaus}}, {{tt+|fi|viilto}}
+* French: {{tt+|fr|coupe|f}}, {{tt+|fr|entaille|f}}
+* Galician: {{tt+|gl|corte|m}}
+* Georgian: {{tt|ka|გაჭრა}}
+* German: {{tt+|de|Schnitt|m}}
+* Greek: {{tt+|el|κόψιμο}}
+* Hebrew: {{tt|he|חיתוך|m|tr=khitúkh}}
+* Icelandic: {{tt+|is|skurður|m}}
+* Italian: {{tt+|it|taglio|m}}
+* Latvian: {{tt|lv|cirtiens}}
+* Norwegian: {{tt|no|kutt|n}}
+* Polish: {{tt+|pl|krojenie|n}}
+* Portuguese: {{tt+|pt|corte|m}}
+* Romanian: {{tt+|ro|tăiere|f}}
+* Russian: {{tt+|ru|ре́зание|n}}
+* Scottish Gaelic: {{tt|gd|gearradh|m}}
+* Spanish: {{tt+|es|corte|m}}
+* Swedish: {{tt+|sv|snitt|n}}
+* Turkish: {{tt+|tr|kesme}}
+* Zazaki: {{tt|zza|qesnayış}}, {{tt|zza|qesnaış}} {{qualifier|Northern Zazaki}}
+{{trans-bottom}}
+
+{{trans-top|result of cutting}}
+* Catalan: {{tt+|ca|tall|m}}
+* Danish: {{tt|da|snit|n}}
+* Dutch: {{tt+|nl|snee|f}}
+* Finnish: {{tt+|fi|leikkaus}}, {{tt+|fi|viilto}}; {{tt+|fi|viipale}}, {{tt+|fi|siivu}}; {{tt+|fi|haava}} {{q|wound}}
+* French: {{tt+|fr|coupe|f}}
+* Galician: {{tt+|gl|corte|m}}, {{tt|gl|tallada|f}}
+* German: {{tt+|de|Schnitt|m}}
+* Icelandic: {{tt|is|afskurður|m}}
+* Italian: {{tt+|it|taglio|m}}
+* Kabuverdianu: {{tt|kea|kórti}}, {{tt|kea|kórte}}
+* Portuguese: {{tt+|pt|corte|m}}
+* Romanian: {{tt+|ro|tăietură|f}}
+* Scottish Gaelic: {{tt|gd|gearradh|m}}
+* Spanish: {{tt+|es|corte|m}}
+* Swedish: {{tt+|sv|snitt|n}}
+{{trans-bottom}}
+
+{{trans-top|opening resulting from cutting}}
+* Aromanian: {{tt|rup|tãljiturã|f}}
+* Bulgarian: {{tt+|bg|разрез|m}}
+* Catalan: {{tt+|ca|tall|m}}
+* Danish: {{tt|da|snitsår|n}}, {{tt|da|skramme|c}}
+* Dutch: {{tt+|nl|snee|f}}, {{tt+|nl|snijwond|f}} {{q|wound}}
+* Finnish: {{tt+|fi|haava}}, {{tt+|fi|viilto}}, {{tt|fi|viiltohaava}}
+* French: {{tt+|fr|coupure|f}}, {{tt+|fr|entaille|f}}
+* Galician: {{tt+|gl|corte|m}}
+* German: {{tt+|de|Schnitt|m}}
+* Greek: {{tt+|el|κόψιμο|n}}, {{tt+|el|τομή|f}}
+*: Ancient Greek: {{tt|grc|τομή|f}}
+* Hebrew: {{tt+|he|חתך|m|tr=khétekh}}
+* Icelandic: {{tt+|is|skurður|m}}
+* Italian: {{tt+|it|taglio|m}}, {{tt+|it|incisione|f}}
+* Kabuverdianu: {{tt|kea|kórti}}, {{tt|kea|kórte}}
+* Kurdish:
+*: Central Kurdish: {{tt|ckb|برین}}
+* Maori: {{tt|mi|motunga}}
+* Polish: {{tt+|pl|skaleczenie|n}}, {{tt|pl|rozcięcie|n}}
+* Portuguese: {{tt+|pt|corte|m}}
+* Romanian: {{tt+|ro|tăietură|f}}, {{tt+|ro|incizie|f}}
+* Russian: {{tt+|ru|поре́з|m}} {{q|wound}}, {{tt+|ru|разре́з|m}}
+* Scottish Gaelic: {{tt|gd|gearradh|m}}
+* Spanish: {{tt+|es|corte|m}}
+* Sundanese: {{tt|su|raheut}}
+* Swedish: {{tt+|sv|skärsår|n}}
+* Tagalog: {{tt|tl|hiwa}}
+* Turkish: {{tt+|tr|kesik}}
+* Zazaki: {{tt|zza|değiz}}
+{{trans-bottom}}
+
+{{trans-top|notch, passage, or channel made by cutting or digging}}
+* Finnish: {{tt+|fi|leikkaus}}
+{{trans-bottom}}
+
+{{trans-top|artificial navigation as distinguished from a navigable river}}
+* Finnish: {{tt+|fi|kanava}}
+{{trans-bottom}}
+
+{{trans-top|share or portion}}
+* Finnish: {{tt+|fi|osuus}}; {{tt+|fi|siivu}} {{q|informal}}
+* Galician: {{tt|gl|tallada|f}}
+{{trans-bottom}}
+
+{{trans-top|in cricket, batsman's shot played with a swinging motion}}
+{{trans-bottom}}
+
+{{trans-top|in cricket, sideways movement of the ball through the air}}
+{{trans-bottom}}
+
+{{trans-top|lawn tennis: slanting stroke; resulting spin}}
+* Finnish: {{tt|fi|kierrelyönti}} {{q|stroke}}; {{tt+|fi|kierre}} {{q|spin}}
+{{trans-bottom}}
+
+{{trans-top|golf: early elimination of worse performers}}
+{{trans-bottom}}
+
+{{trans-top|theatre: passage omitted or to be omitted from a play}}
+{{trans-bottom}}
+
+{{trans-top|cinema: particular version or edit of a film}}
+* Finnish: {{tt+|fi|versio}}
+* German: {{tt|de|Filmbearbeitung|f}}, {{tt|de|Bearbeitungsversion|f}}
+* Portuguese: {{tt+|pt|corte|m}}, {{tt+|pt|versão|f}}
+{{trans-bottom}}
+
+{{trans-top|act of dividing a deck of playing cards}}
+* Czech: {{tt|cs|snímání}}
+* Danish: {{tt|da|aftagning|c}}
+* Finnish: {{tt+|fi|nosto}}
+* French: {{tt+|fr|coupe|f}}
+* Greek: {{tt+|el|κόψιμο|n}}
+* Italian: {{tt+|it|alzata|f}}
+* Portuguese: {{tt+|pt|corte|f}}
+* Romanian: {{tt+|ro|tăiere|f}}
+* Swedish: {{tt+|sv|giv|c}}
+* Turkish: {{tt+|tr|kesmek}}
+* Zazaki: {{tt|zza|qesnayen}}, {{tt|zza|bırnayen}} {{qualifier|Central Zazaki}}, {{tt|zza|cı kerden}} {{qualifier|Northern Zazaki}}
+{{trans-bottom}}
+
+{{trans-top|manner or style a garment is fashioned in}}
+* Bulgarian: {{tt+|bg|кройка|f}}
+* Catalan: {{tt|ca|costura|f}}
+* Danish: {{tt|da|snit|n}}, {{tt|da|mode|c}}
+* Dutch: {{tt+|nl|snit}}
+* Finnish: {{tt+|fi|leikkaus}}
+* French: {{tt+|fr|coupe|f}}
+* German: {{tt+|de|Schnitt|m}}
+* Greek: {{tt+|el|κόψιμο|n}}
+* Icelandic: {{tt+|is|snið|n}}
+* Italian: {{tt+|it|taglia|f}}, {{tt+|it|taglio|m}}
+* Polish: {{tt+|pl|krój|m}}
+* Portuguese: {{tt+|pt|corte|m}}
+* Russian: {{tt+|ru|покро́й|m}}
+* Spanish: {{tt+|es|corte|m}}
+* Swedish: {{tt+|sv|skärning|c}}, {{tt+|sv|snitt|n}}
+* Turkish: {{tt+|tr|kesim}}
+* Zazaki: {{tt|zza|bırnayış}}, {{tt|zza|qesnayış}} {{qualifier|Central zazaki}}
+{{trans-bottom}}
+
+{{trans-top|slab of meat}}
+* Danish: {{tt|da|udskæring|c}}, {{tt+|da|stykke|n}}
+* Dutch: {{tt+|nl|stuk|n}}
+* Finnish: {{tt+|fi|pala}}
+* French: {{tt+|fr|coupe|f}}
+* Galician: {{tt|gl|tallada|f}}, {{tt+|gl|corte|m}}
+* Greek: {{tt+|el|κομμάτι|n}}
+* Hebrew: {{tt+|he|חתיכה|f|tr=khatikhá}}
+* Italian: {{tt+|it|taglio|m}}, {{tt+|it|pezzo|m}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|stykningsdel|m}}, {{tt+|nb|stykke|n}}
+* Portuguese: {{tt+|pt|corte|m}}
+* Spanish: {{tt+|es|corte|m}}
+{{trans-bottom}}
+
+{{trans-top|fencing: attack made with a chopping motion of the blade}}
+* French: {{tt+|fr|coupé}}
+* Italian: {{tt+|it|intagliata}}
+* Portuguese: {{tt+|pt|corte|m}}, {{tt|pt|golpe de corte|m}}
+* Spanish: {{tt+|es|cupé}}
+{{trans-bottom}}
+
+{{trans-top|deliberate snub}}
+{{trans-bottom}}
+
+{{trans-top|definable part of a music recording}}
+* Finnish: {{tt+|fi|raita}}, {{tt+|fi|kappale}}, {{tt+|fi|piisi}}, {{tt+|fi|biisi}}
+* German: {{tt|de|Aufnahmestück|n}}, {{tt+|de|Stück|n}}
+{{trans-bottom}}
+
+{{trans-top|archaeology: truncation}}
+{{trans-bottom}}
+
+{{trans-see|haircut}}
+
+{{trans-top|partition of a graph’s vertices into two subgroups}}
+* Finnish: {{tt+|fi|leikkaus}}
+* Italian: {{tt+|it|taglio|m}}
+* Portuguese: {{tt+|pt|corte|m}}
+{{trans-bottom}}
+
+{{trans-top|string of railway cars coupled together}}
+{{trans-bottom}}
+
+{{trans-top|engraved block or plate; the impression from such an engraving}}
+* Finnish: {{tt+|fi|kaiverrus}}
+* Swedish: {{tt+|sv|träsnitt|n}}, {{tt+|sv|kopparstick|n}}, {{tt+|sv|gravyr|c}}
+{{trans-bottom}}
+
+{{trans-see|common workhorse|gelding}}
+
+{{trans-top|failure of a college officer or student to be present at any appointed exercise}}
+* Finnish: {{tt+|fi|ohari}}
+{{trans-bottom}}
+
+{{trans-see|skein of yarn|skein}}
+
+{{trans-top|slang: that which is used to dilute or adulterate a recreational drug}}
+{{trans-bottom}}
+
+{{trans-top|fashion: notch shaved into an eyebrow}}
+{{trans-bottom}}
+
+{{trans-top|bodybuilding: time period when one tries to lose fat while retaining muscle mass}}
+* Finnish: {{tt|fi|rasvanpolttokausi}}
+}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Romanian: {{t+check|ro|tăietură}}
+* Telugu: {{t+check|te|కోత}}, {{t+check|te|గాటు}}
+{{trans-bottom}}
+
+===Interjection===
+{{en-interj|cut!}}
+
+# {{lb|en|film|and|TV}} An instruction to [[cease]] [[record]]ing.
+#: {{ant|en|action}}
+
+====Translations====
+{{trans-top}}{{multitrans|data=
+* Finnish: {{tt+|fi|poikki|alt=poikki!}}
+}}
+* French: {{t+|fr|coupez!}}
+* Portuguese: {{t+|pt|corta!}}
+{{trans-bottom}}
+
+===See also===
+* [[nut-cut]] {{i|probably etymologically unrelated?}}
+
+===References===
+<references/>
+
+===Anagrams===
+* {{anagrams|en|a=ctu|TCU|TUC|UCT|UTC}}
+
+[[Category:English irregular past participles]]
+[[Category:English irregular simple past forms]]
+[[Category:English irregular verbs]]
+[[Category:English verb forms using redundant wikisyntax]]
+{{C|en|Injuries|Meats}}
+
+==Chinese==
+
+===Etymology===
+From {{bor|yue|en|cut}}.
+
+===Pronunciation===
+{{zh-pron
+|c=kat1
+|cat=v
+}}
+
+===Verb===
+{{head|zh|verb}} {{tlb|zh|Hong Kong Cantonese}}
+
+# to [[#English|cut]], to [[incise]], to [[divide]]
+#: {{zh-x|'''@c{}u{}t{kat1}''' 開 嚿 牛扒|to cut a steak into pieces|C}}
+# to [[reduce]]
+#: {{zh-x|'''@c{}u{}t{kat1}''' &#032; b{}u{}d{bat1}g{}e{}t{zet4}|to reduce allocated budget|C}}
+# to [[enter]] a [[queue]] at the wrong place; to switch directions suddenly
+#: {{zh-x|'''c{}u{}t{kat1}'''線|to change lanes when driving|C}}
+# to [[terminate]]; to [[end]]; to [[sever]]
+#: {{zh-x|'''c{}u{}t{kat1}'''線|to end a call|C}}
+#: {{zh-x|'''c{}u{}t{kat1}'''單|to terminate an order|C}}
+
+===References===
+* {{R:yue:ELHKC}} <!--咭-->
+
+[[Category:Chinese terms written in foreign scripts]]
+
+==Irish==
+
+===Noun===
+{{ga-noun|m|cuit|cuit}}
+
+# {{alternative form of|ga|cat|t=cat|from=Cois Fharraige}}
+
+====Declension====
+{{ga-decl-m1|c|ut|uit}}
+
+===Mutation===
+{{ga-mut}}
+
+===Further reading===
+* {{R:ga:Ó Dónaill}}
+
+==Kiput==
+
+===Etymology===
+From {{inh|kyi|poz-swa-pro|*likud}}, from {{inh|kyi|poz-pro|*likud}}.
+
+===Noun===
+{{head|kyi|noun}}
+
+# [[back]] {{qualifier|the rear of body}}
+
+[[Category:kyi:Anatomy]]
+
+==Lower Sorbian==
+
+===Pronunciation===
+* {{IPA|dsb|/t͡sut/}}
+
+===Verb===
+{{head|dsb|verb form}}
+
+# {{infl of|dsb|cuś||sup}}
+
+==Welsh==
+
+===Pronunciation===
+* {{a|cy-N}} {{IPA|cy|/kɨ̞t/}}
+* {{a|cy-S}} {{IPA|cy|/kɪt/}}
+
+===Etymology 1===
+Borrowed from {{bor|cy|enm}}, from {{der|cy|fro-nor|[[cot]], [[cote]]|t=hut, cottage}}.
+
+====Noun====
+{{cy-noun|m|cutiau}}
+
+# [[hut]], [[shed]]; [[cottage]], [[hovel]]; [[pen]], [[coop]]; [[cage]]
+
+=====Derived terms=====
+{{der2|cy|cut ieir|cut moch}}
+
+===Etymology 2===
+From {{bor|cy|en|kite}}.
+
+====Noun====
+{{cy-noun|m|cutiaid}}
+
+# {{alternative form of|cy|cud|t=kite}}
+
+===Mutation===
+{{cy-mut}}
+
+===References===
+* {{R:cy:GPC}}
+
+{{topics|cy|Housing}}
