@@ -1,1 +1,1 @@
-from lookup.wiktionary.languages.english.localized_parser import EnglishLocaleParser
+from lookup.wiktionary.languages.english.english_parser import EnglishLocaleParser

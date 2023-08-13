@@ -1,1 +1,1 @@
-from lookup.wiktionary.languages.german.localized_parser import GermanLocaleParser
+from lookup.wiktionary.languages.german.german_parser import GermanLocaleParser

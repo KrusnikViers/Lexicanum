@@ -1,6 +1,6 @@
 from typing import List
 
-from lookup.wiktionary.types.definition import Definition
+from lookup.wiktionary.types.definition_components import DefinitionComponent
 from lookup.wiktionary.types.markup_tree import MarkupTree
 
 
@@ -18,8 +18,6 @@ class LocalizedParser:
         raise NotImplementedError
 
     @classmethod
-    # Returns list of different word definitions from the page. There could be multiple if word means multiple parts of
-    # speech or have multiple meanings. Translations only filled for target translation language codes.
-    def extract_word_definitions(cls, markup_tree: MarkupTree, source_wiki_title: str,
-                                 language_codes_for_translations: List[str]) -> List[Definition]:
+    def extract_definition_components(cls, markup_tree: MarkupTree, source_wiki_title: str,
+                                      language_codes_for_translations: List[str]) -> List[DefinitionComponent]:
         raise NotImplementedError
