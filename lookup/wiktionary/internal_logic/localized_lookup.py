@@ -1,10 +1,10 @@
 from typing import List, Type, Tuple
 
 from core.util import StatusOr
+from lookup.wiktionary.internal_logic.debug import debug_event_timer
 from lookup.wiktionary.internal_logic.web_api import WebArticle, search_articles, retrieve_articles
 from lookup.wiktionary.languages import LocalizedParser
 from lookup.wiktionary.types import DefinitionSet, build_definition_set, MarkupTree
-from lookup.wiktionary.internal_logic.debug import debug_event_timer
 
 
 def _articles_to_definition_set(articles: List[WebArticle],
@@ -13,7 +13,7 @@ def _articles_to_definition_set(articles: List[WebArticle],
     extracted_definitions = []
     for article in articles:
         markup_tree = MarkupTree.build(article.title, article.content)
-        extracted_definitions += article_parser.extract_word_definitions(
+        extracted_definitions += article_parser.extract_definitions(
             markup_tree, article.title, translations_parser.language_codes_for_translations())
     debug_event_timer("definitions extracted")
     return build_definition_set(extracted_definitions)
@@ -37,6 +37,7 @@ def lookup_definition_sets(search_text: str,
                                           for definition in definitions_list
                                           for title in definition.translation_articles]))
     if not unique_translation_titles:
+        debug_event_timer("not enough data")
         return StatusOr(status="Not enough data extracted from search request")
 
     # Fetch translation articles
