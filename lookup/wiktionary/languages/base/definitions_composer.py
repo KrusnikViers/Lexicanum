@@ -31,6 +31,7 @@ class DefinitionsComposer:
 
     def _compose_from_cache(self) -> List[Definition]:
         if not self.readable_form_cache or not self.part_of_speech_cache or not self.translations.result():
+            self._reset_cache()
             return []
         result = []
         if self.readable_form_cache.value and self.part_of_speech_cache.value:

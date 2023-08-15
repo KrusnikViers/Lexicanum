@@ -1,0 +1,422 @@
+die
+de
+Original article URL: https://de.wiktionary.org/wiki/die
+{{Siehe auch|[[Die]]}}
+{{Wort der Woche|13|2007}}
+== die ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Artikel|Deutsch}} ===
+
+{{Pronomina-Tabelle
+|Nominativ Singular m=der
+|Nominativ Singular f=die
+|Nominativ Singular n=das
+|Nominativ Plural=die
+|Genitiv Singular m=des
+|Genitiv Singular f=der
+|Genitiv Singular n=des
+|Genitiv Plural=der
+|Dativ Singular m=dem
+|Dativ Singular f=der
+|Dativ Singular n=dem
+|Dativ Plural=den
+|Akkusativ Singular m=den
+|Akkusativ Singular f=die
+|Akkusativ Singular n=das
+|Akkusativ Plural=die
+}}
+
+{{Worttrennung}}
+:die, {{Pl.}} die
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|diː}}
+:{{Hörbeispiele}} {{Audio|De-die.ogg}}, {{Audio|De-die2.ogg}}
+:{{Reime}} {{Reim|iː|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[weiblich]]er [[bestimmt]]er [[Artikel]] im [[Nominativ]] und [[Akkusativ]] [[Singular]]
+:[2] [[bestimmt]]er Artikel im Nominativ und Akkusativ [[Plural]]
+
+{{Abkürzungen}}
+:[1, 2] [[d.]]
+
+{{Herkunft}}
+:[[althochdeutsch]], [[mittelhochdeutsch]] ''diu'' (vom indogermanischen Pronominalstamm ''*[[to-]],'' ähnliche Bildungen in allen westgermanischen Sprachen sowie in Ansätzen im Gotischen und Altnordischen) - ''die'' {{QS Herkunft|unbelegt}}
+
+{{Beispiele}}
+:[1] Sie war ''die'' Frau des Präsidenten.
+:[2] ''Die'' Männer fällten ''die'' Bäume.
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=weiblicher bestimmter Artikel im Nominativ und Akkusativ Singular|Ü-Liste=
+*{{en}}: {{Ü|en|the}}
+*{{eo}}: {{Ü|eo|la}}
+*{{fr}}: {{Ü|fr|la}}, {{Ü|fr|l’}}
+*{{el}}: {{Üt|el|η|i}} {{f}}
+*{{io}}: {{Ü|io|la}}
+*{{ia}}: {{Ü|ia|le}}
+*{{it}}: {{Ü|it|la}}, {{Ü|it|l’}}
+*{{ca}}: {{Ü|ca|la}}, {{Ü|ca|l’}} (vor anlautendem Vokal)
+*{{nds}}:
+**[[Niederpreußisch]]: {{Ü|nds|de}}
+**{{pdt}}: {{Ü|pdt|de}}
+*{{nov}}: {{Ü|nov|li}}
+*{{pl}}: {{Ü|pl|która}} {{f}}, {{Ü|pl|które}} {{f}} ''pl''
+*{{sv}}: {{Ü|sv|den}} ''c'', {{Ü|sv|det}} ''n'', {{Ü|sv|de}} ''p'', {{Ü|sv|-n}} ''c'', {{Ü|sv|-en}} ''c'', {{Ü|sv|-t}} ''n'', {{Ü|sv|-et}} ''n'', {{Ü|sv|-en}} ''p'', {{Ü|sv|-na}} ''p'', {{Ü|sv|-a}} ''p''
+*{{es}}: {{Ü?|es|el}} ''m'', {{Ü?|es|la}} ''f'', {{Ü?|es|los}} ''mpl'', {{Ü?|es|las}} ''fpl'', {{Ü?|es|lo}} ''n''
+|Dialekttabelle=
+*[[Thüringisch-Obersächsisch]]: [1, 2] [[de]]
+**[[Obersächsisch]]:
+***[[Meißnisch]]: [1, 2] [[de]]
+***[[Osterländisch]]: [1, 2] [[de]]
+}}
+
+{{Ü-Tabelle|2|G=bestimmter Artikel im Nominativ und Akkusativ Plural|Ü-Liste=
+*{{en}}: {{Ü|en|the}}
+*{{fr}}: {{Ü|fr|les}}
+*{{el}}: {{Üt|el|οι|i}} {{mPl.}}, {{Üt|el|οι|i}} {{fPl.}}, {{Üt|el|τα|ta}} {{nPl.}}
+*{{it}}: {{Ü|it|le}} {{f}}, {{Ü|it|i}} {{m}}, {{Ü|it|gli}} {{m}}
+*{{ca}}: {{Ü|ca|els}} {{m}}, {{Ü|ca|les}} {{f}}
+*{{nds}}:
+**[[Niederpreußisch]]: {{Ü|nds|de}}
+*{{sv}}: {{Ü|sv|den}} ''c'', {{Ü|sv|det}} ''n'', {{Ü|sv|de}} ''p'', {{Ü|sv|-n}} ''c'', {{Ü|sv|-en}} ''c'', {{Ü|sv|-t}} ''n'', {{Ü|sv|-et}} ''n'', {{Ü|sv|-en}} ''p'', {{Ü|sv|-na}} ''p'', {{Ü|sv|-a}} ''p''
+|Dialekttabelle=
+*[[Thüringisch-Obersächsisch]]: [1, 2] [[de]]
+**[[Obersächsisch]]:
+***[[Meißnisch]]: [1, 2] [[de]]
+***[[Osterländisch]]: [1, 2] [[de]]
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Artikel (Wortart)}}
+:[1] {{Ref-Grimm}}
+:[1] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+
+=== {{Wortart|Pronomen|Deutsch}} ===
+{{Pronomina-Tabelle
+|Nominativ Singular m=der
+|Nominativ Singular f=die
+|Nominativ Singular n=das
+|Nominativ Plural=die
+|Genitiv Singular m=dessen
+|Genitiv Singular f=deren
+|Genitiv Singular n=dessen
+|Genitiv Plural=deren
+|Dativ Singular m=dem
+|Dativ Singular f=der
+|Dativ Singular n=dem
+|Dativ Plural=denen
+|Akkusativ Singular m=den
+|Akkusativ Singular f=die
+|Akkusativ Singular n=das
+|Akkusativ Plural=die
+}}
+
+{{Worttrennung}}
+:die
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|diː}}
+:{{Hörbeispiele}} {{Audio|De-die.ogg}}, {{Audio|De-die2.ogg}}
+:{{Reime}} {{Reim|iː|Deutsch}}
+
+{{Bedeutungen}}
+:[1] {{K|Relativpronomen}} [[welche]] (Singular und Plural)
+:[2] {{K|Personalpronomen|ft=mündlich, regional}} [[sie]] (Singular und Plural)
+
+{{Abkürzungen}}
+:[1] [[d.]]
+
+{{Herkunft}}
+:[[Hilfe:ahd.|ahd.]], [[Hilfe:mhd.|mhd.]] ''[[diu]]'' (vom indogermanischen Pronominalstamm ''*[[to-]],'' ähnliche Bildungen in allen westgermanischen Sprachen sowie in Ansätzen im Gotischen und Altnordischen) {{QS Herkunft|unbelegt}}
+
+{{Beispiele}}
+:[1] Die Männer, ''die'' im Wald gearbeitet haben, machen jetzt eine Pause.
+:[2] Hast du ''die'' gesehen?
+:[2] ''Die'' ist mir vielleicht eine!
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Relativpronomen: welche (Singular und Plural)|Ü-Liste=
+*{{fr}}: {{Ü|fr|qui}}
+*{{ca}}: {{Ü|ca|que}}
+*{{nds}}:
+**{{pdt}}: {{Ü|pdt|waut}}, {{Ü|pdt|dee}}
+*{{es}}: {{Ü|es|que}}
+|Dialekttabelle=
+*[[Thüringisch-Obersächsisch]]: [1, 2] [[de]]
+**[[Obersächsisch]]:
+***[[Osterländisch]]: [1, 2] [[de]]
+***[[Meißnisch]]: [1, 2] [[de]]
+}}
+
+{{Ü-Tabelle|2|G=Personalpronomen, mündlich, regional: sie (Singular und Plural)|Ü-Liste=
+*{{fr}}: {{Ü|fr|}}
+*{{it}}: {{Ü|it|}}
+|Dialekttabelle=
+*[[Thüringisch-Obersächsisch]]: [1, 2] [[de]]
+**[[Obersächsisch]]:
+***[[Osterländisch]]: [1, 2] [[de]]
+***[[Meißnisch]]: [1, 2] [[de]]
+}}
+
+{{Referenzen}}
+:[1, 2] {{Ref-Grimm}}
+:[1, 2] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+
+{{Ähnlichkeiten 1|Anagramme=[[eid]], [[Eid]]}}
+
+== die ({{Sprache|Englisch}}) ==
+=== {{Wortart|Substantiv|Englisch}} ===
+
+{{Englisch Substantiv Übersicht
+|Singular=die
+|Plural 1=dice
+|Plural 2=dies
+}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|daɪ̯}}, {{Pl.1}} {{Lautschrift|daɪ̯s}}, {{Pl.2}} {{Lautschrift||spr=en}}
+:{{Hörbeispiele}} {{Audio|En-us-die.ogg|spr=us}}
+:{{Reime}} {{Reim|aɪ|Englisch}}
+
+{{Bedeutungen}}
+:[1] ''Plural dice:'' ein Würfel für Spiele
+*''Plural dies:''
+:[2] ''Architektur:'' ein Block, auf dem etwas aufliegen kann; Sockel
+:[3] ''Technik:'' Präge- oder Stanzvorrichtung; Prägestempel, Pressstempel
+*''Plural dice oder dies:''
+:[4] ''Technik:'' der Die, Mikroplättchen; einzelner ungehäuster Halbleiter-Chip
+
+{{Herkunft}}
+:mittelenglisch ''{{Ü|enm|dee}}:'' entlehnt aus altfranzösisch ''[[de]],'' dieses durch Kürzung aus lateinisch ''{{Ü|la|datum}}'' {{n}} entstanden, dem Partizip Perfekt Passiv von ''[[dare]]'' „geben“ (indogermanische Wurzel: ''*do-'' „geben“) {{QS Herkunft|unbelegt|spr=en}}
+
+{{Beispiele}}
+:[1] He rolled the ''die,'' hoping for a six.
+::Er rollte den ''Würfel'' und hoffte auf eine sechs.
+:[2] {{Beispiele fehlen|spr=en}}
+
+{{Redewendungen}}
+:[1] [[the die is cast|The ''die'' is cast.]] – [[die Würfel sind gefallen|Die ''Würfel'' sind gefallen.]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=ein Würfel für Spiele|Ü-Liste=
+*{{de}}: {{Ü|de|Würfel}} {{m}}
+}}
+
+{{Ü-Tabelle|2|G=Architektur: ein Block, auf dem etwas aufliegen kann; Sockel|Ü-Liste=
+*{{de}}: {{Ü|de|Sockel}} {{m}}
+}}
+
+{{Ü-Tabelle|3|G=Technik: Präge- oder Stanzvorrichtung; Prägestempel, Pressstempel|Ü-Liste=
+*{{de}}: {{Ü|de|Prägestempel}} {{m}}, {{Ü|de|Pressstempel}} {{m}}, {{Ü|de|Stempel}} {{m}}
+}}
+
+{{Ü-Tabelle|4|G=Technik: Mikroplättchen; einzelner ungehäuster Halbleiter-Chip|Ü-Liste=
+*{{de}}: {{Ü|de|Die}} {{m}}, {{Ü|de|Mikroplättchen}} {{n}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=en}}
+:[4] {{Wikipedia|spr=en|Die_(integrated_circuit)}}
+:[1, 3, 4] {{Ref-Leo|en}}
+:[1, 3] {{Ref-Pons|en}}
+:[1–3] {{Ref-MWD}}
+:[1] {{Ref-MWT|die}}
+:[1–3] {{Ref-Dictionary}}
+:[1, 3] {{Ref-dictcc|en}}
+
+=== {{Wortart|Verb|Englisch}} ===
+
+{{Englisch Verb Übersicht
+|present_I=die
+|present_he, she, it=dies
+|past_simple_I=died
+|present participle=dying
+|past participle=died
+}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|daɪ}}
+:{{Hörbeispiele}} {{Audio|En-us-die.ogg|spr=us}}
+:{{Reime}} {{Reim|aɪ|Englisch}}
+
+{{Bedeutungen}}
+:[1] [[sterben]]
+
+{{Herkunft}}
+:mittelenglisch ''[[dein]], [[deien]]'': entstanden durch Kontraktion des germanischen ''*dawjanan'' (aus indogermanisch: ''*dheu-'' „sterben, dahingehen“) – vergleiche Substantiv [[death]] {{QS Herkunft|fehlt|spr=en}}
+
+{{Synonyme}}
+:[1] [[perish]], [[decease]]
+:[1] ''literarisch:'' [[depart]], [[expire]], ''euphemistisch:'' [[pass away]]
+:[1] ''umgangssprachlich:'' ''[[AE]]:'' [[kick the bucket]], ''[[BE]]:'' [[snuff it]], [[nibble off]], [[cop it]]
+:[1] ''Umschreibungen/Wendungen:'' [[buy the farm]]; [[meet one's maker]]; [[take a dirt nap]]; [[pay the debt of nature]]
+
+{{Gegenwörter}}
+:[1] to [[live]]
+
+{{Beispiele}}
+:[1] He ''died'' at the ripe old age of ninety-eight.
+::Er ''starb'' im reifen Alter von achtundneunzig (Jahren).
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=sterben|Ü-Liste=
+*{{de}}: {{Ü|de|sterben}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=en}}
+:[1] {{Ref-Leo|en}}
+:[1] {{Ref-Pons|en}}
+:[1] {{Ref-MWD}}
+:[1] {{Ref-MWT}}
+:[1] {{Ref-Dictionary}}
+:[1] {{Ref-dictcc|en}}
+
+== die ({{Sprache|Interlingua}}) ==
+=== {{Wortart|Substantiv|Interlingua}} ===
+
+{{Worttrennung}}
+:die, {{Pl.}} di·es
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift||spr=ia}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] [[Tag]]
+
+{{Oberbegriffe}}
+:[1] {{linkIa|anno}}, {{linkIa|mense}}, {{linkIa|septimana}}
+
+{{Unterbegriffe}}
+:[1] {{linkIa|hora}}, {{linkIa|minuta}}, {{linkIa|secunda}}
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen|spr=ia}}
+::
+
+{{Wortbildungen}}
+:{{linkIa|antemeridie}}, {{linkIa|diario}}, {{linkIa|diurne}}, {{linkIa|meridie}}, {{linkIa|quotidian}}, {{linkIa|postmeridie}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Tag|Ü-Liste=
+*{{de}}: {{Ü|de|Tag}}
+*{{en}}: {{Ü|en|day}}
+*{{eo}}: {{Ü|eo|tago}}
+*{{fr}}: {{Ü|fr|jour}}
+*{{it}}: {{Ü|it|giorno}}
+*{{ca}}: {{Ü|ca|dia}}
+*{{la}}: {{Ü|la|dies}}
+*{{nl}}: {{Ü|nl|dag}}
+*{{pt}}: {{Ü|pt|dia}}
+*{{sv}}: {{Ü|sv|dag}}
+*{{es}}: {{Ü|es|día}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=ia}}
+:[1] Wörterbuch ''Interlingua – Deutsch'' im Interlingua Wiktionary: [[:ia:appendice:Dictionarios/Interlingua-germano/d|»die« unter d]]
+:[*] {{Wikipedia-Suche|spr=ia}}
+:[1] Thomas Breinstrup e Italo Notarstefano (red.): ''Interlingua dictionario basic''. Union Mundial pro Interlingua (UMI), 2011, 256 pp., ISBN 978-2-36607-000-2, Seite 61
+<!-- Referenzen prüfen und das Suchwort bei WORTEINFÜGEN ergänzen
+:[1] [https://de.glosbe.com/ia/de/die Glosbe.com Interlingua-Deutsch »die«]
+-->
+
+== diē ({{Sprache|Latein}}) ==
+=== {{Wortart|Deklinierte Form|Latein}} ===
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift||spr=la}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Grammatische Merkmale}}
+*Ablativ Singular des Substantivs '''[[dies]]''' „Tag“
+
+{{Grundformverweis Dekl|dies|spr=la}}
+
+== die ({{Sprache|Niederländisch}}) ==
+{{erweitern|es fehlt entweder eine Referenz oder aber zitierte Beispiele, damit der Eintrag alternativ durch 5 Zitate belegt ist|Niederländisch}}
+=== {{Wortart|Demonstrativpronomen|Niederländisch}} ===
+
+{{Niederländisch Demonstrativpronomen Übersicht}}
+
+{{Worttrennung}}
+:die
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|di}}
+:{{Hörbeispiele}} {{Audio|nl-die.ogg|die}}
+
+{{Bedeutungen}}
+:[1] {{m}} [[jener]]
+:[2] {{f}} [[jene]]
+:[3] ''Plural:'' [[jene]]
+
+{{Gegenwörter}}
+:[1] [[deze]]
+
+{{Beispiele}}
+:[1] ''Die'' man, ''die'' vrouw en ''die'' kinderen.
+::''Der'' Mann, ''die'' Frau und ''die'' Kinder.
+:[2] {{Beispiele fehlen|spr=Niederländisch}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=m jener|Ü-Liste=
+*{{de}}: {{Ü|de|jener}}
+*{{en}}: {{Ü|en|that}}
+}}
+
+{{Ü-Tabelle|2|G=f jene|Ü-Liste=
+*{{de}}: {{Ü|de|jene}}
+}}
+
+{{Ü-Tabelle|3|G=Plural: jene|Ü-Liste=
+*{{de}}: {{Ü|de|jene}}
+}}
+
+{{Referenzen}}
+:
+
+=== {{Wortart|Relativpronomen|Niederländisch}} ===
+
+{{Worttrennung}}
+:die
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|di}}
+:{{Hörbeispiele}} {{Audio|nl-die.ogg|die}}
+
+{{Bedeutungen}}
+:[1] {{m}} [[der]]
+:[2] {{f}} [[die]]
+:[3] ''Plural:'' [[die]]
+
+{{Beispiele}}
+:[1] De man ''die'' dit gedaan heeft, zit daar.
+::Der Mann, ''der'' das getan aht, sitzt da.
+:[2] De vrouw ''die'' dit gezegd heeft, heeft zich vergist.
+::Die Frau, ''die'' das gesagt hat, hat sich geirrt.
+:[3] De mensen ''die'' dat zeggen, weten niet waar ze over praten.
+::Die Menschen, ''die'' das sagen, wissen nicht, wovon sie sprechen.
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=m der|Ü-Liste=
+*{{de}}: {{Ü|de|der}}
+*{{en}}: {{Ü|en|that}}
+}}
+
+{{Ü-Tabelle|2|G=f die|Ü-Liste=
+*{{de}}: {{Ü|de|die}}
+}}
+
+{{Ü-Tabelle|3|G=Plural: die|Ü-Liste=
+*{{de}}: {{Ü|de|die}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-VanDale|die}}
+:[1] {{Ref-Pons|nl|die}}
+:[1] {{Ref-uitmuntend|die}}

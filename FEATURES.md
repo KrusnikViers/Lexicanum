@@ -13,19 +13,6 @@ All tasks under milestone name should be completed prior to this release.
   * Word as answer
   * Word with grammar data
   * Translation articles
-* PoS to cover in German:
-    * Noun
-    * Adjective
-    * Verb
-    * Adverb
-    * Pronoun
-    * Preposition / postposition
-    * Conjunction
-    * Interjection
-    * Article
-    * Particle
-    * Numeral
-    * Phrase
 * PoS to cover in English:
     * Noun
     * Adjective

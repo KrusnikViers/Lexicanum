@@ -1,0 +1,175 @@
+von
+de
+Original article URL: https://de.wiktionary.org/wiki/von
+{{Siehe auch|[[Von]], [[vón]]}}
+{{TOC limit}}
+== von ({{Sprache|Deutsch}}) ==
+{{erweitern|weitere Bedeutungen ergänzen, die in den Standardreferenzen stehen, zum Beispiel stehen beim DWDS über 15 weitere Bedeutungen und im Duden 7 weitere. Außerdem fehlt das Adverb ({{Ref-Duden|von ueber|von (über)}})|Deutsch}}
+=== {{Wortart|Präposition|Deutsch}} ===
+
+{{Worttrennung}}
+:von
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|fɔn}}
+:{{Hörbeispiele}} {{Audio|De-von.ogg}}, {{Audio|De-von2.ogg}}
+:{{Reime}} {{Reim|ɔn|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''mit Dativ:'' Ursprung [[räumlich]]er oder [[zeitlich]]er [[Veränderung]], [[Herkunft]], [[Gegenstand]] der [[Betrachtung]], [[Ursache]], sonstige Verhältnisse
+:[2] getrennt stehender [[Namenszusatz]] vor [[Familienname]]n (des ehemaligen [[Adel]]s) und [[Adelsprädikat]] (bei Namen adeliger Personen)
+
+{{Herkunft}}
+:seit dem 8. Jahrhundert bezeugt; mittelhochdeutsch ''von(e)'', althochdeutsch ''fona'', seltener ''fana''<ref>{{Ref-DWDS|von}}</ref><ref>{{Ref-Duden|von aus ab durch per seitens|von (Präposition)}}</ref>, urgermanisch *''fanē'', mit [[Ablativ]]suffix -''nē'' aus ''-neh₁'', zur indogermanischen Präposition ''h₂p-ó-'' (Schwundstufe, im [[Allativ]]) ‚von, weg‘ gebildet;<ref>Guus Kroonen: ''Etymological Dictionary of Proto-Germanic''. Brill, Leiden 2013, S. 127.</ref> siehe ''[[ab]]'', wo die weitere Etymologie. Ebenso niederdeutsch ''von'', ''van'', niederländisch ''van'' und westfriesisch ''fan''.
+
+{{Gegenwörter}}
+:[1] [[zu]], [[nach]], [[bis]] (Teil der Bedeutung)
+:[2] [[zu]]
+
+{{Beispiele}}
+:[1] Der Zug fährt ''vom'' (''von'' dem) Gleis 1.
+:[1] Die Woche geht ''von'' Montag bis Sonntag.
+:[1] Das Schärfen ''von'' Messern ist eine Kunst.
+:[1] Der Vater ''vom'' Vater ist der Großvater.
+:[1] (1674) „Was ein Casus seye, wie viel ihrer sind, welche sie sind, auf was Weise sie entweder Expressè oder Subintellectivè, mit oder ohne Articulo formirt werden, ist aus obiger Lehre ''von'' dem Nomine gnugsam am Tage.“<ref>Matthias Krämer: ''Vollständige Italiänische Grammatica das ist: Toscanisch-Romanische Sprach-Lehre, welche nunmehr aus ihren untersten Fundamentis und Füglichkeit, bis zu der höchsten Perfection und Zierlichkeit, der Teutschen Nation zum besten Aufs klärlichst-ordentlichst-und fleissigst ausgeführt und vorgetragen wird.'' Nürnberg, ''in Verlegung des Authoris und bey demselbigen zu finden, gedruckt daselbst bey Christoph Gerhard,'' 1674<!-- (M.DC.LXXIV.) -->, S.68. Kommata ersetzt (/ durch,). ([https://books.google.de/books?id=lwpEAAAAcAAJ&pg=PA68 bei books.google])</ref>
+:[1] (1719) „Maynaldus: Ein Corpus dringet nicht durch ein Corpus; Diejenige Subtilheit aber, die in dem Corpore der Magnesiae ist, dringet durch und tingiert. Und eben an dem Orte: Die verborgene Natur wird ''von'' dem Corpore der Magnesiae extrahirt, durch welche die Corpora coloriret werden.“<ref>Christoph von Hellwig: ''Fasciculus Unterschiedlicher alten raren und wahren Philosophischen Schrifften Vom Stein der Weisen, Aus einem alten Lateinischen Manuscripto ins Teutsche übersetzet, Nebst einer curiosen Epistel, Von denen Duum Viris Hermeticis Foederatis, und einer Vorrede von einem wunderbaren vermischten uncorrosivischen Menstruo ex Macro- & Microcosmo die Metallen zu solviren.'' Leipzig und Bremen, 1719, S.187, Abschnitt „Was ist Anima, die Seele?“. ([https://books.google.de/books?id=MFs6AAAAcAAJ&pg=PA187 bei books.google])</ref>
+:[1] (1796) „''Von'' dem Nomine Substantivo, oder dem Hauptworte.“ (Überschrift) <ref>Abraham Sahlstedt: ''Schwedische Grammatik nach dem Sprachgebrauch unserer Zeiten.'' Lübeck und Leipzig, 1796, S.259. ([https://books.google.de/books?id=miEoAAAAMAAJ&pg=PA259 bei books.google])</ref>
+:[1] (1814) „''Von'' dem Nomine Substantivo oder der Grundbenennung. […] ''Von'' den Numeralibus und Pronominibus. […] ''Von'' den Verbis oder Aussagewörtern. […] ''Von'' den Participiis od. Verbalbenennungen.“ (Überschriften) <ref>Georg Friedrich Grotefend: ''Helfr. Bernhard Wenck's lateinische Grammatik für Schulen.'' Erster Band, siebente Auflage. Frankfurt am Main, bei Barrentrapp und Sohn, 1814, S.VII. ([https://books.google.de/books?id=CLJTAAAAcAAJ&pg=PP11 bei books.google])</ref>
+:[2] Herr ''von'' Knigge lässt bitten.
+
+{{Redewendungen}}
+:[[von wegen]]!
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''von'' [[der|dem]] (verkürzt zu: [[vom]]), [[von klein auf]], [[von Alters her]] ''(mit Genitiv)''<ref>Gottscheds ''Deutsche Sprachkunst'' (3. Auflage, S.484; 5. Auflage, S.511)</ref>, [[von mir aus]], [[von Rechts wegen]], [[von sich aus]], [[von vornherein]], [[von wegen]]
+:[2] [[von und zu]]
+
+{{Wortbildungen}}
+:[1] [[davon]], [[hiervon]], [[vom]], [[vonnöten]], [[vonstatten]], [[wovon]]
+:[2] [[Von]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=|Ü-Liste=
+*{{grc}}: {{Üt|grc|ἀπό}}, {{Üt|grc|κατά}}, {{Üt|grc|παρά}}, {{Üt|grc|πρός}}
+*{{ar}}: {{Üt|ar|من|min}}
+*{{eu}}: {{Ü|eu|batetik}}
+*{{bs}}: {{Üt|bs|од|od}}
+*{{bg}}: {{Üt|bg|от|ot}}, {{Üt|bg|на|na}}, {{Üt|bg|за|za}}, {{Üt|bg|по|po}}
+*{{da}}: {{Ü|da|fra}}
+*{{en}}: {{Ü|en|from}}, {{Ü|en|about}}, {{Ü|en|of}}
+*{{eo}}: {{Ü|eo|de}}
+*{{et}}: {{Ü|et|alates}}
+*{{fr}}: {{Ü|fr|de}}
+*{{el}}: {{Üt|el|από|apó}}
+*{{ia}}: {{Ü|ia|de}}
+*{{it}}: {{Ü|it|di}}
+*{{hr}}: {{Ü|hr|od}}
+*{{la}}: {{Ü|la|de}}
+*{{lt}}: {{Ü|lt|iš}}
+*{{lt}}: {{Ü|lt|no plkst}}
+*{{lb}}: {{Ü|lb|vun}}
+*{{mk}}: {{Üt|mk|од|od}}
+*{{nds}}: {{Ü|nds|van}}, {{Ü|nds|von}}, {{Ü|nds|vun}}
+**[[Ostfriesisch]]: {{Ü|nds|van}}
+**[[Niederpreußisch]]: {{Ü|nds|van}}
+*{{nl}}: {{Ü|nl|van}}
+**{{vls}}: {{Ü|vls|voun}}
+*{{no}}: {{Ü|no|fra}}
+*{{pl}}: {{Ü|pl|od}}
+*{{pt}}: {{Ü|pt|de}}
+*{{ro}}: {{Ü|ro|de}}, {{Ü|ro|de la}}
+*{{ru}}: {{Üt|ru|с}}, {{Üt|ru|от}}
+*{{sv}}: {{Ü|sv|från}}, {{Ü|sv|av}}
+*{{sr}}: {{Üt|sr|од|od}}
+*{{sh}}: {{Üt|sh|од|od}}
+*{{sk}}: {{Ü|sk|od}}
+*{{sl}}: {{Ü|sl|iz}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|wot}}
+**{{hsb}}: {{Ü|hsb|wot}}
+*{{es}}: {{Ü|es|de}}
+*{{cs}}: {{Ü|cs|od}}, {{Ü|cs|ode}}
+*{{uk}}: {{Üt|uk|з|z}}, {{Üt|uk|із|iz}}, {{Üt|uk|від|vid}}
+*{{be}}: {{Üt|be|ад|ad}}
+|Dialekttabelle=
+*Pfälzisch: [?] [[vun]]
+}}
+
+{{Ü-Tabelle|2|G=|Ü-Liste=
+*{{en}}: {{Ü|en|of}}
+*{{fr}}: {{Ü|fr|de}}; ''in deutschen Namen:'' {{Ü|fr|von}}
+*{{nds}}: 
+**[[Ostfriesisch]]: 
+**[[Niederpreußisch]]: {{Ü|nds|van}}
+*{{nl}}: {{Ü|nl|van}}
+|Dialekttabelle=
+*Pfälzisch: [?] [[vun]]
+}}
+
+{{Referenzen}}
+:[1, 2] {{Ref-Grimm|von}}
+:[1, 2] {{Ref-Duden|von aus ab durch per seitens|von (Präposition)}}
+:[1, 2] {{Ref-DWDS|von}}
+:[1, 2] {{Ref-wissen.de|Wörterbuch|von}}
+:[2] {{Ref-wissen.de|lexikon|von}}
+:[1, 2] {{Ref-UniLeipzig|von}}
+:[1] Johann Christoph Gottsched:
+:: ''Grundlegung einer Deutschen Sprachkunst, Nach den Mustern der besten Schriftsteller des vorigen und jetzigen Jahrhunders abgefasset, und bey dieser dritten Auflage merklich vermehret.'' Leipzig, 1752, S.155-157 (Bestandteil von Teil II, Hauptstück II: ''Von dem Geschlechtsworte, (Articulo).''), S.378 (Bestandteil von Teil IX, Hauptstück II: ''Von den Vorwörtern (Praepositionibus.)'') und S.484 (Bestandteil von Teil III, Hauptstück VIII: ''Von der Fügung der Vorwörter, (Praepositionum.)''). ([http://books.google.de/books?id=5n4HAAAAQAAJ bei books.google])
+:: ''Vollständigere und Neuerläuterte Deutsche Sprachkunst, Nach den Mustern der besten Schriftsteller des vorigen und itzigen Jahrhunderts abgefasset, und bey dieser fünften Auflage merklich verbessert.'' Leipzig, 1762, S.161-163 (Bestandteil von Teil II, Hauptstück II: ''Vom Geschlechtsworte (Articulo).''), S.393 (Bestandteil von Teil II, Hauptstück IX: ''Von den Vorwörtern (Praepositionibus).'') und S.511 (Bestandteil von Teil III, Hauptstück VIII: ''Von der Fügung der Vorwörter. (Praepositionum.)''). ([https://books.google.de/books?id=nNlIAAAAcAAJ bei books.google])
+:: ''Grundlegung der deutschen Sprachkunst'', insbeondere [http://www.zeno.org/Literatur/M/Gottsched,+Johann+Christoph/Theoretische+Schriften/Grundlegung+der+deutschen+Sprachkunst/II.+Theil%3A+Die+Wortforschung/Das+II+Hauptst%C3%BCck ''Das II Hauptstück <nowiki>[des II Theils]</nowiki>. Vom Geschlechtsworte (articulo).''] und [http://www.zeno.org/Literatur/M/Gottsched,+Johann+Christoph/Theoretische+Schriften/Grundlegung+der+deutschen+Sprachkunst/II.+Theil%3A+Die+Wortforschung/Das+IX+Hauptst%C3%BCck ''Das IX Hauptstück <nowiki>[des II Theils]</nowiki>. Von den Vorwörtern (praepositionibus.)''] (bei zeno.org)
+:[1] Justus Georg Schottel (latinisiert: Justus-Georgius Schottelius): ''Ausführliche Arbeit Von der Teutschen HaubtSprache, Worin enthalten Gemelter dieser HaubtSprache Uhrankunft, Uhraltertuhm, Reinlichkeit, Eigenschaft, Vermögen, Unvergleichlichkeit, Grundrichtigkeit, zumahl die SprachKunst und VersKunst Teutsch und guten theils Lateinisch völlig mit eingebracht, wie nicht weniger die Verdoppelung, Ableitung, die Einleitung, Nahmwörter, Authores vom Teutschen Wesen und Teutscher Sprache, von der verteuschung, Item die Stammwörter der Teutschen Sprache samt der Erklärung und derogleichen viel merkwürdige Sachen. Abgetheilet In Fünf Bücher.'' Braunschweig, 1663, S.298–300 (Bestandteil von Buch II, Kapitel IX: ''Von der Zahlendung'') und S.768 (Bestandteil von Buch III, Kapitel VI: ''Von kunstmessiger Fügung des Vorwortes''). ([https://books.google.de/books?id=-JVEAAAAcAAJ bei books.google])
+:[1] Johann Balthasar von Antesperg: ''Die Kayſerliche Deutſche Grammatick Oder Kunſt die deutſche Sprache recht zu reden, Und ohne Fehler zu ſchreiben, In Vier Theilen Mit einem Examine und zulänglichen Vor= und Anmerkungen, Zum Nutzen Des gemeinem Weſens, und deren, welche des regelmäſzigen Verſtandes und reinen Ausdruckes in eigener Sprache mächtig ſeyn wollen, oder ihres Amtes und ihrer Geſchäfte halber ſeyn ſollen. Mit ſonderbarem Fleiſz deutlich und vollkommen In otio Viennensi Ausgearbeitet Von Johann Balthaſar von Anteſperg, verſchiedener des H.&nbsp;R.&nbsp;R. Fürſten und Stände Rath, Redner und Agenten am Kayſerl. Hofe. Zweyte und verbeſſerte Edition ſamt einem Register. Mit allergnädigiſter Kayſerlicher Freyheit. In Wien zu finden (1) bey Johann Ignatz Heyinger, Buchdrucker in der Römerſtraſſe. (2) Bey Leopold Grund in ſeinem Gewölb neben dem Hauptthor bey St. Stephan, wo die Schulbücher verkauft werden.'' 1749. S.17&nbsp;f. (Bestandteil von Teil 1, Kapitel 2: ''Von der Declination des deutsch. Artickels. De Declinatione Articuli Germanici.'') und S.275 (Bestandteil von Teil 2, Kapitel 7: ''Von dem Syntax der Vorwörter. De Syntaxi Praepositionum.''). ([https://fedora.phaidra.univie.ac.at/fedora/get/o:194837/bdef:Asset/view bei univie.ac.at])
+
+{{Quellen}}
+
+{{Präpositionen (Deutsch)}}
+
+{{Ähnlichkeiten 1|[[Bonn]], [[Fon]], [[vom]]}}
+
+== von ({{Sprache|Isländisch}}) ==
+=== {{Wortart|Substantiv|Isländisch}}, {{f}} ===
+
+{{Isländisch Substantiv Übersicht
+|Nominativ Singular=von
+|Nominativ Plural=vonir
+|Akkusativ Singular=von
+|Akkusativ Plural=vonir
+|Dativ Singular=von
+|Dativ Plural=vonum
+|Genitiv Singular=vonar
+|Genitiv Plural=vona
+|Nominativ Singular Bestimmt=vonin
+|Nominativ Plural Bestimmt=vonirnar
+|Akkusativ Singular Bestimmt=vonina
+|Akkusativ Plural Bestimmt=vonirnar
+|Dativ Singular Bestimmt=voninni
+|Dativ Plural Bestimmt=vonunum
+|Genitiv Singular Bestimmt=vonarinnar
+|Genitiv Plural Bestimmt=vonanna
+}}
+
+{{Worttrennung}}
+:von, {{Pl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift||spr=is}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] Hoffnung
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen|spr=is}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Hoffnung|Ü-Liste=
+*{{de}}: {{Ü|de|Hoffnung}}, {{Ü|de|Erwartung}}
+*{{en}}: {{Ü|en|hope}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=is|von}}
+:[1] {{Ref-IcelandicOnlineDictionary|von}}
+:[1] {{Ref-UniLeipzig2|is|von}}
+
+{{Ähnlichkeiten 2|[[van]]}}

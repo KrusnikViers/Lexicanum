@@ -1,0 +1,75 @@
+wessen
+de
+Original article URL: https://de.wiktionary.org/wiki/wessen
+== wessen ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Pronomen|Deutsch}} ===
+
+{{Worttrennung}}
+:wes·sen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈvɛsn̩}}
+:{{Hörbeispiele}} {{Audio|De-wessen.ogg}}
+:{{Reime}} {{Reim|ɛsn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] Genitiv von [[wer]]
+
+{{Beispiele}}
+:[1] ''Wessen'' Hund ist das? (= Wem gehört dieser Hund?)
+
+{{Lemmaverweis|wer}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Genitiv von wer|Ü-Liste=
+*{{bg}}: {{Üt|bg|чий|}}
+*{{en}}: {{Ü|en|whose}}
+*{{fr}}: {{Ü|fr|à qui}}
+*{{ia}}: {{Ü|ia|de qui}}
+*{{pl}}: {{Ü|pl|czyj}}
+*{{pt}}: {{Ü|pt|de quem}}
+*{{ro}}: {{Ü|ro|al cui}}, {{Ü|ro|a cui}}
+*{{ru}}: {{Üt|ru|чей}}
+*{{sv}}: {{Ü|sv|vems}}
+*{{sk}}: {{Ü|sk|koho}}, {{Ü|sk|kohože}}, {{Ü|sk|čí}}, {{Ü|sk|čia}}, {{Ü|sk|čie}}, {{Ü|sk|číže}}, {{Ü|sk|čiaže}}, {{Ü|sk|čieže}}
+*{{es}}: {{Ü|es|de quién}}
+*{{cs}}: {{Ü|cs|koho}}, {{Ü|cs|čí}}
+*{{tr}}: {{Ü|tr|kimin}}
+|Dialekttabelle=
+*Bairisch: wem sei´ (hier wird nur der Dativ benutzt)
+}}
+
+{{Referenzen}}
+:[1] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+
+=== {{Wortart|Pronomen|Deutsch}} ===
+
+{{Worttrennung}}
+:wes·sen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈvɛsn̩}}
+:{{Hörbeispiele}} {{Audio|De-wessen.ogg}}
+:{{Reime}} {{Reim|ɛsn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] Genitiv von [[was]]
+
+{{Beispiele}}
+:[1] Das, ''wessen'' er sich rühmt, könnte auch auf Plagiat beruhen.
+
+{{Lemmaverweis|was}}
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Genitiv von was|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+*{{fr}}: {{Ü|fr|}}
+*{{sk}}: {{Ü|sk|čoho}}, {{Ü|sk|čohože}}
+*{{cs}}: {{Ü|cs|čeho}}
+}}
+
+{{Referenzen}}
+:[*] {{Ref-UniLeipzig}}
+
+{{Ähnlichkeiten 1|[[wesen]], [[-wesen]], [[Wesen]]|Anagramme=[[Wesens]]}}

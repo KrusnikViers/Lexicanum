@@ -1,0 +1,218 @@
+aus
+de
+Original article URL: https://de.wiktionary.org/wiki/aus
+{{Siehe auch|[[Aus]], [[AUS]], [[aus-]]}}
+== aus ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Präposition|Deutsch}} ===
+
+{{Worttrennung}}
+:aus
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|aʊ̯s}}
+:{{Hörbeispiele}} {{Audio|de-aus.ogg}}, {{Audio|De-aus2.ogg}}
+:{{Reime}} {{Reim|aʊ̯s|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''mit Dativ:'' von drinnen nach draußen
+:[2] ''mit Dativ:'' die Herkunft bezeichnend
+:[3] ''mit Dativ:'' die Beschaffenheit bezeichnend
+:[4] ''mit Dativ:'' eine Bewegung fort von der aktuellen Position bezeichnend
+
+{{Herkunft}}
+:''erst im althochdeutschen gewinnt das ''ûჳ'' eine präpositionale Funktion''. Es war nur ein Adverb bevor der Nutzen von Präposition abgekürzt aus dem Ausdruck ''ûჳ fon(a),'ûჳ fan(a)'' wurde. {{QS Herkunft|unbelegt}}
+
+{{Gegenwörter}}
+:[1] [[in]] … [[hinein]], [[ein]]
+
+{{Beispiele}}
+:[1] Knüppel ''aus'' dem Sack
+:[2] Peter kommt ''aus'' dem Norden.
+:[3] Diese Schuhe sind ''aus'' echtem Leder.
+:[4] Geh mir ''aus'' den Augen!
+:[4] Peter trat gerade noch rechtzeitig ''aus'' der Schussbahn.
+
+{{Redewendungen}}
+:[[auf etwas aus sein|auf etwas ''aus'' sein]]
+:[[auf jemanden aus sein|auf jemanden ''aus'' sein]]
+:[[aus sich heraus|''aus'' sich heraus]]
+:[[bei jemandem aus und ein gehen|bei jemandem ''aus'' und ein gehen]]
+:[[bei jemandem ein und aus gehen|bei jemandem ein und ''aus'' gehen]]
+:[[von mir aus|von mir ''aus'']]
+:[[von sich aus|von sich ''aus'']]
+:[[weder aus noch ein wissen|weder ''aus'' noch ein wissen]]
+:[[weder ein noch aus wissen|weder ein noch ''aus'' wissen]]
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''aus'' … [[heraus]]
+
+{{Wortbildungen}}
+:[[außen]], [[außer]], [[daraus]], [[heraus]], [[hinaus]], [[raus]], ''Verben siehe unter dem jeweiligen Grundverb''
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=mit Dativ: von drinnen nach draußen|Ü-Liste=
+*{{bg}}: {{Üt|bg|от|ot}}, {{Üt|bg|из|iz}}
+*{{en}}: {{Ü|en|from}}, {{Ü|en|out of}}
+*{{eo}}: {{Ü|eo|el}}
+*{{fr}}: {{Ü|fr|de}}
+*{{el}}: {{Üt|el|από|apó}}
+*{{ia}}: {{Ü|ia|ex}}
+*{{is}}: {{Ü|is|út}}
+*{{it}}: {{Ü|it|da}}
+*{{lb}}: {{Ü|lb|aus}}
+*{{nds}}: {{Ü|nds|ut}}
+*{{nl}}: {{Ü|nl|uit}}
+*{{pl}}: {{Ü|pl|z}}
+*{{pt}}: {{Ü|pt|de}}
+*{{ro}}: {{Ü|ro|afară din}}
+*{{ru}}: {{Üt|ru|из}}
+*{{sv}}: {{Ü|sv|ur}}
+*{{sr}}: {{Üt|sr|из|iz}}
+*{{es}}: {{Ü|es|de}}
+*{{cs}}: {{Ü|cs|z}}
+}}
+
+{{Ü-Tabelle|2|G=mit Dativ: die Herkunft bezeichnend|Ü-Liste=
+*{{ar}}: {{Üt|ar|من|min}}
+*{{bg}}: {{Üt|bg|из|iz}}
+*{{en}}: {{Ü|en|from}}
+*{{fr}}: {{Ü|fr|de}}
+*{{el}}: {{Üt|el|από|apó}}
+*{{id}}: {{Ü|id|dari}}
+*{{is}}: {{Ü|is|úr}}
+*{{it}}: {{Ü|it|da}}
+*{{pl}}: {{Ü|pl|z}}
+*{{ro}}: {{Ü|ro|din}}
+*{{ru}}: {{Üt|ru|из}}
+*{{sv}}: {{Ü|sv|från}}
+*{{sr}}: {{Üt|sr|из|iz}}
+*{{cs}}: {{Ü|cs|z}}
+}}
+
+{{Ü-Tabelle|3|G=mit Dativ: die Beschaffenheit bezeichnend|Ü-Liste=
+*{{bg}}: {{Üt|bg|из|iz}}
+*{{en}}: (made) {{Ü|en|of}}
+*{{fr}}: {{Ü|fr|en}}
+*{{el}}: {{Üt|el|από|apó}}
+*{{is}}: {{Ü|is|útúr}}
+*{{it}}: {{Ü|it|da}}, {{Ü|it|di}}
+*{{swb}}: {{Ü|swb|-a}}
+*{{pl}}: {{Ü|pl|z}}
+*{{ro}}: {{Ü|ro|făcut din}}
+*{{ru}}: {{Üt|ru|из}}
+*{{sv}}: {{Ü|sv|av}}
+*{{sr}}: {{Üt|sr|од|od}}
+*{{cs}}: {{Ü|cs|z}}
+}}
+
+{{Ü-Tabelle|4|G=mit Dativ: eine Bewegung fort von der aktuellen Position bezeichnend|Ü-Liste=
+*{{el}}: {{Üt|el|από|apó}}
+*{{is}}: {{Ü|is|frá}}
+*{{it}}: {{Ü|it|da}}
+*{{pl}}: {{Ü|pl|z}}
+*{{ru}}: {{Üt|ru|из}}, {{Üt|ru|с}}
+*{{sv}}: {{Ü|sv|från}}, {{Ü|sv|ifrån}}
+*{{sr}}: {{Üt|sr|с|s}}, {{Üt|sr|са|sa}}, {{Üt|sr|к|k}}, {{Üt|sr|ка|ka}}
+*{{cs}}: {{Ü|cs|z}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-Grimm|aus}}
+:[1] {{Ref-Goethe|aus}}
+:[1] {{Ref-DWDS|aus}}
+:[1] {{Ref-UniLeipzig|aus}}
+
+{{Referenzen prüfen|Deutsch}}
+
+{{Präpositionen (Deutsch)}}
+
+=== {{Wortart|Adverb|Deutsch}} ===
+
+{{Worttrennung}}
+:aus
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|aʊ̯s}}
+:{{Hörbeispiele}} {{Audio|De-aus.ogg}}, {{Audio|De-aus2.ogg}}
+:{{Reime}} {{Reim|aʊ̯s|Deutsch}}
+
+{{Bedeutungen}}
+:[1] vorbei
+:[2] ''[[umgangssprachlich]]:'' nicht in Betrieb
+:[3] ''regional:'' nicht mehr vorrätig
+
+{{Herkunft}}
+:''gemeingermanisch; gotisch: ''ut'', althochdeutsch, mittelhochdeutsch: ''ûჳ {{QS Herkunft|unbelegt}}
+
+{{Synonyme}}
+:[1] [[vorbei]]
+:[2] [[ausschalten|ausgeschaltet]], [[ausgehen|ausgegangen]], [[erlöschen|erloschen]]
+:[3] [[ausgehen|ausgegangen]], ''andere Regionen:'' [[alle]]
+
+{{Gegenwörter}}
+:[2] [[an]], [[ein]]
+
+{{Unterbegriffe}}
+:[3] [[verbrauchen|verbraucht]], [[verkaufen|verkauft]]
+
+{{Beispiele}}
+:[1] Zwischen uns ist es ''aus!''
+:[2] Das Feuer ist ''aus.''
+:[3] Die Semmeln sind schon ''aus.''
+
+{{Redewendungen}}
+:[[aus der Traum]]
+:[[aus die Maus]]
+:[[aus und vorbei sein]]
+
+{{Wortbildungen}}
+:[[Auszeit]]
+:[[ausgehen]], [[auskämmen]], [[ausknipsen]], [[ausmachen]], [[auspusten]], [[ausschalten]], [[aussiedeln]], [[austreten]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=vorbei|Ü-Liste=
+*{{en}}: {{Ü|en|over}}
+*{{nds}}: {{Ü|nds|ut}}
+*{{ro}}: {{Ü|ro|terminat}}
+*{{sv}}: {{Ü|sv|slut}}
+*{{es}}: {{Ü|es|acabado}}
+}}
+
+{{Ü-Tabelle|2|G=umgangssprachlich: nicht in Betrieb|Ü-Liste=
+*{{en}}: {{Ü|en|off}}
+*{{el}}: {{Üt|el|σβηστός|svistós}}, {{Üt|el|κλειστό|klistó}}
+*{{nds}}: {{Ü|nds|ut}}
+*{{ro}}: {{Ü|ro|stins}}
+*{{es}}: {{Ü|es|apagado}}
+}}
+
+{{Ü-Tabelle|3|G=regional: nicht mehr vorrätig|Ü-Liste=
+*{{en}}: ''x ist aus'' = we're {{Ü|en|out of}} x
+*{{ro}}: {{Ü|ro|terminat}}
+*{{sv}}: {{Ü|sv|slut}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-Grimm|aus}}
+:[1] {{Ref-Goethe|aus}}
+:[1] {{Ref-DWDS|aus|2}}
+:[1] {{Ref-UniLeipzig|aus}}
+
+{{Referenzen prüfen|Deutsch}}
+
+{{Ähnlichkeiten 1|[[aus-]], [[außen]], [[außer]]|Anagramme=[[sau]], [[Sau]]}}
+
+== aus ({{Sprache|Katalanisch}}) ==
+=== {{Wortart|Deklinierte Form|Katalanisch}} ===
+
+{{Worttrennung}}
+:aus
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|aws}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Grammatische Merkmale}}
+*Plural des Substantivs '''[[au]]'''
+
+{{Grundformverweis|au}}

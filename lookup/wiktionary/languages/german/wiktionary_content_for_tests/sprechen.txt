@@ -1,0 +1,146 @@
+sprechen
+de
+Original article URL: https://de.wiktionary.org/wiki/sprechen
+{{Siehe auch|[[Sprechen]]}}
+== sprechen ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Verb|Deutsch}}, ''unregelmäßig'' ===
+
+{{Deutsch Verb Übersicht
+|Präsens_ich=spreche
+|Präsens_du=sprichst
+|Präsens_er, sie, es=spricht
+|Präteritum_ich=sprach
+|Partizip II=gesprochen
+|Konjunktiv II_ich=spräche
+|Imperativ Singular=sprich
+|Imperativ Plural=sprecht
+|Hilfsverb=haben
+}}
+
+{{Worttrennung}}
+:spre·chen, {{Prät.}} sprach, {{Part.}} ge·spro·chen
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈʃpʁɛçn̩}}
+:{{Hörbeispiele}} {{Audio|De-sprechen.ogg}}, {{Audio|De-sprechen2.ogg}}, {{Audio|De-at-sprechen.ogg|spr=at}}
+:{{Reime}} {{Reim|ɛçn̩|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[mündlich]]e [[Äußerung]]en in [[Form]] von [[Laut]]en, [[Wort|Wörter]]n und/oder [[Satz|Sätze]]n von sich geben
+:[2] {{K|übertr.}} etwas [[nonverbal]] [[andeuten]]; [[indirekt]] [[erkennbar]] machen, zum [[Ausdruck]] bringen
+
+{{Herkunft}}
+:westgermanisch *''sprek-a-'' „sprechen“; althochdeutsch: ''sprehhan,'' mittelhochdeutsch: ''sprechen.'' Das Wort ist seit dem 8. Jahrhundert belegt.<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „sprechen“, Seite 870.</ref>
+
+{{Synonyme}}
+:[1] [[äußern]], [[reden]], [[sagen]], [[mitteilen]], [[kundtun]], [[kommunizieren]]
+
+{{Gegenwörter}}
+:[1] [[schweigen]]
+
+{{Unterbegriffe}}
+:[1] [[abstreiten]], [[andeuten]], [[anreden]], [[ansprechen]], [[argumentieren]], [[aufklären]], [[ausdrücken]], [[ausrichten]], [[begründen]], [[bekanntgeben]], [[bemerken]], [[deklamieren]], [[diktieren]], [[diskutieren]], [[entgegnen]], [[ergreifen]], [[erklären]], [[feststellen]], [[flüstern]], [[formulieren]], [[informieren]], [[kauderwelschen]], [[kundtun]], [[labern]], [[meinen]], [[mitteilen]], [[mosern]], [[murren]], [[nuscheln]], [[offenlegen]], [[plappern]], [[plaudern]], [[prahlen]], [[quasseln]], [[quatschen]], [[referieren]], [[rezitieren]], [[sabbeln]], [[salbadern]], [[schnattern]], [[schreien]], [[schätzen]], [[schwatzen]], [[schwätzen]], [[stottern]], [[übermitteln]], [[unterhalten]], [[unterrichten]], [[verbalisieren]], [[vermuten]], [[versprechen]], [[vorbringen]], [[vortragen]], [[weitererzählen]], [[weitertragen]], [[widerrufen]], [[wiedergeben]], [[zugeben]], [[zutragen]]
+:[*] [[absprechen]], [[ansprechen]], [[aussprechen]], [[besprechen]], [[dafürsprechen]], [[dagegensprechen]], [[dahinsprechen]], [[durchsprechen]], [[einsprechen]], [[entsprechen]], [[freisprechen]], [[fürsprechen]], [[gegensprechen]], [[heiligsprechen]], [[lossprechen]], [[mitsprechen]], [[nachsprechen]], [[seligsprechen]], [[übersprechen]], [[versprechen]], [[vorsprechen]], [[widersprechen]], [[zusprechen]]
+
+{{Beispiele}}
+:[1] ''Sprich'' lauter, damit man dich auch versteht!
+:[1] Mein Kind hat mit neun Monaten sein erstes Wort ''gesprochen''.
+:[1] Hab keine Angst, ''sprich'' mit mir!
+:[1] Ihr Sohn ''spricht'' ruhig und gut verständlich.
+:[1] Hast du Zeit, mit mir zu ''sprechen''?
+:[1] Er hat einen Papagei, der ''sprechen'' kann.
+:[1] Er ''spricht'' mit seiner Familie Englisch und Spanisch.
+:[1] Können Sie Deutsch ''sprechen''?
+:[1] Er möchte mit uns über seine Abenteuerreise in die Arktis ''sprechen''.
+:[1] Welche Sprache ''spricht'' man eigentlich in Belgien?
+:[1] Sie ''spricht'' mit einem leichten englischen Akzent.
+:[1] Der Pastor ''sprach'' am Ende der Messe ein Gebet.
+:[1] Kann ich dich kurz ''sprechen''?
+:[1] Ich möchte Herrn Müller einmal ''sprechen''.
+:[2] Sein Gesicht ''spricht'' Bände.
+:[2] Seine guten Noten ''sprechen'' für seine Intelligenz.
+:[2] Es gibt viele Argumente, die gegen seinen Plan ''sprechen''.
+:[2] „Das erste, was aus seinen Worten ''spricht'', ist Dankbarkeit.“<ref>{{Literatur|Autor=Günther S. Wegener|Titel=Konferenz der Kirchen|Verlag=Aussaat Verlag|Jahr=1962|Seiten=16|Online=Zitiert nach {{GBS|SMlHAQAAIAAJ|PA16|Hervorhebung="spricht"}}}}</ref>
+:[2] „»Sie haben wunderschöne große Augen, ''sprechende'' Augen«, bemerkte er dann ernst.“<ref>{{Literatur|Autor=Barbara Gothe|Titel=10 Minuten Leselust - Band 1: 10 romantische Liebesgeschichten|Verlag=dotbooks|Jahr=2016|Seiten=65|ISBN=978-3-9552081-4-1|Online=Zitiert nach {{GBS|RxipCwAAQBAJ|PT65|Hervorhebung="sprechende"}}}}</ref>
+
+{{Redewendungen}}
+:[[Bände sprechen]]
+:[2] [[Blumen sprechen lassen|Blumen ''sprechen'' lassen]]
+:[2] [[dieselbe Sprache sprechen|dieselbe Sprache ''sprechen'']]
+
+{{Charakteristische Wortkombinationen}}
+:[1] mit [[belegt]]er [[Stimme]] ''sprechen'' ({{Audio|De-mit belegter Stimme sprechen.ogg|Audio}})
+
+{{Wortbildungen}}
+:''Adjektive:'' [[sprechfaul]]
+:''Substantive:'' [[Lautsprecher]], [[Sprache]], [[Sprechanlage]], [[Sprechart]], [[Sprechen]], [[Sprechenlernen]], [[Sprecher]], [[Sprechfähigkeit]], [[Sprechgitter]], [[Sprechkunst]], [[Sprechmuschel]], [[Sprechpause]], [[Sprechprobe]], [[Sprechrolle]], [[Sprechstil]], [[Sprechstunde]], [[Sprechtheater]], [[Sprechverbot]], [[Sprechvermögen]], [[Sprechvorgang]], [[Sprechweise]], [[Sprechwerkzeug]], [[Sprechwiedergabe]], [[Sprechzimmer]], [[Spruch]]
+
+{{Entlehnungen}}
+:''tschechisch:'' [[šprechtit]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=mündliche Äußerungen in Form von Lauten, Wörtern und/oder Sätzen von sich geben|Ü-Liste=
+*{{ar}}: {{Üxx5|ar|takallama|تَكَلَّمَ|تكلم}}
+*{{eu}}: hitz {{Ü|eu|egin}}
+*{{bg}}: {{Üt|bg|говоря}}
+*{{zh-cn}}: {{Üt|zh|讲话|ji&#462;nghuà}}
+*{{da}}: {{Ü|da|tale}}
+*{{en}}: {{Ü|en|speak}}, ''veraltet:'' {{Ü|en|propose}}, {{Ü|en|talk}}
+*{{eo}}: {{Ü|eo|paroli}}
+*{{et}}: {{Ü|et|rääkima}}
+*{{fo}}: {{Ü|fo|snakka}}, {{Ü|fo|tala}}, {{Ü|fo|tosa}}
+*{{fi}}: {{Ü|fi|puhua}}
+*{{fr}}: {{Ü|fr|parler}}, {{Ü|fr|prononcer}}, {{Ü|fr|dire}}
+*{{gl}}: {{Ü|gl|falar}}
+*{{el}}: {{Üt|el|μιλάω|miláo}}
+*{{io}}: {{Ü|io|dicar}}, {{Ü|io|parolar}}
+*{{id}}: {{Ü|id|berbicara}}, {{Ü|id|berbahasa}}
+*{{ia}}: {{Ü|ia|parlar}}, {{Ü|ia|dicer}}
+*{{is}}: {{Ü|is|mæla}}, {{Ü|is|tala}}
+*{{it}}: {{Ü|it|parlare}}, {{Ü|it|dire}}, {{Ü|it|proferire}}, {{Ü|it|pronunciare}}, {{Ü|it|esprimersi}}, {{Ü|it|discorrere}}, {{Ü|it|ciarlare}}
+*{{ja}}: {{Üt|ja|話す|はなす, hanasu}}, {{Üt|ja|語る|かたる, kataru}}
+*{{ca}}: {{Ü|ca|parlar}}
+*{{tlh}}: {{Ü|tlh|jatlh}}
+*{{ko}}: {{Üt|ko|말하다|}}
+*{{hr}}: {{Ü|hr|govoriti}}
+*{{la}}: {{Ü|la|dicere|dicere|dico}}, {{Ü|la|loqui|loqui|loquor}}
+*{{lv}}: {{Ü|lv|runāt}}
+*{{mr}}: {{Üt|mr|बोलणे|}}
+*{{ne}}: {{Üt|ne|बोल्नु|}}
+*{{nds}}: {{Ü|nds|spreken}}; ''nordnds.:'' {{Ü|nds|snacken}}, ''ostfälisch:'' {{Ü|nds|kören}}, ''westfälisch:'' {{Ü|nds|küern}}, ''ostfriesisch:'' {{Ü|nds|praten}}
+*{{nl}}: {{Ü|nl|spreken}}
+*{{no}}: {{Ü|no|snakke}}, {{Ü|no|tale}}
+*{{pl}}: {{Ü|pl|mówić}}
+*{{pt}}: {{Ü|pt|falar}}
+*{{rm}}: {{Ü|rm|dir}}
+*{{ro}}: {{Ü|ro|vorbi}}
+*{{ru}}: ''unvoll.'' {{Üt|ru|говорить}}; ''voll.'' {{Üt|ru|сказать}}
+*{{sv}}: {{Ü|sv|prata}}, {{Ü|sv|tala}}, {{Ü|sv|snacka}}
+*{{sr}}: {{Üt|sr|говорити|govoriti}}, {{va.|:}} {{Üt|sr|зборити|zboriti}}, {{va.|:}} {{Üt|sr|беседити|besediti}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|powědaś}}
+*{{es}}: {{Ü|es|hablar}}
+*{{cs}}: {{Ü|cs|mluvit}}, {{Ü|cs|hovořit}}
+*{{tr}}: {{Ü|tr|konuşmak}}
+*{{uk}}: {{Üt|uk|говорити}}, {{Üt|uk|казати}}
+*{{hu}}: {{Ü|hu|beszél}}
+*{{cy}}: {{Ü|cy|siarad}}
+}}
+
+{{Ü-Tabelle|2|G=|Ü-Liste=
+*{{fr}}: {{Ü|fr|communiquer}}
+*{{hr}}: {{Ü|hr|govoriti}}
+*{{sr}}: {{Üt|sr|говорити|govoriti}}, {{va.|:}} {{Üt|sr|зборити|zboriti}}, {{va.|:}} {{Üt|sr|беседити|besediti}}
+*{{tr}}: {{Ü|tr|ifade etmek}}
+}}
+
+{{Referenzen}}
+:[1] {{Ref-Grimm}}
+:[1, 2] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+:[1, 2] {{Ref-FreeDictionary}}
+:[1, 2] {{Ref-Duden}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|Anagramme=[[preschen]]}}

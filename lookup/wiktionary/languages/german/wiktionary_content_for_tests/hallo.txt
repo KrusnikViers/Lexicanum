@@ -1,0 +1,176 @@
+hallo
+de
+Original article URL: https://de.wiktionary.org/wiki/hallo
+{{Siehe auch|[[Hallo]], [[halló]]}}
+== hallo ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Interjektion|Deutsch}}, {{Wortart|Grußformel|Deutsch}} ===
+
+{{Worttrennung}}
+:hal·lo
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈhalo}}, {{Lautschrift|haˈloː}}
+:{{Hörbeispiele}} {{Audio|De-hallo.ogg}}, {{Audio|CPIDL German - Hallo.ogg}}
+:{{Reime}} {{Reim|alo|Deutsch}}, {{Reim|oː|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''als Interjektion:'' ein [[Anruf]], mit dem man andere, auch Fremde, auf sich aufmerksam machen will
+:[2] als Grußwort mit unverbindlichem Charakter
+:[3] [[Grußwort]] am [[Telefon]]
+
+{{Herkunft}}
+:im 15. Jahrhundert von [[mittelhochdeutsch]] ''holā'', ursprünglich an den [[Fährmann]] gerichteter [[Imperativ]] zu ''[[holen]]''<ref>{{Ref-DWDS|hallo}}</ref>
+
+{{Sinnverwandte Wörter}}
+:[1] ''siehe:'' [[Verzeichnis:Deutsch/Grüßen/Begrüßungsformeln|Begrüßungsformeln]]
+
+{{Gegenwörter}}
+:[2] [[tschüss]], [[auf Wiedersehen]], [[ade]]
+
+{{Oberbegriffe}}
+:[2] [[Gruß]]
+
+{{Beispiele}}
+:[1] ''Hallo,'' bist du vollkommen bescheuert?
+:[1] ''Ha - llo,'' wo bist du? <small>(geschrien)</small>
+:[2, 3] ''Hallo,'' Max!
+:[3] ''Hallo'', Jana, bist du noch dran?
+
+{{Redewendungen}}
+:[1] [[aber hallo]]!
+
+{{Wortbildungen}}
+:[[Hallo]], [[hallöchen]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=|Ü-Liste=
+*{{zh}}: {{Üt|zh|喂|wèi}}
+*{{eo}}: {{Ü|eo|hola}}, {{Ü|eo|he}}, {{Ü|eo|hej}}, {{Ü|eo|ha}}
+*{{fr}}: {{Ü|fr|allô}}
+*{{ia}}: {{Ü|ia|hallo}}
+*{{ga}}: {{Ü|ga|Dia duit}}
+*{{ja}}: {{Üt|ja|今日は|konnichiwa}}, 
+*{{ca}}: {{Ü|ca|hola}}
+*{{lb}}: {{Ü|lb|moien}}, {{Ü|lb|bonjour}}
+*{{nds}}: {{Ü|nds|moin}}, {{Ü|nds|moin moin}}
+*{{no}}: {{Ü|no|hei}}, {{Ü|no|hallo}}
+*{{pt}}: {{Ü|pt|olá}}
+*{{ro}}: {{Ü|ro|alo}}
+*{{ru}}: {{Üt|ru|эй}}
+*{{sv}}: {{Ü|sv|hallå}}, {{Ü|sv|hejsan}}
+*{{es}}: {{Ü|es|oiga}}
+*{{sw}}: {{Ü|sw|jambo}}
+*{{cs}}: {{Ü|cs|haló}}
+*{{uk}}: {{Üt|uk|ей|ej}}
+|Dialekttabelle=
+*Alemannisch: [?] [[solli]]
+*Allgäuerisch: [?] [[griaßdi]]
+*Bayrisch: [?] [[servus]]
+*Burgenländerisch: [?] [[dere]]
+*Liechtensteinisch: [?] [[hoi]], [[sali]], [[servus]], [[salü]]
+*Norddeutsch: [1, 2] [[moin]] oder [[moin moin]]
+*Rheinhessisch: [?] [[guden]], [[ei gude wie]]
+*Saarländisch: [?] [[Salü]]
+*Schwäbisch: [?] [[hoi]]
+*Schweizerdeutsch: [?] [[hoi]], [[sali]]
+*Südtirolerisch: [?] [[hoila]] (Südtirol - Italien)
+*Trierisch: [?] [[moin]]
+}}
+
+{{Ü-Tabelle|2|G=als Grußwort mit unverbindlichem Charakter|Ü-Liste=
+*{{sq}}: {{Ü|sq|tungjatjeta}}
+*{{bs}}: {{Ü|bs|cao}}
+*{{zh}}: {{Üt|zh|你好|nǐ hǎo}}
+*{{en}}: {{Ü|en|hi}}, ''britisch:'' {{Ü|en|hello}}
+*{{eo}}: {{Ü|eo|saluton}}
+*{{et}}: {{Ü|et|tere}}
+*{{fi}}: {{Ü|fi|terve}}, {{Ü|fi|hei}}, {{Ü|fi|moi}}
+*{{fr}}: {{Ü|fr|salut}}
+*{{got}}: {{Üt|got|𐌷𐌰𐌹𐌻𐍃|hails}} ''(nach Genus und Numerus zu deklinieren)''
+*{{el}}: {{Üt|el|γεια|geia}}
+*{{is}}: {{Ü|is|halló}}
+*{{it}}: {{Ü|it|ciao}}
+*{{ja}}: <small>am Telefon:</small> {{Üt|ja|もしもし|moshi-moshi}}
+*{{hr}}: {{Ü|hr|čao}}
+*{{ku}}:
+**{{kmr}}: {{Ü|kmr|silav}}
+*{{lo}}: {{Ü|lo|ສະບາຍດີ}}
+*{{la}}: ''zu einer Person:'' {{Ü|la|salve}}, ''zu mehreren'' {{Ü|la|salvete}}
+*{{lb}}: {{Ü|lb|moien}}, {{Ü|lb|bonjour}}
+*{{nds}}: {{Ü|nds|moin}}, {{Ü|nds|moin moin}}
+*{{no}}: {{Ü|no|hei}}, {{Ü|no|hallo}}
+*{{oc}}: {{Ü|oc|adieu}}
+*{{fa}}: {{Üt|fa|سلام|salām}}
+*{{pl}}: {{Ü|pl|cześć}}, {{Ü|pl|witaj}}, {{Ü|pl|witajcie}}, {{Ü|pl|czołem}}
+*{{pt}}: {{Ü|pt|olá}}
+*{{ro}}: {{Ü|ro|bună}}, {{Ü|ro|salut}}
+*{{ru}}: {{Üt|ru|привет}}
+*{{sv}}: {{Ü|sv|hallå}}, {{Ü|sv|hejsan}}, {{Ü|sv|hej}}
+*{{sr}}: {{Üt|sr|здраво|zdravo}}
+*{{sl}}: {{Ü|sl|zdravo}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|witaj}}, {{Ü|dsb|witajtej}}, {{Ü|dsb|witajśo}}, {{Ü|dsb|halo}}
+*{{es}}: {{Ü|es|hola}}
+*{{sw}}: {{Ü|sw|jambo}}
+*{{cs}}: {{Ü|cs|ahoj}}, {{Ü|cs|nazdar}}
+*{{tr}}: {{Ü|tr|merhaba}}
+*{{uk}}: {{Üt|uk|привіт|pryvit}}
+*{{hu}}: {{Ü|hu|szia}}
+|Dialekttabelle=
+*Alemannisch: [?] [[solli]]
+*Allgäuerisch: [?] [[griaßdi]]
+*Bayrisch: [?] [[servus]]
+*Burgenländerisch: [?] [[dere]]
+*Liechtensteinisch: [?] [[hoi]], [[sali]], [[servus]], [[salü]]
+*Norddeutsch: [1, 2] [[moin]] oder [[moin moin]]
+*Rheinhessisch: [?] [[guden]], [[ei gude wie]]
+*Saarländisch: [?] [[Salü]]
+*Schwäbisch: [?] [[hoi]]
+*Schweizerdeutsch: [?] [[hoi]], [[sali]]
+*Südtirolerisch: [?] [[hoila]] (Südtirol - Italien)
+*Trierisch: [?] [[moin]]
+}}
+
+{{Ü-Tabelle|3|G=Grußwort am Telefon|Ü-Liste=
+*{{sq}}: {{Ü|sq|alo}}
+*{{zh}}: {{Üt|zh|喂|wéi}}
+*{{eo}}: {{Ü|eo|halo}}
+*{{fr}}: {{Ü|fr|allô}}
+*{{got}}: {{Üt|got|𐌷𐌰𐌹𐌻𐍃|hails}} ''(nach Genus und Numerus zu deklinieren)''
+*{{it}}: {{Ü|it|pronto}}
+*{{lb}}: {{Ü|lb|moien}}, {{Ü|lb|bonjour}}
+*{{nds}}: {{Ü|nds|moin}}, {{Ü|nds|moin moin}}
+*{{no}}: {{Ü|no|hallo}}
+*{{pl}}: {{Ü|pl|halo}}, {{Ü|pl|słucham}}
+*{{ru}}: {{Üt|ru|алло}}
+*{{sv}}: {{Ü|sv|hallå}}, {{Ü|sv|hejsan}}
+*{{es}}: {{Ü|es|diga}}, {{Ü|es|dígame}}
+*{{cs}}: {{Ü|cs|haló}}
+*{{uk}}: {{Üt|uk|алло|allo}}
+*{{hu}}: {{Ü|hu|halló}}
+|Dialekttabelle=
+*Alemannisch: [?] [[solli]]
+*Allgäuerisch: [?] [[griaßdi]]
+*Bayrisch: [?] [[servus]]
+*Burgenländerisch: [?] [[dere]]
+*Liechtensteinisch: [?] [[hoi]], [[sali]], [[servus]], [[salü]]
+*Norddeutsch: [1, 2] [[moin]] oder [[moin moin]]
+*Rheinhessisch: [?] [[guden]], [[ei gude wie]]
+*Saarländisch: [?] [[Salü]]
+*Schwäbisch: [?] [[hoi]]
+*Schweizerdeutsch: [?] [[hoi]], [[sali]]
+*Südtirolerisch: [?] [[hoila]] (Südtirol - Italien)
+*Trierisch: [?] [[moin]]
+}}
+
+{{Referenzen}}
+:[1, 2] {{Wikipedia|Hallo}}
+:[1–3] {{Ref-DWDS|hallo}}
+:[1] {{Ref-UniLeipzig|hallo}}
+:[1–3] {{Ref-FreeDictionary|hallo}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[Halle]], [[Hallodri]], [[Hallore]], [[Halloween]]|Anagramme=[[holla]]}}
+
+{{Ähnlichkeiten 2|[[hall]], [[hillo]]}}

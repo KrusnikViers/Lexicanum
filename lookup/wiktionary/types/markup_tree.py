@@ -59,7 +59,9 @@ class MarkupTree:
 
         for param in mwph_template.params:
             if param.showkey:
-                template_node.keyed_args[str(param.name).strip()] = str(param.value).strip()
+                new_key = str(param.name).strip()
+                if new_key and new_key not in template_node.keyed_args:
+                    template_node.keyed_args[new_key] = str(param.value).strip()
                 template_node._expand(param.name)
                 template_node._expand(param.value)
             else:

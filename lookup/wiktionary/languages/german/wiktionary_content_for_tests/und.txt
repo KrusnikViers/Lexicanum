@@ -1,0 +1,238 @@
+und
+de
+Original article URL: https://de.wiktionary.org/wiki/und
+== und ({{Sprache|Deutsch}}) ==
+{{überarbeiten|Bedeutungen ausformulieren; Referenzen für alle Bedeutungen; Herkunft belegen; Synonyme überprüfen; nur Standardaussprachen aufführen, sonstige gesondert markieren |Deutsch}}
+=== {{Wortart|Konjunktion|Deutsch}} ===
+{{Nicht mehr gültige Schreibweisen}}
+:[[undt]], [[unndt]], [[unnd]], [[vnd]], [[vnnd]], [[vnndt]]
+
+{{Worttrennung}}
+:und
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʊnt}}
+:{{Hörbeispiele}} {{Audio|De-und.ogg}}, {{Audio|De-und2.ogg}}
+:{{Reime}} {{Reim|ʊnt|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''Grammatik:'' [[verbindet]] allgemein [[Satzteile]] und [[Sätze]]; kann [[Satzzeichen]] ([[Komma]], [[Semikolon]], [[Punkt]], [[Doppelpunkt]], [[Ausrufezeichen]] und [[Fragezeichen]]) ersetzen, ermöglicht [[Aufzählung]], [[Beiordnung]], [[Ergänzung]], [[Summierung]] und [[Hinzufügung]]
+:[2] [[aufzählen]]d, [[beiordnen]]d
+:[3] [[anknüpfen|knüpft an]]
+:[4] [[verstärkend]]
+:[5] auf [[nachfolgen|Nachfolgendes]], [[kommen|Kommendes]] hinweisend
+:[6] [[füllen]]d, [[einleiten]]d
+:[7] [[herausstellen]]d, [[entgegenstellen]]d
+:[8] [[fragen]]d
+
+{{Abkürzungen}}
+:''das „[[Et-Zeichen]]“ ([[&]]) wird nur in [[Firmenname]]n verwendet, in allen anderen Fällen verwendet man „[[u.]]“:'' [[u.]]; [[&]]
+
+{{Symbole}}
+:[1] ''Mathematik, Logik, Informatik:'' [[∧]]
+
+{{Herkunft}}
+:aus [[protogermanisch]] *''[[unda]]'' > [[althochdeutsch]] ''[[unta]], [[unti]], [[enti]], [[anti]]'' > [[mittelhochdeutsch]] ''[[un]], [[und]], [[unde]]''; vergleiche [[niederländisch]] ''[[en]],'' [[englisch]] ''[[and]]'' - möglicherweise verwandt mit [[altindisch]] ''[[atha]]'' für „[[darauf]], [[dann]]“{{QS Herkunft|unbelegt}}
+
+{{Synonyme}}
+:[2] [[plus]], [[sowie]], [[darüber]] [[hinaus]], [[ferner]], [[fernerhin]], [[ansonsten]], [[noch]], [[zusammen]] [[mit]], [[dazu]], [[weiter]], [[außerdem]], [[daneben]], [[hierneben]], [[zudem]], [[auch]], [[aber]], [[zugleich]], [[zusätzlich]], [[sonst]], [[überdies]], [[obendrauf]], [[ansonst]], unter Anderem, [[doch]], [[gleichzeitig]], [[indessen]], [[jedoch]], [[obendrein]], [[wie]], [[wohingegen]], [[zuzüglich]], [[mit]], [[mitsamt]], [[nebst]], [[samt]]
+:[4] [[vollständig]], vollständig [[durch]], [[allmählich]]; Auch das [[noch]]? Weiter [[nichts]]? Was noch? Ist noch [[was]]?
+
+{{Gegenwörter}}
+:[1] [[weder … noch]], [[oder]]
+:[2] [[ohne]]
+
+{{Beispiele}}
+:[1] Die Sonne scheint ''und'' es ist warm.
+:[2] Acht ''und'' eins sind neun.
+:[2] Emil, Paul ''und'' auch Alfred waren da.
+:[2] Milch, Kaffee ''und'' ein Sahnetüpfelchen obenauf.
+:[3] Rufe immer von überall her an ''und'' du wirst dich wundern, wie hoch die Telefonrechnung ausfällt.
+:[4] durch ''und'' durch; na ''und!'' ''Und'' sonst noch was?
+:[5] Ich fuhr ''und'' fuhr ''und'' fast hätte ich noch einen Unfall gebaut.
+:[6] ''Und'' wenn sie nicht gestorben sind, dann leben sie noch heute. ''Und,'' was passierte?
+:[7] ''Und?'' Ist das alles, was du zu berichten hast?
+:[8] ''Und?'' Was war?
+
+{{Redewendungen}}
+:[4, 8] [[na und|na ''und'']]?
+:[2] ''und'', ''und'', ''und''
+:[6] [[und wenn sie nicht gestorben sind|''Und'' wenn sie nicht gestorben sind …]]
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''und'' so weiter, ''und'' so fort
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=|Ü-Liste=
+*{{grc}}: {{Üt|grc|καί}}, {{Üt|grc|τε|te}}, {{Üt|grc|δέ}}
+*{{ar}}: {{Üt|ar|و|wa}}
+*{{ban}}: {{Ü|ban|muah}}
+*{{bg}}: {{Üt|bg|и|i}}
+*{{da}}: {{Ü|da|og}}
+*{{en}}: {{Ü|en|and}}
+*{{eo}}: {{Ü|eo|kaj}}
+*{{et}}: {{Ü|et|ja}}
+*{{fi}}: {{Ü|fi|ja}}
+*{{fr}}: {{Ü|fr|et}}
+*{{gl}}: {{Ü|gl|e}}
+*{{ka}}: {{Üt|ka|და|da}}
+*{{el}}: {{Üt|el|και|kai, ke}}
+*{{hi}}: {{Üt|hi|और|aura}}
+*{{id}}: {{Ü|id|dan}}, {{Ü|id|serta}}
+*{{ia}}: {{Ü|ia|e}}
+*{{ga}}: {{Ü|ga|agus}}
+*{{is}}: {{Ü|is|og}}
+*{{it}}: {{Ü|it|e}}, {{Ü|it|ed}}
+*{{ja}}: {{Üt|ja|然して|そして, soshite}}, {{Üt|ja|又|また, mata}}
+*{{ca}}: {{Ü|ca|i}}
+*{{tlh}}: {{Ü|tlh|’ej}}
+*{{ku}}:
+**{{kmr}}: {{Ü|kmr|û}}
+*{{la}}: {{Ü|la|et}}, {{Ü|la|-que}}
+*{{lv}}: {{Ü|lv|un}}
+*{{lt}}: {{Ü|lt|ir}}
+*{{ms}}: {{Ü|ms|dan}}
+*{{mk}}: {{Üt|mk|и|i}}
+*{{ne}}: {{Üt|ne|र|ra}}
+*{{nds}}: {{Ü|nds|un}}
+*{{nl}}: {{Ü|nl|en}}
+**{{odt}}: {{Ü|odt|unde}}
+*{{se}}: {{Ü|se|ja}}
+*{{no}}: {{Ü|no|og}}
+*{{pl}}: {{Ü|pl|i}}
+*{{pt}}: {{Ü|pt|e}}
+*{{prg}}: {{Ü|prg|bhe}}, {{Ü|prg|bha}}
+*{{ro}}: {{Ü|ro|și}}
+*{{ru}}: {{Üt|ru|и}}
+*{{sv}}: {{Ü|sv|och}}
+*{{sr}}: {{Üt|sr|и|i}}
+*{{sh}}: {{Üt|sh|и|i}}
+*{{sk}}: {{Ü|sk|a}}
+*{{sl}}: {{Ü|sl|in}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|a}}
+**{{hsb}}: {{Ü|hsb|a}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+*{{sw}}: {{Ü|sw|na}}
+*{{cs}}: {{Ü|cs|a}}
+*{{tr}}: {{Ü|tr|ve}}
+*{{uk}}: {{Üt|uk|і|i}}
+*{{hu}}: {{Ü|hu|és}}
+*{{be}}: {{Üt|be|і|i}}
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|2|G=aufzählend, beiordnend|Ü-Liste=
+*{{bg}}: {{Üt|bg|и|i}}
+*{{zh}}: {{Üt|zh|和|hé}}
+*{{en}}: {{Ü|en|and}}
+*{{fr}}: {{Ü|fr|et}}
+*{{is}}: {{Ü|is|og}}, {{Ü|is|en}}
+*{{ja}}: {{Üt|ja|と|to}}
+*{{tlh}}: {{Ü|tlh|je}}
+*{{ne}}: {{Üt|ne|र|ra}}
+*{{pl}}: {{Ü|pl|i}}
+*{{ro}}: {{Ü|ro|și}}
+*{{ru}}: {{Üt|ru|и}}, {{Üt|ru|да}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|a}}
+**{{hsb}}: {{Ü|hsb|a}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|3|G=knüpft an|Ü-Liste=
+*{{en}}: {{Ü|en|and}}
+*{{fr}}: {{Ü|fr|et}}
+*{{ja}}: {{Üt|ja|や|ya}}
+*{{ne}}: {{Üt|ne|अिन|ani}}
+*{{pl}}: {{Ü|pl|i}}
+*{{ru}}: {{Üt|ru|и}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|a}}
+**{{hsb}}: {{Ü|hsb|a}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|4|G=verstärkend|Ü-Liste=
+*{{fr}}: {{Ü|fr|et}}
+*{{ne}}: {{Üt|ne|अिन|ani}}
+*{{pl}}: {{Ü|pl|i}}, {{Ü|pl|a}}
+*{{ru}}: {{Üt|ru|и}}, {{Üt|ru|да}}, {{Üt|ru|а}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|5|G=auf Nachfolgendes, Kommendes hinweisend|Ü-Liste=
+*{{en}}: {{Ü|en|and}}
+*{{fr}}: {{Ü|fr|et}}
+*{{ne}}: {{Üt|ne|अिन|ani}}
+*{{pl}}: {{Ü|pl|i}}
+*{{ru}}: {{Üt|ru|и}}, {{Üt|ru|да}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|6|G=füllend, einleitend|Ü-Liste=
+*{{ne}}: {{Üt|ne|अिन|ani}}
+*{{pl}}: {{Ü|pl|i}}
+*{{ru}}: {{Üt|ru|и}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|7|G=herausstellend, entgegenstellend|Ü-Liste=
+*{{ne}}: {{Üt|ne|अिन|ani}}
+*{{pl}}: {{Ü|pl|a}}
+*{{ru}}: {{Üt|ru|а}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Ü-Tabelle|8|G=fragend|Ü-Liste=
+*{{fr}}: {{Ü|fr|et}}
+*{{ne}}: {{Üt|ne|अिन|ani}}
+*{{pl}}: {{Ü|pl|i}}, {{Ü|pl|a}}
+*{{ru}}: {{Üt|ru|и}}, {{Üt|ru|ну}}
+*{{es}}: {{Ü|es|y}}, (vor i- und hi- {{Ü|es|e}})
+|Dialekttabelle=
+*[[Niederpreußisch]]: [?] {{Ü|nds|on}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Konjunktion_(Wortart)#und|Konjunktion (Wortart)}}
+:[1] {{Ref-Grimm|und}}
+:[1] {{Ref-DWDS|und}}
+{{Referenzen prüfen|Deutsch}}
+
+{{Zeichensetzung|Verzeichnis:Deutsch/Kommasetzung/und}}
+
+{{Ähnlichkeiten 1|[[Bund]], [[Fund]], [[Hund]], [[kund]], [[Lund]], [[Mund]], [[rund]], [[Rund]], [[Sund]], [[UN]], [[uni]], [[Uni]], [[Uno]], [[uns]], [[wund]]|Anagramme=[[dun]]}}
+
+== und ({{Sprache|Ungarisch}}) ==
+=== {{Wortart|Konjugierte Form|Ungarisch}} ===
+
+{{Worttrennung}}
+:und
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|und}}
+
+{{Grammatische Merkmale}}
+*2. Person Singular Bestimmt Konjunktiv/Imperativ Präsens Aktiv des Verbs '''[[un#un (Ungarisch)|un]]''' („sich langweilen, langweilig werden mit jemandem oder etwas“)
+
+{{Beispiele}}
+:Kultúra és kikapcsolódás otthonra – így ne ''und'' a karantént! [https://egy.hu/kult/kultura-es-kikapcsolodas-otthonra-igy-ne-und-a-karantent-106944]
+::Kultur und Ausspannung für zu Hause – so ''werde'' Dir mit der Quarantäne nicht ''langweilig'' (''oder:'' …so ''langweile Dich'' nicht mit der Quarantäne)! <!-- "Culture and relaxation for home – the way you don't get bored with the quarantine!" -->
+
+{{Ähnlichkeiten Umschrift
+|1=𐌿𐌽𐌳|spr1=got
+}}
