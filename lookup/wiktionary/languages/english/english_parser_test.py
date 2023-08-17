@@ -1,19 +1,22 @@
 import unittest
 from typing import List
 
+from lookup.wiktionary.types import DefinitionComponent, debug_print_components_list
 from lookup.wiktionary.languages.base.test_utils.wiktionary_cache_reader import get_test_content
 from lookup.wiktionary.languages.english import EnglishLocaleParser
 from lookup.wiktionary.types import MarkupTree, Definition, PartOfSpeech
 
 
 class TestEnglishLocaleParser(unittest.TestCase):
-    def test_reading_wiktionary_data(self):
+    maxDiff = None
+
+    def test_definition_reading_wiktionary_data(self):
         content = get_test_content(__file__, 'parrot.txt')
         self.assertEqual(content.title, 'parrot')
         self.assertEqual(content.language_code, 'en')
         self.assertGreater(len(content.content), 0)
 
-    def test_parrot(self):
+    def test_definition_parrot(self):
         content = get_test_content(__file__, 'parrot.txt')
         tree = MarkupTree.build(content.title, content.content)
         self.assertCountEqual(
@@ -23,11 +26,11 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            readable_name='Parrot', grammar_note='',
                            translation_articles=['Papagei']),
                 Definition(PartOfSpeech.Verb, raw_article_title='parrot',
-                           readable_name='to parrot', grammar_note='',
+                           readable_name='Parrot', grammar_note='',
                            translation_articles=['nachplappern'])
             ])
 
-    def test_binoculars(self):
+    def test_definition_binoculars(self):
         content = get_test_content(__file__, 'binoculars.txt')
         tree = MarkupTree.build(content.title, content.content)
         self.assertCountEqual(
@@ -38,18 +41,18 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            translation_articles=['Fernglas', 'Feldstecher'])
             ])
 
-    def test_cut(self):
+    def test_definition_cut(self):
         content = get_test_content(__file__, 'cut.txt')
         tree = MarkupTree.build(content.title, content.content)
         self.assertCountEqual(
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Verb, raw_article_title='cut',
-                           readable_name='to cut', grammar_note='',
+                           readable_name='Cut', grammar_note='',
                            translation_articles=['schneiden', 'einschneiden', 'trennen', 'ausschneiden', 'klappe',
                                                  'beschneiden', 'schwänzen', 'abheben']),
                 Definition(PartOfSpeech.Adjective, raw_article_title='cut',
-                           readable_name='cut', grammar_note='',
+                           readable_name='Cut', grammar_note='',
                            translation_articles=['geschnitten', 'geschliffen']),
                 Definition(PartOfSpeech.Noun, raw_article_title='cut',
                            readable_name='Cut', grammar_note='',
@@ -57,7 +60,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
                                                  'Stück']),
             ])
 
-    def test_France(self):
+    def test_definition_France(self):
         content = get_test_content(__file__, 'France.txt')
         tree = MarkupTree.build(content.title, content.content)
         self.assertCountEqual(
@@ -68,26 +71,173 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            translation_articles=['Frankreich'])
             ])
 
+    def test_definition_sheep(self):
+        content = get_test_content(__file__, 'sheep.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Noun, raw_article_title='sheep',
+                           readable_name='Sheep', grammar_note='',
+                           translation_articles=['Schaf'])
+            ])
 
-def test_sheep(self):
-    content = get_test_content(__file__, 'sheep.txt')
-    tree = MarkupTree.build(content.title, content.content)
-    self.assertCountEqual(
-        EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
-        [
-            Definition(PartOfSpeech.Noun, raw_article_title='sheep',
-                       readable_name='Sheep', grammar_note='',
-                       translation_articles=['Schaf'])
-        ])
+    def test_definition_woman(self):
+        content = get_test_content(__file__, 'woman.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Verb, raw_article_title='woman',
+                           readable_name='Woman', grammar_note='',
+                           translation_articles=['feminisieren', 'verweiblichen'])
+            ])
 
+    def test_definition_or(self):
+        content = get_test_content(__file__, 'or.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.maxDiff = None
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Conjunction, raw_article_title='or',
+                           readable_name='Or', grammar_note='',
+                           translation_articles=['oder']),
+                Definition(PartOfSpeech.Noun, raw_article_title='or',
+                           readable_name='Or', grammar_note='',
+                           translation_articles=['Gold']),
+                Definition(PartOfSpeech.Adjective, raw_article_title='or',
+                           readable_name='Or', grammar_note='',
+                           translation_articles=['golden']),
+            ])
 
-def test_woman(self):
-    content = get_test_content(__file__, 'woman.txt')
-    tree = MarkupTree.build(content.title, content.content)
-    self.assertCountEqual(
-        EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
-        [
-            Definition(PartOfSpeech.Verb, raw_article_title='woman',
-                       readable_name='to woman', grammar_note='',
-                       translation_articles=['feminisieren', 'verweiblichen'])
-        ])
+    def test_definition_eleven(self):
+        content = get_test_content(__file__, 'eleven.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Numeral, raw_article_title='eleven',
+                           readable_name='Eleven', grammar_note='',
+                           translation_articles=['elf'])
+            ])
+
+    def test_definition_from(self):
+        content = get_test_content(__file__, 'from.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Preposition, raw_article_title='from',
+                           readable_name='From', grammar_note='',
+                           translation_articles=['von', 'aus', 'vor'])
+            ])
+
+    def test_definition_go(self):
+        content = get_test_content(__file__, 'go.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Verb, raw_article_title='go',
+                           readable_name='Go', grammar_note='',
+                           translation_articles=['gehen', 'dran', 'sein', 'ziehen', 'verschwinden', 'weggehen',
+                                                 'fortgehen', 'kaputtgehen', 'kaputt', 'machen', 'los']),
+                Definition(PartOfSpeech.Noun, raw_article_title='go',
+                           readable_name='Go', grammar_note='',
+                           translation_articles=['Versuch']),
+                Definition(PartOfSpeech.Noun, raw_article_title='go',
+                           readable_name='Go', grammar_note='',
+                           translation_articles=['Go']),
+            ]
+        )
+
+    def test_definition_good(self):
+        content = get_test_content(__file__, 'good.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Adjective, raw_article_title='good',
+                           readable_name='Good', grammar_note='',
+                           translation_articles=['gut', 'brav', 'gehörig', 'lecker', 'gesund', 'schön', 'angenehm',
+                                                 'effektiv']),
+                Definition(PartOfSpeech.Noun, raw_article_title='good',
+                           readable_name='Good', grammar_note='',
+                           translation_articles=['Gute', 'Gut']),
+            ])
+
+    def test_definition_hello(self):
+        content = get_test_content(__file__, 'hello.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Interjection, raw_article_title='hello',
+                           readable_name='Hello', grammar_note='',
+                           translation_articles=['hallo', 'guten Tag', 'servus', 'moin', 'grüß Gott', 'jemand da?',
+                                                 'halloho'])
+            ])
+
+    def test_definition_into(self):
+        content = get_test_content(__file__, 'into.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Preposition, raw_article_title='into',
+                           readable_name='Into', grammar_note='',
+                           translation_articles=['in', 'gen', 'gegen', 'nach Beginn', 'für', 'auf', 'nach',
+                                                 'hinsichtlich'])
+            ])
+
+    def test_definition_the(self):
+        content = get_test_content(__file__, 'the.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Article, raw_article_title='the',
+                           readable_name='The', grammar_note='',
+                           translation_articles=['der', 'die', 'das', 'dieser']),
+                Definition(PartOfSpeech.Adverb, raw_article_title='the',
+                           readable_name='The', grammar_note='',
+                           translation_articles=['je desto', 'je umso', 'je je', 'umso'])
+
+            ])
+
+    def test_definition_whose(self):
+        content = get_test_content(__file__, 'whose.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Pronoun, raw_article_title='whose',
+                           readable_name='Whose', grammar_note='',
+                           translation_articles=['dessen', 'wessen', 'deren']),
+                Definition(PartOfSpeech.Pronoun, raw_article_title='whose',
+                           readable_name='Whose', grammar_note='',
+                           translation_articles=['wem gehört gehören']),
+            ])
+
+    def test_definition_youre_welcome(self):
+        content = get_test_content(__file__, 'youre_welcome.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Phrase, raw_article_title="you're_welcome",
+                           readable_name="You're welcome", grammar_note='',
+                           translation_articles=['bitte', 'gern geschehen', 'keine Ursache', 'nichts zu danken'])
+            ])
+
+    def test_definition_nope(self):
+        content = get_test_content(__file__, 'nope.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Particle, raw_article_title='nope',
+                           readable_name='Nope', grammar_note='',
+                           translation_articles=['nee', 'nö']),
+            ])

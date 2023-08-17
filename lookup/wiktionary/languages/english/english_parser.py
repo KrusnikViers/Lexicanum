@@ -1,35 +1,54 @@
 from typing import List
-
+import re
 from lookup.wiktionary.languages.base import *
+from lookup.wiktionary.languages.english.shared_constants import *
 from lookup.wiktionary.types import PartOfSpeech, MarkupTree, DefinitionComponent, DCType, DCTranslation
 
-_PART_OF_SPEECH_MAPPING = {
-    'en-noun': PartOfSpeech.Noun,
-    'en-proper noun': PartOfSpeech.Noun,
-    'en-plural noun': PartOfSpeech.Noun,
-    'en-verb': PartOfSpeech.Verb,
-    'en-adj': PartOfSpeech.Adjective,
-    'en-adv': PartOfSpeech.Adverb,
-}
+from core.util import safe_get
+
+
+# Returns None only if node is not word definition key. If part of speech can not be identified, returns empty string.
+def _maybe_get_poskey(node: MarkupTree) -> str | None:
+    # Value reserved for verb conjugations
+    if node.name == 'en-conj':
+        return None
+    if not node.name.startswith(POS_KEY_PREFIX) and node.name != POS_KEY_FULL:
+        return None
+    if node.name.startswith(POS_KEY_PREFIX):
+        return node.name[len(POS_KEY_PREFIX):]
+    elif node.name == POS_KEY_FULL and \
+            safe_get(node.plain_args, 0) in ('en',) and \
+            safe_get(node.plain_args, 1):
+        return node.plain_args[1]
+    return str()
 
 
 def _part_of_speech_components(node: MarkupTree, wiki_title: str) -> List[DefinitionComponent]:
-    pos_dc = DefinitionComponent(node.level, DCType.PartOfSpeech, _PART_OF_SPEECH_MAPPING[node.name])
+    pos = _maybe_get_poskey(node)
+    if pos not in POS_MAP:
+        return []
+    pos_dc = DefinitionComponent(node.level, DCType.PartOfSpeech, POS_MAP[pos])
     result = [pos_dc]
-    if pos_dc.value == PartOfSpeech.Verb:
-        result.append(
-            DefinitionComponent(node.level, DCType.ReadableForm, 'to {}'.format(wiki_title)))
-    elif pos_dc.value in (PartOfSpeech.Noun,):
-        result.append(DefinitionComponent(node.level, DCType.ReadableForm, wiki_title.capitalize()))
-    else:
-        result.append(DefinitionComponent(node.level, DCType.ReadableForm, wiki_title.lower()))
+
+    # Construct fallback readable form, if no explicit grammar information provided.
+    readable_form = wiki_title.replace('_', ' ')
+    result.append(DefinitionComponent(node.level + 1, DCType.ReadableForm, readable_form.capitalize()))
+
     return result
 
 
 def _translation_components(node: MarkupTree, language_codes_for_translations: List[str]) -> List[DefinitionComponent]:
-    if len(node.plain_args) > 1 and node.plain_args[0] in language_codes_for_translations and node.plain_args[1]:
+    if safe_get(node.plain_args, 0) in language_codes_for_translations and safe_get(node.plain_args, 1):
+        translation_text = node.plain_args[1]
+        if '[[' in translation_text:
+            links = re.findall('\[\[.*?]]', translation_text)
+            if not links:
+                return []
+            translation_text = ' '.join([link[2:-2] for link in links]).strip()
+        if not translation_text:
+            return []
         return [DefinitionComponent(node.level, DCType.Translation,
-                                    DCTranslation(lang=node.plain_args[0], text=node.plain_args[1]))]
+                                    DCTranslation(lang=node.plain_args[0], text=translation_text))]
     return []
 
 
@@ -39,9 +58,8 @@ class EnglishLocaleParser(LocalizedParser):
                                       language_codes_for_translations: List[str]) -> List[DefinitionComponent]:
         result = []
         for node in markup_tree.children:
-            if node.name.startswith('en-'):
+            if _maybe_get_poskey(node) is not None:
                 result += [DefinitionComponent(node.level, DCType.Separator)]
-            if node.name in _PART_OF_SPEECH_MAPPING:
                 result += _part_of_speech_components(node, source_wiki_title)
             elif node.name in ('t', 'tt', 't+', 'tt+'):
                 result += _translation_components(node, language_codes_for_translations)

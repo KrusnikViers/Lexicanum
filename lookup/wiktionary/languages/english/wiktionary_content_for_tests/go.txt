@@ -1,0 +1,2058 @@
+go
+en
+Original article URL: https://en.wiktionary.org/wiki/go
+{{also|Appendix:Variations of "go"}}
+==English==
+{{wikipedia|go (verb)|go}}
+
+===Etymology 1===
+{{root|en|ine-pro|*ǵʰeh₁-|*wendʰ-}}
+From {{inh-lite|en|enm|gon}}, {{m-lite|enm|goon}}, from {{inh|en|ang|gān|t=to go}}, from {{inh|en|gmw-pro|*gān}}, from {{inh|en|gem-pro|*gāną|t=to go}}, from {{der|en|ine-pro|*ǵʰeh₁-|t=to leave}}.
+
+The inherited past tense form {{m-lite|en|yode}} (compare {{cog|ang|ēode}}) was replaced through [[suppletion]] in the 15th century by {{m-lite|en|went}}, from {{cog-lite|ang|wendan||to go, depart, wend}}.
+
+{{rel-top|cognates and related terms}}
+Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lite|nl|gaan||to go}}, {{cog-lite|nds|gahn||to go}}, {{cog-lite|de|gehen||to go}}, {{cog-lite|sv|-}} and {{cog|da|gå|t=to go}}, {{cog|no|gå|t=to walk}}. Compare also {{cog-lite|sq|ngah||to run, drive, go}}, {{cog|grc|κιχάνω|t=to meet with, arrive at}}, {{cog|ae|𐬰𐬀𐬰𐬁𐬨𐬌}}, {{cog|sa|जहाति|tr=jáhāti}}.
+{{rel-bottom}}
+
+====Pronunciation====
+* {{enPR|gō}}, {{IPA-lite|en|/ɡoʊ/}}
+** {{a|RP}} {{IPA-lite|en|[ɡəʊ]}}
+** {{a|GA}} {{IPA-lite|en|[ɡoʊ]}}
+** {{a|Australia}} {{IPA-lite|en|[ɡəʉ]}}
+** {{a|New Zealand}} {{IPA-lite|en|[ɡɐʉ]}}
+** {{a|{{w|Black Country}}}} {{IPA-lite|en|[ɡu]}}
+* {{audio|en|en-uk-to go.ogg|Audio 'to go' (UK)}}
+* {{audio|en|en-us-go.ogg|Audio (US)}}
+* {{audio|en|EN-AU ck1 go.ogg|Audio (AU)}}
+* {{hyph-lite|en|go}}
+* {{rhymes-lite|en|əʊ|s=1}}
+
+====Verb====
+{{en-verb|goes|going|went|past2=yode|past2_qual=archaic|gone|past_ptc2=went|past_ptc2_qual=nonstandard}}
+
+# To [[move]]:
+#: {{syn-lite|en|move|fare|tread|draw|drift|wend|cross}}
+#: {{ant-lite|en|freeze|halt|remain|stand still|stay|stop}}
+## {{lb|en|intransitive}} To [[move]] through [[space]] (especially to or through a place). {{q-lite|May be used of tangible things like people or cars, or intangible things like moods or information.}}
+##* {{RQ:Lincoln Pratt's Patients|chapter=VI|passage=She was so mad she wouldn't speak to me for quite a spell, but at last I coaxed her into '''going''' up to Miss Emmeline's room and fetching down a tintype of the missing Deacon man.}}
+##* {{quote-book|en|year=2005|author=David Neilson|title=Standstill|isbn=1412055954|page=159|passage={{...}} there was a general sense of panic '''going''' through the house; {{...}}}}
+##* {{quote-book|en|year=2013|author=Mike Vouri|title=The Pig War: Standoff at Griffin Bay|isbn=0914019627|page=177|passage=Telegrams to London '''went''' by wire to Halifax, Nova Scotia, thence by steam mail packet to Liverpool, {{...}}}}
+##* '''2016''', [https://web.archive.org/web/20181113034859/https://learningenglish.voanews.com/a/lets-learn-english-lesson-2-hello/3113733.html VOA Learning English] (public domain)
+##*: {{ux-lite|en|I have to '''go''' now.}}
+##*:: {{audio|en|I have to go now.ogg|Audio (US)}}
+##: {{ux-lite|en|Why don’t you '''go''' with us?}}
+##: {{ux-lite|en|This train '''goes''' through Cincinnati on its way to Chicago.}}
+##: {{ux-lite|en|Chris, where are you '''going'''?}}
+##: {{ux-lite|en|There's no public transit where I'm '''going'''.}}
+##: {{ux-lite|en|Wow, look at him '''go'''!}}
+## {{lb|en|intransitive}} To [[move]] or [[travel]] through [[time]] (either literally—in a fictional or hypothetical situation in which [[time travel]] is possible—or in one's mind or knowledge of the historical record). {{q-lite|See also ''[[go back]]''.}}
+##* {{quote-journal|en|date=September 18 2002|journal=Congressional Record: Proceedings and Debates of the 107th Congress, second session; Senate|page=17033
+|passage=You have to '''go''' all the way back to Herbert Hoover to see a performance in the Standard & Poors 500 equal to what we are experiencing right now.}}
+##* {{quote-book|en|year=2010|author=Charlotte Sadler|title=Time for One More Dance|isbn=1452015325|page=162|passage="I don't know how to tell you this, Aubrey, but you can't go back to 1938 {{...}} the program won't accept any date that I input before 1941." {{...}} "Well, I'll '''go''' to 1941, then."}}
+##: ''Yesterday was the second-wettest day on record; you have to '''go''' all the way back to 1896 to find a day when more rain fell.''
+##: ''Fans want to see the Twelfth Doctor '''go''' to the 51st century to visit River in the library.''
+## {{lb|en|intransitive}} To [[navigate]] (to a file or folder on a computer, a site on the internet, a memory, etc).
+##* {{quote-book|en|year=2009|author=David J. Clark|title=The Unofficial Guide to Microsoft Office Word 2007|isbn=0470377437|page=536
+|passage=To access Office-related TechNet resources, '''go''' to www.microsoft.com/technet/prodtechnol/office.}}
+##* {{quote-book|en|year=2009|author=Lisa W. Coyne|author2=Amy R. Murrell|title=The Joy of Parenting|isbn=157224593X
+|passage='''Go''' to your earliest memory and to your favorite one, then to one that's difficult to consider.}}
+##* {{quote-book|en|year=2012|author=Glen E. Clarke|author2=Edward Tetz|title=CompTIA A+ Certification All-in-One For Dummies|isbn=1118223691|page=280
+|passage='''Go''' to drive C: through My Computer (or Computer in Windows 7 and Vista) and double-click the c:\data folder.}}
+## To [[move]] (a particular distance, or in a particular fashion).
+##* {{quote-book|en|year=2003|author=Harrison E. Salisbury|title=The 900 Days: The Siege of Leningrad|isbn=0306812983|page=307
+|passage=The car '''went''' a short distance, then halted. There was something wrong with the carburetor.}}
+##: {{ux-lite|en|We've only '''gone''' twenty miles today.}}
+##: {{ux-lite|en|This car can '''go''' circles around that one.}}
+## {{lb|en|intransitive}} To [[move]] or [[travel]] in order to do something, or to do something while moving.
+##: {{ux-lite|en|We '''went''' swimming.}}
+##: {{ux-lite|en|Let's '''go''' shopping.}}
+##* {{quote-book|en|year=1932|year_published=1965|author=Delos W. Lovelace|authorlink=Delos W. Lovelace|title=[[w:King Kong (1933 film)|King Kong]]|page=2|passage=’[R]e you another '''agoin’''' on this crazy voyage?}}
+## {{lb|en|intransitive}} To [[leave]]; to move away.
+##: {{syn-lite|en|depart|leave|exit|go away|go out}}
+##: {{ant-lite|en|come|arrive|approach}}
+##: {{ux-lite|en|Please don't '''go'''!}}
+##: {{ux-lite|en|I really must be '''going'''.}}
+##: {{ux-lite|en|Workmen were coming and '''going''' at all hours of the night.}}
+##* {{RQ:Spenser Faerie Queene|year=1596.2|book=IV|canto=XI|stanza=39|page=167|passage=And following Dee, which Britons long '''ygone''' / Did call diuine, that doth by Cheſter tend; {{...}}}}
+## {{lb|en|obsolete|intransitive}} To [[walk]]; to travel on one's feet. {{defdate|11th|19th c.}}
+##* {{quote-text|en|year=1485|author={{w|Thomas Malory}}|title={{w|Le Morte d'Arthur}}|section=Book XII
+|passage=‘As for that,’ seyde Sir Trystram, ‘I may chose othir to ryde othir to '''go'''.’}}
+##* {{quote-book|en|year=1624|author=John Smith|title=Generall Historie|publisher=Kupperman|year_published=1988|page=129
+|passage=Master Piercie our new President, was so sicke hee could neither '''goe''' nor stand.}}
+##* {{quote-book|en|1684|{{w|John Bunyan}}|{{w|The Pilgrim's Progress}}|chapter=Battle with Giant Slay-good|section=[[wikisource:The Pilgrim's Progress (unsourced)/Part II/Section 3|Part II Section 3]]|passage=Other brunts I also look for; but this I have resolved on, to wit, to run when I can, to '''go''' when I cannot run, and to creep when I cannot '''go'''.}}
+# {{lb|en|intransitive|chiefly|of a|machine}} To [[work]] or [[function]] (properly); to move or perform (as required).
+#: {{syn-lite|en|function|work|operate}}
+#: {{ux-lite|en|The engine just won't '''go''' anymore.}}
+#* {{quote-text|en|year=1997|title=New Scientist|volume=154|page=105
+|passage='Although the lemon is now black and shrivelled the motor is still '''going''' strong. If I can make my small motor run for month after month on a single lemon, just imagine how much "juice" there must be in a whole sackful', Mr Ashill said.}}
+#* {{quote-book|en|year=2008|author=Michael Buckley|title=Shangri-La: A Practical Guide to the Himalayan Dream|isbn=1841622044|page=146|passage={{...}} though his publisher swears black and blue that Kelder is still '''going''' strong and still remains an intensely private person.}}
+# {{lb|en|intransitive}} To [[start]]; to begin (an action or process).
+#: {{ux-lite|en|Get ready, get set, '''go'''!}}
+#: {{ux-lite|en|[[on your marks, get set, go|On your marks, get set, '''go''']]!}}
+#: {{ux-lite|en|[[on your marks|On your marks]], set, '''go'''!}}
+#: {{ux-lite|en|Here '''goes''' nothing.}}
+#: {{ux-lite|en|Let's '''go''' and hunt.}}
+#* {{RQ:Congreve Old Batchelour|page=45|passage=At leaſt, I'm ſure I can fiſh it out of her. She's the very Sluce to her Lady's Secrets;—'Tis but ſetting her Mill '''agoing''', and I can drein her of 'em all.}}
+#* '''2001''' June 18, a prophecy, quoted in ''Mary and the Unity of the Church'' {{ISBN|192658211X}}, page 49:
+#*: Be listening for my voice. '''Go''' when you hear my voice say go.
+# {{lb|en|intransitive}} To take a [[turn]], especially in a [[game]].
+#: {{syn|en|move|make one's [[move]]|take one’s [[turn]]}}
+#: {{ux-lite|en|It’s your turn; '''go'''.}}
+# {{lb|en|intransitive}} To [[attend]].
+#: {{ux-lite|en|I '''go''' to school at the schoolhouse.}}
+#: {{ux-lite|en|She '''went''' to Yale.}}
+#: {{ux-lite|en|They only '''go''' to church on Christmas.}}
+# To [[proceed]]:
+## {{lb|en|intransitive}} To [[proceed]] (often in a specified manner, indicating the perceived quality of an event or state).
+##: {{ux-lite|en|That '''went''' well.}}
+##: {{ux-lite|en|"How are things '''going'''?" "Not bad, thanks."}}
+##* {{RQ:Shakespeare Macbeth|II|i|passage=How '''goes''' the night, boy?}}
+##* {{quote-text|en|year=1727|author={{w|John Arbuthnot}}|title=Tables of Ancient Coins, Weights and Measures. Explain'd and exemplify'd in several dissertations
+|passage=I think, as the world '''goes''', he was a good sort of man enough.}}
+##* {{RQ:Watts Logick|passage=Whether the cause '''goes''' for me or against me, you must pay me the reward.}}
+##* {{quote-journal|en|year=1986|journal=The Opera Quarterly|volume=4|issue=3-4|page=24
+|passage=I certainly won't mention it to Ben, and will '''go''' carefully if he mentions it to me.}}
+## {{lb|en|intransitive|colloquial|with another verb, sometimes linked by ''and''}} To [[proceed]] (especially to do something [[foolish]]).
+##: {{ux-lite|en|Why'd you have to '''go''' and do that?}}
+##: {{ux-lite|en|Why'd you have to '''go''' do that?}}
+##: {{ux-lite|en|He just '''went''' and punched the guy.}}
+##* {{quote-book|en|year=2011|author=Debra Glass|title=Scarlet Widow|isbn=1419937901|page=96
+|passage=And even if she had believed the story about a John Smith, she might '''go''' telling everyone in town about what she'd seen.}}
+# To [[follow]] or travel along (a path):
+## To [[follow]] or proceed according to (a course or path).
+##* {{quote-book|en|by={{w|Hermann Hesse}}|1951?|Gunther Olesch et al.|[http://www.gutenberg.org/files/2500/2500-8.txt Siddhartha]|passage=I'm repeating it: I wish that you would '''go''' this path up to its end, that you shall find salvation!}}
+##: {{ux-lite|en|Let's '''go''' this way for a while.}}
+##: ''She was '''going''' that way anyway, so she offered to show him where it was.''
+## To [[travel]] or pass along.
+##* {{quote-book|en|year=2010|author=Luke Dixon|title=Khartoum|isbn=1848762364|page=60|passage=A shady promenade '''went''' the length of the street and the entrance to the hotel was a few steps back in the darkness, away from the glaring sunshine.}}
+# {{lb|en|intransitive}} To [[extend]] (from one point in time or space to another).
+#: {{ux-lite|en|This property '''goes''' all the way to the state line.}}
+#* {{quote-text|en|year=1946|title=Hearings Before the Joint Committee on the Investigation of the Pearl Harbor Attack, Congress of the United States, Seventy-ninth Congress, First Session|page=2459
+|passage=I think those figures start from 1932 and '''go''' to 1941, inclusive, {{...}}}}
+#* {{quote-book|en|year=2007|title=Math for All: Differentiating instruction, grades K-2|page=38|isbn=0941355772|passage=Even though they can give a basic fact such as 4×4, I don't know that this knowledge '''goes''' very deep for them.}}
+# {{lb|en|intransitive}} To [[lead]] (to a place); to give access to.
+#: {{ux-lite|en|Does this road '''go''' to Fort Smith?}}
+#* {{quote-book|en|year=2013|title=Without Delusion|page=191|isbn=148369822X
+|passage=“Where does this door '''go'''?” Bev asked as she pointed to a door painted a darker green than the powder green color of the carpet. Janet answered. “That door '''goes''' to the back yard.”}}
+# {{lb|en|copulative}} To [[become]]. {{q-lite|The adjective that follows usually describes a negative state.}}
+#: {{syn-lite|en|become|turn|[[change]] [[into]]}}
+#: {{ux-lite|en|You'll '''go''' blind.&emsp; The milk '''went''' bad.}}
+#: {{ux-lite|en|I '''went''' crazy.}}
+#: {{ux-lite|en|After failing as a criminal, he decided to '''go''' straight.}}
+#: {{ux-lite|en|The video clip '''went''' viral.}}
+#: {{ux-lite|en|Don't tell my Mum: she'll '''go''' ballistic.}}
+#* {{quote-book|en|year=2001|author=Saverio Giovacchini|title=Hollywood Modernism: Film and Politics|isbn=1566398630|page=18
+|passage=Referring to the American radicals who '''went''' Hollywood in the 1930s, Abraham Polonsky argues that "you can't possibly explain the Hollywood communists away {{...}}"}}
+# To [[assume]] the [[obligation]] or [[function]] of; to be, to serve as.
+#* {{quote-text|en|year=1912|title=The Bookseller, Newsdealer and Stationer|volume=36|page=17
+|passage=There is scarcely a business man who is not occasionally asked to '''go''' bail for somebody.}}
+#* {{quote-book|en|year=2010|author=Jane Sanders|title=Youth Justice: Your Guide to Cops and Courts|isbn=1862878129|passage=Most welfare workers are not allowed to '''go''' surety for clients.}}
+# {{lb|en|intransitive|copulative}} To [[continuous]]ly or [[habitual]]ly be in a state.
+#: {{ux-lite|en|I don't want my children to '''go''' hungry.}}
+#: {{ux-lite|en|We '''went''' barefoot in the summer.}}
+# {{lb|en|copulative}} To come to (a certain condition or state).
+#: {{ux-lite|en|They '''went''' into debt'', ''she '''goes''' to sleep around 10 o'clock.}}
+#: {{ux-lite|en|the local shop wants to '''go''' digital, and eventually '''go''' global.}}
+# {{lb|en|intransitive}} To [[change]] (from one value to another) in the meaning of [[wend]].
+#: {{ux-lite|en|The traffic light '''went''' straight from green to red.}}
+# To [[turn out]], to [[result]]; to come to (a certain result).
+#: {{ux-lite|en|How did your meeting with Smith '''go'''?}}
+#* {{quote-book|en|year=2014|author=Tim Harris|title=Politics Under the Later Stuarts|isbn=1317900383|page=195|passage=When Wharton had to relinquish his seat in Buckinghamshire on his elevation to the peerage in 1696, he was unable to replace himself with a suitable man, and the by-election '''went''' in favour of a local Tory, Lord Cheyne.}}
+# {{lb|en|intransitive}} To [[tend]] (toward a result).
+#: {{ux-lite|en|Well, that '''goes''' to show you.}}
+#: {{ux-lite|en|These experiences '''go''' to make us stronger.}}
+# To contribute to a (specified) end product or result.
+#: {{ux-lite|en|qualities that '''go''' to make a lady / lip-reader / sharpshooter}}
+#* {{quote-text|en|year=1839|title=A Challenge to Phrenologists; Or, Phrenology Tested|page=155
+|passage=What can we know of any substance or existence, but as made up of all the qualities that '''go''' to its composition: extension, solidity, form, colour; take these away, and you know nothing.}}
+#* {{quote-text|en|year=1907|author=Patrick Doyle|title=Indian Engineering|volume=41|page=181
+|passage=The avoirdupois pound is one of 7,000 grains, and '''go''' to the pound.}}
+# To [[pass]], to be used up:
+## {{lb|en|intransitive|of time}} To [[elapse]], to [[pass]]; to slip away. {{q-lite|Compare ''[[go by]]''.}}
+##: {{ux-lite|en|The time '''went''' slowly.}}
+##* {{quote-text|en|year=1850|chapter=Sketches of New England Character|title=Holden's Dollar Magazine|volume=5-6|page=731
+|passage=But the days '''went''' and '''went''', and she never came; and then I thought I would come here where you were.}}
+##* {{quote-book|en|year=2008|author=Sue Raymond|title=Hidden Secrets|isbn=1435747070|page=357
+|passage=The rest of the morning '''went''' quickly and before Su knew it Jean was knocking on the door {{...}}}}
+## {{lb|en|intransitive}} To [[end]] or [[disappear]]. {{q-lite|Compare ''[[go away]]''.}}
+##: {{syn-lite|en|disappear|vanish|go away|end|dissipate}}
+##: {{ant-lite|en|remain|stay|hold}}
+##: {{ux-lite|en|After three days, my headache finally '''went'''.}}
+## {{lb|en|intransitive}} To be [[spend|spent]] or [[use up|used up]].
+##: {{ux-lite|en|His money '''went''' on drink.}}
+##* {{quote-book|en|year=2011|author=Ross Macdonald|title=Black Money|isbn=0307759563|page=29|passage=All I have is a sleeping bag right now. All my money '''goes''' to keep up the cars.}}
+# {{lb|en|intransitive}} To [[die]].
+#: {{syn|en|Thesaurus:die}}
+#* {{RQ:Scott Marmion|passage=By Saint George, he's '''gone'''! / That spear wound hath our master sped.}}
+#* {{quote-book|en|year=1978|author={{w|David Galloway (writer)|David Galloway}}|title=A Family Album|location=London|publisher={{w|Calder Publishing|John Calder}}|isbn=0714536822|page=36|pageurl=https://archive.org/details/familyalbumnovel0000gall/page/36/mode/2up?q=go|passage=After two years of swaddled invalidism, Mrs. Morton emitted a final gassy sigh and died, whereas twenty years later Elihu was to '''go''' “just like that,” as the neighbors said, from a stroke.}}
+#* {{quote-book|en|1997|John Wheatcroft|The Education of Malcolm Palmer|page=85|url=http://books.google.com/books?id=Khzh-qMNCE8C|isbn=0845348639|passage="Your father's '''gone'''." "Okay, okay, the Gaffer's kicked off. What happened?"}}
+# {{lb|en|intransitive|cricket}} To be [[lose|lost]] or [[out]]:
+## {{lb|en|intransitive|cricket|of a wicket}} To be [[lose|lost]].
+## {{lb|en|intransitive|cricket|of a batsman}} To be [[out]].
+# To break down or apart:
+## {{lb|en|intransitive}} To [[collapse]] or give way, to break apart.
+##: {{syn-lite|en|crumble|collapse|disintegrate|give way}}
+##* {{quote-book|en|1998|{{w|Annie Dillard}}|Pilgrim at Tinker Creek|page=157|url=http://books.google.com/books?id=82mHTKXpSl0C|isbn=0060953020|passage=I wonder if I hopped up and down, would the bridge '''go'''?}}
+##* {{quote-book|en|year=2011|author=Shaunti Feldhahn|title=The Lights of Tenth Street|isbn=0307564444
+|passage=Sober-eyed commentators safe in their television studios interviewed engineers about the chances that the rest of the dam could '''go'''.}}
+##* {{quote-book|en|year=2012|author=Carolyn Keene|title=Mardi Gras Masquerade|isbn=1442465476|page=38|passage=Jackson shook his head. "The contractor said those panes could '''go''' at any moment." / "Right. Just like the wiring could '''go''' at any moment, and the roof could '''go''' at any moment."}}
+## {{lb|en|intransitive}} To [[break down]] or [[decay]].
+##: {{ux-lite|en|My mind is '''going'''.}}
+##: {{ux-lite|en|She's 83; her eyesight is starting to '''go'''.}}
+# {{lb|en|intransitive}} To be [[sell|sold]].
+#: {{ux-lite|en|The car '''went''' for five thousand dollars.}}
+#: {{ux-lite|en|The store is closing down so everything must '''go'''.}}
+# {{lb|en|intransitive}} To be [[discard]]ed or [[dispose]]d of.
+#: {{ux-lite|en|This chair has got to '''go'''.}}
+#: {{ux-lite|en|All this old rubbish can '''go'''.}}
+# {{lb|en|intransitive}} To be [[give]]n, especially to be [[assigned]] or [[allot]]ted.
+#: {{ux-lite|en|The property shall '''go''' to my wife.}}
+#: {{ux-lite|en|The award '''went''' to Steven Spielberg.}}
+#* {{quote-book|en|year=2007|author=David Bouchier|title=The Song of Suburbia: Scenes from Suburban Life|isbn=0595437575|page=19|passage=If my money '''goes''' to education, I want a report card.}}
+# {{lb|en|transitive|intransitive}} To [[survive]] or [[get by]]; to last or persist for a stated length of time.
+#* {{quote-text|en|year=1983|title=Princeton Alumni Weekly|volume=84|page=48
+|passage=Against the Big Green, Princeton '''went''' the entire first and third quarters without gaining a first down, {{...}}}}
+#* {{quote-journal|en|date=June 4, 2011|author=Phil McNulty|work=BBC|url=http://news.bbc.co.uk/sport2/hi/football/13553428.stm|title=England 2-2 Switzerland|passage=England have now '''gone''' four games without a win at Wembley, their longest sequence without a victory in 30 years, and still have much work to do to reach Euro 2012 as they prepare for a testing trip to face Bulgaria in Sofia in September.}}
+#* '''2011''', H. R. F. Keating, <!--added to show "go" in this sense without the word "without"-->''Zen there was Murder'' {{ISBN|1448202426}}:
+#*: 'Surely one cannot '''go''' for long in this world to-day without at least a thought for St Simon Stylites?'
+#: {{ux-lite|en|How long can you '''go''' without water?}}
+#: {{ux-lite|en|We've '''gone''' without your help for a while now.}}
+#: {{ux-lite|en|I've '''gone''' ten days now without a cigarette.}}
+#: {{ux-lite|en|Can you two '''go''' twenty minutes without arguing?!}}
+# {{lb|en|transitive|sports}} To have a certain [[record]].
+#: {{ux-lite|en|They've '''gone''' one for three in this series.}}
+#: {{ux-lite|en|The team is '''going''' five in a row.}}
+# To be authoritative, accepted, or valid:
+## {{lb|en|intransitive}} To have (final) [[authority]]; to be authoritative.
+##: {{ux-lite|en|Whatever the boss says '''goes''', do you understand?}}
+## {{lb|en|intransitive}} To be [[accept]]ed.
+##* {{quote-book|en|1503|year_published=1836|chapter=19 Henry VII. c. 5: Coin||A Collection of Statutes Connected with the General Administration of the Law|page=158|url=http://books.google.com/books?id=QtYuAAAAIAAJ|passage={{...}} every of them, being gold, whole and weight, shall '''go''' and be current in payment throughout this his realm for the sum that they were coined for.}}
+##: {{ux-lite|en|Anything '''goes''' around here.}}
+##* {{RQ:KJV|1 Samuel|17|12|passage=The man '''went''' among men for an old man in the days of Saul.}}
+##* {{RQ:Locke Value|passage=The money which remains should '''go''' according to its true value.}}
+## {{lb|en|intransitive}} To be [[valid]].
+##* {{quote-book|en|year=2014|author=Shayna Lance King|title=If You'd Read This Book: You'd Be Employed By Now|isbn=0692206221|page=22|passage=[To job interviews, wear] muted colors. No pink or paisley (that '''goes''' for you too, guys!) {{...}}}}
+# {{senseid|en|makeasound}} To [[say]] (something), to make a sound:
+## {{lb|en|transitive|colloquial}} To [[say]] (something, aloud or to oneself). {{q-lite|Often used in present tense.}}
+##: {{ux-lite|en|I '''go''', "As if!" And she was all like, "Whatever!"}}
+##: {{ux-lite|en|As soon as I did it, I '''went''' "that was stupid."}}
+## {{lb|en|transitive}} To [[make]] the (specified) sound.
+##: {{ux-lite|en|Cats '''go''' "meow". Motorcycles '''go''' "vroom".}}
+## {{lb|en|intransitive}} To [[sound]]; to make a noise.
+##* {{quote-journal|en|date=June 24 1992|author={{w|Edwina Currie}}|journal=Diary
+|passage=At 4pm, the phone '''went'''. It was {{w|The Sun}}: 'We hear your daughter's been expelled for cheating at her school exams{{...}}' / / She'd made a remark to a friend at the end of the German exam and had been [[pull up|pulled up]] for talking. / / As they left the exam room, she muttered that the teacher was a '[[twat]]'. He heard and [[flip]]ped{{mdash}}a pretty stupid thing to do, knowing the kids were tired and tense after exams. Instead of dropping it, the teacher complained to the [[head|Head]] and Deb was [[carpet]]ed.}}
+##: {{ux-lite|en|I woke up just before the clock '''went'''.}}
+# To be [[express]]ed or [[compose]]d (a certain way).
+#: {{ux-lite|en|The tune '''goes''' like this.}}
+#: {{ux-lite|en|As the story '''goes''', he got the idea for the song while sitting in traffic.}}
+# {{lb|en|intransitive}} To [[resort]] (to).
+#: {{ux-lite|en|I'll '''go''' to court if I have to.}}
+# To [[apply]] or [[subject]] oneself to:
+## To apply oneself; to undertake; to have as one's goal or intention. {{q-lite|Compare ''[[be going to]]''.}}
+##: {{ux-lite|en|I'm '''going''' to join a sports team.}}
+##: {{ux-lite|en|I wish you'd '''go''' and get a job.}}
+##: {{ux-lite|en|He '''went''' to pick it up, but it rolled out of reach.}}
+##: {{ux-lite|en|He's '''going''' to leave town tomorrow.}}
+##* {{RQ:Sidney Arcadia|passage=Seeing himself confronted by so many, like a resolute orator, he '''went''' not to denial, but to justify his cruel falsehood.}}
+##* {{quote-book|en|year=1990|author=Celestine Sibley|title=Tokens of myself|isbn=0929264401|page=73
+|passage=Now I didn't '''go''' to make that mistake about the record-breaking drought of more than fifty years ago, but, boy, am I glad I made it. Otherwise, I wouldn't have heard from Joe Almand.}}
+## {{lb|en|intransitive}} To make an [[effort]], to subject oneself (to something).
+##: {{ux-lite|en|You didn't have to '''go''' to such trouble.}}
+##: {{ux-lite|en|I never thought he'd '''go''' so far as to call you.}}
+##: {{ux-lite|en|She '''went''' to great expense to help them win.}}
+## {{lb|en|intransitive}} To [[work]] (through or over), especially [[mental]]ly.
+##: {{ux-lite|en|I've '''gone''' over this a hundred times.}}
+##: {{ux-lite|en|Let's not '''go''' into that right now.}}
+# <!--this sense could be dropped and its subsenses moved back to being regular one-'#' senses-->To [[fit]] (in a place, or together with something):
+## {{lb|en|intransitive|often followed by a preposition}} To [[fit]].
+##: {{syn-lite|en|fit|pass|stretch|come|make it}}
+##: {{ux-lite|en|Do you think the sofa will '''go''' through the door?}}
+##: {{ux-lite|en|The belt just barely '''went''' around his waist.}}
+## {{lb|en|intransitive}} To be [[compatible]], especially of colors or food and drink.
+##: {{synonyms|en|harmonize}}
+##: {{antonyms|en|clash}}
+##: {{ux-lite|en|This shade of red doesn't '''go''' with the drapes.}}
+##: {{ux-lite|en|White wine '''goes''' better with fish than red wine.}}
+## {{lb|en|intransitive}} To [[belong]] (somewhere).
+##: {{syn-lite|en|belong|[[have]] a [[place]]}}
+##: {{ux-lite|en|My shirts '''go''' on this side of the wardrobe.}}
+##: {{ux-lite|en|This piece of the jigsaw '''goes''' on the other side.}}
+# {{lb|en|intransitive}} To [[date]].
+#: {{syn-lite|en|[[go out]] (with)|date|see}}
+#: {{ux-lite|en|How long have they been '''going''' together?}}
+#: {{ux-lite|en|He's been '''going''' with her for two weeks.}}
+# {{lb|en|transitive}} To (begin to) [[date]] or [[have sex]] with (a particular race).
+#* {{quote-book|en|title=Down For Whatever|author=Frederick Smith|publisher=Kensington Books|isbn=9780758209795|lccn=2006298303|oclc=1083644743|year=2005|page=197|pageurl=https://books.google.com/books?id=Vjo_AU4QrwQC&pg=PA197|passage=You can date black, you can do white, on a slow night maybe even go for an Asian boy, but most likely you'll '''go''' Latino unless the aforementioned guys speak a little Spanish {{...}}}}
+#* {{quote-book|en|title=Dear Mrs. Fitzsimmons: Tales of Redemption from an Irish Mailbox|author=Greg Fitzsimmons|publisher=Simon and Schuster|isbn=9781439192122|date=2010-11-09|page=166|pageurl=https://books.google.com/books?id=1HdhCAsnxHYC&pg=PA166|passage=I felt that was an insult to John Lennon, but I married her anyway. Thinking back, I should have '''gone''' Asian.}}
+#* {{quote-book|en|year=2010|author=Marty Nazzaro|title=The City of Presidents|publisher=FriesenPress|isbn=9781770670044|page=131|passage=“I could give a flying fuck less if Ronnie dated a Martian, but the fact of the matter is that it would not be cool for him to '''go''' Asian. He knows it and I know it.” Ronnie did not respond at all. Shit, he wanted to date Tai in the worst way, {{...}}}}
+#* {{quote-book|en|title=The New Latina’s Bible: The Modern Latina’s Guide to Love, Spirituality, Family, and La Vida|url=https://books.google.com/books?id=GlLEi8vp5_sC&pg=PT141|author=Sandra Guzmán|publisher=Basic Books|isbn=9781580053587|lccn=2010045413|oclc=1201935737|date=2011-05-03|passage=In fact, Hispanics and Asians are riding the wave—26 percent of Latino and 31 percent of Asian newlywed couples were mixed race or ethnicity. And, when marrying out, we '''went''' white—four in ten Latinos married a white spouse, {{...}}}}
+#* {{quote-book|en|title=All Night Lover|author=Sylvia Lett|publisher=Kensington Publishing Corp.|isbn=9780758285249|oclc=1226583034|date=2012-03-01|page=182|pageurl=https://www.google.com/books/edition/All_Night_Lover/AOMIj0FqEDsC?hl=en&gbpv=1&dq=%22gone%20black%22&pg=PA182|passage=She's '''gone''' black now. That's a big change for you, Cassie. So tell me, is it true what they say about black men?}}
+#* {{quote-book|en|url=https://www.google.com/books/edition/She_Is_Evil/lZDrDwAAQBAJ?hl=en&gbpv=1&dq=%22went%20black%22%20%22Dating%22%20guys&pg=PT88&printsec=frontcover&bsq=%22went%20black%22%20%22Dating%22%20guys|title="She Is Evil!": Madness and Murder in Memphis|author=Judith A. Yates|publisher=WildBlue Press|isbn=9781942266983|oclc=1158711979|date=2017-05-16|passage=“She '''went''' black,” he remembers. “She only started dating black guys. Or foreigners.”}}
+#* {{quote-book|en|url=https://books.google.com/books?id=J4t8DwAAQBAJ&pg=PT117|title=A Heart Not Easily Broken|author=M.J. Kane|publisher=Written Musings|series=Butterfly Memoirs|isbn=9781945143427|date=2018-11-27|passage=“Your twin is dating a white man,” Lashana interjected. {{...}} “{{...}}Now, let me get this straight, Eb, you've '''gone''' white?”}}
+#* {{quote-book|en|url=https://www.google.com/books/edition/30_Things_I_Love_About_Myself/BdMoEAAAQBAJ?hl=en&gbpv=1&dq=%22gone%20white%22%20dating&pg=PT96|title=30 Things I Love About Myself|author=Radhika Sanghani|publisher=Penguin|isbn=9780593335055|lccn=2021013684|oclc=1289372173|date=2022-01-04|passage=She's ''hot''. Hey, how are your parents about it all? I mean, you're breaking two taboos there—you're dating women, and you've '''gone''' white.}}
+# To [[attack]]:
+## {{lb|en|intransitive}} To [[fight]] or [[attack]].
+##* {{quote-av|en|year=2002|actor={{w|Jayne Cobb}}|title=Firefly|episode=Objects in Space|passage=You wanna '''go''', little man?}}
+##: {{ux-lite|en|I '''went''' at him with a knife.}}
+## {{lb|en|transitive|obsolete|US|slang}} To [[fight]].
+##* {{quote-book|en|year=1900|title=Frank Merriwell's Tricks: Or True Friends and False|author=Burt L. Standish
+|url=https://books.google.ca/books?id=H9Weg4y_D_sC&pg=PA169
+|text=You've shown me his weak points, and I'll '''go''' him whether you stick by me or not.
+}}
+## {{lb|en|transitive|Australian slang}} To [[attack]].
+##* {{quote-book|en|1964|Robert Close|Love Me Sailor|page=131|passage=As big as me. Strong, too. I was itching to '''go''' him, And he had clouted Ernie.}}
+##* {{quote-book|en|year=2002|author={{w|James Freud}}|title=I am the Voice Left from Drinking|pageurl=https://books.google.com/books?id=gfVtTNc0owcC&pg=PT42|page=unnumbered
+|passage=Then I′m sure I heard him mutter ‘Why don′t you get fucked,’ under his breath.<br>It was at that moment that I became a true professional. Instead of '''going''' him, I announced the next song.}}
+##* {{quote-book|en|year=2005|author=Joy Dettman|title=One Sunday|pageurl=https://books.google.com/books?id=ZQKALHsrDUgC&pg=PA297|page=297
+|passage=Tom stepped back, considered the hill, and taking off down it. She was going to '''go''' him for blowing that flamin′ whistle in her ear all day.}}
+# {{senseid|en|beingeneral}}To  be in general; to be usually;  {{n-g-lite|often in comparison to others of the same group}}.
+#* {{quote-journal|en|year=1975|journal=Private Eye|issue=340-366|page=9
+|passage=Booster is not a loud trumpeter as elephants '''go'''.}}
+#* {{quote-book|en|year=1982|author=Fernand Braudel|title=On History|isbn=0226071510|page=40|passage=They are fairly rough and ready as models '''go''', not often driven to the rigor of an authentic scientific law, and never worried about coming out with some revolutionary mathematical language — but models nonetheless, {{...}}}}
+#* {{quote-book|en|year=1991|author=Katherine Paterson|title=Lyddie|passage=She was, as girls '''go''', scrawny and muscular, yet her boyish frame had in the last year betrayed her.}}
+# {{lb|en|transitive}} To take (a particular [[part]] or [[share]]); to participate in to the extent of.
+#* {{RQ:L'Estrange Fables of Aesop|passage=They were to '''go''' equal shares in the booty.}}
+#: {{ux-lite|en|Let's '''go''' halves on this.}}
+# {{lb|en|transitive}} To [[yield]] or [[weigh]].
+#* {{quote-book|en|1910|Ray Stannard Baker|Adventures in Friendship|page=182|url=http://books.google.com/books?id=bh5FAAAAIAAJ|passage=This'll '''go''' three tons to the acre, or I'll eat my shirt.}}
+#: {{ux-lite|en|Those babies '''go''' five tons apiece.}}
+# {{lb|en|transitive|intransitive}} To [[offer]], [[bid]] or [[bet]] an amount; to [[pay]].
+#: {{ux-lite|en|That's as high as I can '''go'''.}}
+#: {{ux-lite|en|We could '''go''' two fifty.}}
+#: {{ux-lite|en|I'll '''go''' a ten-spot.}}
+#: {{ux-lite|en|I'll '''go''' you a shilling.}}
+#: {{ux-lite|en|I'll [[go one better|'''go''' him one better]].}}
+# {{lb|en|transitive|colloquial}} To [[enjoy]]. {{q-lite|Compare ''[[go for]]''.}}
+#: {{ux-lite|en|I could '''go''' a beer right about now.}}
+# {{lb|en|intransitive|colloquial}} To [[urinate]] or [[defecate]].
+#: {{syn-lite|en|Thesaurus:urinate|Thesaurus:defecate}}
+#: {{ux-lite|en|I really need to '''go'''.}}
+#: {{ux-lite|en|Have you managed to '''go''' today, Mrs. Miggins?}}
+#* {{quote-book|en|year=2006|author=Kevin Blue|title=Practical Justice: Living Off-Center in a Self-Centered World|isbn=0830833684|page=54|passage=Clarence was just as surprised to see Richard, and he '''went'''—right there in the doorway. I had slept through all this mayhem on the other side of the apartment. By the time I got up, these were all semi-comical memories and the urine had been cleaned up.}}
+# {{lb|en|imperative}} {{n-g-lite|Expressing encouragement or approval.}}
+#: {{ux-lite|en|'''Go''', girl! You can do it!}}
+
+=====Usage notes=====
+* Along with {{m-lite|en|do}}, {{m-lite|en|make}}, and to a lesser extent other English verbs, ''go'' is often used as a substitute for a verb that was used previously or that is implied, in the same way a [[pronoun]] substitutes for a [[noun]]. For example:
+*: ''Chris: Then he '''goes''' like this:'' (Chris then waves arms around, implying that the phrase means ''then he waves his arms'').
+* Some speakers use {{m-lite|en|went}} for the past participle, especially in informal contexts, though this is considered [[Appendix:Glossary#nonstandard|nonstandard]] and is [[Appendix:Glossary#proscribed|proscribed]].
+* Like other English verbs, the verb ''go'' once had an alternative present participle formed with the suffix ''[[-and]]'', i.e. ''[[goand]]''. ''[[goand|Goand]]'' is now [[obsolete]], having been replaced by ''[[going]]'', except in a few rural dialects in Scotland and Northern England, where it is considered [[archaic]]. Even in such dialects, it is never used to form the continuous tenses. These examples are from the [[Highlands]]:
+*: {{ux-lite|inline=1|en|'''Goand''' [[snell]] [[athwart]] the [[houf]], hoo hent 'im be the [[swire|swyr]].|'''Going''' swiftly across the churchyard, she grabbed him by the neck.}}
+*: {{ux-lite|inline=1|en|'''Goand''' oot of the [[holt]], she saw a woundor baist.|'''Going''' out of the woods, she saw a magical creature.}}
+
+=====Conjugation=====
+{{en-conj|old=1
+|past=went
+|past_ptc=gone
+|pres_3sg=goes
+|past_2sg_old=wentest
+|pres_ptc2=goand
+|pres_ptc2_qual=archaic
+|past2=yode
+|past2_qual=archaic}}
+
+=====Quotations=====
+* {{seeCites|en}}
+
+=====Derived terms=====
+{{col4|en
+|bego
+|churchgoer
+|forgo
+|forego
+|get woke, go broke
+|go-ahead
+|go-cart
+|go-kart
+|go-slow
+|go-to
+|go about
+|go along
+|go after
+|go against
+|go amiss
+|go around
+|go away
+|go back
+|go bad
+|go begging
+|go-between
+|go bush
+|go by
+|go combo
+|go down
+|go down on
+|go equipped
+|go face
+|go for
+|go for the gold
+|go great guns
+|go in
+|go in on
+|go into
+|go like the clappers
+|go long
+|go off
+|go off on
+|go on
+|go out
+|go out with
+|go play in the traffic
+|go postal
+|go round
+|go straight
+|go the distance
+|go the way of the dodo
+|go through with
+|go to ground
+|go to press
+|go to show
+|go to waste
+|go up
+|go with
+|go without
+|good to go
+|have someone going
+|ingo
+|like it's going out of style
+|misgo
+|on your mark, get set, go!
+|outgo
+|overgo
+|pay-as-you-go
+|ready, set, go!
+|undergo
+|wend
+|whoops, there go my trousers
+|withgo
+|go at
+|away-going|church-going|coming and going|easy-going|get going|going away|going away dress|going barrel|going concern|going forward|going on|going over|going rate|going-over|going-to|good going|got it going on|have it going on|have something going for one|have something going with someone|heavy going|how are you going|how's it going|I'm going to hell for this|I'm not going to lie|is it going to rain|it's going|keep going|like it's going out of fashion|make heavy going of|mosque-going|not going anywhere|not know whether one is coming or going|sea-going|steady-going|synagogue-going|temple-going|the box they're going to bury it in|the fucking you get isn't worth the fucking you're going to get|the screwing you get isn't worth the screwing you're going to get|theatre-going|thorough-going|tough going|way-going|what's going on|where are we going|where the puck is going
+}}
+
+=====Translations=====
+{{trans-see|walk}}
+
+{{trans-top|to move through space (especially from one place to another)}}{{multitrans|data=
+* Afrikaans: {{tt+|af|gaan}}
+* Akkadian: {{tt|akk|𒁺|tr=alāku, DU}}
+* Albanian: {{tt|sq|ecën}}
+* Ambonese Malay: {{tt|abs|pi}}, {{tt|abs|pigi}}
+* American Sign Language: {{tt|ase|1@NearHand-FingerUp-1@InsideChesthigh-FingerUp 1@NearHand-FingerForward-1@DistalInsideChesthigh-FingerForward}}
+* Arabic: {{tt+|ar|ذَهَبَ}}, {{tt+|ar|رَاحَ}}
+*: Egyptian Arabic: {{tt|arz|راح|tr=rāḥ}}
+*: Gulf Arabic: {{tt|afb|راح|tr=rāḥ}}
+*: Hijazi Arabic: {{tt|acw|راح|tr=rāḥ}}
+*: South Levantine Arabic: {{tt|ajp|راح|tr=rāḥ}}
+* Aragonese: {{tt|an|ir}}
+* Armenian: {{tt+|hy|գնալ}}, {{q-lite|dialectal}} {{tt+|hy|էթալ}}, {{q-lite|dialectal}} {{tt+|hy|երթալ}}
+* Aromanian: {{tt|rup|njergu}}, {{tt|rup|nergu}}, {{tt+|rup|imnu}}
+* Assamese: {{tt|as|যা}}
+* Assyrian Neo-Aramaic: {{tt|aii|ܐܵܙܹܠ}}
+* Asturian: {{tt+|ast|dir}}
+* Avar: {{tt|av|ине}}
+* Azerbaijani: {{tt+|az|getmək}}
+* Basque: {{tt|eu|joan}}
+* Belarusian: {{q-lite|abstract|on foot}} {{tt|be|хадзі́ць|impf}}, {{tt|be|пахадзі́ць|pf}}, {{q-lite|concrete|on foot}} {{tt|be|ісці́|impf}}, {{tt|be|пайсці́|pf}}, {{q-lite|abstract|by transport}} {{tt|be|е́здзіць}}, {{tt|be|пае́здзіць|pf}}, {{q-lite|concrete|by transport}} {{tt|be|е́хаць|impf}}, {{tt|be|пае́хаць|pf}}
+* Bengali: {{tt+|bn|যাওয়া}}
+* Borôro: {{tt|bor|kodu}}, {{tt|bor|tu}}
+* Brahui: {{tt|brh|darr}}
+* Breton: {{tt+|br|mont}}
+* Bulgarian: {{tt+|bg|оти́вам}}, {{tt+|bg|хо́дя}}, {{tt+|bg|вървя́}}, {{tt|bg|я́здя}} {{q-lite|by transport}} {{g|impf}}
+* Burmese: {{tt+|my|သွား}}
+* Catalan: {{tt+|ca|anar}}
+* Chagatai: {{tt|chg|بارادو|tr=bārādū}}
+* Cherokee: {{tt|chr|ᎡᎦ}}
+* Chickasaw: {{tt|cic|aya}}, {{tt|cic|ayya}}, {{tt|cic|iyya}}
+* Chinese:
+*: Cantonese: {{tt|yue|去|tr=heoi3}}
+*: Dungan: {{tt|dng|чў}}
+*: Hakka: {{tt|hak|去|tr=hi}}
+*: Mandarin: {{tt+|cmn|去}}
+*: Min Dong: {{tt|cdo|行|tr=giàng, hèng}}
+*: Min Nan: {{tt+|nan|去|tr=khì}}, {{tt+|nan|來去|tr=lâi-khì}}
+* Classical Nahuatl: {{tt|nci|yauh}}
+* Cornish: {{tt|kw|mos}}
+* Crimean Tatar: {{tt|crh|ket}}
+* Czech: {{tt+|cs|chodit}}, {{q-lite|on foot}} {{t+check|cs|jít|impf}}, {{tt+|cs|jet}}, {{tt+|cs|jezdit}}, {{q-lite|by transport}}
+* Dalmatian: {{tt|dlm|andur}}, {{tt|dlm|zer}}
+* Danish: {{tt+|da|gå}}
+* Dutch: {{tt+|nl|gaan}}
+* Eastern Arrernte: {{t|aer|alheme}}
+* Egyptian: {{t-egy|zj|h=O35}}
+* Eshtehardi: {{tt|esh|شوتن|tr=šutan|alt=شوتَن}}
+* Esperanto: {{tt+|eo|iri}}
+* Estonian: {{tt+|et|minema}}
+* Even: {{tt|eve|ӈэн-}}
+* Evenki: {{tt|evn|ӈэнэдеми}}
+* Faroese: {{tt|fo|fara}}
+* Finnish: {{tt+|fi|mennä}}
+* French: {{tt+|fr|aller}}
+* Friulian: {{tt|fur|lâ}}
+* Galician: {{tt+|gl|ir}}
+* Gallurese: {{tt|sdn|andà}}
+* Georgian: {{tt|ka|სვლა}}
+* German: {{tt+|de|gehen}}
+*: Alemannic German: {{tt|gsw|gaa}}
+* Gothic: {{tt|got|𐌲𐌰𐌲𐌲𐌰𐌽}}
+* Greek: {{tt+|el|πάω}}, {{tt+|el|πηγαίνω}}
+*: Ancient: {{tt|grc|εἶμῐ}}, {{tt|grc|ἔρχομαι}}, {{tt|grc|εἰμῐ́}}, {{tt|grc|ἦλθον}}, {{tt|grc|βαίνω}}, {{tt|grc|βᾰδῐ́ζω}}, {{tt|grc|πορεύομαι}}, {{tt|grc|βλώσκω}} {{q-lite|Epic}}, {{tt|grc|ἐλαύνω}}, {{tt|grc|κίνυμαι}}, {{tt|grc|κῑνέω}}, {{tt|grc|νέομαι}}, {{tt|grc|νίσσομαι}}, {{tt|grc|ᾰ̓́γω}}
+*: Mycenaean: {{tt|gmy|𐀂𐀍𐀳}}
+* Guaraní: {{tt|gn|ho}}
+* Haitian Creole: {{tt|ht|ale}}, {{tt|ht|al}}
+* Hawaiian: {{tt|haw|hele}}
+* Hebrew: {{tt+|he|הָלַךְ|tr=halákh}}, {{tt+|he|נָסַע|tr=nasá}}, {{tt+|he|טָס|tr=tas}}
+* Hindi: {{tt+|hi|जाना}}
+* Hittite: {{tt|hit|𒄿𒄿𒀀𒀜𒋫|tr=i-ya-at-ta}}
+* Hungarian: {{tt+|hu|megy}}, {{tt+|hu|jár}}, {{tt+|hu|halad}}, {{tt+|hu|utazik}}
+* Icelandic: {{tt+|is|fara}}
+* Ido: {{tt+|io|irar}}
+* Indonesian: {{tt+|id|pergi}}
+* Ingrian: {{tt|izh|männä}}, {{tt|izh|käyvvä}}, {{tt|izh|lovata}}
+* Interlingua: {{tt|ia|ir}}, {{tt+|ia|vader}}
+* Irish: {{tt|ga|téigh}}
+* Istriot: {{tt|ist|zì}}
+* Italian: {{tt+|it|andare}}
+* Japanese: {{tt+|ja|行く|tr=いく, iku}}, {{q-lite|honorific}} {{tt+|ja|いらっしゃる|tr=irassharu}}, {{q-lite|humble}} {{tt+|ja|参る|tr=まいる, mairu}}
+* Javanese: {{tt+|jv|lunga}} {{q-lite|casual}}, {{tt|jv|kesah}} {{q-lite|semi-polite}}, {{tt|jv|tindak}} {{q-lite|polite}}
+* Jingpho: {{tt|kac|sa}}
+* Kabuverdianu: {{tt|kea|bai}}, {{tt|kea|bá}}
+* Kala Lagaw Ya: {{t-needed|mwp}}
+* Kambera: {{tt|xbr|laku}}
+* Kannada: {{tt+|kn|ಹೋಗು}}
+* Kashubian: {{tt|csb|jic}}
+* Kazakh: {{tt+|kk|бару}}, {{tt+|kk|кету}}
+* Khakas: {{tt|kjh|парарға|tr=pararğa}}
+* Khmer: {{tt+|km|ទៅ|tr=tɨv}}
+* Kituba: {{t|ktu|kwenda}}
+* Korean: {{tt+|ko|가다}}
+* Kurdish:
+*: Central Kurdish: {{tt|ckb|چوون|tr=çûn}}, {{tt+|ckb|ڕۆیشتن|tr=royiştin}}
+*: Northern Kurdish: {{tt+|kmr|çûn}}
+* Kyrgyz: {{tt+|ky|баруу}}, {{tt+|ky|жүрүү}}
+* Laboya: {{tt|lmy|kako}}
+* Ladin: {{tt|lld|jì}}
+* Lao: {{tt|lo|ໄປ}}
+* Latgalian: {{tt|ltg|īt}}
+* Latin: {{tt+|la|eō}}, {{tt|la|vādō}}, {{tt+|la|gradior}}, {{tt|la|baetō}}, {{tt|la|bītō}}, {{tt|la|bētō}}
+* Latvian: {{tt|lv|iet}}
+* Lingala: {{t|ln|kɛndɛ}}, {{t|ln|kokende}}
+* Lithuanian: {{tt+|lt|eiti}}
+* Livonian: {{tt|liv|lǟdõ}}
+* Low German: {{tt+|nds|gan}}, {{tt+|nds|gahn}}
+*: German Low German: {{tt+|nds-de|gaan}}
+* Lü: {{tt|khb|ᦂᦱᧈ}}, {{tt|khb|ᦺᦔ}}
+* Lushootseed: {{tt|lut|ʔux̌ʷ}}
+* Luwian: {{tt|xlu|𒄿𒋾|tr=i-ti}}
+* Luxembourgish: {{tt+|lb|goen}}
+* Macedonian: {{tt|mk|оди}}, {{tt|mk|иде}}
+* Malay: {{tt+|ms|pergi}}
+* Malayalam: {{tt|ml|പോവുക}}, {{tt+|ml|പോകുക}}
+* Maltese: {{tt|mt|mar}}
+* Manchu: {{tt|mnc|ᠶᠠᠪᡠᠮᠪᡳ}}
+* Manx: {{tt|gv|immee}}
+* Maquiritari: {{tt|mch|ütö}}
+* Marathi: {{tt+|mr|जाणे}}
+* Mazanderani: {{tt|mzn|بوردن|tr=boordan}}
+* Mbyá Guaraní: {{tt|gun|o}}
+* Middle English: {{tt|enm|gon}}, {{tt|enm|faren}}, {{tt|enm|waden}}
+* Mizo: {{tt|lus|kal}}
+* Mongolian: {{tt+|mn|явах}}, {{tt|mn|ᠶᠠᠪᠤᠬᠤ}}
+* Murrinh-Patha: {{t-needed|mwf}}
+* Nanai: {{tt|gld|энэури}}
+* Navajo: {{tt|nv|déyá}}
+* Neapolitan: {{tt|nap|i}}
+* Nepali: {{tt+|ne|जानु}}
+* Norman: {{tt|nrf|aller}}
+* North Frisian: {{tt|frr|gunge}}
+* Northern Thai: {{tt|nod|ᨻᩱ|tr=pai}}
+* Norwegian: {{tt+|no|reise}}, {{tt+|no|fare}}, {{tt+|no|dra}}
+*: Nynorsk: {{tt|nn|fara}}
+* Occitan: {{tt+|oc|anar}}
+* Old Church Slavonic:
+*: Cyrillic: {{q-lite|abstract}} {{tt|cu|ходити}}, {{q-lite|concrete}} {{tt|cu|ити}}
+*: Glagolitic: {{q-lite|abstract}} {{tt|cu|ⱈⱁⰴⰹⱅⰹ}}, {{q-lite|concrete}} {{tt|cu|ⰹⱅⰹ}}
+* Old English: {{tt|ang|gān}}, {{tt|ang|faran}}
+* Old Javanese: {{tt|kaw|lunga}}
+* Old Norse: {{tt|non|ganga}}, {{tt|non|fara}}
+* Old Persian: {{tt|peo|𐎠𐎡𐎫𐎡𐎹|ts=aitiy}}
+* Old Saxon: {{tt|osx|gān}}, {{tt|osx|gangan}}, {{tt|osx|wadan}}, {{tt|osx|faran}}, {{tt|osx|fōrian}}
+* Oromo: {{tt|om|deemuu}}
+* Ossetian: {{tt|os|цӕуын}}
+* Pennsylvania German: {{tt|pdc|geh}}
+* Persian: {{tt+|fa|رفتن|tr=raftan}}, {{tt+|fa|شدن|tr=šodan}}
+* Piedmontese: {{tt|pms|andè}}
+* Pipil: {{tt|ppl|yawi}}, {{tt|ppl|yahui}}
+* Pitjantjatjara: {{tt|pjt|ananyi}}
+* Polabian: {{tt|pox|x́üdĕt}}
+* Polish: {{q-lite|abstract, on foot}} {{tt+|pl|chodzić|impf}}, {{q-lite|concrete, on foot}} {{tt+|pl|iść|impf}}, {{tt+|pl|pójść|pf}}; {{q-lite|abstract, by vehicle}} {{tt+|pl|jeździć|impf}}, {{q-lite|concrete, by vehicle}} {{tt+|pl|jechać|impf}}, {{tt+|pl|pojechać|pf}}
+* Portuguese: {{tt+|pt|ir}}
+* Punjabi: {{tt|pa|ਜਾਣਾ}}
+* Quechua: {{tt|qu|puriy}}, {{tt+|qu|riy}}, {{tt|qu|rii}}, {{tt|qu|aiwai}}
+* Romanian: {{tt+|ro|merge}}, {{tt+|ro|duce}}
+* Romansch: {{tt|rm|ir}}
+* Russian: {{tt+|ru|ходи́ть}}, {{tt+|ru|идти́}} {{q-lite|on foot}} {{g|impf}}, {{tt+|ru|е́здить}}, {{tt+|ru|е́хать}} {{q-lite|by transport}} {{g|impf}}
+* Sanskrit: {{tt+|sa|एति|tr=éti}}, {{tt+|sa|याति}}, {{tt+|sa|गम्}}, {{tt+|sa|आचरति}}, {{tt+|sa|चरति}}, {{tt+|sa|गच्छति}}, {{tt|sa|जिगाति}}
+* Sardinian:
+*: Campidanese: {{tt|sc|andai}}
+*: Logudorese: {{tt|sc|vaiare}}
+* Sassarese: {{tt|sdc|andà}}
+* Scottish Gaelic: {{tt|gd|rach}}, {{tt|gd|falbh}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|ѝћи}}
+*: Roman: {{tt|sh|ići}}
+* Shan: {{tt+|shn|ၵႂႃႇ}}
+* Sherpa: {{tt|xsr|འགྲོ}}
+* Sichuan Yi: {{q-lite|general}} {{tt|ii|ꁧ}}, {{q-lite|downwards}} {{tt|ii|ꒉ}}, {{q-lite|upwards}} {{tt|ii|ꆹ}}
+* Sicilian: {{tt+|scn|iri}}, {{tt+|scn|jiri}}, {{tt+|scn|annari}}
+* Sinhalese: {{tt|si|යනවා}}
+* Slovak: {{q-lite|abstract|on foot or by vehicle}} {{tt|sk|chodiť|impf}}, {{q-lite|concrete|on foot or by vehicle}} {{tt+|sk|ísť|impf}}
+* Slovene: {{tt+|sl|īti}}, {{tt+|sl|odíti}}, {{tt+|sl|hodīti}}
+* Slovincian: {{q-lite|abstract|on foot}} {{tt|zlw-slv|xʉ̀ɵ̯ʒĕc|impf}}, {{q-lite|concrete|on foot}} {{tt|zlw-slv|jĩ́c|impf}}
+* Sorbian:
+*: Lower Sorbian: {{q-lite|abstract|on foot}} {{tt|dsb|chójźiś|impf}}, {{q-lite|concrete|on foot}} {{tt|dsb|hyś|impf}}, {{q-lite|abstract|by vehicle}} {{tt|dsb|jězdźiś|impf}}, {{q-lite|concrete|by vehicle}} {{tt|dsb|jěś|impf}}; {{tt|dsb|se [[póraś]]|impf}}
+*: Upper Sorbian: {{q-lite|abstract, on foot}} {{tt|hsb|chodźić|impf}}, {{q-lite|concrete, on foot}} {{tt|hsb|hić|impf}}, {{q-lite|abstract, by vehicle}} {{tt|hsb|jězdźić|impf}}, {{q-lite|concrete, by vehicle}} {{tt|hsb|jěć|pf}}
+* Southern Altai: {{tt|alt|барар}}
+* Spanish: {{tt+|es|ir}}
+* Sumerian: {{tt|sux|𒁺|tr=DU}}
+* Swahili: {{tt+|sw|gura}}, {{tt+|sw|enda|alt=kwenda}}
+* Swedish: {{tt+|sv|gå}} {{q-lite|by walking}}, {{tt+|sv|resa}}, {{tt+|sv|åka}} {{q-lite|by vehicle}}, {{tt+|sv|fara}}
+* Sylheti: {{tt|syl|ꠎꠣꠃꠣ}}
+* Tabaru: {{t|tby|tagi}}
+* Tagalog: {{tt|tl|magpatuloy}}, {{tt|tl|pumunta}}, {{tt|tl|magpunta}}
+* Tajik: {{tt|tg|рафтан‍}}, {{tt+|tg|шудан}}
+* Tamil: {{tt+|ta|செல்}}, {{tt+|ta|போ}}
+* Tatar: {{tt+|tt|барырга}}
+* Telugu: {{tt+|te|వెళ్ళు}}, {{tt+|te|పోవు}}, {{tt|te|వెళ్ళిపోవు}}
+* Ternate: {{t|tft|tagi}}
+* Tetum: {{tt|tet|la'o}}
+* Thai: {{tt+|th|ไป|tr=bpai}}
+* Tibetan: {{tt|bo|འགྲོ}}, {{t|bo|ཕེབས}} {{qualifier|honorific}}, {{t|bo|ཐད}} {{qualifier|honorific}}
+* Tiwi: {{t-needed|tiw}}
+* Tocharian B: {{tt|txb|i-}}, {{q-lite|preterite stem'}} {{tt|txb|mäs-}}
+* Tofa: {{tt|kim|баар|tr=baar}}, {{tt|kim|чоруур|tr=coruur}}
+* Tok Pisin: {{tt|tpi|go}}
+* Turkish: {{tt+|tr|gitmek}}
+* Turkmen: {{tt|tk|gitmek}}
+* Tuvan: {{tt|tyv|баар}}, {{tt|tyv|чоруур}}
+* Ugaritic: {{tt|uga|𐎅𐎍𐎋|tr=hlk}}
+* Ukrainian: {{q-lite|abstract|on foot}} {{tt+|uk|ходи́ти}}, {{q-lite|concrete|on foot}} {{tt+|uk|іти́}}, {{tt+|uk|йти|impf}}, {{tt|uk|піти́|pf}}, {{q-lite|abstract|by transport}} {{tt+|uk|ї́здити|impf}}, {{tt|uk|пої́здити|pf}} {{q-lite|concrete|by transport}}, {{tt+|uk|ї́хати|impf}} {{tt|uk|пої́хати|pf}}
+* Urdu: {{tt|ur|جانا|tr=jānā}}
+* Uyghur: {{tt+|ug|بارماق}}, {{tt|ug|كەتمەك}}
+* Uzbek: {{tt+|uz|bormoq}}
+* Venetian: {{tt+|vec|ndar}}
+* Veps: {{tt|vep|mända}}
+* Vietnamese: {{tt+|vi|đi}}
+* Võro: {{tt|vro|käümä}}
+* Votic: {{tt|vot|menne}}
+* Walloon: {{tt+|wa|aler}}
+* Warlpiri: {{t-needed|wbp}}
+* Welsh: {{tt+|cy|mynd}}
+* West Frisian: {{tt+|fy|gean}}
+* White Hmong: {{t-needed|mww}}
+* Yakut: {{tt|sah|бар}}, {{tt|sah|ис}}
+* Yiddish: {{tt|yi|גיין}}
+* Zazaki: {{tt|zza|şiyen}}
+* Zhuang: {{t-needed|za}}
+* ǃXóõ: {{tt|nmn|sâa}}
+{{trans-bottom}}
+
+{{trans-see|leave}}
+
+{{trans-top|of a machine, to work}}
+* Catalan: {{tt+|ca|funcionar}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|運作}}, {{tt+|cmn|工作}}, {{tt+|cmn|運轉}}, {{tt+|cmn|運行}}
+* Czech: {{tt+|cs|fungovat}}
+* Finnish: {{tt+|fi|toimia}}
+* French: {{tt+|fr|fonctionner}}, {{tt+|fr|marcher}}
+* Hungarian: {{tt+|hu|működik}}, {{tt+|hu|jár}}
+* Italian: {{tt+|it|funzionare}}
+* Japanese: {{tt+|ja|動く|tr=うごく, ugoku}}
+* Korean: {{tt+|ko|작동하다}}
+* Latin: {{tt|la|labō}}
+* Macedonian: {{tt|mk|тера}}
+* Norwegian: {{tt+|no|gå}}, {{tt+|no|virke}}, {{tt|no|være i gang}}
+* Polish: {{tt+|pl|działać}}
+* Portuguese: {{tt+|pt|funcionar}}, {{tt+|pt|andar}}, {{tt+|pt|ir}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|gå}}, {{tt+|sv|fungera}}
+* Tagalog: {{tt|tl|umandar}}
+* Vietnamese: {{t+|vi|chạy}}, {{t+|vi|vận hành}}
+{{trans-bottom}}
+
+{{trans-top|to take a turn}}
+* Czech: {{tt+|cs|chodit}}, {{tt+|cs|šlapat}} {{q-lite|informal}}
+* Esperanto: {{t-check|eo|[[preni]] [[sia]]n [[vico]]n}}
+* Finnish: {{tt+|fi|pelata}} {{tt+|fi|vuoro}}, {{tt+|fi|käyttää}} {{tt+|fi|vuoro}}
+* German: {{tt+|de|dran}} {{tt+|de|sein}}, {{tt+|de|ziehen}}
+* Hungarian: {{tt+|hu|lép}}
+* Kurdish:
+*: Central Kurdish: {{tt|ckb|بڕۆ|tr=brro}}
+* Portuguese: {{tt+|pt|ir}}
+* Russian: {{tt+|ru|ходи́ть}}
+* Swahili: {{tt+|sw|gura}}
+{{trans-bottom}}
+
+{{trans-see|attend}}
+
+{{trans-see|extend}}
+
+{{trans-see|lead (tend or reach in a certain direction)|lead}}
+
+{{trans-top|to become}}
+* Danish: {{tt+|da|blive}}
+* Finnish: {{tt+|fi|tulla}}
+* French: {{tt+|fr|devenir}}
+* Hebrew: {{tt|he|נעשה|tr=ne'esá}}
+* Hungarian: {{tt+|hu|-ul}}, {{tt+|hu|-ül}}, {{tt+|hu|-odik}}, {{tt+|hu|-edik}}, {{tt+|hu|-ödik}}, {{tt+|hu|válik}}, {{tt+|hu|változik}}
+* Indonesian: {{tt+|id|menjadi}}
+* Italian: {{tt+|it|diventare}}
+* Japanese: {{tt+|ja|なる|tr=naru}}
+* Latin: {{tt+|la|fīō}}
+* Macedonian: {{tt|mk|станува}}
+* Norwegian: {{tt+|no|bli}}
+* Polish: {{tt+|pl|stawać się}}, {{tt+|pl|robić się}}
+* Portuguese: {{tt+|pt|virar}}, {{tt+|pt|ficar}}, {{tt|pt|tornar-se}}
+* Russian: {{tt+|ru|станови́ться}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|би̏ти}}
+*: Roman: {{tt+|sh|bȉti}}
+* Spanish: {{tt+|es|hacerse}} {{q-lite|roles, professions}}, {{tt+|es|ponerse}} {{q-lite|moods}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|bli}}
+* Tagalog: {{tt|tl|maging}}
+{{trans-bottom}}
+
+{{trans-top|to habitually be in a state}}
+* Finnish: {{tt+|fi|olla}}
+* Hungarian: {{tt+|hu|marad}}
+* Tagalog: {{tt|tl|maging}}
+{{trans-bottom}}
+
+{{trans-see|change}}
+
+{{trans-see|turn out}}
+
+{{trans-see|of time: elapse, pass|elapse|pass}}
+
+{{trans-top|to disappear}}
+* Arabic: {{tt+|ar|ذَهَبَ}}, {{tt|ar|زَالَ}}, {{tt+|ar|اِخْتَفَى}}
+* Catalan: {{tt+|ca|desaparèixer}}, {{tt|ca|[[anar-se]][[’n]]}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|走}}, {{tt+|cmn|消失}}
+* Czech: {{tt+|cs|odejít}}
+* Dutch: {{tt+|nl|verdwijnen}}, {{tt+|nl|weggaan}}
+* Esperanto: {{tt+|eo|foriri}}
+* Finnish: {{tt+|fi|kadota}}, {{tt+|fi|mennä}} {{tt+|fi|pois}}
+* French: {{tt|fr|[[s'en|s’en]] [[aller]]}}, {{q-lite|to go away}} {{tt+|fr|partir}}, {{q-lite|to disappear}} {{tt+|fr|disparaitre}}
+* German: {{tt+|de|verschwinden}}, {{tt+|de|weggehen}}, {{tt+|de|fortgehen}}
+* Hebrew: {{tt+|he|עזב|tr=azáv}}
+* Hungarian: {{tt+|hu|elmúlik}}, {{tt+|hu|eltűnik}}, {{tt+|hu|tűnik}}
+* Indonesian: {{tt+|id|lenyap}}, {{tt+|id|menghilang}}
+* Italian: {{tt+|it|sparire}}
+* Japanese: {{tt|ja|見えない|tr=みえなくなる, mienaku naru|alt=見えなくなる}}, {{tt+|ja|去る|tr=さる, saru}}, {{tt+|ja|消える|tr=きえる, kieru}}
+* Korean: {{tt+|ko|사라지다}}
+* Latin: {{tt|la|ēsvānēscō}}, {{tt|la|ēvānēscō}}
+* Macedonian: {{tt|mk|оди}}, {{tt|mk|исчезнува}}
+* Mizo: {{tt|lus|chhuak}}, {{tt|lus|luang}}, {{tt|lus|kal bo}}, {{tt|lus|kalsan}}
+* Norwegian: {{tt+|no|forsvinne}}, {{tt|no|gå over}}
+* Old Saxon: {{tt|osx|wendian}}
+* Polish: {{tt+|pl|znikać}}, {{tt+|pl|zniknąć|pf}}
+* Portuguese: {{tt+|pt|desaparecer}}, {{tt+|pt|sumir}}, {{tt|pt|ir-se}}
+* Romanian: {{tt+|ro|dispărea}}
+* Russian: {{tt+|ru|исчеза́ть}}, {{tt+|ru|пропада́ть}}
+* Serbo-Croatian: {{tt|sh|izčeznuti}}, {{tt+|sh|propadnuti}}
+* Spanish: {{tt+|es|desaparecer}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|försvinna}}
+* Tagalog: {{tt|tl|mawala}}
+* Vietnamese: {{tt+|vi|biến mất}}
+* Walloon: {{tt+|wa|endaler}}, {{tt+|wa|si passer}} {{q-lite|pain}}, {{tt+|wa|disparexhe}}
+{{trans-bottom}}
+
+{{trans-see|die}}
+
+{{trans-top|to be destroyed}}
+* Catalan: {{tt+|ca|destruir}}
+* Czech: {{tt+|cs|odejít}}, {{tt|cs|rozbít se}}
+* Esperanto: {{tt|eo|rompiĝi}}
+* Finnish: {{tt+|fi|tuhoutua}}
+* German: {{tt+|de|kaputtgehen}}, {{tt+|de|kaputt}} {{tt+|de|sein}}, {{t-check|de|[[zerstört]] [[sein]]}}
+* Hebrew: {{tt|he|נשמד|tr=nishmád}}
+* Hungarian: {{tt+|hu|összeesik}}, {{tt+|hu|összeomlik}}, {{tt+|hu|betörik}}, {{tt+|hu|beszakad}}
+* Italian: {{tt+|it|distruggere}}, {{tt+|it|disintegrare}}
+* Japanese: {{tt+|ja|崩れる|tr=くずれる, kuzureru}}
+* Latin: {{tt+|la|dēleō}}
+* Norwegian: {{tt|no|ødelegges}}
+* Portuguese: {{tt|pt|ir-se}}
+* Romanian: {{tt+|ro|distruge}}
+* Russian: {{tt+|ru|слома́ться}}, {{tt+|ru|распада́ться}}
+* Serbo-Croatian: {{tt+|sh|ràspasti}}, {{tt+|sh|slòmiti}}
+* Spanish: {{tt+|es|destruir}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|förstöras}}
+* Tagalog: {{tt|tl|masira}}, {{tt|tl|mawasak}}
+* Vietnamese: {{tt|vi|bị phá hủy}}
+{{trans-bottom}}
+
+{{trans-top|to be given; to be assigned or allotted}}
+* Finnish: {{tt+|fi|mennä}}
+* Hungarian: {{tt+|hu|jut}}
+{{trans-bottom}}
+
+{{trans-see|survive}}
+
+{{trans-top|to have final authority; to be authoritative}}
+* Finnish: {{tt+|fi|päteä}}
+* Hungarian: {{tt+|hu|érvényes}}, {{tt+|hu|elfogadott}}, {{tt+|hu|történik}}
+{{trans-bottom}}
+
+{{trans-top|to say}}
+* Catalan: {{tt+|ca|dir}}
+* Esperanto: {{tt+|eo|diri}}
+* Finnish: {{tt+|fi|sanoa}}
+* French: {{tt+|fr|faire}}
+* Hungarian: {{tt+|hu|mond}}, {{tt+|hu|szól}}
+* Italian: {{tt+|it|dire}}
+* Latin: {{tt+|la|dīcō}}
+* Macedonian: {{tt|mk|вика}}, {{tt|mk|вели}}
+* Portuguese: {{tt+|pt|dizer}}
+* Russian: {{tt+|ru|говори́ть}}, {{tt+|ru|сказа́ть}}
+* Swahili: {{tt+|sw|gura}}
+{{trans-bottom}}
+
+{{trans-top|to make (a specified sound)}}
+* Catalan: {{tt+|ca|fer}}
+* Czech: {{tt+|cs|dělat}}
+* Esperanto: {{tt+|eo|fari}}
+* Finnish: {{tt+|fi|päästää}} ({{tt+|fi|ääni}}), {{tt+|fi|äännellä}}, {{tt+|fi|sanoa}}, {{q-lite|dialectal}} {{tt+|fi|panna}}
+* French: {{tt+|fr|faire}}
+* German: {{tt+|de|machen}}
+* Hebrew: {{tt+|he|עָשָׂה|tr=asá}}
+* Hungarian: {{tt+|hu|csinál}}, {{tt|hu|hangot}} {{tt+|hu|ad}}, {{tt+|hu|hangzik}}, {{tt+|hu|megszólal}}
+* Italian: {{tt+|it|fare}}
+* Japanese: {{tt+|ja|鳴く|tr=なく, naku}}
+* Korean: {{tt+|ko|내다}}
+* Latin: {{tt+|la|faciō}}, {{tt+|la|agō}}
+* Macedonian: {{tt+|mk|прави}}
+* Norwegian: {{tt+|no|si}}
+* Polish: {{tt+|pl|robić}}
+* Portuguese: {{tt+|pt|fazer}}
+* Russian: {{tt+|ru|говори́ть}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|на̀правити}}, {{tt|sh|ка́зати}}, {{tt|sh|гово̀рити}}
+*: Roman: {{tt+|sh|nàpraviti}}, {{tt+|sh|kázati}}, {{tt+|sh|govòriti}}
+* Spanish: {{tt+|es|hacer}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|ljuda}}, {{tt+|sv|låta}}, {{tt+|sv|säga}}
+{{trans-bottom}}
+
+{{trans-top|to fit}}
+* Armenian: {{tt+|hy|սազել}}
+* Danish: {{tt+|da|passe}}
+* Finnish: {{tt+|fi|sopia}}
+* French: {{tt+|fr|aller}}
+* Hebrew: {{tt+|he|הלך|tr=halákh}}
+* Hungarian: {{tt+|hu|fér}}, {{tt+|hu|befér}}, {{tt+|hu|bemegy}}
+* Japanese: {{tt+|ja|通る|tr=とおる, tōru}}
+* Latin: {{tt|la|vādō}}, {{tt+|la|eō}}, {{tt+|la|gradior}}
+* Macedonian: {{tt|mk|проаѓа}}
+* Norwegian: {{tt+|no|passe}}
+* Polish: {{tt+|pl|pasować}}
+* Portuguese: {{tt+|pt|caber}}
+* Russian: {{tt+|ru|подходи́ть}}, {{tt+|ru|годи́ться}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|passa}}, {{tt+|sv|gå}}
+{{trans-bottom}}
+
+{{trans-top|to belong; to have as its/their proper place}}
+* Finnish: {{tt+|fi|kuulua}}
+* Hebrew: {{tt+|he|הלך|tr=halákh}}
+* Hungarian: {{tt+|hu|való}}, {{tt+|hu|megy}}, {{tt+|hu|tartozik}}
+* Japanese: {{tt+|ja|納まる|tr=おさまる, osamaru}}
+* Macedonian: {{tt|mk|оди}}, {{tt|mk|одговара}}
+* Norwegian: {{tt+|no|ligge}}, {{tt|no|høre til}}
+* Portuguese: {{tt+|pt|ir}}
+* Swahili: {{tt+|sw|gura}}
+{{trans-bottom}}
+
+{{trans-top|to date}}
+* Catalan: {{tt|ca|sortir amb}}
+* Czech: {{t-check|cs|[[chodit]] ([[s]] [[někým]])}}
+* Finnish: {{tt+|fi|seurustella}}
+* French: {{tt+|fr|sortir avec}}
+* Hebrew: {{tt+|he|יצא|tr=yatzá}}
+* Hungarian: {{tt+|hu|jár}}, {{tt+|hu|randevúzik}}, {{tt+|hu|randizik}}
+* Japanese: {{tt+|ja|付き合う|tr=つきあう, tsukiau}}
+* Macedonian: {{tt|mk|излегува}}
+* Norwegian: {{tt|no|gå ut med}}, {{tt+|no|date}}, {{tt|no|være sammen med}}
+* Portuguese: {{tt+|pt|sair}}
+* Russian: {{tt+|ru|встреча́ться}}
+* Serbo-Croatian: {{tt|sh|ìzāći}}
+* Spanish: {{tt+|es|datar}}, {{tt+|es|salir}} ({{tt+|es|con}})
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|gå ut}} ({{tt+|sv|med}}), {{tt+|sv|dejta}}
+{{trans-bottom}}
+
+{{trans-see|attack}}
+
+{{trans-top|to be in general}}
+* Finnish: {{tt+|fi|olla}}, {{tt+|fi|toimia}}
+* Hungarian: {{tt|hu|szokott lenni}}
+{{trans-bottom}}
+
+{{trans-see|urinate, defecate|urinate|defecate}}
+
+{{trans-top|imperative: expressing encouragement or approval}}
+* German: {{t+|de|los}}
+* Hungarian: {{tt+|hu|hajrá}}, {{tt|hu|ez az}}, {{tt|hu|csak így tovább}}
+* Icelandic: {{t+|is|áfram}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Guaraní: {{t+check|gn|ha}}
+* Indonesian: {{t+check|id|pergi}}
+* Interlingua: {{t-check|ia|ir}}, {{t+check|ia|vader}}
+* Mongolian: {{t+check|mn|явах}}
+* Tupinambá: {{t-check|tpn|só}}
+* West Frisian: {{t+check|fy|gean}}
+}}
+{{trans-bottom}}
+
+====Noun====
+{{en-noun|~|es}}
+
+# {{lb|en|uncommon}} The act of [[going]].
+#* {{quote-text|en|year=1993|author=Francis J. Sheed|title=Theology and Sanity|isbn=0898704707
+|passage=The Apostles were to be the first of a line. They would multiply successors, and the successors would die and their successors after them, but the line would never fail; and the come and '''go''' of men would not matter, since it is the one Christ operating through all of them.}}
+#* {{quote-book|en|year=2009|author=Mark Raney|title=David Midgett|isbn=0578028565|page=68|passage=They talk easily together and they hear the come and '''go''' of the breeze in the soon to be turning burnt leaves of the high trees.}}
+# A [[turn]] at something, or in something (e.g. a game).
+#: {{syn-lite|en|stint|turn|move|q2=turn in a game|turn|q3=turn in a game}}
+#: {{ux-lite|en|You’ve been on that pinball machine long enough—now let your brother have a '''go'''.}}
+#: {{ux-lite|en|It’s your '''go'''.}}
+# An [[attempt]], a [[try]].
+#: {{syn-lite|en|attempt|bash|shot|stab|try}}
+#: {{ux-lite|en|I’ll give it a '''go'''.}}
+#* {{quote-book|en|year=2012|author=Alex Montgomery|title=Martin O'Neill: The Biography|isbn=1448132983|page=196|passage=You have to stay and we will have a '''go''' at winning the championship next season."}}
+# An [[approval]] or permission to do something, or that which has been approved.
+#: {{syn-lite|en|green light}}
+#: {{ux-lite|en|We will begin as soon as the boss says it's a '''go'''.}}
+#* {{quote-text|en|year=1894|author={{w|Bret Harte}}|title=[[s:The Sheriff of Siskyou|The Sheriff of Siskyou]]
+|passage="Well, Tom, is it a go? You can trust me, for you'll have the thousand in your pocket before you start.{{...}}"}}
+#* {{quote-book|en|year=2009|author=Craig Nelson|title=Rocket Men: The Epic Story of the First Men on the Moon| isbn=1101057734| passage=And as soon as we gave them the '''go''' to continue, we lost communication.}}
+# An act; the working or operation.
+#* '''1598''', {{w|John Marston}}, ''Pigmalion'', ''The Metamorphosis of Pigmalions Image and Certaine Satyres'', 1856, J. O. Halliwell (editor), ''The Works of John Marston: Reprinted from the Original Editions'', Volume 3, [http://books.google.com.au/books?id=6i5XAAAAYAAJ&pg=PA211&dq=%22So+gracious+were+the+goes+of+marriage.%22&hl=en&sa=X&ei=vR1VUd3lJoK6kgXphYDgBw&redir_esc=y#v=onepage&q=%22So%20gracious%20were%20the%20goes%20of%20marriage.%22&f=false page 211],
+#*: Let this suffice, that that same happy night, <br> So gracious were the '''goes''' of marriage {{...}}
+# {{lb|en|slang|dated}} A circumstance or occurrence; an incident, often unexpected.
+#* '''1839''', {{w|Charles Dickens}}, ''{{w|Nicholas Nickleby}}'', in 1868, ''The Works of Charles Dickens'', Volume 2: Nicholas Nickleby, Martin Chuzzlewit, American Notes, [http://books.google.com.au/books?id=In0RAAAAYAAJ&pg=PA306&dq=%22This+is+a+pretty+go%22&hl=en&sa=X&ei=IyRVUZfMFsjIkQXqioC4Dw&redir_esc=y#v=onepage&q=%22This%20is%20a%20pretty%20go%22&f=false page 306],
+#*: “Well, this is a pretty '''go''', is this here! An uncommon pretty '''go'''!
+#* {{quote-text|en|year=1869|title=Punch|volume=57|page=257
+|passage=“Ain't this a rum '''go'''? This is a queer sort of dodge for lighting the streets.”}}
+#* {{quote-book|en|year=1839|author=Charles Dickens|title=Nicholas Nickleby|passage=The images of Mrs. Squeers, my daughter, and my son Wackford, all short of vittles, is perpetually before me; every other consideration melts away and vanishes, in front of these; the only number in all arithmetic that I know of, as a husband and a father, is number one, under this here most fatal '''go'''!}}
+#* {{RQ:Haggard She|passage="Supposing now that some of them were to slip into the boat at night and cut the cable, make off with her? That would be a pretty '''go''', that would."}}
+#* {{quote-av|en|date=2018-02-11|author=Colin Dexter, Russell Lewis|actor={{w|Roger Allam}}|role=DCI Fred Thursday|medium=TV series|title=Endeavour(Cartouche)|season=5|number=2|time=01:02:03|text=“It’s a rum '''go''' and no mistake.”}}
+# {{lb|en|dated}} The [[fashion]] or [[mode]].
+#: {{syn-lite|en|mode|style|trend}}
+#: {{ux-lite|en|quite the '''go'''}}
+#* '''1852''', Jane Thomas (née Pinhorn), ''The London and Paris ladies' magazine of fashion'' (page 97)
+#*: We are blowing each other out of the market with cheapness; but it is all the '''go''', so we must not be behind the age.
+# {{lb|en|dated}} Noisy [[merriment]].
+#: {{ux-lite|en|a high '''go'''}}
+#* {{quote-text|en|year=1820|author=Thomas Moore|author2=W. Simpkin|author3=R. Marshall|title=Jack Randall's Diary of Proceedings at the House of Call for Genius
+|passage=Gemmen (says he), you all well know <br> The joy there is whene'er we meet; <br> It's what I call the primest '''go''', <br> And rightly named, 'tis—'quite a treat,' {{...}}}}
+# {{lb|en|slang|archaic}} A [[glass]] of [[spirits]]; a quantity of spirits.
+#: {{syn-lite|en|gage|measure}}
+#* {{quote-book|en|year=1836|author=Charles Dickens|title=Sketches by Boz|passage=When the cloth was removed, Mr. Thomas Potter ordered the waiter to bring in two '''goes''' of his best Scotch whiskey, with warm water and sugar, and a couple of his "very mildest" Havannas,}}
+#* '''1868''' March, ''In a City Bus'', in the ''Eclectic Magazine'', new series volume VII, number 3:
+#*: “Then, if you value it so highly,” I said, “you can hardly object to stand half a '''go''' of brandy for its recovery.”
+# {{lb|en|dated}} A [[portion]]
+#* {{RQ:Nesbit New Treasure Seekers|1|passage=Albert's uncle had had a jolly good breakfast—fish and eggs and bacon and three goes of '''marmalade'''.}}
+# {{lb|en|uncountable}} Power of going or doing; [[energy]]; [[vitality]]; [[perseverance]].
+#: {{syn|en|energy|flair|liveliness|perseverance|pizzazz|spirit|verve|vigour|vim|vitality|zest}}
+#: {{ux-lite|en|There is no '''go''' in him.}}
+# {{lb|en|cribbage}} The situation where a player cannot play a card which will not carry the aggregate count above thirty-one.
+# A period of [[activity]].
+#: {{ux-lite|en|ate it all in one '''go'''}}
+#* {{quote-book|en|year=1995|author=William Noel|title=The Harley Psalter|isbn=0521464951|page=65
+|passage=This could mean that the artist traced the illustration in two '''goes''', as it were, or that the Utrecht Psalter slipped while he was tracing, but I do not think that the relative proportions are consistent enough to demonstrate this.}}
+# {{lb|en|obsolete|British slang}} A [[dandy]]; a fashionable person.
+#* {{quote-book|en|year=1881|title=Tom and Jerry|author={{w|Pierce Egan}}| url=https://archive.org/details/tomjerrylifeinlo1881egan| chapter=VII| page=136| passage=That TOM, who was the '''GO''' among the '''GOES''', in the very centre of fashion in London, should have to encounter the ''vulgar stare'' of this village; or, that the dairy-maid should leave off skimming her cream to take a peep at our hero, as he mounted his courser, is not at all surprising: and TOM only smiled at this ''provincial'' sort of rudeness.}}
+#* {{quote-book|en|year=2012|last=Ross|first=Kate|title=A Broken Vessel| passage=He's a '''go''' among the '''goes''', is Mr. Kestrel. He's only got to sport a new kind of topper, or tie his crumpler a new way, and every gentry-cove in town does just the same.}}
+#: {{seeSynonyms|en|dandy|sense=1}}
+
+=====Derived terms=====
+{{col3|en
+|give it a go
+|have a go
+|make a go of it
+|on the go
+|rum go
+}}
+
+=====Translations=====
+{{trans-top|turn at something}}{{multitrans|data=
+* Catalan: {{tt+|ca|volta|f}}, {{tt+|ca|torn|m}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|輪到}}
+* Czech: {{tt+|cs|tah|m}}
+* Esperanto: {{tt+|eo|vico}}
+* Finnish: {{tt+|fi|vuoro}}, {{tt+|fi|siirto}}
+* French: {{tt+|fr|tour|m}}
+* Hebrew: {{tt+|he|הזדמנות|f|tr=hizdamnút}}, {{tt+|he|תור|m|tr=tór}}
+* Italian: {{tt+|it|tocca|f}}
+* Japanese: {{tt+|ja|番||tr=ばん, ban}}
+* Korean: {{tt+|ko|차례}}
+* Macedonian: {{tt|mk|ред|m}}, {{tt|mk|потег|m}}
+* Polish: {{tt+|pl|kolej|f}}
+* Portuguese: {{tt+|pt|vez|f}}, {{tt+|pt|turno|m}}
+* Russian: {{tt+|ru|о́чередь|f}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|tur|c}}
+{{trans-bottom}}
+
+{{trans-top|attempt}}
+* Catalan: {{tt|ca|temptativa|f}}, {{tt+|ca|intent|m}}
+* Chinese:
+*: Mandarin: {{tt+|cmn|嘗試}}
+* Esperanto: {{tt|eo|provo}}
+* Finnish: {{tt+|fi|yritys}}
+* French: {{tt+|fr|essai|m}}
+* German: {{tt+|de|Versuch}}
+* Hebrew: {{tt+|he|נסיון|m|tr=nisayón}}
+* Italian: {{tt+|it|prova|f}}
+* Macedonian: {{tt|mk|обид|m}}
+* Polish: {{tt+|pl|próba|f}}
+* Portuguese: {{tt+|pt|tentativa|f}}
+* Romanian: {{tt+|ro|tentativă|f}}
+* Russian: {{tt+|ru|попы́тка|f}}
+* Spanish: {{tt+|es|intento|m}}
+* Swahili: {{tt+|sw|gura}}
+* Swedish: {{tt+|sv|försök|n}}
+{{trans-bottom}}
+
+{{trans-top|approval}}
+* Catalan: {{tt+|ca|aprovació|f}}
+* Czech: {{tt+|cs|souhlas|m}}
+* Finnish: {{tt+|fi|lupa}}
+* French: {{tt+|fr|approbation|f}}, {{tt+|fr|feu vert|m}}
+* Italian: {{tt+|it|approvazione}}
+* Polish: {{tt+|pl|pozwolenie|n}}
+* Swahili: {{tt+|sw|gura}}
+}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Interlingua: {{t-check|ia|vice}}, {{t-check|ia|torno}}, {{t-check|ia|tentativa}}
+* Romanian: {{t+check|ro|rând|n}}, {{t+check|ro|încercare|f}}, {{t+check|ro|tentativă|f}}
+{{trans-bottom}}
+
+====Adjective====
+{{en-adj|-}}
+
+# {{lb|en|postpositive|chiefly|_|military|_|and|_|spaceflight}} Working correctly and ready to commence operation; approved and able to be put into action.
+#* {{quote-text|en|year=1962|author=United States. Congress|title=Congressional Record: Proceedings and Debates of the {{...}} Congress|page=2754
+|passage=John Glenn reports all systems are '''go'''.}}
+#* {{quote-text|en|year=1964|title=Instruments and Control Systems
+|passage=&quot;Life support system is '''go''',&quot; said the earphone.}}
+#* {{quote-book|en|year=2011|author=Matthew Stover|title=Luke Skywalker and the Shadows of Mindor: Star Wars Legends|publisher=Del Rey|isbn=9780307795854| passage=“Green One has four starts and is '''go'''.”}}
+#* {{quote-book|en|2016|Tim Brewster|Stuck: It's About to Get Very Weird{{...}}| publisher=Lulu.com| ISBN=9781483457468| page=118| passage=“Weapons ready?” Sam and I pull our loaded BB guns  out of the bag and slot them into place in the longholsters on our backs.“ Weapons are '''go''',” Sam replied.}}
+
+===Etymology 2===
+{{wikipedia|Go (game)}}
+From the {{der-lite|en|ja|sc=Jpan|碁|tr=go}}, one character of the game's more usual Japanese name {{m|ja|囲碁|tr=igo}}, taken from the {{der-lite|en|zh|sc=Hant|圍棋}} / {{m-lite|zh|sc=Hans|围棋|tr=wéiqí}}.
+
+====Alternative forms====
+* {{alter|en|Go}}
+
+====Noun====
+{{en-noun|-}}
+
+# {{senseid|en|game}} {{lb|en|board game}} A [[strategic]] [[board game]], originally from [[China]] and today also popular in [[Japan]] and [[Korea]], in which two players (black and white) attempt to control the largest area of the board with their counters.
+#: {{syn-lite|en|weiqi|baduk}}
+
+=====Translations=====
+{{trans-top|board game}}{{multitrans|data=
+* Amharic: {{tt|am|ጎ}}
+* Arabic: {{tt|ar|غُو|m}}
+* Armenian: {{tt+|hy|գո}}
+* Basque: {{tt+|eu|go}}
+* Bengali: {{tt|bn|গো}}
+* Bulgarian: {{tt+|bg|го}}
+* Burmese: {{tt|my|ဂို}}
+* Catalan: {{tt+|ca|go|m}}
+* Chinese:
+*: Cantonese: {{tt|yue|圍棋}}
+*: Mandarin: {{tt+|cmn|圍棋}}
+* Czech: {{tt+|cs|go|n}}
+* Danish: {{tt+|da|go}}
+* Dutch: {{tt+|nl|go|n}}
+* Esperanto: {{tt|eo|goo}}
+* Estonian: {{tt+|et|go}}
+* Finnish: {{tt+|fi|go}}, {{tt|fi|go-peli}}
+* French: {{tt+|fr|go|m}}, {{tt+|fr|jeu de go|m}}
+* Georgian: {{tt|ka|გო}}
+* German: {{tt+|de|Go|n}}
+* Greek: {{tt|el|γκο}}
+* Hebrew: {{tt+|he|גו|m}}
+* Hindi: {{tt+|hi|गो}}
+* Hungarian: {{tt+|hu|go}}
+* Icelandic: {{tt|is|gó}}
+* Indonesian: {{tt|id|igo}}, {{tt|id|go}}
+* Italian: {{tt+|it|go|m}}
+* Japanese: {{tt+|ja|囲碁|tr=いご, igo}}, {{tt+|ja|碁|tr=ご, go}}
+* Khmer: {{t-needed|km}}
+* Korean: {{tt+|ko|바둑}}, {{tt+|ko|위기}}
+* Lao: {{t-needed|lo}}
+* Latvian: {{tt+|lv|go}}
+* Lithuanian: {{tt+|lt|go}}
+* Macedonian: {{tt+|mk|го|m}}
+* Malay: {{tt+|ms|go}}
+* Malayalam: {{tt|ml|വെയ്ക്കി}}
+* Middle Korean: {{tt|okm|바독}}
+* Mongolian: {{tt+|mn|го}}
+* Norwegian:
+*: Bokmål: {{tt+|nb|go}}
+* Persian: {{tt+|fa|گو|tr=gô}}
+* Polish: {{tt+|pl|go|n}}
+* Portuguese: {{tt+|pt|go|m}}
+* Romanian: {{tt+|ro|go}}
+* Russian: {{tt+|ru|го|n}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|го̑}}
+*: Roman: {{tt+|sh|gȏ}}
+* Spanish: {{tt+|es|go|m}}
+* Swahili: {{tt|sw|Go}}
+* Swedish: {{tt+|sv|go|c}}
+* Tagalog: {{tt+|tl|go}}
+* Tamil: {{tt|ta|வெய்ச்சி}}
+* Thai: {{tt+|th|หมากล้อม}}, {{tt+|th|โกะ|tr=gò}}
+* Tibetan: {{tt|bo|མིག་མངས་སྒོར་སྒོར}}
+* Turkish: {{tt+|tr|go}}
+* Urdu: {{tt|ur|گو}}
+* Vietnamese: {{tt|vi|cờ vây}}
+* Zhuang: {{t-needed|za}}
+}}
+{{trans-bottom}}
+
+===Further reading===
+* {{R:OneLook}}
+* {{R:Century 1911}}
+
+===Anagrams===
+* {{anagrams|en|a=go|'og|O&G|O.G.|OG|Og|og}}
+
+[[Category:English contranyms]]
+[[Category:English irregular verbs]]
+[[Category:English nouns with irregular plurals]]
+[[Category:English suppletive verbs]]
+[[Category:English two-letter words]]
+[[Category:English verbs with weak preterite but strong past participle]]
+[[Category:en:Gaits]]
+
+==Alemannic German==
+
+===Alternative forms===
+* {{i|particle; preposition}} {{alter|gsw|ga|ge|gi|gu}}; {{alter|gsw|gan|gon}}
+* {{i|verb}} {{l-lite|gsw|ga|gā}}, {{l-lite|gsw|gan|gān}}, {{alter|gsw|ga|gaa|gah|gan|ge|gi|goo|goh|gou|gu}}
+
+===Etymology 1===
+Short form of {{m-lite|gsw|gon||to, towards}}. Particle served originally as a preposition (prespositions {{m-lite|gsw|gon}}, {{m-lite|gsw|gan}} still do). Cognate to (particle/preposition) {{cog-lite|gsw|ga}}, {{m-lite|gsw|ge}}, {{m-lite|gsw|gi}}, {{m-lite|gsw|gu}}, etc. From {{inh-lite|gsw|gmh|gon}} ({{m-lite|gmh|gan}}, {{m-lite|gmh|gen}}), from {{der-lite|gsw|goh|gagan}}, from {{der|gsw|gem-pro|*gagin}}. Cognate to {{cog-lite|de|gen||to, towards}}, {{m-lite|de|gegen||against, towards}}, {{cog-lite|nl|tegen}}, {{cog-lite|en|gain}}, {{m-lite|en|gain-}}, {{m-lite|en|again}}, {{m-lite|en|against}}, {{cog-lite|is|gegn}}.
+
+Not to be confused with the verb {{l-lite|gsw|go||to go}} ({{l-lite|gsw|gaa}}, {{l-lite|gsw|goo}}, etc.).
+
+====Pronunciation====
+* {{a|Swiss}} {{IPA-lite|gsw|[ɡo]|[ɡɔ]}}
+* {{hyph-lite|gsw|go}}
+
+====Particle====
+{{head-lite|gsw|particles}}
+
+# [[to]] {{i|particle follows after verbs (such as go, come); placed before [[infinitive]]}}
+#: {{syn-lite|gsw|cho|lah|q=in northern and western Switzerland dialects with certain verbs}}
+#: {{ux-lite|inline=1|gsw|I(ch) gang '''go''' ''({{l-lite|gsw|ga}}, {{l-lite|gsw|ge}}, {{l-lite|gsw|gi}}, {{l-lite|gsw|gu}})'' schaffe.|I am going '''[[to]]''' work.}}
+#: {{ux-lite|inline=1|gsw|I(ch) gahn(e) '''go''' schaffe.|I'm going '''[[to]]''' work.}}
+#: {{ux-lite|inline=1|gsw|I(ch) gang '''go''' schlaaffe.|I am going '''[[to]]''' sleep.}}
+
+====Preposition====
+{{head-lite|gsw|prepositions}}
+
+# {{lb|gsw|dated}} [[to]], [[towards]] {{i|indicating a direction; nowaday often replaced by {{l-lite|gsw|uf}}, {{l-lite|gsw|nach}}}}
+#: {{syn-lite|gsw|uf|nach}}
+#: {{ux-lite|inline=1|gsw|I(ch) gang '''go''' ''(ga, gi, etc.)'' Bäärn.|I'm going '''[[to]]''' Bern.}}
+#: {{ux-lite|inline=1|gsw|I(ch) gang '''go''' ''(ga, gi, etc.)'' Züri.|I'm going '''[[to]]''' Zurich.}}
+# [[to]] {{i|used a verb preposition; in combination with verbs and often reduplicated. See particle for more}}
+# {{i|used as an auxiliary time verb for perfect (tense) sentences; placed after verb {{l-lite|gsw|sii||being}} and causing an omission of participle {{l-lite|gsw|gange||went}}}}
+
+===Etymology 2===
+{{root|gsw|ine-pro|*ǵʰeh₁-|*ǵʰengʰ-}}
+Cognate to (verb) {{cog-lite|gsw|gon||go}}, {{m-lite|gsw|ga}}, {{m-lite|gsw|gan}}, etc. From {{inh|gsw|gmh|gān}} ({{m|gmh|gēn}}), from {{inh|gsw|goh|gān}}, ({{m|goh|gēn}}), from {{inh|gsw|gmw-pro|*gān}}, from {{inh|gsw|gem-pro|*gāną}}, from {{inh|gsw|ine-pro|*ǵʰeh₁-||to leave}}. Cognate with {{cog-lite|de|gehen}}, {{cog-lite|nds|gan}}, {{m-lite|nds|gahn}}, {{cog-lite|nl|gaan}}, {{cog-lite|en|go}}, Danish and {{cog|sv|gå}}.
+
+Not to be confused with the particle/preposition {{l-lite|gsw|go||to, towards}} ({{l-lite|gsw|ga}}, {{l-lite|gsw|ge}}, etc.).
+
+====Pronunciation====
+* {{a|Swiss}} {{IPA-lite|gsw|[ɡoː]|[ɡɔː]}}
+* {{hyph-lite|gsw|go}}
+
+====Verb====
+{{head-lite|gsw|verbs|head=go (goo, goh)|third-person singular simple present|goht|past participle|ggange|past subjunctive|gieng|auxiliary|sii}}
+
+# to [[#English|go]], to [[walk]], [[step]] {{i|movement/motion indicating starting point, direction, aim and purpose}}
+# to [[go away]], [[walk away]] , [[step]] [[away]]
+# to [[enter]]; to [[step]] in(side), [[walk]] in(side), [[step]] in(side) {{i|+ {{l-lite|gsw|inne||in(side)}} ({{l-lite|gsw|ine||id}}); a room, house, building}}
+# to [[be]] in [[motion]], to [[work]]
+#: {{ux-lite|inline=1|gsw|Es '''muess go''' ''(ga, gaa, gah, goo, goh)''.|It '''has to work''' (It '''must work''').}}
+# to [[flow]] {{i|indicating flow direction of a river, stream, creek}}
+
+=====Related terms=====
+* {{i|preposition, particle}} {{l|gsw|gäg}}, {{l|gsw|gäge}}, {{l-lite|gsw|goge}}, {{l-lite|gsw|gogen}}
+* {{i|preposition, particle, verb}} {{l-lite|gsw|gango}}, {{l-lite|gsw|gang go}}
+
+===Further reading===
+* [https://digital.idiotikon.ch/idtkn/idmobil.htm#!page/10005/search/go] particle/preposition/verb "go" ''(gā, ga, gān, gan, gāⁿ, gaⁿ, go,​ goⁿ,​ gogeⁿ,​ gi)'' in Schweizerisches Idiotikon (Swiss,Idiotikon)
+* [https://www.idiotikon.ch/wortgeschichten/go] article about "go" (to, towards, against) in Schweizerisches Idiotikon (Swiss Idiotikon), by Christoph Landolt, August 2018
+
+==Arigidi==
+
+===Adjective===
+{{head-lite|aqg|adjectives}}
+
+# [[tall]]
+
+===References===
+* B. Oshodi, ''The HTS (High Tone Syllable) in Arigidi: An Introduction'', in the ''Nordic Journal of African Studies'' 20(4): 263–275 (2011)
+
+==Czech==
+
+===Etymology===
+From {{der-lite|cs|ja|sc=Jpan|碁|tr=go}}, from {{der-lite|cs|zh|sc=Hant|圍棋}} / {{m-lite|zh|sc=Hans|围棋|tr=wéiqí}}.
+
+===Noun===
+{{cs-noun|n}}
+
+# {{lb|cs|board games}} {{l|en|go}}
+
+====Declension====
+{{rfinfl|cs|noun}}
+
+==Dutch==
+
+===Etymology===
+From {{der-lite|nl|ja|sc=Jpan|碁|tr=go}}, from {{der-lite|nl|zh|sc=Hant|圍棋}} / {{m-lite|zh|sc=Hans|围棋|tr=wéiqí}}.
+
+===Pronunciation===
+* {{audio|nl|Nl-go.ogg|Audio}}
+* {{rhymes-lite|nl|oː|s=1}}
+
+===Noun===
+{{nl-noun|n|-|-}}
+
+# {{lb|nl|board games}} [[#English|go]]
+
+==Esperanto==
+
+===Pronunciation===
+{{eo-IPA|a=LL-Q143 (epo)-Lepticed7-go.wav}}
+
+===Noun===
+{{eo-head}}
+
+# {{Latn-def|eo|name|G|g}}
+
+===See also===
+* {{list:Latin script letter names/eo}}
+
+==Finnish==
+
+===Etymology===
+From {{bor-lite|fi|ja|sc=Jpan|碁|tr=go}}.
+
+===Pronunciation===
+{{fi-pronunciation|goo}}
+
+===Noun===
+{{fi-noun}}
+
+# [[#English|go]] {{gloss|game}}
+
+====Declension====
+{{fi-decl-rosé|go|a|ill_sg_vowel=o}}
+
+[[Category:fi:Board games]]
+
+==French==
+
+===Pronunciation===
+* {{fr-IPA}}
+* {{rhymes-lite|fr|o|s=1}}
+
+===Etymology 1===
+From  {{der-lite|fr|ja|sc=Jpan|碁|tr=go}}, from {{der-lite|fr|zh|sc=Hant|圍棋}} / {{m-lite|zh|sc=Hans|围棋|tr=wéiqí}}.
+
+====Noun====
+{{fr-noun|m|#}}
+
+# {{l|en|go}} (board game)
+#: {{syn-lite|fr|jeu de go}}
+
+===Etymology 2===
+
+====Noun====
+{{fr-noun|m}}
+
+# {{alternative form of|fr|gau}}
+
+===Etymology 3===
+Borrowed from {{bor-lite|fr|bm|go}}, itself from {{der|fr|fr|gosse}}.
+
+====Noun====
+{{fr-noun|f|#|+}}
+
+# (''[[Ivory Coast]]'', ''[[France]]'') [[girlfriend]]
+# (''[[Senegal]]'', ''[[France]]'') [[girl]], [[chick]]
+#* {{quote-song|fr|lyricist={{w|lang=fr|Ol Kainry}}|artist=Agression Verbale|album=Ce n’est que l’début|year=1998|title=Agrévolution|passage=Georgetown pète le champagne, y’a du son, y’a des '''go''' et le sunshine<br/>Tu vois y’a pas de fringues, en caleçon et débardeurs<br/>Avec une bande de démarreurs, des '''go''' qui me disent “t’es speed comme Schumacher”}}
+
+=====Synonyms=====
+* [[fille]]
+* [[meuf]]
+
+===Further reading===
+* {{R:fr:TLFi}}
+
+{{C|fr|Board games|Female}}
+
+==Hungarian==
+{{wikipedia|lang=hu}}
+
+===Etymology===
+From {{bor-lite|hu|ja|sc=Jpan|碁|tr=go}}, though it is usually called {{m|ja|囲碁|tr=igo}} in Japanese.
+
+===Pronunciation===
+* {{hu-IPA|gó}}
+* {{rhymes-lite|hu|ɡoː|s=1}}
+
+===Noun===
+{{hu-noun|pl=gók}}
+
+# {{lb|hu|board games}} [[#English|go]]
+
+====Declension====
+{{hu-decl-k-back|g|ó|esf_sg=gó}}{{hu-pos-tok|gó}}
+
+====Derived terms====
+* {{l|hu|gózik}}
+* {{l|hu|gotábla}}
+
+==Indonesian==
+{{wikipedia|lang=id}}
+
+===Etymology===
+From the {{bor-lite|id|ja|sc=Jpan|碁|tr=go}} character, though it is usually called {{m|ja|囲碁|tr=igo}} in Japanese.
+
+===Pronunciation===
+* {{IPA-lite|id|/ɡo/}}
+* {{hyph-lite|id|go}}
+
+===Noun===
+{{id-noun|-}}
+
+# {{senseid|id|game}} {{lb|id|board game}} A [[strategic]] [[board game]], originally from [[China]], in which two players (black and white) attempt to control the largest area of the board with their counters.
+
+==Irish==
+
+===Etymology===
+From {{inh-lite|ga|sga|co}}, from {{inh|ga|ine-pro|*ḱóm||next to, at, with, along}}. Cognate with {{cog-lite|de|ge-||with}} (collective prefix) and {{m-lite|de|gegen||toward, against}}, {{cog-lite|en|gain-}}, {{cog-lite|es|con||with}}, {{cog|ru|ко||to}}.
+
+===Pronunciation===
+* {{IPA-lite|ga|/ɡɔ/|/ɡə/}}
+
+===Conjunction===
+{{head-lite|ga|conjunctions}} {{q-lite|triggers {{ga-mut-link|e}}, takes dependent form of irregular verbs}}
+
+# [[that]] {{q-lite|used to introduce a [[subordinate clause]]}}
+#: {{ux-lite|inline=1|ga|Deir sé '''go''' bhfuil [[deifir]] air.|He says that he is in a hurry.}}
+# {{n-g-lite|used to introduce a subjunctive hortative}}
+#: {{ux-lite|inline=1|ga|'''Go''' [[cuidigh|gcuidí]] [[Dia]] leo.|May God help them.}}
+#: {{ux-lite|inline=1|ga|'''Go''' maire tú é!|May you live to enjoy it!}}
+#: {{ux-lite|inline=1|ga|'''Go''' raibh maith agat.|Thank you.|lit=May you have good.}}
+# [[until]], [[till]]
+#: {{ux-lite|inline=1|ga|Fan '''go''' dtiocfaidh sé.|Wait until he comes.}}
+#: {{syn-lite|ga|go dtí go}}
+
+====Related terms====
+* {{sense-lite|introducing subordinate clause; until}}
+** {{l-lite|ga|gur}} {{q-lite|for past tenses}}
+** {{l-lite|ga|nach}} {{q-lite|for negated clauses}}
+** {{l|ga|nár}} {{q-lite|for past tenses in negated clauses}}
+* {{sense-lite|introducing subjunctive hortative}} {{l|ga|nár}} {{q-lite|for a negative wish}}
+
+===Preposition===
+{{ga-prep|d|h}}
+
+# [[to]] (with places), [[till]], [[until]]
+#: {{ux-lite|inline=1|ga|dul '''go''' Meiriceá|to go to America}}
+#: {{ux-lite|inline=1|ga|Fáilte '''go''' hÉirinn|Welcome to Ireland}}
+#: {{ux-lite|inline=1|ga|'''go''' leor|enough, plenty, galore|lit=until plenty}}
+#: {{ux-lite|inline=1|ga|'''go''' fóill|still, yet, till later, in a while, later on}}
+
+====Usage notes====
+* In the meaning "to", used with place names that do not start with the definite article. Place names that do start with the definite article use {{m|ga|go dtí}} instead. In a few fixed phrases, the archaic form {{m-lite|ga|gos}} is used.
+
+====Synonyms====
+* {{l|ga|go dtí}}
+
+===Particle===
+{{head-lite|ga|particles}} {{q-lite|triggers {{ga-mut-link|h}}}}
+
+# {{n-g-lite|used to make temporary state [[adverb]]s}}
+#: {{ux-lite|inline=1|ga|D’ith sé '''go''' maith.|He ate well.}}
+#: {{ux-lite|inline=1|ga|Shiúlaíodar '''go''' mall.|They walked slowly.}}
+#: {{ux-lite|inline=1|ga|'''go''' feargach|angrily}}
+# {{n-g-lite|used to make [[predicative]] [[adjective]]s expressing an [[opinion]] or [[value judgment]]}}
+#: {{ux-lite|inline=1|ga|Tá an t-anraith seo '''go''' maith.|This soup is good.}}
+#: {{ux-lite|inline=1|ga|Bhí a mac '''go''' hálainn.|Her son was beautiful.}}
+#: {{ux-lite|inline=1|ga|Ní raibh an film '''go''' huafásach.|The film wasn't awful.}}
+
+====Usage notes====
+Only used with predicate adjectives expressing a value judgment like "good/bad", "beautiful/ugly" etc. Other predicate adjectives do not take a particle:
+: {{ux-lite|inline=1|ga|Tá an t-anraith seo te.|This soup is hot.}}
+: {{ux-lite|inline=1|ga|Bhí a mac ard.|Her son was tall.}}
+: {{ux-lite|inline=1|ga|Ní raibh an film fada.|The film wasn't long.}}
+
+==Italian==
+
+===Etymology===
+From {{der-lite|it|ja|sc=Jpan|碁|tr=go}}, from {{der-lite|it|zh|sc=Hant|圍棋}} / {{m-lite|zh|sc=Hans|围棋|tr=wéiqí}}.
+
+===Pronunciation===
+{{it-pr|gò*,gó*<r:DiPI>}}
+
+===Noun===
+{{it-noun|m|-}}
+
+# {{lb|it|board games}} {{l|en|go}}
+
+===References===
+<references />
+
+===Further reading===
+* {{R:it:Treccani}}
+
+==Iu Mien==
+
+===Etymology===
+From {{inh|ium|hmx-pro|*qʷuw||far}}, from {{bor-lite|ium|zh|-}} {{och-l|迂|tr=*qʷ(r)a, *[ɢ]ʷ(r)a}}. Cognate with {{cog-lite|mww|deb}} and {{cog-lite|mmr|-}} [Fenghuang] {{m-lite|mmr|ghoub}}.
+
+===Adjective===
+{{ium-adj}}
+
+# [[far]], [[distant]]
+
+==Japanese==
+
+===Romanization===
+{{ja-romaji}}
+
+# {{ja-romanization of|ご}}
+# {{ja-romanization of|ゴ}}
+
+==Lhao Vo==
+
+===Alternative forms===
+# [[go:]]
+
+===Etymology===
+Cognate with {{cog|my|ကာ||shield}}.
+
+===Noun===
+{{head|mhx|noun}}
+
+# [[shield]]
+
+===References===
+* Dr. Ola Hanson, ''A Dictionary of the Kachin Language'' (1906).
+
+==Middle English==
+
+===Verb===
+{{head-lite|enm|verbs}}
+
+# {{alt form|enm|gon|t=to go|id=to go}}
+
+==Nigerian Pidgin==
+
+===Etymology===
+From {{der|pcm|en|go}}
+
+===Verb===
+{{head|pcm|verb|head=go}}
+
+# to [[go]]
+#: {{uxi|pcm|Im no go '''go''' wia wahala dey|She will not '''go''' where there is trouble}}
+
+===Particle===
+{{head|pcm|particle|head=go}}
+
+# Used to express the [[future]] tense, [[will]]
+#: {{uxi|pcm|Im no '''go''' dey dia|He '''will''' not be there}}
+
+==Northern Sami==
+
+===Etymology===
+{{rfe-lite|se}}
+
+===Pronunciation===
+* {{se-IPA}}
+
+===Conjunction===
+{{head-lite|se|conjunctions}}
+
+# [[when]]
+# when, [[as]]
+# [[since]], [[because]]
+# {{lb|se|in comparisons}} [[than]]
+
+====Further reading====
+* {{R:Álgu|28524}}
+
+==Ojibwe==
+
+===Alternative forms===
+* {{alter|oj|igo|igwa}}
+
+===Etymology===
+{{rfe-lite|oj}}
+
+===Particle===
+{{head-lite|oj|particles|cat2=discourse particles}}
+
+# ''emphasis marker''
+#: {{ux-lite|oj|Mii sa '''go''' ozhiitaawaad igo.|They were getting ready.}}
+
+===References===
+* The Ojibwe People's Dictionary https://ojibwe.lib.umn.edu/main-entry/go-pc-disc
+
+==Pali==
+
+===Alternative forms===
+{{pi-alt|Latn=go}}
+
+===Etymology===
+{{inh+|pi|sa|गो}}. <!-- sensu latiore -->
+
+===Noun===
+{{pi-noun|m|g2=f}}
+
+# [[cow]], [[ox]], [[bull]]
+
+====Declension====
+{{pi-decl-noun|g=m|gava|label=go
+|noms_mod=replace|noms=go
+|accs=gāvuṃ|accs2=gāvaṃ  <!-- Duroiselle also gavuṃ -->
+|inss=gāvena
+|gens=gāvassa
+|dats_mod=replace|dats=gavassa|dats2=gāvassa
+|abls=gāvā|abls2=gāvasmā|abls3=gāvamhā  <!-- -mhā suspicious - not in Childers! -->
+|locs=gāve|locs2=gāvasmiṃ|locs3=gāvamhi <!-- -mhi suspicious - not in Childers! -->
+|vocs_mod=replace|vocs=go               <!-- As Duroiselle; Childers gives no form. -->
+|nomp_mod=replace|nomp=gavo|nomp2=gāvo
+|vocp_mod=replace|vocp=gavo|vocp2=gāvo
+|accp_mod=replace|accp=gavo|accp2=gāvo
+|insp_mod=replace|insp=gohi|insp2=gobhi <!-- Childers lacks gobhi. Duroiselle has gavehi. -->
+|ablp_mod=replace|ablp=gohi|ablp2=gobhi <!-- Childers lacks gobhi. Duroiselle has gavehi. -->
+|genp_mod=replace|genp=gunnaṃ|genp2=gavaṃ|genp3=gonaṃ
+|datp_mod=replace|datp=gunnaṃ|datp2=gavaṃ|datp3=gonaṃ
+|locp=gāvesu|locp2=gosu
+}}
+
+====Derived terms====
+* {{l|pi|gāvī}}
+
+==Pijin==
+{{LDL}}
+
+===Etymology===
+From {{inh-lite|pis|en|go}}.
+
+===Verb===
+{{head-lite|pis|verbs}}
+
+# to [[#English|go]]; to [[leave]]; to go to; to go [[toward]]
+#* {{quote-book
+|pis
+|year=1988
+|author=Geoffrey Miles White
+|title=Bikfala faet: olketa Solomon Aelanda rimembarem Wol Wo Tu
+|chapter=
+|url=http://books.google.com/books?id=acIEAQAAIAAJ
+|isbn=
+|page=75
+|passage=Bihaen hemi finisim skul blong hem, hemi '''go''' minista long sios long ples blong hem long 'Areo.}}
+
+==Polish==
+
+===Pronunciation===
+{{pl-p|a=Pl-go.ogg}}
+
+===Etymology 1===
+{{nonlemma}}
+
+====Pronoun====
+{{head-lite|pl|pronoun forms|g=m}}
+
+# {{inflection of|pl|on||gen//acc|s|mute}}
+#: {{ux-lite|inline=1|pl|Widzisz '''go'''?|Can you see him?}}
+
+====Pronoun====
+{{head-lite|pl|pronoun forms|g=n}}
+
+# {{inflection of|pl|ono||gen|s|mute}}
+
+====See also====
+* [[Appendix:Polish pronouns]]
+
+===Etymology 2===
+{{bor+|pl|ja|碁|tr=go}}.
+
+====Noun====
+{{pl-noun|n|indecl=1}}
+
+# [[#Etymology_2|go]]
+
+===Further reading===
+* {{R:pl:WSJP}}
+* {{R:pl:PWN}}
+
+==Portuguese==
+
+===Etymology===
+From {{der-lite|pt|ja|sc=Jpan|碁|tr=go}}, from {{der-lite|pt|zh|sc=Hant|圍棋}} / {{m-lite|zh|sc=Hans|围棋|tr=wéiqí}}.
+
+===Noun===
+{{pt-noun|m|-}}
+
+# {{lb|pt|board game}} {{l-lite|en|go}} {{gloss|Chinese strategy board game}}
+
+==Serbo-Croatian==
+
+===Alternative forms===
+* {{alter|sh|gȏl||Croatia}}
+
+===Etymology===
+From {{inh|sh|sla-pro|*golъ}}, from {{der|sh|ine-pro|*gelH-|t=naked, bald}}.
+
+===Pronunciation===
+* {{sh-IPA|gȏ}}
+
+===Adjective===
+{{sh-adjective|head=gȏ|def=gȍlī|comp=gòlijī}}
+
+# {{lb|sh|Bosnia|Serbia}} [[naked]], [[nude]], [[bare]]
+
+====Declension====
+<!-- {{sh-adj-defindef|gol|o}} -->
+<div class="NavFrame" style="">
+<div class="NavHead" style="background:#eff7ff">indefinite forms</div>
+<div class="NavContent">
+{|border="1px solid #000000" style="border-collapse:collapse; background:#F9F9F9; text-align:center; font-size:12px; width:100%" class="inflection-table"
+|-
+! style="background:#d9ebff; width:25%" colspan="2"|singular
+! style="background:#d9ebff"|masculine
+! style="background:#d9ebff"|feminine
+! style="background:#d9ebff"|neuter
+|-
+! style="background-color:#eff7ff" colspan="2"|'''nominative'''
+|<span class="Latn" lang="sh">go</span>
+|<span class="Latn" lang="sh">gola</span>
+|<span class="Latn" lang="sh">golo</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''genitive'''
+|<span class="Latn" lang="sh">gola</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''dative'''
+|<span class="Latn" lang="sh">golu</span>
+|<span class="Latn" lang="sh">goloj</span>
+|<span class="Latn" lang="sh">golu</span>
+|-
+! style="background-color:#eff7ff"|'''accusative'''
+! style="background:#eff7ff"|<small>inanimate</small><br><small>animate</small>
+|<span class="Latn" lang="sh">go<br>gola</span>
+|<span class="Latn" lang="sh">golu</span>
+|<span class="Latn" lang="sh">golo</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''vocative'''
+|<span class="Latn" lang="sh">go</span>
+|<span class="Latn" lang="sh">gola</span>
+|<span class="Latn" lang="sh">golo</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''locative'''
+|<span class="Latn" lang="sh">golu</span>
+|<span class="Latn" lang="sh">goloj</span>
+|<span class="Latn" lang="sh">golu</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''instrumental'''
+|<span class="Latn" lang="sh">golim</span>
+|<span class="Latn" lang="sh">golom</span>
+|<span class="Latn" lang="sh">golim</span>
+|-
+! style="background:#d9ebff; width:30%" colspan="2"|plural
+! style="background:#d9ebff"|masculine
+! style="background:#d9ebff"|feminine
+! style="background:#d9ebff"|neuter
+|-
+! style="background-color:#eff7ff" colspan="2"|'''nominative'''
+|<span class="Latn" lang="sh">goli</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''genitive'''
+|<span class="Latn" lang="sh">golih</span>
+|<span class="Latn" lang="sh">golih</span>
+|<span class="Latn" lang="sh">golih</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''dative'''
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''accusative'''
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''vocative'''
+|<span class="Latn" lang="sh">goli</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''locative'''
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''instrumental'''
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|}</div></div>
+<div class="NavFrame" style="">
+<div class="NavHead" style="background:#eff7ff">definite forms</div>
+<div class="NavContent">
+{|border="1px solid #000000" style="border-collapse:collapse; background:#F9F9F9; text-align:center; font-size:12px; width:100%" class="inflection-table"
+|-
+! style="background:#d9ebff; width:25%" colspan="2"|singular
+! style="background:#d9ebff"|masculine
+! style="background:#d9ebff"|feminine
+! style="background:#d9ebff"|neuter
+|-
+! style="background-color:#eff7ff" colspan="2"|'''nominative'''
+|<span class="Latn" lang="sh">goli</span>
+|<span class="Latn" lang="sh">gola</span>
+|<span class="Latn" lang="sh">golo</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''genitive'''
+|<span class="Latn" lang="sh">golog(a)</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">golog(a)</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''dative'''
+|<span class="Latn" lang="sh">golom(u/e)</span>
+|<span class="Latn" lang="sh">goloj</span>
+|<span class="Latn" lang="sh">golom(u/e)</span>
+|-
+! style="background-color:#eff7ff"|'''accusative'''
+! style="background:#eff7ff"|<small>inanimate</small><br><small>animate</small>
+|<span class="Latn" lang="sh">goli<br>golog(a)</span>
+|<span class="Latn" lang="sh">golu</span>
+|<span class="Latn" lang="sh">golo</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''vocative'''
+|<span class="Latn" lang="sh">goli</span>
+|<span class="Latn" lang="sh">gola</span>
+|<span class="Latn" lang="sh">golo</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''locative'''
+|<span class="Latn" lang="sh">golom(e/u)</span>
+|<span class="Latn" lang="sh">goloj</span>
+|<span class="Latn" lang="sh">golom(e/u)</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''instrumental'''
+|<span class="Latn" lang="sh">golim</span>
+|<span class="Latn" lang="sh">golom</span>
+|<span class="Latn" lang="sh">golim</span>
+|-
+! style="background:#d9ebff; width:30%" colspan="2"|plural
+! style="background:#d9ebff"|masculine
+! style="background:#d9ebff"|feminine
+! style="background:#d9ebff"|neuter
+|-
+! style="background-color:#eff7ff" colspan="2"|'''nominative'''
+|<span class="Latn" lang="sh">goli</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''genitive'''
+|<span class="Latn" lang="sh">golih</span>
+|<span class="Latn" lang="sh">golih</span>
+|<span class="Latn" lang="sh">golih</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''dative'''
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''accusative'''
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''vocative'''
+|<span class="Latn" lang="sh">goli</span>
+|<span class="Latn" lang="sh">gole</span>
+|<span class="Latn" lang="sh">gola</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''locative'''
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|-
+! style="background-color:#eff7ff" colspan="2"|'''instrumental'''
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|<span class="Latn" lang="sh">golim(a)</span>
+|}</div></div>
+
+==South Efate==
+
+===Etymology===
+Probably related to {{cog|nmb|ka-}}.
+
+===Pronunciation===
+* {{IPA|erk|/ɡo/}}
+
+===Conjunction===
+{{head|erk|conjunction}}
+
+# [[and]]
+
+==Spanish==
+
+===Noun===
+{{es-noun|m|-}}
+
+# {{l|en|go}} {{gloss|game}}
+
+===Further reading===
+* {{R:es:DRAE}}
+
+==Sranan Tongo==
+
+===Etymology===
+From {{der-lite|srn|en|go}}.
+
+===Pronunciation===
+* {{IPA-lite|srn|/ɡo/}}
+
+===Verb===
+{{head-lite|srn|verbs}}
+
+# To {{l-lite|en|go}}
+
+==Swedish==
+
+===Adjective===
+{{sv-adj}}
+
+# {{lb|sv|colloquial}} {{alt form of|sv|god}} (chiefly of taste)
+#: {{ux-lite|sv|Glassen var riktigt '''go'''|The ice cream was really '''tasty'''}}
+# {{lb|sv|colloquial}} [[appealing]], usually in a [[cozy]], [[cuddly]], [[cute]], or [[charming]] way
+#: {{ux-lite|sv|Kudden var mjuk och '''go'''|The pillow was soft and '''cozy'''}}
+#: {{ux-lite|sv|Hennes kaniner är så '''goa'''|Her rabbits are so '''cute and sweet'''}}
+
+====Declension====
+{{sv-adj-reg|2=gott}}
+
+===Noun===
+{{sv-noun|n}}
+
+# {{lb|sv|colloquial}} {{l|en|go}} (initiative, perseverance, etc.)
+#: {{ux-lite|sv|Det är inget '''go''' i honom|There's no '''go''' in him}}
+#: {{syn-lite|sv|jävlar anamma}}
+
+===Noun===
+{{head|sv|noun}}
+
+# {{lb|sv|board games}} {{l-lite|sv|go}}
+
+===References===
+* {{R:svenska.se|so}}
+* {{R:svenska.se|saol}}
+
+==Tok Pisin==
+
+===Etymology===
+From {{inh-lite|tpi|en|go}}.
+
+===Verb===
+{{head-lite|tpi|verbs}}
+
+# [[#English|go]], [[leave]]
+
+==Tyap==
+
+===Pronunciation===
+* {{IPA-lite|kcg|/ɡəu/}}
+
+===Verb===
+{{head-lite|kcg|verbs}}
+
+# to [[maintain]], [[nurture]], [[incubate]]
+
+==Venetian==
+
+===Verb===
+{{head-lite|vec|verb forms}}
+
+# {{inflection of|vec|gaver||1|s|pres|indc}}
+
+==Vietnamese==
+
+===Pronunciation===
+{{vi-pron}}
+
+===Etymology 1===
+<!-- How common is this word still? -->
+
+====Noun====
+{{vi-noun|𩸰}}
+
+# {{lb|vi|Northern Vietnam}} [[gills]]
+#* {{quote-book|vi|1920|François Chaize [Cố Thịnh]|Địa cầu vạn vật luận - Động vật (Histoire naturelle - zoologie)|||chapter=Phần II. Hạng vật có xương sống (Vertébrés)|4° ''Lớp ếch nhái'' ( Batraciens ) Có máu lạnh; [[lái tim]] có 3 ngăn; vật ấy hoá hình, lúc bé có '''go''' để thở dưới nước rồi thay '''go''' lấy phổi để thở trong khí {{l|vi|giời}}; có da trơn trụi lông; thường có 4 chân; hầu hết đẻ trứng.|translation=4° Amphibians ( Batraciens ) are ectothermic; they have three-chambered hearts and undergo metamorphosis, as when they are juvenile, they have '''gills''' to breathe underwater but lose their '''gills''' for lungs in order to breathe air; their skin is smooth and furless; they are often quadruped; most are oviparous.}}
+#* {{quote-book|vi|author=Nguyễn Can Mộng|title=Nam học Hán văn khoá bản|year=1920|chapter=Bài 50|passage=鰓 Tai = '''go''' cá, ''ouïes''.|translation=鰓 Tai = fish '''gills''', ''ouïes''.}}
+
+===Etymology 2===
+
+====Noun====
+{{vi-noun|𦁣}}
+
+# [[woof]], [[weft]]
+
+==Volapük==
+
+===Adverb===
+{{head-lite|vo|adverbs}}
+
+# [[absolutely]]
+
+==Welsh==
+
+===Etymology===
+From {{inh-lite|cy|wlm|gwo-}}, from {{inh-lite|cy|owl|guo-}}, from {{inh|cy|cel-bry-pro|*gwo-}}, from {{inh|cy|cel-pro|*uɸo-||under}}.
+
+===Pronunciation===
+* {{IPA-lite|cy|/ɡoː/}}
+
+===Adverb===
+{{head-lite|cy|adverbs|causes soft mutation}}
+
+# [[pretty]], [[a bit]], [[fairly]]
+
+====Derived terms====
+* {{l-lite|cy|go iawn||real, proper}}
+* {{l-lite|cy|go lew||decent, alright}}
+
+==Yola==
+
+===Etymology 1===
+
+====Verb====
+{{head-lite|yol|verb forms}}
+
+# {{alt form|yol|goeth||goes}}
+#* {{quote-book|yol|year=1867|chapter=A YOLA ZONG|number=2|title=SONGS, ETC. IN THE DIALECT OF FORTH AND BARGY|passage=Ha deight ouse var gabble, tell ee zin '''go''' t'glade.|translation=You have put us in talk, 'till the sun '''goes''' to set.}}
+
+===Etymology 2===
+
+====Verb====
+{{head-lite|yol|verbs}}
+
+# {{alt form|yol|goe||to go}}
+#* {{quote-book|yol|year=1867|chapter=VERSES IN ANSWER TO THE WEDDEEN O BALLYMORE|number=2|title=SONGS, ETC. IN THE DIALECT OF FORTH AND BARGY|passage='''Go''' gaame abuth Forth, thou unket saalvache.|translation='''Go''', make game about Forth, thou uncouth sloven.}}
+
+===References===
+* {{R:Poole 1867|page=84 & 100}}
+
+==Yoruba==
+
+===Etymology 1===
+
+====Pronunciation====
+* {{yo-IPA|gò}}
+
+====Verb====
+{{yo-verb|gò}}
+# to [[cover]] or [[put]] something in a [[coop]]; usually referring to [[birds]]
+#: {{ux-lite|inline=1|yo|ó '''go''' adìẹ náà|She '''put''' the chicken in a '''coop'''}}
+
+=====Usage notes=====
+* '''go''' before a direct object
+
+=====Derived terms=====
+* {{l|yo|àgò|t=coop}}
+
+===Etymology 2===
+
+====Alternative forms====
+* {{alt|yo|ga||SY}}
+* {{alt|yo|gọn||Ìjẹ̀bú}}
+
+====Pronunciation====
+* {{yo-IPA|go}}
+
+====Verb====
+{{yo-verb|go}}
+
+# {{lb|yo|Oǹdó|Ifẹ̀|Ìkálẹ̀}} to be [[tall]]
+#: {{ux-lite|inline=1|yo|Ulí yí Olú kọ́ '''go'''|The house Olu built '''is tall'''|q=Oǹdó}}
+
+==Zhuang==
+
+===Pronunciation===
+* {{za-pron}}
+
+===Etymology 1===
+From {{bor-lite|za|zh|sc=Hani|棵}}. <!-- no MC -->
+
+====Classifier====
+{{za-head|classifier}}
+
+# {{n-g-lite|Used with plants.}}
+
+===Etymology 2===
+From {{bor-lite|za|ltc|sc=Hant|歌|tr=kɑ}}.
+
+====Noun====
+{{za-head|noun}}
+
+# [[song]]
+
+===Etymology 3===
+From {{bor-lite|za|ltc|sc=Hant|哥|tr=kɑ}}.
+
+====Noun====
+{{za-head|noun}}
+
+# [[elder brother]]
+#: {{syn-lite|za|goq|q1=dialectal|goj|q2=dialectal}}
+# [[male]] [[relative]] outside of one's [[nuclear family]], of the same [[generation]]{{,}} and older than oneself; [[brother-in-law]] or [[cousin]]
+
+===Etymology 4===
+{{rfe-lite|za|from 個?}}
+
+====Particle====
+{{za-head|particle}}
+
+# {{n-g-lite|Used sentence-finally to express certainty or decisiveness.}}
+#: {{syn-lite|za|goh|q=dialectal}}

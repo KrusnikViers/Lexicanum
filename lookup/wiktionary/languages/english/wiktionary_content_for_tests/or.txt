@@ -1,0 +1,866 @@
+or
+en
+Original article URL: https://en.wiktionary.org/wiki/or
+{{also|Appendix:Variations of "or"}}
+==Translingual==
+
+===Symbol===
+{{mul-symbol}}
+
+# {{ISO 639|1}}
+
+==English==
+{{wikipedia}}
+
+===Etymology 1===
+From {{inh-lite|en|enm|or}}; partially contracted from {{m-lite|enm|other}}, {{m-lite|enm|auther}}, from {{inh|en|ang|āþor}}, {{m|ang|āwþer}}, {{m|ang|āhwæþer}} {{gloss|"some, any, either"; > {{l-lite|en|either}}}}; and partially from {{inh-lite|en|enm|oththe}}, from {{inh|en|ang|oþþe}}, from {{inh|en|gem-pro|*efþau||or}}.
+
+====Pronunciation====
+* {{qualifier|stressed}}
+** {{a|US}} {{IPA-lite|en|/ɔɹ/|}}
+** {{audio|en|en-us-or.ogg|Audio (US)}}
+*** {{a|STL}} {{IPA-lite|en|/ɑɹ/}}
+** {{a|UK}} {{IPA-lite|en|/ɔː(ɹ)/}}
+** {{audio|en|en-uk-or.ogg|Audio (UK)}}
+** {{homophones|en|oar|ore|o'er|awe}} {{qualifier|when all of these are in the case of [[non-rhotic]] accents}}
+** {{rhymes-lite|en|ɔː(ɹ)|s=1}}
+* {{qualifier|unstressed}}
+** {{a|US}} {{IPA-lite|en|/ɚ/}}
+** {{a|UK}} {{IPA-lite|en|/ə/|/əɹ/|qual2=before vowel}}*
+
+====Conjunction====
+{{en-con}}
+
+# {{n-g-lite|Connects at least two alternative [[word]]s, [[phrase]]s, [[clause]]s, [[sentences]], [[etc.]], each of which could make a passage [[true]].}}
+#: {{ux-lite|en|In Ohio, anyone under the age of 18 who wants a tattoo '''or''' body piercing needs the consent of a parent '''or''' guardian.}}
+#: {{ux-lite|en|He might get cancer, '''or''' be hit by a bus, '''or''' God knows what.}}
+# {{lb|en|logic}} {{n-g-lite|An operator denoting the [[disjunction]] of two [[propositions]] or [[truth values]]. There are two forms, the [[inclusive or]] and the [[exclusive or]].}}
+# {{n-g-lite|Counts the [[elements]] [[before]] and [[after]] as two [[possibilities]].}}
+# [[otherwise|Otherwise]] {{gloss|a consequence of the condition that the previous is false}}.
+#: {{ux-lite|en|It's raining! Come inside '''or''' you'll catch a cold!}}
+#* {{RQ:Churchill Celebrity|chapter=IV|page=46|passage=No matter how early I came down, I would find him on the veranda, smoking cigarettes, '''or''' otherwise his man would be there with a message to say that his master would shortly join me if I would kindly wait.}}
+# {{n-g-lite|Connects two equivalent names.}}
+#: {{ux|en|The country [[Myanmar]], or [[Burma]]}}
+
+=====Usage notes=====
+* {{s|connecting alternative terms}} When not implied by the meaning of the [[conjoin#Noun|conjoin]]s, it is generally ambiguous whether “or” is intended in an exclusive or inclusive sense. In speech, various means may be used to convey exclusivity, such as stress on the word “or” or a rising intonation before it.<ref>{{cite-book|en|last=Huddleston|first=Rodney|year=1988|title=English Grammar: An Outline|publisher=Cambridge University Press|isbn=0521311527|pages=198–99}}</ref> In a formal or technical register, {{m|en|and/or}} may be used to specify inclusivity.
+
+=====Translations=====
+{{trans-top|conjunction}}{{multitrans|data=
+* Afrikaans: {{tt+|af|of}}
+* Albanian: {{tt+|sq|ose}}, {{tt+|sq|apo}}, {{tt+|sq|a}}
+* Ambonese Malay: {{tt|abs|or}}
+* Amharic: {{tt|am|ወይስ|sc=Ethi}}
+* Arabic: {{tt+|ar|أَو}}, {{tt+|ar|أَم}} {{qualifier|in questions}}, {{tt|ar|إِمَّا}}
+*: Hijazi Arabic: {{tt|acw|أَو|tr=ʔaw}}, {{tt|acw|ولا|tr=walla}}
+*: Moroccan Arabic: {{tt|ary|ولا|tr=walla}}, {{tt|ary|أولا|tr=ʔawla}}, {{tt|ary|إما|tr=ʔimma}}
+*: North Levantine Arabic: {{tt+|ar|أَو|tr=ʔaw}}, {{tt|ar|ولا|tr=walla}}
+*: South Levantine Arabic: {{tt|ajp|أَو|tr=ʔaw}}, {{tt|ajp|ولا|tr=willa}}
+* Aragonese: {{tt+|an|u}}
+* Aramaic:
+*: Assyrian Neo-Aramaic: {{tt|aii|ܝܲܢ|tr=yan}}, {{tt|aii|ܐܵܘ|tr=āw}}
+*: Classical Syriac: {{tt|syc|ܐܘ|tr=ʾaw}}
+*: Jewish Babylonian Aramaic: {{tt|arc|אוֹ|tr=ʾô}}
+* Armenian: {{tt+|hy|կամ}}
+* Aromanian: {{tt|rup|icã}}
+* Assamese: {{tt|as|বা}}, {{tt|as|নে}} {{q|interrogative}}
+* Asturian: {{tt+|ast|o}}
+* Azerbaijani: {{tt+|az|ya}}, {{tt+|az|və ya}}, {{tt+|az|yoxsa}}, {{tt+|az|yaxud}}
+* Bashkir: {{tt|ba|йәки}}, {{tt|ba|йә}}, {{tt|ba|әллә}}
+* Basque: {{tt+|eu|edo}}, {{tt+|eu|ala}}
+* Belarusian: {{tt+|be|або́}}, {{tt+|be|ці}}, {{tt|be|альбо́}}
+* Bengali: {{tt+|bn|বা}}, {{tt+|bn|অথবা}}, {{tt+|bn|কিংবা}}
+* Breton: {{tt+|br|pe}}
+* Bulgarian: {{tt+|bg|и́ли}}, {{tt+|bg|или́}}
+* Burmese: {{tt+|my|သို့မဟုတ်|sc=Mymr}}
+* Catalan: {{tt+|ca|o}}, {{tt+|ca|o bé}}
+* Chechen: {{tt|ce|я}}
+* Chinese:
+*: Cantonese: {{tt+|yue|定係|tr=ding6 hai6}}
+*: Mandarin: {{tt+|cmn|或|tr=huò}}, {{tt+|cmn|或者|tr=huòzhě}}; {{tt+|cmn|還是|tr=háishi}} {{qualifier|in questions}}
+* Chukchi: {{tt|ckt|эвытԓым|tr=ėvytḷym}}, {{tt|ckt|ԓымэвыр|tr=ḷymėvyr}}, {{tt|ckt|ԓымӈэвыр|tr=ḷymṇėvyr}}
+* Chuvash: {{tt|cv|е}}
+* Cornish: {{tt|kw|po}}
+* Crimean Tatar: {{tt|crh|ya}}
+* Czech: {{tt+|cs|nebo}}
+* Danish: {{tt+|da|eller}}
+* Dhivehi: {{tt|dv|ނުވަތަ}}
+* Dutch: {{tt+|nl|of}}
+* Egyptian: usually null; sometimes {{t-egy|r-pw|h=r: Z1-p-w}}
+* Esperanto: {{tt+|eo|aŭ}}
+* Estonian: {{tt+|et|või}}, {{t+|et|ehk}}
+* Faroese: {{tt+|fo|ella}}
+* Finnish: {{tt+|fi|tai}} {{qualifier|inclusive in question clauses}}, {{tt+|fi|vai}} {{q|exclusive, only in question clauses}}, {{tt+|fi|eli}} {{q|connects two equivalent names}}
+* French: {{tt+|fr|ou}}
+*: Old French: {{tt|fro|ou}}
+* Galician: {{tt+|gl|ou}}
+* Georgian: {{tt|ka|ანუ}}
+* German: {{tt+|de|oder}}
+*: Alemannic German: {{tt|gsw|oder}}
+* Gothic: {{tt|got|𐌰𐌹𐌸𐌸𐌰𐌿}}
+* Greek: {{tt+|el|ή}}, {{tt+|el|είτε}}
+*: Ancient: {{tt|grc|ἤ}}
+* Gujarati: {{tt|gu|કે|tr=ke}}
+* Hawaiian: {{tt|haw|paha|alt=ā ... paha}}, {{tt|haw|a i ʻole}}
+* Hebrew: {{tt+|he|אוֹ|tr='o}}
+* Hindi: {{tt+|hi|या}}, {{tt+|hi|क}}, {{tt+|hi|व}}, {{tt+|hi|अथवा}}
+* Hungarian: {{tt+|hu|vagy}}
+* Icelandic: {{tt+|is|eða}}
+* Ido: {{tt+|io|od}}, {{tt+|io|o}}
+* Indonesian: {{tt+|id|atau}}
+* Interlingua: {{tt+|ia|o}}
+* Irish: {{tt|ga|nó}}
+* Italian: {{tt+|it|o}}, {{tt|it|od}} (''euphonic alt. form used before a vowel, especially "o"''), {{tt+|it|oppure}}
+* Japanese: {{tt+|ja|または|tr=mata wa}} ({{tt+|ja|又は}}), {{tt+|ja|あるいは|tr=arui wa}}, {{tt+|ja|か|tr=ka}}, {{tt+|ja|それとも|tr=soretomo}}
+* Javanese: {{tt+|jv|utawa}}, {{tt+|jv|utawi}}, {{tt|jv|atawa}}
+* Kalmyk: {{t|xal|эс гиҗ}}
+* Kannada: {{tt+|kn|ಅಥವಾ|sc=Knda}}
+* Kashubian: {{tt|csb|abò}}
+* Kazakh: {{tt+|kk|не}}, {{tt+|kk|немесе}}, {{tt+|kk|я}}, {{tt|kk|яки}}
+* Khmer: {{tt+|km|ឬ}}
+* Komi-Zyrian: {{tt|kpv|либӧ}}
+* Korean: {{tt+|ko|또는}}, {{tt+|ko|혹은}}, {{tt+|ko|이나|alt=(이)나}}, {{tt|ko|아니면}}
+* Kurdish:
+*: Central Kurdish: {{tt|ckb|یا}}, {{tt|ckb|یان}}
+*: Northern Kurdish: {{tt+|kmr|an}}, {{tt+|kmr|yan}}
+* Kyrgyz: {{tt+|ky|же}}
+* Lao: {{tt|lo|ບໍ້}}, {{tt|lo|ຫລື}}, {{tt|lo|ຫຼື}}
+* Latgalian: {{tt|ltg|ci}}, {{tt|ltg|voi}}, {{tt|ltg|aba}}
+* Latin: {{tt+|la|aut}}, {{tt+|la|seu}}, {{tt+|la|vel}}, {{tt+|la|sīve}}, {{tt|la|-ve}}
+* Latvian: {{tt|lv|vai}}, {{tt|lv|jeb}}
+* Lithuanian: {{tt+|lt|arba}}
+* Livonian: {{tt|liv|või}}
+* Low German:
+*: Dutch Low Saxon: {{tt+|nds-nl|of}}
+*: German Low German: {{tt+|nds-de|oder}}
+* Lü: {{tt|khb|ᦢᧁᧈᦅᦸᧉ}}, {{tt|khb|ᦣᦴᧉᦞᦱᧈ}}
+* Luxembourgish: {{tt+|lb|oder}}
+* Macedonian: {{tt|mk|или}}
+* Malagasy: {{tt+|mg|na}}, {{tt+|mg|sa}}
+* Malay: {{tt+|ms|atau}}
+* Malayalam: {{tt+|ml|ഒ}} {{qualifier|as suffix on all terms}}, {{tt+|ml|അഥവാ}}, {{tt+|ml|അല്ലെങ്കിൽ}}
+* Maltese: {{tt+|mt|jew}}
+* Maori: {{tt|mi|rānei}}
+* Marathi: {{tt+|mr|किंवा|tr=kiuvā}}
+* Mongolian: {{tt+|mn|эсвэл}}, {{tt+|mn|буюу}}
+* Navajo: {{tt|nv|éí doodaiiʼ éí}}, {{tt|nv|doodaiiʼ}}
+* Neapolitan: {{tt|nap|o}}
+* Nepali: {{tt+|ne|वा}}
+* Nigerian Pidgin: {{t|pcm|or}}
+* Northern Sami: {{tt|se|dahje}} {{qualifier|inclusive in question clauses}}, {{tt|se|vai}} {{qualifier|exclusive, only in question clauses}}
+* Northern Thai: {{tt|nod|ᨣᩤ}}, {{tt|nod|ᨣᩤᩅ᩵ᩤ}}
+* Norwegian: {{tt+|no|eller}}
+*: Bokmål: {{tt+|nb|ellers}} ''(otherwise)''
+*: Nynorsk: {{tt|nn|elles}} ''(otherwise)''
+* Occitan: {{tt+|oc|o}}
+* Old Church Slavonic:
+*: Cyrillic: {{tt|cu|или}}
+* Old East Slavic: {{tt|orv|чи}}, {{tt|orv|или}}
+* Old English: {{tt|ang|oþþe}}
+* Old Prussian: {{tt|prg|anga, adder}}
+* Ottoman Turkish: {{tt|ota|ویا|tr=veya|sc=ota-Arab}}
+* Pashto: {{tt+|ps|که|tr=ka}}, {{tt|ps|لا|tr=lâ}}, {{tt+|ps|يا|tr=yâ}}
+* Persian: {{tt+|fa|یا|tr=yâ}}
+* Polabian: {{tt|pox|ar}}
+* Polish: {{tt+|pl|albo}} {{qualifier|[[w:en:Exclusive_or|xor-type]]}}, {{tt+|pl|lub}} {{qualifier|[[w:en:Logical_disjunction|or-type]]}}, {{tt+|pl|czy}}, {{tt+|pl|bądź|m}} {{qualifier|literary}}, {{tt+|pl|bądź}} {{qualifier|literary}}
+* Portuguese: {{tt+|pt|ou}}
+* Punjabi: {{tt+|pa|ਜਾਂ|tr=jā̃}}
+* Quechua: {{tt|qu|icha}}
+* Rapa Nui: {{tt|rap|o}}
+* Romanian: {{tt+|ro|ori}}, {{tt+|ro|sau}}
+* Russian: {{tt+|ru|и́ли}}, {{tt+|ru|ли́бо}}, {{tt+|ru|а́ли}} {{qualifier|dated or folklore}}, {{tt+|ru|чи}} {{qualifier|West or South Russia, Ukraine}}
+* Rusyn: {{tt|rue|ці}}, {{tt|rue|або́}}
+* Sanskrit: {{t+|sa|वा}}
+* Sardinian: {{tt|sc|o}}
+* Scots: {{tt|sco|or}}
+* Scottish Gaelic: {{tt|gd|no}}, {{tt|gd|neo}}, {{tt|gd|air neo}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|и̏ли}}
+*: Roman: {{tt+|sh|ȉli}}
+* Shan: {{tt|shn|ဢမ်ႇၼၼ်}}
+* Sindhi: {{tt|sd|یا|tr=yā}}
+* Sinhalese: {{tt|si|හෝ|sc=Sinh}}
+* Slovak: {{tt|sk|alebo}}, {{tt|sk|abo}}
+* Slovene: {{tt+|sl|àli}}
+* Slovincian: {{t|zlw-slv|ãbɵ}}
+* Sorbian:
+*: Lower Sorbian: {{tt|dsb|abo}}
+*: Upper Sorbian: {{tt+|hsb|abo}}
+* Southern Ohlone: {{tt|css|yuta}}
+* Spanish: {{tt+|es|o}}, {{qualifier|before words beginning in 'o-' or 'ho-'}} {{tt+|es|u}}
+* Sudovian: {{tt|xsv|ader}}
+* Swahili: {{tt|sw|au}}
+* Swedish: {{tt+|sv|eller}}
+* Tagalog: {{tt|tl|o}}
+* Tai Dam: {{tt|blt|ꪭꪳꪫ꪿ꪱ}}
+* Tajik: {{tt+|tg|ё}}
+* Tamil: {{tt+|ta|அல்லது|sc=Taml}}
+* Tatar: {{tt|tt|яки}}, {{tt|tt|яисә}}, {{tt|tt|я}}
+* Telugu: {{tt+|te|లేదా}}, {{tt+|te|గాని}}
+* Thai: {{tt+|th|หรือ}}
+* Tocharian A: {{tt|xto|epe}}
+* Tocharian B: {{tt|txb|epe}}
+* Turkish: {{tt+|tr|veya}}, {{tt+|tr|ya da}}
+* Turkmen: {{tt|tk|ýa}}, {{tt|tk|ýada}}
+* Udmurt: {{tt|udm|яке}}
+* Ugaritic: {{tt|uga|𐎜|tr=ʾō}}
+* Ukrainian: {{tt+|uk|чи}}, {{tt+|uk|або́}}
+* Urdu: {{tt+|ur|یا|tr=yā}}
+* Uyghur: {{tt+|ug|ياكى|sc=ug-Arab}}
+* Uzbek: {{tt+|uz|yoki}}
+* Vietnamese: {{tt+|vi|hay}}, {{tt|vi|hay là}}, {{tt+|vi|hoặc}}
+* Vilamovian: {{tt|wym|ober}}
+* Volapük: (before consonants) {{tt+|vo|u}}, (before vowels) {{tt+|vo|ud}}
+* Welsh: {{tt|cy|neu}}
+* West Frisian: {{tt+|fy|of}}
+* Yagnobi: {{tt|yai|ё}}
+* Yakut: {{tt|sah|эбэтэр}}
+* Yiddish: {{tt|yi|אָדער}}
+* Yup'ik: {{tt|esu|wallu}}
+* Zazaki: {{tt|zza|ya ki}}, {{tt|zza|ya zi}}
+* Zhuang: {{tt|za|rox}}, {{tt|za|roxnaeuz}}
+}}
+{{trans-bottom}}
+
+=====See also=====
+* {{l-lite|en|either}}
+* {{l-lite|en|neither}}
+* {{l-lite|en|nor}}
+* {{l-lite|en|i.e.}}
+
+===Etymology 2===
+From Etymology 1 (sense 2 above).
+
+====Noun====
+{{wikipedia|Logical OR}}
+{{en-noun}}
+
+# {{lb|en|logic|electronics}} {{alt form-lite|en|OR}}
+
+====See also====
+* {{l-lite|en|and}}
+* {{l-lite|en|nand}}
+* {{l-lite|en|nor}}
+* {{l-lite|en|xor}}
+
+===Etymology 3===
+{{root|en|ine-pro|*h₂ews-|id=dawn}}
+Borrowed from {{bor-lite|en|frm|or||yellow}}, from {{der-lite|en|fro|or}}, from {{der-lite|en|la|aurum||gold}}. {{doublet|en|aurum}}.
+
+====Pronunciation====
+* {{a|US}} {{IPA-lite|en|/oɹ/|}}
+** {{audio|en|en-us-or.ogg|Audio (US)}}
+* {{a|UK}} {{IPA-lite|en|/ɔː(ɹ)/}}
+** {{audio|en|en-uk-or.ogg|Audio (UK)}}
+
+====Noun====
+{{wikipedia|Or (heraldry)}}
+{{en-noun|~}}
+
+# {{lb|en|tincture}} The [[gold]] or [[yellow]] [[tincture]] on a [[coat of arms]].
+#* {{quote-text|en|year=1909|author=Arthur Charles Fox-Davies|title=A Complete Guide to Heraldry
+|passage=The metals are gold and silver, these being termed "'''or'''" and "argent".}}
+#* {{quote-book|en|year=1889|author=Charles Norton Elvin|title=A Dictionary of Heraldry|passage=In engraving, "'''Or'''" is expressed by dots.}}
+#: {{color panel|FFD700}}
+
+=====Synonyms=====
+* {{sense|gold or yellow tincture}} {{l|en|o.}}, {{l-lite|en|Or}}
+
+=====Related terms=====
+* {{l-lite|en|Au}} {{qualifier|chemical symbol for gold}}
+
+=====Translations=====
+{{trans-top|gold or yellow tincture}}{{multitrans|data=
+* Danish: {{tt+|da|guld}}
+* Dutch: {{tt+|nl|goud}}, {{tt+|nl|or}}
+* Finnish: {{tt+|fi|kulta}}
+* French: {{tt+|fr|or}}
+* German: {{tt+|de|Gold}}
+* Greek: {{tt+|el|χρυσός|m}}
+* Italian: {{tt+|it|oro|m}}
+* Lithuanian: {{t-needed|lt}}
+* Macedonian: {{tt|mk|зла́то|n}}
+* Portuguese: {{tt+|pt|ouro|m}}
+* Romanian: {{tt+|ro|aur}}
+* Russian: {{tt+|ru|зо́лото|n}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|златна|f}}
+*: Roman: {{tt+|sh|zlatna|f}}
+* Slovak: {{tt|sk|zlatá}}
+* Spanish: {{tt+|es|oro|m}}
+* Swedish: {{tt+|sv|guld|n}}
+}}
+{{trans-bottom}}
+
+====Adjective====
+{{en-adj|-}}
+
+# {{lb|en|tincture}} Of gold or yellow [[tincture]] on a coat of arms.
+
+=====Synonyms=====
+* {{l-lite|en|gold}}
+
+=====Translations=====
+{{trans-top|of yellow or gold tincture on a coat of arms}}{{multitrans|data=
+* Danish: {{tt+|da|guld}}
+* Dutch: {{tt+|nl|goud}}
+* Finnish: {{tt+|fi|kultainen}}
+* French: {{tt+|fr|or}}
+* German: {{tt+|de|golden}}
+* Hungarian: {{tt+|hu|arany}}
+* Italian: {{tt+|it|oro}}
+* Macedonian: {{tt|mk|златнен|m}}
+* Polish: {{tt+|pl|złoty}}
+* Portuguese: {{tt+|pt|ouro}}
+* Romanian: {{tt+|ro|auriu}}
+* Russian: {{tt+|ru|золото́й}}
+* Serbo-Croatian:
+*: Cyrillic: {{tt|sh|златна|f}}
+*: Roman: {{tt+|sh|zlatna|f}}
+* Slovene: {{tt+|sl|zlat}}
+* Spanish: {{tt+|es|oro}}
+* Swedish: {{tt+|sv|gyllene}}
+}}
+{{trans-bottom}}
+
+===Etymology 4===
+Late {{inh|en|ang|ār}}, from {{der|en|non|ár}}. Compare {{m-lite|en|ere}}.
+
+====Adverb====
+{{en-adv|?}}
+
+# {{lb|en|obsolete}} [[early|Early]] (on).
+# {{lb|en|obsolete}} [[earlier|Earlier]], [[previously]].
+
+====Preposition====
+{{en-prep}}
+
+# {{lb|en|now|archaic|or|dialect}} [[before|Before]]; [[ere]]. Followed by "ever" or "ere".
+#* {{RQ:King James Version|Ecclesiastes|12|6-7|passage='''Or''' euer the siluer corde be loosed, or the golden bowle be broken, or the pitcher be broken at the fountaine, or the wheele broken at the cisterne. Then shall the dust returne to the earth as it was: and the spirit shall returne vnto God who gaue it.}}
+#* {{quote-text|en|year=1834|author=Samuel Taylor Coleridge|title=The Rime of the Ancient Mariner
+|passage=I looked to heaven, and tried to pray;<br>But '''or''' ever a prayer had gusht,<br>A wicked whisper came, and made<br>My heart as dry as dust.}}
+
+===References===
+<references /> 
+
+===Anagrams===
+* {{anagrams|en|a=or|R&O|RO|r/o}}
+
+[[Category:English coordinating conjunctions]]
+[[Category:English two-letter words]]
+[[Category:en:Colors]]
+
+==Aromanian==
+
+===Alternative forms===
+* {{l-lite|rup|oru}}, {{l-lite|rup|auredz}}, {{l-lite|rup|auredzu}}, {{l-lite|rup|aor}}, {{l-lite|rup|aoru}}
+
+===Etymology===
+From {{inh|rup|la|ōrō}}. Compare Daco-{{cog-lite|ro|ura}}, {{m-lite|rup|urez}}.
+
+===Verb===
+{{head|rup|verb|past participle|uratã}}
+
+# I [[pray]].
+
+====Synonyms====
+* {{l-lite|rup|angrec}}, {{l-lite|rup|ngrec}}
+* {{l-lite|rup|pricad}}
+* {{l-lite|rup|ncljin}}
+* {{l|rup|pãlãcãrsescu}}, {{l|rup|pãrãcãlsescu}}
+* {{l-lite|rup|rog}}
+
+====Related terms====
+* {{l-lite|rup|urari}} / {{l-lite|rup|urare}}
+* {{l-lite|rup|urat}}
+* {{l|rup|urãciuni}}
+
+==Basque==
+
+===Alternative forms===
+* {{alter|eu|hor||Souletin}}
+
+===Etymology===
+1103; variant of {{m-lite|eu|hor}}, from {{inh|eu|euq-pro|*hoŕ}}. Mostly replaced by {{m-lite|eu|zakur}}.
+
+===Pronunciation===
+{{eu-IPA}}
+* {{audio|eu|Eus-or.ogg|Audio}}
+
+===Noun===
+{{eu-noun|an}}
+
+# [[dog]]
+
+====Declension====
+{{eu-decl-anim|tap=1}}
+
+====Synonyms====
+* {{l-lite|eu|txakur}}
+* {{l-lite|eu|zakur}}
+
+===Further reading===
+* {{R:EH}}
+* {{R:OEH}}
+
+[[Category:eu:Dogs]]
+
+==Catalan==
+{{elements|ca|Au|platí|Pt|mercuri|Hg}}
+
+===Alternative forms===
+* {{alt|ca|aur||obsolete}}
+
+===Etymology===
+From {{inh-lite|ca|la|aurum}}, from {{inh|ca|itc-pro|*auzom}}, from {{der|ca|ine-pro|*h₂é-h₂us-o-||glow}}, from {{m|ine-pro|*h₂ews-||to dawn, become light, become red}}.
+
+===Pronunciation===
+* {{ca-IPA|òrr}}
+* {{audio|ca|LL-Q7026 (cat)-Millars-or.wav|Audio (Valencian)}}
+
+===Noun===
+{{ca-noun|m}}
+
+# [[gold]]
+# {{lb|ca|heraldry}} {{l-lite|en|or}}
+
+====Derived terms====
+* {{l|ca|Costa d'Or}}
+
+==French==
+
+===Pronunciation===
+* {{fr-IPA}}
+* {{audio|fr|Fr-or.ogg|audio}}
+* {{rhymes-lite|fr|ɔʁ|s=1}}
+
+===Etymology 1===
+From {{inh-lite|fr|frm|or}}, from {{inh-lite|fr|fro|or}}, from {{inh-lite|fr|la|aurum}}, from {{inh|fr|itc-pro|*auzom}}, from {{der|fr|ine-pro|*h₂é-h₂us-o-||glow}}, from {{m|ine-pro|*h₂ews-||to dawn, become light, become red}}.
+
+====Noun====
+{{fr-noun|m}}
+
+# [[gold]]
+# {{lb|fr|tincture}} {{l-lite|en|or}} {{gloss|yellow in heraldry}}
+
+=====Derived terms=====
+{{col3|fr
+|à prix d'or
+|âge d'or
+|bouton d'or
+|but en or
+|Côte d'Or
+|en or
+|franc comme l'or
+|livre d'or
+|la parole est d'argent, le silence est d'or
+|le silence est d'or
+|louis d'or
+|médaille d'or
+|mine d'or
+|noces d'or
+|nombre d'or
+|or blanc
+|or mussif
+|or noir
+|pont d'or
+|poule aux œufs d'or
+|rouler sur l'or
+|ruée vers l'or
+|se faire des couilles en or
+|tout ce qui brille n'est pas or
+|tout l'or du monde
+|valoir son pesant d'or
+|veau d'or
+}}
+
+=====Related terms=====
+* {{l|fr|aurifère}}
+* {{l-lite|fr|dorer}}
+* {{l|fr|orfèvre}}
+
+=====Descendants=====
+* {{desc|ht|lò}}
+
+=====See also=====
+* {{l|fr|Appendix:Colors}}
+
+===Etymology 2===
+From {{inh-lite|fr|fro|ore}}, from {{inh|fr|VL.|[[hā]] [[horā]]}}, alteration of {{m|la|[[hāc]] [[horā]]||(in) this hour|pos=ablative}}. Compare {{cog-lite|es|ahora}}, {{cog-lite|pt|agora}}.
+
+====Adverb====
+{{fr-adv}}
+
+# {{lb|fr|obsolete}} [[now]], [[presently]]
+
+====Conjunction====
+{{head-lite|fr|conjunctions|langname=French}}
+
+# [[yet]], [[however]], [[now]], [[that said]] ({{n-g|introduces the second term in a syllogism}})
+
+====Usage notes====
+This is often used to introduce contrasting information (like English {{m|en|however}}). However, the information need not be contrasting, but can simply be supplemental information that leads to a subsequent conclusion.
+
+===Further reading===
+* {{R:fr:TLFi}}
+
+{{cln|fr|coordinating conjunctions}}
+{{C|fr|Chemical elements|Colors|Metals}}
+
+==Ido==
+
+===Etymology===
+Borrowing from {{bor-lite|io|fr|or}}, {{bor-lite|io|it|ora}} and {{bor-lite|io|es|ahora}}.
+
+===Pronunciation===
+* {{IPA-lite|io|/ɔr/}}
+
+===Conjunction===
+{{head-lite|io|conjunctions|langname=Ido}}
+
+# [[now]], [[but]] {{gloss|in argument}}
+
+====Usage notes====
+'''Or''' expresses not only a sequence of two propositions, but induces a new argument, a further premise, explanation, motive. When the premise (motive) follows the conclusion, {{m-lite|io|nam}} is used instead.
+
+==Italian==
+
+===Adverb===
+{{it-adv|apoc=1}}
+
+# {{apocopic form of|it|ora|t=now}}, used almost exclusively in the forms {{m-lite|it|or ora|t=just now}} and {{m-lite|it|or sono|t=ago}}.
+
+====Derived terms====
+* {{l-lite|it|ormai}}
+* {{l-lite|it|or ora}}
+* {{l-lite|it|or sono}}
+
+===Anagrams===
+* {{anagrams|it|a=or|ro}}
+
+[[Category:it:Time]]
+
+==Japanese==
+
+===Particle===
+{{ja-pos|particle|オア}}
+
+# {{alternative form of|ja|sort=おあ'|オア||[[or]]}}
+
+==Middle English==
+
+===Etymology 1===
+{{inh+|enm|ang|ōr}}, from {{inh|enm|gmw-pro|*ōʀ}}, from {{inh|enm|gem-pro|*ōsaz}}, form {{inh|enm|ine-pro|*h₃éh₁os|t=mouth}}.
+
+====Pronunciation====
+* {{IPA-lite|enm|/oːr/}}
+
+====Noun====
+{{head-lite|enm|nouns|langname=Middle English}}
+
+# {{tlb|enm|Early ME|hapax}} [[beginning]], [[start]]
+
+===Etymology 2===
+
+====Determiner====
+{{head-lite|enm|determiners|langname=Middle English}}
+
+# {{lb|enm|chiefly|Early ME|and|West Midland}} {{alt form-lite|enm|here|t=their|id=their}}
+
+===Etymology 3===
+
+====Noun====
+{{head-lite|enm|nouns|langname=Middle English}}
+
+# {{alt form-lite|enm|ore|t=honour|id=honour}}
+
+===Etymology 4===
+
+====Noun====
+{{head-lite|enm|nouns|langname=Middle English}}
+
+# {{alt form-lite|enm|ore|t=ore|id=ore}}
+
+===Etymology 5===
+
+====Determiner====
+{{head-lite|enm|determiners|langname=Middle English}}
+
+# {{alt form-lite|enm|your}}
+
+[[Category:West Midland Middle English]]
+
+==Middle French==
+
+===Alternative forms===
+* {{alter|frm|aur||alternate Latinized spelling}}
+
+===Etymology===
+From {{inh-lite|frm|fro|or}}.
+
+===Noun===
+{{frm-noun|m|-}}
+
+# [[gold]] {{gloss|metal}}
+# [[gold]] {{gloss|color}}
+
+====Descendants====
+* {{desctree|fr|or}}
+* {{desc|bor=1|en|or}}
+
+[[Category:frm:Colors]]
+
+==Norwegian Bokmål==
+{{wikipedia|lang=no|Oreslekten}}
+
+===Etymology===
+From {{inh|nb|non|ǫlr}}, {{m|non|órir}}.
+
+===Noun===
+{{nb-noun-c}}
+
+# an [[alder]] (''tree of genus'' [[Alnus]])
+
+====Synonyms====
+* {{l-lite|nb|older}}
+
+===References===
+* {{R:The Bokmål Dictionary}}
+
+[[Category:nb:Trees]]
+
+==Norwegian Nynorsk==
+{{wikipedia|lang=nn}}
+
+===Pronunciation===
+* {{IPA-lite|nn|/uːr/}}
+* {{homophones|nn|ord}}
+
+===Etymology 1===
+From {{inh|nn|non|ǫlr}}, {{m|non|órir}}. Akin to {{cog-lite|en|alder}}.
+
+====Noun====
+{{nn-noun-f1}}
+
+{{nn-noun-m1}}
+
+# an [[alder]] (''tree of genus'' [[Alnus]])
+
+===Etymology 2===
+From {{inh|nn|non|ór}}.
+
+====Alternative forms====
+* {{alter|nn|oto|otor|tor|tur|tu}}
+
+====Preposition====
+{{head|nn|preposition|head=or}}
+
+# [[out of]]
+# {{l-lite|en|from}}
+#* {{quote-text|nn|year=1956|author=[[w:Olav H. Hauge|Olav H. Hauge]]|title=Gjer ein annan mann ei beine
+|passage=Han kom '''or''' fjellet, skulde heim, {{...}}.
+|translation=He came '''from''' the mountain, was heading home {{...}}.}}
+
+===References===
+* {{R:The Nynorsk Dictionary}}
+
+[[Category:nn:Trees]]
+
+==Old English==
+
+===Alternative forms===
+* {{alter|ang|ōra}}
+
+===Etymology===
+From {{inh|ang|gem-pro|*ōzô}}, {{m|gem-pro|*ōsaz}}, from {{inh|ang|ine-pro|*h₃éh₁os|t=mouth}}.
+
+===Pronunciation===
+* {{ang-IPA|ōr}}
+
+===Noun===
+{{ang-noun|head=ōr|n}}
+
+# [[origin]], [[beginning]]
+
+====Descendants====
+* {{desc|enm|or|qq=early, hapax}}
+
+===References===
+* {{R:ang:BT|ōr|ref=024882}}
+
+==Old French==
+
+===Pronunciation===
+* {{IPA-lite|fro|/ˈɔɾ/}}
+
+===Etymology 1===
+From {{inh-lite|fro|la|aurum}}.
+
+====Noun====
+{{fro-noun|m}}
+
+# [[gold]] {{gloss|metal}}
+#* {{quote-text|fro|year=c. 1250|author={{w|Marie de France}}|title={{w|Lais of Marie de France|Guigemar}}
+|passage=En bacins d''''or''' ewe aporterent
+|translation=They brought water in basins made of gold}}
+# [[gold]] {{gloss|color}}
+# {{lb|fro|by extension}} [[blonde|blond(e)]] color
+
+=====Descendants=====
+* {{desctree|frm|or}}
+* {{desc|wa|ôr}}
+
+===Etymology 2===
+See {{m-lite|fro|ore}}.
+
+====Adverb====
+{{fro-adv}}
+
+# {{alt form-lite|fro|ore}}
+
+[[Category:fro:Colors]]
+[[Category:fro:Metals]]
+
+==Old Frisian==
+
+===Pronunciation===
+* {{IPA-lite|ofs|/ˈoːr/}}
+
+===Adjective===
+{{ofs-adj|head=ōr}}
+
+# {{alternative form of|ofs|ōther|from=Old West Frisian}}
+
+====References====
+* {{R:ofs:Bremmer:2009}}
+
+==Romanian==
+
+===Pronunciation===
+* {{IPA-lite|ro|[or]}}
+
+===Verb===
+{{ro-aux|vrea|person=3p|tense=p}}
+
+# (they) [[might]]
+#: {{ux|ro|[[fiindcă]] '''or''' [[avea]] [[ceva]] [[pe]] [[care]] [[noi]] [[nu]]-[[îl|l]] [[avem]], [[va]] [[trebui]] [[să]] [[așteptăm]] [[puțin]]|being that they might have something that we don't, we will need to wait a bit}}
+
+===Verb===
+{{ro-aux|avea}}
+
+# {{lb|ro|informal|sometimes|proscribed}} Variation of {{l-lite|ro|o}} in the third person plural.
+#: {{ux-lite|ro|'''Or''' să vină într-un minut.|They will come in a minute.|inline=1}}
+
+===Adverb===
+{{ro-adv}}
+
+# {{alt form-lite|ro|ori}}
+
+==Romansch==
+
+===Alternative forms===
+* {{qualifier|Rumantsch Grischun|Sursilvan}} {{l-lite|rm|aur}}
+* {{alt|rm|ôr||Surmiran}}
+
+===Etymology===
+From {{inh-lite|rm|la|aurum}}.
+
+===Noun===
+{{head|rm|noun|g=m}}
+
+# {{lb|rm|Sutsilvan|Puter|Vallader}} [[gold]]
+
+[[Category:rm:Chemical elements]]
+[[Category:rm:Metals]]
+
+==Scots==
+
+===Etymology===
+A variant of [[ere]], obsolete in modern English.
+
+===Conjunction===
+{{sco-conj}}
+
+# [[before]] or [[until]] {{qualifier|only in certain senses}}
+#: ''It'll nae be lang '''or''' A gang ma holiday.''- It'll not be long until/ before I go on holiday
+
+====Usage notes====
+Not archaic, but rare amongst young people.
+
+==Scottish Gaelic==
+
+===Etymology===
+Possibly from {{inh-lite|gd|sga|amar||song, singing}}. See {{m|gd|òran}}.
+
+===Noun===
+{{gd-noun|g=m|gen=ora|pl=ora|pl2=orthachan|pl3=orrachan|pl4=orthannan}}
+
+# [[hymn]], [[incantation]], [[petition]], [[prayer]]
+
+====Synonyms====
+* {{l-lite|gd|ob}}
+
+===Verb===
+{{gd-verb|vn=oradh|past=dh’or|fut=oridh|pp=orte}}
+
+# [[chant]], [[sing]]
+#: {{ux-lite|inline=1|gd|Tha Màiri ag '''oradh'''.|Mary is '''singing'''.}}
+
+[[Category:gd:Music]]
+[[Category:gd:Religion]]
+
+==Swedish==
+
+===Etymology===
+Related to {{m-lite|sv|orna|t=moldy, spoiled by mites}}, {{cog-lite|da|oret}}, of obscure ultimate origin. Compare {{m-lite|sv|oren|t=impure, dirty, unclean, rotten}}.<ref>{{R:SAOB online}}</ref>
+
+===Noun===
+{{sv-noun|n}}
+
+# a [[mite]]
+
+====Declension====
+{{sv-infl-noun-n-zero}}
+
+====Synonyms====
+* {{l-lite|sv|kvalster}}
+
+===References===
+<references/>
+
+===Anagrams===
+* {{anagrams|sv|a=or|ro}}
+
+==Tocharian A==
+
+===Etymology===
+From {{inh|xto|ine-pro|*dóru}}, with unexplained loss of initial */d/. Compare {{cog-lite|txb|or}}.
+
+===Noun===
+{{head|xto|noun|g=n}}
+
+# [[wood]]
+
+==Tocharian B==
+
+===Etymology===
+From {{inh|txb|ine-pro|*dóru}}, with unexplained loss of initial */d/. Compare {{cog-lite|xto|or}}.
+
+===Noun===
+{{txb-noun||n}}
+
+# [[wood]]
+
+====Related terms====
+* {{l|txb|ārwa}} {{q|from plural}}
+
+==Yola==
+
+===Conjunction===
+{{head-lite|yol|conjunctions|langname=Yola}}
+
+# {{alt form-lite|yol|ar}}
+#* {{quote-book|yol|year=1867|chapter=A YOLA ZONG|number=9|title=SONGS, ETC. IN THE DIALECT OF FORTH AND BARGY|passage=Na, now '''or''' neveare! w' cry't t' Tommeen,|translation=Nay, now '''or''' never! we cry'd to Tommy,}}
+
+===References===
+* {{R:Poole 1867|page=88}}

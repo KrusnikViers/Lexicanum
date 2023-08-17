@@ -21,23 +21,5 @@ POS_MAP = {
     'Wortverbindung': PartOfSpeech.Phrase,
 }
 
-# Noun = 1  # Incl. Proper Nouns
-#     Adjective = 2
-#     Verb = 3
-#     Adverb = 4
-#
-#     # Other parts of speech
-#     Pronoun = 11
-#     Preposition = 12  # Incl. Postposition
-#     Conjunction = 13
-#     Interjection = 14
-#     Article = 15
-#     Particle = 16
-#     Numeral = 17
-#
-#     # Complex translatable concepts
-#     Phrase = 100
-
 POS_KEY = 'Wortart'
 
-SUPPORTED_LANGUAGES = ('Deutsch',)

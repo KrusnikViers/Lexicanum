@@ -9,7 +9,8 @@ from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType, DCT
 
 def _part_of_speech_components(node: MarkupTree, wiki_title: str) -> List[DefinitionComponent]:
     assert node.name == POS_KEY
-    if safe_get(node.plain_args, 0) not in POS_MAP or safe_get(node.plain_args, 1) not in SUPPORTED_LANGUAGES:
+    if safe_get(node.plain_args, 0) not in POS_MAP or \
+            safe_get(node.plain_args, 1) not in ('Deutsch',):
         return []
 
     pos_dc = DefinitionComponent(node.level, DCType.PartOfSpeech, POS_MAP[node.plain_args[0]])

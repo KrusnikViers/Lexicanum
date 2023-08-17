@@ -1,0 +1,467 @@
+from
+en
+Original article URL: https://en.wiktionary.org/wiki/from
+{{also|fr.o.m.|from-|fróm}}
+==English==
+
+===Alternative forms===
+* {{alter|en|frome||obsolete}}
+
+===Etymology===
+From {{inh|en|enm|from|t=from}}, from {{inh|en|ang|from}}, {{m|ang|fram|t=forward, from}}, from {{inh|en|gmw-pro|*fram}}, from {{inh|en|gem-pro|*fram|t=forward, from, away}}. Cognate with {{cog|osx|fram|t=from}} and {{cog|goh|fram|t=from}}, {{cog|da|frem|t=forth, forward}}, {{cog|da|fra|t=from}}, {{cog|sv|fram|t=forth, forward}}, {{cog|sv|från|t=from}}, {{cog|nn|fram|t=forward}}, {{cog|nn|frå|t=from}}, {{cog|is|fram|t=forward, on}}, {{cog|is|frá|t=from}}, {{cog|sq|pre}}, {{m|sq|prej}}. More at {{m|en|fro}}.
+
+===Pronunciation===
+* {{qualifier|stressed}}
+** {{a|RP|AU|NZ}} {{IPA|en|/fɹɒm/}}
+** {{a|GA|Canada}} {{enPR|frŭm}}, {{IPA|en|/fɹʌm/}}
+* {{qualifier|unstressed}} {{enPR|frəm}}, {{IPA|en|/fɹəm/}}
+* {{audio|en|en-us-from.ogg|Audio (US)}}
+* {{rhymes|en|ɒm|ʌm|s=1}}
+
+===Preposition===
+{{en-prep}}
+
+# {{n-g|Used to indicate [[source]] or [[provenance]].}}
+#: {{ux|en|Paul is '''from''' New Zealand.}}
+#: {{ux|en|I got a letter '''from''' my brother.}}
+#: {{ux|en|You can't get all your news '''from''' the Internet.}}
+#* {{RQ:Jefferies Amateur Poacher|chapter=II|passage=Orion hit a rabbit once; but though sore wounded it got to the bury, and, struggling in, the arrow caught the side of the hole and was drawn out.{{nb...}}. Ikey the blacksmith had forged us a spearhead after a sketch '''from''' a picture of a Greek warrior; and a rake-handle served as a shaft.}}
+#* {{RQ:Maxwell Mirror and the Lamp|chapter=12|passage=There were many wooden chairs for the bulk of his visitors, and two wicker armchairs with red cloth cushions for superior people. '''From''' the packing-cases had emerged some Indian clubs,{{nb...}}, and all these articles{{...}}made a scattered and untidy decoration that Mrs. Clough assiduously dusted and greatly cherished.}}
+#* {{quote-journal|en|date=2013-06-29|volume=407|issue=8842|page=72–3|magazine={{w|The Economist}}
+|title=[http://www.economist.com/news/international/science-and-technology/21580133-how-microbes-promote-liver-cancer-overweight-punch-gut A punch in the gut]
+|passage=Mostly, the microbiome is beneficial. It helps with digestion and enables people to extract a lot more calories '''from''' their food than would otherwise be possible. Research over the past few years, however, has implicated it in diseases from atherosclerosis to asthma to autism.}}
+# Originating at (a year, time, etc.)
+#: {{ux|en|This manuscript is '''from''' the 1980s.}}
+# {{n-g|Used to indicate a starting point or [[initial]] [[reference]].}}
+#: {{ux|en|He had books piled '''from''' floor to ceiling.}}
+#: {{ux|en|He departed yesterday '''from''' Chicago.}}
+#: {{ux|en|This figure has been changed '''from''' a one to a seven.}}
+#: {{ux|en|Face away '''from''' the wall!}}
+#* {{RQ:Churchill Celebrity|chapter=8|passage=The humor of my proposition appealed more strongly to Miss Trevor than I had looked for, and '''from''' that time forward she became her old self again; for, even after she had conquered her love for the Celebrity, the mortification of having been jilted by him remained.}}
+## {{n-g|Indicating a starting point in time.}}
+##: {{ux|en|The working day runs '''from''' 9 am to 5 pm.}}
+##: {{ux|en|Tickets are available '''from''' 17th July.}}
+## {{n-g|Indicating a starting point on a [[range]] or [[scale]].}}
+##: {{ux|en|Rate your pain '''from''' 1 to 10.}}
+##: {{ux|en|Start counting '''from''' 1.}}
+## {{n-g|Indicating a starting point on an [[array]] or [[gamut]] of [[conceptual]] [[variation]]s.}}
+##: {{ux|en|You can study anything '''from''' math to literature.}}
+## With reference to the location or position of a speaker or other observer or vantage point.
+##: {{ux|en|It's hard to tell '''from''' here.}}
+##: {{ux|en|Try to see it '''from''' his point of view.}}
+##: {{ux|en|The bomb went off just 100 yards '''from''' where they were standing.}}
+##: {{ux|en|'''From''' the top of the lighthouse you can just see the mainland.}}
+## {{lb|en|MLE}} {{n-g|Indicates a starting state of the [[predicament]] of the subject.}} {{synonym of|en|[[since]] [[being]]}}
+##: {{ux|en|I’ve been doing this '''from''' [[pickney]].}}
+##* {{quote-song|en|date=17-08-2021|author=TStackz & Kapz|url=https://grmdaily.com/tstackz-kapz-bgb/|note=1:01–1:03|title=BGB|passage=I’ve been a bad boy '''from''' a little youth.}}
+# {{n-g|Indicating [[removal]] or [[separation]].}}
+#: {{ux|en|After twenty minutes, remove the cake '''from''' the oven.}}
+#: {{ux|en|The general was ousted '''from''' power.}}
+## {{lb|en|mathematics|chiefly|British|not in formal use}} {{n-g|Denoting a subtraction operation.}}
+##: {{ux|en|20 '''from''' 31 leaves 11.}}
+# {{n-g|Indicating [[exclusion]].}}
+#: {{ux|en|She was barred '''from''' entering.}}
+#: {{ux|en|A parasol protects '''from''' the sun.}}
+# {{n-g|Indicating [[differentiation]].}}
+#: {{ux|en|Your opinions differ '''from''' mine.}}
+#: {{ux|en|He knows right '''from''' wrong.}}
+#* {{quote-journal|en|year=2013|month=May-June|author=[http://www.americanscientist.org/authors/detail/katrina-g-claw Katrina G. Claw]
+|title=[http://www.americanscientist.org/issues/feature/2013/3/rapid-evolution-in-eggs-and-sperm Rapid Evolution in Eggs and Sperm]
+|volume=101|issue=3|magazine={{w|American Scientist}}
+|passage=In plants, the ability to recognize self '''from''' nonself plays an important role in fertilization, because self-fertilization will result in less diverse offspring than fertilization with pollen from another individual.}}
+# Produced with or out of (a substance or material).
+#: {{ux|en|It's made '''from''' pure gold.}}
+# {{n-g|Used to indicate causation}}; because of, as a result of.
+#: {{ux|en|Too many people die '''from''' breast cancer.}}
+
+====Synonyms====
+* {{sense|with the source or provenance of or at}} {{l|en|out of}}
+* {{sense|subtraction}} {{l|en|take away}}
+
+====Antonyms====
+* {{l|en|to}}
+
+====Derived terms====
+{{col4|en
+|come in from the cold
+|from a standing start
+|from day to day
+|from week to week
+}}
+
+====Translations====
+{{trans-top|with the source or provenance of or at}}
+* Afrikaans: {{t+|af|van}}
+* Ainu: {{t|ain|wa}}
+* Albanian: {{t+|sq|nga}}, {{t+|sq|prej}}
+* Arabic: {{t+|ar|مِن}}
+*: Egyptian Arabic: {{t|arz|من|tr=men}}
+*: Hijazi Arabic: {{t|acw|مِن|tr=minn}}
+* Aramaic:
+*: Hebrew: {{t|arc|מן|tr=min}}
+*: Syriac: {{t|arc|ܡܢ|tr=min}}
+* Assamese: {{t|as|-অৰ পৰা}}
+* Bakhtiari: {{t|bqi|ز|tr=ze}}, {{t|bqi|زه|tr=ze}}
+* Belarusian: {{t|be|ад}}, {{t|be|з}}
+* Belizean Creole: {{t|bzj|fahn}}
+* Bengali: {{t+|bn|অবধি}}, {{t+|bn|থেকে}}
+* Bikol Central: {{t+|bcl|hali}}
+* Bulgarian: {{t+|bg|из}}, {{t+|bg|от}}
+* Burmese: {{t+|my|မှ}} {{qualifier|postposition}}, {{t+|my|က}}
+* Catalan: {{t+|ca|de}}, {{t+|ca|des de}}
+* Cherokee: {{t|chr|ᏂᏛᎴᏅᏓ}}
+* Chinese:
+*: Cantonese: {{t|yue|從|tr=cung4}}, {{t+|yue|自|tr=zi6}}, {{t|yue|由|tr=jau4}}
+*: Mandarin: {{t+|cmn|從|tr=cóng}}, {{t+|cmn|自|tr=zì}}, {{t+|cmn|由|tr=yóu}}, {{t+|cmn|由於|tr=yóuyú}}, {{t+|cmn|出於|tr=chūyú}}
+* Cornish: {{t|kw|a}}
+* Czech: {{t+|cs|z}}, {{t+|cs|ze}}, {{t+|cs|od}}
+* Dalmatian: {{t|dlm|da}}
+* Danish: {{t+|da|fra}}
+* Dutch: {{t+|nl|van}}, {{t+|nl|uit}}
+* Esperanto: {{t+|eo|el}}
+* Estonian: {{t-needed|et}}
+* Finnish: {{t+|fi|-sta}} {{q|elative case}}, {{t+|fi|-lta}} {{q|ablative case}}
+* French: {{t+|fr|de}}, {{t+|fr|dans}}, {{t+|fr|sur}}
+* Friulian: {{t|fur|di}}
+* Galician: {{t+|gl|de}}, {{t+|gl|dende}}, {{t|gl|desque}}
+* Georgian: {{t|ka|-დან}}, {{t|ka|-გან}}
+* German: {{t+|de|von}} (from someone), {{t+|de|aus}} (from somewhere)
+* Greek: {{t+|el|από}}
+*: Ancient: {{t|grc|ἀπό}} (+ gen.); {{t|grc|παρά}} (+ gen.)
+* Guaraní: {{t+|gn|guive}}
+* Hebrew: {{t|he|מ־|tr=mi-, me-}}, {{t+|he|מִן|tr=mín}}
+* Hindi: {{t+|hi|से}}
+* Hungarian: {{t|hu|[[-ból]]/[[-ből]]}} {{q|[[elative]] case}}, {{t|hu|[[-tól]]/[[-től]]}} {{q|[[ablative]] case}}
+* Icelandic: {{t+|is|frá}}
+* Ido: {{t+|io|de}}
+* Interlingua: {{t+|ia|de}}, {{t+|ia|ab}}
+* Irish: {{t|ga|ó}}
+* Italian: {{t+|it|da}}, {{t+|it|di}}
+* Japanese: {{t+|ja|から|tr=kara|}}, {{t+|ja|より|tr=yori}}
+* Khmer: {{t+|km|ពី|tr=pii}}
+* Korean: {{t|ko|-에서}}
+* Kurdish:
+*: Northern Kurdish: {{t+|kmr|ji}}
+* Ladin: {{t|lld|de}}
+* Lao: {{t|lo|ຈາກ}}
+* Latin: {{t+|la|ab}}, {{t+|la|a}}, {{t+|la|ex}}, {{t+|la|e}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t+|lt|iš}}
+* Macedonian: {{t|mk|од}}
+* Malay: {{t+|ms|dari}}, {{t|ms|daripada}}
+* Maltese: {{t+|mt|minn}}
+* Manchu: {{t|mnc|ᠴᡳ}}, {{t|mnc|ᡩᡝᡵᡳ}} {{qualifier|colloquial}}
+* Mòcheno: {{t|mhn|va}}
+* Mongolian: {{t-needed|mn}}
+* Neapolitan: {{t|nap|a}}, {{t|nap|'e}}
+* Nepali: {{t|ne|बाट}}
+* Norwegian: {{t+|no|fra}}
+* Papiamentu: {{t|pap|di}}
+* Persian: {{t+|fa|از|tr=az}}, {{t+|fa|ز|tr=ze}}
+* Polish: {{t+|pl|z}}, {{t+|pl|od}}
+* Portuguese: {{t+|pt|de}}
+* Punjabi: {{t|pa|ਤੋਂ|tr=tõ}}
+* Rapa Nui: {{t|rap|mai}}
+* Romanian: {{t+|ro|de}}
+* Russian: {{t+|ru|из}}, {{t+|ru|от}}, {{t+|ru|с}}
+* Scots: {{t|sco|fae}}, {{t|sco|frae}}
+* Scottish Gaelic: {{t|gd|à}}, {{t|gd|às}}, {{t|gd|bho}}, {{t|gd|o}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|из}}, {{t|sh|од}}
+*: Roman: {{t|sh|iz}}, {{t+|sh|od}}
+* Slovak: {{t+|sk|z}}, {{t|sk|od}}
+* Slovene: {{t+|sl|iz}}, {{t+|sl|z}}, {{t+|sl|od}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|wót}}
+* Spanish: {{t+|es|de}}
+* Swedish: {{t+|sv|från}}, {{t+|sv|ur}}
+* Sylheti: {{t|syl|ꠔꠘꠦ}}, {{t|syl|ꠕꠣꠇꠤ}}
+* Tamil: {{t-needed|ta}}
+* Thai: {{t+|th|จาก}}
+* Tibetan: {{t|bo|ནས}}
+* Tigrinya: {{t|ti|ካብ}}
+* Turkish: {{t+|tr|-den}}, {{t+|tr|-dan}}, {{t+|tr|-ten}}, {{t+|tr|-tan}}
+* Ukrainian: {{t+|uk|від}}, {{t+|uk|з}}
+* Urdu: {{t|ur|سے|tr=se}}
+* Venetian: {{t+|vec|de}}
+* Vietnamese: {{t+|vi|từ}}
+* Welsh: {{t|cy|oddi}}
+* West Frisian: {{t+|fy|fan}}
+* Wutunhua: {{t|wuh|-la}}
+* Yiddish: {{t|yi|פֿון}}
+* Zazaki: {{t|zza|ra}}
+{{trans-bottom}}
+
+{{trans-top|with the origin, starting point or initial reference of or at}}
+* Arabic: {{t+|ar|مِن}}, {{t+|ar|عَنْ}}
+*: Egyptian Arabic: {{t|arz|من|tr=men}}
+* Aramaic:
+*: Hebrew: {{t|arc|מן|tr=min}}
+*: Syriac: {{t|arc|ܡܢ|tr=min}}
+* Aromanian: {{t|rup|dit}}, {{t|rup|ditru}}
+* Belizean Creole: {{t|bzj|fahn}}
+* Bengali: {{t|bn|হতে}}, {{t|bn|হইতে}}
+* Bikol Central: {{t+|bcl|gikan}}
+* Catalan: {{t+|ca|de}}
+* Chinese:
+*: Cantonese: {{t|yue|從|tr=cung4}}
+*: Mandarin: {{t+|cmn|從|tr=cóng}}, {{t+|cmn|自|tr=zì}}, {{t+|cmn|由|tr=yóu}}, {{t+|cmn|由於|tr=yóuyú}}, {{t+|cmn|出於|tr=chūyú}}
+* Czech: {{t+|cs|z}}, {{t+|cs|ze}}, {{t+|cs|od}}
+* Danish: {{t+|da|fra}}
+* Dutch: {{t+|nl|van}}, {{t+|nl|uit}}
+* Esperanto: {{t+|eo|el}}, {{t+|eo|de}}
+* Finnish: {{t+|fi|-sta}} {{q|elative case}}, {{t+|fi|-lta}} {{q|ablative case}}
+* French: {{t+|fr|de}}
+* Galician: {{t+|gl|dende}}
+* German: {{t+|de|von}}
+* Greek:
+*: Ancient: {{t|grc|ἀπό}} (+ gen.)
+* Guaraní: {{t+|gn|guive}}
+* Hebrew: {{t|he|מ־|tr=mi-, me-}}, {{t+|he|מִן|tr=mín}}
+* Hungarian: {{t|hu|[[-ból]]/[[-ből]]}} {{q|[[elative]] case}}, {{t|hu|[[-tól]]/[[-től]]}} {{q|[[ablative]] case}}
+* Icelandic: {{t+|is|frá}}
+* Interlingua: {{t+|ia|de}}
+* Irish: {{t|ga|ó}}
+* Italian: {{t+|it|da}}, {{t+|it|di}}
+* Japanese: {{t+|ja|から|tr=kara}}, {{t+|ja|より|tr=yori}}
+* Kapampangan: {{t|pam|ibat}}
+* Khmer: {{t+|km|ពី|tr=pii}}
+* Korean: {{t+|ko|부터}}, {{t+|ko|에서}}
+* Lao: {{t-needed|lo}}
+* Latin: {{t+|la|ab}}, {{t+|la|a}}
+* Macedonian: {{t|mk|од}}
+* Malay: {{t+|ms|dari}}
+* Maltese: {{t+|mt|minn}}
+* Manchu: {{t|mnc|ᠴᡳ}}, {{t|mnc|ᡩ᠋ᡝ᠋ᡵᡳ}} {{q|colloquial}}
+* Mòcheno: {{t|mhn|va}}
+* Mon: {{t|mnw|နူ|tr=nū}}
+* Mongolian: {{t-needed|mn}}
+* Nepali: {{t|ne|बाट}}
+* Norwegian: {{t+|no|fra}}
+* Polish: {{t+|pl|z}}
+* Portuguese: {{t+|pt|de}}
+* Rapa Nui: {{t|rap|mai}}
+* Romanian: {{t+|ro|din}} {{t|ro|de la}}
+* Russian: {{t+|ru|из}}, {{t+|ru|от}}, {{t+|ru|с}}
+* Scots: {{t|sco|fae}}, {{t|sco|frae}}
+* Scottish Gaelic: {{t|gd|à}}, {{t|gd|às}}, {{t|gd|bho}}, {{t|gd|o}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|из}}, {{t|sh|од}}
+*: Roman: {{t|sh|iz}}, {{t+|sh|od}}
+* Slovak: {{t|sk|od}}, {{t+|sk|z}}, {{t|sk|zo}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|wót}}
+* Spanish: {{t+|es|de}}, {{t+|es|desde}}
+* Swedish: {{t+|sv|från}}
+* Tamil: {{t-needed|ta}}
+* Thai: {{t-needed|th}}
+* Tibetan: {{t|bo|ནས}}
+* Tigrinya: {{t|ti|ካብ}}
+* Turkish: {{t+|tr|-den}}, {{t+|tr|-dan}}, {{t+|tr|-ten}}, {{t+|tr|-tan}}
+* Venetian: {{t+|vec|de}}
+* West Frisian: {{t+|fy|fan}}
+* Wutunhua: {{t|wuh|-la}}
+* Xibe: {{t|sjo|ᡩ᠋ᡝ᠋ᠷᡞ|tr=deri}}
+* Yiddish: {{t|yi|פֿון}}
+* Zazaki: {{t|zza|ra}}
+{{trans-bottom}}
+
+{{trans-top|with the separation, exclusion or differentiation of}}
+* Arabic: {{t+|ar|مِن}}, {{t+|ar|عَنْ}}
+*: Egyptian Arabic: {{t|arz|من|tr=men}}
+* Aramaic:
+*: Hebrew: {{t|arc|מן|tr=min}}
+*: Syriac: {{t|arc|ܡܢ|tr=min}}
+* Catalan: {{t+|ca|de}}
+* Chinese:
+*: Mandarin: {{t+|cmn|從|tr=cóng}}, {{t+|cmn|自|tr=zì}}, {{t+|cmn|由|tr=yóu}}, {{t+|cmn|由於|tr=yóuyú}}, {{t+|cmn|出於|tr=chūyú}}
+* Czech: {{t+|cs|od}}, {{t+|cs|proti}}, {{t+|cs|před}}
+* Danish: {{t+|da|fra}}; {{t+|da|mod}} {{q|when used as protection from someone/something}}
+* Dutch: {{t+|nl|tegen}}, {{t+|nl|van}}
+* Esperanto: {{t|eo|disde}}
+* Finnish: {{t+|fi|-sta}} {{q|elative case}}, {{t+|fi|-lta}} {{q|ablative case}}
+* French: {{t+|fr|de}}
+* German: {{t+|de|von}}, {{t+|de|vor}}
+* Hebrew: {{t|he|מ־|tr=mi-, me-}}, {{t+|he|מִן|tr=mín}}
+* Hungarian: {{t|hu|[[-tól]]/[[-től]]}} ([[ablative case]])
+* Icelandic: {{t+|is|frá}}, {{t+|is|á móti}}
+* Italian: {{t+|it|da}}, {{t+|it|di}}
+* Korean: {{t+|ko|에서}}
+* Latin: {{t+|la|ab}}, {{t+|la|a}}
+* Macedonian: {{t|mk|од}}
+* Malay: {{t|ms|daripada}}
+* Norwegian: {{t+|no|fra}}; {{t+|no|mot}} {{q|when used as protection from someone/something}}
+* Polish: {{t+|pl|od}}
+* Portuguese: {{t+|pt|de}}
+* Russian: {{t+|ru|от}}
+* Scots: {{t|sco|fae}}, {{t|sco|frae}}
+* Scottish Gaelic: {{t|gd|bho}}, {{t|gd|o}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|од}}
+*: Roman: {{t+|sh|od}}
+* Slovak: {{t|sk|od}}, {{t|sk|pred}}, {{t|sk|proti}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|wót}}
+* Spanish: {{t+|es|de}}
+* Swedish: {{t+|sv|från}}
+* Venetian: {{t+|vec|de}}
+* Yiddish: {{t|yi|פֿון}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Guaraní: {{t-check|gn|gui}}
+* Ido: {{t+check|io|de}}
+* Indonesian: {{t+check|id|dari}}, {{t+check|id|mulai}}, {{t-check|id|mulai dari}}
+* Kuna: {{t-check|cuk|siki}}
+* Mongolian: {{t-check|mn|-аас}}, {{t-check|mn|-оос}}, {{t-check|mn|-өөс}}, {{t-check|mn|-ээс}}
+* Persian: {{t+check|fa|از|tr=az}}
+* Tupinambá: {{t-check|tpn|suí}}
+{{trans-bottom}}
+
+===Anagrams===
+* {{anagrams|en|a=fmor|-form|FORM|MoRF|form|form-}}
+
+==Bislama==
+{{LDL|bi}}
+
+===Etymology===
+From {{inh|bi|en|from}}.
+
+===Preposition===
+{{head|bi|preposition}}
+
+# {{l|en|from}}
+# [[because of|Because of]]; [[on account of]]
+#* {{quote-book
+|bi
+|year=2008
+|author=Miriam Meyerhoff
+|title=Social lives in language--sociolinguistics and multilingual speech
+|chapter=
+|url=http://books.google.com/books?id=pXkqNVW_eC4C&pg=PT353
+|isbn=978-90-272-1863-6
+|page=344
+|passage=Bang i wantem mi faen '''from''' mi ovaspen.}}
+
+==Danish==
+
+===Etymology===
+From {{der|da|gml|vrome}}, from {{inh|da|gem-pro|*frumô}}, related to {{cog|de|fromm}}, {{cog|nl|vroom||pious}}. In Old Saxon and Old High German, it is a noun meaning "use, benefit", but later it is used as an adjective.
+
+===Pronunciation===
+* {{IPA|da|/frɔmˀ/|[ˈfʁ̥ʌmˀ]}}
+
+===Adjective===
+{{da-adj|t|fromme}}
+
+# {{l|en|pious}}, {{l|en|devout}} {{q|religious in a serious way}}
+#: {{ant|da|ufrom}}
+# {{l|en|innocent}}
+
+====Inflection====
+{{da-infl-adj|fromm|est}}
+
+====Derived terms====
+* {{l|da|fromhed}}
+
+===Further reading===
+* {{R:DDO}}
+* {{R:ODS online}}
+
+==Irish==
+
+===Pronoun===
+{{head|ga|prepositional pronoun|emphatic|fromsa}}
+
+# {{alternative form of|ga|faram|t=along with me, beside me; in addition to me; as good as me}}
+
+===Further reading===
+* {{R:ga:Ó Dónaill}}
+
+==Middle English==
+
+===Alternative forms===
+* {{alter|enm|fram|vrom|vram}}
+* {{alter|enm|fro|fra|vra|fray||from Old Norse}}
+
+===Etymology===
+From {{der|enm|ang|from}}, {{m|ang|fram}} and {{bor|enm|non|frá}}, both from {{inh|enm|gem-pro|*fram}}.
+
+===Preposition===
+{{head|enm|preposition}}
+
+# [[#English|from]]
+#: {{syn|enm|fra}}
+#* {{quote-book|enm|year=c. 1400|title={{w|The Canterbury Tales}}|author={{w|Geoffrey Chaucer}}|section=General Prologue|lines=15–16
+|text=And specially '''from''' every shires ende / Of Engelond, to Caunterbury they wende,
+|t=And specially '''from''' every shire's end / Of England they to Canterbury went,
+}}
+
+====Descendants====
+* {{desc|en|from}}
+** {{desc|bor=1|sco|from|frome}}
+* {{desc|yol|vrem|alts=1}}
+
+===References===
+* {{R:MED Online|from|prep|MED17795}}
+
+==Old English==
+
+===Etymology===
+Of {{der|ang|gem|-}} origin, from {{inh|ang|gem-pro|*framaz||forward, prominent}}, from {{der|ang|ine-pro|*promo-||front, forth}}.
+
+Cognate with {{cog|goh|fruma}} ({{cog|de|fromm}}, {{cog|yi|פֿרום}}), {{cog|dum|vrōme}} ({{cog|nl|vroom}}), {{cog|non|framr}}.
+
+===Pronunciation===
+* {{ang-IPA|from}}
+
+===Adjective===
+{{ang-adj}}
+
+# [[bold]], [[firm]], [[resolute]]
+
+====Declension====
+{{ang-adecl|from}}
+
+==Plautdietsch==
+
+===Etymology===
+From {{inh|pdt|gml|vrome}}, from {{inh|pdt|osx|fruma}}, ultimately from {{inh|pdt|gem-pro|*frumô}}, related to {{cog|nl|vroom||pious}}.
+
+===Adjective===
+{{head|pdt|adjective}}
+
+# [[pious]], [[godly]], [[devout]], [[religious]]
+
+====Derived terms====
+* {{l|pdt|Fromheit}}
+
+[[Category:Plautdietsch 1-syllable words]]
+
+==Swedish==
+
+===Etymology===
+From {{inh|sv|gmq-osw|fromber}}, from {{der|sv|gml|vrome}}, from {{der|sv|osx|fruma}}, from {{der|sv|gem-pro|*frumô}}, related to {{cog|nl|vroom||pious}}.
+
+===Pronunciation===
+{{IPA|sv|/frʊːm/}}
+
+===Adjective===
+{{sv-adj|frommare|frommast}}
+
+# [[pious]]; being religious in a quiet and serious way
+# [[charitable]]
+#: {{uxi|sv|en '''from''' stiftelse|a charitable foundation, a charity}}
+
+====Declension====
+{{sv-adj-reg|3=fromm}}
+
+====Synonyms====
+* {{sense|pious}} {{l|sv|andaktsfull}}, {{l|sv|gudfruktig}}
+* {{sense|charitable}} {{l|sv|allmännyttig}}, {{l|sv|välgörande}}
+
+====Derived terms====
+* {{l|sv|fromhet}}
+
+===Anagrams===
+* {{anagrams|sv|a=fmor|form}}
