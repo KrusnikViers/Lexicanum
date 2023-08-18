@@ -1,0 +1,129 @@
+binoculars
+en
+Original article URL: https://en.wiktionary.org/wiki/binoculars
+==English==
+[[Image:Leica Trinovid 8x20 BC.jpg|thumb|right|A pair of binoculars]]
+{{wikipedia}}
+
+===Etymology===
+Abbreviation of "binocular glass".
+
+===Pronunciation===
+* {{a|UK}} {{IPA|en|/ˈbɪnˌɒk.jʊ.lə(ɹ)z/|/ˈbənˌɒk.jə.lə(ɹ)z/}}
+* {{audio|en|en-us-binoculars.ogg|Audio (US)}}
+
+===Noun===
+{{en-plural noun|sg=binocular}}
+
+# A hand-held device consisting of a series of [[lens|lenses]] and [[prism]]s, used to [[magnify]] objects so that they can be better seen from a [[distance]], and looked at through both eyes.
+#* {{quote-book|en|year=1956|author=[[w:Delano Ames|Delano Ames]]|title=Crime out of Mind|chapter=14|url=http://openlibrary.org/works/OL5915292W|passage=He gazed around until on the lid of a spinet he spotted a promising collection of bottles, gin, whiskey, vermouth and sherry, mixed with violin bows, a flute, a toppling pile of books, six volumes of Grove's Dictionary mingled with paperback thrillers, a guitar without any strings, a pair of '''binoculars''', a meerschaum pipe and a jar half-full of wasps and apricot jam.}}
+
+====Usage notes====
+* A single device is called a [[pair]] of binoculars, and the plural "pairs of binoculars" is used for more than one device.
+
+====Synonyms====
+* {{l|en|binocs}}
+* {{l|en|binos}}
+* {{l|en|field glasses}}
+* {{l|en|opera glasses}}
+* {{l|en|spyglass}}
+
+====Derived terms====
+{{der2|en|Galilean binoculars|pair of binoculars|scissor binoculars|trench binoculars}}
+
+====Translations====
+{{trans-top|hand-held device for looking at a distance}}
+* Afrikaans: {{t|af|verkyker}}
+* Albanian: {{t+|sq|dylbi|f}}
+* Arabic: {{t+|ar|مِنْظَار|m}}
+* Armenian: {{t+|hy|հեռադիտակ|sc=Armn}}
+* Azerbaijani: {{t|az|binokl}}, {{t|az|durbin}}
+* Bashkir: {{t|ba|бинокль|sc=Cyrl}}
+* Basque: {{t|eu|prismatikoak|p}}
+* Belarusian: {{t|be|біно́кль|m|sc=Cyrl}}
+* Bengali: {{t|bn|দূরবিন|tr=durbin}}
+* Breton: {{t|br|gevellunedenn|f}}
+* Bulgarian: {{t|bg|бино́къл}}
+* Burmese: {{t+|my|မှန်ပြောင်း|sc=Mymr}}
+* Buryat: {{t|bua|дурам}}
+* Catalan: {{t|ca|binocles|m-p}}
+* Chinese:
+*: Mandarin: {{t+|cmn|望遠鏡|tr=wàngyuǎnjìng}}, {{t+|cmn|雙筒望遠鏡|tr=shuāngtǒng wàngyuǎnjìng}}
+* Crimean Tatar: {{t|crh|dürbin}}
+* Czech: {{t+|cs|dalekohled|m}}
+* Danish: {{t+|da|kikkert|c}}
+* Dutch: {{t+|nl|verrekijker|m}}
+* Esperanto: {{t+|eo|binoklo}}
+* Estonian: {{t|et|binokkel}}, {{t|et|binoklid}}
+* Faroese: {{t|fo|kikari|m}}
+* Finnish: {{t+|fi|kiikari}}
+* French: {{t+|fr|jumelles|f-p}}, {{t+|fr|jumelle|f}}
+* Galician: {{t|gl|prismáticos|m-p}}, {{t|gl|binóculos|m-p}}
+* Georgian: {{t|ka|ბინოკლი|sc=Geor}}, {{t|ka|დურბინდი|sc=Geor}}
+* German: {{t+|de|Fernglas|n}}, {{t+|de|Feldstecher|m}}
+* Greek: {{t+|el|διόπτρες|sc=Grek|f-p}}, {{t+|el|κιάλια|n-p}}
+* Haitian Creole: {{t|ht|longvi}}
+* Hebrew: {{t+|he|מִשְׁקֶפֶת|tr=mishkefet|sc=Hebr}}
+* Hindi: {{t|hi|दूरबीन|f|sc=Deva}}
+* Hungarian: {{t+|hu|távcső}}, {{t+|hu|látcső}}, {{t+|hu|messzelátó}}
+* Icelandic: {{t+|is|sjónauki}}, {{t+|is|kíkir|m}}
+* Ido: {{t+|io|bilorno}}
+* Indonesian: {{t+|id|teropong}}
+* Irish: {{t|ga|gloiní|f-p}}, {{t|ga|déshúiligh|m-p}}
+* Italian: {{t+|it|binocolo|m}}
+* Japanese: {{t+|ja|双眼鏡|tr=そうがんきょう, sōgankyō}}
+* Kazakh: {{t|kk|дүрбі|sc=Cyrl}}, {{t|kk|бинокль|sc=Cyrl}}
+* Khmer: {{t|km|កែវយឹត|tr=kaev yɨt|sc=Khmr}}, {{t|km|យឹតយឺត|tr=yɨt yɨɨt|sc=Khmr}}
+* Korean: {{t+|ko|쌍안경}}
+* Kurdish:
+*: Central Kurdish: {{t|ckb|دووربین|alt=دووربین(ی)}}, {{t|ckb|دووچاوی}}
+*: Northern Kurdish: {{t+|kmr|dûrbîn}}
+* Kyrgyz: {{t+|ky|дүрбү|sc=Cyrl}}, {{t+|ky|бинокль|sc=Cyrl}}
+* Lao: {{t|lo|ກ້ອງ}}, {{t+|lo|ກ້ອງສ່ອງ}}
+* Latvian: {{t|lv|binoklis|m}}, {{t|lv|tālskatis|m}}
+* Lithuanian: {{t|lt|binoklis|m}}
+* Macedonian: {{t|mk|двоглед|m}}
+* Malay: {{t|ms|teropong}}, {{t|ms|keker}}
+* Maltese: {{t|mt|tromba|f}}
+* Maori: {{t|mi|karu whakatata}}
+* Mongolian: {{t+|mn|дуран|sc=Cyrl}}
+* Norman: {{t|nrf|longues-veues|f-p}}
+* Norwegian:
+*: Bokmål: {{t|nb|kikkert|m}}
+*: Nynorsk: {{t|nn|kikert|m}}, {{t|nn|kikkert|m}}
+* Oromo: {{t|om|naaduraa}}
+* Ossetian: {{t|os|кӕсӕнцӕст|sc=Cyrl}}, {{t|os|бинокль|sc=Cyrl}}
+* Persian: {{t+|fa|دوربین|tr=durbin}}, {{t+|fa|دوچشمی|tr=dočešmi}}
+* Polish: {{t|pl|lorneta|f}}, {{t+|pl|lornetka|f}}
+* Portuguese: {{t+|pt|binóculo|m}}, {{t+|pt|binóculos|m-p}}
+* Romanian: {{t+|ro|binoclu|m}}
+* Russian: {{t+|ru|бино́кль|m}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|двоглед|m}}, {{t|sh|доглед|m}}, {{t|sh|дурбин|m}}, {{t|sh|далекозор|m}}, {{t|sh|далекоглед|m}}
+*: Roman: {{t+|sh|dvogled|m}}, {{t+|sh|dogled|m}}, {{t+|sh|durbin|m}}, {{t+|sh|dalekozor|m}}, {{t|sh|dalekogled|m}}
+* Slovak: {{t|sk|ďalekohľad|m}}
+* Slovene: {{t+|sl|daljnogled|m}}
+* Spanish: {{t+|es|prismáticos|m-p}}, {{t|es|binoculares|m-p}}, {{t+|es|gemelos|m-p}}
+* Swedish: {{t+|sv|kikare|c}}
+* Tagalog: {{t|tl|duhansipat}}
+* Tajik: {{t|tg|дурбин|sc=Cyrl}}
+* Tatar: {{t|tt|бинокль|sc=Cyrl}}
+* Tausug: {{t|tsg|talumpung}}
+* Thai: {{t|th|กล้องสองตา}}, {{t|th|กล้องสนาม}}
+* Tibetan: {{t|bo|རྒྱང་ཤེལ}}
+* Turkish: {{t+|tr|dürbün}}, {{t+|tr|bakaç}}
+* Turkmen: {{t|tk|dürbi}}, {{t|tk|binokl}}
+* Ukrainian: {{t+|uk|біно́кль|m|sc=Cyrl}}
+* Urdu: {{t|ur|دوربین|f|tr=dūrbīn|sc=ur-Arab}}
+* Uzbek: {{t+|uz|durbin}}, {{t+|uz|binokl}}
+* Vietnamese: {{t+|vi|ống nhòm}}, {{t|vi|ống ngắm}}, {{t|vi|con mắt xa}}
+* Volapük: {{t+|vo|fagiologöm}}
+* Welsh: {{t|cy|ysbienddrych|m}}, {{t|cy|sbenglas|m}}
+* Yagnobi: {{t|yai|дурбен}}
+{{trans-bottom}}
+
+===See also===
+* {{l|en|binocular}}
+* {{pedia}}
+
+{{c|en|Astronomy|Tools}}

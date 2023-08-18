@@ -7,7 +7,7 @@ class Card:
     LINE_DELIMITER = ';'
 
     def __init__(self, card_type: CardType,
-                 question: str, grammar_note: str, answer: str, meaning_note: str,
+                 question: str, grammar_note: str, answer: str, meaning_note: str, ipa_note: str = '',
                  card_id: int | None = None):
         # Type of card. Can be part of speech or complex concept (e.g. whole phrase or grammar rule)
         self.card_type: CardType = card_type
@@ -19,6 +19,8 @@ class Card:
         self.answer: str = answer
         # Additional information about the meaning in the language already known. Helps to disambiguate full homonyms.
         self.meaning_note: str = meaning_note
+        # Pronunciation note in International Phonetic Alphabet
+        self.ipa_note: str = ipa_note
         # Internal Anki identifier. Helps to keep track of the card history even if the contents change.
         self.card_id: int | None = card_id
 
@@ -39,6 +41,7 @@ class Card:
         self.question = self.question.strip()
         self.answer = self.answer.strip()
         self.meaning_note = self.meaning_note.strip()
+        self.ipa_note = self.ipa_note.strip()
 
         grammar_note_lines = self.grammar_note.split(self.LINE_DELIMITER)
         normalized_delimiter = '{} '.format(self.LINE_DELIMITER)
@@ -51,6 +54,7 @@ class Card:
                    card_dict['grammar_note'],
                    card_dict['answer'],
                    card_dict['meaning_note'],
+                   card_dict['ipa_note'],
                    card_dict['card_id'])
 
     def to_dict(self) -> dict:
@@ -61,5 +65,6 @@ class Card:
                 'grammar_note': self.grammar_note,
                 'answer': self.answer,
                 'meaning_note': self.meaning_note,
+                'ipa_note': self.ipa_note,
                 'card_id': self.card_id,
                 }

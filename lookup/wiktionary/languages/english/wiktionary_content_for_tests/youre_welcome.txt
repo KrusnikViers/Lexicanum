@@ -1,0 +1,155 @@
+you're_welcome
+en
+Original article URL: https://en.wiktionary.org/wiki/you're_welcome
+==English==
+
+===Alternative forms===
+* {{alter|en|you are welcome||formal}}
+
+===Etymology===
+From 1907 (as reply to {{m|en|thank you}}).<ref>{{R:Online Etymology Dictionary|welcome}}</ref>
+
+===Pronunciation===
+* {{audio|en|En-uk-you're welcome.ogg|Audio (UK)}}
+
+===Phrase===
+{{head|en|phrase|head=[[you]][['re|’re]] [[welcome]]}}!
+
+# {{non-gloss definition|Used to [[acknowledge]] [[thanks]]; ritual reply to “[[thank you]]”.}}
+# {{&lit|en}}
+#* {{quote-book|en|author=Lynette Eason|authorlink=Lynette Eason|title=Without Warning|series=Elite Guardians|seriesvolume=2|publisher=Revell|year=2016|isbn=978-1-4412-3680-7|passage=No, I didn’t cook, but '''you’re welcome''' to try out the new kitchen.}}
+
+====Synonyms====
+* {{sense|acknowledgment of thanks}} {{l|en|de nada}}, {{l|en|don't mention it|don’t mention it}}, {{l|en|my pleasure}}, {{l|en|no problem}}, {{l|en|not at all}}, {{l|en|no worries}}, {{l|en|think nothing of it}}, {{l|en|you bet}}; see also [[Thesaurus:you're welcome]]
+
+====Translations====
+{{trans-top|reply to thanks}}
+* Afrikaans: {{t|af|[[plesier]]!}}
+* Albanian: {{t|sq|te lutëm}}, {{t|sq|nuk ka përse}}, {{t|sq|s'ka përse}}
+* Alutiiq: {{t|ems|canaituq}}, {{t|ems|quyanaituq}}
+* American Sign Language: {{t|ase|OpenB@DistalSideChesthigh-PalmAcross RoundVert OpenB@DistalInsideTrunkhigh-PalmUp RoundHoriz OpenB@NearCenterTrunkhigh-PalmUp}}
+* Apache:
+*: Jicarilla: {{t|apj|haééʼą}}
+*: Western Apache: {{t|apw|ahíyi'é}} {{qualifier|San Carlos|Bylan}}
+* Arabic: {{t|ar|عَفْوًا}}, {{t|ar|الْعَفْو}}, {{t|ar|لَا شُكْرَ عَلَى وَاجِب|lit=no [need to] thank for [doing] a duty}}, {{t|ar|لَا شُكْرَ عَلَى وَظِيفَةٍ}}, {{t|ar|عَلَى الرُّحْبِ وَٱلسَّعَة|tr=ʕalā r-ruḥbi wa-s-saʕa}}
+*: South Levantine Arabic: {{t|ajp|عفوًا|tr=ʕafwan}}
+* Armenian: {{t|hy|խնդրեմ}}
+* Assyrian Neo-Aramaic: {{t|aii|ܒܫܲܝܢܵܐ|tr=b-šaynā}}, {{t|aii|ܠܹܐ ܕܵܩܪܵܐ|tr=lē dāqrā|lit=it dosen’t cost}}, {{t|aii|ܠܹܐ ܝܠܹܗ ܚܲܕ݇ ܡܸܢܕܝܼ|tr=lē ìlēh ḵa mindī|lit=it’s nothing}}
+* Asturian: {{t|ast|de nada}}
+* Azerbaijani: {{t|az|dəyməz}}
+* Basque: {{t|eu|ez horregatik}}
+* Belarusian: {{t|be|няма́ за што́}}, {{t|be|калі́ ла́ска}}
+* Bikol Central: {{t|bcl|daing ano man}} {{qualifier|informal}} {{t|bcl|dai tabing ano man}} {{qualifier|formal}}
+* Bulgarian: {{t|bg|ня́ма защо́}}, {{t+|bg|моля́}}
+* Burmese: {{t|my|ရပါတယ်}}, {{t|my|ကိစ္စမရှိပါဘူး}}
+* Catalan: {{t+|ca|de res}}, {{t|ca|no es mereixen}}
+* Cebuano: {{t|ceb|wala'y sapayan}}, {{t|ceb|wa'y sapayan}}
+* Chechen: {{t|ce|массарна а}}
+* Chinese:
+*: Cantonese: {{t|yue|唔使客氣|tr=m4 sai2 haak3 hei3}}, {{t|yue|唔使|tr=m4 sai2}}, {{t|yue|應該嘅|tr=jing1 goi1 ge3}}, {{t|yue|乜說話|tr=mat1 syut3 waa6}}
+*: Dungan: {{t-needed|dng}}
+*: Hakka: {{t|hak|毋使細義|tr=m̀-sṳ́ se-ngi}}
+*: Mandarin: {{t+|cmn|不客氣|tr=bù kèqi}}, {{t|cmn|不用謝|tr=bùyòngxiè}}, {{t|cmn|不謝|tr=bùxiè}}, {{t+|cmn|沒事|tr=méishì}}, {{t|cmn|應該的|tr=yīnggāi de}}, {{t+|cmn|沒事兒|tr=méishìr}}
+*: Min Nan: {{t|nan|免客氣|tr=bián kheh-khì}}, {{t|nan|毋免客氣|tr=m̄-bián kheh-khì}}, {{t|nan|莫客氣|tr=mài kheh-khì}}
+*: Wu: {{t|wuu|勿要客氣}}
+* Czech: {{t+|cs|není zač}}, {{t+|cs|prosím}}, {{t+|cs|rádo se stalo}}, {{t|cs|za málo}}
+* Danish: {{t+|da|det var så lidt}}, {{t|da|ingen årsag}}, {{t|da|åh, jeg be'r}}, {{t|da|velbekomme}}, {{t|da|selv tak}}
+* Dutch: {{t+|nl|graag gedaan|lit=done with pleasure}}, {{t|nl|geen dank}}, {{t|nl|niets te danken}}
+* Esperanto: {{t+|eo|ne dankinde|lit=not deserving thanks}}, {{t+|eo|nedankinde}}
+* Estonian: {{t|et|pole tänu väärt}}, {{t|et|võta heaks}}
+* Faroese: {{t|fo|einki at takka fyri}}, {{t|fo|tað var so lítið}}, {{t|fo|eingin orsøk}}
+* Finnish: {{t+|fi|ole hyvä|lit=be good}}, {{t+|fi|eipä kestä}}, {{t|fi|eipä mitään|lit=it's nothing}}
+* French: {{t+|fr|de rien|lit=it’s nothing}}, {{t+|fr|il n'y a pas de quoi|lit=there is nothing for which (to thank me)}}, {{t+|fr|pas de quoi}}, {{t+|fr|je vous en prie}} {{qualifier|formal}}, {{t+|fr|je t'en prie}} {{qualifier|informal}}, {{t+|fr|avec plaisir}}, {{t+|fr|à votre service}} {{qualifier|formal}}, {{t|fr|à ton service}} {{qualifier|informal}}, {{t+|fr|s'il vous plaît}} {{qualifier|Belgium}}, {{t+|fr|bienvenue}} {{qualifier|Quebec}}
+* Galician: {{t|gl|de nada}}
+* Georgian: {{t|ka|არაფრის}}, {{t|ka|არაფერს}}
+* German: {{t+|de|bitte|lit=please}}, {{t+|de|gern geschehen}}, {{t+|de|keine Ursache}}, {{t|de|nichts zu danken}}
+* Greek: {{t+|el|παρακαλώ|lit=please}}, {{t+|el|τίποτα}} {{q|informal}}, {{t|el|δεν κάνει τίποτα}}, {{t|el|ευχαρίστησή μου}}
+* Greenlandic: {{t|kl|illillu}}
+* Hawaiian: {{t|haw|he mea iki}}, {{t|haw|he mea ʻole}}
+* Hebrew: {{t+|he|בְּבַקָּשָׁה|tr=b'vakashá|lit=please}}, {{t+|he|עַל לֹא דָבָר|tr=al lo davár|lit=it’s nothing}}, {{t+|he|אֵין בְּעַד מה|lit=it’s nothing}}
+* Hindi: {{t|hi|कुछ नहीं}}, {{t|hi|कोई बात नहीं}}, {{t|hi|आपका स्वागत है}}
+* Hungarian: {{t+|hu|szívesen}}, {{t|hu|nagyon szívesen}}, {{t+|hu|nincs mit}}
+* Icelandic: {{t|is|ekkert að þakka}}, {{t+|is|það var ekkert}}, {{t|is|það var lítið}}, {{t+|is|gjörðu svo vel}}, {{t|is|það er sjálfþakkað}}
+* Ido: {{t|io|ne dankinde}}, {{t|io|vu esas plezure aceptata}}
+* Ilocano: {{t|ilo|ania ti ania man}}
+* Inari Sami: {{t|smn|pyerrin liävus}}
+* Indonesian: {{t|id|terima kasih kembali}} {{qualifier|formal}}, {{t+|id|sama-sama}} {{qualifier|informal}}
+* Interlingua: {{t-check|ia|il es nihil|lit=it’s nothing}} <!-- likely idiomatic, but use {{t-SOP}} if not so; see [[User:Kephir/gadgets/xte#Translation_fixing]] -->
+* Irish: {{t-check|ga|go ndéana sé maith duit|lit=may it do you good}}, {{t|ga|tá fáilte romhat|lit=a welcome is before you}}, {{t|ga|níl a bhuíochas ort|lit=nothing for you to thank}}
+* Italian: {{t+|it|prego}}, {{t|it|di niente}}, {{t+|it|non c'è di che}}, {{t|it|di nulla}}, {{t|it|è un piacere}}
+* Japanese: {{t+|ja|どういたしまして|tr=dō itashimashite}}, {{t+|ja|いいえ|tr=īe}} {{qualifier|informal}}
+* Jingpho: {{t|kac|galoi mung garum na gin gin re}}
+* Kazakh: {{t+|kk|өтінемін}}
+* Khmer: {{t+|km|អញ្ជើញ}}, {{t|km|មានអី}}, {{t|km|មិនអ្វីទេ}}, {{t|km|អត់អី}}
+* Korean: {{t|ko|천만에요}}, {{t+|ko|아니다|alt=아니에요}}, {{t|ko|별말씀을요}}, {{t|ko|천만에 말씀 입니다}}, {{t|ko|별것 아니었습니다}}, {{t|ko|별거 아니에요}}, {{t+|ko|괜찮다|alt=괜찮아요}}, {{t|ko|고맙긴요}}
+* Kurdish:
+*: Central Kurdish: {{t|ckb|شایانی نِیە}}
+*: Northern Kurdish: {{t+|kmr|spasxweş}}
+* Lao: {{t|lo|ບໍ່ເປັນຫຍັງ}}
+* Latin: {{t|la|libenter}}, {{t|la|libens}}, {{t|la|nihil est}}
+* Latvian: {{t|lv|vienmēr lūdzu}}, {{t+|lv|lūdzu}}
+* Lithuanian: {{t+|lt|prašom}}, {{t|lt|visada prašom}} {{qualifier|very formal}}, {{t|lt|nėra už ką}}, {{t|lt|nėr už ką|lit=not at all}}
+* Low German:
+*: German Low German: {{t|nds-de|nix to bedanken}}, {{t|nds-de|geern daan}}, {{t|nds-de|geern schehn}}
+* Lü: {{t-needed|khb}}
+* Luxembourgish: {{t|lb|keng Ursaach}}
+* Macedonian: {{t|mk|не́ма на́ што}}, {{t|mk|мо́лам}}
+* Malay: {{t|ms|sama-sama}}, {{t|ms|terima kasih kembali}}
+* Malayalam: {{t+|ml|സ്വാഗതം}}
+* Maltese: {{t|mt|ta' xejn}}, {{t|mt|m'hemmx għalxiex}}, {{t|mt|xi ħaġa żgħira}}, {{t|mt|m'hemmx imniex}}
+* Maori: {{t|mi|e pai ana}}
+* Mongolian:
+*: Cyrillic: {{t+|mn|зүгээр}}
+* Navajo: {{t|nv|aooʼ}}, {{t|nv|lą́ʼąąʼ}}, {{t|nv|tʼááʼáko}}, {{t|nv|hágoshį́į́}}, {{t|nv|bíighah}}
+* Nepali: {{t-needed|ne}}
+* Northern Sami: {{t|se|leage buorre}}
+* Norwegian:
+*: Bokmål: {{t|nb|bare hyggelig|lit=just fine}}, {{t|nb|ingen årsak|lit=no matter}}, {{t|nb|værsågod|lit=be so good}}, {{t|nb|velbekomme}}
+*: Nynorsk: {{t|nn|berre hyggeleg}}, {{t|nn|det var så lite}}, {{t|nn|inga årsak}}, {{t|nn|sjølv takk}}, {{t|nn|ver så god}}, {{t|nn|vel unnt}}
+* Persian: {{qualifier|polite}} {{t+|fa|خواهش می‌کنم|tr=xâheš mi-konam}}, {{t|fa|قابل نداشت|tr=qâbel nadâšt}}, {{t|fa|قابلی نداشت|tr=qâbeli nadâšt}}, {{t|fa|قابلی ندارد|tr=qâbeli nadârad}}, {{qualifier|informal}} {{t|fa|قابل نداره|tr=qâbel nadâre}}
+* Polish: {{t+|pl|proszę|lit=please/I ask}}, {{t|pl|proszę bardzo|lit=please/I ask very much}}, {{t+|pl|nie ma za co|lit=nothing to thank for}}, {{t+|pl|spoko}} {{qualifier|colloquial}}, {{t+|pl|spoczko}} {{qualifier|colloquial}}, {{t|pl|sponio}} {{qualifier|colloquial}}
+* Portuguese: {{t+|pt|de nada}}, {{t+|pt|não há de quê}}, {{t|pt|disponha}}
+* Romani: {{t|rom|na-i sosqe}}
+* Romanian: {{t|ro|cu plăcere|lit=with pleasure}}, {{t|ro|pentru nimic|tr="it was nothing"}}, {{t|ro|nu ai pentru ce}} {{qualifier|when addressing one person informally}}, {{t|ro|nu aveți pentru ce}}  {{qualifier|when addressing more than one person, also used when addressing one person formally}}, {{t|ro|cu drag}}
+* Russian: {{t+|ru|не́ за что}}, {{t+|ru|пожа́луйста}}, {{t+|ru|не сто́ит благода́рности}}, {{t+|ru|на здоро́вье}}
+* Samoan: {{t|sm|fa'afetai}} {{t|sm|fo'i}}
+* Sanskrit: {{t|sa|सुस्वागतम्}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|нема на чему}}, {{t|sh|молити|alt=молим}}
+*: Roman: {{t|sh|nema na čemu}}, {{t+|sh|moliti|alt=molim}}
+* Shan: {{t-needed|shn}}
+* Skolt Sami: {{t|sms|leäkku pue´rr}}
+* Slovak: {{t|sk|nie je za čo}}, {{t|sk|za málo}}, {{t|sk|prosím}}
+* Slovene: {{t|sl|ni za kaj}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|pšosym}}
+* Spanish: {{t+|es|de nada|lit=it’s nothing}}, {{t|es|con mucho gusto}} {{qualifier|Costa Rica}}, {{t|es|no hay porqué}}, {{t+|es|no hay de qué}}
+* Sundanese: {{t|su|sami-sami}}
+* Swahili: {{t+|sw|karibu}}
+* Swedish: {{t+|sv|ingen orsak}}, {{t+|sv|varsågod}}, {{t+|sv|det var så lite}}
+* Tagalog: {{t|tl|walang anuman}} {{qualifier|informal}}, {{t|tl|wala pong anuman}} {{qualifier|formal}}
+* Tamil: {{t|ta|வரவேற்கிறேன்}}
+* Tetum: {{t-needed|tet}}
+* Thai: {{t|th|ไม่เป็นไร|lit=it’s nothing}}
+* Tibetan: {{t-needed|bo}}
+* Tigrinya: {{t|ti|ገንዘብካ}}
+* Tongan: {{t-needed|to}}
+* Turkish: {{t|tr|bir şey değil}}, {{t|tr|önemli değil}}, {{t+|tr|rica ederim}}, {{t|tr|ben teşekkür ederim}}, {{t|tr|seve seve}}
+* Ukrainian: {{t+|uk|будь ла́ска}}, {{t|uk|нема́ за що́}}, {{t|uk|на здорóв'я}}
+* Urdu: {{t|ur|کوئی بات نہیں|tr=koī bat nahī̃}}, {{t|ur|کچھ نہیں|tr=kuch nahī̃}}, {{t|ur|الحمد اللہ|tr=alhamdulillāh}}
+* Uzbek: {{t+|uz|arzimaydi}}, {{t+|uz|marhamat}}, {{t|uz|hech qisi yoʻq}}
+* Vietnamese: {{t|vi|không có gì|lit=it’s nothing}}, {{t|vi|không có chi}}, {{t|vi|đừng ngại}}, {{t|vi|không sao đâu}}, {{t+|vi|không dám}}
+* Walloon: {{t+|wa|gn a rén avou ça}}, {{t+|wa|i n' fåt rén po çoula}}
+* Welsh: {{t|cy|da chi|lit=I pray you}}
+* West Frisian: {{t|fy|graach dien}}
+* White Hmong: {{t-needed|mww}}
+* Yiddish: {{t|yi|נישטאָ פֿאַרוואָס}}, {{t|yi|צו געזונט}}
+* Yoruba: {{t|yo|kò tọ́pẹ́|lit=it's not worthy of thanks}} {{q|most popular}}, {{t|yo|a kì í dúpẹ́ ara ẹni}}, {{t|yo|má dúpẹ́|lit=don't thank me}}
+* Zhuang: {{t|za|gaej guhhek}}
+{{trans-bottom}}
+
+===References===
+<references/>
+
+[[Category:English phrasebook]]
+[[Category:English sentences]]

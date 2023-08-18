@@ -8,22 +8,25 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
-* Extract IPO from wiktionary page
-* Minimal lookup for all parts of speech in German/English
+* "Debug window" for lookups
+* Show indicator that deck has unsaved changes
+* Track unsaved changes
+* Show prompt when app is being closed with unsaved changes
+* Show prompt when deck is being unloaded with unsaved changes
 * Progress bar for lookup in statusbar
 * Immediate search + on/off button
-* Write log file
-* Find proper icons set
 * Highlight current input row and filter overview by it
-* Show prompt when app is being closed with unsaved changes
-* Show indicator that deck has unsaved changes
-* Show prompt when deck is being unloaded with unsaved changes
+* Words lookup by button
 * Settings page
 * Allow setting log verbosity in settings
-* Words lookup by button
+* Write log file
 * Overview table sorting per column
+* Find proper icons set
 * Automated tests for `master`
 * 75% tests coverage
+* Protect `master` branch from merging without tests run
+* Fetch one level of subpages (e.g. `en-woman` article)
+* Fetch one level of derived forms (e.g. `drive` for `driving`)
 
 ### Stable release blockers
 
@@ -34,7 +37,12 @@ All tasks under milestone name should be completed prior to this release.
 * Allow switching search mode from immediate to shortcut
 * Refine UI
 * Full support for German language words lookup
+    * IPA
+    * Meaning notes
 * Full support for English language words lookup
+    * IPA
+    * Meaning notes
+    * Grammar info
 * `stable` branch
 * Automated release version update? Or at least checklist for the new release.
 * Automated tests and releases for `stable`

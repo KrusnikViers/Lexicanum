@@ -1,0 +1,195 @@
+nope
+en
+Original article URL: https://en.wiktionary.org/wiki/nope
+{{also|Nope}}
+==English==
+
+===Etymology 1===
+Representing {{m|en|no}} pronounced with the mouth snapped closed at the end. Compare {{m|en|yep}}, {{m|en|welp}}, {{m|en|ope}}, and {{m|en|yup}}.
+
+====Pronunciation====
+* {{IPA|en|/noʊp/|[noʊp̚]}}
+* {{audio|en|En-au-nope.ogg|Audio (AU)}}
+* {{rhymes|en|əʊp|s=1}}
+
+====Particle====
+{{en-part}}
+
+# {{lb|en|informal|commonly|emphatic}} [[no|No]].
+#* {{quote-book|en|year=1856|author=Sidney George Fisher|author2=Charles Edward Fisher|title=Kanzas and the Constitution|pageurl=http://books.google.com/books?id=FzYPAAAAIAAJ&vid=OCLC05086871&dq=nope&q=nope+date%3A1856-1856&pgis=1|page=97
+|passage="Is my son here, Clarence?" asked Roger Oakley. "'''Nope'''. The whistle ain't blowed yet."}}
+#* {{quote-book|en|year=1880|author=R. Foli|title=Ill weeds|pageurl=http://books.google.com/books?id=APMBAAAAQAAJ&vid=0bKNauNGn8H-hgNW&dq=nope&q=nope+date%3A1880-1880&pgis=1|page=319|passage="No," from Tom, ending the word with so decided a pressure of the lips that it sounded like "'''nope'''."}}
+#* {{quote-text|en|year=1890|title=Werner's Readings and Recitations|publisher=E.S. Werner|pageurl=http://books.google.com/books?id=HWPK9I3ps0cC&vid=OCLC35453526&dq=nope&q=nope+date%3A1890-1890&pgis=1|page=50
+|passage=“Aunt Kat? And was Aunt Kat your only relation? Have you no father nor mother?” “'''Nope'''. Never had none ‘cept Aunt Kat. Her hull name was Katrina. She wuz Dutch she wuz."}}
+#* {{quote-journal|en|year=c. 1930|publisher=Detroit (Michigan) Board of Education|work=The Detroit Educational Bulletin|pageurl=http://books.google.com/books?vid=0oBmZzL0BOTGILj945&id=2Ix4fXu2rAkC&q=nope+%22Indian+grunt%22&dq=nope+%22Indian+grunt%22&num=100&pgis=1|page=13|passage=1: I will not dishonour my country's speech by leaving off the last syllables of words, 2: I will say a good American "yes" and "no" in place of an Indian grunt "um-hum" and "nup-um" or a foreign "ya" or "yeh" and "'''nope'''"{{...}}}}
+#* {{quote-book|en|year=2006|author=Charlotte Hudson Ewing|title=Red Land|publisher=AuthorHouse|isbn=1420895184|pageurl=http://books.google.com/books?vid=ISBN1420895184&id=p0WpHOdxmPAC&pg=RA1-PA54&lpg=RA1-PA54&vq=nope&dq=nope&sig=vYuK0fJAS-h9J4s-T_hrlnKRxh8|page=54|passage='''Nope'''. Don't know as I do.}}
+
+=====Usage notes=====
+The usage as a reply in the form of a single-word sentence has, since the 1850s, been far more common than any others.
+
+=====Antonyms=====
+* {{l|en|yup}}
+* {{l|en|yep}}
+* {{l|en|yeah}}
+
+=====Derived terms=====
+* {{l|en|nope rope}}
+
+=====Descendants=====
+* {{desc|it|nop|bor=1}}
+* {{desc|pt|nop|bor=1}}
+* {{desc|es|nop|bor=1}}
+
+=====Translations=====
+{{trans-top|informal "no"}}
+* Chinese:
+*: Mandarin: {{t|cmn|不啊|tr=bù a}}, {{t|cmn|不是啊|tr=búshì a}}
+* Dutch: {{t+|nl|neu}}
+* Finnish: {{t+|fi|ei}}
+* French: {{t+|fr|bah}}
+* German: {{t+|de|nee}}, {{t+|de|nö}}
+* Hindi: {{t+|hi|नहीं|sc=Deva}}
+* Icelandic: {{t|is|neibb}}
+* Indonesian: {{t+|id|enggak}}
+* Italian: {{t+|it|no}}
+* Japanese: {{t+|ja|いや|tr=iya}}, {{t+|ja|ううん|tr=uun}}, {{t+|ja|違う|tr=ちがう, chigau}}
+* Korean: {{t+|ko|아니}}
+* Persian: {{t+|fa|نه|tr=na}}
+* Portuguese: {{t+|pt|nem}}
+* Romanian: {{t+|ro|nu}}
+* Russian: {{t+|ru|не́-а}}
+* Spanish: {{t+|es|nop}}, {{t|es|no po}} {{qualifier|Chile}}, {{t+|es|nel}} {{qualifier|slang, Mexico}}
+* Swedish: {{t|sv|nepp}}
+* Turkish: {{t+|tr|yo}}
+{{trans-bottom}}
+
+====Noun====
+{{en-noun}}
+
+# {{lb|en|informal}} A [[negative]] reply, no.
+#: {{ux|en|I'll take that as a '''nope''', then.}}
+#* '''1981''', Tom Higgins, ''Practice quick...and swim'', read in ''Dale Earnhardt: Rear View Mirror'', Sports Publishing LLC, {{ISBN|1582614288}} (2001), [http://books.google.com/books?vid=ISBN1582614288&id=ldNYIIt4I4AC&pg=PA32&lpg=PA32&vq=nopes&dq=nopes&sig=9stKPCvnVjAHCVFsC6IgSDZpTJc p. 32]
+#*: By one reporter's count, questions about the change elicited seven shakes of the head indicating no comment, five "yeps" and three "'''nopes'''" from Earnhardt.
+# {{lb|en|slang}} An intensely undesirable thing, such as a circumstance or an animal, eliciting immediate repulsion without possibility of further consideration.
+#* '''2016''', Sam Plank, ''This Cemetery With A Haunted Playground Is A Casket Full Of Nope'', Movie Pilot, [https://web.archive.org/web/20160731215210/http://moviepilot.com/posts/4016375]
+#*: This cemetery with a haunted playground is a casket full of '''nope'''.
+
+=====Derived terms=====
+* {{l|en|nope out}}
+* {{l|en|Nopeville}}
+
+=====Translations=====
+{{trans-top|informal "no"}}
+* Finnish: {{t+|fi|ei}}
+* Swedish: {{t|sv|nepp}}
+* Turkish: {{t+|tr|hayır}}
+{{trans-bottom}}
+
+===Etymology 2===
+Probably a rebracketing of ''an [[ope]]'' (see 1823 quote), from ''[[alp]]''.
+
+====Pronunciation====
+* {{IPA|en|/nəʊp/}}
+* {{rhymes|en|əʊp|s=1}}
+
+====Noun====
+{{en-noun}}
+
+# {{lb|en|archaic|except near|_|Staffordshire}} A [[bullfinch]].
+#* '''1613''', Michael Drayton, ''Poly-Olbion'', read in ''The Complete Works of Michael Drayton, Now First Collected. With Introductions and Notes by Richard Hooper. Volume 2. Poly-olbion'' Elibron Classics (2005) [facsimile of John Russell Smith (1876 ed)], [http://books.google.com/books?vid=ISBN1402165609&id=Qq6yx8WWuykC&pg=RA3-PA146&lpg=RA3-PA146&vq=nope+inauthor:Michael+inauthor:Drayton&dq=nope+inauthor:Michael+inauthor:Drayton&sig=CIc0cZHG_R6MXCKO5O1pAc4d8Vo p. 146],
+#*: To Philomell the next, the Linnet we prefer;/And by that warbling bird, the Wood-Lark place we then, /The Reed-sparrow, the '''Nope''', the Red-breast, and the Wren, /The Yellow-pate: which though she hurt the blooming tree, /Yet scarce hath any bird a finer pipe than she.
+#* '''1823''', Edward Moor, ''Suffolk Words and Phrases: or, An attempt to collect the lingual localisms of that county'', R. Hunter, [http://books.google.com/books?id=sccRAAAAIAAJ&vid=OCLC04740469&dq=nope&pg=PA255&lpg=PA255&q=nope p. 255]
+#*: I may note that ''olp'', if pronounced ''ope'', as it sometimes is, may be the origin of '''''nope'''''; ''an ope'', and ''a '''nope''''', differ as little as possible.
+#* {{quote-book|en|year=1836|author=David Booth|title=An Analytical Dictionary of the English Language, in which the Words are Explained in the Order of Their Natural Affinity, Independent of Alphabetical Arrangement|pageurl=http://books.google.com/books?vid=OCLC14875508&id=Wwi5sUW6R18C&pg=PA380&lpg=PA380&dq=nope+inauthor:David+inauthor:Booth&num=100|page=380
+|passage=In Natural History, 'An Eye of Pheasants' was also 'A Nye of Pheasants', and even the human Eye was written a Nye. The Bulfinch was either a '''Nope''', or an Ope ; the common Lizard, or Eft (Old English Evet) is also the Newt; the Water-Eft is the Water-Newt ; and the Saxon ''nedder'', a serpent (probably allied to Nether, as crawling on the ground) has been transformed into an Adder.}}
+#* {{quote-book|en|year=1882|author=Abram Smythe Palmer|title=Folk-etymology: A Dictionary of Verbal Corruptions Or Words Perverted in Form Or Meaning|publisher=G. Bell and Sons|pageurl=http://books.google.com/books?id=zcACAAAAIAAJ&vid=OCLC02766746&dq=nope&q=nope+date%3A1882-1882&pgis=1|page=583
+|passage='''Nope''', an old name for the bullfinch used by Drayton (Wright), is a corrupt form for an ope, otherwise spelt aupe, olp, or alpe (Prompt.Parv.).}}
+
+=====Quotations=====
+* {{seeCites|en}}
+
+===Etymology 3===
+Possibly influenced by [[nape]] and [[knap]].
+
+====Pronunciation====
+* {{IPA|en|/nəʊp/}}
+
+====Noun====
+{{en-noun}}
+
+# {{lb|en|East Midlands|and|Northern England}} A [[blow]] to the [[head]].
+#* {{quote-book|en|year=1823|author=Francis Grose|author2=Pierce Egan|title=Grose's Classical Dictionary of the Vulgar Tongue|publisher=Francis Grose|pageurl=http://books.google.com/books?vid=OCLC11870520&id=LXMKAAAAIAAJ&pg=PR91&vq=nope&dq=nope&num=100|page=xci
+|passage=(''in an example of use of ''crackmans) The cull thought to have loped by breaking through the crackmans, but we fetched him back by a '''nope''' on the costard, which stopped his jaw.}}
+#* {{quote-book|en|year=1829|author=Joseph Hunter|title=The Hallamshire Glossary|publisher=W. Pickering|pageurl=http://books.google.com/books?id=87tY7YWWwhgC&vid=OCLC04900790&dq=nope&pg=PA69&lpg=PA69&q=nope|page=69
+|passage=I'll fetch thee a '''nope'''.}}
+
+====Verb====
+{{en-verb}}
+
+# {{lb|en|archaic|East Midlands|and|Northern England}} To [[hit]] someone on the [[head]].
+#* {{quote-book|en|year=1851|author=Sylvester Judd|title=Margaret: a tale of the real and the ideal, blight and bloom|publisher=Phillips, Sampson, & Co.|pageurl=http://books.google.com/books?id=mu6MfIsJP-sC&vid=OCLC08025838&dq=nope&pg=PA183&lpg=PA183&q=nope|page=183
+|passage="'''Nope''' him on the costard," said Ben Bolter.}}
+#* {{quote-book|en|year=1891|author=T F Thiselton Dyer|title=Church-lore Gleanings|publisher=A. D. Innes & co.|pageurl=http://books.google.com/books?id=NFjeJOXjp7IC&vid=OCLC03390179&dq=nope&q=nope+date%3A0-1900&pgis=1|page=65
+|passage=The sexton seemed reluctant to resume his old duties, remarking -- "Be I to '''nope''' Mr. M on the head if I catches him asleep?"}}
+
+===Anagrams===
+* {{anagrams|en|a=enop|open|peno-|peon|pone}}
+
+[[Category:English rebracketings]]
+[[Category:en:True finches]]
+
+==Dutch==
+
+===Etymology 1===
+
+====Pronunciation====
+* {{audio|nl|Nl-nope.ogg|Audio}}
+* {{hyphenation|nl|no|pe}}
+
+====Verb====
+{{head|nl|verb form}}
+
+# {{infl of|nl|nopen||s|pres|sub}}
+
+===Etymology 2===
+
+====Pronunciation====
+* {{audio|nl|Nl-nope1.ogg|Audio}}
+* {{hyphenation|nl|nope}}
+
+====Interjection====
+{{head|nl|interjection}}
+
+# {{lb|nl|informal}} [[#English|nope]]
+
+===Anagrams===
+* {{l|nl|open}}
+
+[[Category:Dutch heteronyms]]
+
+==French==
+
+===Alternative forms===
+* {{alt|fr|noppe}}
+
+===Pronunciation===
+* {{fr-IPA}}
+
+===Etymology 1===
+{{bor+|fr|dum|noppe||a fluff of wool, wool tassel}}, from {{der|fr|odt|*noppo}}, {{m|odt|*hnoppo}}, from {{der|fr|gem-pro|*hnuppô||nap of cloth}}, from {{der|fr|ine-pro|*knew-}}, {{m|ine-pro|*kenw-||to scratch, scrape, rub}}. Cognate with {{cog|ang|hnoppa||nap of cloth}}. More at {{m|en|nap}}.
+
+====Noun====
+{{fr-noun|f}}
+
+# a [[tuft]] of wool; a [[knot]] in a fabric; [[nap]]
+
+===Etymology 2===
+{{bor+|fr|en|nope}}.
+
+====Interjection====
+{{fr-intj}}
+
+# {{lb|fr|informal|neologism}} {{l|en|nope}}
+
+===Further reading===
+* {{R:fr:TLFi}}

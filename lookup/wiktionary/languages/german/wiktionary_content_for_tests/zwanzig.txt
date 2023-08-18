@@ -1,0 +1,160 @@
+zwanzig
+de
+Original article URL: https://de.wiktionary.org/wiki/zwanzig
+{{Siehe auch|[[Zwanzig]]}}
+== zwanzig ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Numerale|Deutsch}} ===
+
+{{Nicht mehr gültige Schreibweisen}}
+:[[zwantzig]], [[zweinzig]], [[zweintzig]], [[zweynzig]], [[zweyntzig]], [[zwainzig]], [[zwaintzig]], [[zwayntzig]]
+
+{{Worttrennung}}
+:zwan·zig
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈt͡svant͡sɪç}}, {{Lautschrift|ˈt͡svant͡sɪk}}
+:{{Hörbeispiele}} {{Audio|De-zwanzig.ogg}}, {{Audio|De-zwanzig2.ogg}}, {{Audio|De-zwanzig3.ogg}}
+:{{Reime}} {{Reim|ant͡sɪç|Deutsch}}
+
+{{Bedeutungen}}
+:[1] die [[Kardinalzahl]] zwischen [[neunzehn]] und [[einundzwanzig]]; siehe auch [[zehn]] und [[dreißig]]
+:[2] ''kurz für:'' zwanzig [[Jahr]]e ([[alt]])
+
+{{Symbole}}
+:[1] Arabische Ziffern für zwanzig: '''٢٠'''
+:[1] Chinesische Ziffern für zwanzig: 二十, ''fälschungssicher:'' 貳拾, ''Suzhou::'' 〢十
+:[1] Europäische Ziffern für zwanzig: 20
+:[1] Römische Ziffern für zwanzig: XX
+
+{{Herkunft}}
+:[[mittelhochdeutsch]]: ''zweinzig,'' [[althochdeutsch]]: ''zweinzig, zweinzug'', zusammengesetzt aus ''zwein'' (siehe [[zwo]]) und [[-zig]]
+
+{{Synonyme}}
+:[2] ''mit zwanzig:'' [[zwanzigjährig]]
+
+{{Beispiele}}
+:[1] Die Münzen zu ''zwanzig'' Cent waren für die Deutschen neu.
+:[1] ''antiquiert:'' Es waren aber ihrer ''zwanzige.''
+:[1] „Dann forderte er die Runde zur Totenehrung auf. […] Also: Zigarren ablegen, Hände vorm Geschlechtsteil falten – Augen schließen und bis ''zwanzig'' zählen.“<ref>{{Literatur | Autor=[[w:Walter Kempowski|Walter Kempowski]]|Titel=Heile Welt|Auflage=4.|Verlag=btb-Verlag ((c): Albrecht-Knaus-Verlag)|Jahr=2000. ((c): 1998)|ISBN=3-442-72650-6|Seiten=229}}, Kapitel 25</ref>
+:[2] Dafür, dass er erst ''zwanzig'' ist, wirkt er schon sehr reif.
+
+{{Charakteristische Wortkombinationen}}
+:[1] zu ''zwanzig''
+:[1] ''Zwanzig'' vor zehn
+:[2] [[mit]] ''zwanzig''
+
+{{Wortbildungen}}
+:[[Endzwanziger]], [[Mittzwanziger]], [[Zwanzigeck]], [[Zwanziger]], [[Zwanzigersystem]], [[zwanzigfach]], [[zwanzigmal]], der [[zwanzigste]], [[Zwanzigstel]]
+:[[einundzwanzig]], [[zweiundzwanzig]], [[dreiundzwanzig]], [[vierundzwanzig]], [[fünfundzwanzig]], [[sechsundzwanzig]], [[siebenundzwanzig]], [[neunundzwanzig]], [[hundertzwanzig]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=die Kardinalzahl zwischen neunzehn und einundzwanzig; siehe auch zehn und dreißig|Ü-Liste=
+*{{sq}}: {{Ü|sq|njëzet}}
+*{{grc}}: {{Üt|grc|εἴκοσι}}, {{Üt|grc|εἴκοσιν}}
+*{{ar}}: {{Üt|ar|عشرين|ʿišrīn}}, {{Üt|ar|عشرون|ʿišrūn, ٢٠}}
+*{{eu}}: {{Ü|eu|hogei}}
+*{{br}}: {{Ü|br|ugent}}
+*{{bg}}: {{Üt|bg|двадесет}}, {{Üt|bg|двайсет}}
+*{{zh}}: {{Üt|zh|二十|èrshí}}
+*{{da}}: {{Ü|da|tyve}}
+*{{en}}: {{Ü|en|twenty}}
+*{{eo}}: {{Ü|eo|dudek}}
+*{{et}}: {{Ü|et|kakskümmend}}
+*{{fo}}: {{Ü|fo|tjúgu}}
+*{{fi}}: {{Ü|fi|kaksikymmentä}}
+*{{fr}}: {{Ü|fr|vingt}}
+*{{ff}}: {{Ü|ff|noogay}}
+*{{gl}}: {{Ü|gl|vinte}}
+*{{el}}: {{Üt|el|είκοσι|íkosi}}
+*{{hi}}: {{Üt|hi|बीस|bīs, २०}}
+*{{io}}: {{Ü|io|duadek}}
+*{{id}}: {{Ü|id|dua puluh}}
+*{{ia}}: {{Ü|ia|vinti}}
+*{{ga}}: {{Ü|ga|fiche}}
+*{{is}}: {{Ü|is|tuttugu}}
+*{{it}}: {{Ü|it|venti}}
+*{{ja}}: {{Üt|ja|二十|にじゅう, nijū}}
+*{{ca}}: {{Ü|ca|vint}}
+*{{ko}}: {{Üt|ko|이십|isip}}, {{Üt|ko|스물|seumul}}
+*{{kw}}: {{Ü|kw|ugens}}
+*{{co}}: {{Ü|co|vinti}}
+*{{hr}}: {{Ü|hr|dvadeset}}
+*{{ku}}:
+**{{kmr}}: {{Ü|kmr|bîst}}
+*{{lo}}: {{Ü|lo|ຊາວ}}
+*{{la}}: {{Ü|la|viginti}}
+*{{lv}}: {{Ü|lv|divdesmit}}
+*{{lt}}: {{Ü|lt|dvidešimt}}
+*{{lb}}: {{Ü|lb|zwanzeg}}
+*{{mt}}: {{Ü|mt|għoxrin}}
+*{{mnc}}: {{Ü|mnc|ᠣᡵᡳᠨ}}
+*{{gv}}: {{Ü|gv|feed}}
+*{{arn}}: {{Ü|arn|epu mari}}
+*{{nah}}:
+**{{nci}}: {{Ü|nci|cēmpōhualli}}
+*{{na}}: {{Ü|na|anarama}}
+*{{nds}}: ''Niedersächsisch:'' {{Ü|nds|twintig}}
+*{{nl}}: {{Ü|nl|twintig}}
+*{{se}}: {{Ü|se|guoktelogi}}
+*{{no}}:
+**{{nb}}: {{Ü|nb|tjue}}
+**{{nn}}: {{Ü|nn|tjue}}
+*{{oc}}: {{Ü|oc|vint}}
+*{{pa}}: {{Üt|pa|ਵੀਹ|vīh}}
+*{{pl}}: {{Ü|pl|dwadzieścia}}
+*{{pt}}: {{Ü|pt|vinte}}
+*{{rm}}: {{Ü|rm|ventg}}
+*{{ro}}: {{Ü|ro|douăzeci}}
+*{{ru}}: {{Üt|ru|двадцать}}
+*{{sc}}: {{Ü|sc|binti}}
+*{{gd}}: {{Ü|gd|fichead}}
+*{{sv}}: {{Ü|sv|tjugo}}
+*{{sk}}: {{Ü|sk|dvadsať}}
+*{{sl}}: {{Ü|sl|dvajset}}
+*{{wen}}:
+**{{dsb}}: {{Ü?|dsb|dwaźasća}}
+**{{hsb}}: {{Ü?|hsb|dwaceći}}
+*{{es}}: {{Ü|es|veinte}}
+*{{tet}}: {{Ü|tet|ruanulu}}
+*{{th}}: {{Üt|th|ยี่สิบ|jîi sìp, ๒๐}}
+*{{tpi}}: {{Ü|tpi|tupela ten}}, {{Ü|tpi|twenti}}
+*{{cs}}: {{Ü|cs|dvacet}}
+*{{tr}}: {{Ü|tr|yirmi}}
+*{{uk}}: {{Üt|uk|двадцять|}}
+*{{hu}}: {{Ü|hu|húsz}}
+*{{cy}}: {{Ü|cy|ugain}}
+*{{wa}}: {{Ü|wa|vint}}
+*{{fy}}: {{Ü|fy|tweintich}}
+}}
+
+{{Ü-Tabelle|2|G=kurz für: zwanzig Jahre (alt)|Ü-Liste=
+*{{zh-tw}}: {{Üt|zh|二十歲|èrshí suì}}
+*{{zh-cn}}: {{Üt|zh|二十岁|èrshí suì}}
+*{{en}}: {{Ü|en|twenty}}
+*{{fr}}: {{Ü|fr|vingt}}
+*{{it}}: {{Ü|it|venti}}
+*{{ja}}: {{Üt|ja|二十才|}}, {{Üt|ja|二十歳|はたち, hatachi}}
+*{{ca}}: {{Ü|ca|vint}}
+*{{nds}}: ''Niedersächsisch:'' {{Ü|nds|twintig}}
+*{{nl}}: {{Ü|nl|twintig}}
+*{{pt}}: {{Ü|pt|vinte}}
+*{{sv}}: {{Ü|sv|tjugo}}
+*{{es}}: {{Ü|es|veinte}}
+*{{cs}}: {{Ü|cs|dvacet}}
+*{{hu}}: {{Ü|hu|húsz}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1] {{Wikipedia|Zahlen in unterschiedlichen Sprachen}}
+:[1] {{Ref-Grimm}}
+:[1, 2] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+:[1] {{Ref-FreeDictionary}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[ranzig]], [[winzig]]}}
+
+{{Kardinalzahlen (Deutsch)}}
+[[Kategorie:Kardinalzahl (Deutsch)]]

@@ -1,0 +1,143 @@
+Gemüse
+de
+Original article URL: https://de.wiktionary.org/wiki/Gemüse
+== Gemüse ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Gemüse
+|Nominativ Plural=Gemüse
+|Genitiv Singular=Gemüses
+|Genitiv Plural=Gemüse
+|Dativ Singular=Gemüse
+|Dativ Plural=Gemüsen
+|Akkusativ Singular=Gemüse
+|Akkusativ Plural=Gemüse
+|Bild=0402071705.jpg|mini|1|''Gemüse''
+}}
+
+{{Worttrennung}}
+:Ge·mü·se, {{Pl.}} Ge·mü·se
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ɡəˈmyːzə}}
+:{{Hörbeispiele}} {{Audio|De-Gemüse.ogg}}, {{Audio|De-Gemüse2.ogg}}, {{Audio|De-at-Gemüse.ogg|spr=at}}
+:{{Reime}} {{Reim|yːzə|Deutsch}}
+
+{{Bedeutungen}}
+:[1] [[essbar]]e [[Pflanzenteil]]e [[einjährig|ein-]] bis [[zweijährig]]er Pflanzen
+:[2] Gericht aus Gemüse, Gemüsegericht
+
+{{Herkunft}}
+:[[mittelhochdeutsch]] ''{{Ü|gmh|gemüese}}'' für ''[[Brei]]'', Sammelbegriff zu ''[[Mus]]'',<ref>{{Ref-Duden|Gemüse}}</ref> belegt seit dem 15. Jahrhundert<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „Gemüse“, Seite 344.</ref>
+
+{{Synonyme}}
+:[1] [[Grünzeug]], [[Vegetabilien]]
+
+{{Sinnverwandte Wörter}}
+:[1] [[Feldfrucht]]
+
+{{Gegenwörter}}
+:[1] [[Obst]]
+
+{{Oberbegriffe}}
+:[1] [[Lebensmittel]], [[Nahrungsmittel]]
+:[1] [[Lebewesen]], [[Pflanze]], [[Pflanzenteil]]
+
+{{Unterbegriffe}}
+:[1] [[Biogemüse]], [[Blattgemüse]], [[Büchsengemüse]], [[Dörrgemüse]], [[Dosengemüse]], [[Edelgemüse]], [[Frostgemüse]], [[Frischgemüse]], [[Hülsenfrucht]], [[Konservengemüse]], [[Massengemüse]], [[Mischgemüse]], [[Porreegemüse]], [[Rostgemüse]], [[Röstgemüse]], [[Rübengemüse]], [[Stangengemüse]], [[Suppengemüse]], [[Wildgemüse]], [[Wurzelgemüse]]
+:[1] [[Artischocke]], [[Aubergine]], [[Avocado]], [[Blaukraut]], [[Blumenkohl]], [[Bohne]], [[Brokkoli]], [[Champignon]], [[Chicorée]], [[Chinakohl]], [[Endivie]], [[Erbse]], [[Feldsalat]], [[Fenchel]], [[Grünkohl]], [[Gurke]], [[Karotte]], [[Kartoffel]], [[Kohlrabi]], [[Knollensellerie]], [[Kohlrübe]], [[Kürbis]], [[Knoblauch]], [[Lauch]], [[Linse]], [[Mais]], [[Mangold]], [[Möhre]], [[Paprika]], [[Pastinake]], [[Porree]], [[Rosenkohl]], [[Rote Bete]], [[Rotkohl]], [[Rotkraut]], [[Salat]], [[Sauerkohl]], [[Sauerkraut]], [[Sellerie]], [[Spargel]], [[Tomate]], [[Topinambur]], [[Weißkohl]], [[Weißkraut]], [[Wirsing]], [[Zucchini]], [[Zwiebel]]
+
+{{Beispiele}}
+:[1] Obst und ''Gemüse'' enthalten viele Vitamine.
+:[1] „Darin wurde vor allem Sauerampfer angebaut, der früher als Salat, ''Gemüse'' und Heilpflanze von großer Bedeutung war.“<ref>{{Literatur | Autor= Jörg-Thomas Titz | Titel= InselTrip Färöer |TitelErg= | Auflage=  |Verlag= Reise Know-How Verlag Peter Rump| Ort= Bielefeld| Jahr= 2017 | ISBN=978-3-8317-2904-3 | Seiten=47.}}</ref>
+:[1] „In einer wurde ''Gemüse'' feilgeboten, in einer anderen Milchtee und altbackene Brötchen für die Schulkinder.“<ref>{{Literatur | Autor= Paul Theroux | Titel= Ein letztes Mal in Afrika|TitelErg= | Auflage= |Verlag= Hoffmann und Campe| Ort= Hamburg| Jahr= 2017 | ISBN= 978-3-455-40526-2 | Seiten= 145.}} Originalausgabe: Englisch 2013.</ref>
+:[1] „Auf dem weitläufigen, farbenfreudigen Markt gab es alles: von ''Gemüse'' und Gewürzen, die auf dem Boden aufgehäuft waren, bis zu Handys und Imitationen von Designer-Sonnenbrillen.“<ref>{{Literatur| Autor= Lois Pryce | Titel= Mit 80 Schutzengeln durch Afrika | TitelErg= Die verrückteste, halsbrecherischste, schrecklich-schönste Reise meines Lebens| Auflage=  |Übersetzer= Anja Fülle, Jérôme Mermod| Verlag= DuMont Reiseverlag |Ort= Ostfildern |Jahr= 2018 |  ISBN= 978-3-7701-6687-9 |Seiten= 69.}} Englisches Original 2009.</ref>
+:[1] „Viel schlimmer als mit Obst und ''Gemüse'' steht es mit dem Fleisch, mit Fett und mit Eiern.“<ref>{{Literatur | Autor=Christian Graf von Krockow | Titel=Die Stunde der Frauen |TitelErg=Bericht Pommern 1944 bis 1947. Nach einer Erzählung von Libussa Fritz-Krockow | Auflage= 11.|Verlag=Deutsche Verlags-Anstalt | Ort=Stuttgart/München | Jahr=2000 | ISBN=3-421-06396-6}}, Seite 133. Erstauflage 1988.</ref>
+
+{{Redewendungen}}
+:[[junges Gemüse|junges ''Gemüse'']]
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''Gemüse'' [[anbauen]], [[andicken]], [[andünsten]], [[anpflanzen]], [[dünsten]], [[einlegen]], [[ernten]], [[essen]], [[feilbieten]], [[kochen]], [[pflanzen]], [[putzen]], [[schmoren]], [[schneiden]], [[schnippeln]], [[trocknen]], [[vergären]], [[waschen]], [[zerkleinern]], [[zerkochen]], [[zubereiten]], [[züchten]]
+:[1] [[asiatisch]]es, [[bissfest]]es, [[bunt]]es, [[chinesisch]]es, [[erntefrisch]]es, [[frisch]]es, [[gartenfrisch]]es, [[mischen|gemischtes]], [[genverändert]]es, [[gesund]]es, [[gezüchtet]]es, [[grün]]es, [[heimisch]]es, [[jung]]es, [[knackig]]es, [[küchenfertig]]es, [[marktfrisch]]es, [[ökologisches]], [[roh]]es, [[selbstangebaut]]es, [[selbstgezogen]]es, [[welk]]es ''Gemüse''
+
+{{Wortbildungen}}
+:[[Gemüseanbau]], [[Gemüseauto]], [[Gemüsebauer]], [[Gemüsebeet]], [[Gemüsebrei]], [[Gemüsecremesuppe]], [[Gemüseeintopf]], [[Gemüsefach]], [[Gemüsefeld]], [[Gemüsegarten]], [[Gemüsegärtner]], [[Gemüsegeschäft]], [[Gemüsehandel]], [[Gemüsehändler]], [[Gemüsehandlung]], [[Gemüsehobel]], [[Gemüsekaltschale]], [[Gemüsekonserve]], [[Gemüsekorb]], [[Gemüsekultur]], [[Gemüseladen]], [[Gemüselasagne]]/[[Gemüse-Lasagne]], [[Gemüsepfanne]], [[Gemüsepflanze]], [[Gemüseplatte]], [[Gemüsereis]], [[Gemüseschüssel]], [[Gemüsesorte]], [[Gemüseteller]], [[Gemüsesaft]], [[Gemüsestand]], [[Gemüsesülze]], [[Gemüsesuppe]], [[Gemüsetopf]], [[Gemüsezubereitung]], [[Gemüsezwiebel]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=essbare Pflanzenteile ein- bis zweijähriger Pflanzen|Ü-Liste=
+*{{sq}}: {{Ü|sq|perime}} {{f}}
+*{{ar|DMG}}: {{Üt|ar|خضروات|ḫaḍrāwāt}} {{f}}
+*{{hy}}: {{Üt|hy|բանջար|bandschar}}
+*{{eu}}: {{Ü|eu|barazki}}, {{Ü|eu|landare}}, ''[[Hülsenfrucht]] →'' {{Ü|eu|lekazi}}
+*{{zh}}: {{Üt|zh|蔬菜|shūcài}}
+*{{da}}: {{Ü|da|grøntsag}}
+*{{en}}: {{Ü|en|vegetable}}, {{Ü|en|vegetables}}
+*{{eo}}: {{Ü|eo|legomo}}
+*{{et}}: {{Ü|et|köögivili}}
+*{{fo}}: {{Ü|fo|grønmeti}} {{n}}, {{Ü|fo|kál}} {{n}} ''Pl''
+*{{fi}}: {{Ü|fi|vihannes}}
+*{{fr}}: {{Ü|fr|légume}} {{m}}
+*{{gl}}: {{Ü|gl|verdura}} {{f}}, {{Ü|gl|hortaliza}} {{f}}
+*{{ka}}: {{Üt|ka|ბოსტნეული|bost'neuli}}
+*{{el}}: {{Üt|el|λαχανικό|lachanikó}} {{n}}, {{Üt|el|λαχανικά|lachaniká}} {{nPl.}}
+*{{kl}}: {{Ü|kl|naatitaq}}
+*{{ha}}: {{Ü|ha|kayan lambu}}
+*{{io}}: {{Ü|io|legumo}}
+*{{id}}: {{Ü|id|sayur}}/ [[sayur-mayur]]
+*{{ia}}: {{Ü|ia|verdura}}
+*{{is}}: {{Ü|is|grænmeti}} {{n}}
+*{{it}}: {{Ü|it|verdura}} {{f}}
+*{{ja}}: {{Üt|ja|野菜|やさい, yasai}}, {{Üt|ja|青物|あおもの, aomono}}
+*{{ca}}: {{Ü|ca|verdura}} {{f}}
+*{{ko}}: ''[[südkoreanisch]]:'' {{Üt|ko|야채|野菜, yachae}}, ''[[nordkoreanisch]]:'' {{Üt|ko|남새|namsae}}
+*{{hr}}: {{Ü|hr|povrće}} {{n}}
+*{{la}}: {{Ü|la|olus}} {{n}}, {{Ü|la|holus}} {{n}}
+*{{lv}}: {{Ü|lv|dārzenis}} {{m}}
+*{{lt}}: {{Ü|lt|daržovė}} {{f}}
+*{{mk}}: {{Üt|mk|зеленчук}} {{m}}
+*{{nds}}: {{Ü|nds|Grööntüüch}} {{n}}, {{Ü|nds|Gröönsaken}} (Plural), {{Ü|nds|Gröönwoorn}} (Plural)
+*{{nl}}: {{Ü|nl|groente}} {{f}}
+*{{se}}: {{Ü|se|ruonas}}
+*{{no}}: {{Ü|no|grønnsak}} {{m}}
+*{{pap}}: {{Ü|pap|berdura}}
+*{{pl}}: {{Ü|pl|warzywo}} {{n}}
+*{{pt}}: {{Ü|pt|hortaliça}} {{f}}, {{Ü|pt|verdura}} {{f}}, {{Ü|pt|legume}} {{m}}
+*{{ro}}: {{Ü|ro|legumă}} {{f}}, {{Ü|ro|vegetală}} {{f}}
+*{{ru}}: {{Üt|ru|овощ}} {{m}}, {{Üt|ru|зелень}} {{f}}
+*{{sv}}: {{Ü|sv|grönsak}}
+*{{sr}}: {{Üt|sr|поврће|povrće}} {{n}}
+*{{es}}: {{Ü|es|verdura}} {{f}}, {{Ü|es|legumbre}} {{m}}, {{Ü|es|vegetal}} {{m}}
+*{{tet}}: {{Ü|tet|modo}}
+*{{cs}}: {{Ü|cs|zelenina}} {{f}}
+*{{tr}}: {{Ü|tr|sebze}}, {{Ü|tr|zerzevat}} ({{va.}})
+*{{hu}}: {{Ü|hu|zöldség}}
+*{{vi}}: {{Ü|vi|rau}}
+*{{cy}}: {{Ü|cy|llysieuyn}}
+|Dialekttabelle=
+*{{bar}}: [1] [[Gmias]], [[Greazeig]]
+*Berlinisch: [1] [[Jemüse]]
+}}
+
+{{Ü-Tabelle|2|G=Gericht aus Gemüse, Gemüsegericht|Ü-Liste=
+*{{en}}: {{Ü|en|}}
+*{{fr}}: {{Ü|fr|}}
+|Dialekttabelle=
+*{{bar}}: [1] [[Gmias]], [[Greazeig]]
+*Berlinisch: [1] [[Jemüse]]
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia}}
+:[1, 2] {{Ref-Grimm}}
+:[1, 2] {{Ref-DWDS}}
+:[1] {{Ref-UniLeipzig}}
+:[1] {{Ref-Duden}}
+:[1] {{Ref-Adelung}}
+:[1, 2] {{Ref-Goethe}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[Gemüte]]}}

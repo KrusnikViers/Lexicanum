@@ -1,0 +1,248 @@
+schwer
+de
+Original article URL: https://de.wiktionary.org/wiki/schwer
+== schwer ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Adjektiv|Deutsch}} ===
+
+{{Deutsch Adjektiv Übersicht
+|Positiv=schwer
+|Komparativ=schwerer
+|Superlativ=schwersten
+}}
+
+{{Worttrennung}}
+:schwer, {{Komp.}} schwe·rer, {{Sup.}} am schwers·ten
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʃveːɐ̯}}
+:{{Hörbeispiele}} {{Audio|De-schwer.ogg}}, {{Audio|De-schwer2.ogg}}, {{Audio|De-at-schwer.ogg|spr=at}}
+:{{Reime}} {{Reim|eːɐ̯|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ein hohes Gewicht habend
+:[2] Eigenschaft von etwas, das nur mit großem Wissen, großen Fähigkeiten ausgeführt werden kann
+:[3] von großen Mühen und Entbehrungen gekennzeichnet
+:[4] stark ausgeprägt ''(von negativen Dingen)''
+:[5] {{K|Weinsprache}} ein körperreicher, wenig differenzierter Wein, der jegliche Feinheit vermissen lässt<ref>Definition nach {{Lit-Schoonmaker: Wein-Lexikon}}, Seite 207, Eintrag „schwer“</ref>
+
+{{Herkunft}}
+:mittelhochdeutsch ''swāre'', ''swære'', althochdeutsch ''swāri'', germanisch *''swǣra'' „schwer, gewichtig“, belegt seit dem 8. Jahrhundert<ref>{{Lit-Kluge: Etymologisches Wörterbuch|A=24}}, Stichwort: „schwer“, Seite 834.</ref>
+
+{{Synonyme}}
+:[2] [[diffizil]], [[kompliziert]], [[schwerlich]], {{ugs.|:}} [[schwierig]]
+:[3] [[hart]], [[mühselig]], [[schwerlich]]
+:[4] [[schwerwiegend]], {{ugs.|:}} [[schlimm]]
+
+{{Gegenwörter}}
+:[1–4] [[leicht]]
+:[2] [[einfach]], [[leicht]], [[trivial]]
+:[3] [[bequem]], [[gemütlich]]
+
+{{Unterbegriffe}}
+:[?] [[millionenschwer]], [[milliardenschwer]]
+
+{{Beispiele}}
+:[1] Der Amboss war extrem ''schwer.''
+:[1] „Das etwa 1,7 Kilogramm ''schwere'' Fluggerät sei nur wenige Meter neben einer Familie mit zwei Kindern am Boden eingeschlagen, berichtete die Polizei am Dienstag.“<ref>{{Per-Zeit Online|Online= https://www.zeit.de/news/2016-11/15/deutschland-drohne-prallt-in-muenchen-gegen-olympiaturm-und-stuerzt-neben-familie-15143604|Autor=afp |Titel= Drohne prallt in München gegen Olympiaturm und stürzt neben Familie |Tag=15 |Monat= 11|Jahr= 2016|zugriff=2020-04-02}}</ref>
+:[2] Das Brettspiel „Risiko“ war für mich anfangs ein sehr ''schweres'' Spiel.
+:[3] Der Junge hat ''schwere'' Zeiten durchgemacht.
+:[4] Nach kurzer, ''schwerer'' Krankheit verstarb unser Vater, Alfred E. Neumann.
+:[4] „Seit Jahren schon, eigentlich seitdem 2007 die ersten Smartphones auf den Markt kamen, erfahren die Antiquitätenhändler ''schwere'' Einbußen.“<ref>{{Per-Zeit | Autor=Hanno Rauterberg | Titel=Abgewetzt und schön verschrammt | Nummer=19 | Tag=04 | Monat=05 | Jahr=2017 | Seiten=37 }}</ref>
+:[5] ''Schwere'' Weine zeichnen sich oft durch einen hohen Alkoholgehalt aus.
+
+{{Sprichwörter}}
+:[[aller Anfang ist schwer|aller Anfang ist ''schwer'']]
+
+{{Redewendungen}}
+:[[schweren Herzens|''schweren'' Herzens]]
+:[[schwerer Junge|''schwerer'' Junge]]
+:[[schweres Geschütz auffahren|''schweres'' Geschütz auffahren]]
+:[[schwer von Begriff|''schwer'' von Begriff]]
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''schweren'' [[Mut]]es
+:[3] ''schwere'' [[Zeit]]en
+:[3] ''schwer'' [[vermittelbar]] ({{Audio|De-schwer vermittelbar.ogg|Audio}})
+:[3] sich ''schwer'' [[tun]]
+
+{{Wortbildungen}}
+:[[beschweren]], [[erschweren]], [[mittelschwer]], [[Schwerarbeit]], [[Schwerarbeiter]], [[Schwerathlet]], [[schwerbehindert]], [[Schwere]], [[Schwerenöter]], [[schwergängig]], [[Schwergewicht]], [[schwergewichtig]], [[Schwerindustrie]], [[Schwerkraft]], [[Schwerkranker]], [[schwerlich]], [[Schwerpunkt]], [[Schwerverbrecher]], [[schwerwiegend]], [[verschweren]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=ein hohes Gewicht habend|Ü-Liste=
+*{{af}}: {{Ü|af|swaar}}
+*{{bs}}: {{Ü|bs|težak}}
+*{{zh-cn}}: {{Üt|zh|重|zhòng}}
+*{{de}}:
+**{{gmh}}: {{Ü|gmh|swære}}, {{Ü|gmh|swær}}, {{Ü|gmh|swār}}, {{Ü|gmh|swēre}}, {{Ü|gmh|swēr}}
+*{{en}}: {{Ü|en|heavy}}
+*{{eo}}: {{Ü|eo|peza}}
+*{{fr}}: {{Ü|fr|lourd}}, {{Ü|fr|gros}}
+*{{gl}}: {{Ü|gl|pesado}}
+*{{el}}: {{Üt|el|βαρύς|varýs}}
+*{{ht}}: {{Ü|ht|lou}}
+*{{io}}: {{Ü|io|grava}}
+*{{is}}: {{Ü|is|þungur}}
+*{{it}}: {{Ü|it|pesante}}
+*{{ja}}: {{Üt|ja|重い|おもい, omoi}}
+*{{ca}}: {{Ü|ca|pesat}} {{m}}, {{Ü|ca|pesat|pesada}} {{f}}
+*{{tlh}}: {{Ü|tlh|’ugh}}
+*{{ku}}:
+**{{kmr}}: {{Ü|kmr|giran}}
+*{{lt}}: {{Ü|lt|sunkus}}
+*{{mk}}: {{Üt|mk|тежок|težok}}
+*{{nds}}: {{Ü|nds|swaar}}, {{Ü|nds|swoor}}
+*{{no}}: {{Ü|no|tung}}
+*{{oc}}: {{Ü|oc|pesuc}} {{m}}, {{Ü|oc|pesuc|pesuga}} {{f}}
+*{{pl}}: {{Ü|pl|ciężki}}
+*{{pt}}: {{Ü|pt|pesado}}
+*{{ro}}: {{Ü|ro|greu}}
+*{{ru}}: {{Üt|ru|тяжелый}}
+*{{sv}}: {{Ü|sv|tung}}
+*{{sr}}: {{Üt|sr|тежак|težak}}
+*{{sh}}: {{Üt|sh|тежок|težok}}
+*{{sk}}: {{Ü|sk|ťažký}}
+*{{sl}}: {{Ü|sl|težaven}}
+*{{es}}: {{Ü|es|pesado}}
+*{{cs}}: {{Ü|cs|těžký}}
+*{{uk}}: {{Üt|uk|важкий|}}
+*{{hu}}: {{Ü|hu|nehéz}}
+*{{vo}}: {{Ü|vo|vetik}}, {{Ü|vo|vetotik}}
+*{{be}}: {{Üt|be|цяжкі|cjažki}}
+|Dialekttabelle=
+*{{bar}}: {{Ü|bar|schwar}} {{Lautschrift|ʃvaːɐ̯}}
+*{{swg}}: {{Ü?|swg|schwär}}
+}}
+
+{{Ü-Tabelle|2|G=|Ü-Liste=
+*{{af}}: {{Ü|af|moeilik}}
+*{{zh-cn}}: {{Üt|zh|难|nán}} (nán)
+*{{de}}:
+**{{gmh}}: {{Ü|gmh|swære}}, {{Ü|gmh|swær}}, {{Ü|gmh|swār}}, {{Ü|gmh|swēre}}, {{Ü|gmh|swēr}}
+*{{en}}: {{Ü|en|difficult}}, {{Ü|en|hard}}
+*{{eo}}: {{Ü|eo|malfacila}}
+*{{fr}}: {{Ü|fr|difficile}}
+*{{gl}}: {{Ü|gl|difícil}}
+*{{el}}: {{Üt|el|δύσκολος|dýskolos}}
+*{{io}}: {{Ü|io|nefacila}}, {{Ü|io|desfacila}}
+*{{it}}: {{Ü|it|difficile}}
+*{{ja}}: {{Üt|ja|難しい|むずかしい, muzukashii}}
+*{{nds}}: {{Ü|nds|swaar}}, {{Ü|nds|swoor}}
+*{{no}}: {{Ü|no|vanskelig}}
+*{{pl}}: {{Ü|pl|trudny}}
+*{{pt}}: {{Ü|pt|pesado}}, {{Ü|pt|difícil}}
+*{{ru}}: {{Üt|ru|трудный}}
+*{{sv}}: {{Ü|sv|svår}}
+*{{es}}: {{Ü|es|difícil}}
+*{{cs}}: {{Ü|cs|těžký}}
+*{{hu}}: {{Ü|hu|nehéz}}
+*{{vo}}: {{Ü|vo|fikulik}}
+|Dialekttabelle=
+*{{bar}}: {{Ü|bar|schwar}} {{Lautschrift|ʃvaːɐ̯}}
+*{{swg}}: {{Ü?|swg|schwär}}
+}}
+
+{{Ü-Tabelle|3|G=von großen Mühen und Entbehrungen gekennzeichnet|Ü-Liste=
+*{{de}}:
+**{{gmh}}: {{Ü|gmh|swære}}, {{Ü|gmh|swær}}, {{Ü|gmh|swār}}, {{Ü|gmh|swēre}}, {{Ü|gmh|swēr}}
+*{{en}}: {{Ü|en|hard}}
+*{{eo}}: {{Ü|eo|peza}}, {{Ü|eo|peniga}}
+*{{fr}}: {{Ü|fr|difficile}}
+*{{el}}: {{Üt|el|δύσκολος|dýskolos}}
+*{{io}}: {{Ü|io|penoza}}
+*{{it}}: {{Ü|it|difficile}}
+*{{ja}}: {{Üt|ja|辛い|つらい, tsurai}}
+*{{nds}}: {{Ü|nds|swaar}}, {{Ü|nds|swoor}}
+*{{no}}: {{Ü|no|tung}}, {{Ü|no|vanskelig}}
+*{{pt}}: {{Ü|pt|difícil}}
+*{{cs}}: {{Ü|cs|těžký}}
+*{{hu}}: {{Ü|hu|nehéz}}
+|Dialekttabelle=
+*{{bar}}: {{Ü|bar|schwar}} {{Lautschrift|ʃvaːɐ̯}}
+*{{swg}}: {{Ü?|swg|schwär}}
+}}
+
+{{Ü-Tabelle|4|G=stark ausgeprägt (von negativen Dingen)|Ü-Liste=
+*{{de}}:
+**{{gmh}}: {{Ü|gmh|swære}}, {{Ü|gmh|swær}}, {{Ü|gmh|swār}}, {{Ü|gmh|swēre}}, {{Ü|gmh|swēr}}
+*{{en}}: {{Ü|en|heavy}}, {{Ü|en|grave}}, {{Ü|en|serious}}
+*{{eo}}: {{Ü|eo|grava}}
+*{{fr}}: {{Ü|fr|grave}}
+*{{el}}: {{Üt|el|βαρύς|varýs}}
+*{{io}}: {{Ü|io|grava}}
+*{{it}}: {{Ü|it|grave}}
+*{{nds}}: {{Ü|nds|swaar}}, {{Ü|nds|swoor}}
+*{{no}}: {{Ü|no|alvorlig}}
+*{{cs}}: {{Ü|cs|těžký}}
+*{{hu}}: {{Ü|hu|nehéz}}
+|Dialekttabelle=
+*{{bar}}: {{Ü|bar|schwar}} {{Lautschrift|ʃvaːɐ̯}}
+*{{swg}}: {{Ü?|swg|schwär}}
+}}
+
+{{Ü-Tabelle|5|G=|Ü-Liste=
+*{{de}}:
+**{{gmh}}: {{Ü|gmh|swære}}, {{Ü|gmh|swær}}, {{Ü|gmh|swār}}, {{Ü|gmh|swēre}}, {{Ü|gmh|swēr}}
+*{{en}}: {{Ü|en|heavy}}
+*{{it}}: {{Ü|it|greve}}
+|Dialekttabelle=
+*{{bar}}: {{Ü|bar|schwar}} {{Lautschrift|ʃvaːɐ̯}}
+*{{swg}}: {{Ü?|swg|schwär}}
+}}
+
+{{Referenzen}}
+:[1, 3] {{Wikipedia}}
+:[1–4] {{Ref-Grimm}}
+:[1–5] {{Ref-DWDS}}
+:[*] {{Ref-OWID}}
+:[1–5] {{Ref-FreeDictionary}}
+:[1–5] {{Ref-Duden|schwer}}
+:[*] {{Ref-UniLeipzig}}
+:[1–5] {{Ref-wissen.de|Wörterbuch}}
+:[5] {{Lit-Schoonmaker: Wein-Lexikon}}, Seite 207, Eintrag „schwer“
+
+{{Quellen}}
+
+=== {{Wortart|Gradpartikel|Deutsch}} ===
+
+{{Worttrennung}}
+:schwer
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʃveːɐ̯}}
+:{{Hörbeispiele}}  {{Audio|De-at-schwer.ogg|schwer (österreichisch)}}
+:{{Reime}} {{Reim|eːɐ̯|Deutsch}}
+
+{{Bedeutungen}}
+:[1] {{ugs.}}, ''[[redensartlich]] für'' [[sehr]]
+
+{{Synonyme}}
+:[1] ''bei manchen Redewendungen:'' [[verdammt]], [[verflucht]]
+
+{{Beispiele}}
+:[1] Der Junge ist ''schwer'' in Ordnung.
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''schwer'' [[betrunken]]
+:[1] ''schwer'' [[auf Draht]] sein
+:[1] ''schwer'' [[in Ordnung]] sein
+:[1] ''schwer'' [[was auf dem Kasten haben]]
+:[1] ''schwer'' was [[durchmachen]]
+:[1] ''schwer'' [[was los haben]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=umgangssprachlich, redensartlich für sehr|Ü-Liste=
+*{{en}}: {{Ü|en|a damn lot}}
+*{{fr}}: {{Ü|fr|bien}}
+*{{it}}: {{Ü|it|molto}}, {{Ü|it|assai}}, {{Ü|it|un sacco}}
+*{{es}}: {{Ü|es|}}
+|Dialekttabelle=
+*Fränkisch:
+*Niedersächsisch: [1] [[bannig]]
+}}
+
+{{Referenzen}}
+:[1] {{Ref-DWDS|schwer}}
+:[1] {{Ref-UniLeipzig|schwer}}
+
+{{Ähnlichkeiten 1|[[Schwäre]]}}

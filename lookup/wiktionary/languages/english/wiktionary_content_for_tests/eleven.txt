@@ -1,0 +1,397 @@
+eleven
+en
+Original article URL: https://en.wiktionary.org/wiki/eleven
+==Translingual==
+
+===Etymology===
+From {{der|mul|en|eleven}}.
+
+===Pronunciation===
+* {{IPA|mul|[iˈlɛvn]}}
+
+===Noun===
+{{head|mul|noun}}
+
+# {{lb|mul|international standards}} {{ng|{{w|NATO}}, {{w|International Civil Aviation Organization|ICAO}}, {{w|International Telecommunication Union|ITU}} & {{w|International Maritime Organization|IMO}}}} {{w|NATO phonetic alphabet|radiotelephony}} code for [[11]], used only with [[o'clock]] to indicate direction
+
+[[Category:ICAO spelling alphabet]]
+[[Category:ITU & IMO phonetic alphabet]]
+
+==English==
+{{number box|en|11}}
+{{wikipedia}}
+
+===Alternative forms===
+* [[w:Arabic numerals|Arabic numerals]]: 11
+* [[w:Roman numerals|Roman numerals]]: XI
+
+===Etymology===
+{{root|en|ine-pro|*leyp-}}
+From {{inh|en|enm|elleven}}, {{m|enm|enleven}}, {{m|enm|eleven}}, from {{inh|en|ang|endleofan}}; from {{inh|en|gem-pro|*ainalif||one left}} (i.e., one left over after having already counted to ten), a compound of {{m|gem-pro|*ainaz}} and {{m|gem-pro|*-lif}}, from {{der|en|ine-pro|*leyp-||leave, remain}}. Compare {{cog|fy|alve}}, {{cog|nds|ölven}}, {{cog|nl|elf}}, {{cog|de|elf}}, {{cog|is|ellefu}}, {{cog|da|-}} and {{cog|no|elleve}}.
+
+===Pronunciation===
+* {{a|UK}} {{IPA|en|/ɪˈlɛvən/}}
+* {{a|GA}} {{IPA|en|/əˈlɛv.ən/|/iˈlɛvən/}}
+* {{a|casually also}} {{IPA|en|[ɪˈlɛbm̩]}}
+* {{audio|en|En-us-eleven.ogg|Audio (US)}}
+* {{audio|en|En-au-eleven.ogg|Audio (AU)}}
+* {{rhymes|en|ɛvən|s=3}}
+
+===Numeral===
+{{head|en|numeral}}
+
+# The [[cardinal number]] occurring after [[ten]] and before [[twelve]]. Represented as [[11]] in Arabic digits.
+
+====Derived terms====
+* {{l|en|elevenness}}, {{l|en|elevenses}}, {{l|en|eleventh}}, {{l|en|eleventeen}}, {{l|en|eleventy}}
+
+====Related terms====
+* {{l|en|onety-one}}
+
+====Translations====
+{{trans-top|the cardinal number occurring after ten and before twelve}}
+* Afrikaans: {{t+|af|elf}}
+* Ainu: {{t|ain|sine ikasima wan}}
+* Albanian: {{t+|sq|njëmbëdhjetë}}
+* Amharic: {{t|am|አስራአንድ|sc=Ethi}}, {{t|am|አስራ አንድ|sc=Ethi}}
+* Arabic: {{t|ar|أَحَد عَشَر}}, {{t|ar|إِحْدَى عَشْرَةَ}}, {{qualifier|numeral}} {{t|ar|١١}}
+*: Egyptian Arabic: {{t|arz|حداشر|tr=ḥidāšar|sc=Arab}}
+*: Hijazi Arabic: {{t|acw|إحدعش|tr=ʔiḥdaʕaš}}
+* Aramaic:
+*: Assyrian Neo-Aramaic: {{t|aii|ܚܲܕܸܥܣܲܪ|m|tr=ḳadiʿsar}}, {{t|aii|ܚܕܲܥܸܣܪܹܐ|f|tr=ḳdaʿisrē}}
+*: Hebrew: {{t|arc|חדעסר|m|tr=khda‘sar|sc=Hebr}}, {{t|arc|חדעסרא|f|tr=khda‘esrē|sc=Hebr}}
+*: Syriac: {{t|arc|ܚܕܥܣܪ|m|tr=khda‘sar|sc=Syrc}}, {{t|arc|ܚܕܥܣܪܐ|f|tr=khda‘esrē|sc=Syrc}}
+* Armenian: {{t+|hy|տասնմեկ}}
+* Assamese: {{t|as|এঘাৰঃ}}
+* Asturian: {{t+|ast|once}}
+* Aymara: {{t|ay|tunka mayani}}
+* Azerbaijani: {{t+|az|on bir}}
+* Bashkir: {{t|ba|ун бер|sc=Cyrl}}
+* Basque: {{t+|eu|hamaika}}
+* Belarusian: {{t+|be|адзі́наццаць|sc=Cyrl}}
+* Bengali: {{t+|bn|এগারো}} (numeral: [[১১]])
+* Bikol Central: {{t|bcl|kagsaro}}
+* Breton: {{t+|br|unnek}}
+* Brunei Malay: {{t|kxd|sabalas}}
+* Bulgarian: {{t+|bg|едина́десет}}, {{t+|bg|едина́йсет}}
+* Burmese: {{t|my|ဆယ့်တစ်|sc=Mymr}} (numeral: [[၁၁]])
+* Buryat: {{t|bua|арбан нэгэн}}
+* Catalan: {{t+|ca|onze}}
+* Cebuano: {{t|ceb|napulog usa}}
+* Central Dusun: {{t|dtp|hopod om iso}}
+* Central Sierra Miwok: {{t|csm|kéŋheṭija·ky-}}
+* Chakma: {{t-needed|ccp}}
+* Chechen: {{t|ce|цхьайтта}}
+* Cherokee: {{t|chr|ᏌᏚᎢ}}
+* Chichewa: {{t|ny|khumi n'chimodzi}}
+* Chickasaw: {{t|cic|awa chaffa}}, {{t|cic|pokkó'li awa chaffa}}
+* Chinese:
+*: Cantonese: {{t|yue|十一|tr=sap6 jat1}}
+*: Hakka: {{t|hak|十一|tr=sṳ̍p-yit}}
+*: Mandarin: {{t+|cmn|十一|tr=shíyī}}, {{qualifier|numeral}} {{t|cmn|拾壹}}
+* Chuukese: {{t|chk|engon me eu}}
+* Chuvash: {{t|cv|вунпӗрре|sc=Cyrl}}, {{t|cv|вунпӗр|sc=Cyrl}}
+* Classical Nahuatl: {{t|nci|mahtlāctli oncē}}
+* Corsican: {{t|co|òndeci}}
+* Crimean Tatar: {{t|crh|on bir}}
+* Czech: {{t+|cs|jedenáct}}
+* Dalmatian: {{t|dlm|jonco}}
+* Danish: {{t+|da|elleve}}
+* Dena'ina: {{t|tfn|ts'ełq'i beq'di}}
+* Dhivehi: {{t|dv|އެގަރަ}}
+* Dutch: {{t+|nl|elf}}
+* Dzongkha: {{t|dz|བཅུ་གཅིག}}
+* Esperanto: {{t|eo|dek unu}}
+* Estonian: {{t+|et|üksteist}}
+* Faroese: {{t|fo|ellivu}}
+* Fijian: {{t|fj|tini ka dua}}
+* Finnish: {{t+|fi|yksitoista}}
+* French: {{t+|fr|onze}}
+* Friulian: {{t|fur|undis}}
+* Galician: {{t+|gl|once}}
+* Garifuna: {{t|cab|ûnsu}}
+* Georgian: {{t+|ka|თერთმეტი}}
+* German: {{t+|de|elf}}
+* Gilbertese: {{t|gil|tebwi ma teuana}}
+* Gothic: {{t|got|𐌰𐌹𐌽𐌻𐌹𐍆}}
+* Greek: {{t+|el|έντεκα}}
+*: Ancient: {{t|grc|ἕνδεκα}}, {{t|grc|ια΄}} {{qualifier|numeral}}
+* Greenlandic: {{t|kl|aqqanillit}}
+* Gujarati: {{t|gu|અગિયાર}} (numeral: [[૧૧]])
+* Haitian Creole: {{t|ht|onz}}
+* Hawaiian: {{t|haw|ʻumikūmākahi}}
+* Hebrew: {{t|he|אחת עשרה|alt=אַחַת־עֶשְׂרֵה|tr=akhat-esre|f}} {{qualifier|used in counting}}, {{t|he|אחד עשר|alt=אַחַד־עָשָׂר|tr=akhad-asar|m}}
+*: Biblical: {{t+|he|עשתי עשר|alt=עַשְׁתֵּי עָשָׂר|tr=ʿashtē ʿasar|m}}, {{t|he|עשתי עשרה|alt=עַשְׁתֵּי עֶשְׂרֵה|tr=ʿashtē ʿesrē|f}}
+* Hindi: {{t+|hi|ग्यारह}} (numeral: [[११]]), {{t+|hi|एकादश}}
+* Hopi: {{t|hop|pakwt niikyang suk siikya’ta}}
+* Hungarian: {{t+|hu|tizenegy}}
+* Hunsrik: {{t|hrx|ellef}}
+* Icelandic: {{t+|is|ellefu}}
+* Ido: {{t+|io|dek-e-un}}
+* Igala: {{t|igl|ẹ̀gwákáà}}
+* Indonesian: {{t+|id|sebelas}}
+* Ingrian: {{t|izh|ykstoist}}
+* Interlingua: {{t|ia|dece-un}}, {{t|ia|undece}}
+* Irish: {{t+|ga|aon déag}}
+* Istriot: {{t|ist|ondaze}}, {{t|ist|ondase}}
+* Italian: {{t+|it|undici}}
+* Japanese: {{t+|ja|十一|tr=じゅういち, jūichi|sc=Jpan}}
+* Javanese: {{t|jv|sewelas}}, {{t|jv|setunggal welas}}
+* Jeju: {{t|jje|열ᄒᆞ나}}, {{t|jje|십일}} {{qualifier|Sino}}
+* Kannada: {{t+|kn|ಹನ್ನೊಂದು|sc=Knda}}
+* Kapampangan: {{t|pam|labing metung}}
+* Karelian: {{t|krl|yksitostu}}
+* Kazakh: {{t+|kk|он бір|sc=Cyrl}}
+* Khmer: {{t|km|ដប់មួយ|tr=dɑp muəy|sc=Khmr}} (numeral [[១១]])
+* Komi-Permyak: {{t|koi|дасӧтік}}
+* Korean: {{t+|ko|열하나}}, {{t+|ko|십일(十一)}}
+* Kurdish:
+*: Central Kurdish: {{t|ckb|یانزە}}
+*: Northern Kurdish: {{t+|kmr|yazde}}
+* Kyrgyz: {{t+|ky|он бир|sc=Cyrl}}
+* Ladin: {{t-needed|lld}}
+* Lakota: {{t|lkt|akéwaŋží}}
+* Lao: {{t|lo|ສິບເອັດ}} (numeral: [[໑໑]])
+* Latgalian: {{t|ltg|vīnpadsmit}}
+* Latin: {{t+|la|ūndecim}}
+* Latvian: {{t|lv|vienpadsmit}}
+* Ligurian: {{t|lij|ùnze}}
+* Lithuanian: {{t+|lt|vienuolika|f}}
+* Livonian: {{t|liv|ikštuoistõn}}
+* Lombard: {{t-needed|lmo}}
+* Louisiana Creole French: {{t|lou|onz}}
+* Low German: {{t+|nds|ölven}}, {{t|nds|elven}}
+* Lü: {{t|khb|ᦉᦲᧇᦵᦀᧆ}} (numeral: [[᧑᧑]])
+* Lushootseed: {{t|lut|ʔulub ʔi kʷi dəč̓uʔ}}
+* Luxembourgish: {{t|lb|älef}}, {{t|lb|elef}}
+* Macedonian: {{t|mk|единаесет}}
+* Malagasy: {{t|mg|iraika ambinifolo}}
+* Malay: {{t+|ms|sebelas}}, {{t|ms|satu belas}}, {{t|ms|sepuluh satu}}, {{t|ms|satu puluh satu}}
+* Malayalam: {{t+|ml|പതിനൊന്ന്|sc=Mlym}}
+* Maltese: {{t+|mt|ħdax}}
+* Manchu: {{t|mnc|[[ᠵᡠᠸᠠᠨ ᡝᠮᡠ]]}}
+* Mansi: {{t|mns|аквахуйплов}}
+* Manx: {{t|gv|nane jeig}}, {{t|gv|unnanejeig}}
+* Maori: {{t+|mi|tekau mā tahi}}, {{t|mi|ngahuru mā tahi}} {{qualifier|older term}}
+* Marathi: {{t+|mr|अकरा}}
+* Middle English: {{t|enm|elleven}}
+* Mongolian: 
+*: Cyrillic: {{t+|mn|арван нэг}}
+*: Mongolian: {{t|mn|ᠠᠷᠪᠠᠨ ᠨᠢᠭᠡ}}, {{qual|numeral}}: {{t|mn|᠑᠑}})
+* Nahuatl: {{t|nah|matlactli once}}
+* Nauruan: {{t|na|ata ma aiquen}}
+* Navajo: {{t|nv|łaʼtsʼáadah}}
+* Nepali: {{t+|ne|एघार|tr=eghāra}} (numeral: [[११]])
+* Ngazidja Comorian: {{t|zdj|kume na mwedja}}
+* Norman: {{t|nrf|aonze}}
+* North Frisian: {{t|frr|elev}} {{qualifier|Sylt}}
+* Norwegian: {{t+|no|elleve}}
+* Occitan: {{t+|oc|onze}}
+* Ojibwe: {{t|oj|ashi-bezhig}}
+* Old Armenian: {{t|xcl|մետասան}}
+* Old Church Slavonic: {{t|cu|єдинъ на дєсѧтє|sc=Cyrs}} (numeral: [[а҃і]])
+* Old Norse: {{t|non|ellifu}}
+* Oriya: {{t|or|ଏଗାର}} (numeral: {{t|or|୧୧}})
+* Pennsylvania German: {{t|pdc|elf}}
+* Persian: {{t+|fa|یازده|tr=yâzdah}}
+* Piedmontese: {{t|pms|óndes}}, {{t|pms|ùndes}}
+* Polish: {{t+|pl|jedenaście}}. {{qualifier|collective}} {{t+|pl|jedenaścioro}}
+* Portuguese: {{t+|pt|onze}}
+* Punjabi: {{t|pa|ਗਿਆਰਾਂ}} (numeral: [[੧੧]])
+* Quechua: {{t|qu|chunka hukniyuq}}
+* Rohingya: {{t|rhg|egaro}}
+* Romagnol: {{t|rgn|unṣ}}, {{t|rgn|ung}}
+* Romani: {{t|rom|deśujekh}}
+*: Kalo Finnish Romani: {{t|rmf|deȟ-o-iek}}
+* Romanian: {{t+|ro|unsprezece}}, {{qualifier|informal}} {{t|ro|unșpe}}
+* Romansch: {{qualifier|Grischun}} {{t|rm|indesch}}, {{qualifier|Puter}} {{t|rm|ündesch}}
+* Russian: {{t+|ru|оди́ннадцать}}
+* Rusyn: {{t|rue|єдена́дцить|sc=Cyrl}}
+* S'gaw Karen: {{t|ksw|တဆံတၢ}}
+* Sami:
+*: Inari: {{t|smn|ohtnubáloh}}
+*: Northern: {{t|se|oktanuppelohkái}}
+*: Skolt: {{t|sms|õtmlo}}
+*: Southern: {{t|sma|luhkie akte}}
+* Samoan: {{t|sm|sefulu tasi}}
+* Sanskrit: {{t+|sa|एकादश}}
+* Santali: {{t|sat|ᱜᱮᱞ ᱢᱤᱫ}}
+* Sardinian: {{t|sc|úndagi}}
+* Scottish Gaelic: {{t|gd|aon deug}}, {{t|gd|a h-aon deug}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|једа̀нае̄ст|sc=Cyrl}}
+*: Roman: {{t|sh|jedànaēst}}
+* Shan: {{t+|shn|သိပ်းဢဵတ်း}}
+* Sinhalese: {{t|si|එකොළහ|sc=Sinh}}
+* Slovak: {{t+|sk|jedenásť}}
+* Slovene: {{t+|sl|enájst}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|jadnasćo}}
+*: Upper Sorbian: {{t|hsb|jědnaće}}
+* Southern Altai: {{t|alt|он бир}}
+* Spanish: {{t+|es|once}}
+* Swahili: {{t|sw|kumi na moja}}
+* Swedish: {{t+|sv|elva}}
+* Sylheti: {{t-needed|syl}}
+* Tagalog: {{t+|tl|labing-isa}}
+* Tahitian: {{t|ty|hō'ē 'ahuru ma hō'ē}}
+* Tajik: {{t+|tg|ёздаҳ|sc=Cyrl}}
+* Tamil: {{t|ta|பதினோரு|sc=Taml}}
+* Tatar: {{t|tt|унбер|sc=Cyrl}}
+* Telugu: {{t+|te|పదకొండు}}, {{t|te|౧౧}} {{qualifier|numeral}}
+* Thai: {{t+|th|สิบเอ็ด}} (numeral: [[๑๑]])
+* Tibetan: {{t|bo|བཅུ་གཅིག|sc=Tibt}}
+* Tigre: {{t|tig|ዐስር ወዎሮት}}, {{t|tig|ዐስር ወሐቴ}}
+* Tigrinya: {{t|ti|ዓሰርተ ሓደ}}
+* Tongan: {{t|to|hongofulu mā taha}}
+* Turkish: {{t+|tr|on bir}}, {{t|tr|artığın}}
+* Turkmen: {{t+|tk|on bir}}
+* Ukrainian: {{t+|uk|одина́дцять|sc=Cyrl}}
+* Urdu: {{t|ur|گیارہ|tr=gyārah}}
+* Uyghur: {{t+|ug|ئون بىر|sc=ug-Arab}}
+* Uzbek: {{t+|uz|oʻn bir}}
+* Venetian: {{t|vec|undexe}}, {{t|vec|ondexe}}
+* Vietnamese: {{t+|vi|mười một}}
+* Volapük: {{t+|vo|degbal}}, {{t|vo|balsebal}} {{qualifier|older term, obsolete}}
+* Walloon: {{t+|wa|onze}}
+* Welsh: {{qualifier|vigesimal, traditional}} {{t+|cy|un ar ddeg}}, {{qualifier|decimal}} {{t+|cy|un deg un}}
+* West Frisian: {{t+|fy|alve}}
+* Winnebago: {{t|win|hižąkirašąną}}
+* Wolof: {{t|wo|fukk ak benn}}
+* Yakut: {{t|sah|уон биир|sc=Cyrl}}
+* Yao: {{t|yao|likumi kwisa mo}}
+* Yiddish: {{t|yi|עלף}}
+* Yoruba: {{t|yo|ọ̀kànlá}}, {{t|yo|oókànlá}} {{qualifier|counting}}, {{t|yo|mọ́kànlá}} {{qualifier|adjectival}}
+* Yup'ik: {{t|esu|qula atauciq}}
+* Zazaki: {{t|zza|yewndes}}
+* Zhuang: {{t|za|cib it}}
+* Zuni: {{t|zun|asdemłan doba yałdo'}}
+{{trans-bottom}}
+
+====See also====
+* Last: [[ten]]. Next: [[twelve]]
+
+===Noun===
+{{en-noun}}
+
+# {{lb|en|cricket}} A [[cricket]] [[team]] of eleven [[player]]s. Hence '''first eleven''' - the team of best cricket players (at a school), '''second eleven''' - the "B" team, etc.
+# {{lb|en|association football}} A [[football]] team of eleven players; the [[starting lineup]].
+# {{lb|en|Internet|slang|sarcastic}} Used instead of [[!]] to amplify an exclamation, imitating someone who forgets to press the [[shift]] key while typing exclamation points.
+#: A: ''SUM1 Hl3p ME im alwyz L0ziN!!?!''
+#: B: ''y d0nt u just g0 away l0zer!!1!!one!!one!!'''eleven'''!!1!''
+# {{lb|en|countable|US|slang}} A number [[off the charts]] of a hypothetical scale of one to ten.
+## An [[exceptional]] [[specimen]], {{lb|en|particularly}} a [[physically]] [[attractive]] [[person]].
+## A very high level of [[intensity]].
+
+====Synonyms====
+* {{sense|sarcastic substitution for [[!]]}} {{l|en|one}}, {{l|en|1}}
+
+====Derived terms====
+{{der2|en|eleven hundred|eleven o'clock|eleven plus|eleven thousand|eleven-dimensional|eleven-plus|eleven-striped blind snake|film at eleven|grade eleven|legs eleven|more at eleven|number eleven|seven come eleven|up to eleven|first eleven|second eleven|third eleven}}
+
+====See also====
+* [[Appendix:English collective nouns]]
+
+[[Category:English cardinal numbers]]
+[[Category:English collective nouns]]
+[[Category:en:Eleven]]
+[[Category:en:One]]
+
+==Catalan==
+
+===Verb===
+{{head|ca|verb form}}
+
+# {{ca-verb form of|p=3|n=pl|m=ind|t=pres|elevar}}
+
+==Danish==
+
+===Noun===
+{{head|da|noun form|g=c}}
+
+# {{inflection of|da|elev||def|s}}
+
+==Hungarian==
+
+===Etymology===
+{{hu-lex}} the obsolete form of the present participle {{m|hu|élő||living}},<ref>{{R:Zaicz 2006}}</ref> originally an adverb, compare {{m|hu|hirtelen}}, {{m|hu|meztelen}}.<ref>{{R:UESz}}</ref>
+
+===Pronunciation===
+* {{hu-IPA}}
+* {{hyphenation|hu|ele|ven}}
+* {{rhymes|hu|ɛn|s=3}}
+
+===Adjective===
+{{hu-adj|ebb}}
+
+# {{lb|hu|literary|or|archaic}} [[alive]]
+#: {{syn|hu|élő}}
+# [[lively]]
+#: {{syn|hu|élénk|fürge}}
+
+====Declension====
+{{hu-infl-nom|elevene|e|-}}
+
+====Derived terms====
+{{col4|hu
+|[[elevenedik]] → [[megelevenedik]]
+|([[elevenít]] →) [[megelevenít]], [[felelevenít]]
+|elevenség
+|elevenül
+}}
+
+===References===
+<references/>
+
+===Further reading===
+* {{R:ErtSz}}
+* {{R:Nagyszotar}}
+
+==Middle English==
+
+===Numeral===
+{{head|enm|numeral}}
+
+#  {{alt form|enm|elleven}}
+
+==Norwegian Bokmål==
+
+===Noun===
+{{head|nb|noun form|g=m}}
+
+# {{inflection of|nb|elev||definite|s}}
+
+==Norwegian Nynorsk==
+
+===Noun===
+{{head|nn|noun form|g=m}}
+
+# {{inflection of|nn|elev||definite|s}}
+
+==Spanish==
+
+===Verb===
+{{head|es|verb form}}
+
+# {{es-verb form of|elevar}}
+
+==Swedish==
+
+===Noun===
+{{head|sv|noun form}}
+
+# {{noun form of|sv|elev||def|s}}
+
+==Tok Pisin==
+{{number box|tpi|11}}
+
+===Etymology===
+From {{inh|tpi|en|eleven}}.
+
+===Numeral===
+{{head|tpi|numeral|cat2=cardinal numbers}}
+
+# [[eleven#English|eleven]]
+
+====Usage notes====
+Used when counting; see also {{m|tpi|[[wanpela]] [[ten]] [[wan]]}}.

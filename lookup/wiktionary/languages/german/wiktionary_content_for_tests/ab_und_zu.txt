@@ -1,0 +1,91 @@
+ab_und_zu
+de
+Original article URL: https://de.wiktionary.org/wiki/ab_und_zu
+{{Wort der Woche|18|2011}}
+== [[ab]] und [[zu]] ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Wortverbindung|Deutsch}} ===
+
+{{Nebenformen}}
+:[1] ''[[norddeutsch|nord-]] und [[mitteldeutsch]]:'' [[ab und an]]
+
+{{Worttrennung}}
+:ab und zu
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ap ʊnt t͡suː}}
+:{{Hörbeispiele}} {{Audio|De-ab_und_zu.ogg}}
+
+{{Bedeutungen}}
+:[1] ''[[Temporaladverb]]:'' mehr oder weniger oft, unterschiedlich häufig
+:[2] ''[[veraltend]]; bezüglich einer Bewegung:'' weg und wieder herbei; aus und ein
+
+{{Synonyme}}
+:[1] [[bisweilen]], [[dann und wann]], [[gelegentlich]], [[hin und wieder]], [[manchmal]], [[mitunter]], [[von Zeit zu Zeit]], [[zuweilen]], ''besonders [[norddeutsch|nord-]] und [[mitteldeutsch]]:'' [[ab und an]]
+
+{{Sinnverwandte Wörter}}
+:[1] [[auf und ab]], [[auf und nieder]], [[hin und her]]
+
+{{Gegenwörter}}
+:[1] [[häufig]], [[oft]], [[regelmäßig]]; [[nie]], [[niemals]]
+
+{{Oberbegriffe}}
+:[1] [[unregelmäßig]]
+
+{{Beispiele}}
+:[1] Ich bin kein Profifußballspieler, ich spiele nur ''ab und zu'' Fußball.
+:[1] „Draußen auf dem See suchte der Scheinwerfer des Wachbootes die Berge ab und schoß ''ab und zu'' in den Garten unten, wie ein Eindringling, zwischen die Bäume …“<ref>{{Wikisource|Geschichten aus den vier Winden/Das Iguanodon|Geschichten aus den vier Winden: Das Iguanodon, Max Dauthendey}}</ref>
+:[2] Der Kellner ging hastig ''ab und zu''.
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G= Temporaladverb: mehr oder weniger oft, unterschiedlich häufig|Ü-Liste=
+*{{bs}}: {{Üt|bs|понекад|ponekad}}
+*{{bg}}: {{Üt|bg|сегиз-тогиз|segiz-togiz}}
+*{{en}}: {{Ü|en|from time to time}}, {{Ü|en|off and on}}, {{Ü|en|on and off}}, {{Ü|en|now and then}}
+*{{eo}}: {{Ü|eo|malkutime}}
+*{{fi}}: {{Ü|fi|silloin tällöin}}
+*{{fr}}: {{Ü|fr|de temps en temps}}, ''umgangssprachlich:'' {{Ü|fr|des fois}}
+*{{el}}: {{Üt|el|κάπου κάπου|kápou kápou}}, {{Üt|el|πότε πότε|póte póte}}
+*{{he}}: {{Üt|he|מדי פעם|midey pa'am}}
+*{{is}}: {{Ü|is|við og við}}
+*{{it}}: {{Ü|it|di tanto in tanto, ogni tanto}}
+*{{ja}}: {{Üt|ja|偶に|たまに, tama ni}}
+*{{ca}}: {{Ü|ca|a vegades}}, {{Ü|ca|de vegades}}, {{Ü|ca|algunes vegades}}, {{Ü|ca|algun cop}}, {{Ü|ca|de tant en tant}}
+*{{ko}}: {{Üt|ko|가끔|}}
+*{{hr}}: {{Ü|hr|ponekad}}
+*{{lv}}: {{Ü|lv|šad tad}}, {{Ü|lv|šad un tad}}
+*{{mk}}: {{Üt|mk|некогаш|nekogaš}}
+*{{nds}}: {{Ü|nds|af un to}}, {{Ü|nds|af un an}}
+*{{nl}}: {{Ü|nl|af en toe}}
+*{{no}}:
+**{{nb}}: {{Ü|nb|av og til}}
+**{{nn}}: {{Ü|nn|av og til}}
+*{{oc}}: {{Ü|oc|adèras}}, {{Ü|oc|qualque còp}}, {{Ü|oc|de còps}}, {{Ü|oc|d'unes còps}}, {{Ü|oc|de còps que i a}}
+*{{pl}}: {{Ü|pl|od czasu do czasu}}, {{Ü|pl|czasami}}, {{Ü|pl|czasem}}
+*{{pt}}: {{Ü|pt|de vez em quando}}, {{Ü|pt|às vezes}}
+*{{ru}}: {{Üt|ru|время от времени}}
+*{{sv}}: {{Ü|sv|då och då}}, {{Ü|sv|stundtals}}
+*{{sr}}: {{Üt|sr|понекад|ponekad}}
+*{{sh}}: {{Üt|sh|понекад|ponekad}}
+*{{es}}: {{Ü|es|de vez en cuando}}
+*{{cs}}: {{Ü|cs|občas}}
+*{{tr}}: {{Ü|tr|ara sıra}}
+*{{hu}}: {{Ü|hu|hébehóba}}, {{Ü|hu|néha}}, {{Ü|hu|időnként}}
+|Dialekttabelle=
+*Bairisch: [1] diam
+}}
+{{Ü-Tabelle|2|G=bezüglich einer Bewegung: weg und wieder herbei; aus und ein|Ü-Liste=
+*{{no}}:
+**{{nb}}: {{Ü|nb|til og fra}}, {{Ü|nb|ut og inn}}
+**{{nn}}: {{Ü|nn|til og frå}}, {{Ü|nn|ut og inn}}
+*{{ru}}: {{Üt|ru|иногда}}
+|Dialekttabelle=
+*Bairisch: [1] diam
+}}
+
+{{Referenzen}}
+:[1, 2] {{Lit-Duden: Universalwörterbuch|A=6}}, Seite 77
+:[1] {{Lit-Ammon: Variantenwörterbuch|A=1}} unter dem Lemma »ab und an«, Seite 3
+:[1] {{Ref-UniLeipzig|ab+und+zu}}
+:[1] {{Lit-Duden: Redewendungen|A=1}}, Seite 19.
+
+{{Quellen}}

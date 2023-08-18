@@ -1,0 +1,652 @@
+into
+en
+Original article URL: https://en.wiktionary.org/wiki/into
+{{also|Into|INTO|intő|-into|in-to}}
+==English==
+{{wikipedia}}
+
+===Etymology===
+From {{inh|en|enm|in-to}}, from {{inh|en|ang|intō}}, equivalent to {{compound|en|in|to}}. Cognate with {{cog|sco|intae}}.
+
+===Pronunciation===
+* {{qualifier|stressed}}
+** {{a|UK}} {{IPA|en|/ˈɪn.tuː/}}
+** {{a|US}} {{IPA|en|/ˈɪn.tu/}}
+* {{qualifier|unstressed|before consonants}} {{IPA|en|/ˈɪn.tə/}}
+* {{qualifier|unstressed|before vowels}} {{IPA|en|/ˈɪn.tʊ/}}
+* {{audio|en|en-us-into.ogg|Audio (US)}}
+* {{rhymes|en|ɪntə|q1=unstressed, before consonants|s=2}}
+* {{hyphenation|en|in|to}}
+
+===Preposition===
+{{en-prep}}
+
+# To or towards the [[inside]] of.
+#* {{RQ:Churchill Celebrity|chapter=I|page=2|passage=He used to drop '''into''' my chambers once in a while to smoke, and was first-rate company. When I gave a dinner there was generally a cover laid for him. I liked the man for his own sake, and even had he promised to turn out a celebrity it would have had no weight with me.}}
+#* {{quote-journal|en|date=November 3, 2011|author=Chris Bevan|work=BBC Sport
+|title=[http://news.bbc.co.uk/sport2/hi/football/europe/15472973.stm Rubin Kazan 1-0 Tottenham]
+|passage=This time Cudicini was left helpless when Natcho stepped up to expertly curl the ball '''into''' the top corner.}}
+#: {{ux|en|Mary danced '''into''' the house.}}
+#: {{ux|en|Pour the wine '''into''' the decanter.}}
+#: {{ux|en|The nomads shave intricate designs '''into''' their camels' fur.}}
+# To or towards the region of.
+#: {{ux|en|We left the house and walked '''into''' the street.}}
+#: {{ux|en|The eagle flew off '''into''' the wide blue sky.}}
+# [[against|Against]], especially with [[force]] or [[violence]].
+#: {{ux|en|The car crashed '''into''' the tree.}}
+#: {{ux|en|I wasn't careful, and walked '''into''' a wall.}}
+# {{n-g|Indicates transition into another form or substance}}.
+#* {{quote-book|en|year=2002|author=Matt Cyr|title=Something to Teach Me: Journal of an American in the Mountains of Haiti|publisher=Educa Vision, Inc.|isbn=1584321385|page={{gbooks|quEn9UyekEgC|25|into}}
+|passage=His English is still in its beginning stages, like my Creole, but he was able to translate some Creole songs that he's written '''into''' English—not the best English, but English nonetheless.}}
+#: {{ux|en|I carved the piece of driftwood '''into''' a sculpture of a whale.}}
+#: {{ux|en|Right before our eyes, Jake turned '''into''' a wolf!}}
+# {{n-g|Indicates division or the creation of subgroups or sections}}.
+#* {{quote-journal|en|date=2013-07-19|author={{w|Peter Wilby}}
+|volume=189|issue=6|page=30|magazine={{w|The Guardian Weekly}}
+|title=[http://www.theguardian.com/education/2013/jul/01/education-michael-gove-finland-gcse Finland spreads word on schools]
+|passage=Imagine a country where children do nothing but play until they start compulsory schooling at age seven. Then, without exception, they attend comprehensives until the age of 16. Charging school fees is illegal, and so is sorting pupils '''into''' ability groups by streaming or setting.}}
+#: {{ux|en|A cow's stomach is divided '''into''' four chambers.}}
+# After the [[start]] of.
+#* {{RQ:Maxwell Mirror and the Lamp|chapter=13|passage="{{...}} They talk of you as if you were Croesus—and I expect the beggars sponge on you unconscionably." And Vickers launched forth '''into''' a tirade very different from his platform utterances. He spoke with extreme contempt of the dense stupidity exhibited on all occasions by the working classes.}}
+#: {{ux|en|About 20 minutes '''into''' the flight, the pilot reported a fire on board.}}
+# {{lb|en|colloquial}} [[interested|Interested]] in or [[attracted]] to.
+#: {{ux|en|She's really '''into''' Shakespeare right now.}}
+#: {{ux|en|My date for tonight has black hair, and I'm '''into''' that.}}
+#* {{quote-song|en|author={{w|Gayle (singer)|Gayle}}, Sara Davis{{,}} and David Pittenger|authorlabel=no|title={{w|ABCDEFU|abcdefu}}|album=A Study of the Human Experience Volume One|date=13 August 2021|artist=Gayle|url=https://www.youtube.com/watch?v=NaFd8ucHLuo|text=I was '''into''' you, but I'm over it now / And I was trying to be nice / But nothing's getting through, so let me spell it out{{...}}}}
+# {{lb|en|British|archaic|India|mathematics}} {{non-gloss definition|Expressing the operation of multiplication.}}<ref>{{R:OED Online}}</ref>
+#: {{ux|en|Five '''into''' three is fifteen.}}
+# {{lb|en|mathematics}} {{non-gloss definition|Expressing the operation of division, with the denominator given first. Usually with "goes".}}
+#: {{ux|en|Three '''into''' two won't go.}}
+#: {{ux|en|24 goes '''into''' 48 how many times?}}
+# Investigating the subject (of).
+#: {{ux|en|There have been calls for research '''into''' the pesticides that are blamed for the decline in bee populations.}}
+
+====Derived terms====
+{{col3|en
+|bump into
+|gazinta
+|get into
+|lick into shape
+|look into
+|plough into
+|plunge into
+|walk into
+|a into g|ace into|back into|back oneself into a corner|bash into shape|beat into|beat into a cocked hat|beat into fits|beat into shape|beat one's swords into ploughshares|beat one's swords into plowshares|bounce into|box oneself into a corner|break into|break into a run|bring into line|bring into play|build into|burst into flame|burst into flames|burst into flower|burst into tears|buy into|call into question|check into|come into|come into being|come into effect|come into force|come into one's own|come into play|come into the world|coming into force|controlled flight into terrain|cry into one's beer|dial into|dig into|dig oneself into a hole|dip a toe into|dip into|disappear into thin air|draw into|drive into the ground|drive something into the ground|eat into|enough sense to pound sand into a rathole|enter into|enter into the equation|fall into|fall into a trap|fall into one's lap|fall into oneself|fall into place|fall into the wrong hands|feed into|fit into|fly into a rage|get into one's stride|get into someone's pants|get into the act|get into the wrong hands|get into trouble|get one's a into g|get one's ass into gear|get one's claws into|get one's hooks into|get one's teeth into|get stuck into|give into|go gentle into that good night|go into|go into one's shell|go off into the weeds|grow into|heave into sight|heave into view|into detail|into space|into the bargain|into thin air|it is easier for a camel to go through the eye of a needle than for a rich man to enter into the kingdom of God|Journey into Space|key into|kick into the long grass|kick into touch|knock into a cocked hat|knock some sense into|lace into|lam into|lay into|lean into|leap into action|lick into shape|light into|luck into|make into|melt into|once more into the breach|out of the frying pan and into the fire|paint oneself into a corner|pale into insignificance|piss into the wind|pitch into|play into someone's hands|plough into|plow into|poke one's nose into|pound sand into a rathole|pour honey into one's ear|press into service|punt into the long grass|push into the long grass|put into action|put into effect|put into practice|put into words|put one's back into|put one's shoulder into|put something into perspective|put the fear of God into|read into|ride off into the sunset|rip into|rolled into one|rope into|rub the fear of God into|run into|run into a brick wall|run into one|run into the ground|see into|see into a millstone|settle into|sign into law|sink one's teeth into|slide into the DMs|slip into|slip into something more comfortable|spit into the wind|spring into action|squeeze into|stare into space|step into the breach|stick one's nose into|suck into|take into account|take into consideration|take it into one's head|take law into one's own hands|take matters into one's own hands|take the law into one's own hands|talk into|talk someone into something|tap into|tear into|throw a monkey wrench into the works|throw a spanner into the works|throw a wrench into the works|throw into a cocked hat|throw one's hat into the ring|throw oneself into|toss one's hat into the ring|tuck into|turn into|turn into a pumpkin|vanish into thin air|weep into one's beer|whip into shape|you can't get a quart into a pint pot|you can't put the toothpaste back into the tube}}
+
+====Related terms====
+* {{l|en|in}}
+* {{l|en|inside}}
+* {{l|en|onto}}
+* {{l|en|to}}
+
+====Translations====
+{{trans-top|going inside}}
+* Albanian: {{t|sq|për në}}
+* Arabic: {{t|ar|دَاخِل}}
+*: Egyptian Arabic: {{t|arz|جوا|tr=gówwa|sc=Arab}}
+* Armenian: {{t-needed|hy}}
+* Basque: {{t-needed|eu}}
+* Belarusian: {{t|be|у}}, {{t|be|ў}}, {{t|be|да}}
+* Czech: {{t+|cs|do}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Esperanto: {{t+|eo|en}} {{qualifier|+ accusative}}
+* Estonian: {{t|et|sisse}}, {{t|et|-sse}}
+* Faroese: {{t-needed|fo}}
+* Finnish: ''use [[illative]] case''
+* French: {{t+|fr|dans}}, {{t|fr|[[à]] [[l']][[intérieur]] [[de]]}}, {{t+|fr|au milieu de}}, {{t+|fr|parmi}}
+* Georgian: {{t-needed|ka}}
+* German: {{t+|de|in}} {{qualifier|+ [[accusative]]}}
+* Greek: {{t+|el|σε}}
+*: Ancient: {{t|grc|εἰς}} {{qualifier|+ accusative}}, {{t|grc|ἐς}} {{qualifier|+ accusative; poetic, Ionic}}, {{t|grc|εἴσω}} {{qualifier|postposition + genitive, accusative}}
+* Haitian Creole: {{t|ht|nan}}
+* Hebrew: {{t|he|לתוך}}
+* Hungarian: {{t+|hu|-ba}}, {{t+|hu|-be}}
+* Icelandic: {{t|is|inn í}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t|ga|isteach i}}
+* Italian: {{t+|it|in}}, {{t+|it|verso}}, {{t|it|andando verso}}
+* Kazakh: {{t|kk|ішінге}}
+* Khmer: {{t+|km|ក្នុង}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lao: {{t-needed|lo}}
+* Latin: {{t+|la|in}} {{qualifier|+ accusative}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Malagasy: {{t|mg|ao anatin'ny}}
+* Malay: {{t|ms|ke dalam}}
+* Maore Comorian: {{t|swb|moni mwa}}
+* Mongolian: {{t-needed|mn}}
+* Norwegian:
+*: Norwegian Bokmål: {{t|nb|inn i}}
+*: Norwegian Nynorsk: {{t-check|nn|inn i}}
+* Old English: {{t|ang|on}} {{qualifier|+ accusative}}
+* Polish: {{t+|pl|w}}, {{t|pl|w-}} {{qualifier|a verbal prefix}}
+* Portuguese: {{t|pt|[[para]] [[dentro]] [[de]]}}
+* Russian: {{t+|ru|в}} {{qualifier|+ accusative case}}
+* Scots: {{t|sco|intil}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|do}}
+* Spanish: {{t|es|a dentro de}}, {{t+|es|dentro}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t|sv|in i}}
+* Thai: {{t|th|เข้าไป|tr=kâo bpai}}
+* Tok Pisin: {{t|tpi|long}}
+* Turkish: {{t+|tr|içine}}
+* Tuvan: {{t|tyv|иштинче}}, {{t|tyv|иштинге}}
+* Ukrainian: {{t+|uk|в}}, {{t+|uk|у}}, {{t+|uk|до}}
+* Veps: {{t-needed|vep}}
+* Vietnamese: {{t+|vi|vào}}, {{t|vi|[[vào]] [[trong]]}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t|vro|sisse}}
+* Votic: {{t-needed|vot}}
+* Welsh: {{t|cy|i mewn i}}
+{{trans-bottom}}
+
+{{trans-top|going to a geographic region}}
+* Albanian: {{t-needed|sq}}
+* Arabic: {{t+|ar|فِي}}
+*: Egyptian Arabic: {{t|arz|في|tr=fe|sc=Arab}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: ''use [[illative]] or sometimes [[allative]] case''
+* French: {{t+|fr|dans}}, {{t+|fr|en}}
+* German: {{t+|de|in}}, {{t+|de|gen}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t|ga|isteach go}}
+* Italian: {{t+|it|verso}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Malay: {{t|ms|ke dalam}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t+|pl|do}}
+* Portuguese: {{t+|pt|até}}
+* Russian: {{t+|ru|в}}, {{t+|ru|на}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t-needed|el}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|against, with force}}
+* Albanian: {{t-needed|sq}}
+* Arabic: {{t+|ar|فِي}}
+*: Egyptian Arabic: {{t|arz|في|tr=fe|sc=Arab}}
+* Czech: {{t-needed|cs}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: {{t+|fi|päin}}, ''use [[illative]] case''
+* French: {{t+|fr|dans}}
+* German: {{t+|de|gegen}}, {{t+|de|in}} {{qualifier|if deformable}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t-needed|ga}}
+* Italian: {{t+|it|contro}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t+|pl|w}}
+* Portuguese: {{t+|pt|em}}
+* Russian: {{t+|ru|в}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t|sv|in i}}
+* Turkish: {{t+|tr|karşı}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|producing, becoming}}
+* Albanian: {{t-needed|sq}}
+* Arabic: {{t+|ar|إِلَّى}}
+*: Egyptian Arabic: {{t|arz|لـ|tr=le|sc=Arab}}
+* Czech: {{t+|cs|v}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: ''use [[illative]] or [[translative]] case''
+* French: {{t+|fr|en}}
+* German: {{t+|de|in}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t+|hu|-vá}}, {{t+|hu|-vé}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t-needed|ga}}
+* Italian: {{t+|it|in}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Maori: {{t|mi|hei}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t+|pl|w}}, {{t+|pl|na}}
+* Portuguese: {{t+|pt|em}}
+* Russian: {{t+|ru|в}} {{qualifier|+ accusative case}}
+* Spanish: {{t+|es|en}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t+|sv|till}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|after the start of}}
+* Albanian: {{t-needed|sq}}
+* Czech: {{t-needed|cs}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: {{q|time, genitive +}} {{t|fi|[[alku|alusta]]}}, {{q|time, genitive +}} {{t|fi|[[alkaminen|alkamisesta]]}}
+* French: {{t-needed|fr}}
+* German: {{t|de|[[nach]] [[Beginn]]}} {{qualifier|or/and genitive}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t-needed|ga}}
+* Italian: {{t+|it|di}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t|pl|[[po]] [[rozpoczęcie|rozpoczęciu]]}} {{qualifier|with genitive}}
+* Portuguese: {{t-needed|pt}}
+* Russian: {{t-needed|ru}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t|sv|in i}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|colloquial: intensely interested in}}
+* Albanian: {{t-needed|sq}}
+* Czech: {{t+|cs|do}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: {{t+|fi|innostunut}} {{qualifier| + [[elative]]}}, {{t+|fi|kiinnostunut}} {{qualifier| + [[elative]]}}
+* French: {{t-needed|fr}}
+* German: {{t+|de|für}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hebrew: {{t|he|בעניין}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t-needed|ga}}
+* Italian: {{t+|it|appassionato|m}} {{t+|it|di}}, {{t+|it|interessato|m}} {{t+|it|a}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t+|pl|zainteresowany}}
+* Portuguese: {{t+|pt|afim}}
+* Russian: {{t|ru|увлечён|m}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t-needed|el}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|taking distinct arguments to distinct values}}
+* Albanian: {{t-needed|sq}}
+* Czech: {{t+|cs|do}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: ''use [[illative]] case''
+* French: {{t-needed|fr}}
+* German: {{t+|de|auf}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t-needed|ga}}
+* Italian: {{t+|it|in}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t+|pl|razy}}
+* Portuguese: {{t-needed|pt}}
+* Russian: {{t+|ru|на}} {{qualifier|+ accusative case}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t-needed|el}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|expressing the operation of division}}
+* Albanian: {{t-needed|sq}}
+* Czech: {{t-needed|cs}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: ''use [[illative]] case''
+* French: {{t-needed|fr}}
+* German: {{t+|de|in}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t-needed|ga}}
+* Italian: {{t+|it|in}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t|pl|dzielony przez}}
+* Portuguese: {{t-needed|pt}}
+* Russian: {{t-needed|ru}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t-needed|el}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{trans-top|investigating the subject}}
+* Albanian: {{t-needed|sq}}
+* Czech: {{t-needed|cs}}
+* Danish: {{t-needed|da}}
+* Dutch: {{t-needed|nl}}
+* Estonian: {{t-needed|et}}
+* Faroese: {{t-needed|fo}}
+* Finnish: {{t+|fi|-sta}}, {{t+|fi|-stä}} {{qualifier|elative case}}
+* French: {{t+|fr|à propos de}}
+* German: {{t+|de|nach}}, {{t+|de|hinsichtlich}}
+* Greek: {{t|el|''periphrastically''}}
+*: Ancient Greek: {{t-needed|grc}}
+* Hungarian: {{t-needed|hu}}
+* Icelandic: {{t-needed|is}}
+* Igbo: {{t-needed|ig}}
+* Indonesian: {{t-needed|id}}
+* Irish: {{t|ga|faoi}}
+* Italian: {{t+|it|di}}
+* Ladin: {{t-needed|lld}}
+* Ladino: {{t-needed|lad}}
+* Lala-Roba: {{t-needed|lla}}
+* Latvian: {{t-needed|lv}}
+* Lithuanian: {{t-needed|lt}}
+* Maltese: {{t-needed|mt}}
+* Norwegian:
+*: Norwegian Bokmål: {{t-needed|nb}}
+*: Norwegian Nynorsk: {{t-needed|nn}}
+* Polish: {{t+|pl|nad}} {{qualifier|in collocation with badanie}}
+* Portuguese: {{t-needed|pt}}
+* Russian: {{t-needed|ru}}
+* Slovak: {{t-needed|sk}}
+* Slovene: {{t-needed|sl}}
+* Spanish: {{t-needed|es}}
+* Swahili: {{t-needed|sw}}
+* Swedish: {{t-needed|el}}
+* Veps: {{t-needed|vep}}
+* Volapük: {{t-needed|vo}}
+* Võro: {{t-needed|vro}}
+* Votic: {{t-needed|vot}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Esperanto: {{t+check|eo|en}} {{qualifier|+ accusative}} (1, 2)
+* Latin: {{t+check|la|in}} {{qualifier|+ accusative}}
+{{trans-bottom}}
+
+===References===
+<references/>
+* Andrea Tyler and Vyvyan Evans, "Bounded landmarks", in ''The Semantics of English Prepositions: Spatial Scenes, Embodied Meaning and Cognition'', Cambridge University Press, 2003, 0-521-81430 8
+
+===Anagrams===
+* {{anagrams|en|a=inot|-tion|-toin|Toni|noit|oint|on it}}
+
+==Finnish==
+
+===Etymology===
+From dialectal {{m|fi|inta}}, from {{der|fi|urj-fin-pro|*inta}} (compare {{cog|et|ind}}, {{cog|liv|ind}}), probably borrowed from {{der|fi|gem-pro|<!-- *inþōn-? -->}} (compare {{cog|gmq-osw|inna||achievement, accomplishment}}).
+
+Alternatively, a Uralic origin has been proposed. Compare {{ncog|kpv|ӧд||speed}}.
+
+===Pronunciation===
+{{fi-pronunciation}}
+
+===Noun===
+{{fi-noun}}
+
+# [[eagerness]], [[enthusiasm]]
+#: ''[[odottaa]] innolla'' (+ ''partitive'') = to [[look forward]] to
+# [[passion]], [[fervour]]/[[fervor]], [[ardour]]/[[ardor]]
+# [[zeal]], [[fanaticism]]
+
+====Usage notes====
+* "for X" = the illative, allative (general) or translative case (to emphasize the purpose or goal), "to (verb)" = the first infinitive (general) or the translative case of the {{m|fi|-minen}} noun (to emphasize the purpose or goal).
+
+====Declension====
+{{fi-decl-valo|i|nt|nn|o|a}}
+
+====Synonyms====
+* {{sense|eagerness|enthusiasm}} {{l|fi|innokkuus}}, {{l|fi|innostus}}
+* {{sense|passion|fervo(u)r|ardo(u)r}} {{l|fi|intohimo}}
+* {{sense|zeal|fanaticism}} {{l|fi|kiihko}}
+
+====Derived terms====
+{{der-top}}
+* adjectives: {{l|fi|innokas}}
+* adverbs: {{l|fi|innoissaan}}
+* nouns: {{l|fi|virkaintoisuus}}
+* verbs: {{l|fi|innostaa}}, {{l|fi|innota}}
+{{der-bottom}}
+
+====Compounds====
+* {{l|fi|intohimo}}
+* {{l|fi|intomieli}}
+
+===Further reading===
+* {{R:KTSK|accessdate=2023-07-02}}
+
+===Anagrams===
+* {{anagrams|fi|a=inot|Toni|otin|toin}}
+
+==Ligurian==
+
+===Etymology===
+Contraction of {{m|lij|inte||in}} + {{m|lij|o||the|g=m-s|pos=definite article}}.
+
+===Pronunciation===
+* {{IPA|lij|/ˈiŋtu/}}
+
+===Contraction===
+{{head|lij|contraction}}
+
+# [[in]] [[the]] {{q|+ a masculine name in the singular}}
+#* {{quote-song|lij|lyricist=[[w:Fabrizio De André|Fabrizio De André]]|composer=[[w:Mauro Pagani|Mauro Pagani]]|title=Sinàn Capudàn Pascià|url=|album=[[w:Crêuza de mä|Crêuza de mä]]|trans-album=Muletrack by the sea|artist=Fabrizio De André|year=1984|passage='''Into''' mêzo do mâ gh'è 'n péscio tondo / che, quando o vedde e brutte, o va 'nscio fondo|translation='''In the''' middle of the sea is a round fish, that goes to the bottom when things turn ugly}}
+
+====Synonyms====
+* {{l|lij|ne-o}}
+
+====Coordinate terms====
+* {{l|lij|inta}}
+* {{l|lij|inte}}
+* {{l|lij|inti}}
+
+==Middle English==
+
+===Preposition===
+{{head|enm|preposition}}
+
+# {{alt sp|enm|in-to}}
+
+==Neapolitan==
+
+===Etymology===
+From {{inh|nap|la|intus}}.
+
+===Pronunciation===
+* {{IPA|nap|[ind̪ɐ]}}
+
+===Preposition===
+{{head|nap|preposition}}
+
+# [[in]] (surrounded by)
+
+==Old English==
+
+===Etymology===
+{{compound|ang|in|tō}}
+
+===Pronunciation===
+* {{ang-IPA|in<tō}}
+
+===Preposition===
+{{ang-prep|head=intō}}
+
+# [[#English|into]]
+
+====Descendants====
+* {{desctree|enm|in-to}}
+
+==Southern Ndebele==
+
+===Noun===
+{{nr-noun|întó|9|10|ízintó}}
+
+# [[thing]]
+
+====Inflection====
+{{rfinfl|nr|noun}}
+
+==Xhosa==
+
+===Pronunciation===
+* {{IPA|xh|[íːⁿtó]}}
+
+===Noun===
+{{xh-noun|íntó|9|10|ízintó}}
+
+# [[thing]]
+
+====Inflection====
+{{rfinfl|xh|noun}}
+
+==Yemsa==
+
+===Noun===
+{{head|jnj|noun}}
+
+# [[mother]]
+
+===References===
+* David Appleyard, ''Beja as a Cushitic language'', in ''Egyptian and Semito-Hamitic (Afro-Asiatic) Studies: In Memoriam W. Vycichl'' (Yem ''into'' "mother")
+
+==Zulu==
+
+===Etymology===
+From {{affix|zu|in-|tha|alt2=-tha|t2=to name, to choose|-o}}. Compare with a similar derivation in Swahili {{m|sw|jambo}}.
+
+===Pronunciation===
+* {{zu-IPA|întó}}
+
+===Noun===
+{{zu-noun|întó|9|10|ízintó}}
+
+# [[thing]]
+
+====Inflection====
+{{zu-infl-noun|H|9|10|izinto}}
+
+===References===
+* {{R:zu:ZED|-tho|2-6.3}}
