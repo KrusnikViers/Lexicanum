@@ -3,7 +3,6 @@ import sys
 from PySide6.QtCore import Slot, Qt
 from PySide6.QtWidgets import QApplication
 
-from core.types.deck import Deck
 from lookup.wiktionary.interface import WiktionaryInterface
 from ui.main_window.controllers.deck_controller import DeckController
 from ui.main_window.controllers.file_controller import FileController

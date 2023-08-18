@@ -1,7 +1,7 @@
 from typing import List
 
 from core.util import safe_get
-from lookup.wiktionary.languages.german.shared_constants import POS_MAP, POS_KEY
+from lookup.wiktionary.languages.german.shared_constants import POS_MAP
 from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType, PartOfSpeech
 
 _EMPTY_OPTIONS = ('', ' ', '-', '—')
