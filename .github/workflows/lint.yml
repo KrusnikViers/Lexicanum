@@ -24,3 +24,4 @@ jobs:
         uses: py-actions/flake8@v2
         with:
           max-line-length: "121"
+          per-file-ignores: "__init__.py:F401"
