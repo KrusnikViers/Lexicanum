@@ -2,10 +2,11 @@
 
 A GUI utility to build and edit Anki decks for foreign words
 
-[![codecov](https://codecov.io/gh/KrusnikViers/Lexicanum/graph/badge.svg?token=FytryMP1ZJ)](https://codecov.io/gh/KrusnikViers/Lexicanum)
 [![tests](https://github.com/KrusnikViers/Lexicanum/actions/workflows/test.yml/badge.svg)](https://github.com/KrusnikViers/Lexicanum/actions/workflows/test.yml)
 [![coverage](https://github.com/KrusnikViers/Lexicanum/actions/workflows/coverage.yml/badge.svg)](https://github.com/KrusnikViers/Lexicanum/actions/workflows/coverage.yml)
 [![lint](https://github.com/KrusnikViers/Lexicanum/actions/workflows/lint.yml/badge.svg)](https://github.com/KrusnikViers/Lexicanum/actions/workflows/lint.yml)
+[![codecov](https://codecov.io/gh/KrusnikViers/Lexicanum/graph/badge.svg?token=FytryMP1ZJ)](https://codecov.io/gh/KrusnikViers/Lexicanum)
+[![Maintainability](https://api.codeclimate.com/v1/badges/735ca5f57479b6d79cd4/maintainability)](https://codeclimate.com/github/KrusnikViers/Lexicanum/maintainability)
 
 ## Development flow
 
