@@ -1,0 +1,26 @@
+name: Tests
+
+on:
+  push:
+  schedule:
+    - cron: '0 9 * * 1,4'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    strategy:
+      matrix:
+        python-version: [ '3.8', '3.9', '3.10', '3.11' ]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: ./.github/actions/setup_python
+        with:
+          python-version: '${{ matrix.python-version }}'
+      - name: Setup QT drivers and generate UI files
+        uses: ./.github/actions/setup_qt
+      - name: Discover and run tests
+        run: python -m unittest discover -p *_test.py
