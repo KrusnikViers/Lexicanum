@@ -2,8 +2,6 @@ import glob
 from pathlib import Path
 from subprocess import run
 
-import PySide6
-
 _GEN_FILE_SUFFIX = '_uic.py'
 
 # This script relies on a multiple assumptions regarding your project:

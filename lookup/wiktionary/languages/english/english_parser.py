@@ -2,9 +2,9 @@ import re
 from typing import List
 
 from core.util import safe_get
-from lookup.wiktionary.languages.base import *
+from lookup.wiktionary.languages.base import LocalizedParser
 from lookup.wiktionary.languages.english.grammar_components import grammar_components
-from lookup.wiktionary.languages.english.shared_constants import *
+from lookup.wiktionary.languages.english.shared_constants import POS_MAP, POS_KEY_FULL, POS_KEY_PREFIX
 from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType, DCTranslation
 
 
