@@ -28,8 +28,8 @@ Run `ROOT_DIR/main.py`. You will need to generate UI files first.
 ### Building .exe
 
 To build an .exe file that would work under Windows OS, run `ROOT_DIR/build_tools/create_binary_win.bat`. It creates a
-standalone portable executable file, that could be run without
-installing Python or dependency packages on the target machine.
+standalone portable executable file, that could be run without installing Python or dependency packages on the target
+machine.
 
 ### Running unittests
 
@@ -40,4 +40,4 @@ Unittests are automatically discoverable, run `python -m unittest discover -s RO
 Some tests rely on cashed copy of data from Wiktionary. To refresh them,
 run `ROOT_DIR/build_tools/refresh_wiktionary_test_data.py`. If you are creating new localized data parser, please make a
 copy of `base` tests directory: cached pages are exact wiktionary content, and thus overall project license does not
-extent to them.
+apply to them.
