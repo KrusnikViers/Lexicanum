@@ -1,10 +1,11 @@
-from typing import List
 import re
-from lookup.wiktionary.languages.base import *
-from lookup.wiktionary.languages.english.shared_constants import *
-from lookup.wiktionary.types import PartOfSpeech, MarkupTree, DefinitionComponent, DCType, DCTranslation
+from typing import List
 
 from core.util import safe_get
+from lookup.wiktionary.languages.base import *
+from lookup.wiktionary.languages.english.grammar_components import grammar_components
+from lookup.wiktionary.languages.english.shared_constants import *
+from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType, DCTranslation
 
 
 # Returns None only if node is not word definition key. If part of speech can not be identified, returns empty string.
@@ -23,7 +24,7 @@ def _maybe_get_poskey(node: MarkupTree) -> str | None:
     return str()
 
 
-def _part_of_speech_components(node: MarkupTree, wiki_title: str) -> List[DefinitionComponent]:
+def _pos_and_grammar_components(node: MarkupTree, wiki_title: str) -> List[DefinitionComponent]:
     pos = _maybe_get_poskey(node)
     if pos not in POS_MAP:
         return []
@@ -33,6 +34,7 @@ def _part_of_speech_components(node: MarkupTree, wiki_title: str) -> List[Defini
     # Construct fallback readable form, if no explicit grammar information provided.
     readable_form = wiki_title.replace('_', ' ')
     result.append(DefinitionComponent(node.level + 1, DCType.ReadableForm, readable_form.capitalize()))
+    result += grammar_components(node, POS_MAP[pos], wiki_title)
 
     return result
 
@@ -41,7 +43,7 @@ def _translation_components(node: MarkupTree, language_codes_for_translations: L
     if safe_get(node.plain_args, 0) in language_codes_for_translations and safe_get(node.plain_args, 1):
         translation_text = node.plain_args[1]
         if '[[' in translation_text:
-            links = re.findall('\[\[.*?]]', translation_text)
+            links = re.findall('\\[\\[.*?]]', translation_text)
             if not links:
                 return []
             translation_text = ' '.join([link[2:-2] for link in links]).strip()
@@ -60,7 +62,7 @@ class EnglishLocaleParser(LocalizedParser):
         for node in markup_tree.children:
             if _maybe_get_poskey(node) is not None:
                 result += [DefinitionComponent(node.level, DCType.Separator)]
-                result += _part_of_speech_components(node, source_wiki_title)
+                result += _pos_and_grammar_components(node, source_wiki_title)
             elif node.name in ('t', 'tt', 't+', 'tt+'):
                 result += _translation_components(node, language_codes_for_translations)
             result += cls.extract_definition_components(node, source_wiki_title, language_codes_for_translations)

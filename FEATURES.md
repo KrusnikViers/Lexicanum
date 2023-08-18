@@ -8,8 +8,6 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
-* Initial extractions:
-    * Readable form for English words
 * "Debug window" for lookups
 * Show indicator that deck has unsaved changes
 * Track unsaved changes

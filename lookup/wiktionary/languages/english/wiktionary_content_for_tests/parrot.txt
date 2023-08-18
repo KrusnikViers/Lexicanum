@@ -154,6 +154,7 @@ First attested in 1525. From {{uder|en|frm|perrot}}, either a diminutive of {{m|
 * Kashmiri: {{t+|ks|طوطہٕ|tr=tōtụ}}
 * Kazakh: {{t|kk|тоты|sc=Cyrl}}, {{t|kk|тоты құс|sc=Cyrl}}
 * Khmer: {{t+|km|សេក}}
+* Kituba: {{t|ktu|nkusu}}
 * Korean: {{t+|ko|앵무새}}
 * Kumyk: {{t|kum|папагъан}}
 * Kurdish:
@@ -164,6 +165,7 @@ First attested in 1525. From {{uder|en|frm|perrot}}, either a diminutive of {{m|
 * Latin: {{t+|la|psittacus|m}}
 * Latvian: {{t|lv|papagailis|m}}
 * Limburgish: {{t|li|pappegei|m}}
+* Lingala: {{t|ln|nkoso}}
 * Lithuanian: {{t+|lt|papūga|f}}
 * Low German: {{t|nds|Papegai|m}}, {{t|nds|Papegoi|m}}
 * Macedonian: {{t|mk|папага́л|m|sc=Cyrl}}

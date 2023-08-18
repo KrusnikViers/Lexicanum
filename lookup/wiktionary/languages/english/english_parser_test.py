@@ -1,7 +1,5 @@
 import unittest
-from typing import List
 
-from lookup.wiktionary.types import DefinitionComponent, debug_print_components_list
 from lookup.wiktionary.languages.base.test_utils.wiktionary_cache_reader import get_test_content
 from lookup.wiktionary.languages.english import EnglishLocaleParser
 from lookup.wiktionary.types import MarkupTree, Definition, PartOfSpeech
@@ -26,7 +24,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            readable_name='Parrot', grammar_note='',
                            translation_articles=['Papagei']),
                 Definition(PartOfSpeech.Verb, raw_article_title='parrot',
-                           readable_name='Parrot', grammar_note='',
+                           readable_name='To parrot', grammar_note='',
                            translation_articles=['nachplappern'])
             ])
 
@@ -37,7 +35,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Noun, raw_article_title='binoculars',
-                           readable_name='Binoculars', grammar_note='',
+                           readable_name='Binoculars', grammar_note='Mainly plural; Singular variant: Binocular',
                            translation_articles=['Fernglas', 'Feldstecher'])
             ])
 
@@ -48,14 +46,14 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Verb, raw_article_title='cut',
-                           readable_name='Cut', grammar_note='',
+                           readable_name='To cut', grammar_note='Cuts; Cutting; Cut',
                            translation_articles=['schneiden', 'einschneiden', 'trennen', 'ausschneiden', 'klappe',
                                                  'beschneiden', 'schwänzen', 'abheben']),
                 Definition(PartOfSpeech.Adjective, raw_article_title='cut',
                            readable_name='Cut', grammar_note='',
                            translation_articles=['geschnitten', 'geschliffen']),
                 Definition(PartOfSpeech.Noun, raw_article_title='cut',
-                           readable_name='Cut', grammar_note='',
+                           readable_name='Cut', grammar_note='Cuts',
                            translation_articles=['Schnitt', 'Filmbearbeitung', 'Bearbeitungsversion', 'Aufnahmestück',
                                                  'Stück']),
             ])
@@ -67,7 +65,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Noun, raw_article_title='France',
-                           readable_name='France', grammar_note='',
+                           readable_name='France', grammar_note='Mainly plural; Frances',
                            translation_articles=['Frankreich'])
             ])
 
@@ -78,7 +76,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Noun, raw_article_title='sheep',
-                           readable_name='Sheep', grammar_note='',
+                           readable_name='Sheep', grammar_note='Sheeps; Sheep',
                            translation_articles=['Schaf'])
             ])
 
@@ -89,7 +87,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Verb, raw_article_title='woman',
-                           readable_name='Woman', grammar_note='',
+                           readable_name='To woman', grammar_note='',
                            translation_articles=['feminisieren', 'verweiblichen'])
             ])
 
@@ -104,10 +102,10 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            readable_name='Or', grammar_note='',
                            translation_articles=['oder']),
                 Definition(PartOfSpeech.Noun, raw_article_title='or',
-                           readable_name='Or', grammar_note='',
+                           readable_name='Or', grammar_note='Ors',
                            translation_articles=['Gold']),
                 Definition(PartOfSpeech.Adjective, raw_article_title='or',
-                           readable_name='Or', grammar_note='',
+                           readable_name='Or', grammar_note='Generally not comparable',
                            translation_articles=['golden']),
             ])
 
@@ -140,14 +138,14 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Verb, raw_article_title='go',
-                           readable_name='Go', grammar_note='',
+                           readable_name='To go', grammar_note='Goes; Going; Went; Gone',
                            translation_articles=['gehen', 'dran', 'sein', 'ziehen', 'verschwinden', 'weggehen',
                                                  'fortgehen', 'kaputtgehen', 'kaputt', 'machen', 'los']),
                 Definition(PartOfSpeech.Noun, raw_article_title='go',
-                           readable_name='Go', grammar_note='',
+                           readable_name='Go', grammar_note='Gos; Goes',
                            translation_articles=['Versuch']),
                 Definition(PartOfSpeech.Noun, raw_article_title='go',
-                           readable_name='Go', grammar_note='',
+                           readable_name='Go', grammar_note='Mainly plural',
                            translation_articles=['Go']),
             ]
         )
@@ -159,11 +157,11 @@ class TestEnglishLocaleParser(unittest.TestCase):
             EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
             [
                 Definition(PartOfSpeech.Adjective, raw_article_title='good',
-                           readable_name='Good', grammar_note='',
+                           readable_name='Good', grammar_note='Better; The best',
                            translation_articles=['gut', 'brav', 'gehörig', 'lecker', 'gesund', 'schön', 'angenehm',
                                                  'effektiv']),
                 Definition(PartOfSpeech.Noun, raw_article_title='good',
-                           readable_name='Good', grammar_note='',
+                           readable_name='Good', grammar_note='Goods',
                            translation_articles=['Gute', 'Gut']),
             ])
 
@@ -240,4 +238,16 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Particle, raw_article_title='nope',
                            readable_name='Nope', grammar_note='',
                            translation_articles=['nee', 'nö']),
+            ])
+
+    def test_definition_important(self):
+        content = get_test_content(__file__, 'important.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Adjective, raw_article_title='important',
+                           readable_name='Important', grammar_note='',
+                           translation_articles=['wichtig'], meaning_note='', ipa_note='')
+
             ])

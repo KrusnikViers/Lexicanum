@@ -1,0 +1,270 @@
+important
+en
+Original article URL: https://en.wiktionary.org/wiki/important
+{{also|împortant}}
+==English==
+
+===Etymology===
+From {{inh|en|enm|important}}, from {{der|en|ML.|importāns|important-, importāns}}.
+
+===Pronunciation===
+* {{a|UK|RP}} {{IPA|en|/ɪm.ˈpɔː.tənt/|[ɪmˈpʰɔːʔn̩ʔ]|[ɪmˈpʰɔːtənt̚]}}
+* {{a|GA}} {{IPA|en|/ɪm.ˈpɔɹ.tənt/|[ɪmˈpʰɔɹʔn̩t]}}
+* {{a|rhotic|horse-hoarse}} {{IPA|en|/ɪm.ˈpo(ː)ɹ.tənt/}}
+* {{a|nonrhotic|horse-hoarse}} {{IPA|en|/ɪm.ˈpoə.tənt/}}
+* {{audio|en|en-us-important.ogg|Audio (US)}}
+
+===Adjective===
+{{en-adj}}
+
+# Having [[relevant]] and [[crucial]] value; having [[import]].
+#: {{ux|en|It is very '''important''' to give your daughter independence in her life so she learns from experience.}}
+#* {{RQ:Besant Ivory Gate|chapter=Prologue|page=6|passage=Thus, when he drew up instructions in lawyer language, he expressed the '''important''' words by an initial, a medial, or a final consonant, and made scratches for all the words between. His clerks, however, understood him very well.}}
+#* {{RQ:Allingham China Governess|Eye Witness|249|The story struck the depressingly familiar note with which true stories ring in the tried ears of experienced policemen.{{...}}The second note, the high alarum, not so familiar and always '''important''' since it indicates the paramount sin in Man's private calendar, took most of them by surprise although they had been well prepared.}}
+#* '''1988,''' {{w|Robert Ferro}}, ''Second Son'':
+#*: For this was the most '''important''' thing, that when a person felt strongly about an issue in life, it mustn’t be ignored by others; for if it was, everything subsequent to it would turn out badly, even though there should seem to be no direct connection.
+#* {{quote-journal|en|year=2013|month=May-June|author=[http://www.americanscientist.org/authors/detail/katrina-g-claw Katrina G. Claw]
+|title=[http://www.americanscientist.org/issues/feature/2013/3/rapid-evolution-in-eggs-and-sperm Rapid Evolution in Eggs and Sperm]
+|volume=101|issue=3|magazine={{w|American Scientist}}
+|passage=In plants, the ability to recognize self from nonself plays an '''important''' role in fertilization, because self-fertilization will result in less diverse offspring than fertilization with pollen from another individual.}}
+# {{lb|en|obsolete}} [[pompous|Pompous]]; [[self-important]].
+#* {{RQ:Austen Sense and Sensibility|I|XI|206|"{{...}} It is a match that must give universal satisfaction. In short, it is a kind of thing that"&mdash;lowering his voice to an '''important''' whisper&mdash;"will be exceedingly welcome to ''all parties''." Recollecting himself, however, he added, "That is, I mean to say—your friends are all truly anxious to see you well settled; Fanny particularly {{...}}"}}
+
+====Synonyms====
+* {{l|en|significant}}
+* {{l|en|weighty}}
+* See also [[Thesaurus:important]]
+
+====Antonyms====
+* {{l|en|negligible}}
+* {{l|en|ignorable}}
+* {{l|en|petty}}
+* {{l|en|slight}}
+* {{l|en|unimportant}}
+
+====Derived terms====
+{{der3|en|importantly|importantness|unimportant|all-important|important bird area|very important person|VIP}}
+
+====Related terms====
+* {{l|en|import}}
+* {{l|en|importance}}
+
+====Translations====
+{{trans-top|having relevant and crucial value}}
+* Afrikaans: {{t+|af|belangrik}}
+* Albanian: {{t+|sq|rëndësishëm}}
+* Arabic: {{t|ar|مُهِمّ}}
+*: Egyptian Arabic: {{t|arz|مهم|m|tr=muhimm}}
+*: Hijazi Arabic: {{t|acw|مُهِم|tr=muhimm}}
+* Aragonese: {{t|an|important}}
+* Aramaic: {{t|arc|חסינא|m|tr=ħasīna|sc=Hebr}}
+*: Assyrian Neo-Aramaic: {{t|aii|ܐܵܢܲܢܩܵܝܵܐ|m|tr=ānanqāyā}}, {{t|aii|ܐܵܠܨܵܝܵܐ|m|tr=ālṣāyā}}
+* Armenian: {{t+|hy|կարեւոր|sc=Armn}}
+* Asturian: {{t|ast|importante}}
+* Azerbaijani: {{t+|az|mühüm}}, {{t+|az|vacib}}, {{t|az|önəmli}}, {{t+|az|əhəmiyyətli}}
+* Balinese: {{t|ban|mabuat}}, {{t|ban|gati}}
+* Bashkir: {{t|ba|мөһим|sc=Cyrl}}
+* Basque: {{t|eu|garrantzitsu}}
+* Belarusian: {{t|be|ва́жны}}
+* Bengali: {{t+|bn|গুরুত্বপূর্ণ}}
+* Bulgarian: {{t+|bg|ва́жен}}
+* Burmese: {{t+|my|အရေးကြီး}}
+* Catalan: {{t+|ca|important}}
+* Chinese:
+*: Cantonese: {{t|yue|緊要|tr=gan2 jiu3}}
+*: Mandarin: {{t+|cmn|重要|tr=zhòngyào}}
+*: Min Nan: {{t+|nan|重要|tr=tiōng-iàu}}, {{t+|nan|要緊|tr=iàu-kín}}
+* Czech: {{t+|cs|důležitý}}
+* Danish: {{t+|da|vigtig}}
+* Dutch: {{t+|nl|belangrijk}}
+* Egyptian: {{t-egy|wr|h=wr:r}}
+* Esperanto: {{t+|eo|grava}}
+* Estonian: {{t+|et|tähtis}}, {{t+|et|oluline}}
+* Extremaduran: {{t|ext|emportanti}}
+* Faroese: {{t|fo|umráðandi}}
+* Finnish: {{t+|fi|tärkeä}}
+* French: {{t+|fr|important}}
+* Galician: {{t+|gl|importante}}
+* Georgian: {{t|ka|მნიშვნელოვანი}}
+* German: {{t+|de|wichtig}}
+* Greek: {{t+|el|σημαντικός}}
+* Haitian Creole: {{t|ht|enpòtan}}
+* Hebrew: {{t+|he|חָשׁוּב|tr=khashúv}}
+* Hindi: {{t|hi|महत्वपूर्ण}}, {{t|hi|अहम}}
+* Hungarian: {{t+|hu|fontos}}
+* Icelandic: {{t+|is|mikilvægur}}
+* Ido: {{t+|io|importanta}}
+* Indonesian: {{t+|id|penting}}
+* Ingrian: {{t|izh|vaažnoi}}
+* Interlingua: {{t|ia|importante}}
+* Irish: {{t|ga|tábhachtach}}, {{t|ga|mórluachach}}
+* Italian: {{t+|it|importante}}
+* Japanese: {{t+|ja|重要|tr=jūyō}}, {{t+|ja|大切|tr=taisetsu}}
+* Kannada: {{t+|kn|ಮುಖ್ಯ}}
+* Kazakh: {{t+|kk|маңызды|sc=Cyrl}}
+* Khmer: {{t+|km|សំខាន់|tr=somkən}}
+* Korean: {{t+|ko|중요하다}}
+* Kurdish:
+*: Central Kurdish: {{t+|ckb|گرنگ}}
+* Kyrgyz: {{t+|ky|маанилүү|sc=Cyrl}}, {{t|ky|олуттуу|sc=Cyrl}}
+* Lao: {{t|lo|ສຳຄັນ}}
+* Latin: {{t+|la|gravis}}, {{t+|la|magnus}}
+* Latvian: {{t|lv|svarīgs}}, {{t|lv|nozīmīgs}}
+* Lithuanian: {{t+|lt|svarbus}}
+* Louisiana Creole French: {{t|lou|importan}}, {{t|lou|gro}}
+* Luxembourgish: {{t+|lb|wichteg}}
+* Macedonian: {{t|mk|ва́жен}}, {{t|mk|зна́чаен}}
+* Malay: {{t|ms|penting}}
+* Malayalam: {{t|ml|അതിപ്രധാനമായ}}, {{t|ml|മുഖ്യമായ}}, {{t|ml|ഗൗരവമുള്ള}}, {{t|ml|ഉയര്‍ന്ന പദവിയിലുള്ള}}
+* Maltese: {{t|mt|importanti}}
+* Maori: {{t|mi|tiketike}}, {{t|mi|matua}}, {{t|mi|hira}}, {{t|mi|mātuatua}}, {{t|mi|pūwhero}} {{qualifier|of the rank of a person}}, {{t|mi|pūwhewhero}} {{qualifier|of the rank of a person}}
+* Mirandese: {{t|mwl|amportante}}
+* Mongolian: {{t+|mn|чухал|sc=Cyrl}}
+* Navajo: {{t|nv|tsʼídá bíhólníihgo}}
+* Nepali: {{t|ne|महत्वपूर्ण}}
+* Norman: {{t|nrf|împortant}}
+* Norwegian: {{t+|no|alvorlig}}, {{t+|no|betydelig}}, {{t+|no|viktig}}
+* Occitan: {{t+|oc|important}}
+* Old English: {{t|ang|hefiġ}}
+* Oriya: {{t|or|ଗୁରୁତ୍ବପୂର୍ଣ୍ଣ}}
+* Persian: {{t+|fa|مهم|tr=mohemm}}
+* Plautdietsch: {{t|pdt|wichtich}}
+* Polish: {{t+|pl|ważny|m}}
+* Portuguese: {{t+|pt|importante}}
+* Punjabi: {{t|pa|ਮਹੱਤਵਪੂਰਨ}}
+* Romanian: {{t+|ro|important}}
+* Russian: {{t+|ru|ва́жный}}, {{t+|ru|зна́чимый}}
+* Samoan: {{t|sm|tāua}}
+* Sanskrit: {{t+|sa|गुरु}}, {{t|sa|अत्यावश्यक}}
+* Scottish Gaelic: {{t|gd|cudromach}}
+* Serbo-Croatian:
+*: Cyrillic: {{t|sh|важан|sc=Cyrl}}
+*: Roman: {{t+|sh|važan}}
+* Sinhalese: {{t|si|වැදගත්}}
+* Slovak: {{t+|sk|dôležitý}}
+* Slovene: {{t|sl|pomémben}}, {{t|sl|važen}}
+* Sorbian:
+*: Lower Sorbian: {{t|dsb|wažny}}
+*: Upper Sorbian: {{t|hsb|wažny}}
+* Spanish: {{t+|es|importante}}
+* Swahili: {{t+|sw|muhimu}}
+* Swedish: {{t+|sv|viktig}}, {{t+|sv|betydelsefull}}
+* Tagalog: {{t|tl|mahalagá}}
+* Tajik: {{t|tg|муҳим|sc=Cyrl}}
+* Tamil: {{t+|ta|முக்கியம்}}, {{t+|ta|பிரதானம்}}, {{t+|ta|பாரதூரம்}}
+* Telugu: {{t+|te|ముఖ్యమైన}}
+* Tetum: {{t|tet|importante}}
+* Thai: {{t+|th|สำคัญ}}, {{t+|th|เอ้|tr=ây}}
+* Tibetan: {{t|bo|གལ་ཆེན་པོ|sc=Tibt}}
+* Tongan: {{t|to|mahuʻinga}}
+* Turkish: {{t+|tr|önemli}}, {{t+|tr|mühim}}
+* Turkmen: {{t|tk|dahylly}}, {{t|tk|möhüm}}
+* Ukrainian: {{t+|uk|важли́вий}}, {{t|uk|значни́й}}, {{t+|uk|важни́й}}
+* Urdu: {{t|ur|اہم|tr=aham}}
+* Uzbek: {{t+|uz|muhim}}
+* Vietnamese: {{t+|vi|quan trọng}}, {{t+|vi|trọng yếu}}
+* Volapük: {{t+|vo|veütik}}
+* Walloon: {{t+|wa|impôrtant}}, {{t+|wa|consecant}}
+* Welsh: {{t+|cy|pwysig}}
+* West Frisian: {{t|fy|wichtich}}
+* Yiddish: {{t|yi|וויכטיק}}, {{t|yi|חשובֿ|tr=khoshev}}
+* Zazaki: {{t|zza|mihim}}
+{{trans-bottom}}
+
+{{checktrans-top}}
+* Bengali: {{t-check|bn|দরকারী}}
+* Tamil: {{t+check|ta|பாரதூரம்}}
+{{trans-bottom}}
+
+==Catalan==
+
+===Pronunciation===
+* {{ca-IPA}}
+* {{audio|ca|LL-Q7026 (cat)-Unjoanqualsevol-important.wav|Audio}}
+
+===Adjective===
+{{ca-adj}}
+
+# {{l|en|important}}
+
+====Derived terms====
+* {{l|ca|importantment}}
+
+====Related terms====
+* {{l|ca|importància}}
+
+===Further reading===
+* {{R:ca:IEC2}}
+* {{R:ca:GDLC}}
+* {{R:ca:DNV}}
+* {{R:ca:DCVB}}
+
+==French==
+
+===Pronunciation===
+* {{fr-IPA|+|qual2=in liaison|in.por.tan.t‿}}
+* {{audio|fr|Fr-important.ogg|audio}}
+
+===Adjective===
+{{fr-adj}}
+
+# {{l|en|important}}
+#: {{ux|fr|Il est '''important''' de se brosser les dents.|It is '''important''' to brush your teeth.}}
+# [[large]], [[considerable]], [[significant]]
+#: {{syn|fr|grand|gros|considérable}}
+#: {{ux|fr|Une partie '''importante''' des votes|A '''significant''' number of the votes}}
+#: {{ux|fr|Une tempête de neige est un phénomène météorologique produit par une dépression météorologique hivernale '''importante'''.|A snowstorm is a meteorological phenomenon produced by a '''large''' winter depression. }}
+
+====Derived terms====
+* {{l|fr|importamment}}
+* {{l|fr|importance}}
+* {{l|fr|importantissime}}
+
+===Participle===
+{{head|fr|present participle}}
+
+# {{present participle of|fr|importer}}
+
+===Further reading===
+* {{R:fr:TLFi}}
+
+==Latin==
+
+===Verb===
+{{head|la|verb form}}
+
+# {{inflection of|la|importō||3|p|pres|actv|indc}}
+
+==Occitan==
+
+===Pronunciation===
+* {{audio|oc|LL-Q14185 (oci)-Davidgrosclaude-important.wav|Audio (Béarn)}}
+
+===Adjective===
+{{oc-adj}}
+
+# {{l|en|important}}
+
+====Related terms====
+* {{l|oc|importància}}
+
+[[Category:Gascon]]
+
+==Romanian==
+
+===Etymology===
+{{bor+|ro|fr|important}}.
+
+===Pronunciation===
+* {{IPA|ro|[im.porˈtant]}}
+
+===Adjective===
+{{ro-adj|4}}
+
+# {{l|en|important}}
+
+====Declension====
+{{ro-adj-4|mpl=importanți}}
+
+====Related terms====
+* {{l|ro|importanță}}
