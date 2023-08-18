@@ -38,7 +38,9 @@ jobs:
       - name: Setup QT drivers and generate UI files
         uses: ./.github/actions/setup_qt
       - name: Test and gather coverage data
-        run: pytest --cov core lookup ui
+        run: |
+          coverage run -m unittest discover -p *_test.py
+          coverage xml -i
       - name: Upload coverage data
         uses: codecov/codecov-action@v3
         env:
