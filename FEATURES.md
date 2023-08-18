@@ -22,7 +22,6 @@ All tasks under milestone name should be completed prior to this release.
 * Write log file
 * Overview table sorting per column
 * Find proper icons set
-* Automated tests for `master`
 * 75% tests coverage
 * Protect `master` branch from merging without tests run
 * Fetch one level of subpages (e.g. `en-woman` article)

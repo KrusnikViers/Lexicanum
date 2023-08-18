@@ -4,8 +4,8 @@ from core.types import Language, Card
 from core.util import StatusOr
 from lookup.interface import LookupInterface
 from lookup.wiktionary.internal_logic import match_definition_sets, lookup_definition_sets
-from lookup.wiktionary.languages import *
-from lookup.wiktionary.internal_logic.debug import *
+from lookup.wiktionary.languages import EnglishLocaleParser, GermanLocaleParser
+from lookup.wiktionary.internal_logic.debug import debug_event_timer, debug_reset_timer
 
 
 class WiktionaryInterface(LookupInterface):

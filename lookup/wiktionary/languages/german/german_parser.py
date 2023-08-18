@@ -1,9 +1,9 @@
 from typing import List
 
 from core.util import safe_get
-from lookup.wiktionary.languages.base import *
+from lookup.wiktionary.languages.base import LocalizedParser
 from lookup.wiktionary.languages.german.grammar_components import grammar_components, pronoun_grammar_components
-from lookup.wiktionary.languages.german.shared_constants import *
+from lookup.wiktionary.languages.german.shared_constants import POS_KEY, POS_MAP
 from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType, DCTranslation
 
 

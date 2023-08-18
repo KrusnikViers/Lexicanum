@@ -2,8 +2,7 @@ import unittest
 
 from lookup.wiktionary.languages.base.test_utils.wiktionary_cache_reader import get_test_content
 from lookup.wiktionary.languages.german import GermanLocaleParser
-from lookup.wiktionary.types import MarkupTree, Definition
-from lookup.wiktionary.types.definition_components import *  # for debug print as well
+from lookup.wiktionary.types import MarkupTree, Definition, PartOfSpeech
 
 
 class TestGermanLocaleParser(unittest.TestCase):

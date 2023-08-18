@@ -2,8 +2,6 @@ import glob
 from pathlib import Path
 from subprocess import run
 
-import PySide6
-
 _GEN_FILE_SUFFIX = '_uic.py'
 
 # This script relies on a multiple assumptions regarding your project:
@@ -13,10 +11,6 @@ _GEN_FILE_SUFFIX = '_uic.py'
 # - All files that you want to convert (and none other) have .ui extension and placed within "ui" directory.
 #
 # File /ui/<some_path>/<file_name>.ui will be translated into /ui/gen/<some_path>/<file_name>_uic.py.
-
-# Looking for the UIC tool. Make sure that requirements are installed!
-qt_uic_path = str((Path(PySide6.__file__).parent / 'uic').resolve())
-print('Qt converter to use: {}'.format(qt_uic_path))
 
 # Looking for UI files directory.
 ui_files_dir = (Path(__file__).parent.parent / 'ui').resolve()
@@ -41,7 +35,7 @@ for input_file_strpath in glob.glob(str(files_to_convert_pattern), recursive=Tru
     output_file = gen_files_dir / input_file.relative_to(ui_files_dir).with_name(new_file_name)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     print('Converting {} => {}...'.format(str(input_file), str(output_file)))
-    uic_process = run([qt_uic_path, '-g', 'python', '-o', str(output_file), str(input_file)],
+    uic_process = run(['pyside6-uic', '-g', 'python', '-o', str(output_file), str(input_file)],
                       timeout=30.0, check=True)
 
 print('---\nAll done!')

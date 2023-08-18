@@ -22,4 +22,3 @@ POS_MAP = {
 }
 
 POS_KEY = 'Wortart'
-
