@@ -298,6 +298,7 @@ Replace input with card suggestions based on the selected word</string>
     </property>
     <addaction name="top_menu_tools_settings"/>
     <addaction name="top_menu_tools_toggle_sidebar"/>
+    <addaction name="top_menu_tools_lookup_debugger"/>
    </widget>
    <addaction name="_top_menu_file"/>
    <addaction name="_top_menu_tools"/>
@@ -367,6 +368,11 @@ Replace input with card suggestions based on the selected word</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="top_menu_tools_lookup_debugger">
+   <property name="text">
+    <string>Lookup debugging...</string>
    </property>
   </action>
  </widget>
