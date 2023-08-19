@@ -5,6 +5,7 @@ from PySide6.QtCore import QObject, Slot
 
 from core.types import Deck
 from lookup.interface import LookupInterface
+from ui.debug_window.debug_window import DebugWindow
 from ui.main_window.card_tables.base import CardsTableView, CardsTableHeader, CardsTableModel
 from ui.main_window.card_tables.input import InputCardsTableView
 from ui.main_window.card_tables.overview import OverviewCardsTableView
@@ -23,6 +24,8 @@ class DeckController(QObject):
         assert self.deck is self.main_window.overview_model.deck
 
         self.main_window.ui.deck_info_title_input.textEdited.connect(self.on_deck_name_changed)
+
+        self.main_window.ui.top_menu_tools_lookup_debugger.triggered.connect(self.on_lookup_debugger_requested)
 
     def table_in_focus(self, expected_type: Type[CardsTableView] | None = None) -> CardsTableView | None:
         focused_widget = self.main_window.focusWidget()
@@ -124,3 +127,8 @@ class DeckController(QObject):
             return
 
         self.main_window.input_model.reset_content(lookup_status.value)
+
+    @Slot()
+    def on_lookup_debugger_requested(self):
+        debug_window = DebugWindow(self.main_window, self.lookup_interface)
+        debug_window.exec()

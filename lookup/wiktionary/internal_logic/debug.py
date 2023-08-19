@@ -1,30 +1,15 @@
-import time
-
-_current_timer = 0
-
-
-def debug_reset_timer():
-    global _current_timer
-    print("--new timer initiated--")
-    _current_timer = time.perf_counter()
-
-
-def debug_event_timer(name: str):
-    global _current_timer
-    _new_timer = time.perf_counter()
-    print("{:.6f}: {}".format(_new_timer - _current_timer, name))
-    _current_timer = _new_timer
+# TODO(viers): Remove in favor of DebugWindow
+def _print_set(definition_set):
+    for key, value in definition_set.items():
+        print('{}:{} => {}'.format(key.wiki_title, key.part_of_speech.name,
+                                   ''.join(map(lambda x: '\n  {}'.format(x), value))))
 
 
 def debug_print_matching(set_a, set_b, full_a, full_b, one_side_a, one_side_b):
     print('----Debug Matching: Answers set------')
-    for key, value in set_a.items():
-        print('{}:{} => {}'.format(key.wiki_title, key.part_of_speech.name,
-                                   ''.join(map(lambda x: '\n  {}'.format(x), value))))
+    _print_set(set_a)
     print('----Debug Matching: Questions set------')
-    for key, value in set_b.items():
-        print('{}:{} => {}'.format(key.wiki_title, key.part_of_speech.name,
-                                   ''.join(map(lambda x: '\n  {}'.format(x), value))))
+    _print_set(set_b)
     if full_a:
         print('----Debug Matching: Full from answer------')
         print('\n'.join(map(str, full_a)))
