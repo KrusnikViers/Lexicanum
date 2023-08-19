@@ -71,7 +71,7 @@ class DebugWindow(QDialog):
 
     def _log_cards(self, cards: List[Card]):
         for card in cards:
-            self._log_event('<b>{}</b> - <i>{}</i> - <b>{}</b> <br/>grammar: {} <br/>meaning: <br/>IPA: {}'.format(
+            self._log_event('<b>{}</b> - <i>{}</i> - <b>{}</b> <br/>grammar: {} <br/>meaning: {}<br/>IPA: {}'.format(
                 card.answer, card.card_type.name, card.question,
                 card.grammar_note,
                 card.meaning_note,
