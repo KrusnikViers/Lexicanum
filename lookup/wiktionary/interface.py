@@ -3,7 +3,7 @@ from typing import List
 from core.types import Language, Card
 from core.util import StatusOr
 from lookup.interface import LookupInterface
-from lookup.wiktionary.internal_logic import match_definition_sets, lookup_definition_sets
+from lookup.wiktionary.internal_logic import DefinitionsToCardsMatcher, DTCMatchingType, lookup_definition_sets
 from lookup.wiktionary.languages import EnglishLocaleParser, GermanLocaleParser
 
 
@@ -21,7 +21,7 @@ class WiktionaryInterface(LookupInterface):
             return lookup_status.to_other()
         answers_set, questions_set = lookup_status.value
 
-        cards_list = match_definition_sets(answers_set, questions_set, order_by_question=False)
+        cards_list = DefinitionsToCardsMatcher.create_cards(DTCMatchingType.AnswerBased, answers_set, questions_set)
         if not cards_list:
             return StatusOr(status="No cards could be constructed")
         return StatusOr(cards_list)
@@ -33,7 +33,7 @@ class WiktionaryInterface(LookupInterface):
             return lookup_status.to_other()
         questions_set, answers_set = lookup_status.value
 
-        cards_list = match_definition_sets(answers_set, questions_set, order_by_question=True)
+        cards_list = DefinitionsToCardsMatcher.create_cards(DTCMatchingType.QuestionBased, answers_set, questions_set)
         if not cards_list:
             return StatusOr(status="No cards could be constructed")
         return StatusOr(cards_list)

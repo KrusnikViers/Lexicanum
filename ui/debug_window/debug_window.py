@@ -3,16 +3,16 @@ from typing import Type, Tuple, List
 
 from PySide6.QtCore import Slot, QMargins
 from PySide6.QtWidgets import QDialog, QMainWindow
+from ui.gen.debug_window.debug_window_uic import Ui_DebugWindow
 
 from core.types import Card
 from core.util import StatusOr
 from lookup.wiktionary.interface import WiktionaryInterface
-from lookup.wiktionary.internal_logic import match_definition_sets
+from lookup.wiktionary.internal_logic import DefinitionsToCardsMatcher, DTCMatchingType
 from lookup.wiktionary.internal_logic.web_api import search_articles, retrieve_articles, WebArticle
 from lookup.wiktionary.languages.base import LocalizedParser
 from lookup.wiktionary.types import DefinitionSet, MarkupTree, build_definition_set
 from ui.debug_window.text_tab import TextTab
-from ui.gen.debug_window.debug_window_uic import Ui_DebugWindow
 
 
 class DebugWindow(QDialog):
@@ -88,7 +88,7 @@ class DebugWindow(QDialog):
             return
 
         answers_set, questions_set = lookup_status.value
-        cards_list = match_definition_sets(answers_set, questions_set, order_by_question=False)
+        cards_list = DefinitionsToCardsMatcher.create_cards(DTCMatchingType.AnswerBased, answers_set, questions_set)
         self._log_event('<b>{}</b> cards were constructed'.format(len(cards_list)))
         self._log_cards(cards_list)
 
@@ -102,7 +102,7 @@ class DebugWindow(QDialog):
             return
 
         questions_set, answers_set = lookup_status.value
-        cards_list = match_definition_sets(answers_set, questions_set, order_by_question=True)
+        cards_list = DefinitionsToCardsMatcher.create_cards(DTCMatchingType.QuestionBased, answers_set, questions_set)
         self._log_event('<b>{}</b> cards were constructed'.format(len(cards_list)))
         self._log_cards(cards_list)
 
