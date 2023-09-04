@@ -1,165 +1,140 @@
 import time
-from typing import Type, Tuple, List
+from typing import List, Dict
 
 from PySide6.QtCore import Slot, QMargins
-from PySide6.QtWidgets import QDialog, QMainWindow
+from PySide6.QtWidgets import QDialog, QMainWindow, QTextBrowser, QToolBox, QTreeWidget, QTreeWidgetItem
+
+from lookup.wiktionary.interface import WiktionaryInterface
+from lookup.wiktionary.types import DebugInterface
+from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType
 from ui.gen.debug_window.debug_window_uic import Ui_DebugWindow
 
-from core.types import Card
-from core.util import StatusOr
-from lookup.wiktionary.interface import WiktionaryInterface
-from lookup.wiktionary.internal_logic import DefinitionsToCardsMatcher, DTCMatchingType
-from lookup.wiktionary.internal_logic.web_api import search_articles, retrieve_articles, WebArticle
-from lookup.wiktionary.languages.base import LocalizedParser
-from lookup.wiktionary.types import DefinitionSet, MarkupTree, build_definition_set
-from ui.debug_window.text_tab import TextTab
 
-
-class DebugWindow(QDialog):
+class DebugWindow(QDialog, DebugInterface):
     def __init__(self, parent: QMainWindow, lookup_interface: WiktionaryInterface):
         super().__init__(parent)
-        self.lookup_interface = lookup_interface
+        self._lookup_interface = lookup_interface
 
-        self.ui = Ui_DebugWindow()
-        self.ui.setupUi(self)
+        self._ui = Ui_DebugWindow()
+        self._ui.setupUi(self)
         self.setModal(True)
         self.show()
         self.setGeometry(parent.geometry().marginsRemoved(QMargins(5, 5, 5, 5)))
 
-        self.timings_tab = TextTab(self)
-        self.ui.tab_widget.addTab(self.timings_tab, 'Timings')
+        self._general_log_browser = QTextBrowser(self)
+        self._ui.tab_widget.addTab(self._general_log_browser, 'General Log')
 
         self._overall_timer = time.perf_counter()
         self._last_event_timer = self._overall_timer
 
-        self.ui.finish_button.clicked.connect(self.on_finish_clicked)
-        self.ui.lookup_button.clicked.connect(self.on_lookup_clicked)
+        self._widgets_map: Dict[str, QToolBox] = dict()
+
+        self._ui.finish_button.clicked.connect(self.on_finish_clicked)
+        self._ui.lookup_button.clicked.connect(self.on_lookup_clicked)
 
     @Slot()
     def on_finish_clicked(self):
         self.done(QDialog.DialogCode.Accepted)
 
-    def _reset(self):
-        while self.ui.tab_widget.count() > 1:
-            self.ui.tab_widget.removeTab(self.ui.tab_widget.count() - 1)
-        self.timings_tab.ui.text_browser.clear()
-        self._overall_timer = time.perf_counter()
-        self._last_event_timer = self._overall_timer
-
-    def _log_event(self, text: str):
-        new_timer_value = time.perf_counter()
-        message = '{:.3f}:+{:.3f} - {}'.format(
-            new_timer_value - self._overall_timer,
-            new_timer_value - self._last_event_timer,
-            text
-        )
-        self._last_event_timer = new_timer_value
-        self.timings_tab.ui.text_browser.append(message)
-
     @Slot()
     def on_lookup_clicked(self):
         self._reset()
 
-        lookup_text = self.ui.lookup_text_edit.text().strip()
-        self._log_event('Lookup for <b>{}</b>'.format(lookup_text))
+        lookup_text = self._ui.lookup_text_edit.text().strip()
+        self.progress_message('Lookup for <b>{}</b>'.format(lookup_text))
 
-        is_lookup_from_answer = self.ui.lookup_type_cbox.currentIndex() == 0
+        is_lookup_from_answer = self._ui.lookup_type_cbox.currentIndex() == 0
         if is_lookup_from_answer:
-            self._on_answer_lookup(lookup_text)
+            result = self._lookup_interface.lookup_by_answer(lookup_text, self)
         else:
-            self._on_question_lookup(lookup_text)
+            result = self._lookup_interface.lookup_by_question(lookup_text, self)
 
-    def _log_cards(self, cards: List[Card]):
-        for card in cards:
-            self._log_event('<b>{}</b> - <i>{}</i> - <b>{}</b> <br/>grammar: {} <br/>meaning: {}<br/>IPA: {}'.format(
-                card.answer, card.card_type.name, card.question,
-                card.grammar_note,
-                card.meaning_note,
-                card.ipa_note
-            ))
+        if result.is_error():
+            self.progress_message(result.status)
+        else:
+            result_string = ''
+            for card in result.value:
+                result_string += ('<br/><b>{} => {}</b>, {}<br/>' +
+                                  '<i>{}<br/>{}<br/>{}<br/></i>').format(
+                    card.question, card.answer, card.card_type.name,
+                    card.grammar_note, card.meaning_note, card.ipa_note
+                )
+            self.progress_rich_message('Resulting cards', result_string)
 
-    def _on_answer_lookup(self, lookup_text: str):
-        lookup_status = self._lookup_definition_sets(
-            lookup_text,
-            source_parser=self.lookup_interface.answer_parser,
-            translations_parser=self.lookup_interface.question_parser)
-        if lookup_status.is_error():
-            self._log_event(lookup_status.status)
-            return
+    def _reset(self):
+        self._widgets_map.clear()
+        while self._ui.tab_widget.count() > 1:
+            self._ui.tab_widget.removeTab(self._ui.tab_widget.count() - 1)
+        self._general_log_browser.clear()
+        self._overall_timer = time.perf_counter()
+        self._last_event_timer = self._overall_timer
 
-        answers_set, questions_set = lookup_status.value
-        cards_list = DefinitionsToCardsMatcher.create_cards(DTCMatchingType.AnswerBased, answers_set, questions_set)
-        self._log_event('<b>{}</b> cards were constructed'.format(len(cards_list)))
-        self._log_cards(cards_list)
+    def progress_message(self, message: str):
+        new_timer_value = time.perf_counter()
+        message = '<br/><i>{:.3f}:+{:.3f}</i><br/>{}'.format(
+            new_timer_value - self._overall_timer,
+            new_timer_value - self._last_event_timer,
+            message
+        )
+        self._last_event_timer = new_timer_value
+        self._general_log_browser.append(message)
 
-    def _on_question_lookup(self, lookup_text: str):
-        lookup_status = self._lookup_definition_sets(
-            lookup_text,
-            source_parser=self.lookup_interface.question_parser,
-            translations_parser=self.lookup_interface.answer_parser)
-        if lookup_status.is_error():
-            self._log_event(lookup_status.status)
-            return
+    def progress_rich_message(self, title: str, message: str):
+        message = message.replace('\n', '<br/>')
+        self.progress_message('<b>{}</b><br/>{}'.format(title, message))
 
-        questions_set, answers_set = lookup_status.value
-        cards_list = DefinitionsToCardsMatcher.create_cards(DTCMatchingType.QuestionBased, answers_set, questions_set)
-        self._log_event('<b>{}</b> cards were constructed'.format(len(cards_list)))
-        self._log_cards(cards_list)
+    def _toolbox(self, wiki_title: str, language: str) -> QToolBox:
+        key = '{} / {}'.format(wiki_title, language)
+        if key in self._widgets_map:
+            return self._widgets_map[key]
 
-    def _lookup_definition_sets(
-            self, search_text: str,
-            source_parser: Type[LocalizedParser],
-            translations_parser: Type[LocalizedParser]) -> StatusOr[Tuple[DefinitionSet, DefinitionSet]]:
+        new_widget = QToolBox(self._ui.tab_widget)
+        self._ui.tab_widget.addTab(new_widget, key)
+        self._widgets_map[key] = new_widget
+        return new_widget
 
-        self._log_event('Searching for <b>{}</b> in <b>{}</b> wiktionary'.format(
-            search_text, source_parser.api_language_code()))
-        source_articles_status = search_articles(search_text, source_parser.api_language_code())
-        if source_articles_status.is_error():
-            return source_articles_status.to_other()
+    def show_raw_wiki_content(self, wiki_title: str, language: str, content: str):
+        toolbox = self._toolbox(wiki_title, language)
+        text_browser = QTextBrowser(toolbox)
+        toolbox.addItem(text_browser, 'Raw wiki content')
+        text_browser.setText(content)
 
-        self._log_event('<b>{}</b> articles fetched: <br/><b>{}</b>'.format(
-            len(source_articles_status.value),
-            '<br/>'.join([article.title for article in source_articles_status.value])
-        ))
+    def show_markup_tree(self, wiki_title: str, language: str, tree: MarkupTree):
+        toolbox = self._toolbox(wiki_title, language)
+        new_widget = QTreeWidget(toolbox)
+        new_widget.setHeaderLabels(['Name', 'Level', 'Follow-up text', 'PArgs', 'KArgs'])
+        toolbox.addItem(new_widget, 'Markup tree')
+        for child_node in tree.children:
+            new_item = QTreeWidgetItem(new_widget)
+            self._extend_markup_tree(new_item, child_node)
+            new_widget.addTopLevelItem(new_item)
 
-        source_definition_set = self._articles_to_definition_set(
-            source_articles_status.value, source_parser, translations_parser)
-        unique_translation_titles = list(set([title
-                                              for definitions_list in source_definition_set.values()
-                                              for definition in definitions_list
-                                              for title in definition.translation_articles]))
-        self._log_event('Getting <b>{}</b> articles for translations:<br/><b>{}</b>'.format(
-            len(unique_translation_titles), '<br/>'.join(unique_translation_titles)))
-        if not unique_translation_titles:
-            return StatusOr(status="Not enough data extracted from search request")
+    @classmethod
+    def _extend_markup_tree(cls, item: QTreeWidgetItem, node: MarkupTree):
+        item.setText(0, node.name)
+        item.setText(1, str(node.level))
+        item.setText(2, node.following_text)
+        item.setText(3, '; '.join(node.plain_args))
+        item.setText(4, '; '.join(['{}:{}'.format(key, value) for key, value in node.keyed_args.items()]))
+        for child_node in node.children:
+            new_item = QTreeWidgetItem(item)
+            cls._extend_markup_tree(new_item, child_node)
+            item.addChild(new_item)
 
-        # Fetch translation articles
-        translation_articles_status = retrieve_articles(unique_translation_titles,
-                                                        translations_parser.api_language_code())
-        if translation_articles_status.is_error():
-            return translation_articles_status.to_other()
-
-        self._log_event('<b>{}</b> articles fetched: <br/><b>{}</b>'.format(
-            len(translation_articles_status.value),
-            '<br/>'.join([article.title for article in translation_articles_status.value])
-        ))
-
-        # Create translations definition set
-        translation_definition_set = self._articles_to_definition_set(translation_articles_status.value,
-                                                                      translations_parser, source_parser)
-        return StatusOr((source_definition_set, translation_definition_set))
-
-    def _articles_to_definition_set(self, articles: List[WebArticle],
-                                    article_parser: Type[LocalizedParser],
-                                    translations_parser: Type[LocalizedParser]) -> DefinitionSet:
-        extracted_definitions = []
-        for article in articles:
-            markup_tree = MarkupTree.build(article.title, article.content)
-            extracted_definitions += article_parser.extract_definitions(
-                markup_tree, article.title, translations_parser.language_codes_for_translations())
-        self._log_event('<b>{}</b> definitions found:<br/>{}'.format(
-            len(extracted_definitions),
-            '<br/>'.join(['<b>{}</b> - <i>{}</i>'.format(definition.readable_name, definition.part_of_speech.name)
-                          for definition in extracted_definitions])
-        ))
-        return build_definition_set(extracted_definitions)
+    def show_components_list(self, wiki_title: str, language: str, components: List[DefinitionComponent]):
+        toolbox = self._toolbox(wiki_title, language)
+        text_browser = QTextBrowser(toolbox)
+        toolbox.addItem(text_browser, 'Definition components tree')
+        for component in components:
+            prefix = '..' * component.level
+            match component.dc_type:
+                case DCType.Separator:
+                    text_browser.append(prefix + '_____________________')
+                case DCType.GrammarNote:
+                    text_browser.append(prefix + 'grammar : {}'.format(component.value))
+                case DCType.ReadableForm:
+                    text_browser.append(prefix + 'readable : {}'.format(component.value))
+                case DCType.PartOfSpeech:
+                    text_browser.append(prefix + component.value.name)
+                case DCType.Translation:
+                    text_browser.append(prefix + ' tr-{} : {}'.format(component.value.lang, component.value.text))

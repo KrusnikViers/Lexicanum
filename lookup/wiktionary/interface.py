@@ -5,6 +5,7 @@ from core.util import StatusOr
 from lookup.interface import LookupInterface
 from lookup.wiktionary.internal_logic import DefinitionsToCardsMatcher, DTCMatchingType, lookup_definition_sets
 from lookup.wiktionary.languages import EnglishLocaleParser, GermanLocaleParser
+from lookup.wiktionary.types import DebugInterface
 
 
 class WiktionaryInterface(LookupInterface):
@@ -14,9 +15,10 @@ class WiktionaryInterface(LookupInterface):
         self.answer_parser = EnglishLocaleParser
         self.question_parser = GermanLocaleParser
 
-    def lookup_by_answer(self, text: str) -> StatusOr[List[Card]]:
+    def lookup_by_answer(self, text: str, debug_interface: DebugInterface | None = None) -> StatusOr[List[Card]]:
         lookup_status = lookup_definition_sets(
-            text, source_parser=self.answer_parser, translations_parser=self.question_parser)
+            text, source_parser=self.answer_parser, translations_parser=self.question_parser,
+            debug_interface=debug_interface)
         if lookup_status.is_error():
             return lookup_status.to_other()
         answers_set, questions_set = lookup_status.value
@@ -26,9 +28,10 @@ class WiktionaryInterface(LookupInterface):
             return StatusOr(status="No cards could be constructed")
         return StatusOr(cards_list)
 
-    def lookup_by_question(self, text: str) -> StatusOr[List[Card]]:
+    def lookup_by_question(self, text: str, debug_interface: DebugInterface | None = None) -> StatusOr[List[Card]]:
         lookup_status = lookup_definition_sets(
-            text, source_parser=self.question_parser, translations_parser=self.answer_parser)
+            text, source_parser=self.question_parser, translations_parser=self.answer_parser,
+            debug_interface=debug_interface)
         if lookup_status.is_error():
             return lookup_status.to_other()
         questions_set, answers_set = lookup_status.value
