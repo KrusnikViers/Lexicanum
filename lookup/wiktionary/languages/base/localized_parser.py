@@ -20,7 +20,7 @@ class LocalizedParser:
     @classmethod
     def extract_definitions(cls, markup_tree: MarkupTree, source_wiki_title: str,
                             language_codes_for_translations: List[str],
-                            debug_interface: DebugInterface | None) -> List[Definition]:
+                            debug_interface: DebugInterface | None = None) -> List[Definition]:
         components_list = cls.extract_definition_components(markup_tree, source_wiki_title,
                                                             language_codes_for_translations)
         if debug_interface:
