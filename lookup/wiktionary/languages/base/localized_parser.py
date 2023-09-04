@@ -1,7 +1,7 @@
 from typing import List
 
 from lookup.wiktionary.languages.base.definitions_composer import DefinitionsComposer
-from lookup.wiktionary.types import DefinitionComponent, MarkupTree, Definition
+from lookup.wiktionary.types import DefinitionComponent, MarkupTree, Definition, DebugInterface
 
 
 # Every language parsing package should implement this class as an outside interface.
@@ -19,9 +19,12 @@ class LocalizedParser:
 
     @classmethod
     def extract_definitions(cls, markup_tree: MarkupTree, source_wiki_title: str,
-                            language_codes_for_translations: List[str]) -> List[Definition]:
+                            language_codes_for_translations: List[str],
+                            debug_interface: DebugInterface | None = None) -> List[Definition]:
         components_list = cls.extract_definition_components(markup_tree, source_wiki_title,
                                                             language_codes_for_translations)
+        if debug_interface:
+            debug_interface.show_components_list(source_wiki_title, cls.api_language_code(), components_list)
         definitions_composer = DefinitionsComposer(source_wiki_title, language_codes_for_translations)
         return definitions_composer.build(components_list)
 
