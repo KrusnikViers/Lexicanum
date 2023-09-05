@@ -6,6 +6,8 @@ from lookup.wiktionary.types import MarkupTree, Definition, PartOfSpeech
 
 
 class TestGermanLocaleParser(unittest.TestCase):
+    maxDiff = None
+
     def test_definition_reading_wiktionary_data(self):
         content = get_test_content(__file__, 'Papagei.txt')
         self.assertEqual(content.title, 'Papagei')
@@ -53,7 +55,6 @@ class TestGermanLocaleParser(unittest.TestCase):
     def test_definition_Morgen(self):
         content = get_test_content(__file__, 'Morgen.txt')
         tree = MarkupTree.build(content.title, content.content)
-        self.maxDiff = None
         self.assertCountEqual(
             GermanLocaleParser.extract_definitions(tree, content.title, ['en']),
             [
@@ -63,6 +64,21 @@ class TestGermanLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Noun, raw_article_title='Morgen',
                            readable_name='Das Morgen', grammar_note='Nur Singular',
                            translation_articles=['morrow', 'tomorrow'])
+            ]
+        )
+
+    def test_definition_nicht(self):
+        content = get_test_content(__file__, 'nicht.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            GermanLocaleParser.extract_definitions(tree, content.title, ['en']),
+            [
+                Definition(PartOfSpeech.Adverb, raw_article_title='nicht',
+                           readable_name='Nicht', grammar_note='',
+                           translation_articles=['not']),
+                Definition(PartOfSpeech.Particle, raw_article_title='nicht',
+                           readable_name='Nicht', grammar_note='',
+                           translation_articles=['not']),
             ]
         )
 

@@ -17,7 +17,7 @@ From 1907 (as reply to {{m|en|thank you}}).<ref>{{R:Online Etymology Dictionary|
 
 # {{non-gloss definition|Used to [[acknowledge]] [[thanks]]; ritual reply to “[[thank you]]”.}}
 # {{&lit|en}}
-#* {{quote-book|en|author=Lynette Eason|authorlink=Lynette Eason|title=Without Warning|series=Elite Guardians|seriesvolume=2|publisher=Revell|year=2016|isbn=978-1-4412-3680-7|passage=No, I didn’t cook, but '''you’re welcome''' to try out the new kitchen.}}
+#* {{quote-book|en|author=w:Lynette Eason|title=Without Warning|series=Elite Guardians|seriesvolume=2|publisher=Revell|year=2016|isbn=978-1-4412-3680-7|passage=No, I didn’t cook, but '''you’re welcome''' to try out the new kitchen.}}
 
 ====Synonyms====
 * {{sense|acknowledgment of thanks}} {{l|en|de nada}}, {{l|en|don't mention it|don’t mention it}}, {{l|en|my pleasure}}, {{l|en|no problem}}, {{l|en|not at all}}, {{l|en|no worries}}, {{l|en|think nothing of it}}, {{l|en|you bet}}; see also [[Thesaurus:you're welcome]]
@@ -81,7 +81,7 @@ From 1907 (as reply to {{m|en|thank you}}).<ref>{{R:Online Etymology Dictionary|
 * Jingpho: {{t|kac|galoi mung garum na gin gin re}}
 * Kazakh: {{t+|kk|өтінемін}}
 * Khmer: {{t+|km|អញ្ជើញ}}, {{t|km|មានអី}}, {{t|km|មិនអ្វីទេ}}, {{t|km|អត់អី}}
-* Korean: {{t|ko|천만에요}}, {{t+|ko|아니다|alt=아니에요}}, {{t|ko|별말씀을요}}, {{t|ko|천만에 말씀 입니다}}, {{t|ko|별것 아니었습니다}}, {{t|ko|별거 아니에요}}, {{t+|ko|괜찮다|alt=괜찮아요}}, {{t|ko|고맙긴요}}
+* Korean: {{t|ko|천만에요}}, {{t+|ko|아니다|alt=아니에요}}, {{t|ko|별말씀을요}}, {{t|ko|천만에 말씀 입니다}}, {{t|ko|별것 아니었습니다}}, {{t|ko|별거 아니에요}}, {{t+|ko|괜찮다|alt=괜찮아요}}, {{t|ko|고맙긴요}}, {{t|ko|뭘요}}
 * Kurdish:
 *: Central Kurdish: {{t|ckb|شایانی نِیە}}
 *: Northern Kurdish: {{t+|kmr|spasxweş}}
@@ -106,6 +106,7 @@ From 1907 (as reply to {{m|en|thank you}}).<ref>{{R:Online Etymology Dictionary|
 * Norwegian:
 *: Bokmål: {{t|nb|bare hyggelig|lit=just fine}}, {{t|nb|ingen årsak|lit=no matter}}, {{t|nb|værsågod|lit=be so good}}, {{t|nb|velbekomme}}
 *: Nynorsk: {{t|nn|berre hyggeleg}}, {{t|nn|det var så lite}}, {{t|nn|inga årsak}}, {{t|nn|sjølv takk}}, {{t|nn|ver så god}}, {{t|nn|vel unnt}}
+* Occitan: {{t|oc|amb plaser}}
 * Persian: {{qualifier|polite}} {{t+|fa|خواهش می‌کنم|tr=xâheš mi-konam}}, {{t|fa|قابل نداشت|tr=qâbel nadâšt}}, {{t|fa|قابلی نداشت|tr=qâbeli nadâšt}}, {{t|fa|قابلی ندارد|tr=qâbeli nadârad}}, {{qualifier|informal}} {{t|fa|قابل نداره|tr=qâbel nadâre}}
 * Polish: {{t+|pl|proszę|lit=please/I ask}}, {{t|pl|proszę bardzo|lit=please/I ask very much}}, {{t+|pl|nie ma za co|lit=nothing to thank for}}, {{t+|pl|spoko}} {{qualifier|colloquial}}, {{t+|pl|spoczko}} {{qualifier|colloquial}}, {{t|pl|sponio}} {{qualifier|colloquial}}
 * Portuguese: {{t+|pt|de nada}}, {{t+|pt|não há de quê}}, {{t|pt|disponha}}
@@ -114,6 +115,7 @@ From 1907 (as reply to {{m|en|thank you}}).<ref>{{R:Online Etymology Dictionary|
 * Russian: {{t+|ru|не́ за что}}, {{t+|ru|пожа́луйста}}, {{t+|ru|не сто́ит благода́рности}}, {{t+|ru|на здоро́вье}}
 * Samoan: {{t|sm|fa'afetai}} {{t|sm|fo'i}}
 * Sanskrit: {{t|sa|सुस्वागतम्}}
+* Scottish Gaelic: {{t|gd|'s e do bheatha}} {{q|when addressing one person informally}}, {{t|gd|'s e ur beatha}} {{q|when addressing more than one person, also used when addressing one person formally}}, {{t|gd|tha sibh di-beathte}} {{q|formal, high-register}}
 * Serbo-Croatian:
 *: Cyrillic: {{t|sh|нема на чему}}, {{t|sh|молити|alt=молим}}
 *: Roman: {{t|sh|nema na čemu}}, {{t+|sh|moliti|alt=molim}}

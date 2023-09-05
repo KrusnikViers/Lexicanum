@@ -64,7 +64,7 @@ Possibly influenced by {{ncog|osx|halo|halo!}}, imperative of {{m|osx|halōn|t=t
 #*:: {{audio|en|Hello. This is Marsha. - Yes, Marsha.ogg|Audio (US)}}
 # {{non-gloss definition|A call for [[response]] if it is not clear if anyone is present or listening, or if a telephone conversation may have been [[disconnect]]ed.}}
 #: {{ux|en|'''Hello'''? Is anyone there?}}
-#* {{quote-book|en|year=1913|author={{w|Joseph C. Lincoln}}|chapter=7
+#* {{quote-book|en|year=1913|author=w:Joseph C. Lincoln|chapter=7
 |title=[http://openlibrary.org/works/OL5535161W Mr. Pratt's Patients]
 |passage=I made a speaking trumpet of my hands and commenced to whoop “Ahoy!” and “'''Hello!'''” at the top of my lungs. {{...}} The Colonel woke up, and, after asking what in brimstone was the matter, opened his mouth and roared “Hi!” and “'''Hello!'''” like the bull of Bashan.}}
 # {{lb|en|colloquial}} {{non-gloss definition|Used [[sarcastic]]ally to imply that the person addressed has done something the speaker considers to be [[foolish]], or missed something that should have been [[obvious]].}}
@@ -129,13 +129,13 @@ Possibly influenced by {{ncog|osx|halo|halo!}}, imperative of {{m|osx|halōn|t=t
 * Bats: {{t-needed|bbl}}
 * Bavarian: {{tt|bar|servus}}, {{tt|bar|grias di}}, {{tt|bar|pfiati}} {{qualifier|Timau}}
 * Belarusian: {{tt|be|віта́ю}}, {{tt|be|здаро́ў}} {{qualifier|colloquial}}, {{tt|be|до́бры дзень}} {{qualifier|good day}}
-* Bengali: {{tt+|bn|নমস্কার}} {{q|used among Hindus}}, {{tt+|bn|আসসালামু আলাইকুম}} {{q|used among Muslims}}, {{tt+|bn|সালাম}} {{q|used among Muslims}}, {{tt+|bn|হ্যালো}}
+* Bengali: {{tt+|bn|আসসালামু আলাইকুম}}, {{tt+|bn|সালাম}}, {{tt+|bn|নমস্কার}}, {{tt+|bn|হ্যালো}}
 * Bhojpuri: {{t|bho|प्रणाम}}
 * Bouyei: {{tt|pcc|mengz ndil}}
 * Bulgarian: {{tt+|bg|здра́сти}} {{qualifier|familiar}}, {{tt+|bg|здраве́й|s}} {{qualifier|familiar}}, {{tt+|bg|здраве́йте|p}} {{qualifier|formal}}
-* Burmese: {{tt+|my|မင်္ဂလာပါ}} <!-- lit. "it's a blessing!, ပါ (ba) is a particle" -->, {{tt+|my|ဟဲလို}} {{qualifier|colloquial}}
+* Burmese: {{tt+|my|မင်္ဂလာပါ}} <!-- lit. "it's a blessing!, ပါ (ba) is a particle" -->, {{tt+|my|ဟဲလို}} 
+* Pa'O: {{tt|blk|ခွဲးဟဝ်ဒျာႏ}},{{tt|blk|မင်္ဂလာႏဒျာႏ}}{{qualifier|colloquial}}
 * Catalan: {{tt+|ca|hola}}
-* Pa-O: {{tt+|blk|ခွဲးဟဝ်ဒျာႏ}}
 * Cayuga: {{tt|cay|sgę́:nǫʔ}}
 * Central Atlas Tamazight: {{tt|tzm|ⴰⵣⵓⵍ}}
 * Chamorro: {{tt|ch|håfa adai}}
@@ -266,7 +266,7 @@ Possibly influenced by {{ncog|osx|halo|halo!}}, imperative of {{m|osx|halōn|t=t
 * Persian: {{tt+|fa|سلام|tr=salâm}}, {{tt|fa|سلام علیکم|tr=salâmo 'alaykom}} {{qualifier|religious}}, {{tt+|fa|درود|tr=dorud}} {{qualifier|literary}}
 * Picard: {{t|pcd|bojour}}
 * Pitcairn-Norfolk: {{tt|pih|watawieh}}
-* Polish: {{tt+|pl|cześć}} {{qualifier|informal}}, {{tt+|pl|witaj}}, {{tt|pl|witajcie}}, {{tt|pl|witam}} {{qualifier|more formal}}, {{tt+|pl|dzień dobry}} {{qualifier|formal}}, {{tt+|pl|siema}} {{qualifier|informal}}, {{t+|pl|czołem}}, {{tt+|pl|halo}} {{qualifier|on phone}}, {{tt+|pl|serwus}} {{qualifier|colloquial}}, {{tt|pl|cześka}} {{qualifier|colloquial}}, {{tt|pl|siemanero}} {{qualifier|colloquial}}, 
+* Polish: {{tt+|pl|cześć}} {{qualifier|informal}}, {{tt+|pl|witaj}}, {{tt|pl|witajcie}}, {{tt|pl|witam}} {{qualifier|more formal}}, {{tt+|pl|dzień dobry}} {{qualifier|formal}}, {{tt+|pl|siema}} {{qualifier|informal}}, {{t+|pl|czołem}}, {{tt+|pl|halo}} {{qualifier|on phone}}, {{tt+|pl|serwus}} {{qualifier|colloquial}}, {{tt|pl|cześka}} {{qualifier|colloquial}}, {{tt|pl|siemanero}} {{qualifier|colloquial}}, , {{t+|pl|hej}}, {{t|pl|cze}}, {{t+|pl|elo}}
 * Portuguese: {{tt+|pt|oi}}, {{tt+|pt|olá}}, {{qualifier|slang}} {{tt+|pt|e aí?}}
 * Punjabi: {{tt|pa|ਸਤਿ ਸ਼੍ਰੀ ਅਕਾਲ}}
 * Rapa Nui: {{tt|rap|'iorana}}
@@ -596,7 +596,7 @@ Possibly influenced by {{ncog|osx|halo|halo!}}, imperative of {{m|osx|halōn|t=t
 # {{lb|en|transitive}} To [[greet]] with "hello".
 #* {{quote-journal|en|journal=Records and Briefs in Cases Decided by the Supreme Court of Minnesota|year=1891|page=227|passage=She is there guarding and looking after the candy and the children generally, and she '''helloes''' and renders an exclamation that Maidie is crossing the street.}}
 #* {{quote-journal|en|journal=Ohio State Engineer|year=1927|page=18|passage=He '''helloes''' to my daughter:{{...}}}}
-#* {{quote-book|en|author=Mark Dolan|authorlink=Mark Dolan|title=Do You Mind if I Put My Hand on it?: Journeys into the Worlds of the Weird|publisher=[[w:HarperCollins|HarperCollins''Publishers'']]|year=2012|isbn=9780007481873|passage=‘Hello Minka! Great to meet you!’ Minka seems nonplussed at what I thought was an uncontroversial opening remark. There’s an awkward pause. She then '''helloes''' me back. But that’s all I get.}}
+#* {{quote-book|en|author=w:Mark Dolan|title=Do You Mind if I Put My Hand on it?: Journeys into the Worlds of the Weird|publisher=[[w:HarperCollins|HarperCollins''Publishers'']]|year=2012|isbn=9780007481873|passage=‘Hello Minka! Great to meet you!’ Minka seems nonplussed at what I thought was an uncontroversial opening remark. There’s an awkward pause. She then '''helloes''' me back. But that’s all I get.}}
 #* {{quote-text|en|year=2013|author=Ivan Doig|title=English Creek|page=139|passage=I had to traipse around somewhat, '''helloing''' people and being '''helloed''', before I spotted my mother and my father, sharing shade and a spread blanket with Pete and Marie Reese and Toussaint Rennie near the back of the park.}}
 
 ===Anagrams===

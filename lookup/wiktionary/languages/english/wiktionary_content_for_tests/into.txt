@@ -22,13 +22,13 @@ From {{inh|en|enm|in-to}}, from {{inh|en|ang|intō}}, equivalent to {{compound|e
 {{en-prep}}
 
 # To or towards the [[inside]] of.
+#: {{ux|en|Mary danced '''into''' the house.}}
+#: {{ux|en|Pour the wine '''into''' the decanter.}}
+#: {{ux|en|The nomads shave intricate designs '''into''' their camels' fur.}}
 #* {{RQ:Churchill Celebrity|chapter=I|page=2|passage=He used to drop '''into''' my chambers once in a while to smoke, and was first-rate company. When I gave a dinner there was generally a cover laid for him. I liked the man for his own sake, and even had he promised to turn out a celebrity it would have had no weight with me.}}
 #* {{quote-journal|en|date=November 3, 2011|author=Chris Bevan|work=BBC Sport
 |title=[http://news.bbc.co.uk/sport2/hi/football/europe/15472973.stm Rubin Kazan 1-0 Tottenham]
 |passage=This time Cudicini was left helpless when Natcho stepped up to expertly curl the ball '''into''' the top corner.}}
-#: {{ux|en|Mary danced '''into''' the house.}}
-#: {{ux|en|Pour the wine '''into''' the decanter.}}
-#: {{ux|en|The nomads shave intricate designs '''into''' their camels' fur.}}
 # To or towards the region of.
 #: {{ux|en|We left the house and walked '''into''' the street.}}
 #: {{ux|en|The eagle flew off '''into''' the wide blue sky.}}
@@ -36,23 +36,23 @@ From {{inh|en|enm|in-to}}, from {{inh|en|ang|intō}}, equivalent to {{compound|e
 #: {{ux|en|The car crashed '''into''' the tree.}}
 #: {{ux|en|I wasn't careful, and walked '''into''' a wall.}}
 # {{n-g|Indicates transition into another form or substance}}.
-#* {{quote-book|en|year=2002|author=Matt Cyr|title=Something to Teach Me: Journal of an American in the Mountains of Haiti|publisher=Educa Vision, Inc.|isbn=1584321385|page={{gbooks|quEn9UyekEgC|25|into}}
-|passage=His English is still in its beginning stages, like my Creole, but he was able to translate some Creole songs that he's written '''into''' English—not the best English, but English nonetheless.}}
 #: {{ux|en|I carved the piece of driftwood '''into''' a sculpture of a whale.}}
 #: {{ux|en|Right before our eyes, Jake turned '''into''' a wolf!}}
+#* {{quote-book|en|year=2002|author=Matt Cyr|title=Something to Teach Me: Journal of an American in the Mountains of Haiti|publisher=Educa Vision, Inc.|isbn=1584321385|page={{gbooks|quEn9UyekEgC|25|into}}
+|passage=His English is still in its beginning stages, like my Creole, but he was able to translate some Creole songs that he's written '''into''' English—not the best English, but English nonetheless.}}
 # {{n-g|Indicates division or the creation of subgroups or sections}}.
-#* {{quote-journal|en|date=2013-07-19|author={{w|Peter Wilby}}
-|volume=189|issue=6|page=30|magazine={{w|The Guardian Weekly}}
+#: {{ux|en|A cow's stomach is divided '''into''' four chambers.}}
+#* {{quote-journal|en|date=2013-07-19|author=w:Peter Wilby
+|volume=189|issue=6|page=30|magazine=w:The Guardian Weekly
 |title=[http://www.theguardian.com/education/2013/jul/01/education-michael-gove-finland-gcse Finland spreads word on schools]
 |passage=Imagine a country where children do nothing but play until they start compulsory schooling at age seven. Then, without exception, they attend comprehensives until the age of 16. Charging school fees is illegal, and so is sorting pupils '''into''' ability groups by streaming or setting.}}
-#: {{ux|en|A cow's stomach is divided '''into''' four chambers.}}
 # After the [[start]] of.
-#* {{RQ:Maxwell Mirror and the Lamp|chapter=13|passage="{{...}} They talk of you as if you were Croesus—and I expect the beggars sponge on you unconscionably." And Vickers launched forth '''into''' a tirade very different from his platform utterances. He spoke with extreme contempt of the dense stupidity exhibited on all occasions by the working classes.}}
 #: {{ux|en|About 20 minutes '''into''' the flight, the pilot reported a fire on board.}}
+#* {{RQ:Maxwell Mirror and the Lamp|chapter=13|passage="{{...}} They talk of you as if you were Croesus—and I expect the beggars sponge on you unconscionably." And Vickers launched forth '''into''' a tirade very different from his platform utterances. He spoke with extreme contempt of the dense stupidity exhibited on all occasions by the working classes.}}
 # {{lb|en|colloquial}} [[interested|Interested]] in or [[attracted]] to.
 #: {{ux|en|She's really '''into''' Shakespeare right now.}}
 #: {{ux|en|My date for tonight has black hair, and I'm '''into''' that.}}
-#* {{quote-song|en|author={{w|Gayle (singer)|Gayle}}, Sara Davis{{,}} and David Pittenger|authorlabel=no|title={{w|ABCDEFU|abcdefu}}|album=A Study of the Human Experience Volume One|date=13 August 2021|artist=Gayle|url=https://www.youtube.com/watch?v=NaFd8ucHLuo|text=I was '''into''' you, but I'm over it now / And I was trying to be nice / But nothing's getting through, so let me spell it out{{...}}}}
+#* {{quote-song|en|author={{w|Gayle (singer)|Gayle}}; Sara Davis; David Pittenger|authorlabel=no|title={{w|ABCDEFU|abcdefu}}|album=A Study of the Human Experience Volume One|date=13 August 2021|artist=Gayle|url=https://www.youtube.com/watch?v=NaFd8ucHLuo|text=I was '''into''' you, but I'm over it now / And I was trying to be nice / But nothing's getting through, so let me spell it out{{...}}}}
 # {{lb|en|British|archaic|India|mathematics}} {{non-gloss definition|Expressing the operation of multiplication.}}<ref>{{R:OED Online}}</ref>
 #: {{ux|en|Five '''into''' three is fifteen.}}
 # {{lb|en|mathematics}} {{non-gloss definition|Expressing the operation of division, with the denominator given first. Usually with "goes".}}
@@ -553,7 +553,7 @@ Contraction of {{m|lij|inte||in}} + {{m|lij|o||the|g=m-s|pos=definite article}}.
 {{head|lij|contraction}}
 
 # [[in]] [[the]] {{q|+ a masculine name in the singular}}
-#* {{quote-song|lij|lyricist=[[w:Fabrizio De André|Fabrizio De André]]|composer=[[w:Mauro Pagani|Mauro Pagani]]|title=Sinàn Capudàn Pascià|url=|album=[[w:Crêuza de mä|Crêuza de mä]]|trans-album=Muletrack by the sea|artist=Fabrizio De André|year=1984|passage='''Into''' mêzo do mâ gh'è 'n péscio tondo / che, quando o vedde e brutte, o va 'nscio fondo|translation='''In the''' middle of the sea is a round fish, that goes to the bottom when things turn ugly}}
+#* {{quote-song|lij|lyricist=w:Fabrizio De André|composer=w:Mauro Pagani|title=Sinàn Capudàn Pascià|url=|album=w:Crêuza de mä|trans-album=Muletrack by the sea|artist=Fabrizio De André|year=1984|passage='''Into''' mêzo do mâ gh'è 'n péscio tondo / che, quando o vedde e brutte, o va 'nscio fondo|translation='''In the''' middle of the sea is a round fish, that goes to the bottom when things turn ugly}}
 
 ====Synonyms====
 * {{l|lij|ne-o}}

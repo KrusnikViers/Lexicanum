@@ -55,9 +55,9 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 ## {{lb|en|intransitive}} To [[navigate]] (to a file or folder on a computer, a site on the internet, a memory, etc).
 ##* {{quote-book|en|year=2009|author=David J. Clark|title=The Unofficial Guide to Microsoft Office Word 2007|isbn=0470377437|page=536
 |passage=To access Office-related TechNet resources, '''go''' to www.microsoft.com/technet/prodtechnol/office.}}
-##* {{quote-book|en|year=2009|author=Lisa W. Coyne|author2=Amy R. Murrell|title=The Joy of Parenting|isbn=157224593X
+##* {{quote-book|en|year=2009|author=Lisa W. Coyne; Amy R. Murrell|title=The Joy of Parenting|isbn=157224593X
 |passage='''Go''' to your earliest memory and to your favorite one, then to one that's difficult to consider.}}
-##* {{quote-book|en|year=2012|author=Glen E. Clarke|author2=Edward Tetz|title=CompTIA A+ Certification All-in-One For Dummies|isbn=1118223691|page=280
+##* {{quote-book|en|year=2012|author=Glen E. Clarke; Edward Tetz|title=CompTIA A+ Certification All-in-One For Dummies|isbn=1118223691|page=280
 |passage='''Go''' to drive C: through My Computer (or Computer in Windows 7 and Vista) and double-click the c:\data folder.}}
 ## To [[move]] (a particular distance, or in a particular fashion).
 ##* {{quote-book|en|year=2003|author=Harrison E. Salisbury|title=The 900 Days: The Siege of Leningrad|isbn=0306812983|page=307
@@ -67,7 +67,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 ## {{lb|en|intransitive}} To [[move]] or [[travel]] in order to do something, or to do something while moving.
 ##: {{ux-lite|en|We '''went''' swimming.}}
 ##: {{ux-lite|en|Let's '''go''' shopping.}}
-##* {{quote-book|en|year=1932|year_published=1965|author=Delos W. Lovelace|authorlink=Delos W. Lovelace|title=[[w:King Kong (1933 film)|King Kong]]|page=2|passage=’[R]e you another '''agoin’''' on this crazy voyage?}}
+##* {{quote-book|en|year=1932|year_published=1965|author=w:Delos W. Lovelace|title=[[w:King Kong (1933 film)|King Kong]]|page=2|passage=’[R]e you another '''agoin’''' on this crazy voyage?}}
 ## {{lb|en|intransitive}} To [[leave]]; to move away.
 ##: {{syn-lite|en|depart|leave|exit|go away|go out}}
 ##: {{ant-lite|en|come|arrive|approach}}
@@ -76,11 +76,11 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 ##: {{ux-lite|en|Workmen were coming and '''going''' at all hours of the night.}}
 ##* {{RQ:Spenser Faerie Queene|year=1596.2|book=IV|canto=XI|stanza=39|page=167|passage=And following Dee, which Britons long '''ygone''' / Did call diuine, that doth by Cheſter tend; {{...}}}}
 ## {{lb|en|obsolete|intransitive}} To [[walk]]; to travel on one's feet. {{defdate|11th|19th c.}}
-##* {{quote-text|en|year=1485|author={{w|Thomas Malory}}|title={{w|Le Morte d'Arthur}}|section=Book XII
+##* {{quote-text|en|year=1485|author=w:Thomas Malory|title=w:Le Morte d'Arthur|section=Book XII
 |passage=‘As for that,’ seyde Sir Trystram, ‘I may chose othir to ryde othir to '''go'''.’}}
 ##* {{quote-book|en|year=1624|author=John Smith|title=Generall Historie|publisher=Kupperman|year_published=1988|page=129
 |passage=Master Piercie our new President, was so sicke hee could neither '''goe''' nor stand.}}
-##* {{quote-book|en|1684|{{w|John Bunyan}}|{{w|The Pilgrim's Progress}}|chapter=Battle with Giant Slay-good|section=[[wikisource:The Pilgrim's Progress (unsourced)/Part II/Section 3|Part II Section 3]]|passage=Other brunts I also look for; but this I have resolved on, to wit, to run when I can, to '''go''' when I cannot run, and to creep when I cannot '''go'''.}}
+##* {{quote-book|en|year=1684|author=w:John Bunyan|title=w:The Pilgrim's Progress|chapter=Battle with Giant Slay-good|section=[[wikisource:The Pilgrim's Progress (unsourced)/Part II/Section 3|Part II Section 3]]|passage=Other brunts I also look for; but this I have resolved on, to wit, to run when I can, to '''go''' when I cannot run, and to creep when I cannot '''go'''.}}
 # {{lb|en|intransitive|chiefly|of a|machine}} To [[work]] or [[function]] (properly); to move or perform (as required).
 #: {{syn-lite|en|function|work|operate}}
 #: {{ux-lite|en|The engine just won't '''go''' anymore.}}
@@ -108,7 +108,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 ##: {{ux-lite|en|That '''went''' well.}}
 ##: {{ux-lite|en|"How are things '''going'''?" "Not bad, thanks."}}
 ##* {{RQ:Shakespeare Macbeth|II|i|passage=How '''goes''' the night, boy?}}
-##* {{quote-text|en|year=1727|author={{w|John Arbuthnot}}|title=Tables of Ancient Coins, Weights and Measures. Explain'd and exemplify'd in several dissertations
+##* {{quote-text|en|year=1727|author=w:John Arbuthnot|title=Tables of Ancient Coins, Weights and Measures. Explain'd and exemplify'd in several dissertations
 |passage=I think, as the world '''goes''', he was a good sort of man enough.}}
 ##* {{RQ:Watts Logick|passage=Whether the cause '''goes''' for me or against me, you must pay me the reward.}}
 ##* {{quote-journal|en|year=1986|journal=The Opera Quarterly|volume=4|issue=3-4|page=24
@@ -121,7 +121,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 |passage=And even if she had believed the story about a John Smith, she might '''go''' telling everyone in town about what she'd seen.}}
 # To [[follow]] or travel along (a path):
 ## To [[follow]] or proceed according to (a course or path).
-##* {{quote-book|en|by={{w|Hermann Hesse}}|1951?|Gunther Olesch et al.|[http://www.gutenberg.org/files/2500/2500-8.txt Siddhartha]|passage=I'm repeating it: I wish that you would '''go''' this path up to its end, that you shall find salvation!}}
+##* {{quote-book|en|by=w:Hermann Hesse|year=1951?|author=Gunther Olesch; et al.|title=[http://www.gutenberg.org/files/2500/2500-8.txt Siddhartha]|passage=I'm repeating it: I wish that you would '''go''' this path up to its end, that you shall find salvation!}}
 ##: {{ux-lite|en|Let's '''go''' this way for a while.}}
 ##: ''She was '''going''' that way anyway, so she offered to show him where it was.''
 ## To [[travel]] or pass along.
@@ -186,14 +186,14 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #: {{syn|en|Thesaurus:die}}
 #* {{RQ:Scott Marmion|passage=By Saint George, he's '''gone'''! / That spear wound hath our master sped.}}
 #* {{quote-book|en|year=1978|author={{w|David Galloway (writer)|David Galloway}}|title=A Family Album|location=London|publisher={{w|Calder Publishing|John Calder}}|isbn=0714536822|page=36|pageurl=https://archive.org/details/familyalbumnovel0000gall/page/36/mode/2up?q=go|passage=After two years of swaddled invalidism, Mrs. Morton emitted a final gassy sigh and died, whereas twenty years later Elihu was to '''go''' “just like that,” as the neighbors said, from a stroke.}}
-#* {{quote-book|en|1997|John Wheatcroft|The Education of Malcolm Palmer|page=85|url=http://books.google.com/books?id=Khzh-qMNCE8C|isbn=0845348639|passage="Your father's '''gone'''." "Okay, okay, the Gaffer's kicked off. What happened?"}}
+#* {{quote-book|en|year=1997|author=John Wheatcroft|title=The Education of Malcolm Palmer|page=85|url=http://books.google.com/books?id=Khzh-qMNCE8C|isbn=0845348639|passage="Your father's '''gone'''." "Okay, okay, the Gaffer's kicked off. What happened?"}}
 # {{lb|en|intransitive|cricket}} To be [[lose|lost]] or [[out]]:
 ## {{lb|en|intransitive|cricket|of a wicket}} To be [[lose|lost]].
 ## {{lb|en|intransitive|cricket|of a batsman}} To be [[out]].
 # To break down or apart:
 ## {{lb|en|intransitive}} To [[collapse]] or give way, to break apart.
 ##: {{syn-lite|en|crumble|collapse|disintegrate|give way}}
-##* {{quote-book|en|1998|{{w|Annie Dillard}}|Pilgrim at Tinker Creek|page=157|url=http://books.google.com/books?id=82mHTKXpSl0C|isbn=0060953020|passage=I wonder if I hopped up and down, would the bridge '''go'''?}}
+##* {{quote-book|en|year=1998|author=w:Annie Dillard|title=Pilgrim at Tinker Creek|page=157|url=http://books.google.com/books?id=82mHTKXpSl0C|isbn=0060953020|passage=I wonder if I hopped up and down, would the bridge '''go'''?}}
 ##* {{quote-book|en|year=2011|author=Shaunti Feldhahn|title=The Lights of Tenth Street|isbn=0307564444
 |passage=Sober-eyed commentators safe in their television studios interviewed engineers about the chances that the rest of the dam could '''go'''.}}
 ##* {{quote-book|en|year=2012|author=Carolyn Keene|title=Mardi Gras Masquerade|isbn=1442465476|page=38|passage=Jackson shook his head. "The contractor said those panes could '''go''' at any moment." / "Right. Just like the wiring could '''go''' at any moment, and the roof could '''go''' at any moment."}}
@@ -224,12 +224,10 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #: {{ux-lite|en|They've '''gone''' one for three in this series.}}
 #: {{ux-lite|en|The team is '''going''' five in a row.}}
 # To be authoritative, accepted, or valid:
-## {{lb|en|intransitive}} To have (final) [[authority]]; to be authoritative.
+## {{lb|en|intransitive}} Of an opinion or instruction, to have (final) [[authority]]; to be authoritative.
 ##: {{ux-lite|en|Whatever the boss says '''goes''', do you understand?}}
 ## {{lb|en|intransitive}} To be [[accept]]ed.
-##* {{quote-book|en|1503|year_published=1836|chapter=19 Henry VII. c. 5: Coin||A Collection of Statutes Connected with the General Administration of the Law|page=158|url=http://books.google.com/books?id=QtYuAAAAIAAJ|passage={{...}} every of them, being gold, whole and weight, shall '''go''' and be current in payment throughout this his realm for the sum that they were coined for.}}
 ##: {{ux-lite|en|Anything '''goes''' around here.}}
-##* {{RQ:KJV|1 Samuel|17|12|passage=The man '''went''' among men for an old man in the days of Saul.}}
 ##* {{RQ:Locke Value|passage=The money which remains should '''go''' according to its true value.}}
 ## {{lb|en|intransitive}} To be [[valid]].
 ##* {{quote-book|en|year=2014|author=Shayna Lance King|title=If You'd Read This Book: You'd Be Employed By Now|isbn=0692206221|page=22|passage=[To job interviews, wear] muted colors. No pink or paisley (that '''goes''' for you too, guys!) {{...}}}}
@@ -240,7 +238,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 ## {{lb|en|transitive}} To [[make]] the (specified) sound.
 ##: {{ux-lite|en|Cats '''go''' "meow". Motorcycles '''go''' "vroom".}}
 ## {{lb|en|intransitive}} To [[sound]]; to make a noise.
-##* {{quote-journal|en|date=June 24 1992|author={{w|Edwina Currie}}|journal=Diary
+##* {{quote-journal|en|date=June 24 1992|author=w:Edwina Currie|journal=Diary
 |passage=At 4pm, the phone '''went'''. It was {{w|The Sun}}: 'We hear your daughter's been expelled for cheating at her school exams{{...}}' / / She'd made a remark to a friend at the end of the German exam and had been [[pull up|pulled up]] for talking. / / As they left the exam room, she muttered that the teacher was a '[[twat]]'. He heard and [[flip]]ped{{mdash}}a pretty stupid thing to do, knowing the kids were tired and tense after exams. Instead of dropping it, the teacher complained to the [[head|Head]] and Deb was [[carpet]]ed.}}
 ##: {{ux-lite|en|I woke up just before the clock '''went'''.}}
 # To be [[express]]ed or [[compose]]d (a certain way).
@@ -293,7 +291,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #* {{quote-book|en|url=https://www.google.com/books/edition/30_Things_I_Love_About_Myself/BdMoEAAAQBAJ?hl=en&gbpv=1&dq=%22gone%20white%22%20dating&pg=PT96|title=30 Things I Love About Myself|author=Radhika Sanghani|publisher=Penguin|isbn=9780593335055|lccn=2021013684|oclc=1289372173|date=2022-01-04|passage=She's ''hot''. Hey, how are your parents about it all? I mean, you're breaking two taboos there—you're dating women, and you've '''gone''' white.}}
 # To [[attack]]:
 ## {{lb|en|intransitive}} To [[fight]] or [[attack]].
-##* {{quote-av|en|year=2002|actor={{w|Jayne Cobb}}|title=Firefly|episode=Objects in Space|passage=You wanna '''go''', little man?}}
+##* {{quote-av|en|year=2002|actor=w:Jayne Cobb|title=Firefly|episode=Objects in Space|passage=You wanna '''go''', little man?}}
 ##: {{ux-lite|en|I '''went''' at him with a knife.}}
 ## {{lb|en|transitive|obsolete|US|slang}} To [[fight]].
 ##* {{quote-book|en|year=1900|title=Frank Merriwell's Tricks: Or True Friends and False|author=Burt L. Standish
@@ -301,8 +299,8 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 |text=You've shown me his weak points, and I'll '''go''' him whether you stick by me or not.
 }}
 ## {{lb|en|transitive|Australian slang}} To [[attack]].
-##* {{quote-book|en|1964|Robert Close|Love Me Sailor|page=131|passage=As big as me. Strong, too. I was itching to '''go''' him, And he had clouted Ernie.}}
-##* {{quote-book|en|year=2002|author={{w|James Freud}}|title=I am the Voice Left from Drinking|pageurl=https://books.google.com/books?id=gfVtTNc0owcC&pg=PT42|page=unnumbered
+##* {{quote-book|en|year=1964|author=Robert Close|title=Love Me Sailor|page=131|passage=As big as me. Strong, too. I was itching to '''go''' him, And he had clouted Ernie.}}
+##* {{quote-book|en|year=2002|author=w:James Freud|title=I am the Voice Left from Drinking|pageurl=https://books.google.com/books?id=gfVtTNc0owcC&pg=PT42|page=unnumbered
 |passage=Then I′m sure I heard him mutter ‘Why don′t you get fucked,’ under his breath.<br>It was at that moment that I became a true professional. Instead of '''going''' him, I announced the next song.}}
 ##* {{quote-book|en|year=2005|author=Joy Dettman|title=One Sunday|pageurl=https://books.google.com/books?id=ZQKALHsrDUgC&pg=PA297|page=297
 |passage=Tom stepped back, considered the hill, and taking off down it. She was going to '''go''' him for blowing that flamin′ whistle in her ear all day.}}
@@ -315,7 +313,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #* {{RQ:L'Estrange Fables of Aesop|passage=They were to '''go''' equal shares in the booty.}}
 #: {{ux-lite|en|Let's '''go''' halves on this.}}
 # {{lb|en|transitive}} To [[yield]] or [[weigh]].
-#* {{quote-book|en|1910|Ray Stannard Baker|Adventures in Friendship|page=182|url=http://books.google.com/books?id=bh5FAAAAIAAJ|passage=This'll '''go''' three tons to the acre, or I'll eat my shirt.}}
+#* {{quote-book|en|year=1910|author=Ray Stannard Baker|title=Adventures in Friendship|page=182|url=http://books.google.com/books?id=bh5FAAAAIAAJ|passage=This'll '''go''' three tons to the acre, or I'll eat my shirt.}}
 #: {{ux-lite|en|Those babies '''go''' five tons apiece.}}
 # {{lb|en|transitive|intransitive}} To [[offer]], [[bid]] or [[bet]] an amount; to [[pay]].
 #: {{ux-lite|en|That's as high as I can '''go'''.}}
@@ -938,7 +936,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 # An [[approval]] or permission to do something, or that which has been approved.
 #: {{syn-lite|en|green light}}
 #: {{ux-lite|en|We will begin as soon as the boss says it's a '''go'''.}}
-#* {{quote-text|en|year=1894|author={{w|Bret Harte}}|title=[[s:The Sheriff of Siskyou|The Sheriff of Siskyou]]
+#* {{quote-text|en|year=1894|author=w:Bret Harte|title=s:The Sheriff of Siskyou
 |passage="Well, Tom, is it a go? You can trust me, for you'll have the thousand in your pocket before you start.{{...}}"}}
 #* {{quote-book|en|year=2009|author=Craig Nelson|title=Rocket Men: The Epic Story of the First Men on the Moon| isbn=1101057734| passage=And as soon as we gave them the '''go''' to continue, we lost communication.}}
 # An act; the working or operation.
@@ -951,7 +949,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 |passage=“Ain't this a rum '''go'''? This is a queer sort of dodge for lighting the streets.”}}
 #* {{quote-book|en|year=1839|author=Charles Dickens|title=Nicholas Nickleby|passage=The images of Mrs. Squeers, my daughter, and my son Wackford, all short of vittles, is perpetually before me; every other consideration melts away and vanishes, in front of these; the only number in all arithmetic that I know of, as a husband and a father, is number one, under this here most fatal '''go'''!}}
 #* {{RQ:Haggard She|passage="Supposing now that some of them were to slip into the boat at night and cut the cable, make off with her? That would be a pretty '''go''', that would."}}
-#* {{quote-av|en|date=2018-02-11|author=Colin Dexter, Russell Lewis|actor={{w|Roger Allam}}|role=DCI Fred Thursday|medium=TV series|title=Endeavour(Cartouche)|season=5|number=2|time=01:02:03|text=“It’s a rum '''go''' and no mistake.”}}
+#* {{quote-av|en|date=2018-02-11|author=Colin Dexter; Russell Lewis|actor=w:Roger Allam|role=DCI Fred Thursday|medium=TV series|title=Endeavour(Cartouche)|season=5|number=2|time=01:02:03|text=“It’s a rum '''go''' and no mistake.”}}
 # {{lb|en|dated}} The [[fashion]] or [[mode]].
 #: {{syn-lite|en|mode|style|trend}}
 #: {{ux-lite|en|quite the '''go'''}}
@@ -959,7 +957,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #*: We are blowing each other out of the market with cheapness; but it is all the '''go''', so we must not be behind the age.
 # {{lb|en|dated}} Noisy [[merriment]].
 #: {{ux-lite|en|a high '''go'''}}
-#* {{quote-text|en|year=1820|author=Thomas Moore|author2=W. Simpkin|author3=R. Marshall|title=Jack Randall's Diary of Proceedings at the House of Call for Genius
+#* {{quote-text|en|year=1820|author=Thomas Moore; W. Simpkin; R. Marshall|title=Jack Randall's Diary of Proceedings at the House of Call for Genius
 |passage=Gemmen (says he), you all well know <br> The joy there is whene'er we meet; <br> It's what I call the primest '''go''', <br> And rightly named, 'tis—'quite a treat,' {{...}}}}
 # {{lb|en|slang|archaic}} A [[glass]] of [[spirits]]; a quantity of spirits.
 #: {{syn-lite|en|gage|measure}}
@@ -977,8 +975,8 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #* {{quote-book|en|year=1995|author=William Noel|title=The Harley Psalter|isbn=0521464951|page=65
 |passage=This could mean that the artist traced the illustration in two '''goes''', as it were, or that the Utrecht Psalter slipped while he was tracing, but I do not think that the relative proportions are consistent enough to demonstrate this.}}
 # {{lb|en|obsolete|British slang}} A [[dandy]]; a fashionable person.
-#* {{quote-book|en|year=1881|title=Tom and Jerry|author={{w|Pierce Egan}}| url=https://archive.org/details/tomjerrylifeinlo1881egan| chapter=VII| page=136| passage=That TOM, who was the '''GO''' among the '''GOES''', in the very centre of fashion in London, should have to encounter the ''vulgar stare'' of this village; or, that the dairy-maid should leave off skimming her cream to take a peep at our hero, as he mounted his courser, is not at all surprising: and TOM only smiled at this ''provincial'' sort of rudeness.}}
-#* {{quote-book|en|year=2012|last=Ross|first=Kate|title=A Broken Vessel| passage=He's a '''go''' among the '''goes''', is Mr. Kestrel. He's only got to sport a new kind of topper, or tie his crumpler a new way, and every gentry-cove in town does just the same.}}
+#* {{quote-book|en|year=1881|title=Tom and Jerry|author=w:Pierce Egan| url=https://archive.org/details/tomjerrylifeinlo1881egan| chapter=VII| page=136| passage=That TOM, who was the '''GO''' among the '''GOES''', in the very centre of fashion in London, should have to encounter the ''vulgar stare'' of this village; or, that the dairy-maid should leave off skimming her cream to take a peep at our hero, as he mounted his courser, is not at all surprising: and TOM only smiled at this ''provincial'' sort of rudeness.}}
+#* {{quote-book|en|year=2012|author=Kate Ross|title=A Broken Vessel| passage=He's a '''go''' among the '''goes''', is Mr. Kestrel. He's only got to sport a new kind of topper, or tie his crumpler a new way, and every gentry-cove in town does just the same.}}
 #: {{seeSynonyms|en|dandy|sense=1}}
 
 =====Derived terms=====
@@ -1056,7 +1054,7 @@ Cognate with {{cog-lite|sco|gae||to go}}, {{cog-lite|fy|gean||to go}}, {{cog-lit
 #* {{quote-text|en|year=1964|title=Instruments and Control Systems
 |passage=&quot;Life support system is '''go''',&quot; said the earphone.}}
 #* {{quote-book|en|year=2011|author=Matthew Stover|title=Luke Skywalker and the Shadows of Mindor: Star Wars Legends|publisher=Del Rey|isbn=9780307795854| passage=“Green One has four starts and is '''go'''.”}}
-#* {{quote-book|en|2016|Tim Brewster|Stuck: It's About to Get Very Weird{{...}}| publisher=Lulu.com| ISBN=9781483457468| page=118| passage=“Weapons ready?” Sam and I pull our loaded BB guns  out of the bag and slot them into place in the longholsters on our backs.“ Weapons are '''go''',” Sam replied.}}
+#* {{quote-book|en|year=2016|author=Tim Brewster|title=Stuck: It's About to Get Very Weird{{...}}| publisher=Lulu.com| ISBN=9781483457468| page=118| passage=“Weapons ready?” Sam and I pull our loaded BB guns  out of the bag and slot them into place in the longholsters on our backs.“ Weapons are '''go''',” Sam replied.}}
 
 ===Etymology 2===
 {{wikipedia|Go (game)}}
@@ -1310,7 +1308,7 @@ Borrowed from {{bor-lite|fr|bm|go}}, itself from {{der|fr|fr|gosse}}.
 
 # (''[[Ivory Coast]]'', ''[[France]]'') [[girlfriend]]
 # (''[[Senegal]]'', ''[[France]]'') [[girl]], [[chick]]
-#* {{quote-song|fr|lyricist={{w|lang=fr|Ol Kainry}}|artist=Agression Verbale|album=Ce n’est que l’début|year=1998|title=Agrévolution|passage=Georgetown pète le champagne, y’a du son, y’a des '''go''' et le sunshine<br/>Tu vois y’a pas de fringues, en caleçon et débardeurs<br/>Avec une bande de démarreurs, des '''go''' qui me disent “t’es speed comme Schumacher”}}
+#* {{quote-song|fr|lyricist=w:fr:Ol Kainry|artist=Agression Verbale|album=Ce n’est que l’début|year=1998|title=Agrévolution|passage=Georgetown pète le champagne, y’a du son, y’a des '''go''' et le sunshine<br/>Tu vois y’a pas de fringues, en caleçon et débardeurs<br/>Avec une bande de démarreurs, des '''go''' qui me disent “t’es speed comme Schumacher”}}
 
 =====Synonyms=====
 * [[fille]]
@@ -1376,8 +1374,8 @@ From {{inh-lite|ga|sga|co}}, from {{inh|ga|ine-pro|*ḱóm||next to, at, with, a
 #: {{ux-lite|inline=1|ga|'''Go''' maire tú é!|May you live to enjoy it!}}
 #: {{ux-lite|inline=1|ga|'''Go''' raibh maith agat.|Thank you.|lit=May you have good.}}
 # [[until]], [[till]]
-#: {{ux-lite|inline=1|ga|Fan '''go''' dtiocfaidh sé.|Wait until he comes.}}
 #: {{syn-lite|ga|go dtí go}}
+#: {{ux-lite|inline=1|ga|Fan '''go''' dtiocfaidh sé.|Wait until he comes.}}
 
 ====Related terms====
 * {{sense-lite|introducing subordinate clause; until}}
@@ -1878,8 +1876,8 @@ From {{der-lite|srn|en|go}}.
 {{sv-noun|n}}
 
 # {{lb|sv|colloquial}} {{l|en|go}} (initiative, perseverance, etc.)
-#: {{ux-lite|sv|Det är inget '''go''' i honom|There's no '''go''' in him}}
 #: {{syn-lite|sv|jävlar anamma}}
+#: {{ux-lite|sv|Det är inget '''go''' i honom|There's no '''go''' in him}}
 
 ===Noun===
 {{head|sv|noun}}
@@ -1929,7 +1927,7 @@ From {{inh-lite|tpi|en|go}}.
 {{vi-noun|𩸰}}
 
 # {{lb|vi|Northern Vietnam}} [[gills]]
-#* {{quote-book|vi|1920|François Chaize [Cố Thịnh]|Địa cầu vạn vật luận - Động vật (Histoire naturelle - zoologie)|||chapter=Phần II. Hạng vật có xương sống (Vertébrés)|4° ''Lớp ếch nhái'' ( Batraciens ) Có máu lạnh; [[lái tim]] có 3 ngăn; vật ấy hoá hình, lúc bé có '''go''' để thở dưới nước rồi thay '''go''' lấy phổi để thở trong khí {{l|vi|giời}}; có da trơn trụi lông; thường có 4 chân; hầu hết đẻ trứng.|translation=4° Amphibians ( Batraciens ) are ectothermic; they have three-chambered hearts and undergo metamorphosis, as when they are juvenile, they have '''gills''' to breathe underwater but lose their '''gills''' for lungs in order to breathe air; their skin is smooth and furless; they are often quadruped; most are oviparous.}}
+#* {{quote-book|vi|year=1920|author=François Chaize [Cố Thịnh]|title=Địa cầu vạn vật luận - Động vật (Histoire naturelle - zoologie)|chapter=Phần II. Hạng vật có xương sống (Vertébrés)|text=4° ''Lớp ếch nhái'' ( Batraciens ) Có máu lạnh; [[lái tim]] có 3 ngăn; vật ấy hoá hình, lúc bé có '''go''' để thở dưới nước rồi thay '''go''' lấy phổi để thở trong khí {{l|vi|giời}}; có da trơn trụi lông; thường có 4 chân; hầu hết đẻ trứng.|translation=4° Amphibians ( Batraciens ) are ectothermic; they have three-chambered hearts and undergo metamorphosis, as when they are juvenile, they have '''gills''' to breathe underwater but lose their '''gills''' for lungs in order to breathe air; their skin is smooth and furless; they are often quadruped; most are oviparous.}}
 #* {{quote-book|vi|author=Nguyễn Can Mộng|title=Nam học Hán văn khoá bản|year=1920|chapter=Bài 50|passage=鰓 Tai = '''go''' cá, ''ouïes''.|translation=鰓 Tai = fish '''gills''', ''ouïes''.}}
 
 ===Etymology 2===
