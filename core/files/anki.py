@@ -88,8 +88,9 @@ _MODEL = genanki.Model(
 
 
 class _Note(genanki.Note):
-    def __init__(self, card: Card):
+    def __init__(self, card: Card, deck: Deck):
         grammar_info_lines = [html.escape(part.strip()) for part in card.question.split(Card.LINE_DELIMITER)]
+        self._deck_id = deck.deck_id
         super().__init__(
             model=_MODEL,
             fields=[
@@ -106,14 +107,14 @@ class _Note(genanki.Note):
 
     @property
     def guid(self):
-        return genanki.guid_for(self.fields[0])
+        return genanki.guid_for(self._deck_id, self.fields[0])
 
 
 def write_file(deck: Deck, output_path: UniversalPath) -> Status:
     deck.normalize_for_output()
     output_deck = genanki.Deck(deck.deck_id, deck.deck_name)
     for card in deck.cards:
-        output_deck.add_note(_Note(card))
+        output_deck.add_note(_Note(card, deck))
     try:
         output_deck.write_to_file(str(output_path))
     except PermissionError as e:
