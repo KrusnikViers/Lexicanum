@@ -248,6 +248,6 @@ class TestEnglishLocaleParser(unittest.TestCase):
             [
                 Definition(PartOfSpeech.Adjective, raw_article_title='important',
                            readable_name='Important', grammar_note='',
-                           translation_articles=['wichtig'], meaning_note='', ipa_note='')
+                           translation_articles=['wichtig'])
 
             ])

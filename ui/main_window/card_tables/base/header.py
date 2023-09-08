@@ -6,8 +6,7 @@ class CardsTableHeader(Enum):
     Question = 1
     Grammar = 2
     Answer = 3
-    IPA = 4
-    Note = 5
+    Note = 4
 
     @classmethod
     def of(cls, index: int) -> 'CardsTableHeader':
@@ -21,7 +20,5 @@ class CardsTableHeader(Enum):
             case 3:
                 return cls.Answer
             case 4:
-                return cls.IPA
-            case 5:
                 return cls.Note
         assert False

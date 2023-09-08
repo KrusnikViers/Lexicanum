@@ -21,8 +21,6 @@ class Definition(NamedTuple):
 
     # Short note to identify meaning when only question is visible.
     meaning_note: str = ''
-    # Pronunciation info in International Phonetic Alphabet.
-    ipa_note: str = ''
 
     def __str__(self):
         return '{} {} (raw {}/gram {}/mean {}/tr {})'.format(self.readable_name, self.part_of_speech.name,

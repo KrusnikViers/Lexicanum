@@ -8,7 +8,7 @@ from core.types import Card, Deck, Language, CardType
 from core.util import UniversalPath, Status
 
 # Update this field each time the model fields are changed.
-_MODEL_VERSION = 6
+_MODEL_VERSION = 7
 # Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
 _MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
 
@@ -20,9 +20,6 @@ _QUESTION_CARD = '''
 </div><hr/>
 <div class="content">
   {{question}}<br/>
-  <div class="ipa_note">
-    {{ipa_note}}
-  </div>
   <div class="grammar_notes">
     {{grammar_info}}
   </div>
@@ -56,7 +53,6 @@ _MODEL = genanki.Model(
         {'name': 'answer'},
         {'name': 'answer_language'},
         {'name': 'meaning_note'},
-        {'name': 'ipa_note'},
     ],
     sort_field_index=1,
     templates=[
@@ -78,11 +74,6 @@ _MODEL = genanki.Model(
         text-align: center;
         color: black;
         background-color: white;
-      }
-      .content > .ipa_note {
-        margin-top: 8px;
-        color: #bbb;
-        font-size: 18pt;
       }
       .content > .grammar_notes {
         font-size: 18pt;
@@ -110,7 +101,6 @@ class _Note(genanki.Note):
                 html.escape(card.answer),
                 Language.EN.value,
                 html.escape(card.meaning_note),
-                html.escape(card.ipa_note),
             ]
         )
 

@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import NamedTuple, List
+from typing import NamedTuple
 
 from lookup.wiktionary.types.definition import PartOfSpeech
 
@@ -37,19 +37,3 @@ class DefinitionComponent:
                 assert isinstance(value, DCTranslation)
             case DCType.Separator:
                 assert value is None
-
-    _DCTypeStrValues = {
-        DCType.Separator: '---',
-        DCType.PartOfSpeech: 'pos',
-        DCType.ReadableForm: 'rdf',
-        DCType.Translation: 'trl',
-        DCType.GrammarNote: 'grm',
-    }
-
-    def __str__(self):
-        return '|' * self.level + ' -{}: {}'.format(self._DCTypeStrValues[self.dc_type], str(self.value))
-
-
-def debug_print_components_list(components_list: List[DefinitionComponent]):
-    for component in components_list:
-        print(str(component))

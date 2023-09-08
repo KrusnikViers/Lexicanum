@@ -68,9 +68,6 @@ class CardsTableModel(QAbstractTableModel):
             case CardsTableHeader.Answer:
                 assert isinstance(value, str)
                 card.answer = value
-            case CardsTableHeader.IPA:
-                assert isinstance(value, str)
-                card.ipa_note = value
             case CardsTableHeader.Note:
                 assert isinstance(value, str)
                 card.meaning_note = value
@@ -91,8 +88,6 @@ class CardsTableModel(QAbstractTableModel):
                 return card.grammar_note
             case CardsTableHeader.Answer:
                 return card.answer
-            case CardsTableHeader.IPA:
-                return card.ipa_note
             case CardsTableHeader.Note:
                 return card.meaning_note
         assert False
