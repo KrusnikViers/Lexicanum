@@ -4,6 +4,7 @@ from typing import List
 
 import requests
 
+from core import info as project_info
 from core.util import StatusOr, Status
 
 _COMMON_PARAMS = {
@@ -12,6 +13,14 @@ _COMMON_PARAMS = {
 }
 
 _RELEVANT_ARTICLE_TITLES_FETCH_COUNT = 3
+_USER_AGENT_IDENTIFIER = "{}-{}/{}.{} ({})".format(
+    project_info.PUBLISHER_NAME, project_info.PROJECT_NAME,
+    project_info.PROJECT_COMPATIBILITY_VERSION, project_info.PROJECT_FEATURE_PACK_VERSION,
+    project_info.PROJECT_URL)
+
+_COMMON_HEADERS = {
+    'User-Agent': _USER_AGENT_IDENTIFIER
+}
 
 
 class WebArticle:
@@ -47,7 +56,7 @@ def search_articles(search_text: str, endpoint_language_code: str) -> StatusOr[L
         'redirects': 'resolve',
         'limit': _RELEVANT_ARTICLE_TITLES_FETCH_COUNT
     }
-    result = requests.get(_endpoint_url(endpoint_language_code), params=params)
+    result = requests.get(_endpoint_url(endpoint_language_code), headers=_COMMON_HEADERS, params=params)
     if errcode := _error_by_request_status_code(search_text, endpoint_language_code, result):
         return StatusOr.from_pure(errcode)
 
@@ -67,7 +76,7 @@ def retrieve_articles(titles: List[str], endpoint_language_code: str) -> StatusO
         'redirects': '1',
         'titles': '|'.join(titles),
     }
-    result = requests.get(url=_endpoint_url(endpoint_language_code), params=params)
+    result = requests.get(url=_endpoint_url(endpoint_language_code), headers=_COMMON_HEADERS, params=params)
     if errcode := _error_by_request_status_code(', '.join(titles), endpoint_language_code, result):
         return StatusOr.from_pure(errcode)
     parsed_response = json.loads(result.text)

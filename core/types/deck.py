@@ -17,7 +17,7 @@ class Deck:
         # Path to the deck file, internal_logic for this app. Does not get imported in Anki.
         self.file_path: UniversalPath | None = file_path
         # Dirty bit.
-        self.was_updated = file_path is None
+        self.was_updated: bool = file_path is None
         # Next card id is strictly incremental, because this is the only way Anki tells cards apart. If id will
         # be reassigned after card was deleted from the project, Anki will attach previous history for this id to
         # the new card. Thus, next_id should be saved as well.

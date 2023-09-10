@@ -25,6 +25,7 @@ All tasks under milestone name should be completed prior to this release.
 * Protect `master` branch from merging without tests run
 * Fetch one level of subpages (e.g. `en-woman` article)
 * Fetch one level of derived forms (e.g. `drive` for `driving`)
+* See if Wiktionary API can be migrated to REST version
 
 ### Stable release blockers
 
