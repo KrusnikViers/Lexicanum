@@ -26,7 +26,7 @@ First attested in 1525. From {{uder|en|frm|perrot}}, either a diminutive of {{m|
 # {{label|en|metaphorical}} A [[parroter]]; a person who [[repeat]]s the [[word]]s or [[idea]]s of others.
 #: {{synonyms|en|copycat|mimic}}
 #: {{ux|en|What kind of a '''parrot''' are you? He just said that.}}
-#* {{quote-text|en|year=1837|author=[[w:Ralph Waldo Emerson|Ralph Waldo Emerson]]|title=[[s:The American Scholar|The American Scholar]]
+#* {{quote-text|en|year=1837|author=w:Ralph Waldo Emerson|title=s:The American Scholar
 |passage=In this distribution of functions, the scholar is the delegated intellect. In the right state, he is, ''Man Thinking''. In the degenerate state, when the victim of society, he tends to become a mere thinker, or, still worse, the '''parrot''' of other men’s thinking.}}
 # {{lb|en|archaic}} A [[puffin]].
 #: {{synonyms|en|sea-parrot|tomnoddy}}
@@ -86,7 +86,7 @@ First attested in 1525. From {{uder|en|frm|perrot}}, either a diminutive of {{m|
 *: Egyptian Arabic: {{t|arz|بغبغان|m|tr=baḡbaḡān}}
 *: Gulf Arabic: {{t|afb|كاسكو|tr=kāsku}}
 *: Iraqi Arabic: {{t|acm|بيبي متو|m|tr=bībimattu}}
-*: Moroccan Arabic: {{t|ary|ببغاء|m|tr=babbaḡāʔ}}, {{t|ary|ببغة|m|tr=babbaḡa}}, {{t|ary|بابغيو|m|tr=bābḡayyu}}
+*: Moroccan Arabic: {{t|ary|ببغاء|m|tr=babbaḡāʔ}}, {{t|ary|ببغة|m|tr=babbaḡa}}, {{t|ary|بابغيو|m|tr=bābaḡayyu}}
 * Aragonese: {{t|an|loro|m}}, {{t|an|choro|m}}
 * Armenian: {{t+|hy|թութակ}}
 *: Old Armenian: {{t|xcl|պապկայ}}
@@ -291,7 +291,7 @@ First attested in 1525. From {{uder|en|frm|perrot}}, either a diminutive of {{m|
 
 # {{lb|en|transitive}} To [[repeat]] (exactly what has just been said) without necessarily [[show]]ing [[understand]]ing, in the [[manner]] of a parrot.
 #: {{ux|en|The interviewee merely '''parroted''' the views of her tabloid.}}
-#* {{quote-journal|en|date=15 June 1996|author=[[w:Bill Clinton|Bill Clinton]]|journal=[[s:Presidential Radio Address - 15 June 1996|Presidential Radio Address]]
+#* {{quote-journal|en|date=15 June 1996|author=w:Bill Clinton|journal=[[s:Presidential Radio Address - 15 June 1996|Presidential Radio Address]]
 |passage=So when political leaders '''parrot''' the tobacco company line, say cigarettes are not necessarily addictive, and oppose our efforts to keep tobacco away from our children, they continue to cater to powerful interests, but they're not standing up for parents and children.}}
 #* {{quote-journal|en|year=1999|month=January|journal=Criminal Justice Ethics|volume=18|author=Larry Cunningham|doi=10.1080/0731129X.1999.9992064|pages=26–40|title=Taking on Testilying|passage=While interviewing officers, some prosecutors will tell them what the law will require that he, the prosecutor, establish through his witnesses.  The officer-witness will then '''parrot''' back those requirements, making his testimony fit the requirements of the law.}}
 

@@ -374,6 +374,9 @@ Replace input with card suggestions based on the selected word</string>
    <property name="text">
     <string>Lookup debugging...</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
   </action>
  </widget>
  <resources/>

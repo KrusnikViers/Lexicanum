@@ -34,10 +34,11 @@ class GermanLocaleParser(LocalizedParser):
     @classmethod
     def extract_definition_components(cls, markup_tree: MarkupTree, source_wiki_title: str,
                                       language_codes_for_translations: List[str]) -> List[DefinitionComponent]:
-        result = []
+        result: List[DefinitionComponent] = []
         for node in markup_tree.children:
             if node.name == POS_KEY:
-                result += [DefinitionComponent(node.level, DCType.Separator)]
+                if len(result) < 2 or result[-2].dc_type != DCType.PartOfSpeech:
+                    result += [DefinitionComponent(node.level, DCType.Separator)]
                 result += _part_of_speech_components(node, source_wiki_title)
             elif node.name.endswith('Übersicht'):
                 result += grammar_components(node, source_wiki_title)

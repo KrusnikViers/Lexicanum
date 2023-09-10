@@ -1,0 +1,208 @@
+nicht
+de
+Original article URL: https://de.wiktionary.org/wiki/nicht
+{{Siehe auch|[[nicht-]], [[Nicht-]]}}
+== nicht ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Adverb|Deutsch}}, {{Wortart|Negationspartikel|Deutsch}} ===
+
+{{Anmerkung}}
+:''Getrennt- und Zusammenschreibung:'' Verbindungen von ''nicht'' mit Adjektiven können in der Regel sowohl getrennt- als auch zusammengeschrieben werden: ''eine nicht kommunistische oder nichtkommunistische Partei.'' Dies gilt nicht, wenn sich ''nicht'' auf größere Einheiten im Satz bezieht: ''Die Partei ist nicht kommunistisch.'' In diesen Fällen muss getrennt geschrieben werden. Diese Regel gilt auch für (abgeleitete) Partizipien: ''eine nicht organisierte oder nichtorganisierte Veranstaltung; die Veranstaltung war nicht organisiert.''<ref>''Deutsche Rechtschreibung - Regeln und Wörterverzeichnis - Entsprechend den Empfehlungen des Rats für deutsche Rechtschreibung - Überarbeitete Fassung des amtlichen Regelwerks 2004 mit den Nachträgen aus dem Bericht 2010'', S.&nbsp;39, §&nbsp;36 (2.3).</ref>
+
+{{Worttrennung}}
+:nicht
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|nɪçt}}
+:{{Hörbeispiele}} {{Audio|De-nicht.ogg}}, {{Audio|De-nicht2.ogg}}
+:{{Reime}} {{Reim|ɪçt|Deutsch}}
+
+{{Bedeutungen}}
+:[1] ''Partikel, die die [[Verneinung]], die [[Negierung]] beziehungsweise die [[Negation]] ausdrückt''
+:[2] {{K|Logik}} ''[[Negation]], [[Negator]]''
+:[3] ''den Sinn nicht verändernde Partikel in Sätzen oder Satzteilen (Nebensätzen), die schon anders als durch das Wort „nicht“ funktional negiert sind''
+
+{{Abkürzungen}}
+:[1] n., ''in medizinischen handschriftlichen Dokumentationen'' ø
+:[2] ¬
+
+{{Herkunft}}
+:[[mittelhochdeutsch]] ''{{lang|gmh|niht}},'' [[althochdeutsch]] ''{{lang|goh|niwiht}},'' aus: ''{{lang|goh|'ni (eo) wiht}}'' = „nicht (irgend)etwas“ mit althochdeutsch ''{{lang|goh|wiht}}'' = „Ding“, „Sache“; belegt seit dem 8. Jahrhundert<ref>{{Ref-DWDS}}</ref><ref>{{Lit-Duden: Herkunftswörterbuch|A=5 (neu bearbeitet)}}, Stichwort ''nicht''.</ref>
+
+{{Sinnverwandte Wörter}}
+:[1] [[in keinem Falle]], [[keinesfalls]], [[keineswegs]], [[nie und nimmer]]
+
+{{Gegenwörter}}
+:[1] [[doch]], [[schon]], [[auch]]
+:[2] [[und]], [[oder]]
+
+{{Oberbegriffe}}
+:[1] [[Negation]], [[Negierung]], [[Verneinung]]
+
+{{Beispiele}}
+:[1] Sie kommt ''nicht.''
+:[2] „A und ''nicht'' A“ ist falsch.
+:[3] „Bevor man sich das ''nicht'' klargemacht hat, sollte man nicht in Einstellungsgespräche gehen.“<ref>Ulrich Jordan (im Gespräch), ''Frankfurter Allgemeine Zeitung'' vom 3. März 2012 und ''Frankfurter Allgemeine Sonntagszeitung'' vom 4. März 2010, Seite C2</ref>
+:[3] „Bis die Ermittlungen ''nicht'' abgeschlossen sind, ist offen, ob es dabei bleibt.“<ref>Hanno Müller in der ''Frankfurter Allgemeinen Zeitung'' vom 10. Juli 2012, Seite 16</ref>
+
+{{Redewendungen}}
+:[1] [[nicht einmal]], [[nicht wahr]] (Redewendung um Zustimmung zu erhalten)
+
+{{Charakteristische Wortkombinationen}}
+:[1] ''nicht'' [[akzeptabel]], ''nicht'' [[anerkannt]] ({{Audio|De-nicht anerkannt.ogg|Audio}}), ''nicht'' [[durchdacht]], ''nicht'' [[durchführbar]], ''nicht'' [[einfach]], ''nicht'' [[eingeplant]], ''nicht'' [[funktionierend]], ''nicht'' [[geeignet]], ''nicht'' [[gehorchend]], ''nicht'' [[hinnehmbar]] ({{Audio|De-nicht hinnehmbar.ogg|Audio}}), ''nicht'' [[lesbar]], ''nicht'' [[vorhanden]], ''nicht'' [[wählerisch]], ''nicht'' [[wahrnehmbar]], ''nicht'' [[wiederholbar]], ''nicht'' [[wünschenswert]], ''nicht'' [[zuständig]], ''nicht'' [[zutreffend]]
+:[1] [[beileibe]] ''nicht'', [[bestimmt]] ''nicht''
+
+{{Wortbildungen}}
+:''weitere Wortbildungen siehe beim Präfix [[nicht-]]''
+:[[vernichten]]
+:[[nichtig]], [[nichts]], [[zunichte]]
+:[2] [[Nichtereignis]], [[Nichteuropäer]], [[Nicht-Gatter]], [[Nicht-Schaltung]], [[Nichtschwimmer]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Partikel, die die Verneinung, die Negierung beziehungsweise die Negation ausdrückt|Ü-Liste=
+*{{sq}}: {{Ü|sq|nuk}}, {{Ü|sq|s'}}
+*{{grc}}: {{Üt|grc|οὐ}}, {{Üt|grc|μή}}
+*{{ar}}: {{Üt|ar|ليس|leyse}}, {{Üt|ar|لن|len}}
+*{{ban}}: {{Ü|ban|tusing}}
+*{{eu}}: {{Ü|eu|ez}}
+*{{bg}}: {{Üt|bg|не|}}
+*{{zh}}: {{Üt|zh|不|bù}}
+*{{da}}: {{Ü|da|ikke}}
+*{{en}}: {{Ü|en|not}}
+*{{eo}}: {{Ü|eo|ne}}
+*{{fo}}: {{Ü|fo|ikki}}
+*{{fi}}: {{Ü|fi|ei}}
+*{{fr}}: {{Ü|fr|ne … pas}}, {{Ü|fr|pas}}, {{Ü|fr|ne}}
+*{{el}}: {{Üt|el|δεν|ðen}}
+*{{he}}: {{Üt|he|לא|lo}}
+*{{ia}}: {{Ü|ia|non}}
+*{{is}}: {{Ü|is|ekki}}, {{Ü|is|ei}}, {{Ü|is|eigi}}
+*{{it}}: {{Ü|it|non}}
+*{{ja}}: {{Üt|ja|ない|nai}}
+*{{ca}}: {{Ü|ca|no}}
+*{{ko}}: {{Üt|ko|안|}}
+*{{la}}: {{Ü|la|haud}}, {{Ü|la|non}}
+*{{lus}}: {{Ü|lus|lo}}
+*{{nl}}: {{Ü|nl|niet}}
+*{{no}}: {{Ü|no|ikke}}
+*{{fa}}: {{Üt|fa|نه|na}}
+*{{pdt}}: {{Ü|pdt|nich}}
+*{{pl}}: {{Ü|pl|nie}}
+*{{pt}}: {{Ü|pt|não}}
+*{{ro}}: {{Ü|ro|nu}}
+*{{ru}}: {{Üt|ru|не}}
+*{{sv}}: {{Ü|sv|ej}}, {{Ü|sv|inte}}
+*{{sk}}: {{Ü|sk|nie}}
+*{{wen}}:
+**{{hsb}}: {{Ü|hsb|nje-}}, {{Ü|hsb|nic}}
+*{{es}}: {{Ü|es|no}}
+*{{th}}: {{Üt|th|ไม่|mâi}}
+*{{cs}}: {{Ü|cs|ne-}}
+*{{tr}}: {{Ü|tr|değil}}
+*{{hu}}: {{Ü|hu|nem}}
+*{{wa}}: {{Ü|wa|nén}}
+|Dialekttabelle=
+*Alemannisch: net, nit, nüt, nöt
+**Schwäbisch: it, et, net
+*[[Bairisch]]:
+**Nordbairisch: niad
+**Mittelbairisch: ned, net
+**Südbairisch: nit, it
+*[[Ostmitteldeutsch]]:
+**Berlinerisch: [[nich]]
+**[[Erzgebirgisch]]: net
+**Lausitzisch: ni, [[nich]]
+**[[Thüringisch-Obersächsisch]]:
+***[[Obersächsisch]]:
+****[[Meißnisch]]: ni, ne, nie
+****[[Osterländisch]]: [[nich]]
+***Thüringisch: net, nit
+}}
+
+{{Ü-Tabelle|2|G=Logik: Negation, Negator|Ü-Liste=
+*{{sq}}: {{Ü|sq|nuk}}, {{Ü|sq|s'}}
+*{{en}}: {{Ü|en|not}}
+*{{pl}}: {{Ü|pl|nie}}
+*{{sv}}: {{Ü|sv|inte}}
+*{{hu}}: {{Ü|hu|nem}}
+|Dialekttabelle=
+*Alemannisch: net, nit, nüt, nöt
+**Schwäbisch: it, et, net
+*[[Bairisch]]:
+**Nordbairisch: niad
+**Mittelbairisch: ned, net
+**Südbairisch: nit, it
+*[[Ostmitteldeutsch]]:
+**Berlinerisch: [[nich]]
+**[[Erzgebirgisch]]: net
+**Lausitzisch: ni, [[nich]]
+**[[Thüringisch-Obersächsisch]]:
+***[[Obersächsisch]]:
+****[[Meißnisch]]: ni, ne, nie
+****[[Osterländisch]]: [[nich]]
+***Thüringisch: net, nit
+}}
+
+{{Ü-Tabelle|3|G=|Ü-Liste=
+*{{ia}}: {{Ü|ia|non}}
+|Dialekttabelle=
+*Alemannisch: net, nit, nüt, nöt
+**Schwäbisch: it, et, net
+*[[Bairisch]]:
+**Nordbairisch: niad
+**Mittelbairisch: ned, net
+**Südbairisch: nit, it
+*[[Ostmitteldeutsch]]:
+**Berlinerisch: [[nich]]
+**[[Erzgebirgisch]]: net
+**Lausitzisch: ni, [[nich]]
+**[[Thüringisch-Obersächsisch]]:
+***[[Obersächsisch]]:
+****[[Meißnisch]]: ni, ne, nie
+****[[Osterländisch]]: [[nich]]
+***Thüringisch: net, nit
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Negation}}
+:[2] {{Wikipedia|Boolesche Algebra}}
+:[1] {{Ref-Grimm}}
+:[1] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+:[1] {{Ref-FreeDictionary}}
+
+{{Quellen}}
+
+{{Ähnlichkeiten 1|[[Nichte]]}}
+
+== nicht ({{Sprache|Scots}}) ==
+=== {{Wortart|Substantiv|Scots}} ===
+
+{{Scots Substantiv Übersicht
+|Singular=nicht
+|Plural=nichts
+}}
+
+{{Worttrennung}}
+:nicht
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|nɪçt}}
+:{{Hörbeispiele}} {{Audio|}}
+
+{{Bedeutungen}}
+:[1] Zeit zwischen Abenddämmerung und Morgengrauen; Nacht
+
+{{Beispiele}}
+:[1] {{Beispiele fehlen|spr=sco}}
+
+{{Wortbildungen}}
+:[[benicht]], [[forenicht]], [[fortnicht]], [[midnicht]], [[owernicht]], [[sennicht]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Zeit zwischen Abenddämmerung und Morgengrauen; Nacht|Ü-Liste=
+*{{de}}: {{Ü|de|Nacht}} {{f}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|spr=sco|nicht}}
+:[1] {{Ref-dsl|nicht}}

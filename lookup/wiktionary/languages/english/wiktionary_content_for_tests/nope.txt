@@ -16,7 +16,7 @@ Representing {{m|en|no}} pronounced with the mouth snapped closed at the end. Co
 {{en-part}}
 
 # {{lb|en|informal|commonly|emphatic}} [[no|No]].
-#* {{quote-book|en|year=1856|author=Sidney George Fisher|author2=Charles Edward Fisher|title=Kanzas and the Constitution|pageurl=http://books.google.com/books?id=FzYPAAAAIAAJ&vid=OCLC05086871&dq=nope&q=nope+date%3A1856-1856&pgis=1|page=97
+#* {{quote-book|en|year=1856|author=Sidney George Fisher; Charles Edward Fisher|title=Kanzas and the Constitution|pageurl=http://books.google.com/books?id=FzYPAAAAIAAJ&vid=OCLC05086871&dq=nope&q=nope+date%3A1856-1856&pgis=1|page=97
 |passage="Is my son here, Clarence?" asked Roger Oakley. "'''Nope'''. The whistle ain't blowed yet."}}
 #* {{quote-book|en|year=1880|author=R. Foli|title=Ill weeds|pageurl=http://books.google.com/books?id=APMBAAAAQAAJ&vid=0bKNauNGn8H-hgNW&dq=nope&q=nope+date%3A1880-1880&pgis=1|page=319|passage="No," from Tom, ending the word with so decided a pressure of the lips that it sounded like "'''nope'''."}}
 #* {{quote-text|en|year=1890|title=Werner's Readings and Recitations|publisher=E.S. Werner|pageurl=http://books.google.com/books?id=HWPK9I3ps0cC&vid=OCLC35453526&dq=nope&q=nope+date%3A1890-1890&pgis=1|page=50
@@ -118,7 +118,7 @@ Possibly influenced by [[nape]] and [[knap]].
 {{en-noun}}
 
 # {{lb|en|East Midlands|and|Northern England}} A [[blow]] to the [[head]].
-#* {{quote-book|en|year=1823|author=Francis Grose|author2=Pierce Egan|title=Grose's Classical Dictionary of the Vulgar Tongue|publisher=Francis Grose|pageurl=http://books.google.com/books?vid=OCLC11870520&id=LXMKAAAAIAAJ&pg=PR91&vq=nope&dq=nope&num=100|page=xci
+#* {{quote-book|en|year=1823|author=Francis Grose; Pierce Egan|title=Grose's Classical Dictionary of the Vulgar Tongue|publisher=Francis Grose|pageurl=http://books.google.com/books?vid=OCLC11870520&id=LXMKAAAAIAAJ&pg=PR91&vq=nope&dq=nope&num=100|page=xci
 |passage=(''in an example of use of ''crackmans) The cull thought to have loped by breaking through the crackmans, but we fetched him back by a '''nope''' on the costard, which stopped his jaw.}}
 #* {{quote-book|en|year=1829|author=Joseph Hunter|title=The Hallamshire Glossary|publisher=W. Pickering|pageurl=http://books.google.com/books?id=87tY7YWWwhgC&vid=OCLC04900790&dq=nope&pg=PA69&lpg=PA69&q=nope|page=69
 |passage=I'll fetch thee a '''nope'''.}}

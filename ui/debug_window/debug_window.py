@@ -4,14 +4,14 @@ from typing import List, Dict
 from PySide6.QtCore import Slot, QMargins
 from PySide6.QtWidgets import QDialog, QMainWindow, QTextBrowser, QToolBox, QTreeWidget, QTreeWidgetItem
 
-from lookup.wiktionary.interface import WiktionaryInterface
+from lookup.wiktionary.interface import LookupInterface
 from lookup.wiktionary.types import DebugInterface
 from lookup.wiktionary.types import MarkupTree, DefinitionComponent, DCType
 from ui.gen.debug_window.debug_window_uic import Ui_DebugWindow
 
 
 class DebugWindow(QDialog, DebugInterface):
-    def __init__(self, parent: QMainWindow, lookup_interface: WiktionaryInterface):
+    def __init__(self, parent: QMainWindow, lookup_interface: LookupInterface):
         super().__init__(parent)
         self._lookup_interface = lookup_interface
 
@@ -55,9 +55,9 @@ class DebugWindow(QDialog, DebugInterface):
             result_string = ''
             for card in result.value:
                 result_string += ('<br/><b>{} => {}</b>, {}<br/>' +
-                                  '<i>{}<br/>{}<br/>{}<br/></i>').format(
+                                  '<i>{}<br/>{}<br/></i>').format(
                     card.question, card.answer, card.card_type.name,
-                    card.grammar_note, card.meaning_note, card.ipa_note
+                    card.grammar_note, card.meaning_note
                 )
             self.progress_rich_message('Resulting cards', result_string)
 

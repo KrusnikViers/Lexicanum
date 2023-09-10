@@ -21,7 +21,7 @@ Original article URL: https://en.wiktionary.org/wiki/the
 
 {{rel-top|pronunciation notes}}
 The word ''the'' is commonly pronounced {{IPAchar|/ðiː/}} whenever it is pronounced as a distinct word, e.g.:
-* When it is used for emphasis ({{l|en||''This is ''the'' hospital for open-heart surgery''}}).
+* When it is used for emphasis ({{l|en||This is ''the'' hospital for open-heart surgery}}).
 * When the speaker pauses between ''the'' and the next word ({{m|en||the … sovereignty}}).
 * In many but not all dialects, when the next word begins with a vowel sound ({{m|en||the onion}}) (compare with {{l|en|a}} vs. {{l|en|an}}).
 The word is generally pronounced indistinctly as {{IPAchar|/ðə/}} or merely {{IPAchar|/ð/}} in other situations, such as when attached to a word beginning with a consonant sound.
@@ -32,48 +32,54 @@ The [[eye dialect|typographical pronunciation]] {{IPAchar|/jiː/}} (''"'''[[ye#E
 
 ===Etymology 1===
 {{root|en|ine-pro|*só}}From {{inh|en|enm|þe}}, from {{inh|en|ang|þē||the, that|pos=[[demonstrative pronoun]]|g=m}}, a late variant of {{m|ang|sē}}, the ''s-'' (which occurred in the masculine and feminine nominative singular only) having been replaced by the ''þ-'' from the oblique stem.
-
+{{rel-top|replaced words, cognates}}
 Originally neutral nominative, in Middle English it superseded all previous Old English nominative forms ({{m|ang|sē|g=m}}, {{m|ang|sēo|g=f}}, {{m|ang|þæt|g=n}}, {{m|ang|þā|g=p}}); {{m|ang|sē}} is from {{inh|en|gmw-pro|*siz}}, from {{inh|en|gem-pro|*sa}}, ultimately from {{inh|en|ine-pro|*só}}.
 
 Cognate with {{cog|stq|die|t=the}}, {{cog|fy|de|t=the}}, {{cog|nl|de|t=the}}, {{cog|nds-de|de|t=the}}, {{cog|de|der|t=the}}, {{cog|da|de|t=the}}, {{cog|sv|de|t=the}}, {{cog|is|sá|t=that}} within Germanic and with {{cog|sa|sá|t=the, that}}, {{cog|grc|ὁ|t=the}}, {{cog|txb|se|t=this}} among other Indo-European languages<ref>{{R:ine:LIPP|volume=2|pages=732-733}}</ref>.
+{{rel-bottom}}
 
 ====Article====
 {{head|en|article}}
 
-# {{non-gloss definition|[[definite|Definite]] grammatical [[article]] that implies necessarily that an entity it hints at is [[presuppose]]d; something already [[mention]]ed, or completely [[specify|specified]] later in that same sentence, or [[assume]]d already completely specified.}} {{defdate|from 10th c.}}
-#: ''I’m reading '''the''' book.'' (Compare ''I’m reading '''a''' book.'')
-#: '''''The''' street in front of your house.'' (Compare '''''A''' street in Paris.'')
-#: '''''The''' men and women watched '''the''' man give '''the''' birdseed to '''the''' bird.''
-#* {{quote-web|1=en|year=2016|url=https://learningenglish.voanews.com/a/lets-learn-english-lesson-5-where-are-you/3168971.html|site=VOA Learning English|passage=I sleep in '''the''' bedroom!|accessdate=12 December 2018|archiveurl=https://web.archive.org/web/20170930001420/https://learningenglish.voanews.com/a/lets-learn-english-lesson-5-where-are-you/3168971.html|archivedate=30 September 2017}}
-# {{non-gloss definition|Used before a noun modified by a [[restrictive]] [[relative clause]], indicating that the noun refers to a single referent defined by the relative clause.}}
-#: '''''The''' street that runs through my hometown.''
-# {{non-gloss definition|Used before an object considered to be [[unique]], or of which there is only one at a time.}} {{defdate|from 10th c.}}
-#: ''No one knows how many galaxies there are in '''the''' universe.''
-#: ''God save '''the''' Queen!''
-#* {{RQ:King James Version|Revelation|1|8|column=2|passage=I am Alpha and Omega, '''the''' beginning and '''the''' ending, saith '''the''' Lord, which is, and which was, and which is to come, '''the''' Almighty.}}
-# {{non-gloss definition|Used before a [[superlative]] or an [[ordinal number]] modifying a noun, to indicate that the noun refers to a single item.}}
-#: ''That was '''the''' best apple pie ever.''
-# {{non-gloss definition|Added to a superlative or an ordinal number to make it into a substantive.}} {{defdate|from 9th c.}}
-#: ''That apple pie was '''the''' best.''
-# {{non-gloss definition|Introducing a singular term to be taken [[generically]]: preceding a name of something standing for a whole class.}} {{defdate|from 9th c.}}
-#* {{RQ:Mandela Long Walk to Freedom|page=536|passage=Stern and God-fearing, '''the''' Afrikaner takes his religion seriously.}}
-# {{non-gloss definition|Used before an adjective, indicating all things (especially persons) described by that adjective.}} {{defdate|from 9th c.}}
-#: ''Feed '''the''' hungry, clothe '''the''' naked, comfort '''the''' afflicted, and afflict '''the''' comfortable.''
-# {{non-gloss definition|Used to indicate a certain example of (a noun) which is usually of most concern or most common or familiar.}} {{defdate|from 12th c.}}
-#: ''No one in '''the''' whole country had seen it before.''
-#: ''I don't think I'll get to it until '''the''' morning.''
-# {{non-gloss definition|Used before a body part (especially of someone previously mentioned), as an alternative to a [[possessive pronoun]].}} {{defdate|from 12th c.}}
-#: ''A stone hit him on '''the''' head.'' (= “A stone hit him on his head.”)
-# {{non-gloss definition|When stressed, indicates that it describes an object which is considered to be best or exclusively worthy of attention.}} {{defdate|from 18th c.}}
-#: ''That is'' '''the''' ''hospital to go to for heart surgery.''
-#* {{RQ:Doyle Land of Mist|passage="Good Heavens, man! Why, he is '''''the''''' authority. If you want pure laboratory experiments those are the books."}}
-#* {{quote-journal|en|date=May 27, 2012
-|author=Nathan Rabin
-|title=TV: Review: THE SIMPSONS (CLASSIC): “New Kid On The Block” (season 4, episode 8; originally aired 11/12/1992)
-|work=The Onion AV Club
-|url=http://www.avclub.com/articles/new-kid-on-the-block,75341/
-|page=
-|passage=“New Kid On The Block” doubles as a terrific showcase for the Sea Captain who, in the grand tradition of Simpsons supporting characters, quickly goes from being a stereotype to an archetype, from being a crusty sea-captain character to '''''the''''' crusty sea-captain character.}}
+# {{n-g|Used before noun phrase, including a simple noun}}
+## {{non-gloss definition|The [[definite]] grammatical [[article]] that implies necessarily that the noun phrase it immediately precedes is definitely identifiable}}
+### {{n-g|because it has already been [[mention]]ed, is to be completely [[specify|specified]] in the same sentence, or very shortly thereafter.}} {{defdate|from 10th c.}}
+###: ''I’m reading '''the''' book Mary reviewed.'' (Compare ''I’m reading '''a''' book Mary reviewed.'')
+###: ''You live on Main Street, don't you? You know, you should tell the mayor '''the''' street needs cleaning.''
+###: '''''The''' men and women watched '''the''' man give '''the''' birdseed to '''the''' bird.''
+###: '''''The''' street that runs all the way through my hometown.''
+###* {{quote-web|1=en|year=2016|url=https://learningenglish.voanews.com/a/lets-learn-english-lesson-5-where-are-you/3168971.html|site=VOA Learning English|passage=I sleep in '''the''' bedroom!|accessdate=12 December 2018|archiveurl=https://web.archive.org/web/20170930001420/https://learningenglish.voanews.com/a/lets-learn-english-lesson-5-where-are-you/3168971.html|archivedate=30 September 2017}}
+### {{n-g|because it is presumed to be definitely known in context or from shared knowledge}}
+#### {{non-gloss definition|Used before a noun designating something considered to be [[unique]], or of which there is only one at a time.}} {{defdate|from 10th c.}}
+####: ''No one knows how many galaxies there are in '''the''' universe.''
+####: ''God save '''the''' Queen!''
+####* {{RQ:King James Version|Revelation|1|8|column=2|passage=I am Alpha and Omega, '''the''' beginning and '''the''' ending, saith '''the''' Lord, which is, and which was, and which is to come, '''the''' Almighty.}}
+#### {{non-gloss definition|Used to indicate a certain example of (a noun) which is usually of most concern or most common or familiar.}} {{defdate|from 12th c.}}
+####: ''No one in '''the''' whole country had seen it before.''
+####: ''I don't think I'll get to it until '''the''' morning.''
+####: ''Take me to '''the''' airport/station/hospital/office/park/match/meeting.'' 
+#### {{non-gloss definition|Used before a body part, a family member, a pet (especially of someone previously mentioned), as an alternative to a [[possessive pronoun]].}} {{defdate|from 12th c.}}
+####: ''A stone hit him on '''the''' head.'' (= “A stone hit him on his head.”)
+####: ''How's '''the''' wife?'' (= "How is your wife?")
+#### {{n-g|Used in many idiomatic expressions and proverbs to refer to common objects, roles, or situations connected with something definite, as by analogy}}
+####: ''square '''the''' circle; feel '''the''' pinch; beat around '''the''' bush; throw '''the''' baby out with '''the''' bathwater''
+## {{non-gloss definition|When stressed, indicates that it describes something which is considered to be best or exclusively worthy of attention.}} {{defdate|from 18th c.}}
+##: ''That is'' '''the''' ''hospital to go to for heart surgery.''
+##* {{RQ:Doyle Land of Mist|passage="Good Heavens, man! Why, he is '''''the''''' authority. If you want pure laboratory experiments those are the books."}}
+##* {{quote-journal|en|date=May 27, 2012| author=Nathan Rabin| title=TV: Review: THE SIMPSONS (CLASSIC): “New Kid On The Block” (season 4, episode 8; originally aired 11/12/1992)| work=The Onion AV Club| url=http://www.avclub.com/articles/new-kid-on-the-block,75341/| passage=“New Kid On The Block” doubles as a terrific showcase for the Sea Captain who, in the grand tradition of Simpsons supporting characters, quickly goes from being a stereotype to an archetype, from being a crusty sea-captain character to '''''the''''' crusty sea-captain character.}}
+## {{non-gloss definition|Used before a noun phrase beginning with [[superlative]] or comparative adjective or an [[ordinal number]],  indicating that the noun refers to a single item.}}
+##: ''That was '''the''' best apple pie ever.''
+## {{non-gloss definition|Introducing a singular term to be taken [[generically]]: preceding a name of something standing for a whole class.}} {{defdate|from 9th c.}}
+##* {{RQ:Mandela Long Walk to Freedom|page=536|passage=Stern and God-fearing, '''the''' Afrikaner takes his religion seriously.}}
+##: '''''The''' downy woodpecker can be found in the same environments as '''the''' hairy woodpecker.''
+## {{n-g|Used with the plural of a surname to indicate the entire family.}}
+##: '''''The''' Bushes have held political office for several decades and '''the''' Kennedys longer.''
+# {{n-g|Used with an adjective}}
+## {{non-gloss definition|Added to a superlative or an ordinal number to make it into a substantive.}} {{defdate|from 9th c.}}
+##: ''That apple pie was '''the''' best.''
+## {{non-gloss definition|Used before an adjective, indicating all things (especially persons) described by that adjective.}} {{defdate|from 9th c.}}
+##: ''Feed '''the''' hungry, clothe '''the''' naked, comfort '''the''' afflicted, and afflict '''the''' comfortable.''
+##: ''One doesn't choose the color of one's chess pieces, '''the''' white are assigned to the player who moves first.''
 
 =====Usage notes=====
 {{rel-top|Usage notes (with proper nouns)}}
@@ -136,7 +142,9 @@ When used before an adjective which is not followed by a noun, it may refer to a
 * {{l|en|le}}
 
 =====Derived terms=====
-{{rel-top|terms derived from ''the (determiner)''}}
+{{rel-top|terms derived from ''the (article)''}}
+* [[all the time]]
+* [[Jack the Ripper]]
 * {{l|en|the heck}}
 * {{l|en|the hell}}
 * {{l|en|the man}}
@@ -318,7 +326,7 @@ When used before an adjective which is not followed by a noun, it may refer to a
 
 {{trans-top|used as an alternative to a possessive pronoun before body parts}}
 * Dutch: {{t+|nl|de}}
-* Finnish: {{t+|fi|-ni}}, {{t+|fi|-si}}, {{t+|fi|-nsa}}, {{t+|fi|-nsä}}, {{t+|fi|-mme}}, {{t+|fi|-nne}}
+* Finnish: {{t+|fi|-ni}}, {{t+|fi|-si}}, {{t+|fi|-nsa}}, {{t+|fi|-nsä}}, {{t+|fi|-mme}}, {{t+|fi|-nne}}, {{t+|fi|minun}}, {{t+|fi|sinun}}, {{t+|fi|hänen}}, {{t+|fi|sen}}, {{t+|fi|sen}}, {{t+|fi|meidän}}, {{t+|fi|teidän}}, {{t+|fi|heidän}}, {{t+|fi|niiden}}
 * French: {{t+|fr|le}}
 * Greek: {{t+|el|στον}}
 * Italian: {{t+|it|il}}
@@ -428,6 +436,7 @@ This is called the "comparative correlative", but it is also known as the "corre
 
 =====Translations=====
 {{trans-top|'''the''' + ''comparative'', '''the''' + ''comparative''}}
+* Afrikaans: {{t|af|[[hoe]] + ''comp.'', [[hoe]] + ''comp.''}}
 * Arabic: {{t|ar|[[كُلَّمَا]] [[كَانَ]]... [[كَانَ]] ...}} (example: {{lang|ar|كلما كان أرخص كان أفضل}} (''kúllama kāna ʾárḵaṣ kāna ʾáfḍal'' ‘the cheaper the better’) *(''used with a verb in the past tense, "kāna" or others'')
 * Catalan: {{t|ca|[[com]] + ''comp.'', ''comp.''}}
 * Chinese:
@@ -470,13 +479,13 @@ This is called the "comparative correlative", but it is also known as the "corre
 {{trans-bottom}}
 
 ===Etymology 3===
-
+{{rfe|en}}
 ====Preposition====
 {{en-prep}}
 
 # For each; [[per]].
 #: {{ux|en|valued at half a pound '''the''' bushel; paying seven dollars '''the''' year interest}}
-#* {{quote-book|en|year=1837|author={{w|James Edward Alexander}}|title=Narrative of a Voyage of Observation Among the Colonies of Western Africa, in the Flag-ship Thalia; and of a Campaign in Kaffir-land, on the Staff of the Commander-in-Chief, in 1835|location=London|publisher=Henry Colburn|volume=1|pages=251–2|pageurl=https://books.google.com/books?id=GRZOAAAAcAAJ&pg=PA251|passage=Next morning I was up at an early hour, to see the market held near the water gate. The beef was excellent: but at the high prices of ten-pence and one shilling '''the''' pound; mutton at the same price; fowls a dollar '''the''' couple, and showing “more feathers than flesh.”}}
+#* {{quote-book|en|year=1837|author=w:James Edward Alexander|title=Narrative of a Voyage of Observation Among the Colonies of Western Africa, in the Flag-ship Thalia; and of a Campaign in Kaffir-land, on the Staff of the Commander-in-Chief, in 1835|location=London|publisher=Henry Colburn|volume=1|pages=251–2|pageurl=https://books.google.com/books?id=GRZOAAAAcAAJ&pg=PA251|passage=Next morning I was up at an early hour, to see the market held near the water gate. The beef was excellent: but at the high prices of ten-pence and one shilling '''the''' pound; mutton at the same price; fowls a dollar '''the''' couple, and showing “more feathers than flesh.”}}
 #* {{seemoreCites|en}}
 
 ===See also===
@@ -488,8 +497,11 @@ This is called the "comparative correlative", but it is also known as the "corre
 * {{l|en|t'|t’}}
 * {{l|en|that}}
 * {{l|en|this}}
-* [[w:gramatical article|Wikipedia article on grammatical articles]]
+* {{pedia|Gramatical article}}
 {{rel-bottom}}
+
+===References===
+* {{R:OneLook}}
 
 ===Anagrams===
 * {{anagrams|en|a=eht|-eth|ETH|Eth|Eth.|HET|TEH|eth|eth-|het|teh}}
@@ -520,7 +532,7 @@ While it is likely that Crimean Gothic retained grammatical gender, de Busbecq's
 #* {{quote-book|da|year=2016|author=Thorkild Hansen|title=Genklang: Rejser og portrætter 1959-89|publisher=Gyldendal A/S|isbn=9788702198041
 |passage=Vi vågnede ved 6tiden og lavede dejlig '''the'''.
 |t=We got up at about 6 AM and made lovely '''tea'''.}}
-#* {{quote-book|da|year=2015|author=Lotte Heise|author2=Tina Bryld|title=Selvfølgelig skal hun bo hos mig: om at bo med sin handicappede mor|publisher=Gyldendal A/S|isbn=9788702175783
+#* {{quote-book|da|year=2015|author=Lotte Heise; Tina Bryld|title=Selvfølgelig skal hun bo hos mig: om at bo med sin handicappede mor|publisher=Gyldendal A/S|isbn=9788702175783
 |passage=Hun smiler over hele femøren, da duften af te breder sig: ”Uha, dejlig '''the'''.”
 |t=She smiles broadly, as the scent of tea spreads: ”Oh, lovely '''tea'''.”}}
 

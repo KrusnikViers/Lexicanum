@@ -22,7 +22,7 @@ Original article URL: https://de.wiktionary.org/wiki/Morgen
 
 {{Aussprache}}
 :{{IPA}} {{Lautschrift|ˈmɔʁɡn̩}}, {{Lautschrift|ˈmɔʁɡŋ̍}}
-:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}
+:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}, {{Audio|De-Morgen2.ogg}}, {{Audio|De-Morgen3.ogg}}
 :{{Reime}} {{Reim|ɔʁɡn̩|Deutsch}}
 
 {{Bedeutungen}}
@@ -250,7 +250,7 @@ Original article URL: https://de.wiktionary.org/wiki/Morgen
 
 {{Aussprache}}
 :{{IPA}} {{Lautschrift|ˈmɔʁɡŋ̍}}, {{Lautschrift|ˈmɔʁɡn̩}}
-:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}
+:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}, {{Audio|De-Morgen2.ogg}}, {{Audio|De-Morgen3.ogg}}
 :{{Reime}} {{Reim|ɔʁɡn̩|Deutsch}}
 
 {{Bedeutungen}}
@@ -308,7 +308,7 @@ Original article URL: https://de.wiktionary.org/wiki/Morgen
 
 {{Aussprache}}
 :{{IPA}} {{Lautschrift|ˈmɔʁɡŋ̍}}, {{Lautschrift|ˈmɔʁɡn̩}}
-:{{Hörbeispiele}} {{Audio|}}
+:{{Hörbeispiele}} {{Audio|De-Morgen.ogg}}, {{Audio|De-Morgen2.ogg}}, {{Audio|De-Morgen3.ogg}}
 :{{Reime}} {{Reim|ɔʁɡn̩|Deutsch}}
 
 {{Bedeutungen}}

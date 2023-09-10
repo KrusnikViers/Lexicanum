@@ -43,6 +43,10 @@ class DeckController(QObject):
     @Slot(str)
     def on_deck_name_changed(self, new_name: str):
         self.deck.deck_name = new_name
+        self.deck.was_updated = True
+
+    def mark_deck_saved(self):
+        self.deck.was_updated = False
 
     def update_deck_meta(self):
         self.main_window.ui.deck_info_title_input.setText(self.deck.deck_name)
@@ -67,6 +71,7 @@ class DeckController(QObject):
             self.main_window.status_bar.show_timed_message(validity.status)
             return
         self.main_window.overview_model.insert_card(deepcopy(selected_card))
+        self.deck.was_updated = True
 
     # Submits current row, if valid, from overview table to the input. Overview table must be in focus.
     def add_line_to_input(self):
@@ -89,6 +94,9 @@ class DeckController(QObject):
         model.remove_card(selection)
         # Focused table may lose focus on this action, reinstate it in this case.
         focused_table_view.setFocus()
+        # If row was removed from overview table, mark the deck as changed.
+        if isinstance(focused_table_view, OverviewCardsTableView):
+            self.deck.was_updated = True
 
     # Resets input table. No previous focus requirements.
     def reset_input(self):

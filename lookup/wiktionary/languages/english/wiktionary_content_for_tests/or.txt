@@ -74,6 +74,7 @@ From {{inh-lite|en|enm|or}}; partially contracted from {{m-lite|enm|other}}, {{m
 * Bulgarian: {{tt+|bg|и́ли}}, {{tt+|bg|или́}}
 * Burmese: {{tt+|my|သို့မဟုတ်|sc=Mymr}}
 * Catalan: {{tt+|ca|o}}, {{tt+|ca|o bé}}
+* Cebuano: {{t|ceb|o}}
 * Chechen: {{tt|ce|я}}
 * Chinese:
 *: Cantonese: {{tt+|yue|定係|tr=ding6 hai6}}
@@ -103,10 +104,12 @@ From {{inh-lite|en|enm|or}}; partially contracted from {{m-lite|enm|other}}, {{m
 * Gujarati: {{tt|gu|કે|tr=ke}}
 * Hawaiian: {{tt|haw|paha|alt=ā ... paha}}, {{tt|haw|a i ʻole}}
 * Hebrew: {{tt+|he|אוֹ|tr='o}}
+* Hiligaynon: {{t|hil|ukon}}
 * Hindi: {{tt+|hi|या}}, {{tt+|hi|क}}, {{tt+|hi|व}}, {{tt+|hi|अथवा}}
 * Hungarian: {{tt+|hu|vagy}}
 * Icelandic: {{tt+|is|eða}}
 * Ido: {{tt+|io|od}}, {{tt+|io|o}}
+* Ilocano: {{t|ilo|wenno}}
 * Indonesian: {{tt+|id|atau}}
 * Interlingua: {{tt+|ia|o}}
 * Irish: {{tt|ga|nó}}
@@ -158,6 +161,7 @@ From {{inh-lite|en|enm|or}}; partially contracted from {{m-lite|enm|other}}, {{m
 * Old East Slavic: {{tt|orv|чи}}, {{tt|orv|или}}
 * Old English: {{tt|ang|oþþe}}
 * Old Prussian: {{tt|prg|anga, adder}}
+* Old Tupi: {{t|tpw|konipó}}
 * Ottoman Turkish: {{tt|ota|ویا|tr=veya|sc=ota-Arab}}
 * Pashto: {{tt+|ps|که|tr=ka}}, {{tt|ps|لا|tr=lâ}}, {{tt+|ps|يا|tr=yâ}}
 * Persian: {{tt+|fa|یا|tr=yâ}}
@@ -657,7 +661,7 @@ From {{inh|nn|non|ór}}.
 
 # [[out of]]
 # {{l-lite|en|from}}
-#* {{quote-text|nn|year=1956|author=[[w:Olav H. Hauge|Olav H. Hauge]]|title=Gjer ein annan mann ei beine
+#* {{quote-text|nn|year=1956|author=w:Olav H. Hauge|title=Gjer ein annan mann ei beine
 |passage=Han kom '''or''' fjellet, skulde heim, {{...}}.
 |translation=He came '''from''' the mountain, was heading home {{...}}.}}
 
@@ -700,7 +704,7 @@ From {{inh-lite|fro|la|aurum}}.
 {{fro-noun|m}}
 
 # [[gold]] {{gloss|metal}}
-#* {{quote-text|fro|year=c. 1250|author={{w|Marie de France}}|title={{w|Lais of Marie de France|Guigemar}}
+#* {{quote-text|fro|year=c. 1250|author=w:Marie de France|title={{w|Lais of Marie de France|Guigemar}}
 |passage=En bacins d''''or''' ewe aporterent
 |translation=They brought water in basins made of gold}}
 # [[gold]] {{gloss|color}}

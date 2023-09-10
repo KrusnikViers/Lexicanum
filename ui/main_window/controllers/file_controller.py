@@ -29,6 +29,7 @@ class FileController(QObject):
         if status.is_ok():
             Settings.set(StoredSettings.LAST_PROJECT_FILE_PATH, str(output_path))
             deck.file_path = output_path
+            self.deck_controller.mark_deck_saved()
             self.deck_controller.update_deck_meta()
         return status
 
@@ -89,27 +90,30 @@ class FileController(QObject):
             self._show_status('No path selected to the deck file')
 
     @Slot()
-    def on_action_save_project(self):
+    def on_action_save_project(self) -> bool:
         self.main_window.overview_table_view.commit_open_editor_changes()
         if self._deck().file_path is not None:
             writing_status = self._write_deck_file(self._deck(), self._deck().file_path)
             if writing_status.is_ok():
-                return
+                return True
             else:
                 self._show_status(writing_status.status)
-        self.on_action_save_project_as()
+        return self.on_action_save_project_as()
 
     @Slot()
-    def on_action_save_project_as(self):
+    def on_action_save_project_as(self) -> bool:
         self.main_window.overview_table_view.commit_open_editor_changes()
         if output_path := self._ask_user_for_deck_file_path(self.main_window):
             writing_status = self._write_deck_file(self.main_window.overview_model.deck, output_path)
             if writing_status.is_ok():
                 self._deck().file_path = output_path
+                return True
             else:
                 self._show_status(writing_status.status)
+                return False
         else:
             self._show_status('No output path chosen for deck project file')
+            return False
 
     @Slot()
     def on_action_export_deck(self):

@@ -7,6 +7,8 @@ Original article URL: https://en.wiktionary.org/wiki/important
 ===Etymology===
 From {{inh|en|enm|important}}, from {{der|en|ML.|importāns|important-, importāns}}.
 
+Displaced native {{noncog|ang|heah}} and {{m|ang|hefig}}.
+
 ===Pronunciation===
 * {{a|UK|RP}} {{IPA|en|/ɪm.ˈpɔː.tənt/|[ɪmˈpʰɔːʔn̩ʔ]|[ɪmˈpʰɔːtənt̚]}}
 * {{a|GA}} {{IPA|en|/ɪm.ˈpɔɹ.tənt/|[ɪmˈpʰɔɹʔn̩t]}}
@@ -17,7 +19,7 @@ From {{inh|en|enm|important}}, from {{der|en|ML.|importāns|important-, importā
 ===Adjective===
 {{en-adj}}
 
-# Having [[relevant]] and [[crucial]] value; having [[import]].
+# {{senseid|en|relevant}} Having [[relevant]] and [[crucial]] value; having [[import]].
 #: {{ux|en|It is very '''important''' to give your daughter independence in her life so she learns from experience.}}
 #* {{RQ:Besant Ivory Gate|chapter=Prologue|page=6|passage=Thus, when he drew up instructions in lawyer language, he expressed the '''important''' words by an initial, a medial, or a final consonant, and made scratches for all the words between. His clerks, however, understood him very well.}}
 #* {{RQ:Allingham China Governess|Eye Witness|249|The story struck the depressingly familiar note with which true stories ring in the tried ears of experienced policemen.{{...}}The second note, the high alarum, not so familiar and always '''important''' since it indicates the paramount sin in Man's private calendar, took most of them by surprise although they had been well prepared.}}
@@ -25,7 +27,7 @@ From {{inh|en|enm|important}}, from {{der|en|ML.|importāns|important-, importā
 #*: For this was the most '''important''' thing, that when a person felt strongly about an issue in life, it mustn’t be ignored by others; for if it was, everything subsequent to it would turn out badly, even though there should seem to be no direct connection.
 #* {{quote-journal|en|year=2013|month=May-June|author=[http://www.americanscientist.org/authors/detail/katrina-g-claw Katrina G. Claw]
 |title=[http://www.americanscientist.org/issues/feature/2013/3/rapid-evolution-in-eggs-and-sperm Rapid Evolution in Eggs and Sperm]
-|volume=101|issue=3|magazine={{w|American Scientist}}
+|volume=101|issue=3|magazine=w:American Scientist
 |passage=In plants, the ability to recognize self from nonself plays an '''important''' role in fertilization, because self-fertilization will result in less diverse offspring than fertilization with pollen from another individual.}}
 # {{lb|en|obsolete}} [[pompous|Pompous]]; [[self-important]].
 #* {{RQ:Austen Sense and Sensibility|I|XI|206|"{{...}} It is a match that must give universal satisfaction. In short, it is a kind of thing that"&mdash;lowering his voice to an '''important''' whisper&mdash;"will be exceedingly welcome to ''all parties''." Recollecting himself, however, he added, "That is, I mean to say—your friends are all truly anxious to see you well settled; Fanny particularly {{...}}"}}
@@ -106,6 +108,7 @@ From {{inh|en|enm|important}}, from {{der|en|ML.|importāns|important-, importā
 * Korean: {{t+|ko|중요하다}}
 * Kurdish:
 *: Central Kurdish: {{t+|ckb|گرنگ}}
+*: Northern Kurdish: {{t+|kmr|giring}}, {{t+|kmr|fer}}
 * Kyrgyz: {{t+|ky|маанилүү|sc=Cyrl}}, {{t|ky|олуттуу|sc=Cyrl}}
 * Lao: {{t|lo|ສຳຄັນ}}
 * Latin: {{t+|la|gravis}}, {{t+|la|magnus}}

@@ -23,6 +23,7 @@ class MainWindow(QMainWindow):
         if self.application_closing:
             super().closeEvent(event)
             return
+        event.ignore()
         self._store_geometry()
         self.application_exit_requested.emit()
 
@@ -84,7 +85,7 @@ class MainWindow(QMainWindow):
         # At least 100px x 100px top-left part of the window is visible on one of the screens.
         def top_left_corner_visible(screen_rect: QRect):
             return screen_rect.contains(window_geometry.topLeft()) and \
-                   screen_rect.contains(window_geometry.topLeft() + QPoint(100, 100))
+                screen_rect.contains(window_geometry.topLeft() + QPoint(100, 100))
 
         if any((top_left_corner_visible(screen.geometry()) for screen in QApplication.screens())):
             self.setGeometry(window_geometry)

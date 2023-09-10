@@ -44,6 +44,7 @@ Original article URL: https://de.wiktionary.org/wiki/hallo
 
 ==== {{Übersetzungen}} ====
 {{Ü-Tabelle|1|G=|Ü-Liste=
+*{{bg}}: {{Üt|bg|здравей}}
 *{{zh}}: {{Üt|zh|喂|wèi}}
 *{{eo}}: {{Ü|eo|hola}}, {{Ü|eo|he}}, {{Ü|eo|hej}}, {{Ü|eo|ha}}
 *{{fr}}: {{Ü|fr|allô}}

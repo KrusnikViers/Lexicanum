@@ -15,6 +15,7 @@ POS_MAP = {
     'Grußformel': PartOfSpeech.Interjection,
     'Artikel': PartOfSpeech.Article,
     'Gradpartikel': PartOfSpeech.Particle,
+    'Negationspartikel': PartOfSpeech.Particle,
     'Numerale': PartOfSpeech.Numeral,
 
     'Redewendung': PartOfSpeech.Phrase,

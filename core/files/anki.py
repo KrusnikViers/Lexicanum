@@ -8,7 +8,7 @@ from core.types import Card, Deck, Language, CardType
 from core.util import UniversalPath, Status
 
 # Update this field each time the model fields are changed.
-_MODEL_VERSION = 6
+_MODEL_VERSION = 7
 # Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
 _MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
 
@@ -20,9 +20,6 @@ _QUESTION_CARD = '''
 </div><hr/>
 <div class="content">
   {{question}}<br/>
-  <div class="ipa_note">
-    {{ipa_note}}
-  </div>
   <div class="grammar_notes">
     {{grammar_info}}
   </div>
@@ -56,7 +53,6 @@ _MODEL = genanki.Model(
         {'name': 'answer'},
         {'name': 'answer_language'},
         {'name': 'meaning_note'},
-        {'name': 'ipa_note'},
     ],
     sort_field_index=1,
     templates=[
@@ -79,11 +75,6 @@ _MODEL = genanki.Model(
         color: black;
         background-color: white;
       }
-      .content > .ipa_note {
-        margin-top: 8px;
-        color: #bbb;
-        font-size: 18pt;
-      }
       .content > .grammar_notes {
         font-size: 18pt;
       }
@@ -97,8 +88,9 @@ _MODEL = genanki.Model(
 
 
 class _Note(genanki.Note):
-    def __init__(self, card: Card):
+    def __init__(self, card: Card, deck: Deck):
         grammar_info_lines = [html.escape(part.strip()) for part in card.question.split(Card.LINE_DELIMITER)]
+        self._deck_id = deck.deck_id
         super().__init__(
             model=_MODEL,
             fields=[
@@ -110,20 +102,19 @@ class _Note(genanki.Note):
                 html.escape(card.answer),
                 Language.EN.value,
                 html.escape(card.meaning_note),
-                html.escape(card.ipa_note),
             ]
         )
 
     @property
     def guid(self):
-        return genanki.guid_for(self.fields[0])
+        return genanki.guid_for(self._deck_id, self.fields[0])
 
 
 def write_file(deck: Deck, output_path: UniversalPath) -> Status:
     deck.normalize_for_output()
     output_deck = genanki.Deck(deck.deck_id, deck.deck_name)
     for card in deck.cards:
-        output_deck.add_note(_Note(card))
+        output_deck.add_note(_Note(card, deck))
     try:
         output_deck.write_to_file(str(output_path))
     except PermissionError as e:

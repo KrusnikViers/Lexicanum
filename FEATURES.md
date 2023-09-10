@@ -8,7 +8,6 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
-* "Debug window" for lookups
 * Show indicator that deck has unsaved changes
 * Track unsaved changes
 * Show prompt when app is being closed with unsaved changes
@@ -26,6 +25,7 @@ All tasks under milestone name should be completed prior to this release.
 * Protect `master` branch from merging without tests run
 * Fetch one level of subpages (e.g. `en-woman` article)
 * Fetch one level of derived forms (e.g. `drive` for `driving`)
+* See if Wiktionary API can be migrated to REST version
 
 ### Stable release blockers
 
@@ -36,12 +36,9 @@ All tasks under milestone name should be completed prior to this release.
 * Allow switching search mode from immediate to shortcut
 * Refine UI
 * Full support for German language words lookup
-    * IPA
     * Meaning notes
 * Full support for English language words lookup
-    * IPA
     * Meaning notes
-    * Grammar info
 * `stable` branch
 * Automated release version update? Or at least checklist for the new release.
 * Automated tests and releases for `stable`
@@ -55,6 +52,6 @@ All tasks under milestone name should be completed prior to this release.
 
 * Deduplication mode
 * Support for Russian language words lookup
-* Pronunciation
+* Pronunciation / IPA
 * Way to customize shortcuts
     * Do not allow duplicate shortcuts

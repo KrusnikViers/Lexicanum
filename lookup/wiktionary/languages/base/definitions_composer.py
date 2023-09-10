@@ -35,11 +35,12 @@ class DefinitionsComposer:
             return []
         result = []
         if self.readable_form_cache.value and self.part_of_speech_cache.value:
-            result.append(Definition(self.part_of_speech_cache.value,
-                                     self.article_title,
-                                     self.readable_form_cache.value,
-                                     if_none(self.grammar_form_cache.value, ''),
-                                     translation_articles=self.translations.result()))
+            for pos_variant in self.part_of_speech_cache.value:
+                result.append(Definition(pos_variant,
+                                         self.article_title,
+                                         self.readable_form_cache.value,
+                                         if_none(self.grammar_form_cache.value, ''),
+                                         translation_articles=self.translations.result()))
         self._reset_cache()
         return result
 
@@ -48,6 +49,14 @@ class DefinitionsComposer:
         if cache.level == -1 or component.level < cache.level:
             cache.value = component.value
             cache.level = component.level
+
+    @staticmethod
+    def _append_cache(cache: _LeveledCache, component: DefinitionComponent):
+        if cache.level == -1 or component.level < cache.level:
+            cache.value = [component.value]
+            cache.level = component.level
+        elif component.level == cache.level and component.value not in cache.value:
+            cache.value.append(component.value)
 
     def build(self, definition_components: List[DefinitionComponent]) -> List[Definition]:
         result: List[Definition] = []
@@ -58,7 +67,7 @@ class DefinitionsComposer:
                 case DCType.ReadableForm:
                     self._update_cache(self.readable_form_cache, component)
                 case DCType.PartOfSpeech:
-                    self._update_cache(self.part_of_speech_cache, component)
+                    self._append_cache(self.part_of_speech_cache, component)
                 case DCType.GrammarNote:
                     self._update_cache(self.grammar_form_cache, component)
                 case DCType.Translation:

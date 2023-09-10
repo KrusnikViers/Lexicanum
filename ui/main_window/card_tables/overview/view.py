@@ -14,14 +14,12 @@ class OverviewCardsTableView(CardsTableView):
         self.setItemDelegateForColumn(CardsTableHeader.Question.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Grammar.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Answer.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.IPA.value, LineEditSimpleDelegate.instance)
         self.setItemDelegateForColumn(CardsTableHeader.Note.value, LineEditSimpleDelegate.instance)
 
         self.horizontalHeader().setVisible(False)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Type.value, QHeaderView.ResizeMode.Fixed)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Question.value, QHeaderView.ResizeMode.Fixed)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Answer.value, QHeaderView.ResizeMode.Fixed)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.IPA.value, QHeaderView.ResizeMode.Fixed)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Note.value, QHeaderView.ResizeMode.Stretch)
 
         # Always display at least 10 rows of overview table

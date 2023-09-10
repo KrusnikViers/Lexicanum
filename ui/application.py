@@ -8,6 +8,7 @@ from ui.main_window.controllers.deck_controller import DeckController
 from ui.main_window.controllers.file_controller import FileController
 from ui.main_window.controllers.shortcuts_controller import ShortcutsController
 from ui.main_window.main_window import MainWindow
+from ui.unsaved_changes_dialog import UnsavedChangesDialog
 
 
 class Application(QApplication):
@@ -27,6 +28,13 @@ class Application(QApplication):
 
     @Slot()
     def on_exit_requested(self):
+        if self.deck_controller.deck.was_updated:
+            save_before_exit = UnsavedChangesDialog.save_before_action(self.main_window)
+            if save_before_exit:
+                if not self.file_controller.on_action_save_project():
+                    return
+            elif save_before_exit is None:
+                return
         self.main_window.application_closing = True
         self.main_window.close()
         self.quit()
