@@ -12,7 +12,9 @@ class LineEditSimpleDelegate(QStyledItemDelegate):
         return editor
 
     def setEditorData(self, editor: QLineEdit, index: QModelIndex) -> None:
-        editor.setText(index.data(Qt.DisplayRole))
+        data = index.data(Qt.DisplayRole)
+        if data != editor.text():
+            editor.setText(index.data(Qt.DisplayRole))
 
     def setModelData(self, editor: QLineEdit, model: QAbstractItemModel, index: QModelIndex) -> None:
         model.setData(index, editor.text(), Qt.DisplayRole)
