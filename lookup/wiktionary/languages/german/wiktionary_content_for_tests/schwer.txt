@@ -136,7 +136,9 @@ Original article URL: https://de.wiktionary.org/wiki/schwer
 *{{es}}: {{Ü|es|difícil}}
 *{{cs}}: {{Ü|cs|těžký}}
 *{{hu}}: {{Ü|hu|nehéz}}
+*{{ur}}: {{Üt|ur|مشکل|}}
 *{{vo}}: {{Ü|vo|fikulik}}
+*{{pnb}}: {{Ü|pnb|مشکل}}
 |Dialekttabelle=
 *{{bar}}: {{Ü|bar|schwar}} {{Lautschrift|ʃvaːɐ̯}}
 *{{swg}}: {{Ü?|swg|schwär}}

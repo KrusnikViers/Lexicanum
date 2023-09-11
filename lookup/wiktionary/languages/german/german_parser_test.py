@@ -63,7 +63,10 @@ class TestGermanLocaleParser(unittest.TestCase):
                            translation_articles=['morning', 'good morning']),
                 Definition(PartOfSpeech.Noun, raw_article_title='Morgen',
                            readable_name='Das Morgen', grammar_note='Nur Singular',
-                           translation_articles=['morrow', 'tomorrow'])
+                           translation_articles=['morrow', 'tomorrow']),
+                Definition(PartOfSpeech.Noun, raw_article_title='Morgen',
+                           readable_name='Morgen', grammar_note='',
+                           translation_articles=[]),
             ]
         )
 
@@ -118,6 +121,9 @@ class TestGermanLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Pronoun, raw_article_title='wessen',
                            readable_name='Wessen', grammar_note='',
                            translation_articles=['whose']),
+                Definition(PartOfSpeech.Pronoun, raw_article_title='wessen',
+                           readable_name='Wessen', grammar_note='',
+                           translation_articles=[])
             ]
         )
 
@@ -173,7 +179,15 @@ class TestGermanLocaleParser(unittest.TestCase):
                                         'Genitiv: des, der, des, der; ' +
                                         'Dativ: dem, der, dem, den; ' +
                                         'Akkusativ: den, die, das, die',
-                           translation_articles=['the'])
+                           translation_articles=['the']),
+                Definition(PartOfSpeech.Pronoun, raw_article_title='die',
+                           readable_name='Die',
+                           grammar_note='Deklination: m, f, n, plural; ' +
+                                        'Nominativ: der, die, das, die; ' +
+                                        'Genitiv: dessen, deren, dessen, deren; ' +
+                                        'Dativ: dem, der, dem, denen; ' +
+                                        'Akkusativ: den, die, das, die',
+                           translation_articles=[])
             ]
         )
 

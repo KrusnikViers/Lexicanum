@@ -11,6 +11,7 @@ POS_MAP = {
     'Demonstrativpronomen': PartOfSpeech.Pronoun,
     'Präposition': PartOfSpeech.Preposition,
     'Konjunktion': PartOfSpeech.Conjunction,
+    'Subjunktion': PartOfSpeech.Conjunction,
     'Interjektion': PartOfSpeech.Interjection,
     'Grußformel': PartOfSpeech.Interjection,
     'Artikel': PartOfSpeech.Article,

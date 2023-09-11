@@ -1,0 +1,9 @@
+provided that
+en
+Original article URL: https://en.wiktionary.org/wiki/provided that
+==English==
+
+===Conjunction===
+{{en-conjunction}}
+
+# {{synonym of|en|provided}}
