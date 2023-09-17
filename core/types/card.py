@@ -7,8 +7,7 @@ class Card:
     LINE_DELIMITER = ';'
 
     def __init__(self, card_type: CardType,
-                 question: str, grammar_note: str, answer: str, meaning_note: str, ipa_note: str = '',
-                 card_id: int | None = None):
+                 question: str, grammar_note: str, answer: str, meaning_note: str, card_id: int | None = None):
         # Type of card. Can be part of speech or complex concept (e.g. whole phrase or grammar rule)
         self.card_type: CardType = card_type
         # Readable and the most common form of a word or a phrase in the language that is being learned.
@@ -45,12 +44,12 @@ class Card:
 
     @classmethod
     def from_dict(cls, card_dict: dict) -> 'Card':
-        return cls(CardType(card_dict['card_type']),
-                   card_dict['question'],
-                   card_dict['grammar_note'],
-                   card_dict['answer'],
-                   card_dict['meaning_note'],
-                   card_dict['card_id'])
+        return cls(card_type=CardType(card_dict['card_type']),
+                   question=card_dict['question'],
+                   grammar_note=card_dict['grammar_note'],
+                   answer=card_dict['answer'],
+                   meaning_note=card_dict['meaning_note'],
+                   card_id=card_dict['card_id'])
 
     def to_dict(self) -> dict:
         assert self.card_id is not None, "Missing deck normalization?"

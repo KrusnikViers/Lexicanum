@@ -6,6 +6,7 @@ POS_MAP = {
     'Adjektiv': PartOfSpeech.Adjective,
     'Verb': PartOfSpeech.Verb,
     'Adverb': PartOfSpeech.Adverb,
+    'Lokaladverb': PartOfSpeech.Adverb,
 
     'Pronomen': PartOfSpeech.Pronoun,
     'Demonstrativpronomen': PartOfSpeech.Pronoun,

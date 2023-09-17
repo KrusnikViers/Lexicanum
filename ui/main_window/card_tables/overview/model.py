@@ -12,21 +12,21 @@ class OverviewCardsTableModel(CardsTableModel):
 
     def __init__(self, displayed_deck: Deck):
         super().__init__()
-        self.global_deck: Deck = displayed_deck
+        self.deck: Deck = displayed_deck
         # Separate list with the same cards
-        self.visible_cards: List[Card] = [x for x in self.global_deck.cards]
+        self.visible_cards: List[Card] = []
         self.reset_deck(displayed_deck)
 
     @Slot(str)
     def filter_by_answer(self, filter_text: str):
         self.beginResetModel()
-        self.visible_cards = [x for x in self.global_deck.cards if filter_text.lower() in x.answer.lower()]
+        self.visible_cards = [x for x in self.deck.cards if filter_text.lower() in x.answer.lower()]
         self.endResetModel()
 
     @Slot(str)
     def filter_by_question(self, filter_text: str):
         self.beginResetModel()
-        self.visible_cards = [x for x in self.global_deck.cards if filter_text.lower() in x.question.lower()]
+        self.visible_cards = [x for x in self.deck.cards if filter_text.lower() in x.question.lower()]
         self.endResetModel()
 
     # Virtual methods
@@ -62,5 +62,5 @@ class OverviewCardsTableModel(CardsTableModel):
     def reset_deck(self, new_deck: Deck):
         self.beginResetModel()
         self.deck = new_deck
-        self.visible_cards = [x for x in self.global_deck.cards]
+        self.visible_cards = [x for x in self.deck.cards]
         self.endResetModel()
