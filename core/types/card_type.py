@@ -24,9 +24,18 @@ class CardType(Enum):
     Phrase = 100
 
     # One-way questions
-    Rule = 200
+    CustomUniversal = 200
+    CustomQuestion = 201
+    CustomAnswer = 202
 
     def display_name(self):
-        if self == CardType.Invalid:
-            return ''
+        match self:
+            case CardType.Invalid:
+                return ''
+            case CardType.CustomUniversal:
+                return 'Custom'
+            case CardType.CustomQuestion:
+                return 'Custom - Question Only'
+            case CardType.CustomAnswer:
+                return 'Custom - Answer Only'
         return self.name

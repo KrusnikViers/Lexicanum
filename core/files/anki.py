@@ -1,5 +1,6 @@
 import hashlib
 import html
+from copy import deepcopy
 
 import genanki
 
@@ -12,7 +13,9 @@ _MODEL_VERSION = 7
 # Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
 _MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
 
-_MODEL_ID = int(hashlib.md5(_MODEL_SALTED_VERSION).hexdigest()[:7], 16)
+_MODEL_ASK_BOTH_ID = int(hashlib.md5(_MODEL_SALTED_VERSION).hexdigest()[:7], 16)
+_MODEL_ASK_QUESTION_ID = _MODEL_ASK_BOTH_ID - 1
+_MODEL_ASK_ANSWER_ID = _MODEL_ASK_QUESTION_ID - 2
 
 _QUESTION_CARD = '''
 <div class="top_desc">
@@ -41,9 +44,9 @@ _ANSWER_CARD = '''
 </div>
 '''
 
-_MODEL = genanki.Model(
-    _MODEL_ID,
-    "{} Model".format(PROJECT_NAME),
+_MODEL_ASK_BOTH = genanki.Model(
+    _MODEL_ASK_BOTH_ID,
+    "{} Universal Model".format(PROJECT_NAME),
     fields=[
         {'name': 'card_id'},
         {'name': 'type'},
@@ -86,13 +89,38 @@ _MODEL = genanki.Model(
     '''
 )
 
+_MODEL_ASK_QUESTION = deepcopy(_MODEL_ASK_BOTH)
+_MODEL_ASK_QUESTION.model_id = _MODEL_ASK_QUESTION_ID
+_MODEL_ASK_QUESTION.name = '{} Question-only Model'.format(PROJECT_NAME)
+_MODEL_ASK_QUESTION.templates = [
+    {
+        'name': 'Direct question',
+        'qfmt': _QUESTION_CARD,
+        'afmt': _ANSWER_CARD
+    },
+]
+
+_MODEL_ASK_ANSWER = deepcopy(_MODEL_ASK_BOTH)
+_MODEL_ASK_ANSWER.model_id = _MODEL_ASK_ANSWER_ID
+_MODEL_ASK_ANSWER.name = '{} Answer-only Model'.format(PROJECT_NAME)
+_MODEL_ASK_ANSWER.templates = [
+    {
+        'name': 'Reverse question',
+        'qfmt': _ANSWER_CARD,
+        'afmt': _QUESTION_CARD
+    },
+]
+
 
 class _Note(genanki.Note):
     def __init__(self, card: Card, deck: Deck):
         grammar_info_lines = [html.escape(part.strip()) for part in card.grammar_note.split(Card.LINE_DELIMITER)]
         self._deck_id = deck.deck_id
+        model = _MODEL_ASK_QUESTION if card.card_type == CardType.CustomQuestion \
+            else _MODEL_ASK_ANSWER if card.card_type == CardType.CustomAnswer \
+            else _MODEL_ASK_BOTH
         super().__init__(
-            model=_MODEL,
+            model=model,
             fields=[
                 str(card.card_id),
                 CardType.display_name(card.card_type),
