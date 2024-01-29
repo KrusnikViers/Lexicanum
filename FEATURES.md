@@ -13,6 +13,7 @@ All tasks under milestone name should be completed prior to this release.
   * Fetch one level of subpages (e.g. `en-woman` article)
   * Fetch one level of derived forms (e.g. `drive` for `driving`)
 * Start extracting either IPA or sounds
+* Start extracting examples
 * Create binaries in Gitlab CI
 * Progress bar for lookup in statusbar / overview
 * Show indicator that deck has unsaved changes and track all of them
