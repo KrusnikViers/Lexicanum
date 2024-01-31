@@ -33,7 +33,7 @@ class CardType(Enum):
             case CardType.Invalid:
                 return ''
             case CardType.CustomUniversal:
-                return 'Custom'
+                return 'Custom - Flip Card'
             case CardType.CustomQuestion:
                 return 'Custom - Question Only'
             case CardType.CustomAnswer:

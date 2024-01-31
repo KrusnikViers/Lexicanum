@@ -23,26 +23,15 @@ class Deck:
         # the new card. Thus, next_id should be saved as well.
         self.next_card_id: int = if_none(next_card_id, 0)
 
-    def to_dict(self) -> dict:
-        assert self.deck_id is not None, "Missing |normalize_for_output| call?"
-        return {
-            'deck_id': self.deck_id,
-            'deck_name': self.deck_name,
-            'next_card_id': self.next_card_id,
-            'cards': [card.to_dict() for card in self.cards]
-        }
-
     def __str__(self):
         return 'DECK #{}: {} at {}:{}'.format(self.deck_id, self.deck_name, self.file_path,
                                               ''.join(map(lambda x: '\n -{}'.format(x), self.cards)))
 
-    @classmethod
-    def from_dict(cls, input_dict: dict, file_path: UniversalPath | None) -> 'Deck':
-        return cls(deck_id=input_dict['deck_id'],
-                   deck_name=input_dict['deck_name'],
-                   next_card_id=input_dict['next_card_id'],
-                   cards=[Card.from_dict(card_input) for card_input in input_dict['cards']],
-                   file_path=file_path)
+    # Fields used for serialization/deserialization
+    _FIELD_DECK_ID = 'deck_id'
+    _FIELD_DECK_NAME = 'deck_name'
+    _FIELD_CARDS_NEXT_ID = 'cards_next_id'
+    _FIELD_CARDS_LIST = 'cards_list'
 
     def normalize_for_output(self):
         self.deck_id = if_none(self.deck_id, hash(time.time_ns()) % 10000000000)
@@ -52,4 +41,26 @@ class Deck:
             while card.card_id is None or card.card_id in existing_card_ids:
                 card.card_id = self.next_card_id
                 self.next_card_id += 1
+                # TODO: Handle the situation when id's are finished. This is unlikely to happen during natural use,
+                # but if for some reason cards are added/removed often, reassigning ids from previous slots could help.
             card.normalize_for_output()
+
+    @classmethod
+    def from_dict(cls, input_dict: dict, file_path: UniversalPath | None) -> 'Deck':
+        return cls(
+            file_path=file_path,
+            # Required fields
+            deck_id=input_dict[cls._FIELD_DECK_ID],
+            deck_name=input_dict[cls._FIELD_DECK_NAME],
+            # Optional fields
+            next_card_id=input_dict.get(cls._FIELD_CARDS_NEXT_ID, 1),
+            cards=[Card.from_dict(card_input) for card_input in input_dict.get(cls._FIELD_CARDS_LIST, [])])
+
+    def to_dict(self) -> dict:
+        assert self.deck_id is not None, "Missing |normalize_for_output| call?"
+        return {
+            self._FIELD_DECK_ID: self.deck_id,
+            self._FIELD_DECK_NAME: self.deck_name,
+            self._FIELD_CARDS_NEXT_ID: self.next_card_id,
+            self._FIELD_CARDS_LIST: [card.to_dict() for card in self.cards]
+        }
