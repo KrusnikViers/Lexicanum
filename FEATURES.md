@@ -31,6 +31,7 @@ All tasks under milestone name should be completed prior to this release.
 
 * Create separate release with optimization flags
 * Settings page
+* Update geometry when switching screen DPI
 * Write log file
 * Allow setting log verbosity in settings
 * Highlight current row with different color if input is not valid

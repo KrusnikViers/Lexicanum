@@ -6,9 +6,10 @@ from core.util import Status
 class Card:
     LINE_DELIMITER = ';'
 
-    def __init__(self, card_type: CardType,
-                 question_main: str, question_grammar: str, question_ipa: str, question_example: str,
-                 answer_main: str, answer_example: str, card_note: str, card_id: int | None = None):
+    def __init__(self, card_type: CardType, question_main: str, answer_main: str,
+                 question_grammar: str = '', question_ipa: str = '', question_example: str = '',
+                 answer_example: str = '',
+                 card_note: str = '', card_id: int | None = None):
         # Type of card. Can be part of speech or complex concept (e.g. whole phrase or grammar rule)
         self.card_type: CardType = card_type
 

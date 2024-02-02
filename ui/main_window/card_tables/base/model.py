@@ -49,7 +49,7 @@ class CardsTableModel(QAbstractTableModel):
         if role != Qt.DisplayRole:
             return None
         if orientation == Qt.Horizontal:
-            return CardsTableHeader.of(section).name
+            return CardsTableHeader.of(section).display_name()
 
     def setData(self, index: QModelIndex, value: Any, role: int = None) -> bool:
         if role != Qt.DisplayRole:
@@ -61,16 +61,25 @@ class CardsTableModel(QAbstractTableModel):
                 card.card_type = value
             case CardsTableHeader.Question:
                 assert isinstance(value, str)
-                card.question = value
+                card.question_main = value
             case CardsTableHeader.Grammar:
                 assert isinstance(value, str)
-                card.grammar_note = value
+                card.question_grammar = value
+            case CardsTableHeader.IPA:
+                assert isinstance(value, str)
+                card.question_ipa = value
+            case CardsTableHeader.QExample:
+                assert isinstance(value, str)
+                card.question_example = value
             case CardsTableHeader.Answer:
                 assert isinstance(value, str)
-                card.answer = value
+                card.answer_main = value
+            case CardsTableHeader.AExample:
+                assert isinstance(value, str)
+                card.answer_example = value
             case CardsTableHeader.Note:
                 assert isinstance(value, str)
-                card.meaning_note = value
+                card.card_note = value
         self.refresh_visible_contents(index.row())
         return True
 
@@ -83,11 +92,17 @@ class CardsTableModel(QAbstractTableModel):
             case CardsTableHeader.Type:
                 return card.card_type.display_name()
             case CardsTableHeader.Question:
-                return card.question
+                return card.question_main
             case CardsTableHeader.Grammar:
-                return card.grammar_note
+                return card.question_grammar
+            case CardsTableHeader.IPA:
+                return card.question_ipa
+            case CardsTableHeader.QExample:
+                return card.question_example
             case CardsTableHeader.Answer:
-                return card.answer
+                return card.answer_main
+            case CardsTableHeader.AExample:
+                return card.answer_example
             case CardsTableHeader.Note:
-                return card.meaning_note
+                return card.card_note
         assert False
