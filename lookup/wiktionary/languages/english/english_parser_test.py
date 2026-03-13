@@ -56,6 +56,9 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            readable_name='Cut', grammar_note='Cuts',
                            translation_articles=['Schnitt', 'Filmbearbeitung', 'Bearbeitungsversion', 'Aufnahmestück',
                                                  'Stück']),
+                Definition(PartOfSpeech.Interjection, raw_article_title='cut',
+                           readable_name='Cut', grammar_note='',
+                           translation_articles=[])
             ])
 
     def test_definition_France(self):
@@ -88,7 +91,14 @@ class TestEnglishLocaleParser(unittest.TestCase):
             [
                 Definition(PartOfSpeech.Verb, raw_article_title='woman',
                            readable_name='To woman', grammar_note='',
-                           translation_articles=['feminisieren', 'verweiblichen'])
+                           translation_articles=['feminisieren', 'verweiblichen']),
+                Definition(PartOfSpeech.Noun, raw_article_title='woman',
+                           readable_name='Woman', grammar_note='Women',
+                           translation_articles=[]),
+                Definition(PartOfSpeech.Adjective, raw_article_title='woman',
+                           readable_name='Woman', grammar_note='Generally not comparable',
+                           translation_articles=[]),
+
             ])
 
     def test_definition_or(self):
@@ -107,6 +117,15 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Adjective, raw_article_title='or',
                            readable_name='Or', grammar_note='Generally not comparable',
                            translation_articles=['golden']),
+                Definition(PartOfSpeech.Noun, raw_article_title='or',
+                           readable_name='Or', grammar_note='',
+                           translation_articles=[], ),
+                Definition(PartOfSpeech.Adverb, raw_article_title='or',
+                           readable_name='Or', grammar_note='',
+                           translation_articles=[], ),
+                Definition(PartOfSpeech.Preposition, raw_article_title='or',
+                           readable_name='Or', grammar_note='',
+                           translation_articles=[], ),
             ])
 
     def test_definition_eleven(self):
@@ -117,7 +136,10 @@ class TestEnglishLocaleParser(unittest.TestCase):
             [
                 Definition(PartOfSpeech.Numeral, raw_article_title='eleven',
                            readable_name='Eleven', grammar_note='',
-                           translation_articles=['elf'])
+                           translation_articles=['elf']),
+                Definition(PartOfSpeech.Noun, raw_article_title='eleven',
+                           readable_name='Eleven', grammar_note='',
+                           translation_articles=[])
             ])
 
     def test_definition_from(self):
@@ -147,6 +169,9 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Noun, raw_article_title='go',
                            readable_name='Go', grammar_note='Mainly plural',
                            translation_articles=['Go']),
+                Definition(PartOfSpeech.Adjective, raw_article_title='go',
+                           readable_name='Go', grammar_note='Generally not comparable',
+                           translation_articles=[]),
             ]
         )
 
@@ -163,6 +188,15 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Noun, raw_article_title='good',
                            readable_name='Good', grammar_note='Goods',
                            translation_articles=['Gute', 'Gut']),
+                Definition(PartOfSpeech.Interjection, raw_article_title='good',
+                           readable_name='Good', grammar_note='',
+                           translation_articles=[]),
+                Definition(PartOfSpeech.Adverb, raw_article_title='good',
+                           readable_name='Good', grammar_note='',
+                           translation_articles=[]),
+                Definition(PartOfSpeech.Verb, raw_article_title='good',
+                           readable_name='To good', grammar_note='',
+                           translation_articles=[]),
             ])
 
     def test_definition_hello(self):
@@ -174,7 +208,13 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Interjection, raw_article_title='hello',
                            readable_name='Hello', grammar_note='',
                            translation_articles=['hallo', 'guten Tag', 'servus', 'moin', 'grüß Gott', 'jemand da?',
-                                                 'halloho'])
+                                                 'halloho']),
+                Definition(PartOfSpeech.Noun, raw_article_title='hello',
+                           readable_name='Hello', grammar_note='Hellos; Helloes',
+                           translation_articles=[]),
+                Definition(PartOfSpeech.Verb, raw_article_title='hello',
+                           readable_name='To hello', grammar_note='',
+                           translation_articles=[]),
             ])
 
     def test_definition_into(self):
@@ -200,8 +240,10 @@ class TestEnglishLocaleParser(unittest.TestCase):
                            translation_articles=['der', 'die', 'das', 'dieser']),
                 Definition(PartOfSpeech.Adverb, raw_article_title='the',
                            readable_name='The', grammar_note='',
-                           translation_articles=['je desto', 'je umso', 'je je', 'umso'])
-
+                           translation_articles=['je desto', 'je umso', 'je je', 'umso']),
+                Definition(PartOfSpeech.Preposition, raw_article_title='the',
+                           readable_name='The', grammar_note='',
+                           translation_articles=[]),
             ])
 
     def test_definition_whose(self):
@@ -226,7 +268,7 @@ class TestEnglishLocaleParser(unittest.TestCase):
             [
                 Definition(PartOfSpeech.Phrase, raw_article_title="you're_welcome",
                            readable_name="You're welcome", grammar_note='',
-                           translation_articles=['bitte', 'gern geschehen', 'keine Ursache', 'nichts zu danken'])
+                           translation_articles=['bitte', 'gern geschehen', 'keine Ursache', 'nichts zu danken']),
             ])
 
     def test_definition_nope(self):
@@ -238,6 +280,12 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Particle, raw_article_title='nope',
                            readable_name='Nope', grammar_note='',
                            translation_articles=['nee', 'nö']),
+                Definition(PartOfSpeech.Noun, raw_article_title='nope',
+                           readable_name='Nope', grammar_note='',
+                           translation_articles=[]),
+                Definition(PartOfSpeech.Verb, raw_article_title='nope',
+                           readable_name='To nope', grammar_note='',
+                           translation_articles=[]),
             ])
 
     def test_definition_important(self):
@@ -249,5 +297,17 @@ class TestEnglishLocaleParser(unittest.TestCase):
                 Definition(PartOfSpeech.Adjective, raw_article_title='important',
                            readable_name='Important', grammar_note='',
                            translation_articles=['wichtig'])
+
+            ])
+
+    def test_definition_provided_that(self):
+        content = get_test_content(__file__, 'provided_that.txt')
+        tree = MarkupTree.build(content.title, content.content)
+        self.assertCountEqual(
+            EnglishLocaleParser.extract_definitions(tree, content.title, ['de']),
+            [
+                Definition(PartOfSpeech.Conjunction, raw_article_title='provided that',
+                           readable_name='Provided that', grammar_note='',
+                           translation_articles=[])
 
             ])

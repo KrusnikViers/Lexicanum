@@ -30,7 +30,7 @@ class DefinitionsComposer:
         self.translations = TranslationsListBuilder(self.translation_codes_ordered)
 
     def _compose_from_cache(self) -> List[Definition]:
-        if not self.readable_form_cache or not self.part_of_speech_cache or not self.translations.result():
+        if not self.readable_form_cache or not self.part_of_speech_cache:
             self._reset_cache()
             return []
         result = []
@@ -73,4 +73,7 @@ class DefinitionsComposer:
                 case DCType.Translation:
                     self.translations.add(translation=component.value.text, language_code=component.value.lang)
         result += self._compose_from_cache()
-        return result
+        # Simple deduplication, that removes obvious duplicates but preserves definitions order. Better duplicates
+        # handling happens in DefinitionSet class.
+        deduplicated_result = list(dict.fromkeys(result))
+        return deduplicated_result

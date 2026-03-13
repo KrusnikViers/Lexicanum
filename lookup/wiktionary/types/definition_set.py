@@ -66,10 +66,6 @@ def _add_definition_to_key(new_definition: Definition, definitions_list: List[De
 def build_definition_set(definitions: List[Definition]) -> DefinitionSet:
     result: DefinitionSet = dict()
     for definition in definitions:
-        # There is nothing we can do if no translations were extracted.
-        if not definition.translation_articles:
-            continue
-
         key = DefinitionSetKey(definition.raw_article_title, definition.part_of_speech)
         if key not in result:
             result[key] = [deepcopy(definition)]

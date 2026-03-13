@@ -22,6 +22,11 @@ class Definition(NamedTuple):
     # Short note to identify meaning when only question is visible.
     meaning_note: str = ''
 
+    def __hash__(self):
+        return hash((self.part_of_speech, self.raw_article_title,
+                     self.readable_name, self.grammar_note,
+                     ';'.join(self.translation_articles)))
+
     def __str__(self):
         return '{} {} (raw {}/gram {}/mean {}/tr {})'.format(self.readable_name, self.part_of_speech.name,
                                                              self.raw_article_title,

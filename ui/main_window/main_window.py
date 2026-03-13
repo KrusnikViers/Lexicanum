@@ -63,6 +63,8 @@ class MainWindow(QMainWindow):
         self.input_table_view.horizontalHeader().sectionResized.connect(self.sync_input_geometry_to_overview)
         self.input_table_view.horizontalScrollBar().valueChanged.connect(self.sync_input_geometry_to_overview)
         self.overview_table_view.horizontalScrollBar().valueChanged.connect(self.sync_overview_geometry_to_input)
+        self.input_table_view.answer_changed.connect(self.overview_model.filter_by_answer)
+        self.input_table_view.question_changed.connect(self.overview_model.filter_by_question)
 
         self.ui.top_menu_file_new.setIcon(IconsList.New)
         self.ui.top_menu_file_save.setIcon(IconsList.Save)

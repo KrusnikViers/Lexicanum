@@ -8,28 +8,27 @@ All tasks under milestone name should be completed prior to this release.
 
 ### Beta-release blockers
 
-* Show indicator that deck has unsaved changes
-* Track unsaved changes
-* Show prompt when app is being closed with unsaved changes
+* Refactor lookup logic
+  * Better realign logic parts
+  * Fetch one level of subpages (e.g. `en-woman` article)
+  * Fetch one level of derived forms (e.g. `drive` for `driving`)
+* Start extracting either IPA or sounds
+* Create binaries in Gitlab CI
+* Progress bar for lookup in statusbar / overview
+* Show indicator that deck has unsaved changes and track all of them
 * Show prompt when deck is being unloaded with unsaved changes
-* Progress bar for lookup in statusbar
-* Immediate search + on/off button
-* Highlight current input row and filter overview by it
 * Words lookup by button
-* Settings page
-* Allow setting log verbosity in settings
-* Write log file
 * Overview table sorting per column
 * Find proper icons set
 * 75% tests coverage
-* Protect `master` branch from merging without tests run
-* Fetch one level of subpages (e.g. `en-woman` article)
-* Fetch one level of derived forms (e.g. `drive` for `driving`)
 * See if Wiktionary API can be migrated to REST version
 
 ### Stable release blockers
 
 * Create separate release with optimization flags
+* Settings page
+* Write log file
+* Allow setting log verbosity in settings
 * Highlight current row with different color if input is not valid
 * Highlight full duplicates in overview table
 * Update icons and stuff

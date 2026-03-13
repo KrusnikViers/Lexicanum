@@ -1,4 +1,4 @@
-from PySide6.QtCore import Qt, Signal, Slot
+from PySide6.QtCore import Qt, Signal, Slot, QModelIndex
 from PySide6.QtWidgets import QWidget, QHeaderView, QSizePolicy, QAbstractScrollArea
 
 from core.settings import Settings, StoredSettings
@@ -10,6 +10,8 @@ from ui.main_window.card_tables.input.model import InputCardsTableModel
 
 class InputCardsTableView(CardsTableView):
     new_card = Signal(Card)
+    answer_changed = Signal(str)
+    question_changed = Signal(str)
 
     def __init__(self, parent: QWidget, input_model: InputCardsTableModel):
         super().__init__(parent, input_model)
@@ -35,7 +37,16 @@ class InputCardsTableView(CardsTableView):
         self.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
 
         self.input_model.row_count_changed.connect(self.on_row_count_changed)
+        self.input_model.dataChanged.connect(self.on_data_changed)
         self.on_row_count_changed()
+
+    @Slot(QModelIndex, QModelIndex, int)
+    def on_data_changed(self, index_from: QModelIndex, index_to: QModelIndex, role: int):
+        if focused_index := self.focused_index():
+            if focused_index.column() == CardsTableHeader.Answer.value:
+                self.answer_changed.emit(focused_index.data(Qt.DisplayRole))
+            elif focused_index.column() == CardsTableHeader.Question.value:
+                self.question_changed.emit(focused_index.data(Qt.DisplayRole))
 
     @Slot()
     def on_row_count_changed(self):

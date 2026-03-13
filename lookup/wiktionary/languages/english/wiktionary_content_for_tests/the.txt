@@ -41,7 +41,7 @@ Cognate with {{cog|stq|die|t=the}}, {{cog|fy|de|t=the}}, {{cog|nl|de|t=the}}, {{
 ====Article====
 {{head|en|article}}
 
-# {{n-g|Used before noun phrase, including a simple noun}}
+# {{n-g|Used before a noun phrase, including a simple noun}}
 ## {{non-gloss definition|The [[definite]] grammatical [[article]] that implies necessarily that the noun phrase it immediately precedes is definitely identifiable}}
 ### {{n-g|because it has already been [[mention]]ed, is to be completely [[specify|specified]] in the same sentence, or very shortly thereafter.}} {{defdate|from 10th c.}}
 ###: ''I’m reading '''the''' book Mary reviewed.'' (Compare ''I’m reading '''a''' book Mary reviewed.'')
@@ -68,7 +68,8 @@ Cognate with {{cog|stq|die|t=the}}, {{cog|fy|de|t=the}}, {{cog|nl|de|t=the}}, {{
 ##* {{RQ:Doyle Land of Mist|passage="Good Heavens, man! Why, he is '''''the''''' authority. If you want pure laboratory experiments those are the books."}}
 ##* {{quote-journal|en|date=May 27, 2012| author=Nathan Rabin| title=TV: Review: THE SIMPSONS (CLASSIC): “New Kid On The Block” (season 4, episode 8; originally aired 11/12/1992)| work=The Onion AV Club| url=http://www.avclub.com/articles/new-kid-on-the-block,75341/| passage=“New Kid On The Block” doubles as a terrific showcase for the Sea Captain who, in the grand tradition of Simpsons supporting characters, quickly goes from being a stereotype to an archetype, from being a crusty sea-captain character to '''''the''''' crusty sea-captain character.}}
 ## {{non-gloss definition|Used before a noun phrase beginning with [[superlative]] or comparative adjective or an [[ordinal number]],  indicating that the noun refers to a single item.}}
-##: ''That was '''the''' best apple pie ever.''
+##: ''That was '''the''' juiciest apple pie ever.''
+##: ''May '''the''' better man win.''
 ## {{non-gloss definition|Introducing a singular term to be taken [[generically]]: preceding a name of something standing for a whole class.}} {{defdate|from 9th c.}}
 ##* {{RQ:Mandela Long Walk to Freedom|page=536|passage=Stern and God-fearing, '''the''' Afrikaner takes his religion seriously.}}
 ##: '''''The''' downy woodpecker can be found in the same environments as '''the''' hairy woodpecker.''
@@ -150,6 +151,8 @@ When used before an adjective which is not followed by a noun, it may refer to a
 * {{l|en|the man}}
 * {{l|en|the one}}
 * {{l|en|th'other}}
+* [https://en.wiktionary.org/w/index.php?go=Go&search=incategory%3A%22English+proverbs%22+incategory%3A%22English+lemmas%22+intitle%3A%2F+the+%2F&title=Special%3ASearch&ns0=1 Proverbs using ''the'' (article)]
+* [https://en.wiktionary.org/w/index.php?search=incategory%3A%22English+idioms%22+incategory%3A%22English+lemmas%22+intitle%3A%2F+the+%2F&title=Special:Search&profile=advanced&fulltext=1&ns0=1 Idioms using ''the'' (article)]
 {{rel-bottom}}
 
 =====Translations=====
@@ -426,6 +429,8 @@ From {{inh|en|enm|the}}, {{m|enm|thy}}, {{m|enm|thi}}, from {{inh|en|ang|þe|þ�
 #: ''It was a difficult time, but I’m '''the''' wiser for it.''
 #: ''It was a difficult time, and I’m {none - not any} '''the''' wiser for it.''
 #: ''I'm much '''the''' wiser for having had a difficult time like that.''
+# {{lb|en|with a superlative adjective}} Beyond all others.
+#: ''We went '''the''' furthest under her leadership.''; ''The they trusted him '''the''' most.''
 
 =====Usage notes=====
 This is called the "comparative correlative", but it is also known as the "correlative construction", the "conditional comparative", or the "the...the construction".
@@ -480,6 +485,7 @@ This is called the "comparative correlative", but it is also known as the "corre
 
 ===Etymology 3===
 {{rfe|en}}
+
 ====Preposition====
 {{en-prep}}
 
@@ -601,8 +607,7 @@ While it is likely that Crimean Gothic retained grammatical gender, de Busbecq's
 
 # {{alt form|enm|þe|t=the|id=the}}
 #* '''14th c.''' {{w|Geoffrey Chaucer}}, ''{{w|The Canterbury Tales}}''. General Prologue: 1-2.
-#*: Whan that Aprill, with his shoures soote
-#*: '''The''' droghte of March hath perced to '''the''' roote
+#*: {{quote|enm|Whan that Aprill, with his shoures soote<br>'''The''' droghte of March hath perced to '''the''' roote}}
 
 ===Etymology 2===
 
@@ -710,7 +715,7 @@ From {{inh|sco|ang|se}}.
 ==Serbo-Croatian==
 
 ===Etymology===
-Borrowed from {{bor|sh|en|the}}, which sounds similar to {{cog|sh|da}}.
+{{bor+|sh|en|the}}, which sounds similar to {{cog|sh|da}}.
 
 ===Conjunction===
 {{head|sh|conjunction|sc=Latn|no known Cyrillic variant}}

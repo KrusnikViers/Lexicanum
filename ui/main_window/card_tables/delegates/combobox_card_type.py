@@ -28,6 +28,8 @@ class ComboBoxCardTypeDelegate(QStyledItemDelegate):
                     editor.addItem(CardType.Invalid.display_name(), userData=CardType.Invalid)
                     editor.insertSeparator(len(CardType))
                 continue
+            if card_type == CardType.CustomUniversal:
+                editor.insertSeparator(len(CardType))
             editor.addItem(card_type.display_name(), userData=card_type)
 
         editor.currentIndexChanged.connect(lambda _, created_editor=editor: self.commitData.emit(created_editor))
