@@ -18,16 +18,12 @@ class InputCardsTableView(CardsTableView):
         self.input_model = input_model
 
         self.setItemDelegateForColumn(CardsTableHeader.Type.value, ComboBoxCardTypeDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Question.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Grammar.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Answer.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Note.value, LineEditSimpleDelegate.instance)
+        for column_index in range(CardsTableHeader.Question.value, CardsTableHeader.Note.value + 1):
+            self.setItemDelegateForColumn(column_index, LineEditSimpleDelegate.instance)
 
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Type.value, QHeaderView.ResizeMode.Fixed)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Question.value,
-                                                     QHeaderView.ResizeMode.Interactive)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Grammar.value, QHeaderView.ResizeMode.Interactive)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Answer.value, QHeaderView.ResizeMode.Interactive)
+        for column_index in range(CardsTableHeader.Question.value, CardsTableHeader.Note.value):
+            self.horizontalHeader().setSectionResizeMode(column_index, QHeaderView.ResizeMode.Interactive)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Note.value, QHeaderView.ResizeMode.Stretch)
 
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Maximum)
@@ -72,7 +68,7 @@ class InputCardsTableView(CardsTableView):
     def restore_headers_geometry(self):
         cached_header_geometry = Settings.get(StoredSettings.CARDS_TABLE_COLUMNS_WIDTH_SPACED).split(' ')
         if len(cached_header_geometry) != len(CardsTableHeader):
-            cached_header_geometry = [0, 200, 200, 200, 0]
+            cached_header_geometry = [0, 200, 150, 250, 250, 200, 250, 0]
             assert len(cached_header_geometry) == len(CardsTableHeader)
 
         # Always recalculate first column width.

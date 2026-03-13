@@ -10,8 +10,7 @@ _EMPTY_OPTIONS = ('', ' ', '-', '—')
 def _noun_grammar(node: MarkupTree) -> List[DefinitionComponent]:
     _GENDERED_ARTICLES = {'n': 'Das', 'm': 'Der', 'f': 'Die'}
     gender = node.keyed_args.get('Genus', 'n')
-    assert gender in _GENDERED_ARTICLES  # If there are articles like that, fail-proof solution should be based on them.
-    gendered_article = _GENDERED_ARTICLES[gender]
+    gendered_article = _GENDERED_ARTICLES[gender] if gender in _GENDERED_ARTICLES else '?'
 
     singular_form = None
     if node.keyed_args.get('Nominativ Singular', '') not in _EMPTY_OPTIONS:

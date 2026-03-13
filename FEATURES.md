@@ -6,13 +6,17 @@ Once these list will become less numerous, it should be migrated to github issue
 
 All tasks under milestone name should be completed prior to this release.
 
-### Beta-release blockers
-
+### New Fields Beta migration
+* Update card design
+* Update model tables
 * Refactor lookup logic
   * Better realign logic parts
+  * Start extracting either IPA or sounds
+  * Start extracting examples
   * Fetch one level of subpages (e.g. `en-woman` article)
   * Fetch one level of derived forms (e.g. `drive` for `driving`)
-* Start extracting either IPA or sounds
+
+### Beta-release blockers
 * Create binaries in Gitlab CI
 * Progress bar for lookup in statusbar / overview
 * Show indicator that deck has unsaved changes and track all of them
@@ -27,6 +31,7 @@ All tasks under milestone name should be completed prior to this release.
 
 * Create separate release with optimization flags
 * Settings page
+* Update geometry when switching screen DPI
 * Write log file
 * Allow setting log verbosity in settings
 * Highlight current row with different color if input is not valid

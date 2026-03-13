@@ -11,15 +11,12 @@ class OverviewCardsTableView(CardsTableView):
         self.overview_model = overview_model
 
         self.setItemDelegateForColumn(CardsTableHeader.Type.value, ComboBoxCardTypeDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Question.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Grammar.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Answer.value, LineEditSimpleDelegate.instance)
-        self.setItemDelegateForColumn(CardsTableHeader.Note.value, LineEditSimpleDelegate.instance)
+        for column_index in range(CardsTableHeader.Question.value, CardsTableHeader.Note.value + 1):
+            self.setItemDelegateForColumn(column_index, LineEditSimpleDelegate.instance)
 
         self.horizontalHeader().setVisible(False)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Type.value, QHeaderView.ResizeMode.Fixed)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Question.value, QHeaderView.ResizeMode.Fixed)
-        self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Answer.value, QHeaderView.ResizeMode.Fixed)
+        for column_index in range(CardsTableHeader.Type.value, CardsTableHeader.Note.value):
+            self.horizontalHeader().setSectionResizeMode(column_index, QHeaderView.ResizeMode.Fixed)
         self.horizontalHeader().setSectionResizeMode(CardsTableHeader.Note.value, QHeaderView.ResizeMode.Stretch)
 
         # Always display at least 10 rows of overview table

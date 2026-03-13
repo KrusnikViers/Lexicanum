@@ -44,7 +44,7 @@ class InputCardsTableModel(CardsTableModel):
     # Own methods
     @staticmethod
     def _get_default_input() -> List[Card]:
-        return [Card(CardType.Invalid, question='', grammar_note='', answer='', meaning_note='')]
+        return [Card(CardType.Invalid, question_main='', answer_main='')]
 
     def reset_content(self, cards: List[Card] | None = None):
         self.beginResetModel()
