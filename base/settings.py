@@ -38,4 +38,4 @@ class OptionDefinition(Generic[_SType]):
 UI_MAIN_WINDOW_GEOMETRY = OptionDefinition('ui/main_window_geometry', QRect, QRect())
 
 ANKI_CONNECT_URL = OptionDefinition('anki/url', str, '127.0.0.1')
-ANKI_CONNECT_PORT = OptionDefinition('anki/port', int, '8765')
+ANKI_CONNECT_PORT = OptionDefinition('anki/port', int, 8765)
