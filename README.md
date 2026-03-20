@@ -6,6 +6,15 @@
 Application to simplify creating language-learning Anki cards.  
 Other files: [License file (MIT)](LICENSE), [Features tracker](FEATURES.md)
 
+### How to use
+* You will need Anki desktop application with AnkiConnect plugin:
+  * Download & install Desktop Anki application (https://apps.ankiweb.net/)
+  * Open Anki Desktop and go to **Tools** / **Addons**
+  * Get AnkiConnect (code: `2055492159`)
+  * Restart Anki
+* To enable lookup/translate/explore functionality of this app:
+  * **TBD: LLM connection**
+
 ### Suggested Workflows / Run Configurations
 * `Gen UI`
   * Python script `$ProjectFileDir$/build_tools/qt_gen_ui_files.py`

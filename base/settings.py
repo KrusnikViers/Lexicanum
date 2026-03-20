@@ -36,3 +36,6 @@ class OptionDefinition(Generic[_SType]):
 # Separate groups of settings as group_name/setting_name: MY_VALUE = OptionDefinition('base/my_setting', int, 42).
 # To use in code, call MY_VALUE.set(43) and MY_VALUE.get().
 UI_MAIN_WINDOW_GEOMETRY = OptionDefinition('ui/main_window_geometry', QRect, QRect())
+
+ANKI_CONNECT_URL = OptionDefinition('anki/url', str, '127.0.0.1')
+ANKI_CONNECT_PORT = OptionDefinition('anki/port', int, '8765')

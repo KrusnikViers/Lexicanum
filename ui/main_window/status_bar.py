@@ -34,7 +34,7 @@ class StatusBar(QStatusBar):
                 self._ui_status_label.setStyleSheet('color: #900; background-color: #fff; padding-left: 5px;')
         self._ui_status_label.setText(message)
 
-    @Slot(str)
+    @Slot(str, StatusType)
     def set_temporary_status(self, message: str, status_type: StatusType = StatusType.Info) -> None:
         self._timer.stop()
         self._timer.start()
