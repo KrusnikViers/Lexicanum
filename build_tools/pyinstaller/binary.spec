@@ -8,9 +8,9 @@ a = Analysis(
     ['../../main.py'],
     pathex=[],
     binaries=[],
-    datas=[
-        ('../../ui/icons/*.svg', './ui/icons'),
-    ],
+#    datas=[
+#        ('../../ui/icons/*.svg', './ui/icons'),
+#    ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -30,7 +30,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='Lexicanum.exe',
+    name='PyQtTemplate.exe',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

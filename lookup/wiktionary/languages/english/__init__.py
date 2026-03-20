@@ -1,1 +1,0 @@
-from lookup.wiktionary.languages.english.english_parser import EnglishLocaleParser

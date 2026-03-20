@@ -1,0 +1,61 @@
+name: Build
+permissions: { }
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * 0' # Every Monday at 00:00
+  workflow_dispatch: # Manual trigger
+env:
+  PYTHON_VERSION: '3.14'
+
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        branch: [ "${{ github.event_name == 'schedule' && 'master' || github.ref_name }}" ]  # if && <true> || <false>
+        os: [ ubuntu-latest, windows-latest ]
+        include:
+          - os: ubuntu-latest
+            dist_name: 'PyQtTemplate Linux'
+          - os: windows-latest
+            dist_name: 'PyQtTemplate Win64'
+
+    runs-on: ${{ matrix.os }}
+    name: Binary
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.branch }}
+          persist-credentials: false
+
+      - name: Bake Git status
+        shell: bash
+        run: |
+          cat <<EOF > base/git_info.py
+          # GENERATED FILE - DO NOT EDIT DIRECTLY
+          PROJECT_BUILD_TYPE: str = "${{ github.ref_name }}"
+          PROJECT_HASH: str = "${{ github.sha }}"
+          EOF
+
+      - name: Setup Project
+        uses: ./.github/actions/setup_project
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Setup Linux
+        if: matrix.os == 'ubuntu-latest'
+        uses: ./.github/actions/setup_linux
+
+      - name: Run PyInstaller
+        run: pyinstaller build_tools/pyinstaller/binary.spec
+      - name: Upload
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.dist_name }}
+          path: dist/*
+          if-no-files-found: error

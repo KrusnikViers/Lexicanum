@@ -1,8 +1,11 @@
 # Project files
 .idea/
 venv/
-ui/gen/
-build/
 
-# Python-languages ignores
+# Generated files
+build/
+dist/
+*_uic.py
+
+# Python-specific
 __pycache__/

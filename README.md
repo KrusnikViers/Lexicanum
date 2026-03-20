@@ -1,49 +1,45 @@
-# Lexicanum
+# PyQtTemplate
 
-A GUI utility to build and edit Anki decks for foreign words
+[![codecov](https://codecov.io/gh/KrusnikViers/PyQtTemplate/graph/badge.svg)](https://codecov.io/gh/KrusnikViers/PyQtTemplate)
+[![Maintainability](https://qlty.sh/gh/KrusnikViers/projects/PyQtTemplate/maintainability.svg)](https://qlty.sh/gh/KrusnikViers/projects/PyQtTemplate)
 
-[![tests](https://github.com/KrusnikViers/Lexicanum/actions/workflows/test.yml/badge.svg)](https://github.com/KrusnikViers/Lexicanum/actions/workflows/test.yml)
-[![coverage](https://github.com/KrusnikViers/Lexicanum/actions/workflows/coverage.yml/badge.svg)](https://github.com/KrusnikViers/Lexicanum/actions/workflows/coverage.yml)
-[![lint](https://github.com/KrusnikViers/Lexicanum/actions/workflows/lint.yml/badge.svg)](https://github.com/KrusnikViers/Lexicanum/actions/workflows/lint.yml)
-[![codecov](https://codecov.io/gh/KrusnikViers/Lexicanum/graph/badge.svg?token=FytryMP1ZJ)](https://codecov.io/gh/KrusnikViers/Lexicanum)
-[![Maintainability](https://api.codeclimate.com/v1/badges/735ca5f57479b6d79cd4/maintainability)](https://codeclimate.com/github/KrusnikViers/Lexicanum/maintainability)
+Template for Python projects using Qt as GUI.  
+Other files: [License file (MIT)](LICENSE), [Features tracker](FEATURES.md)
 
-## Development flow
+## Setting up the project
 
-General conventions regarding the release process and versioning is described in the [VERSIONS](VERSIONS.md) file.
+1. Update `base/info.py` with your project data.
+2. Update badge links in README
+3. Add `CODECOV_TOKEN` from [codecov.io](https://codecov.io) to Repository Action secrets.
+4. Update `.github/workflows/build.yml` if necessary
 
-The features list is split between github issues and the [FEATURES](FEATURES.md) file. Expectation is that eventually
-the [FEATURES](FEATURES.md) file will be completely removed.
+### Suggested Workflows / Run Configurations
+* `Gen UI`
+  * Python script `$ProjectFileDir$/build_tools/qt_gen_ui_files.py`
+  * Add this step as a pre-requisite for all the next steps
+* `Run App`
+  * Python script `$ProjectFileDir$/main.py`
+* `Run Tests`
+  * Unittests in project root directory, pattern `*_test.py`
+* `Build Binary`
+  * Python Module `PyInstaller`
+  * Arguments: `$ProjectFileDir$/build_tools/pyinstaller/binary.spec`
 
-## Working with project
+### Adding Qt Designer in PyCharm
 
-In the text below, `ROOT_DIR` should be replaced with the path to the directory containing this README file. A working
-directory should be set to the `ROOT_DIR` as well, unless specified otherwise.
+Settings ⇒ Tools ⇒ External Tools  
+Program: `$ProjectFileDir$\.venv\Lib\site-packages\PySide6\designer.exe`  
+Arguments: `$FilePath$`  
+Directory: `$ProjectFileDir$`
 
-### Generate UI files
+### Versions and release process
 
-The project uses Qt framework, so to build it from sources you will need to generate python files for UI files before
-referring to them from code. To do so, run `ROOT_DIR/build_tools/convert_ui_files.py`. Important: this code will use a
-generator tool from PySide package available, and will look for the Qt-specific files in the `../../ui` directory
-recursively, regardless of the working directory.
+Project has two hardcoded version numbers. Updating major version resets minor one to zero.
 
-### Run project without .exe
+1. `PROJECT_COMPATIBILITY_VERSION`  
+   Increased when changes make new version incompatible with the previous one in any way.
+2. `PROJECT_FEATURE_PACK_VERSION`  
+   Increased with significant changes from the user point of view.
 
-Run `ROOT_DIR/main.py`. You will need to generate UI files first.
-
-### Building .exe
-
-To build an .exe file that would work under Windows OS, run `ROOT_DIR/build_tools/create_binary_win.bat`. It creates a
-standalone portable executable file, that could be run without installing Python or dependency packages on the target
-machine.
-
-### Running unittests
-
-Unittests are automatically discoverable, run `python -m unittest discover -s ROOT_DIR`
-
-### Refreshing test Wiktionary data
-
-Some tests rely on cashed copy of data from Wiktionary. To refresh them,
-run `ROOT_DIR/build_tools/refresh_wiktionary_test_data.py`. If you are creating new localized data parser, please make a
-copy of `base` tests directory: cached pages are exact wiktionary content, and thus overall project license does not
-apply to them.
+Separately, all builds from GitHub Actions will bake "branch:commit" as part of the version info, to simplify finding
+the exact build. All local builds will have "local:unknown" stated there.
