@@ -1,5 +1,5 @@
 """Primary interface for the Anki connection."""
-from PySide6.QtCore import QObject, Slot, Signal
+from PySide6.QtCore import QObject
 
 
 class Anki(QObject):
