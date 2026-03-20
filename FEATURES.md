@@ -9,10 +9,10 @@ Back to [README](README.md)
 * Cards display
 * Controls for selecting/editing the card
 * Settings
+* Write log file, allow setting logs verbosity in settings.
 * Connection to LLM service, ideally via wrapper. Separate low-level connection and prompts.
 * Implement word translation/lookup via LLM.
 * Implement adding card from lookup results.
-* Try to get and display query limit status.
 
 ### Beta-critical
 * Detect and ignore duplicates from the duplicate results.
@@ -20,6 +20,7 @@ Back to [README](README.md)
 ### Release-critical
 * Implement cards migration from previous versions
 * Add a manual workflow to build a tagged Release from the current master
+* Make sure release binary uses optimization flags
 * Increase test coverage
 
 ### Priority
@@ -28,5 +29,8 @@ Back to [README](README.md)
 * Implement functional Ctrl+Z / Ctrl+Shift+Z
 
 ### Nice to have
+* Display LLM queries limit, progress bars
+* Allow to scan existing cards for duplicates
+* Shortcuts & Shortcuts customization
 
 ### Backlog
