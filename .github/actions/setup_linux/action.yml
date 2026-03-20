@@ -1,0 +1,21 @@
+name: Setup project dependencies for Linux
+description: Install required dependencies, mostly for Qt
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install drivers required for Qt/PySide
+      run: |
+        sudo apt-get install -y \
+        libgl1-mesa-dev         \
+        libglib2.0-0            \
+        libxcb-cursor0          \
+        libxcb-icccm4           \
+        libxcb-image0           \
+        libxcb-keysyms1         \
+        libxcb-render-util0     \
+        libxcb-shape0           \
+        libxcb-xinerama0        \
+        libxcb-xkb1             \
+        libxkbcommon-x11-0
+      shell: bash

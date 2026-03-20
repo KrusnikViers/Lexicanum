@@ -1,2 +1,0 @@
-from ui.main_window.card_tables.delegates.combobox_card_type import ComboBoxCardTypeDelegate
-from ui.main_window.card_tables.delegates.line_edit_simple import LineEditSimpleDelegate

@@ -1,5 +1,3 @@
-PySide6~=6.3 # Linking with Qt for UI
-genanki~=0.13
-requests~=2.27  # Web-requests library
-mwparserfromhell~=0.6
-pyinstaller~=5.7
+PySide6 ~= 6.10 # Linking with Qt for UI.
+pyinstaller ~= 6.19 # Building binary out of Python code.
+requests ~= 2.32 # Web requests libraqry.

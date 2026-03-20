@@ -1,61 +1,36 @@
-# List of features
+# Features tracker
 
-Once these list will become less numerous, it should be migrated to github issues.
+Back to [README](README.md)
 
-## Milestones
+### Alpha-critical
+* Set up connection to Anki
+* Create lock screen for disrupted connection. Keep as much info as possible during the disconnect.
+* Controls for selecting/editing the current deck
+* Cards display
+* Controls for selecting/editing the card
+* Settings
+* Write log file, allow setting logs verbosity in settings.
+* Connection to LLM service, ideally via wrapper. Separate low-level connection and prompts.
+* Implement word translation/lookup via LLM.
+* Implement adding card from lookup results.
 
-All tasks under milestone name should be completed prior to this release.
+### Beta-critical
+* Detect and ignore duplicates from the duplicate results.
 
-### New Fields Beta migration
-* Update card design
-* Update model tables
-* Refactor lookup logic
-  * Better realign logic parts
-  * Start extracting either IPA or sounds
-  * Start extracting examples
-  * Fetch one level of subpages (e.g. `en-woman` article)
-  * Fetch one level of derived forms (e.g. `drive` for `driving`)
+### Release-critical
+* Implement cards migration from previous versions
+* Add a manual workflow to build a tagged Release from the current master
+* Make sure release binary uses optimization flags
+* Increase test coverage
 
-### Beta-release blockers
-* Create binaries in Gitlab CI
-* Progress bar for lookup in statusbar / overview
-* Show indicator that deck has unsaved changes and track all of them
-* Show prompt when deck is being unloaded with unsaved changes
-* Words lookup by button
-* Overview table sorting per column
-* Find proper icons set
-* 75% tests coverage
-* See if Wiktionary API can be migrated to REST version
+### Priority
+* Implement "Explore topic" mode.
+* Support configurable language pairs.
+* Implement functional Ctrl+Z / Ctrl+Shift+Z
 
-### Stable release blockers
+### Nice to have
+* Display LLM queries limit, progress bars
+* Allow to scan existing cards for duplicates
+* Shortcuts & Shortcuts customization
 
-* Create separate release with optimization flags
-* Settings page
-* Update geometry when switching screen DPI
-* Write log file
-* Allow setting log verbosity in settings
-* Highlight current row with different color if input is not valid
-* Highlight full duplicates in overview table
-* Update icons and stuff
-* Allow switching search mode from immediate to shortcut
-* Refine UI
-* Full support for German language words lookup
-    * Meaning notes
-* Full support for English language words lookup
-    * Meaning notes
-* `stable` branch
-* Automated release version update? Or at least checklist for the new release.
-* Automated tests and releases for `stable`
-* 90% tests coverage
-* Download instructions in [README](README.md)
-* Proper description in [README](README.md)
-* Check .json version on read
-* Undo/Redo for card operations
-
-### Future features
-
-* Deduplication mode
-* Support for Russian language words lookup
-* Pronunciation / IPA
-* Way to customize shortcuts
-    * Do not allow duplicate shortcuts
+### Backlog
