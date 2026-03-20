@@ -4,8 +4,8 @@
 from base import git_info
 
 PUBLISHER_NAME = "KrusnikViers"
-PROJECT_NAME = "PyQtTemplate"
-PROJECT_URL = "https://github.com/KrusnikViers/PyQtTemplate"
+PROJECT_NAME = "Lexicanum"
+PROJECT_URL = "https://github.com/KrusnikViers/Lexicanum"
 
 _PROJECT_COMPATIBILITY_VERSION: int = 0
 _PROJECT_FEATURE_PACK_VERSION: int = 0

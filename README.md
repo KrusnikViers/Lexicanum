@@ -1,17 +1,10 @@
-# PyQtTemplate
+# Lexicanum
 
-[![codecov](https://codecov.io/gh/KrusnikViers/PyQtTemplate/graph/badge.svg)](https://codecov.io/gh/KrusnikViers/PyQtTemplate)
-[![Maintainability](https://qlty.sh/gh/KrusnikViers/projects/PyQtTemplate/maintainability.svg)](https://qlty.sh/gh/KrusnikViers/projects/PyQtTemplate)
+[![codecov](https://codecov.io/gh/KrusnikViers/Lexicanum/graph/badge.svg)](https://codecov.io/gh/KrusnikViers/Lexicanum)
+[![Maintainability](https://qlty.sh/gh/KrusnikViers/projects/Lexicanum/maintainability.svg)](https://qlty.sh/gh/KrusnikViers/projects/Lexicanum)
 
-Template for Python projects using Qt as GUI.  
+Application to simplify creating language-learning Anki cards.  
 Other files: [License file (MIT)](LICENSE), [Features tracker](FEATURES.md)
-
-## Setting up the project
-
-1. Update `base/info.py` with your project data.
-2. Update badge links in README
-3. Add `CODECOV_TOKEN` from [codecov.io](https://codecov.io) to Repository Action secrets.
-4. Update `.github/workflows/build.yml` if necessary
 
 ### Suggested Workflows / Run Configurations
 * `Gen UI`
