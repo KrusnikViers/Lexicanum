@@ -9,8 +9,8 @@ from PySide6.QtCore import QObject, Slot, Signal, QTimer
 from base import settings
 
 _ANKI_CONNECT_API_VERSION = 5
-_CONNECTION_TIMEOUT = timedelta(seconds=5)
-_CONNECTION_CHECK_INTERVAL = timedelta(milliseconds=500)
+_CONNECTION_TIMEOUT = timedelta(milliseconds=250)
+_CONNECTION_CHECK_INTERVAL = timedelta(seconds=1.5)
 
 
 class ConnectionStatus(enum.IntEnum):
@@ -20,7 +20,10 @@ class ConnectionStatus(enum.IntEnum):
 
 
 def _get_url_from_settings():
-    return f'{settings.ANKI_CONNECT_URL.get()}:{settings.ANKI_CONNECT_PORT.get()}'
+    url = f'{settings.ANKI_CONNECT_URL.get()}:{settings.ANKI_CONNECT_PORT.get()}'
+    if url.startswith('http'):
+        return url
+    return 'http://' + url
 
 
 def _timedelta_to_msec(interval: timedelta) -> int:
@@ -45,6 +48,8 @@ class Connection(QObject):
         self._status_check_timer.timeout.connect(self.check_connection)
         self._status_check_timer.start()
 
+        self.check_connection()
+
     @property
     def status(self):
         return self._status
@@ -58,15 +63,17 @@ class Connection(QObject):
         except (requests.exceptions.Timeout,
                 requests.exceptions.HTTPError,
                 requests.exceptions.ConnectionError,
-                requests.exceptions.RequestException,):
-            self._set_status(ConnectionStatus.DISCONNECTED)
+                requests.exceptions.RequestException,) as exc:
+            self._set_status(ConnectionStatus.DISCONNECTED, exc)
         return None
 
-    def _set_status(self, status: ConnectionStatus) -> None:
+    def _set_status(self, status: ConnectionStatus, reason: Exception | None = None) -> None:
         if self._status == status:
             return
         self._status = status
         logging.info(f"Connection status changed: {status.name}")
+        if reason is not None:
+            logging.info(f"Status change reason: {reason}")
         self.status_change.emit(status)
 
     @Slot()

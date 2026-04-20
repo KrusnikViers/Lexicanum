@@ -14,4 +14,4 @@ def update_logging_configuration(level: str) -> None:
     logging.basicConfig(level=LOGGING_LEVELS[level],
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         handlers=[logging.StreamHandler(sys.stdout),
-                                  logging.FileHandler(filename="log.txt", encoding="utf-8")])
+                                  logging.FileHandler(filename="log.txt", mode='w', encoding="utf-8")])

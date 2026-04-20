@@ -3,8 +3,6 @@
 Back to [README](README.md)
 
 ### Alpha-critical
-* Set up connection to Anki
-* Create lock screen for disrupted connection. Keep as much info as possible during the disconnect.
 * Controls for selecting/editing the current deck
 * Cards display
 * Controls for selecting/editing the card

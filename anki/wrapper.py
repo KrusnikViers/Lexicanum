@@ -10,4 +10,4 @@ class AnkiWrapper(QObject):
     def __init__(self, *,
                  connection: anki_connection.Connection | None = None):
         super().__init__()
-        self._connection = connection if connection is not None else anki_connection.Connection()
+        self.connection = connection if connection is not None else anki_connection.Connection()
