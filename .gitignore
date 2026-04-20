@@ -6,6 +6,7 @@ venv/
 build/
 dist/
 *_uic.py
+log.txt
 
 # Python-specific
 __pycache__/

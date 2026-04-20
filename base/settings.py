@@ -1,7 +1,6 @@
 # Usage: Settings object is safe to be cached, and cheap to recreate if needed.
 # Add new values to the `Settings` enum for both settings that are visible to the user, or simply caching some values
 # between sessions.
-
 from dataclasses import dataclass
 from typing import TypeVar, Type, Generic, Any
 
@@ -36,6 +35,8 @@ class OptionDefinition(Generic[_SType]):
 # Separate groups of settings as group_name/setting_name: MY_VALUE = OptionDefinition('base/my_setting', int, 42).
 # To use in code, call MY_VALUE.set(43) and MY_VALUE.get().
 UI_MAIN_WINDOW_GEOMETRY = OptionDefinition('ui/main_window_geometry', QRect, QRect())
+
+LOGS_VERBOSITY = OptionDefinition('logs/verbosity', str, 'warning')
 
 ANKI_CONNECT_URL = OptionDefinition('anki/url', str, '127.0.0.1')
 ANKI_CONNECT_PORT = OptionDefinition('anki/port', int, 8765)

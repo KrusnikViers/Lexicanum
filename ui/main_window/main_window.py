@@ -1,7 +1,8 @@
-from PySide6.QtCore import Signal, QSize, QPoint, QRect
+from PySide6.QtCore import Signal, SignalInstance, QSize, QPoint, QRect
 from PySide6.QtGui import QCloseEvent
 from PySide6.QtWidgets import QMainWindow, QApplication
 
+from anki import wrapper
 from base import info
 from base import settings
 from ui.main_window import main_window_uic
@@ -11,16 +12,18 @@ from ui.main_window import status_bar
 # Use only for lower-level UI operations and setting child widgets.
 # Complex logic should be moved to controller components.
 class MainWindow(QMainWindow):
-    application_exit_requested = Signal()
+    exit_requested: SignalInstance = Signal()
 
     def closeEvent(self, event: QCloseEvent) -> None:
         # Signal Application class that exit was requested. If successful, it will close the window itself.
         event.ignore()
         self._store_geometry()
-        self.application_exit_requested.emit()
+        self.exit_requested.emit()
 
-    def __init__(self):
+    def __init__(self, *, anki_wrapper: wrapper.AnkiWrapper):
         super().__init__()
+
+        self._anki_wrapper = anki_wrapper
 
         self.ui = main_window_uic.Ui_MainWindow()
         self.ui.setupUi(self)

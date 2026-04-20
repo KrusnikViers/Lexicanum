@@ -32,5 +32,6 @@ Back to [README](README.md)
 * Display LLM queries limit, progress bars
 * Allow to scan existing cards for duplicates
 * Shortcuts & Shortcuts customization
+* Handle mismatch of AnkiConnect versions gracefully
 
 ### Backlog
