@@ -1,6 +1,7 @@
 """Network API wrapper for AnkiConnect. Manages connection status and calls execution."""
 import enum
 import logging
+from dataclasses import dataclass
 from datetime import timedelta
 
 import requests
@@ -10,7 +11,15 @@ from base import settings
 
 _ANKI_CONNECT_API_VERSION = 5
 _CONNECTION_TIMEOUT = timedelta(milliseconds=250)
-_CONNECTION_CHECK_INTERVAL = timedelta(seconds=1.5)
+_CONNECTION_CHECK_INTERVAL = timedelta(seconds=0.5)
+_CONNECTION_CHECK_MAX_INTERVAL = timedelta(seconds=3)
+
+
+def _timedelta_to_msec(interval: timedelta) -> int:
+    result = int(interval.total_seconds() * 1000)
+    if interval.total_seconds() > 0 and result == 0:
+        raise ValueError("Timedelta cannot be correctly represented in msec.")
+    return result
 
 
 class ConnectionStatus(enum.IntEnum):
@@ -19,18 +28,17 @@ class ConnectionStatus(enum.IntEnum):
     DISCONNECTED = 2
 
 
+@dataclass
+class ConnectionCheckResult:
+    status: ConnectionStatus
+    error: str | None = None
+
+
 def _get_url_from_settings():
     url = f'{settings.ANKI_CONNECT_URL.get()}:{settings.ANKI_CONNECT_PORT.get()}'
     if url.startswith('http'):
         return url
     return 'http://' + url
-
-
-def _timedelta_to_msec(interval: timedelta) -> int:
-    result = int(interval.total_seconds() * 1000)
-    if interval.total_seconds() > 0 and result == 0:
-        raise ValueError("Timedelta cannot be correctly represented in msec.")
-    return result
 
 
 class Connection(QObject):
@@ -51,30 +59,36 @@ class Connection(QObject):
         self.check_connection()
 
     @property
-    def status(self):
+    def status(self) -> ConnectionStatus:
         return self._status
 
     def get(self, params: dict) -> dict | None:
-        """Default method for retrieving the data. Appends supported AC version automatically."""
+        """Internal implementation of GET, returns response body or detailed DISCONNECT description."""
         params.update({'version': _ANKI_CONNECT_API_VERSION})
         try:
             response = self._session.get(url=self._url, json=params, timeout=_CONNECTION_TIMEOUT.total_seconds())
+            self._update_connection_state(ConnectionCheckResult(ConnectionStatus.CONNECTED))
             return response.json()
-        except (requests.exceptions.Timeout,
-                requests.exceptions.HTTPError,
-                requests.exceptions.ConnectionError,
-                requests.exceptions.RequestException,) as exc:
-            self._set_status(ConnectionStatus.DISCONNECTED, exc)
-        return None
 
-    def _set_status(self, status: ConnectionStatus, reason: Exception | None = None) -> None:
-        if self._status == status:
+        except requests.exceptions.RequestException as request_exc:
+            error_type = type(request_exc).__name__
+            reason = str(request_exc.args[0]) if request_exc.args else str(request_exc)
+            check_result = ConnectionCheckResult(ConnectionStatus.DISCONNECTED, f"{error_type}: {reason}")
+            self._update_connection_state(check_result)
+            return None
+
+    def _update_connection_state(self, check_result: ConnectionCheckResult) -> None:
+        if check_result.status == self._status:
+            # Double the check interval and return early.
+            max_interval = _timedelta_to_msec(_CONNECTION_CHECK_MAX_INTERVAL)
+            current_interval = self._status_check_timer.interval()
+            if current_interval < max_interval:
+                self._status_check_timer.setInterval(min(max_interval, current_interval * 2))
             return
-        self._status = status
-        logging.info(f"Connection status changed: {status.name}")
-        if reason is not None:
-            logging.info(f"Status change reason: {reason}")
-        self.status_change.emit(status)
+
+        self._status = check_result.status
+        logging.info(f"Connection status changed to {check_result.status.name} : {check_result.error}")
+        self.status_change.emit(self._status)
 
     @Slot()
     def maybe_refresh_connection(self) -> None:
@@ -82,17 +96,11 @@ class Connection(QObject):
         if self._status == ConnectionStatus.CONNECTED and new_url == self._url:
             return
 
-        self._set_status(ConnectionStatus.DISCONNECTED)
         self._session.close()
-
         self._session = requests.Session()
         self._url = new_url
         self.check_connection()
 
     @Slot()
     def check_connection(self) -> None:
-        check_result = self.get({'action': 'version'})
-        if check_result is not None and 'error' in check_result and check_result['error'] is None:
-            self._set_status(ConnectionStatus.CONNECTED)
-        else:
-            self._set_status(ConnectionStatus.DISCONNECTED)
+        self.get({'action': 'version'})
