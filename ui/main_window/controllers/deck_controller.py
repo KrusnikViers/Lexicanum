@@ -123,7 +123,7 @@ class DeckController(QObject):
         table_in_focus.commit_open_editor_changes()
         original_card = table_in_focus.model().get_card(lookup_index.row())
         is_lookup_from_answer = lookup_index.column() == CardsTableHeader.Answer.value
-        search_string = original_card.answer.strip() if is_lookup_from_answer else original_card.question.strip()
+        search_string = original_card.answer_main.strip() if is_lookup_from_answer else original_card.question_main.strip()
         if search_string == '':
             self.main_window.status_bar.show_timed_message('Selected cell is empty')
             return

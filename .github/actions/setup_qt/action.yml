@@ -9,5 +9,5 @@ runs:
       run: sudo apt-get install -y  libgl1-mesa-dev libglib2.0-0
       shell: bash
     - name: Generate UI files
-      run: python ./build_tools/convert_ui_files.py
+      run: python ./build_tools/qt_gen_ui_filesqt_gen_ui_files.py
       shell: bash

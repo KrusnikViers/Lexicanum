@@ -51,6 +51,13 @@ def _verb_grammar(node: MarkupTree, wiki_title: str) -> List[DefinitionComponent
     if present_3rd != '-' and present_3rd != wiki_title[:-2] + 't':
         grammar_notes.append('er/sie/es {}'.format(present_3rd))
 
+    praeteritum_1st = node.keyed_args.get('Präteritum_ich', '-')
+    if praeteritum_1st != '-' and praeteritum_1st != wiki_title[:-2] + 'te':
+        grammar_notes.append('prät {}'.format(praeteritum_1st))
+    partizip_2 = node.keyed_args.get('Partizip II', '-')
+    if partizip_2 != '-' and partizip_2 != 'ge' + wiki_title[:-2] + 't':
+        grammar_notes.append('pII {}'.format(partizip_2))
+
     if grammar_notes:
         return [DefinitionComponent(node.level, DCType.GrammarNote, '; '.join(grammar_notes))]
     return []

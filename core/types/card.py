@@ -46,7 +46,7 @@ class Card:
         # TODO: Update
         return 'Card: {}=>{} {} (gram {}/mean {}/id {})'.format(self.question_main, self.answer_main,
                                                                 self.card_type.name,
-                                                                self.question_grammar, self.note, self.card_id)
+                                                                self.question_grammar, self.card_note, self.card_id)
 
     # Name of fields used for serialization/deserialization
     _FIELD_CARD_ID = 'card_id'

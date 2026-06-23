@@ -9,7 +9,7 @@ from core.types import Card, Deck, Language, CardType
 from core.util import UniversalPath, Status
 
 # Update this field each time the model fields are changed.
-_MODEL_VERSION = 8
+_MODEL_VERSION = 9
 # Update this field iff you need to make model versions unique for this particular program (e.g. in fork)
 _MODEL_SALTED_VERSION = 'Original Model {}'.format(_MODEL_VERSION).encode('utf-8')
 
@@ -17,19 +17,18 @@ _MODEL_ASK_BOTH_ID = int(hashlib.md5(_MODEL_SALTED_VERSION).hexdigest()[:7], 16)
 _MODEL_ASK_QUESTION_ID = _MODEL_ASK_BOTH_ID - 1
 _MODEL_ASK_ANSWER_ID = _MODEL_ASK_QUESTION_ID - 2
 
-# TODO: Update templates with new fields
 _QUESTION_CARD = '''
 <div class="top_desc">
   {{question_language}} {{type}}
 </div><hr/>
 <div class="content">
-  {{question}}<br/>
+  {{question_main}}<br/>
   <div class="grammar_notes">
-    {{grammar_info}}
+    {{question_grammar}}
   </div>
 </div><hr/>
 <div class="bottom_desc">
-  {{meaning_note}}
+  {{card_note}}
 </div>
 '''
 
@@ -38,10 +37,10 @@ _ANSWER_CARD = '''
   {{answer_language}} {{type}}
 </div><hr/>
 <div class="content">
-  {{answer}}
+  {{answer_main}}
 </div><hr/>
 <div class="bottom_desc">
-  {{meaning_note}}
+  {{card_note}}
 </div>
 '''
 
@@ -59,7 +58,7 @@ _MODEL_ASK_BOTH = genanki.Model(
         {'name': 'answer_main'},
         {'name': 'answer_language'},
         {'name': 'answer_example'},
-        {'name': 'note'},
+        {'name': 'card_note'},
     ],
     sort_field_index=1,
     templates=[
@@ -139,7 +138,7 @@ class _Note(genanki.Note):
                 self._normalize_html_and_delimiters(card.answer_main),
                 Language.EN.value,
                 self._normalize_html_and_delimiters(card.answer_example),
-                self._normalize_html_and_delimiters(card.note),
+                self._normalize_html_and_delimiters(card.card_note),
             ]
         )
 

@@ -16,10 +16,10 @@ class DefinitionsToCardsMatcher:
     def _card_from_definitions(cls, answer_definition: Definition, translated_definition: Definition) -> Card:
         return Card(
             card_type=answer_definition.part_of_speech,
-            answer=answer_definition.readable_name,
-            question=translated_definition.readable_name,
-            grammar_note=translated_definition.grammar_note,
-            meaning_note=answer_definition.meaning_note
+            answer_main=answer_definition.readable_name,
+            question_main=translated_definition.readable_name,
+            question_grammar=translated_definition.grammar_note,
+            card_note=answer_definition.meaning_note
         )
 
     @classmethod

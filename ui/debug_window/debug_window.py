@@ -56,8 +56,8 @@ class DebugWindow(QDialog, DebugInterface):
             for card in result.value:
                 result_string += ('<br/><b>{} => {}</b>, {}<br/>' +
                                   '<i>{}<br/>{}<br/></i>').format(
-                    card.question, card.answer, card.card_type.name,
-                    card.grammar_note, card.meaning_note
+                    card.question_main, card.answer_main, card.card_type.name,
+                    card.question_grammar, card.card_note
                 )
             self.progress_rich_message('Resulting cards', result_string)
 
